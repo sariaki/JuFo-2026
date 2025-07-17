@@ -1,18 +1,12 @@
-int foo() 
-{
-	volatile int x = 0;
-	return x;
-}
+#include <stdio.h>
 
-int bar() 
+void foo()
 {
-	volatile int x = 1;
-	return x;
-}
+  printf("foo\n");
+} 
 
-int main() 
+int main()
 {
-	volatile int x = foo();
-	x = bar();
-	//std::cout << "hi" << x;
+  foo();
+  return 0;
 }
