@@ -2,6 +2,7 @@
 - [ ] **Wahrscheinlichkeitsverteilungsgenerierung**
 - [ ] Liveliness tracken (Abhängigkeit von Indeterminierbarem!)
 - [ ] Ununterscheidbaren Code generieren
+- [ ] Mehrere Branches gleich, um dynamische Attacken abzuwehren
 
 - Experimente:
 	- [ ] Beste Verteilung als Test
