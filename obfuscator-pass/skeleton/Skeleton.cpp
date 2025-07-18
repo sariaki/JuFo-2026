@@ -21,17 +21,18 @@ namespace
 
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
-            LLVMContext& Ctx = M.getContext();
-            IRBuilder<> IRB(Ctx);
+            LLVMContext& LLVMCtx = M.getContext();
+            IRBuilder<> IRB(LLVMCtx);
+
+            srand(time(0));
 
             // Declare or get the sampler function: int sample_poisson(double)
             FunctionCallee Sampler = M.getOrInsertFunction(
-                "sample_poisson", Type::getInt64Ty(Ctx), Type::getDoubleTy(Ctx)
+                "sample_poisson", Type::getDoubleTy(LLVMCtx), Type::getDoubleTy(LLVMCtx)
             );
 
             for (Function& F : M)
             {
-                errs() << "hi from " << F.getName() << "\n";
                 if (F.isDeclaration()) continue;
                 //if (!F.hasFnAttribute("insert_stochastic_predicate"))
                 //    continue;
@@ -39,8 +40,25 @@ namespace
                 // Insert at entry block
                 BasicBlock& Entry = F.getEntryBlock();
                 IRB.SetInsertPoint(&*Entry.getFirstInsertionPt());
+               
+                // i64 x = sample_poisson(rand())
+                auto CallParameter = ConstantFP::get(Type::getDoubleTy(LLVMCtx), (double)rand() / (RAND_MAX + 1.0));
+                auto SampleRet = IRB.CreateCall(Sampler, {CallParameter});
 
+                // if x < Threshold...
+                auto Ult = IRB.CreateFCmpULT(SampleRet, ConstantFP::get(Type::getDoubleTy(LLVMCtx), (double)Threshold));
                 
+                // Create new BasicBlocks for branches
+                auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
+                auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
+
+                // Replace terminator of entry BasicBlock (unconditional br added by splitBasicBlock) with ours
+                Entry.getTerminator()->eraseFromParent();
+                IRB.SetInsertPoint(&Entry);
+                IRB.CreateCondBr(Ult, TrueBB, FalseBB);
+
+                IRB.SetInsertPoint(FalseBB);
+                IRB.CreateUnreachable();
             }
 
             return PreservedAnalyses::all();
