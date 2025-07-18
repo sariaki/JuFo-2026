@@ -1,4 +1,4 @@
-; ModuleID = './example.c'
+; ModuleID = 'example.ll'
 source_filename = "./example.c"
 target datalayout = "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc19.36.32535"
@@ -28,6 +28,15 @@ $"??_C@_04PFIOAJMN@foo?6?$AA@" = comdat any
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @sprintf(ptr noundef %0, ptr noundef %1, ...) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %2
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %2
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   %5 = alloca i32, align 4
@@ -47,6 +56,15 @@ define linkonce_odr dso_local i32 @sprintf(ptr noundef %0, ptr noundef %1, ...) 
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @vsprintf(ptr noundef %0, ptr noundef %1, ptr noundef %2) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %3
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %3
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -62,6 +80,15 @@ define linkonce_odr dso_local i32 @vsprintf(ptr noundef %0, ptr noundef %1, ptr 
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_snprintf(ptr noundef %0, i64 noundef %1, ptr noundef %2, ...) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %3
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %3
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
   %6 = alloca ptr, align 8
@@ -84,6 +111,15 @@ define linkonce_odr dso_local i32 @_snprintf(ptr noundef %0, i64 noundef %1, ptr
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vsnprintf(ptr noundef %0, i64 noundef %1, ptr noundef %2, ptr noundef %3) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %4
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %4
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
   %7 = alloca i64, align 8
@@ -102,12 +138,30 @@ define linkonce_odr dso_local i32 @_vsnprintf(ptr noundef %0, i64 noundef %1, pt
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @foo() #0 {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %0
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %0
   %1 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_04PFIOAJMN@foo?6?$AA@")
   ret void
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @printf(ptr noundef %0, ...) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %1
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %1
   %2 = alloca ptr, align 8
   %3 = alloca i32, align 4
   %4 = alloca ptr, align 8
@@ -125,6 +179,15 @@ define linkonce_odr dso_local i32 @printf(ptr noundef %0, ...) #0 comdat {
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i32 @main() #0 {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %0
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %0
   %1 = alloca i32, align 4
   store i32 0, ptr %1, align 4
   call void @foo()
@@ -136,6 +199,15 @@ declare void @llvm.va_start.p0(ptr) #1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vsprintf_l(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef %3) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %4
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %4
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -157,6 +229,15 @@ declare void @llvm.va_end.p0(ptr) #1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vsnprintf_l(ptr noundef %0, i64 noundef %1, ptr noundef %2, ptr noundef %3, ptr noundef %4) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %5
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %5
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
   %8 = alloca ptr, align 8
@@ -182,10 +263,10 @@ define linkonce_odr dso_local i32 @_vsnprintf_l(ptr noundef %0, i64 noundef %1, 
   %22 = icmp slt i32 %21, 0
   br i1 %22, label %23, label %24
 
-23:                                               ; preds = %5
+23:                                               ; preds = %cont
   br label %26
 
-24:                                               ; preds = %5
+24:                                               ; preds = %cont
   %25 = load i32, ptr %11, align 4
   br label %26
 
@@ -198,11 +279,29 @@ declare dso_local i32 @__stdio_common_vsprintf(i64 noundef, ptr noundef, i64 nou
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local ptr @__local_stdio_printf_options() #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %0
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %0
   ret ptr @__local_stdio_printf_options._OptionsStorage
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vfprintf_l(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef %3) #0 comdat {
+  %poisson_sample = call i64 @sample_poisson(double 0xR10000000000000)
+  %cond_lt_thresh = icmp ult i64 %poisson_sample, 10
+  br i1 %cond_lt_thresh, label %cont, label %secret
+
+secret:                                           ; preds = %4
+  %dummy = call i64 @sample_poisson(double 0xR10000000000000)
+  br label %cont
+
+cont:                                             ; preds = %secret, %4
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -224,6 +323,8 @@ define linkonce_odr dso_local i32 @_vfprintf_l(ptr noundef %0, ptr noundef %1, p
 declare dso_local ptr @__acrt_iob_func(i32 noundef) #2
 
 declare dso_local i32 @__stdio_common_vfprintf(i64 noundef, ptr noundef, ptr noundef, ptr noundef, ptr noundef) #2
+
+declare i64 @sample_poisson(double)
 
 attributes #0 = { noinline nounwind optnone uwtable "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #1 = { nocallback nofree nosync nounwind willreturn }
