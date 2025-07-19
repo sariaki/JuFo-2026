@@ -3,12 +3,12 @@
 #include <cmath>     // log(), sqrt(), cos(), fabs()
 #include <ctime>     // time()
 
-// 1) Uniform on [0,1)
+// Uniform on [0,1)
 double uniform01() {
     return rand() / (RAND_MAX + 1.0);
 }
 
-// 2) Box–Muller: standard normal N(0,1)
+// Box–Muller: standard normal N(0,1)
 double standard_normal() {
     double u1, u2;
     // ensure u1>0 so log(u1) is defined
@@ -22,7 +22,7 @@ double standard_normal() {
 }
 
 int main() {
-    // seed once
+    // Seed
     srand(static_cast<unsigned>(time(nullptr)));
 
     // Compute epsilon so that P(|Z| <= ε) = 0.99

@@ -8,7 +8,7 @@
 #include <llvm/Passes/PassPlugin.h>
 #include <llvm/Support/raw_ostream.h>
 #include <iostream>
-//#include "GenerateDistribution.hpp"
+#include "GenerateDistribution.hpp"
 
 using namespace llvm;
 
@@ -25,11 +25,6 @@ namespace
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
-            // Declare or get the sampler function: int sample_poisson(double)
-            FunctionCallee Sampler = M.getOrInsertFunction(
-                "sample_poisson", Type::getDoubleTy(LLVMCtx), Type::getDoubleTy(LLVMCtx)
-            );
-
             srand(time(0));
 
             for (Function& F : M)
@@ -40,7 +35,7 @@ namespace
 
                 // Insert at entry block
                 BasicBlock& Entry = F.getEntryBlock();
-                IRB.SetInsertPoint(&*Entry.getFirstInsertionPt());
+                IRB.SetInsertPoint(&Entry);
                
                 // i64 x = sample_poisson(rand())
                 auto CallParameter = ConstantFP::get(Type::getDoubleTy(LLVMCtx), (double)rand() / (RAND_MAX + 1.0));
