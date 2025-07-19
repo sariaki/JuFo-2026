@@ -28,7 +28,7 @@ $"??_C@_04PFIOAJMN@foo?6?$AA@" = comdat any
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @sprintf(ptr noundef %0, ptr noundef %1, ...) #0 comdat {
-  %3 = call double @sample_poisson(double 0xR11D20000000000)
+  %3 = call double @sample_poisson(double 0xR112A0000000000)
   %4 = fcmp ult double %3, 0xR14000000000000
   br i1 %4, label %always_hit, label %never_hit
 
@@ -55,7 +55,7 @@ never_hit:                                        ; preds = %2
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @vsprintf(ptr noundef %0, ptr noundef %1, ptr noundef %2) #0 comdat {
-  %4 = call double @sample_poisson(double 0xR13680000000000)
+  %4 = call double @sample_poisson(double 0xR17C80000000000)
   %5 = fcmp ult double %4, 0xR14000000000000
   br i1 %5, label %always_hit, label %never_hit
 
@@ -78,7 +78,7 @@ never_hit:                                        ; preds = %3
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_snprintf(ptr noundef %0, i64 noundef %1, ptr noundef %2, ...) #0 comdat {
-  %4 = call double @sample_poisson(double 0xR117B0000000000)
+  %4 = call double @sample_poisson(double 0xR16300000000000)
   %5 = fcmp ult double %4, 0xR14000000000000
   br i1 %5, label %always_hit, label %never_hit
 
@@ -108,7 +108,7 @@ never_hit:                                        ; preds = %3
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vsnprintf(ptr noundef %0, i64 noundef %1, ptr noundef %2, ptr noundef %3) #0 comdat {
-  %5 = call double @sample_poisson(double 0xR1CA60000000000)
+  %5 = call double @sample_poisson(double 0xR1AF78000000000)
   %6 = fcmp ult double %5, 0xR14000000000000
   br i1 %6, label %always_hit, label %never_hit
 
@@ -134,7 +134,7 @@ never_hit:                                        ; preds = %4
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @foo() #0 {
-  %1 = call double @sample_poisson(double 0xR17230000000000)
+  %1 = call double @sample_poisson(double 0xR10B40000000000)
   %2 = fcmp ult double %1, 0xR14000000000000
   br i1 %2, label %always_hit, label %never_hit
 
@@ -148,7 +148,7 @@ never_hit:                                        ; preds = %0
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @printf(ptr noundef %0, ...) #0 comdat {
-  %2 = call double @sample_poisson(double 0xR10190000000000)
+  %2 = call double @sample_poisson(double 0xR1C6F8000000000)
   %3 = fcmp ult double %2, 0xR14000000000000
   br i1 %3, label %always_hit, label %never_hit
 
@@ -173,7 +173,7 @@ never_hit:                                        ; preds = %1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i32 @main() #0 {
-  %1 = call double @sample_poisson(double 0xR13AA0000000000)
+  %1 = call double @sample_poisson(double 0xR19C18000000000)
   %2 = fcmp ult double %1, 0xR14000000000000
   br i1 %2, label %always_hit, label %never_hit
 
@@ -192,7 +192,7 @@ declare void @llvm.va_start.p0(ptr) #1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vsprintf_l(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef %3) #0 comdat {
-  %5 = call double @sample_poisson(double 0xR1F8E8000000000)
+  %5 = call double @sample_poisson(double 0xR152DC000000000)
   %6 = fcmp ult double %5, 0xR14000000000000
   br i1 %6, label %always_hit, label %never_hit
 
@@ -221,7 +221,7 @@ declare void @llvm.va_end.p0(ptr) #1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vsnprintf_l(ptr noundef %0, i64 noundef %1, ptr noundef %2, ptr noundef %3, ptr noundef %4) #0 comdat {
-  %6 = call double @sample_poisson(double 0xR18038000000000)
+  %6 = call double @sample_poisson(double 0xR1EFD8000000000)
   %7 = fcmp ult double %6, 0xR14000000000000
   br i1 %7, label %always_hit, label %never_hit
 
@@ -270,7 +270,7 @@ declare dso_local i32 @__stdio_common_vsprintf(i64 noundef, ptr noundef, i64 nou
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local ptr @__local_stdio_printf_options() #0 comdat {
-  %1 = call double @sample_poisson(double 0xR12C80000000000)
+  %1 = call double @sample_poisson(double 0xR16900000000000)
   %2 = fcmp ult double %1, 0xR14000000000000
   br i1 %2, label %always_hit, label %never_hit
 
@@ -283,7 +283,7 @@ never_hit:                                        ; preds = %0
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @_vfprintf_l(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef %3) #0 comdat {
-  %5 = call double @sample_poisson(double 0xR18600000000000)
+  %5 = call double @sample_poisson(double 0xR13200000000000)
   %6 = fcmp ult double %5, 0xR14000000000000
   br i1 %6, label %always_hit, label %never_hit
 

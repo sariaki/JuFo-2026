@@ -8,6 +8,7 @@
 #include "llvm/Passes/PassPlugin.h"
 #include "llvm/Support/raw_ostream.h"
 #include <iostream>
+//#include "GenerateDistribution.hpp"
 
 using namespace llvm;
 
@@ -24,12 +25,12 @@ namespace
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
-            srand(time(0));
-
             // Declare or get the sampler function: int sample_poisson(double)
             FunctionCallee Sampler = M.getOrInsertFunction(
                 "sample_poisson", Type::getDoubleTy(LLVMCtx), Type::getDoubleTy(LLVMCtx)
             );
+
+            srand(time(0));
 
             for (Function& F : M)
             {
@@ -96,7 +97,7 @@ extern "C" llvm::PassPluginLibraryInfo getStochasticOpaquePredicatePluginInfo()
         {
             PB.registerPipelineParsingCallback([](StringRef Name, ModulePassManager& MPM, ...)
             {
-                if (Name == "stoch-opaque")
+                if (Name == "obfuscator")
                 {
                     MPM.addPass(StochasticOpaquePredicate());
                     return true;
