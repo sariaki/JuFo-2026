@@ -1,0 +1,5 @@
+- Was darf ich an Wissen annehmen? Muss ich Obfuskation definieren? Was weiß die Jury?
+	- Obfuskation
+	- Opake Prädikate
+	- Kontrollfluss
+- Gedruckt oder PDF?

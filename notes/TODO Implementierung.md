@@ -8,18 +8,19 @@
 	- [ ] Beste Verteilung als Test -> Grafik
 	- [ ] Sym Exec. auf IR, Angr, Triton, Miasm; Obfuskation von großen Projekten (Chrome etc. wie CodeDefender)
 	- [ ] Geschwindigkeitsvergleich von Programmen
+
+#### Medium Priority
+- [ ] Obfuscator-LLVM anschauen, um herauszufinden, wo Prädikate generiert werden sollen + wie T/F generiert wird
 #### Low Priority:
-- [x] Cmake Dateien updaten
+- [ ] Zeigen, dass ML dagegen nicht funktioniert!
+- [ ] CMake Linux support
+- [ ] CMake Download von LLVM
+
+- [ ] LLVM Statistics
 
 - [ ] (Pseudozufall generieren)
 
-- [ ] **LLVM Tutorials**
-- [ ] Stochastik bis S. 93 (Min. 51, genug um Verteilungen zu verstehen)
-
-- [ ] Opaque-Predicates Definitionen & Methoden sammeln
-- [ ] Funktionsweise von SMT-Solvern / symbolic execution
-
 #### Dokumentation:
-- [ ] `\newtheorem{}{}[]` für Definitionen
+- [x] `\newtheorem{}{}[]` für Definitionen
 - [ ] Grafiken
 - [ ] Deversai lesen
