@@ -1,0 +1,91 @@
+\section{Theoretische Grundlagen}
+\subsection{Obfuskation}
+Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
+\begin{definition}[Obfuskation]
+Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
+Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
+\end{definition}
+
+Per Definition sind somit Nebenwirkungen (z.B. Herunterladen von neuen Daten, Dateierzeugung etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen stark aus, wie später ersichtlich sein wird.
+
+Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \emph{Stärke}, \emph{Resilienz}, \emph{Kosten} und \emph{Tarnung} verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
+%Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
+%TODO: Arten der Obfuskation?
+
+\subsection{Opake Prädikate}
+Die folgenden Definitionen sind aus \cite{tofighi-shiraziDefeatingOpaquePredicates2019} sowie vom Pionierwerk \cite{collbergManufacturingCheapResilient1998} modifiziert übernommen. Es wird sich auf invariante opake Prädikate beschränkt. Ferner wird angenommen, dass alle Funktionen/Prädikatenterme evaluierbar sind.
+\begin{definition}[Opake Prädikate]
+Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn für alle $\phi\in \Phi$ gilt, dass $\mathcal{O}(\phi)$ denselben Wert ($1$ oder $0$ bzw. wahr oder falsch) hat.
+\end{definition}
+In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert für alle möglichen Parameter \emph{a priori} bestimmt ist (also für den Programmierer bekannt ist) aber für ein Verständnis einer weiteren Person (ein Angreifer) \emph{a posteriori} (durch Beobachtung) zu bestimmen ist.
+
+Diese Arbeit unterscheidet zwischen zwei Arten opaker Prädikate:
+\begin{definition}
+Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ ein opakes Prädikat.
+$\mathcal{O}(\phi)$ ist vom Typ
+\begin{enumerate} 
+    \item $P^T$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=1\text{ bzw. } wahr$. 
+    \item $P^F$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=0\text{ bzw. } falsch$. 
+\end{enumerate}
+\end{definition}
+% TODO: Beispiele
+% \begin{example}
+% ...
+% \end{example}
+% \begin{wrapfigure}{r}{0.25\textwidth} \label{fig:overwatchGraph}
+%     \includegraphics[
+%         scale=1.25
+%         % trim=0pt 700pt 1000pt 0pt
+%         % clip
+%     ]{overwatch_byfron_cropped}
+%     \caption{Kontrollflussgraph einer Funktion mit opakem Prädikat. Abbildung aus der Disassembly des Spiels ''Overwatch'' mittels IDA entnommen.}
+% \end{wrapfigure}
+% \begin{wrapfigure}{r}{0.25\textwidth}
+%     \includegraphics[
+%         scale=0.25
+%         % trim=0pt 700pt 1000pt 0pt
+%         % clip
+%     ]{pseudocode_cropped}
+%     \caption{IDA Pseudocode von \cref{fig:overwatchGraph}.}
+% \end{wrapfigure}
+\begin{minipage}[t]{0.45\textwidth}
+  \centering
+  % \includegraphics[width=\linewidth]{overwatch_byfron_cropped}
+  \includegraphics[ 
+    scale=1.25
+    % trim=0pt 700pt 1000pt 0pt
+    % clip
+    ]{overwatch_byfron_cropped}
+  % \resizebox{0.9\textwidth}{!}{
+  %   \input{cfg1}
+  % }
+  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. Abbildung aus der Disassembly des Spiels ''Overwatch'' mittels IDA entnommen.} \label{fig:overwatchGraph}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.5\textwidth}
+  \centering
+  % \resizebox{\columnwidth}{!}{\usebox{\idacode1}}
+  \includegraphics[scale=0.2]{komplex_cropped}
+  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Disassembly des Spiels ''Overwatch'' mittels IDA entnommen.} \label{fig:overwatchGraph2}
+\end{minipage} \\
+
+% TODO: erklären was das mit Obfuskation zu tun hat + auf Grafik eingehen
+Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks. 
+
+\begin{example}
+Das Prädikat $\mathcal{O}(\phi)=-1977224191 \space \& \space 1 = 1$ aus \cref{fig:overwatchGraph}, wobei ''$\&$'' dem bitweisen ''und'' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
+\end{example}
+
+
+Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
+
+%Mehrere Methoden zur Generierung solcher starken opaken Prädikate wurden bereits publiziert. Ein Überblick über diese sowie ihre Limitationen wird in \cref{sec:motivation} gegeben.
+\subsection{Symbolische Ausführung} % Automatische Deobfuskationsattacken
+%Symbolische Ausführung wird als Methode verwendet, um verschiedene Obfuskationsmethoden in Programmen anzugreifen. 
+\begin{wrapfigure}{r}{0.3\textwidth}
+  \centering
+    \includegraphics[width=0.3\textwidth]{sym_exec}
+  \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen}
+\end{wrapfigure}
+Nach dem aktuellen Stand der Forschung scheint symbolische Ausführung der vielversprechendste Ansatz für die Bekämpfung opaker Prädikate zu sein.
+Eine Symbolische Ausführungsmaschine besteht aus 2 Hauptkomponenten: ein zentrales symbolischen Ausführungsmodul und einem Modul zur Lösung von Einschränkungen (''constraint solver''). Es gibt zwei Arten symbolischer Ausführungsmodule: statisch und dynamisch (letzteres wird auch concolische symbolische Ausführung genannt). Concolische Ausführungsmaschinen wie BAP und Triton führen zunächst das Programm mit konkreten Werten aus und führen dann eine symbolsiche Analyse der generierten Befehlsspuren durch.
+Statische symbolische Ausführungsmaschinen ''heben'' zuerst die Assembly-Anweisungen des Programmes in eine abstraktere Zwischensprache an und führt dann eine symbolsiche Ausführung dessen mit statischen Analyseansätzen durch. Diese Methode wird erfolgreich in Angr verwendet.

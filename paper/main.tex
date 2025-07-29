@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper,ngerman]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{plain}
+\newtheorem{example}{Beispiel}
+
+% Times New Roman
+\usepackage{newtxtext,newtxmath}
+\usepackage[ngerman]{babel}
+
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2cm}
+
+\usepackage{setspace}
+\linespread{1.25} % Word berechnet Zeilenabstände falsch...
+
+\usepackage{graphicx}
+\graphicspath{{img/}}
+
+\usepackage{wrapfig}
+\usepackage{caption}
+\captionsetup[wrapfigure]{
+  font=small,            
+  labelfont=bf           
+}
+\captionsetup[wrapfigure]{}
+
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{biblatex}
+\addbibresource{bib.bib}
+
+% \usepackage{csquotes}
+\usepackage{booktabs}  
+% \usepackage{float} 
+
+% Muss immer letztes Packet sein
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% \title{\bf\Huge SArSO: Symbolische Ausführung resistenter Software-Obfuskation mittels opaker Prädikate unentscheidbarer stochastischer Funktionen}
+\title{\bf\Huge SAroP: Symbolische Ausführung resistenter opake Prädikate mittels stochastischer Unentscheidbarkeit}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+  \maketitle
+  \vfill
+  \begin{tabular}{ll}
+    Teilnehmende: & Paul Baumgartner (18 J.) \\
+    Erarbeitungsort: & Hildesheim \\
+    Projektbetreuende: & Dr. Arndt Latußeck\\
+    Fachgebiet: & Mathematik/Informatik \\
+    Wettbewerbssparte: & Jugend forscht \\
+    Bundesland: & Niedersachsen \\
+    Wettbewerbsjahr: & 2026 \\
+  \end{tabular}
+\end{titlepage}
+
+\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+\setcounter{page}{0}
+\section{Projektüberblick}
+%In diesem Projekt wird eine neue Softwareobfuskationsmethode präsentiert, welche sich als resistent gegenüber Symbolischer Ausführungsattacken erweist. ...
+In diesem Projekt wird eine neue Klasse an opaken Prädikaten präsentiert; die Klasse stochastischer Prädikate, welche sich als resisten gegenüber symbolischen Ausführungsattacken erweist. ...
+\newpage
+
+\section{Einleitung}
+% TODO: Vielleicht was auf Makro-Ebene sagen? Krieg, geopol. Spannungen, Cyber-Angriffe
+\emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren. Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. EDRS zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von ''Reverse Engineering'', sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
+
+Diese Arbeit fokussiert sich auf eine Art der Obfuskation, der Kontrollflussobfuskation, und der meist verbreiteten Angriffsweise, um diese zu bekämpfen.
+
+% TODO: Annahmen klären: Grundverständnis von Assembly, Kompilern etc.
+\subsection{Beitrag dieser Arbeit}
+% TODO: Klären, was in welchem Abschnitt gemacht wird.
+
+\input{theorie}
+
+\input{hintergrund}
+
+\input{ansatz}
+
+\input{implementierung}
+
+\input{evaluierung}
+
+\section{Ergebnisdiskussion}
+
+\section{Fazit und Ausblick} \label{sec:fazit}
+
+\newpage
+\pagenumbering{Alph}
+
+%\section*{Quellen- und Literaturverzeichnis}
+\printbibliography[title=Literaturverzeichnis]
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+
+\end{document}

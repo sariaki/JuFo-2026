@@ -1,0 +1,56 @@
+\section{Hintergrund und Motivation} \label{sec:motivation}
+Der folgende Abschnitt soll einen Überblick über existierende Arten opaker Prädikate liefern und diese in Bezug auf ihre Qualität evaulieren. Hierfür werden die Faktoren aus \cref{par:metriken} verwendet.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+                & Stärke & Resilienz & Kosten & Tarnung \\
+        \midrule
+        Obfuscator-LLVM \cite{ieeespro2015-JunodRWM}            & X & trivial & sehr gering & hoch \\
+        \emph{Bi-Opake} Prädikate \cite{xuManufacturingResilientBiOpaque2018}  & X & mittel & hoch & hoch \\
+        \emph{Exceptions} \cite{linBranchObfuscationUsing2013}         & X & mittel & sehr hoch & gering \\
+        NP-schwere Probleme \cite{}       & X & gering & mittel & mittel \\
+        ungelöste Probleme \cite{wangLinearObfuscationCombat2011}        & X & hoch & sehr hoch & hoch \\
+        \bottomrule
+    \end{tabular}
+    \caption{Vergleich existierende Arten opaker Prädikate.}
+    \label{tab:vergleichderMethoden}
+\end{table}
+% Das Obfuscator-LLVM-Projekt \cite{ieeespro2015-JunodRWM} generiert opake Prädikate der Form $$y < 10 \vee  x \cdot (x + 1) \text{ mod } 2 == 0$$ wobei $x$ und $y$ symbolische Variablen sind, deren Wert statisch nicht bestimmbar ist. Ein Blick darauf zeigt, dass $\forall x:  x \cdot (x+1)$ gerade und somit durch $2$ teilbar ist. Die generierten opaken Prädikate sind somit auch vulnerabel gegenüber automatisierten symbolischen Ausführungsattacken. Stärke und Resilienz sind somit gering. Da nur wenige arithmetische Anweisungen zum Programm hinzugefügt werden sind Kosten gering und Tarnung hoch, da diese einem Angreifer nicht automatisch suspekt sind.
+
+% Die sog. ''symbolischen'' Prädikate, wie sie in \cite{xuManufacturingResilientBiOpaque2018} vorgestellt wurden, versuchen eine solche Deobfuskation zu vermeiden. Hierfür nutzen diese Prädikate bewusste Konzepte, welche in den symbolischen Ausführungsmaschinen entweder gar nicht (wie z.B. Thread-Support) oder nur teilweise implementiert sind (wie z.B. Gleitkommazahlen).
+% \begin{figure}[h]
+%     \centering
+%     \begin{lstlisting}[language=c++]
+% int func(int symvar) {
+%     int j = symvar;
+%     float f = j/1000000.0;
+%     if(f==0.1){
+%         Bogus();
+%     }
+%     if(1024+f==1024&&f>0%%j==7){
+%         Foo();
+%     }
+% }
+% \end{lstlisting}
+%     \caption{''symbollisches'' Prädikat mit Gleitkommazahlen, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen.}
+%     \label{fig:enter-label}
+% \end{figure}
+% % TODO: Stärke
+% Zwar waren die Prädikate zur Zeit ihrer Veröffentlichung 2018 noch resilient gegenüber automatisierten Attacken - aufgrund ihrer Natur basiert deren Resilienz allerdings auf fehlenden Implementierungsfeinheiten der symbolischen Ausführungsmaschinen, nicht fundamentalen Limitationen derer. Jegliche Weiterentwicklung dieser Methode wird also von einer Anpassung der anderen Seite beantwortet - es handelt sich um ein spieltheoretisches Nullsummenspiel \cite{}.
+% Je nach Methode variieren die Kosten stark von gering (z.B. bei Gleitkommazahlen) bis zu hoch (z.B. bei Threads).
+
+% Ähnliche Probleme bezüglicher ihrer Resilienz haben \emph{exception}basierte opake Prädikate \cite{linBranchObfuscationUsing2013}. Zudem tragen diese sehr hohe Kosten
+
+% TODO: Einfach Tabelle machen und dann losschreiben, warum wir *das* brauchen?
+
+\begin{itemize}
+    \item Obfuscator-LLVM \checkmark
+    \item Bi-Opaque Prädikate \checkmark
+    \item Linear Obfuscation to Combat Symbolic Execution
+    \item Binary Code Side Effects \checkmark
+    \item ''When Are Opaque Predicates Useful''
+    \item ''Software obfuscation on a theoretical basis and its implementation,'' IEICE Trans. on Fundamentals of Electronics, Communications and Computer Sciences, 2003.
+    \item (Collberg et al.) Tigress (dynamic opaque prediactes!!)
+\end{itemize}
