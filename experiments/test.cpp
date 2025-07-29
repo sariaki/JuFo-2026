@@ -1,7 +1,7 @@
 #include <iostream>
-#include <cstdlib>   // rand(), RAND_MAX, srand()
-#include <cmath>     // log(), sqrt(), cos(), fabs()
-#include <ctime>     // time()
+#include <cstdlib>   
+#include <cmath>     
+#include <ctime>     
 
 // Uniform on [0,1)
 double uniform01() {
