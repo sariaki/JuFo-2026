@@ -16,16 +16,13 @@ namespace
 {
     struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
     {
-        // User-set threshold for tail probability (e.g., P(X>=T) ~ epsilon)
-        int64_t Threshold = 10;
-        double Lambda = 0.5; // For Poisson(lambda)
-
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
             srand(time(0));
+            const auto Sampler = Distribution::Create(M);
 
             for (Function& F : M)
             {
@@ -34,24 +31,24 @@ namespace
                 //    continue;
 
                 // Insert at entry block
-                BasicBlock& Entry = F.getEntryBlock();
-                IRB.SetInsertPoint(&Entry);
+                BasicBlock& EntryBB = F.getEntryBlock();
+                IRB.SetInsertPoint(&EntryBB);
                
                 // i64 x = sample_poisson(rand())
-                auto CallParameter = ConstantFP::get(Type::getDoubleTy(LLVMCtx), (double)rand() / (RAND_MAX + 1.0));
+                auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)rand() / (RAND_MAX + 1.0));
                 auto SampleRet = IRB.CreateCall(Sampler, {CallParameter});
 
                 // if x < Threshold...
-                auto Ult = IRB.CreateFCmpULT(SampleRet, ConstantFP::get(Type::getDoubleTy(LLVMCtx), (double)Threshold));
+                auto CmpResult = IRB.CreateFCmpULT(SampleRet, ConstantFP::get(IRB.getDoubleTy(), (double)Threshold));
                 
                 // Create new BasicBlocks for branches
                 auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
                 auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
 
                 // Replace terminator of entry BasicBlock (unconditional br added by splitBasicBlock) with ours
-                Entry.getTerminator()->eraseFromParent();
-                IRB.SetInsertPoint(&Entry);
-                IRB.CreateCondBr(Ult, TrueBB, FalseBB);
+                EntryBB.getTerminator()->eraseFromParent();
+                IRB.SetInsertPoint(&EntryBB);
+                IRB.CreateCondBr(CmpResult, TrueBB, FalseBB);
 
                 IRB.SetInsertPoint(FalseBB);
                 IRB.CreateUnreachable();
