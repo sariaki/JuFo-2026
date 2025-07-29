@@ -1,5 +1,8 @@
-- Was darf ich an Wissen annehmen? Muss ich Obfuskation definieren? Was weiß die Jury?
+- Was darf ich an Wissen annehmen? Muss ich Obfuskation definieren? 
 	- Obfuskation
 	- Opake Prädikate
 	- Kontrollfluss
+- Wie formell muss ich Definieren?
+- Darf ich in Einleitung Definieren und dann direkt Einordnen?
+- Was weiß die Jury?
 - Gedruckt oder PDF?
