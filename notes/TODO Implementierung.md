@@ -16,11 +16,11 @@
 - [ ] CMake Linux support
 - [ ] CMake Download von LLVM
 
-- [ ] LLVM Statistics
+- [ ] LLVM Statistics für Pass hinzufügen
 
 - [ ] (Pseudozufall generieren)
 
 #### Dokumentation:
 - [x] `\newtheorem{}{}[]` für Definitionen
-- [ ] Grafiken
+- [x] Grafiken
 - [ ] Deversai lesen

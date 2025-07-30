@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,11 +211,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b06bbf36e8fd559",
+  "active": "68fd3707731d181e",
   "lastOpenFiles": [
-    "TODO Schreiben.md",
-    "TODO Recherche.md",
     "TODO Implementierung.md",
+    "TODO Recherche.md",
+    "TODO Schreiben.md",
     "FRAGEN.md"
   ]
 }
