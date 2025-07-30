@@ -13,5 +13,5 @@ using namespace llvm;
 
 namespace Distribution
 {
-    FunctionCallee Distribution::Create(Module& M, ConstantFP* Lambda);
+    FunctionCallee Create(Module& M, Value* Lambda);
 }

@@ -1,4 +1,4 @@
-#include <llvm/IR/IRBuilder.h>
+﻿#include <llvm/IR/IRBuilder.h>
 #include <llvm/IR/IntrinsicInst.h>
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Constants.h>
@@ -16,13 +16,17 @@ namespace
 {
     struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
     {
+        const double Threshold = 0.5;
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
             srand(time(0));
-            const auto Sampler = Distribution::Create(M);
+            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)0.123f));
+            //FunctionCallee Sampler = M.getOrInsertFunction(
+            //    "sample_poisson", Type::getInt64Ty(LLVMCtx), Type::getDoubleTy(LLVMCtx)
+            //);
 
             for (Function& F : M)
             {
@@ -32,18 +36,22 @@ namespace
 
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();
-                IRB.SetInsertPoint(&EntryBB);
+                IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
                
                 // i64 x = sample_poisson(rand())
-                auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)rand() / (RAND_MAX + 1.0));
-                auto SampleRet = IRB.CreateCall(Sampler, {CallParameter});
+                //const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)rand() / (RAND_MAX + 1.0));
+                const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)1.0f);
+                const auto SampleRet = IRB.CreateCall(Sampler, {CallParameter});
 
                 // if x < Threshold...
-                auto CmpResult = IRB.CreateFCmpULT(SampleRet, ConstantFP::get(IRB.getDoubleTy(), (double)Threshold));
+                const auto CmpResult = IRB.CreateFCmpOLT(
+                    IRB.CreateSIToFP(SampleRet, IRB.getDoubleTy()),
+                    ConstantFP::get(IRB.getDoubleTy(), Threshold)
+                );
                 
                 // Create new BasicBlocks for branches
-                auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
-                auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
+                const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
+                const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
 
                 // Replace terminator of entry BasicBlock (unconditional br added by splitBasicBlock) with ours
                 EntryBB.getTerminator()->eraseFromParent();
@@ -74,10 +82,10 @@ namespace
     };
 }
 
-    char LegacyStochasticOpaquePredicate::ID = 0;
-    static RegisterPass<LegacyStochasticOpaquePredicate> X(
-        "stoch-opaque", "Inject stochastic opaque predicates", false, false
-    );
+char LegacyStochasticOpaquePredicate::ID = 0;
+static RegisterPass<LegacyStochasticOpaquePredicate> X(
+    "stoch-opaque", "Inject stochastic opaque predicates", false, false
+);
 
 // New PassManager registration
 extern "C" llvm::PassPluginLibraryInfo getStochasticOpaquePredicatePluginInfo()
