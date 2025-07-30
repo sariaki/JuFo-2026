@@ -23,7 +23,7 @@ namespace
             IRBuilder<> IRB(LLVMCtx);
 
             srand(time(0));
-            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)0.123f));
+            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)0.42069));
             //FunctionCallee Sampler = M.getOrInsertFunction(
             //    "sample_poisson", Type::getInt64Ty(LLVMCtx), Type::getDoubleTy(LLVMCtx)
             //);
@@ -40,14 +40,12 @@ namespace
                
                 // i64 x = sample_poisson(rand())
                 //const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)rand() / (RAND_MAX + 1.0));
-                const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)1.0f);
-                const auto SampleRet = IRB.CreateCall(Sampler, {CallParameter});
+                const auto CallParameter = ConstantFP::get(IRB.getBFloatTy(), (float)rand() / (RAND_MAX + 1.0f));
+                const auto SampleRet = IRB.CreateCall(Sampler, { CallParameter });
 
                 // if x < Threshold...
-                const auto CmpResult = IRB.CreateFCmpOLT(
-                    IRB.CreateSIToFP(SampleRet, IRB.getDoubleTy()),
-                    ConstantFP::get(IRB.getDoubleTy(), Threshold)
-                );
+                const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
+                    ConstantInt::get(IRB.getInt64Ty(), Threshold));
                 
                 // Create new BasicBlocks for branches
                 const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");

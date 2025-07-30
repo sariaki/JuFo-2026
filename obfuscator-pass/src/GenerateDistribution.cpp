@@ -9,8 +9,7 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
 
     // Declare sampler function: i64 sample_poisson(double)
     FunctionType* FT = FunctionType::get(IRB.getInt64Ty(),
-        { IRB.getDoubleTy() },
-        false);
+        { IRB.getBFloatTy()}, false);
     FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_poisson", FT);
     Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
 
@@ -31,8 +30,9 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
 
     // Let p_0 = e^{-\lambda}
     // TODO: Do exp() call at compile time
+    // TODO: Fix NegLambda getting turned into a BFloat16
     IRB.SetInsertPoint(EntryBB);
-    Value* NegLambda = IRB.CreateFNeg(Lambda, "neg_lambda");
+    Value* NegLambda = IRB.CreateFNeg(Lambda);
     Value* P0 = IRB.CreateCall(ExpFn, { NegLambda }, "p0");
 
     IRB.CreateBr(LoopBB);
@@ -73,8 +73,11 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
     Prob->addIncoming(ProbNext, LoopBB);
     Sum->addIncoming(SumNext, LoopBB);
 
-    //// If u > s: goto ExitBB else: goto LoopBB
-    Value* CmpRes = IRB.CreateFCmpOGT(UniformArg, Sum);
+    // If u > s: goto ExitBB else: goto LoopBB
+    Value* CmpRes = IRB.CreateFCmpOGT(
+        IRB.CreateFPExt(UniformArg, IRB.getDoubleTy()), 
+        Sum
+    );
     IRB.CreateCondBr(CmpRes, LoopBB, ExitBB);
 
     // Return k_next (since k would only get updated next iteration)
