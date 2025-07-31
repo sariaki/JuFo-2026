@@ -1,8 +1,15 @@
-:: Compile to IR
-clang -O0 -S -emit-llvm -c ./example.c -o example.ll
+:: Compile to IR & bitcode
+"C:\LLVM\bin\clang.exe" -emit-llvm -c example.c -o example.ll
+"C:\LLVM\bin\clang.exe" -emit-llvm -c example.c -o example.bc
 
 :: Run pass
-"C:\LLVM\bin\opt.exe" -load-pass-plugin="C:\Users\sariaki\Documents\code\py\JuFo-2026\obfuscator-pass\build\src\Release\Obfuscator.dll" -passes=obfuscator -S example.ll -o example_obf.ll
+"C:\LLVM\bin\opt.exe" ^
+  -load-pass-plugin="C:\Users\sariaki\Documents\code\py\JuFo-2026\obfuscator-pass\build\src\Release\Obfuscator.dll" ^
+  -passes=obfuscator ^
+  example.bc -o example_obf.bc
+
+:: Dump the obfuscated IR
+"C:\LLVM\bin\llvm-dis.exe" example_obf.bc -o example_obf.ll
 
 :: Compile IR to Executable
-clang ./example_obf.ll
+"C:\LLVM\bin\clang.exe" example_obf.bc -o example.exe

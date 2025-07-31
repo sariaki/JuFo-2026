@@ -24,9 +24,6 @@ namespace
 
             srand(time(0));
             const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)0.42069));
-            //FunctionCallee Sampler = M.getOrInsertFunction(
-            //    "sample_poisson", Type::getInt64Ty(LLVMCtx), Type::getDoubleTy(LLVMCtx)
-            //);
 
             for (Function& F : M)
             {
@@ -39,7 +36,6 @@ namespace
                 IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
                
                 // i64 x = sample_poisson(rand())
-                //const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (double)rand() / (RAND_MAX + 1.0));
                 const auto CallParameter = ConstantFP::get(IRB.getBFloatTy(), (float)rand() / (RAND_MAX + 1.0f));
                 const auto SampleRet = IRB.CreateCall(Sampler, { CallParameter });
 
