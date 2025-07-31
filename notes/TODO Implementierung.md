@@ -1,8 +1,6 @@
 #### High Priority:
 - [ ] **Wahrscheinlichkeitsverteilungsgenerierung**
-- [ ] Liveliness tracken (Abhängigkeit von Indeterminierbarem!)
-- [ ] Ununterscheidbaren Code generieren
-- [ ] Probabilistic Control Flows: Mehrere Branches gleich, um dynamische Attacken abzuwehren
+- [ ] Symbolische Variablen finden, deren Werte**bereiche** vorhersehbar sind, deren Werte allerdings nicht
 
 - Experimente:
 	- [ ] Beste Verteilung als Test -> Grafik
@@ -10,7 +8,9 @@
 	- [ ] Geschwindigkeitsvergleich von Programmen
 
 #### Medium Priority
-- [ ] Obfuscator-LLVM anschauen, um herauszufinden, wo Prädikate generiert werden sollen + wie T/F generiert wird
+- [ ] Zufällige Prädikatenorte + zufällige T/F Prädikatenwerte (vgl. Obfuscator-LLVM)
+- [ ] Ununterscheidbaren Code generieren
+- [ ] Probabilistic Control Flows: Mehrere Branches gleich, um dynamische Attacken abzuwehren
 #### Low Priority:
 - [ ] Zeigen, dass ML dagegen nicht funktioniert!
 - [ ] CMake Linux support

@@ -30,7 +30,6 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
 
     // Let p_0 = e^{-\lambda}
     // TODO: Do exp() call at compile time
-    // TODO: Fix NegLambda getting turned into a BFloat16
     IRB.SetInsertPoint(EntryBB);
     Value* NegLambda = IRB.CreateFNeg(Lambda);
     Value* P0 = IRB.CreateCall(ExpFn, { NegLambda }, "p0");

@@ -18,13 +18,15 @@ namespace
     struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
     {
         const double Threshold = 140;
+        const double Lambda = 100;
+
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
             srand(time(0));
-            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)100));
+            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
 
             for (Function& F : M)
             {
@@ -48,9 +50,6 @@ namespace
                 //// if x < Threshold...
                 const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
                     ConstantInt::get(IRB.getInt64Ty(), Threshold));
-                //// If x == Threshold...
-                //const auto CmpResult = IRB.CreateICmpEQ(SampleRet,
-                //    ConstantInt::get(IRB.getInt64Ty(), Threshold));
                 
                 // Create new BasicBlocks for branches
                 const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
