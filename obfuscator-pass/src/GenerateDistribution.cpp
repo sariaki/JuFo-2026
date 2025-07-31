@@ -9,7 +9,7 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
 
     // Declare sampler function: i64 sample_poisson(double)
     FunctionType* FT = FunctionType::get(IRB.getInt64Ty(),
-        { IRB.getBFloatTy()}, false);
+        { IRB.getDoubleTy() }, false);
     FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_poisson", FT);
     Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
 
@@ -74,10 +74,7 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
     Sum->addIncoming(SumNext, LoopBB);
 
     // If u > s: goto ExitBB else: goto LoopBB
-    Value* CmpRes = IRB.CreateFCmpOGT(
-        IRB.CreateFPExt(UniformArg, IRB.getDoubleTy()), 
-        Sum
-    );
+    Value* CmpRes = IRB.CreateFCmpOGT(UniformArg,Sum);
     IRB.CreateCondBr(CmpRes, LoopBB, ExitBB);
 
     // Return k_next (since k would only get updated next iteration)

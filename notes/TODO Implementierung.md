@@ -19,8 +19,3 @@
 - [ ] LLVM Statistics für Pass hinzufügen
 
 - [ ] (Pseudozufall generieren)
-
-#### Dokumentation:
-- [x] `\newtheorem{}{}[]` für Definitionen
-- [x] Grafiken
-- [ ] Deversai lesen

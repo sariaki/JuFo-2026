@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-__attribute__((insert_stochastic_predicate))
+__attribute__((annotate("insert_stochastic_predicate")))
 void foo()
 {
   printf("foo\n");

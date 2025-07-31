@@ -7,6 +7,7 @@
 #include <llvm/Passes/PassBuilder.h>
 #include <llvm/Passes/PassPlugin.h>
 #include <llvm/Support/raw_ostream.h>
+#include <llvm/Demangle/Demangle.h>
 #include <iostream>
 #include "GenerateDistribution.hpp"
 
@@ -16,32 +17,40 @@ namespace
 {
     struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
     {
-        const double Threshold = 0.5;
+        const double Threshold = 140;
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
             srand(time(0));
-            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)0.42069));
+            const auto Sampler = Distribution::Create(M, ConstantFP::get(IRB.getDoubleTy(), (double)100));
 
             for (Function& F : M)
             {
+                // Check if our function is defined and not just declared
                 if (F.isDeclaration()) continue;
-                //if (!F.hasFnAttribute("insert_stochastic_predicate"))
-                //    continue;
+
+                // Check if function has required annotation
+                // TODO: improve this ghetto check and check fn attributes
+                // This just prevents us from entering an infinite loop
+                if (demangle(F.getName().str()) == "sample_poisson")
+                    continue;
 
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();
                 IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
                
                 // i64 x = sample_poisson(rand())
-                const auto CallParameter = ConstantFP::get(IRB.getBFloatTy(), (float)rand() / (RAND_MAX + 1.0f));
+                const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (float)rand() / (RAND_MAX + 1.0f));
                 const auto SampleRet = IRB.CreateCall(Sampler, { CallParameter });
 
-                // if x < Threshold...
+                //// if x < Threshold...
                 const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
                     ConstantInt::get(IRB.getInt64Ty(), Threshold));
+                //// If x == Threshold...
+                //const auto CmpResult = IRB.CreateICmpEQ(SampleRet,
+                //    ConstantInt::get(IRB.getInt64Ty(), Threshold));
                 
                 // Create new BasicBlocks for branches
                 const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
@@ -98,8 +107,8 @@ extern "C" llvm::PassPluginLibraryInfo getStochasticOpaquePredicatePluginInfo()
                 }
                 return false;
             });
-            }
-        };
+        }
+    };
 }
 
 extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo

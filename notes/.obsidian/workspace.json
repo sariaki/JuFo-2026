@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO Implementierung.md",
+                "file": "TODO Schreiben.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO Implementierung"
+              "title": "TODO Schreiben"
             }
           },
           {
@@ -55,16 +55,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO Schreiben.md",
+                "file": "TODO Implementierung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO Schreiben"
+              "title": "TODO Implementierung"
+            }
+          },
+          {
+            "id": "22cd8dba3d63f63d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notizen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notizen"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -211,11 +225,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68fd3707731d181e",
+  "active": "22cd8dba3d63f63d",
   "lastOpenFiles": [
     "TODO Implementierung.md",
-    "TODO Recherche.md",
+    "Notizen.md",
+    "FRAGEN.md",
     "TODO Schreiben.md",
-    "FRAGEN.md"
+    "TODO Recherche.md"
   ]
 }
