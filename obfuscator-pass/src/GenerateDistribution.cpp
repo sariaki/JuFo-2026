@@ -7,11 +7,13 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
     LLVMContext& LLVMCtx = M.getContext();
     IRBuilder<> IRB(LLVMCtx);
 
-    // Declare sampler function: i64 sample_poisson(double)
+    // Declare sampler function: inline i64 sample_poisson(double)
     FunctionType* FT = FunctionType::get(IRB.getInt64Ty(),
         { IRB.getDoubleTy() }, false);
     FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_poisson", FT);
     Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
+
+    SamplerFn->addFnAttr(Attribute::AttrKind::AlwaysInline);
 
     // Get exp function
     FunctionCallee ExpFn = M.getOrInsertFunction(

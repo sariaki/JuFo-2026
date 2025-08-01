@@ -47,7 +47,7 @@ namespace
                 const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (float)rand() / (RAND_MAX + 1.0f));
                 const auto SampleRet = IRB.CreateCall(Sampler, { CallParameter });
 
-                //// if x < Threshold...
+                // if x < Threshold...
                 const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
                     ConstantInt::get(IRB.getInt64Ty(), Threshold));
                 

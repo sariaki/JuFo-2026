@@ -12,4 +12,4 @@
 "C:\LLVM\bin\llvm-dis.exe" example_obf.bc -o example_obf.ll
 
 :: Compile IR to Executable
-"C:\LLVM\bin\clang.exe" example_obf.bc -g -o example.exe
+"C:\LLVM\bin\clang.exe" example_obf.bc -o example.exe
