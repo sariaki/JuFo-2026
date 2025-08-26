@@ -11,6 +11,29 @@
 
 using namespace llvm;
 
+inline CallInst* insertPrintDouble(Module& M, IRBuilder<>& IRB, Value* Dbl)
+{
+    LLVMContext& C = M.getContext();
+    if (!Dbl || !Dbl->getType()->isDoubleTy())
+    {
+        report_fatal_error("insertPrintDouble: unsupported parameter type");
+    }
+
+    Type* i32Ty = Type::getInt32Ty(C);
+    Type* i8PtrTy = Type::getInt8Ty(C)->getPointerTo();
+    FunctionType* printfTy = FunctionType::get(i32Ty, { i8PtrTy }, /*isVarArg=*/true);
+    FunctionCallee Callee = M.getOrInsertFunction("printf", printfTy);
+
+    Value* Fmt = IRB.CreateGlobalStringPtr("u=%0.17g\n", "fmt_u");
+
+    SmallVector<Value*, 2> Args;
+    Args.push_back(Fmt);
+    Args.push_back(Dbl);
+
+    CallInst* CallInst = IRB.CreateCall(Callee, Args);
+    return CallInst;
+}
+
 namespace Distribution
 {
     FunctionCallee Create(Module& M, Value* Lambda);

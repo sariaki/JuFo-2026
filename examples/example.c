@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 __attribute__((annotate("insert_stochastic_predicate")))
-void foo()
+void foo(void* x)
 {
-  printf("foo\n");
+  printf("foo %d\n", x);
 } 
 
 int main()
 {
-  foo();
+  foo((void*)1289778913);
   return 0;
 }

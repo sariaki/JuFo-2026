@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -135,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 290.5
   },
   "right": {
     "id": "dabc407afa8baa41",
@@ -225,12 +225,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68fd3707731d181e",
+  "active": "22cd8dba3d63f63d",
   "lastOpenFiles": [
-    "FRAGEN.md",
+    "TODO Implementierung.md",
+    "Notizen.md",
     "TODO Recherche.md",
     "TODO Schreiben.md",
-    "TODO Implementierung.md",
-    "Notizen.md"
+    "FRAGEN.md"
   ]
 }

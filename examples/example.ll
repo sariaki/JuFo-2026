@@ -1,7 +1,7 @@
 ; ModuleID = './example.c'
 source_filename = "./example.c"
 target datalayout = "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
-target triple = "x86_64-pc-windows-msvc19.36.32535"
+target triple = "x86_64-pc-windows-msvc19.44.35215"
 
 $sprintf = comdat any
 
@@ -21,10 +21,13 @@ $__local_stdio_printf_options = comdat any
 
 $_vfprintf_l = comdat any
 
-$"??_C@_04PFIOAJMN@foo?6?$AA@" = comdat any
+$"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@" = comdat any
 
-@"??_C@_04PFIOAJMN@foo?6?$AA@" = linkonce_odr dso_local unnamed_addr constant [5 x i8] c"foo\0A\00", comdat, align 1
+@"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@" = linkonce_odr dso_local unnamed_addr constant [8 x i8] c"foo %d\0A\00", comdat, align 1
 @__local_stdio_printf_options._OptionsStorage = internal global i64 0, align 8
+@.str = private unnamed_addr constant [28 x i8] c"insert_stochastic_predicate\00", section "llvm.metadata"
+@.str.1 = private unnamed_addr constant [12 x i8] c"./example.c\00", section "llvm.metadata"
+@llvm.global.annotations = appending global [1 x { ptr, ptr, ptr, i32, ptr }] [{ ptr, ptr, ptr, i32, ptr } { ptr @foo, ptr @.str, ptr @.str.1, i32 4, ptr null }], section "llvm.metadata"
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @sprintf(ptr noundef %0, ptr noundef %1, ...) #0 comdat {
@@ -101,8 +104,11 @@ define linkonce_odr dso_local i32 @_vsnprintf(ptr noundef %0, i64 noundef %1, pt
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
-define dso_local void @foo() #0 {
-  %1 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_04PFIOAJMN@foo?6?$AA@")
+define dso_local void @foo(ptr noundef %0) #0 {
+  %2 = alloca ptr, align 8
+  store ptr %0, ptr %2, align 8
+  %3 = load ptr, ptr %2, align 8
+  %4 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@", ptr noundef %3)
   ret void
 }
 
@@ -127,7 +133,7 @@ define linkonce_odr dso_local i32 @printf(ptr noundef %0, ...) #0 comdat {
 define dso_local i32 @main() #0 {
   %1 = alloca i32, align 4
   store i32 0, ptr %1, align 4
-  call void @foo()
+  call void @foo(ptr noundef inttoptr (i64 1289778913 to ptr))
   ret i32 0
 }
 
@@ -236,4 +242,4 @@ attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "t
 !1 = !{i32 8, !"PIC Level", i32 2}
 !2 = !{i32 7, !"uwtable", i32 2}
 !3 = !{i32 1, !"MaxTLSAlign", i32 65536}
-!4 = !{!"clang version 20.1.4"}
+!4 = !{!"clang version 20.1.8"}
