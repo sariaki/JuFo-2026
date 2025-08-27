@@ -10,3 +10,5 @@
 $\implies$ Problem bei Param x == 1 !!! infinite loop
 FastMathFlags?
 x=1 $\implies$ u = massiv
+
+Fazit: Irgendwas mit LLVM $1/DBL\_MAX * x$ geht
