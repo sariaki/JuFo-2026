@@ -50,6 +50,20 @@
             }
           },
           {
+            "id": "1b3dbdcb4d3c2143",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IDEE GEGEN PATTERN-MATCHING.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IDEE GEGEN PATTERN-MATCHING"
+            }
+          },
+          {
             "id": "68fd3707731d181e",
             "type": "leaf",
             "state": {
@@ -78,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -217,6 +231,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -225,12 +240,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22cd8dba3d63f63d",
+  "active": "1b3dbdcb4d3c2143",
   "lastOpenFiles": [
-    "TODO Implementierung.md",
+    "FRAGEN.md",
+    "IDEE GEGEN PATTERN-MATCHING.md",
     "Notizen.md",
+    "TODO Implementierung.md",
     "TODO Recherche.md",
-    "TODO Schreiben.md",
-    "FRAGEN.md"
+    "TODO Schreiben.md"
   ]
 }
