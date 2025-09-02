@@ -32,7 +32,7 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool isSignedInt)
     }
     else
     {
-        report_fatal_error("castToDouble: unsupported source type");
+        report_fatal_error("Utils::CastIRValueToDouble: unsupported source type");
     }
 }
 
@@ -41,7 +41,7 @@ CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* Dbl)
     LLVMContext& C = M.getContext();
     if (!Dbl || !Dbl->getType()->isDoubleTy())
     {
-        report_fatal_error("insertPrintDouble: unsupported parameter type");
+        report_fatal_error("Utils::PrintIRDouble: unsupported parameter type");
     }
 
     Type* i32Ty = Type::getInt32Ty(C);
