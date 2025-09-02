@@ -12,6 +12,8 @@ set(LLVM_DIR "C:/LLVM/lib/cmake/llvm"
 # to your LLVM installation's `lib/cmake/llvm` directory
 find_package(LLVM REQUIRED CONFIG)
 
+# TODO: Maybe use precompiled header for LLVM?
+
 # Include the part of LLVM's CMake libraries that defines `add_llvm_pass_plugin`
 include(AddLLVM)
 

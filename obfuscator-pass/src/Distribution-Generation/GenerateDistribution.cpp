@@ -2,7 +2,7 @@
 
 // https://luc.devroye.org/chapter_ten.pdf
 // https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl07.html
-FunctionCallee Distribution::Create(Module& M, Value* Lambda)
+FunctionCallee Distribution::CreatePoisson(Module& M, Value* Lambda)
 {
     LLVMContext& LLVMCtx = M.getContext();
     IRBuilder<> IRB(LLVMCtx);
@@ -33,7 +33,7 @@ FunctionCallee Distribution::Create(Module& M, Value* Lambda)
     // Let p_0 = e^{-\lambda}
     // TODO: Do exp() call at compile time
     IRB.SetInsertPoint(EntryBB);
-    insertPrintDouble(M, IRB, UniformArg);
+    Utils::PrintIRDouble(M, IRB, UniformArg);
     Value* NegLambda = IRB.CreateFNeg(Lambda);
     Value* P0 = IRB.CreateCall(ExpFn, { NegLambda }, "p0");
 

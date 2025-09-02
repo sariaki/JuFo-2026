@@ -14,6 +14,12 @@ list(TRANSFORM
   OUTPUT_VARIABLE OBFUSCATOR_SOURCES
 )
 
+# Make VS mirror folder structure
+source_group(
+    TREE ${CMAKE_CURRENT_SOURCE_DIR}
+    FILES ${OBFUSCATOR_SOURCES}
+  )
+
 # Declare plugin as a dynamic library
 add_library(Obfuscator MODULE
   ${OBFUSCATOR_SOURCES}
