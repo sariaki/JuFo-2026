@@ -8,11 +8,15 @@
 #include <llvm/Passes/PassBuilder.h>
 #include <llvm/Passes/PassPlugin.h>
 #include <llvm/Support/raw_ostream.h>
+#include <random>
+#include <optional>
 #include "../Utils/Utils.hpp"
+#include "BernsteinPolynomialRegression.hpp"
 
 using namespace llvm;
 
 namespace Distribution
 {
     FunctionCallee CreatePoisson(Module& M, Value* Lambda);
+    FunctionCallee CreateRandom(Module& M, std::mt19937 Rng);
 }

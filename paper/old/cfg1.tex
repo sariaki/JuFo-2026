@@ -1,0 +1,51 @@
+\newsavebox{\codes}
+\newsavebox{\codel}
+\newsavebox{\coder}
+
+\newsavebox{\codes}
+\begin{lrbox}{\codes}
+\begin{lstlisting}[language={[x86masm]Assembler}]
+sub_1819242E0 proc near
+...
+mov     dword ptr [rbp+0A60h], 8A25F401h
+mov     eax, [rbp+0A60h]
+test    al, 1
+jz      short loc_1819243CD
+\end{lstlisting}
+\end{lrbox}
+
+\newsavebox{\codel}
+\begin{lrbox}{\codel}
+\begin{lstlisting}[language={[x86masm]Assembler}]
+...
+retn
+\end{lstlisting}
+\end{lrbox}
+
+\newsavebox{\coder}
+\begin{lrbox}{\coder}
+\begin{lstlisting}[language={[x86masm]Assembler}]
+loc_1819243CD:
+rep imul ebp, [rbx+rbp*8+0F2E668Eh], 841Fh
+sub_1819242E0
+\end{lstlisting}
+\end{lrbox}
+
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Knoten
+    \node [block] (start) {
+        \usebox{\codes}
+    };
+    \coordinate [below=of start] (midpoint);
+    \node [block, left=of midpoint] (left) {
+        \usebox{\codel}
+    };
+    \node [block, right=of midpoint] (right) {
+        \usebox{\coder}
+    };
+    
+
+    % Kanten
+    \path [line, color=green] (start) -- (left);
+    \path [line, color=red] (start) -- (right);
+\end{tikzpicture}

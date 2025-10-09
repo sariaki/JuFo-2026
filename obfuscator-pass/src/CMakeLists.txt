@@ -18,7 +18,7 @@ list(TRANSFORM
 source_group(
     TREE ${CMAKE_CURRENT_SOURCE_DIR}
     FILES ${OBFUSCATOR_SOURCES}
-  )
+)
 
 # Declare plugin as a dynamic library
 add_library(Obfuscator MODULE
@@ -29,7 +29,7 @@ if(MSVC)
   target_compile_options(Obfuscator PRIVATE
     $<$<CONFIG:Release>:/MT>
     $<$<CONFIG:Debug>:/MT> # NOTE: LLVM is compiled as Release on my machine
-  )
+)
 endif()
 
 # Make DLL/so have no "lib" prefix
@@ -39,8 +39,8 @@ set_target_properties(Obfuscator PROPERTIES
   WINDOWS_EXPORT_ALL_SYMBOLS ON
 )
 
-# Hook up to LLVM
+# Hook up to LLVM & NLopt
 find_package(LLVM REQUIRED CONFIG)
 target_include_directories(Obfuscator PRIVATE ${LLVM_INCLUDE_DIRS})
-target_link_libraries(Obfuscator PRIVATE LLVMCore LLVMSupport)
+target_link_libraries(Obfuscator PRIVATE LLVMCore LLVMSupport nlopt) # Eigen3::Eigen
 llvm_update_compile_flags(Obfuscator)

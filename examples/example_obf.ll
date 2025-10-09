@@ -1,7 +1,7 @@
 ; ModuleID = 'example_obf.bc'
 source_filename = "example.c"
 target datalayout = "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
-target triple = "x86_64-pc-windows-msvc19.40.33811"
+target triple = "x86_64-pc-windows-msvc19.44.35215"
 
 $sprintf = comdat any
 
@@ -28,9 +28,7 @@ $"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@" = comdat any
 @.str = private unnamed_addr constant [28 x i8] c"insert_stochastic_predicate\00", section "llvm.metadata"
 @.str.1 = private unnamed_addr constant [10 x i8] c"example.c\00", section "llvm.metadata"
 @llvm.global.annotations = appending global [1 x { ptr, ptr, ptr, i32, ptr }] [{ ptr, ptr, ptr, i32, ptr } { ptr @foo, ptr @.str, ptr @.str.1, i32 4, ptr null }], section "llvm.metadata"
-@fmt_u = private unnamed_addr constant [10 x i8] c"u=%0.17g\0A\00", align 1
-@fmt_u.1 = private unnamed_addr constant [10 x i8] c"u=%0.17g\0A\00", align 1
-@fmt_u.2 = private unnamed_addr constant [10 x i8] c"u=%0.17g\0A\00", align 1
+@fmt_u = private unnamed_addr constant [20 x i8] c"UniformArg: %0.17g\0A\00", align 1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define linkonce_odr dso_local i32 @sprintf(ptr noundef %0, ptr noundef %1, ...) #0 comdat {
@@ -111,17 +109,15 @@ define dso_local void @foo(ptr noundef %0) #0 {
   %ptrtoint = ptrtoint ptr %0 to i64
   %ptrsitofp_to_double = sitofp i64 %ptrtoint to double
   %2 = fmul double %ptrsitofp_to_double, 0x4000000000000
-  %3 = call i32 (ptr, ...) @printf(ptr @fmt_u.1, double %ptrsitofp_to_double)
-  %4 = call i32 (ptr, ...) @printf(ptr @fmt_u.2, double %2)
-  %5 = call i64 @sample_poisson(double %2)
-  %6 = icmp slt i64 %5, 140
-  br i1 %6, label %always_hit, label %never_hit
+  %3 = call i64 @sample_poisson(double %2)
+  %4 = icmp slt i64 %3, 140
+  br i1 %4, label %always_hit, label %never_hit
 
 always_hit:                                       ; preds = %1
-  %7 = alloca ptr, align 8
-  store ptr %0, ptr %7, align 8
-  %8 = load ptr, ptr %7, align 8
-  %9 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@", ptr noundef %8)
+  %5 = alloca ptr, align 8
+  store ptr %0, ptr %5, align 8
+  %6 = load ptr, ptr %5, align 8
+  %7 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@", ptr noundef %6)
   ret void
 
 never_hit:                                        ; preds = %1
@@ -277,15 +273,11 @@ attributes #1 = { nocallback nofree nosync nounwind willreturn }
 attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #3 = { alwaysinline }
 
-!llvm.dbg.cu = !{!0}
-!llvm.module.flags = !{!2, !3, !4, !5, !6}
-!llvm.ident = !{!7}
+!llvm.module.flags = !{!0, !1, !2, !3}
+!llvm.ident = !{!4}
 
-!0 = distinct !DICompileUnit(language: DW_LANG_C11, file: !1, producer: "clang version 21.1.0-rc3", isOptimized: false, runtimeVersion: 0, emissionKind: NoDebug, splitDebugInlining: false, nameTableKind: None)
-!1 = !DIFile(filename: "example.c", directory: "C:\\Users\\paulr\\Desktop\\JuFo-2026\\examples")
-!2 = !{i32 2, !"Debug Info Version", i32 3}
-!3 = !{i32 1, !"wchar_size", i32 2}
-!4 = !{i32 8, !"PIC Level", i32 2}
-!5 = !{i32 7, !"uwtable", i32 2}
-!6 = !{i32 1, !"MaxTLSAlign", i32 65536}
-!7 = !{!"clang version 21.1.0-rc3"}
+!0 = !{i32 1, !"wchar_size", i32 2}
+!1 = !{i32 8, !"PIC Level", i32 2}
+!2 = !{i32 7, !"uwtable", i32 2}
+!3 = !{i32 1, !"MaxTLSAlign", i32 65536}
+!4 = !{!"clang version 20.1.8"}

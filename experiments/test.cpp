@@ -25,18 +25,18 @@ int main() {
     // Seed
     srand(static_cast<unsigned>(time(nullptr)));
 
-    // Compute epsilon so that P(|Z| <= ε) = 0.99
+    // epsilon so that P(|Z| <= ε) = 0.99
     const double EPSILON = 2.5758293035489004;
-    std::cout << "epsilon for 99% interval is ±" << EPSILON << "\n\n";
+    std::cout << "epsilon for 99% interval is +-" << EPSILON << "\n\n";
 
     double z = standard_normal();
-	std::cout << z << "\n";
-	
-	if (z > 2.576) {
-		std::cout << "WHAAA" << "\n";
-	}
-	else {
-		std::cout << "XD" << "\n";
-	}
+    std::cout << z << "\n";
+    
+    if (z > 2.576) {
+        std::cout << "Impossible case occured" << "\n";
+    }
+    else {
+        std::cout << "All good" << "\n";
+    }
     return 0;
 }

@@ -1,15 +1,6 @@
 \documentclass[11pt,a4paper,ngerman]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amstext}
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-\theoremstyle{plain}
-\newtheorem{example}{Beispiel}
-
 % Times New Roman
 \usepackage{newtxtext,newtxmath}
 \usepackage[ngerman]{babel}
@@ -31,12 +22,25 @@
 }
 \captionsetup[wrapfigure]{}
 
+\usepackage{enumitem}
+
 \usepackage{listings}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
 \usepackage{biblatex}
 \addbibresource{bib.bib}
+
+\usepackage{amsmath}
+\let\openbox\undefined
+\usepackage{amsthm}
+\usepackage{amstext}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{plain}
+\newtheorem{example}{Beispiel}
+
+\usepackage{xcolor}
 
 % \usepackage{csquotes}
 \usepackage{booktabs}  
@@ -46,8 +50,7 @@
 \usepackage{hyperref}
 \usepackage{cleveref}
 
-% \title{\bf\Huge SArSO: Symbolische Ausführung resistenter Software-Obfuskation mittels opaker Prädikate unentscheidbarer stochastischer Funktionen}
-\title{\bf\Huge SAroP: Symbolische Ausführung resistenter opake Prädikate mittels stochastischer Unentscheidbarkeit}
+\title{\bf\Huge Opake Prädikate gegen symbolische Ausführung mittels stochastischer Unentscheidbarkeit}
 \date{}
 
 \begin{document}
@@ -73,29 +76,377 @@
 \newpage
 \setcounter{page}{0}
 \section{Projektüberblick}
-%In diesem Projekt wird eine neue Softwareobfuskationsmethode präsentiert, welche sich als resistent gegenüber Symbolischer Ausführungsattacken erweist. ...
-In diesem Projekt wird eine neue Klasse an opaken Prädikaten präsentiert; die Klasse stochastischer Prädikate, welche sich als resisten gegenüber symbolischen Ausführungsattacken erweist. ...
+%In diesem Projekt wird eine neue Klasse an opaken Prädikaten präsentiert; die Klasse stochastischer Prädikate $\mathcal{P}_{stoch}$, welche sich als resisten gegenüber symbolischen Ausführungsattacken erweist. Ihr Ansatz wird dargestellt und eine konkrete Art in Form eines LLVM-Passes implementiert. Schließlich wird die neue Obfuskation mit existierenden Methoden verglichen und Vor- und Nachteile sowie mögliche Angriffe sowie Härtungen dagegen diskutiert.
+In diesem Projekt wird sich mit der Softwareobfuskation, also dem Verschleiern/Verstecken wichtiger Funktionalitäten von Programmen, beschäftigt. Konkret wird eine neue Art der Obfuskation vorgestellt, welche sich als resistent gegenüber existierender Methoden zur Deobfuskation erweist. Hierfür werden Wahrscheinlichkeiten in Bedingungen innerhalb des Programmes verknüpft, wobei für einen Angreifer, welcher das Programm verstehen möchte, unklar ist, inwiefern diese Bedingungen wahr oder falsch sind. Obwohl die Erfüllung dieser Bedingungen zufällig ist, werden Wahrscheinlichkeiten verwendet, welche in der Praxis garantieren, dass immer das gewünschte Verhalten auftritt.
+
 \newpage
 
 \section{Einleitung}
 % TODO: Vielleicht was auf Makro-Ebene sagen? Krieg, geopol. Spannungen, Cyber-Angriffe
-\emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren. Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. EDRS zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von ''Reverse Engineering'', sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
+\emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren. Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. EDRS zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
 
-Diese Arbeit fokussiert sich auf eine Art der Obfuskation, der Kontrollflussobfuskation, und der meist verbreiteten Angriffsweise, um diese zu bekämpfen.
+Diese Arbeit fokussiert sich auf eine Art der Obfuskation, der Kontrollflussobfuskation, und der meist verbreiteten Angriffsweise, um diese zu bekämpfen. ...
 
-% TODO: Annahmen klären: Grundverständnis von Assembly, Kompilern etc.
-\subsection{Beitrag dieser Arbeit}
+% TODO: Beitrag dieser Arbeit
+% TODO: Annahmen klären: Grundverständnis von Assembler, Kompilern, grundlegende Zahlentheorie etc.
+Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern, grundlegender Zahlentheorie und linearer Algebra an.
+% TODO: Notation erklären für z.B. Matrizen, Vektoren
+Matrizen und Vektoren werden fettgedruckt, wobei Matrizen großgeschrieben werden (z.B. $\mathbf{A}$) und Vektoren klein (z.B. $\textbf{b}$).
 % TODO: Klären, was in welchem Abschnitt gemacht wird.
 
-\input{theorie}
+\section{Theoretische Grundlagen}
+\subsection{Obfuskation}
+Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
+\begin{definition}[Obfuskation]
+Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
+Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
+\end{definition}
 
-\input{hintergrund}
+Per Definition sind somit Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen stark aus, wie später ersichtlich sein wird.
 
-\input{ansatz}
+Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \emph{Stärke}, \emph{Resilienz}, \emph{Kosten} und \emph{Tarnung} verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
+%Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
+%TODO: Arten der Obfuskation?
 
-\input{implementierung}
+\subsection{Opake Prädikate}
+Die folgenden Definitionen sind aus \cite{tofighi-shiraziDefeatingOpaquePredicates2019} sowie vom Pionierwerk \cite{collbergManufacturingCheapResilient1998} modifiziert übernommen. Es wird sich auf hierbei auf invariante opake Prädikate beschränkt. Ferner wird angenommen, dass alle Funktionen/Prädikatenterme evaluierbar sind.
+\begin{definition}[Opake Prädikate]
+Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn für alle $\phi\in \Phi$ gilt, dass $\mathcal{O}(\phi)$ denselben Wert ($1$ oder $0$ bzw. wahr oder falsch) hat.
+\end{definition}
+In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert für alle möglichen Parameter \emph{a priori} bestimmt ist (also für den Programmierer bekannt ist) aber für ein Verständnis einer weiteren Person (ein Angreifer) \emph{a posteriori} (durch Beobachtung) zu bestimmen ist.
 
-\input{evaluierung}
+Diese Arbeit unterscheidet zwischen zwei Arten opaker Prädikate:
+\begin{definition}
+Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ ein opakes Prädikat.\\
+$\mathcal{O}(\phi)$ ist vom Typ
+\begin{enumerate} 
+    \item $P^T$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=1\text{ bzw. } wahr$. 
+    \item $P^F$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=0\text{ bzw. } falsch$. 
+\end{enumerate}
+\end{definition}
+% TODO: Beispiele
+% \begin{example}
+% ...
+% \end{example}
+% \begin{wrapfigure}{r}{0.25\textwidth} \label{fig:overwatchGraph}
+%     \includegraphics[
+%         scale=1.25
+%         % trim=0pt 700pt 1000pt 0pt
+%         % clip
+%     ]{overwatch_byfron_cropped}
+%     \caption{Kontrollflussgraph einer Funktion mit opakem Prädikat. Abbildung aus der Disassembly des Spiels ''Overwatch'' mittels IDA entnommen.}
+% \end{wrapfigure}
+% \begin{wrapfigure}{r}{0.25\textwidth}
+%     \includegraphics[
+%         scale=0.25
+%         % trim=0pt 700pt 1000pt 0pt
+%         % clip
+%     ]{pseudocode_cropped}
+%     \caption{IDA Pseudocode von \cref{fig:overwatchGraph}.}
+% \end{wrapfigure}
+\begin{minipage}[t]{0.45\textwidth}
+  \centering
+  % \includegraphics[width=\linewidth]{overwatch_byfron_cropped}
+  \includegraphics[ 
+    scale=1.25
+    % trim=0pt 700pt 1000pt 0pt
+    % clip
+    ]{overwatch_byfron_cropped}
+  % \resizebox{0.9\textwidth}{!}{
+  %   \input{cfg1}
+  % }
+  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.5\textwidth}
+  \centering
+  % \resizebox{\columnwidth}{!}{\usebox{\idacode1}}
+  \includegraphics[scale=0.2]{komplex_cropped}
+  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
+\end{minipage} \\
+
+% TODO: erklären was das mit Obfuskation zu tun hat + auf Grafik eingehen
+Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
+
+\begin{example}
+Das Prädikat $\mathcal{O}(\phi)=(-1977224191 \space \& \space 1 == 1)$ aus \cref{fig:overwatchGraph}, wobei ''$\&$'' dem bitweisen ''und'' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
+\end{example}
+
+\begin{example}
+Das Prädikat $\mathcal{O}(\phi)= (y < 10) \vee (x \cdot (x + 1) \text{ mod } 2 == 0)$ aus \text{\cite{ieeespro2015-JunodRWM}} mit $\phi=(x,y)$ und $x, y \in \mathbb{Z}$ ist etwas komplexer. Auch dieses Prädikat ist immer wahr, da $x\cdot (x+1)$ immer gerade ist. Der Wert von $y$ ist folglich egal.
+\end{example}
+
+%Mehrere Methoden zur Generierung solcher starken opaken Prädikate wurden bereits publiziert. Ein Überblick über diese sowie ihre Limitationen wird in \cref{sec:motivation} gegeben.
+\subsection{Symbolische Ausführung} % Automatische Deobfuskationsattacken
+\begin{wrapfigure}{r}{0.3\textwidth}
+  \begin{center}
+    \includegraphics[width=0.3\textwidth]{sym_exec}
+  \end{center}
+  \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen}
+\end{wrapfigure}
+%Symbolische Ausführung wird als Methode verwendet, um verschiedene Obfuskationsmethoden in Programmen anzugreifen. 
+Nach dem aktuellen Stand der Forschung scheint symbolische Ausführung der vielversprechendste Ansatz für die Bekämpfung opaker Prädikate zu sein.
+\textcolor{red}{Ein Symbolischer Ausführungsengine besteht aus 2 Hauptkomponenten: einem zentralen symbolischen Ausführungsmodul und einem Modul zur Lösung von Einschränkungen (\emph{constraint solver}). Es gibt zwei Arten symbolischer Ausführungsmodule: statisch und dynamisch (letzteres wird auch concolische symbolische Ausführung genannt). Concolische Ausführungsengines wie BAP und Triton führen zunächst das Programm mit konkreten Werten aus und führen dann eine symbolsiche Analyse der generierten Befehlsspuren durch.
+Statische symbolische Ausführungsengines ''heben'' zuerst die Assembly-Anweisungen des Programmes in eine abstraktere Zwischensprache (''intermediate representation'') an und führt dann eine symbolsiche Ausführung dessen mit statischen Analyseansätzen durch. Diese Methode wird erfolgreich in Angr verwendet.}
+\subsection{Kumulative Verteilungsfunktionen}
+\begin{definition}[Kumulative Verteilungsfunktion] \label{def:kumVer}
+Eine Funktion $F$ ist eine kumulative Verteilugnsfunktion, wenn gilt:
+\begin{enumerate}[label={(\arabic*)}]
+    \item $F$ ist streng monoton steigend:
+    \item $F$ ist rechtsstetig:
+    \item $\lim_{x\to -\infty} F(x) = 0 \text{ und } \lim_{x\to +\infty} F(x)=1$
+\end{enumerate}
+\end{definition}
+% \subsection{Bernstein-Polynome}
+
+\section{Hintergrund und Motivation} \label{sec:motivation}
+Der folgende Abschnitt soll einen Überblick über existierende Arten opaker Prädikate liefern und diese in Bezug auf ihre Qualität evaulieren. Hierfür werden die Faktoren aus \cref{par:metriken} verwendet.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+                & Stärke & Resilienz & Kosten & Tarnung \\
+        \midrule
+        Obfuscator-LLVM \cite{ieeespro2015-JunodRWM}            & X & trivial & sehr gering & hoch \\
+        \emph{Bi-Opake} Prädikate \cite{xuManufacturingResilientBiOpaque2018}  & X & mittel & hoch & hoch \\
+        \emph{Exceptions} \cite{linBranchObfuscationUsing2013}         & X & mittel & sehr hoch & gering \\
+        NP-schwere Probleme \cite{}       & X & gering & mittel & mittel \\
+        ungelöste Probleme \cite{wangLinearObfuscationCombat2011}        & X & hoch & sehr hoch & hoch \\
+        \bottomrule
+    \end{tabular}
+    \caption{Vergleich existierende Arten opaker Prädikate.}
+    \label{tab:vergleichderMethoden}
+\end{table}
+\textcolor{red}{Hier objektiver werden, evtl. ''Literature Reviews'' zitieren und zusammenfassen}
+% Das Obfuscator-LLVM-Projekt \cite{ieeespro2015-JunodRWM} generiert opake Prädikate der Form $$y < 10 \vee  x \cdot (x + 1) \text{ mod } 2 == 0$$ wobei $x$ und $y$ symbolische Variablen sind, deren Wert statisch nicht bestimmbar ist. Ein Blick darauf zeigt, dass $\forall x:  x \cdot (x+1)$ gerade und somit durch $2$ teilbar ist. Die generierten opaken Prädikate sind somit auch vulnerabel gegenüber automatisierten symbolischen Ausführungsattacken. Stärke und Resilienz sind somit gering. Da nur wenige arithmetische Anweisungen zum Programm hinzugefügt werden sind Kosten gering und Tarnung hoch, da diese einem Angreifer nicht automatisch suspekt sind.
+
+% Die sog. ''symbolischen'' Prädikate, wie sie in \cite{xuManufacturingResilientBiOpaque2018} vorgestellt wurden, versuchen eine solche Deobfuskation zu vermeiden. Hierfür nutzen diese Prädikate bewusste Konzepte, welche in den symbolischen Ausführungsengines entweder gar nicht (wie z.B. Thread-Support) oder nur teilweise implementiert sind (wie z.B. Gleitkommazahlen).
+% \begin{figure}[h]
+%     \centering
+%     \begin{lstlisting}[language=c++]
+% int func(int symvar) {
+%     int j = symvar;
+%     float f = j/1000000.0;
+%     if(f==0.1){
+%         Bogus();
+%     }
+%     if(1024+f==1024&&f>0%%j==7){
+%         Foo();
+%     }
+% }
+% \end{lstlisting}
+%     \caption{''symbollisches'' Prädikat mit Gleitkommazahlen, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen.}
+%     \label{fig:enter-label}
+% \end{figure}
+% % TODO: Stärke
+% Zwar waren die Prädikate zur Zeit ihrer Veröffentlichung 2018 noch resilient gegenüber automatisierten Attacken - aufgrund ihrer Natur basiert deren Resilienz allerdings auf fehlenden Implementierungsfeinheiten der symbolischen Ausführungsengines, nicht fundamentalen Limitationen derer. Jegliche Weiterentwicklung dieser Methode wird also von einer Anpassung der anderen Seite beantwortet - es handelt sich um ein spieltheoretisches Nullsummenspiel \cite{}.
+% Je nach Methode variieren die Kosten stark von gering (z.B. bei Gleitkommazahlen) bis zu hoch (z.B. bei Threads).
+
+% Ähnliche Probleme bezüglicher ihrer Resilienz haben \emph{exception}basierte opake Prädikate \cite{linBranchObfuscationUsing2013}. Zudem tragen diese sehr hohe Kosten
+
+% TODO: Einfach Tabelle machen und dann losschreiben, warum wir *das* brauchen?
+
+\begin{itemize}
+    \item Obfuscator-LLVM \checkmark
+    \item Bi-Opaque Prädikate \checkmark
+    \item Linear Obfuscation to Combat Symbolic Execution
+    \item Binary Code Side Effects \checkmark
+    \item ''When Are Opaque Predicates Useful''
+    \item ''Software obfuscation on a theoretical basis and its implementation,'' IEICE Trans. on Fundamentals of Electronics, Communications and Computer Sciences, 2003.
+    \item (Collberg et al.) Tigress (dynamic opaque prediactes!!)
+\end{itemize}
+
+\section{Ansatz} 
+\subsection{Angreifermodell}
+Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem ähnlichen Angreifermodell wie \cite{xuManufacturingResilientBiOpaque2018} aus.
+Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch mittels symbolischer Ausführung sowie durch Untersuchung der Programmanweisungen analysieren. Pattern Matching ist daher möglich. Der Angreifer kann das Programm nicht ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (''virtual machines'') gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
+Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
+\subsection{Stochastische opake Prädikate} % Grundidee
+Während andere Methoden wie \cite{xuManufacturingResilientBiOpaque2018} auf den praktischen Implementierungslimitationen symbolischer Ausführungsengines basieren, nutzt diese Methode deren fundamentale Grenzen aus. 
+
+Die symbolischen Ausführungsengines zugrundeliegenden SMT-Solver können im Wesentlichen folgendes:
+\begin{enumerate}
+    \item Den Wahrheitswert einer Aussage herauszufinden.
+    \item Variablen mögliche Werte zuzuweisen, damit diese Aussage erfüllt ist.
+\end{enumerate}
+In der Regel genügt dies für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme. Um den Wahrheitswert einer Aussage zu finden, muss sie für jeden möglichen Wert jeder Variable vom symbolische Ausführungsengine bewiesen werden. % TODO: Soll das nicht lieber in 3.3?
+
+Will man allerdings Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Beschränkungen (\emph{constraints} unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Wariablenwerte, welche zu \emph{falschen} Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell \textit{logisch} korrekt bewiesen - praktisch allerdings nicht.
+\begin{example}
+Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999999999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0000000001$ den Wert $0$ zurückgibt. 
+\begin{algorithm}[!htb] 
+    \caption{Beispiel eines probabilistischen Algorithmus}
+    \label{alg:bspProb1}
+    \begin{algorithmic}[1]
+    \Procedure{Foo}{{}}
+        \State $x \gets \Call{UniformRand}{{0,1}}$
+        \If{$x \leq 0,999999999999$}
+            \State \Return $1$
+        \EndIf
+        \State \Return $0$
+    \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob dieser Algorithmus den Wert $1$ wiedergibt, so würde dieser behaupten, dass dies falsch sei.
+\end{example}
+%Es kommt zu einer sog. Pfadexplosion: Durch den aufgezwungenden Bruteforce verwendet der Engine mehr und mehr Ressourcen bis das Programm abstürzt.
+
+Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
+\begin{definition}[Stochastische opake Prädikate] \label{def:stochOpaque}
+Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. % wenn die Wahrscheinlichkeit eines Eintretens des Falls $A\in \{0, 1\}$ unter der eines Hardwarefehlers liegt. % TODO: 10^{-k} Präzision
+\end{definition}
+\begin{definition} \label{def:pStoch}
+$\mathcal{P}_{stoch}$ ist die Klasse aller stochastischen opaken Prädikate.
+\end{definition}
+
+Zu $\mathcal{P}_{stoch}$ gehören gemäß \cref{def:pStoch} also sowohl Prädikate wie $\Call{UniformRand}{{0,1}} \leq 0,999999999999 == 1$ aus \cref{alg:bspProb1} als auch Prädikate wie $\Call{Pois}{{\lambda=5}} \geq 10 == 0$.
+
+Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...% TODO: Wahrscheinlichkeit eines Hardwarefehlers zitieren.
+
+\subsection{Algorithmus}
+% TODO: Es kann mehrere Arten geben!
+%Während andere präsentierte Ansätze auf schweren Problemen beruhen, welche gelöst werden müsse, um einen Pfad auszuschließen, macht dieser Algorithmus dieses Ausschließen mit herkömmlichen Methoden unmöglich. Hierfür wird mit Wahrscheinlichkeit gearbeitet. 
+
+% TODO: Erklären, warum wir nur diesen Fall betrachten
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $x$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $x$ nicht statisch bestimmen kann. Es wird angenommen, dass $x$ gleichverteilt ist. Diese Verteilung wird nun in eine andere (z.B. Normal-, Exponential-, Bernoulliverteilung) transformiert. Über diese können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
+\begin{algorithm}[!htb] \label{alg:Imp}
+    \caption{Beispiel eines stochastisch opaken Prädikats}
+    \begin{algorithmic}[1]
+    \Require{$x$: zufällige, unbekannte Zahl}
+    
+    \State $\mathit{SkalierteZufallszahl} \gets \Call{AbbildungAufEinheitsintervall}{\mathit{x}}$ \Comment{Einheitsintervall: [0; 1]}
+    \State $\mathit{PoissonVerteilt} \gets \Call{InverseCDF}{\mathit{SkalierteZufallszahl}, \lambda=\mathit{5}}$
+    \If{$\mathit{PoissonVerteilt} \leq 10$}
+        \State ... \Comment{Praktisch immer wahr ($P(X\leq10)=0,9863$)}
+    \Else
+        \State ... \Comment{Praktisch nie wahr ($P(X\geq10)=0,03183$)}
+    \EndIf
+    \end{algorithmic}
+\end{algorithm}
+\cref{alg:Imp} zeigt die Umsetzung eines stochastischen opaken Prädikats in einem Programm.
+
+Der Pseudocode für die Generierung solcher stochastischer opaker Prädikate ist in \cref{alg:stochasticOpaque} beschreiben.
+\begin{algorithm}[!htb] 
+    \caption{Generierung stochastischer opaker Prädikate}
+    \label{alg:stochasticOpaque}
+    \begin{algorithmic}[1]
+    \State Erstelle Funktion $\mathit{TransformiereVerteilung}(x)$ im Modul, welche die gleichverteilte Variable $x\in\space ]0; 1]$ ...
+    \Procedure{FügePrädikatEin}{$\mathit{Modul, T}$}
+    \ForAll{Funktion in Modul}
+    
+        \State $BasisBlock \gets \Call{ZufälligerBasisBlock}{\mathit{Funktion}}$
+        \State $\mathit{Entry} \gets \Call{ZufälligeAnweisung}{\mathit{BasisBlock}}$
+        %\State $\mathit{LebendeVariable} \gets \Call{ZufälligeLebendeVariable}{\mathit{Entry}}$ \\
+        \State $\mathit{ZufaelligerWert} \gets \Call{ErstelleFunktionsAufruf}{\mathit{Gleichverteilung}, ]0; 1]}$ \\
+        
+        \State $\mathit{TransformierteVariable} \gets \Call{ErstelleFunktionsAufruf}{\mathit{TransformiereVerteilung, ZufaelligerWert}}$
+        \State $\Call{ErstelleVergleich}{\mathit{TransformierteVariable}}$ \\
+        
+        \State $BB_{\mathrm{immer\_wahr}} \gets \Call{Splitblock}{\mathit{BasisBlock, Entry}}$
+        \Comment{Basisblöcke für Prädikatenfälle generieren}
+        \State $BB_{\mathrm{nie\_wahr}} \gets \Call{NeuerBlock}{\mathit{Funktion}}$ \\
+    
+        \State $\Call{ErstelleBedingteVerzweigung}{"\mathit{TransformierteVariable \geq T}", BB_{\mathrm{immer\_wahr}}, BB_{\mathrm{nie\_wahr}}}$ \\
+
+        \State Fülle Basisblock $BB_{\mathrm{nie\_wahr}}$ mit zufälligen Anweisungen.
+    \EndFor
+    \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+\section{Implementierung}
+\subsection{Entscheidungen}
+Zur Implementierung kamen drei Ansätze in Betracht: die Entwicklung eines Bin2Bin-Obfuskators\footnote{Direkte Manipulation von Assembler-Anweisungen existierender Programme.}, die Implementierung in Form eines LLVM-Passes \cite{LLVM, LLVMProject}\footnote{Nutzung des LLVM-Projekts, um einen sog. \emph{Compiler-Pass} zu schreiben.} sowie die Quellcodemanipulation\footnote{durch z.B. C-Makros und das Einfügen von inline Assembler-Ausschnitten}
+Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vorteile:
+
+Durch die Nutzung von LLVM profitiert man von Abstraktion. Anstatt manuell Assembler-Anweisungen hinzuzufügen, Relocations zu managen und Support für verschiedene Betriebssysteme und Prozessorarchitekturen manuell zu übernehmen, kann dies indirekt einer Gruppe kompetenter Experten übergeben werden, welche sich aktiv damit befassen. Auch wenn andere Methoden wie ein Bin2Bin-Obfuskator direktere Kontrolle bieten würden, ist es fraglich ob eine Person in relativ kurzer Zeit verschieden gleiche Funktionalitäten besser implementieren könnte. 
+
+Ähnliches gilt für die Effizienz kompilierter Programme: Durch die abstrake Zwischensprache in LLVM profitiert man von der konstanten Verbesserung tausender LLVM-Contributer, welche dafür sorgen, dass die eigenen Programme nahezu optimal kompilliert werden. Auch das ledigliche Einfügen vieler Prädikate an zufälligen Stellen kann in größeren Programmen bereits zu erhöhten Laufzeitkosten führen. In Situationen wie der Entwicklung für Embedded Systems, IoT und Echtzeitsystemen, können leicht erhöhte Laufzeiten gegen die Anwendung einer Obfuskation sprechen. Solchen Situationen begegnet man z.B. wie bei präziser optimierter medizinischer Technik sowie im Finanzwesen beim quantitativen Trading. In beiden Situationen kann eine leichte Verzögerung fatal sein - für Unternehmen und Personen. % TODO: Vorsicht, da wir mit Wahrscheinlichkeiten arbeiten könnte dies auch schwierig werden. -> Extra begründen!
+
+Obfuskierte Programme werden also effizienter und ihre Implementierung schneller, da sich auf die Obfuskation selbst fokussiert werden kann. 
+% TODO: Verbessern
+%LLVM am besten, weil viele Probleme gelöst von Experten; funktioniert auf Windows, Linux etc. (Kann zeit mit wichtigem verbringen); Sprachenunabhängig
+
+\subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
+Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
+% Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. 
+Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...% TODO: warum kann nicht jemand symbolisch Ausführen und besimmen?
+Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. % TODO
+Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
+% TODO: ERKLÄREN rand() würde schlecht funktionieren, weil man SMT-solver konfigurieren könnte (auch hier hat man theoretisch gewonnen, weil sich Reverse-Engineer damit beschäftigen muss), sodass rand()=Konstante und somit alles determinierbar ist
+
+
+\subsection{Wahrscheinlichkeitsverteilungsgenerierung}
+Um den Ansatz gegen Pattern Matching resistent zu machen, wird er generalisiert. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes stochastisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
+Mehrere Methoden kommen hierfür infrage:
+\paragraph{Generierung über Verteilungsklasse}
+\textcolor{red}{lorem ipsum dolor sit amet...
+Der Nachteil hiervon ist, dass ...} \\
+\\
+Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt. Das allgemeine Vorgehen hierfür ist Folgendes:
+\begin{enumerate}
+    \item Wähle ein zufälliges Intervall $[a;b]$.
+    \item Teile $[a;b]$ in $n$ Teile ein.
+    \item Lege $F(a)=0$ und $F(b)=1$ fest.
+    \item Für jede Stelle $x_i\in[a;b]$ der $n$ Stellen: wähle einen Punkt $y_i$ für $F$ an dieser Stelle, sodass $y_i\in[0;1]$ maximal $\frac{1}{n}$ über $y_{i-1}$ liegt.
+    \item Führe eine Regression für die Punkte durch.
+\end{enumerate}
+Es genügt hierbei nicht, eine einfache Polynomregression durchzuführen, da hier Oszillationen zwischen den ausgewählten Punkten $(x_i,y_i)$ entstehen können. Hierdurch wäre Bedigung 1 (vgl. \cref{def:kumVer}) nicht erfüllt. Um dieses Problem zu lösen, gibt es im Wesentlichen 2 Methoden:
+\begin{enumerate}
+    \item \textbf{Splines:} Regression so durchführen, dass $F$ stückweise definiert ist über mehrere kleinere Funktionen, welche alle notwendigen Bedingungen erfüllen. Hierfür gibt es mehrere mögliche Regressionsarten.
+    \item \textbf{Bernstein-Polynom-Regression:} Auf dem skalierten Intervall $[0,1]$ parametrisieren wir $F$ durch ein Bernstein-Polynom
+    $$
+    B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}.
+    $$
+    \begin{enumerate}[label={(\arabic*)}]
+        \item Monotonie von $B_n$ folgt, wenn die Koeffizienten $c_k$ nicht fallend sind (d.\,h. $c_0\le c_1\le\cdots\le c_n$).
+        \item Stetigkeit ist gegeben, da es sich um eine Funktion handelt.
+        \item Da $F(a)=0$ und $F(b)=1$ ist und der Definitionsbereich von $F$ das Intervall $[0;1]$ ist, ist $\lim_{x\to -\infty} F(x) = 0 \text{ und } \lim_{x\to +\infty} F(x)=1$.
+    \end{enumerate}
+    Das Fitten \footnote{Finden nahe-optimaler Parameter $c_0,\dots,c_k$, sodass $B_n$ die Punkte $(x_1, y_1),\dots,(x_n, y_n)$ bestmöglich beschreibt} kann als \emph{Non-Negative Least-Squares}-Optimierungsproblem formuliert werden:
+    \begin{equation}
+    \begin{split}
+    \min_{c\in\mathbb{R}^{n+1}} \|\mathbf{A} c - \mathbf{y}\|_2^2 \\\text{u. d. N.}\quad \mathbf{D} c \ge 0,\; 0\le c_k \le 1,
+    \end{split}
+    \end{equation}
+wobei die Designmatrix $A_{i,k}=\binom{n}{k} x_i^k (1-x_i)^{n-k}$ und $\mathbf{D}$ die Vorwärtsdifferenz-Matrix ist.
+\end{enumerate}
+
+% \begin{table}[h]
+%     \centering
+%     \begin{tabular}{lccc}
+%         \hline
+%         Ansatz                     & Laufzeitkosten (Programm) & Laufzeitkosten (beim Obfuskieren) & Präsizion\\
+%         \hline
+%         Verteilungsklasse         & & &\\
+%         Splines                   & & &\\
+%         Bernstein-Polynom-Regression & & &\\
+%         Isotone Regression        & & &\\
+%         \hline
+%     \end{tabular}
+%     \caption{Vergleich der Ansätze.}
+%     \label{tab:vergleich_ansatze}
+% \end{table}
+Es wurde sich für eine Bernstein-Polynom-Regression entschieden aufgrund der effizienten Regression und den gering eintretenden Laufzeitkosten bei obfuskierten Programmen. Die Abweichung ...asd
+ 
+% \paragraph{Generierung über Splines}
+% ...
+% Diese Methode hat den Nachteil, dass sie in Form von Verzweigungen in ein Programm beim obfuskieren überführt werden muss. Dies geschieht auf Kosten der Laufzeit und der obfuskierten Programmgröße.
+% \paragraph{Generierung über Isotone Regression (PAV)}
+% \paragraph{Generierung über Bernstein-Polynom-Regression}
+
+\subsection{Generierung von ununterscheidbarem Füllcode}
+Probfuscation übernehmen \cite{caballeroDetectionIntrusionsMalware2016} % TODO: Probfuscation zitieren!
+% \subsection{Härtung gegen dynamische Ausführungsangriffe}
+% Probfuscation übernehmen \cite{caballeroDetectionIntrusionsMalware2016} % TODO: Probfuscation zitieren!
+
+\section{Evaluierung}
+IDEE: Programmierern das geben und empirisch ermitteln!
+\subsection{Kriterien}
+Kriterien nach Collberg et al. ...
+
+\subsection{Vergleich mit existierenden Obfuskationsmethoden}
 
 \section{Ergebnisdiskussion}
 

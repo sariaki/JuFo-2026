@@ -9,6 +9,7 @@
 #include <llvm/Support/raw_ostream.h>
 #include <llvm/Demangle/Demangle.h>
 #include <iostream>
+#include <random>
 #include "Distribution-Generation/GenerateDistribution.hpp"
 #include "Utils/Utils.hpp"
 
@@ -26,7 +27,9 @@ namespace
             LLVMContext& LLVMCtx = M.getContext();
             IRBuilder<> IRB(LLVMCtx);
 
-            srand(time(0));
+            std::random_device Dev;
+            std::mt19937 Rng(Dev());
+
             const auto Sampler = Distribution::CreatePoisson(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
 
             for (Function& F : M)
@@ -42,13 +45,12 @@ namespace
                 if (!(demangle(F.getName().str()) == "foo"))
                     continue;
 
+                Distribution::CreateRandom(M, Rng);
+                
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();
                 IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
                
-                // i64 x = sample_poisson(rand())
-                //const auto CallParameter = ConstantFP::get(IRB.getDoubleTy(), (float)rand() / (RAND_MAX + 1.0f)); // Test pseudo param
-                
                 // Get Parameter to create a symbolic variable for the solver
                 if (F.arg_empty())
                     continue;
@@ -62,9 +64,10 @@ namespace
                 Value* RecipMaxConstant = ConstantFP::get(IRB.getDoubleTy(), RecipMax);
                 const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
 
-                Utils::PrintIRDouble(M, IRB, DoubleCallParameter);
-                Utils::PrintIRDouble(M, IRB, SmallCallParameter);
+                //Utils::PrintIRDouble(M, IRB, DoubleCallParameter, "DoubleCallParameter: ");
+                //Utils::PrintIRDouble(M, IRB, SmallCallParameter, "SmallCallParameter: ");
 
+                // i64 x = sample_poisson(u))
                 const auto SampleRet = IRB.CreateCall(Sampler, { SmallCallParameter });
 
                 // if x < Threshold...
@@ -82,6 +85,7 @@ namespace
 
                 IRB.SetInsertPoint(FalseBB);
                 IRB.CreateUnreachable(); // TODO
+                
             }
 
             return PreservedAnalyses::all();

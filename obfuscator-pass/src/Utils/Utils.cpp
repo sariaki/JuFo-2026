@@ -1,6 +1,6 @@
 #include "Utils.hpp"
 
-Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool isSignedInt)
+Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
 {
     Type* srcTy = V->getType();
     LLVMContext& C = srcTy->getContext();
@@ -16,7 +16,7 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool isSignedInt)
     }
     else if (srcTy->isIntegerTy())
     {
-        if (isSignedInt)
+        if (IsSigned)
             return B.CreateSIToFP(V, doubleTy, "sitofp_to_double");
         else
             return B.CreateUIToFP(V, doubleTy, "uitofp_to_double");
@@ -25,23 +25,24 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool isSignedInt)
     {
         IntegerType* intptrTy = Type::getInt64Ty(C);
         Value* intVal = B.CreatePtrToInt(V, intptrTy, "ptrtoint");
-        if (isSignedInt)
+        if (IsSigned)
             return B.CreateSIToFP(intVal, doubleTy, "ptrsitofp_to_double");
         else
             return B.CreateUIToFP(intVal, doubleTy, "ptruitofp_to_double");
     }
     else
     {
-        report_fatal_error("Utils::CastIRValueToDouble: unsupported source type");
+        report_fatal_error("Utils::CastIRValueToDouble: unsupported source type\n");
     }
 }
 
-CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* Dbl)
+// TODO: Generalize this
+CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* DoubleValue, std::string Message)
 {
     LLVMContext& C = M.getContext();
-    if (!Dbl || !Dbl->getType()->isDoubleTy())
+    if (!DoubleValue || !DoubleValue->getType()->isDoubleTy())
     {
-        report_fatal_error("Utils::PrintIRDouble: unsupported parameter type");
+        report_fatal_error("Utils::PrintIRDouble: unsupported parameter type\n");
     }
 
     Type* i32Ty = Type::getInt32Ty(C);
@@ -49,11 +50,11 @@ CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* Dbl)
     FunctionType* printfTy = FunctionType::get(i32Ty, { i8PtrTy }, /*isVarArg=*/true);
     FunctionCallee Callee = M.getOrInsertFunction("printf", printfTy);
 
-    Value* Fmt = IRB.CreateGlobalStringPtr("u=%0.17g\n", "fmt_u");
+    Value* Fmt = IRB.CreateGlobalStringPtr(Message.append("%0.17g\n"), "fmt_u");
 
     SmallVector<Value*, 2> Args;
     Args.push_back(Fmt);
-    Args.push_back(Dbl);
+    Args.push_back(DoubleValue);
 
     CallInst* CallInst = IRB.CreateCall(Callee, Args);
     return CallInst;
