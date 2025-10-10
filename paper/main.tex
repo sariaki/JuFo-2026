@@ -98,8 +98,8 @@ Matrizen und Vektoren werden fettgedruckt, wobei Matrizen großgeschrieben werde
 \subsection{Obfuskation}
 Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
 \begin{definition}[Obfuskation]
-Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
-Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
+	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
+	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
 \end{definition}
 
 Per Definition sind somit Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen stark aus, wie später ersichtlich sein wird.
@@ -111,19 +111,19 @@ Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \em
 \subsection{Opake Prädikate}
 Die folgenden Definitionen sind aus \cite{tofighi-shiraziDefeatingOpaquePredicates2019} sowie vom Pionierwerk \cite{collbergManufacturingCheapResilient1998} modifiziert übernommen. Es wird sich auf hierbei auf invariante opake Prädikate beschränkt. Ferner wird angenommen, dass alle Funktionen/Prädikatenterme evaluierbar sind.
 \begin{definition}[Opake Prädikate]
-Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn für alle $\phi\in \Phi$ gilt, dass $\mathcal{O}(\phi)$ denselben Wert ($1$ oder $0$ bzw. wahr oder falsch) hat.
+	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn für alle $\phi\in \Phi$ gilt, dass $\mathcal{O}(\phi)$ denselben Wert ($1$ oder $0$ bzw. wahr oder falsch) hat.
 \end{definition}
 In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert für alle möglichen Parameter \emph{a priori} bestimmt ist (also für den Programmierer bekannt ist) aber für ein Verständnis einer weiteren Person (ein Angreifer) \emph{a posteriori} (durch Beobachtung) zu bestimmen ist.
 
 Diese Arbeit unterscheidet zwischen zwei Arten opaker Prädikate:
 \begin{definition}
-Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ ein opakes Prädikat.\\
-$\mathcal{O}(\phi)$ ist vom Typ
-\begin{enumerate} 
-    \item $P^T$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=1\text{ bzw. } wahr$. 
-    \item $P^F$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=0\text{ bzw. } falsch$. 
-\end{enumerate}
-\end{definition}
+	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ ein opakes Prädikat.\\
+	$\mathcal{O}(\phi)$ ist vom Typ
+	\begin{enumerate} 
+	    \item $P^T$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=1\text{ bzw. } wahr$. 
+	    \item $P^F$, wenn für alle $\phi \in \Phi$ gilt: $\mathcal{O}(\phi)=0\text{ bzw. } falsch$. 
+	\end{enumerate}
+	\end{definition}
 % TODO: Beispiele
 % \begin{example}
 % ...
@@ -189,12 +189,12 @@ Nach dem aktuellen Stand der Forschung scheint symbolische Ausführung der vielv
 Statische symbolische Ausführungsengines ''heben'' zuerst die Assembly-Anweisungen des Programmes in eine abstraktere Zwischensprache (''intermediate representation'') an und führt dann eine symbolsiche Ausführung dessen mit statischen Analyseansätzen durch. Diese Methode wird erfolgreich in Angr verwendet.}
 \subsection{Kumulative Verteilungsfunktionen}
 \begin{definition}[Kumulative Verteilungsfunktion] \label{def:kumVer}
-Eine Funktion $F$ ist eine kumulative Verteilugnsfunktion, wenn gilt:
-\begin{enumerate}[label={(\arabic*)}]
-    \item $F$ ist streng monoton steigend:
-    \item $F$ ist rechtsstetig:
-    \item $\lim_{x\to -\infty} F(x) = 0 \text{ und } \lim_{x\to +\infty} F(x)=1$
-\end{enumerate}
+	Eine Funktion $F$ ist eine kumulative Verteilugnsfunktion, wenn gilt:
+	\begin{enumerate}[label={(\arabic*)}]
+	    \item $F$ ist streng monoton steigend:
+	    \item $F$ ist rechtsstetig:
+	    \item $\lim_{x\to -\infty} F(x) = 0 \text{ und } \lim_{x\to +\infty} F(x)=1$
+	\end{enumerate}
 \end{definition}
 % \subsection{Bernstein-Polynome}
 
@@ -264,14 +264,10 @@ Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in 
 \subsection{Stochastische opake Prädikate} % Grundidee
 Während andere Methoden wie \cite{xuManufacturingResilientBiOpaque2018} auf den praktischen Implementierungslimitationen symbolischer Ausführungsengines basieren, nutzt diese Methode deren fundamentale Grenzen aus. 
 
-Die symbolischen Ausführungsengines zugrundeliegenden SMT-Solver können im Wesentlichen folgendes:
-\begin{enumerate}
-    \item Den Wahrheitswert einer Aussage herauszufinden.
-    \item Variablen mögliche Werte zuzuweisen, damit diese Aussage erfüllt ist.
-\end{enumerate}
-In der Regel genügt dies für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme. Um den Wahrheitswert einer Aussage zu finden, muss sie für jeden möglichen Wert jeder Variable vom symbolische Ausführungsengine bewiesen werden. % TODO: Soll das nicht lieber in 3.3?
+\textcolor{red}{TODO: Funktion von symbolischen Ausführungsengines}
+Dies genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
 
-Will man allerdings Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Beschränkungen (\emph{constraints} unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Wariablenwerte, welche zu \emph{falschen} Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell \textit{logisch} korrekt bewiesen - praktisch allerdings nicht.
+Will man allerdings Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Beschränkungen (\emph{constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Wariablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
 Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999999999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0000000001$ den Wert $0$ zurückgibt. 
 \begin{algorithm}[!htb] 
@@ -294,15 +290,38 @@ Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob dieser Algori
 
 Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
 \begin{definition}[Stochastische opake Prädikate] \label{def:stochOpaque}
-Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. % wenn die Wahrscheinlichkeit eines Eintretens des Falls $A\in \{0, 1\}$ unter der eines Hardwarefehlers liegt. % TODO: 10^{-k} Präzision
+	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. % wenn die Wahrscheinlichkeit eines Eintretens des Falls $A\in \{0, 1\}$ unter der eines Hardwarefehlers liegt. % TODO: 10^{-k} Präzision
+\end{definition}
+\begin{definition}[Konstruktionsschema stochastisch opaker Prädikate]
+	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
+	$$
+	\mathcal{O}(\phi) = \left[f(X) \bowtie c \right],
+	$$
+	wobei:
+	\begin{enumerate}
+		\item $f$ eine Transformation durch arithmetische und bitweise Operationen ist (z. B. $f(X) = m \cdot (X \oplus k) + b$, mit Konstanten $(m, k, b) \in \mathbb{R}$),
+		\item $c$ eine festgelegte Konstante ist,
+		\item $\bowtie$ ein Zahlenvergleichsoperator ist ($=$, $>$, $<$, $\geq$, $\leq$) und
+		\item $[\cdot]$ die Indikatorfunktion ist (1, wenn die Bedingung wahr ist, 0 sonst).
+	\end{enumerate}
 \end{definition}
 \begin{definition} \label{def:pStoch}
-$\mathcal{P}_{stoch}$ ist die Klasse aller stochastischen opaken Prädikate.
+	$\mathcal{P}_{stoch}$ ist die Klasse aller stochastischen opaken Prädikate.
 \end{definition}
 
-Zu $\mathcal{P}_{stoch}$ gehören gemäß \cref{def:pStoch} also sowohl Prädikate wie $\Call{UniformRand}{{0,1}} \leq 0,999999999999 == 1$ aus \cref{alg:bspProb1} als auch Prädikate wie $\Call{Pois}{{\lambda=5}} \geq 10 == 0$.
+%Zu $\mathcal{P}_{stoch}$ gehören gemäß \cref{def:pStoch} also sowohl Prädikate wie $\Call{UniformRand}{{0,1}} \leq 0,999999999999 == 1$ aus \cref{alg:bspProb1} als auch Prädikate wie $\Call{Pois}{{\lambda=5}} \geq 10 == 0$.
+\begin{example}
+	Das wahrscheinlich einfachste stochastische opake Prädikat ist $\mathcal{O}(\phi) = \left[\Call{Uniform}{{0,1}} \leq 1-10^{-5} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $10^{-5}=0,001\%$.
+\end{example}
+
+\begin{example}
+	$\mathcal{O}(\phi) = \left[\Call{Pois}{{5}} \geq 15 \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat unwahr ist beträgt $\sum_{k=15}^{\infty} \frac{5^ke^{-5}}{k!} = 1 - \sum_{k=0}^{14} \frac{5^ke^{-5}}{k!} \approx 0,023\%$
+\end{example}
+
 
 Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...% TODO: Wahrscheinlichkeit eines Hardwarefehlers zitieren.
+
+\subsection{Theoretische Sicherheit}
 
 \subsection{Algorithmus}
 % TODO: Es kann mehrere Arten geben!
@@ -382,59 +401,20 @@ Um den Ansatz gegen Pattern Matching resistent zu machen, wird er generalisiert.
 Mehrere Methoden kommen hierfür infrage:
 \paragraph{Generierung über Verteilungsklasse}
 \textcolor{red}{lorem ipsum dolor sit amet...
-Der Nachteil hiervon ist, dass ...} \\
-\\
+Der Nachteil hiervon ist, dass ...}
+
+\paragraph{Generierung über Verteilungsklasse}
 Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt. Das allgemeine Vorgehen hierfür ist Folgendes:
 \begin{enumerate}
     \item Wähle ein zufälliges Intervall $[a;b]$.
     \item Teile $[a;b]$ in $n$ Teile ein.
-    \item Lege $F(a)=0$ und $F(b)=1$ fest.
-    \item Für jede Stelle $x_i\in[a;b]$ der $n$ Stellen: wähle einen Punkt $y_i$ für $F$ an dieser Stelle, sodass $y_i\in[0;1]$ maximal $\frac{1}{n}$ über $y_{i-1}$ liegt.
-    \item Führe eine Regression für die Punkte durch.
+    \item \textcolor{red}{...TODO}
 \end{enumerate}
-Es genügt hierbei nicht, eine einfache Polynomregression durchzuführen, da hier Oszillationen zwischen den ausgewählten Punkten $(x_i,y_i)$ entstehen können. Hierdurch wäre Bedigung 1 (vgl. \cref{def:kumVer}) nicht erfüllt. Um dieses Problem zu lösen, gibt es im Wesentlichen 2 Methoden:
-\begin{enumerate}
-    \item \textbf{Splines:} Regression so durchführen, dass $F$ stückweise definiert ist über mehrere kleinere Funktionen, welche alle notwendigen Bedingungen erfüllen. Hierfür gibt es mehrere mögliche Regressionsarten.
-    \item \textbf{Bernstein-Polynom-Regression:} Auf dem skalierten Intervall $[0,1]$ parametrisieren wir $F$ durch ein Bernstein-Polynom
-    $$
-    B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}.
-    $$
-    \begin{enumerate}[label={(\arabic*)}]
-        \item Monotonie von $B_n$ folgt, wenn die Koeffizienten $c_k$ nicht fallend sind (d.\,h. $c_0\le c_1\le\cdots\le c_n$).
-        \item Stetigkeit ist gegeben, da es sich um eine Funktion handelt.
-        \item Da $F(a)=0$ und $F(b)=1$ ist und der Definitionsbereich von $F$ das Intervall $[0;1]$ ist, ist $\lim_{x\to -\infty} F(x) = 0 \text{ und } \lim_{x\to +\infty} F(x)=1$.
-    \end{enumerate}
-    Das Fitten \footnote{Finden nahe-optimaler Parameter $c_0,\dots,c_k$, sodass $B_n$ die Punkte $(x_1, y_1),\dots,(x_n, y_n)$ bestmöglich beschreibt} kann als \emph{Non-Negative Least-Squares}-Optimierungsproblem formuliert werden:
-    \begin{equation}
-    \begin{split}
-    \min_{c\in\mathbb{R}^{n+1}} \|\mathbf{A} c - \mathbf{y}\|_2^2 \\\text{u. d. N.}\quad \mathbf{D} c \ge 0,\; 0\le c_k \le 1,
-    \end{split}
-    \end{equation}
-wobei die Designmatrix $A_{i,k}=\binom{n}{k} x_i^k (1-x_i)^{n-k}$ und $\mathbf{D}$ die Vorwärtsdifferenz-Matrix ist.
-\end{enumerate}
+Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome gelöst:
+$$
+B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}.
+$$
 
-% \begin{table}[h]
-%     \centering
-%     \begin{tabular}{lccc}
-%         \hline
-%         Ansatz                     & Laufzeitkosten (Programm) & Laufzeitkosten (beim Obfuskieren) & Präsizion\\
-%         \hline
-%         Verteilungsklasse         & & &\\
-%         Splines                   & & &\\
-%         Bernstein-Polynom-Regression & & &\\
-%         Isotone Regression        & & &\\
-%         \hline
-%     \end{tabular}
-%     \caption{Vergleich der Ansätze.}
-%     \label{tab:vergleich_ansatze}
-% \end{table}
-Es wurde sich für eine Bernstein-Polynom-Regression entschieden aufgrund der effizienten Regression und den gering eintretenden Laufzeitkosten bei obfuskierten Programmen. Die Abweichung ...asd
- 
-% \paragraph{Generierung über Splines}
-% ...
-% Diese Methode hat den Nachteil, dass sie in Form von Verzweigungen in ein Programm beim obfuskieren überführt werden muss. Dies geschieht auf Kosten der Laufzeit und der obfuskierten Programmgröße.
-% \paragraph{Generierung über Isotone Regression (PAV)}
-% \paragraph{Generierung über Bernstein-Polynom-Regression}
 
 \subsection{Generierung von ununterscheidbarem Füllcode}
 Probfuscation übernehmen \cite{caballeroDetectionIntrusionsMalware2016} % TODO: Probfuscation zitieren!
