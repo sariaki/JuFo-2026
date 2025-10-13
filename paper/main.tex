@@ -207,20 +207,20 @@ Im Gegensatz zur konkreten Ausführung, welche ein Programm für spezifische Inp
 %	\label{alg:foobar}
 %\end{figure}
 %Man betrachte \cref{alg:foobar}. 
-Die Notwendigkeit symbolischer Ausführung ergibt sich alleine aus dem folgenden Beispiel: Eine Funktion mit zwei 64-Bit Variablen. Um mit konkreter Ausführung herauszufinden, für welche Werte eine Bedingung wahr ist, müsste man $2^{64} \cdot 2^{64} = 2^{128}$ verschiedene Werte ausprobieren. Ein solcher Bruteforce ist selbst für die modernsten Computer unmöglich - symbolische Ausführung hingegen schon.
-Ein symbolischer Ausführungsengine besteht aus 2 Hauptkomponenten: einem \emph{symbolischen Ausführungsmodul} und einem SMT-Solver zur Lösung/zum Prüfen von Bedingungen/Einschränkungen. Es gibt zwei Arten symbolischer Ausführungsengines: statisch und dynamisch (\emph{concolic execution}).
-Bei der statischen symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfadformel} und ein \emph{symbolischer Speicher} mitgeführt. 
+Die Notwendigkeit symbolischer Ausführung ergibt sich schon am Beispiel einer einer Funktion mit zwei 64-Bit Variablen. Um mit konkreter Ausführung herauszufinden, für welche Werte eine Bedingung wahr ist, müsste man hier $2^{64} \cdot 2^{64} = 2^{128}$ verschiedene Werte ausprobieren. Ein solcher Bruteforce ist selbst für die modernsten Computer unmöglich - symbolische Ausführung hingegen schon.
+Ein symbolischer \emph{Ausführungsengine} besteht aus 2 Hauptkomponenten: einem \emph{symbolischen Ausführungsmodul} und einem SMT-Solver zur Lösung/zum Prüfen von Bedingungen/Einschränkungen. Es gibt zwei Arten symbolischer Ausführungsengines: statisch und dynamisch (\emph{concolic execution}) \cite{xuManufacturingResilientBiOpaque2018}.
+Bei der statischen symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfadformel} und ein \emph{symbolischer Speicher} mitgeführt \cite{baldoniSurveySymbolicExecution2018}. 
 \begin{enumerate}[]
-	\item Die Pfadformel, eine boolesche Formel erster Stufe, führt die Bedingungen der entlang entlang des Pfades genommenen Verzweigungen zusammen. 
-	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variable) auf symbolische Ausdrücke ab.
+	\item Die Pfadformel, eine boolesche Formel erster Stufe, führt die Bedingungen der entlang des Pfades genommenen Verzweigungen zusammen \cite{baldoniSurveySymbolicExecution2018}. 
+	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variablen) auf symbolische Ausdrücke ab \cite{baldoniSurveySymbolicExecution2018}.
 \end{enumerate}
-Hierdurch können schließlich über den SMT-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern. %Symbolische Ausführung gewährleistet somit Korrektheit\footnote{Sofern die Implementierung korrekt ist.} und Vollständigkeit
-Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die SMT-Solver an ihre laufzeittechnischen Grenzen.
+Hierdurch können schließlich über den SMT-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden \cite{baldoniSurveySymbolicExecution2018}. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern \cite{baldoniSurveySymbolicExecution2018}. %Symbolische Ausführung gewährleistet somit Korrektheit\footnote{Sofern die Implementierung korrekt ist.} und Vollständigkeit
+Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die SMT-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}.
 
-Um (u.a.) dies zu lösen wurden dynamische Ausführungsengines als Erweiterung entwickelt. Das \emph{symbolische Ausführungsmodul} verwaltet einen symbolischen und konkreten Zustand. Das Programm wird dafür mit konkreten Inputs ausgeführt. Parallel speichert der konkrete Zustand Laufzeitwerte und durchlaufene Verzweigungen. Der symbolische Zustand fungiert wie oben beschrieben, nur dass Pfadformel und symbolischer Speicher auf einen Pfad beschränkt sind.%und der symbolische Zustand die Pfadformel sowie den symbolischen Speicher entlang des Pfades. %die \emph{Pfadformel} und \emph{symbolischer Speicher} für den Kontrollfluss mitgeführt werden.
-Nach Abschluss eines Pfades werden die in der Pfadformel enthaltenen Bedingungen einzeln negiert und an den SMT-Solver übergeben, um konkrete Eingaben zu berechnen, die einen bisher ungetesteten Pfade aktivieren.
+Um (u.a.) dies zu lösen wurden dynamische Ausführungsengines als Erweiterung entwickelt. Das \emph{symbolische Ausführungsmodul} verwaltet einen symbolischen und konkreten Zustand. Das Programm wird dafür mit konkreten Inputs ausgeführt \cite{baldoniSurveySymbolicExecution2018}. Parallel speichert der konkrete Zustand Laufzeitwerte und durchlaufene Verzweigungen \cite{baldoniSurveySymbolicExecution2018}. Der symbolische Zustand fungiert wie oben beschrieben, nur dass Pfadformel und symbolischer Speicher auf einen Pfad beschränkt sind \cite{baldoniSurveySymbolicExecution2018}.%und der symbolische Zustand die Pfadformel sowie den symbolischen Speicher entlang des Pfades. %die \emph{Pfadformel} und \emph{symbolischer Speicher} für den Kontrollfluss mitgeführt werden.
+Nach Abschluss eines Pfades werden die in der Pfadformel enthaltenen Bedingungen einzeln negiert und an den SMT-Solver übergeben, um konkrete Eingaben zu berechnen, die einen bisher ungetesteten Pfad aktivieren \cite{baldoniSurveySymbolicExecution2018}. Der Vorgang wiederholt sich \cite{baldoniSurveySymbolicExecution2018}.
 
-Symbolische Ausführung ist ein populärer Ansatz für die Bekämpfung opaker Prädikate.
+Symbolische Ausführung ist ein populärer Ansatz für die Bekämpfung opaker Prädikate \cite{xuManufacturingResilientBiOpaque2018}.
 
 \subsection{Kumulative Verteilungsfunktionen}
 \begin{definition}[Kumulative Verteilungsfunktion] \label{def:kumVer}
@@ -295,18 +295,20 @@ Der folgende Abschnitt soll einen Überblick über existierende Arten opaker Pr�
 \subsection{Angreifermodell}
 Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem ähnlichen Angreifermodell wie \cite{xuManufacturingResilientBiOpaque2018} aus.
 Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch analysieren. 
-Der Angreifer kann das Programm nicht im vollen Ganzen ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
-Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
+Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
 \begin{wrapfigure}{r}{0.3\textwidth}
 	\begin{center}
 		\includegraphics[width=0.3\textwidth]{sym_exec}
 	\end{center}
-	\caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen}
+	\caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen} \textcolor{red}{TODO: selbst machen}
 \end{wrapfigure}
 %Sog.  \emph{Pattern Matching}, \textcolor{red}{TODO} sowie symbolische Ausführung ist möglich. \textcolor{red}{TODO aus ''When are opaque predicates useful?''}
 Pattern matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
 %Taint analysis - ... - kann eingesetzt werden, um vom Obfuskator generierten Füllcode zu erkennen und löschen
-Zudem kann der Angreifer Funktionen symbolischen ausführen. Über eine Anfrage an den SMT-Solver kann hierbei geprüft werden, ob ein Prädikat für alle Eingabewerte wahr ist. Ist dies der Fall, so handelt es sich um ein opakes Prädikat, welches gelöscht werden kann.
+
+Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an den SMT-Solver kann hierbei geprüft werden, ob ein Prädikat für alle Eingabewerte wahr ist. Ist dies der Fall, so handelt es sich um ein opakes Prädikat, welches gelöscht werden kann.
+
+Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
 
 \subsection{Stochastische opake Prädikate} % Grundidee
 Während andere Methoden wie \cite{xuManufacturingResilientBiOpaque2018} auf den praktischen Implementierungslimitationen symbolischer Ausführungsengines basieren, nutzt diese Methode deren fundamentale Grenzen aus. 
@@ -369,6 +371,10 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...% TODO: Wahrscheinlichkeit eines Hardwarefehlers zitieren.
 
 \subsection{Theoretische Sicherheit}
+Aus dem Angreifermodell ergibt sich, dass ein sicheres opakes Prädikat folgende Eigenschaften aufweisen muss:
+\begin{enumerate}[]
+	\item 
+\end{enumerate}
 
 \subsection{Algorithmus}
 % TODO: Es kann mehrere Arten geben!
@@ -444,7 +450,7 @@ Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall li
 
 
 \subsection{Wahrscheinlichkeitsverteilungsgenerierung}
-Um den Ansatz gegen Pattern Matching resistent zu machen, wird er generalisiert. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes stochastisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
+Um den Ansatz gegen \emph{Pattern Matching} resistent zu machen, wird er generalisiert implementiert. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes stochastisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
 Mehrere Methoden kommen hierfür infrage:
 \paragraph{Generierung über Verteilungsklasse}
 \textcolor{red}{lorem ipsum dolor sit amet...

@@ -1,16 +1,18 @@
+- [ ] Hintergrund/Motivation neu
+- [ ] Ansatz->Algorithmus besser mit Implementierung abstimmen
+- [ ] Implementierung zu Ende
+- [ ] Ziele aus Angreifermodell folgern
 - [ ] Ansatz besser erklären $\implies$ wichtigster Teil!!
-- [ ] Ansatz generalisiert erklären
-	- [ ] Ansatz noch weiter generalisieren über arithmetische und bitweise Operatoren in Terme
+- [ ] Grafiken aus IDA ersetzen mit Flowchart
 
-- [ ] Generierung von Pseudozufallszahlen/Wahrscheinlichkeitsverteilungsgenerierung bei Ansatz?
-- [ ] Symbolische Ausführung ausführlicher erklären
+- Generierung von Pseudozufallszahlen/Wahrscheinlichkeitsverteilungsgenerierung bei Ansatz?
 - [ ] Pseudocode verbessern
 	- [ ] evtl. ganz auf Englisch?
 
 - [ ] SYMBOLISCHE AUSFÜHRUNG MIT ANGR + TRITON + KLEE
 
 - [ ] Formelle Definition von Sicherheit mit Zeit (wie in Kryptologie)
-  und dann Sicherheit **beweisen**? https://chatgpt.com/c/68e80ff5-da38-8329-99d1-eb2c5a8003ba
+  und dann Sicherheit **beweisen**? 
 #### Später
 - [ ] $P$ und $P'$ sehen aus wie $P^T$ etc.
 - [x] zweites Bsp opake Präd. aber mit Parameter Nutzung
@@ -33,4 +35,7 @@
 - [ ] KNUTHS POISSON INVERSIONSMETHODE ZITIEREN
 - [ ] Erklärung aus 5.2 zu Sym Exec in Angreifermodell verschieben?
 #### Erledigt
+- [x] Ansatz generalisiert erklären
+	- [x] Ansatz noch weiter generalisieren über arithmetische und bitweise Operatoren in Terme
 - [x] CDF-Axiome?
+- [x] Symbolische Ausführung ausführlicher erklären
