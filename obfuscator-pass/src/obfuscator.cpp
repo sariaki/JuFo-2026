@@ -19,7 +19,7 @@ namespace
 {
     struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
     {
-        const double Threshold = 140;
+        const double Threshold = 80;//140;
         const double Lambda = 100;
 
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
@@ -45,7 +45,7 @@ namespace
                 if (!(demangle(F.getName().str()) == "foo"))
                     continue;
 
-                Distribution::CreateRandom(M, Rng);
+                //Distribution::CreateRandom(M, Rng);
                 
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();

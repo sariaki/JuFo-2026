@@ -39,6 +39,7 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
 // TODO: Generalize this
 CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* DoubleValue, std::string Message)
 {
+#ifdef _DEBUG
     LLVMContext& C = M.getContext();
     if (!DoubleValue || !DoubleValue->getType()->isDoubleTy())
     {
@@ -58,4 +59,7 @@ CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* DoubleValue, 
 
     CallInst* CallInst = IRB.CreateCall(Callee, Args);
     return CallInst;
+#else
+    return reinterpret_cast<CallInst*>(0);
+#endif
 }

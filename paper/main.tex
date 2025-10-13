@@ -25,6 +25,19 @@
 \usepackage{enumitem}
 
 \usepackage{listings}
+\usepackage{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+	keywordstyle=\color{blue},commentstyle=\color{mygreen},
+	stringstyle=\color{mymauve},rulecolor=\color{black},
+	basicstyle=\footnotesize\ttfamily,
+	captionpos=b, % sets the caption-position to bottom
+	keepspaces=true, % keeps spaces in text
+	numbers=left, numbersep=5pt, showspaces=false,showstringspaces=true,
+	showtabs=false, tabsize=2, title=\lstname
+}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
@@ -177,22 +190,44 @@ Das Prädikat $\mathcal{O}(\phi)= (y < 10) \vee (x \cdot (x + 1) \text{ mod } 2 
 
 %Mehrere Methoden zur Generierung solcher starken opaken Prädikate wurden bereits publiziert. Ein Überblick über diese sowie ihre Limitationen wird in \cref{sec:motivation} gegeben.
 \subsection{Symbolische Ausführung} % Automatische Deobfuskationsattacken
-\begin{wrapfigure}{r}{0.3\textwidth}
-  \begin{center}
-    \includegraphics[width=0.3\textwidth]{sym_exec}
-  \end{center}
-  \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen}
-\end{wrapfigure}
-%Symbolische Ausführung wird als Methode verwendet, um verschiedene Obfuskationsmethoden in Programmen anzugreifen. 
-Nach dem aktuellen Stand der Forschung scheint symbolische Ausführung der vielversprechendste Ansatz für die Bekämpfung opaker Prädikate zu sein.
-\textcolor{red}{Ein Symbolischer Ausführungsengine besteht aus 2 Hauptkomponenten: einem zentralen symbolischen Ausführungsmodul und einem Modul zur Lösung von Einschränkungen (\emph{constraint solver}). Es gibt zwei Arten symbolischer Ausführungsmodule: statisch und dynamisch (letzteres wird auch concolische symbolische Ausführung genannt). Concolische Ausführungsengines wie BAP und Triton führen zunächst das Programm mit konkreten Werten aus und führen dann eine symbolsiche Analyse der generierten Befehlsspuren durch.
-Statische symbolische Ausführungsengines ''heben'' zuerst die Assembly-Anweisungen des Programmes in eine abstraktere Zwischensprache (''intermediate representation'') an und führt dann eine symbolsiche Ausführung dessen mit statischen Analyseansätzen durch. Diese Methode wird erfolgreich in Angr verwendet.}
+Im Gegensatz zur konkreten Ausführung, welche ein Programm für spezifische Inputs ausführt, ermöglicht die symbolische Ausführung die Analyse des Programmverhaltens für ganze Klassen an Inputs \cite{baldoniSurveySymbolicExecution2018}.
+%\begin{figure}[!htb]
+%	\begin{lstlisting}[language=c++]
+%		void foobar(int64_t a, int64_t b) {
+%			int64_t x = 1, y = 0;
+%			if (a != 0) {
+%				y = 3+x;
+%				if (b == 0)
+%					x = 2*(a+b)
+%			}
+%			assert(x-y != 0);
+%		}
+%	\end{lstlisting}
+%	\caption{Eine Beispielfunktion. Code modifiziert aus \cite{baldoniSurveySymbolicExecution2018} übernommen.}
+%	\label{alg:foobar}
+%\end{figure}
+%Man betrachte \cref{alg:foobar}. 
+Die Notwendigkeit symbolischer Ausführung ergibt sich alleine aus dem folgenden Beispiel: Eine Funktion mit zwei 64-Bit Variablen. Um mit konkreter Ausführung herauszufinden, für welche Werte eine Bedingung wahr ist, müsste man $2^{64} \cdot 2^{64} = 2^{128}$ verschiedene Werte ausprobieren. Ein solcher Bruteforce ist selbst für die modernsten Computer unmöglich - symbolische Ausführung hingegen schon.
+Ein symbolischer Ausführungsengine besteht aus 2 Hauptkomponenten: einem \emph{symbolischen Ausführungsmodul} und einem SMT-Solver zur Lösung/zum Prüfen von Bedingungen/Einschränkungen. Es gibt zwei Arten symbolischer Ausführungsengines: statisch und dynamisch (\emph{concolic execution}).
+Bei der statischen symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfadformel} und ein \emph{symbolischer Speicher} mitgeführt. 
+\begin{enumerate}[]
+	\item Die Pfadformel, eine boolesche Formel erster Stufe, führt die Bedingungen der entlang entlang des Pfades genommenen Verzweigungen zusammen. 
+	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variable) auf symbolische Ausdrücke ab.
+\end{enumerate}
+Hierdurch können schließlich über den SMT-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern. %Symbolische Ausführung gewährleistet somit Korrektheit\footnote{Sofern die Implementierung korrekt ist.} und Vollständigkeit
+Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die SMT-Solver an ihre laufzeittechnischen Grenzen.
+
+Um (u.a.) dies zu lösen wurden dynamische Ausführungsengines als Erweiterung entwickelt. Das \emph{symbolische Ausführungsmodul} verwaltet einen symbolischen und konkreten Zustand. Das Programm wird dafür mit konkreten Inputs ausgeführt. Parallel speichert der konkrete Zustand Laufzeitwerte und durchlaufene Verzweigungen. Der symbolische Zustand fungiert wie oben beschrieben, nur dass Pfadformel und symbolischer Speicher auf einen Pfad beschränkt sind.%und der symbolische Zustand die Pfadformel sowie den symbolischen Speicher entlang des Pfades. %die \emph{Pfadformel} und \emph{symbolischer Speicher} für den Kontrollfluss mitgeführt werden.
+Nach Abschluss eines Pfades werden die in der Pfadformel enthaltenen Bedingungen einzeln negiert und an den SMT-Solver übergeben, um konkrete Eingaben zu berechnen, die einen bisher ungetesteten Pfade aktivieren.
+
+Symbolische Ausführung ist ein populärer Ansatz für die Bekämpfung opaker Prädikate.
+
 \subsection{Kumulative Verteilungsfunktionen}
 \begin{definition}[Kumulative Verteilungsfunktion] \label{def:kumVer}
 	Eine Funktion $F$ ist eine kumulative Verteilugnsfunktion, wenn gilt:
 	\begin{enumerate}[label={(\arabic*)}]
-	    \item $F$ ist streng monoton steigend:
-	    \item $F$ ist rechtsstetig:
+	    \item $F$ ist streng monoton steigend: \textcolor{red}{TODO}
+	    \item $F$ ist rechtsstetig: \textcolor{red}{TODO}
 	    \item $\lim_{x\to -\infty} F(x) = 0 \text{ und } \lim_{x\to +\infty} F(x)=1$
 	\end{enumerate}
 \end{definition}
@@ -259,8 +294,20 @@ Der folgende Abschnitt soll einen Überblick über existierende Arten opaker Pr�
 \section{Ansatz} 
 \subsection{Angreifermodell}
 Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem ähnlichen Angreifermodell wie \cite{xuManufacturingResilientBiOpaque2018} aus.
-Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch mittels symbolischer Ausführung sowie durch Untersuchung der Programmanweisungen analysieren. Pattern Matching ist daher möglich. Der Angreifer kann das Programm nicht ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (''virtual machines'') gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
+Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch analysieren. 
+Der Angreifer kann das Programm nicht im vollen Ganzen ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
 Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]{sym_exec}
+	\end{center}
+	\caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen}
+\end{wrapfigure}
+%Sog.  \emph{Pattern Matching}, \textcolor{red}{TODO} sowie symbolische Ausführung ist möglich. \textcolor{red}{TODO aus ''When are opaque predicates useful?''}
+Pattern matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
+%Taint analysis - ... - kann eingesetzt werden, um vom Obfuskator generierten Füllcode zu erkennen und löschen
+Zudem kann der Angreifer Funktionen symbolischen ausführen. Über eine Anfrage an den SMT-Solver kann hierbei geprüft werden, ob ein Prädikat für alle Eingabewerte wahr ist. Ist dies der Fall, so handelt es sich um ein opakes Prädikat, welches gelöscht werden kann.
+
 \subsection{Stochastische opake Prädikate} % Grundidee
 Während andere Methoden wie \cite{xuManufacturingResilientBiOpaque2018} auf den praktischen Implementierungslimitationen symbolischer Ausführungsengines basieren, nutzt diese Methode deren fundamentale Grenzen aus. 
 
@@ -289,7 +336,7 @@ Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob dieser Algori
 %Es kommt zu einer sog. Pfadexplosion: Durch den aufgezwungenden Bruteforce verwendet der Engine mehr und mehr Ressourcen bis das Programm abstürzt.
 
 Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
-\begin{definition}[Stochastische opake Prädikate] \label{def:stochOpaque}
+\begin{definition}[Stochastische opake Prädikate] \label{def:stochOpaque} \label{def:konstruktionsschema}
 	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. % wenn die Wahrscheinlichkeit eines Eintretens des Falls $A\in \{0, 1\}$ unter der eines Hardwarefehlers liegt. % TODO: 10^{-k} Präzision
 \end{definition}
 \begin{definition}[Konstruktionsschema stochastisch opaker Prädikate]
