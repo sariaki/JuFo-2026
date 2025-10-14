@@ -1,5 +1,6 @@
 #### High Priority:
 - [ ] **Symbolische Variablen finden, deren Wertebereiche vorhersehbar sind, deren Werte allerdings nicht**
+	- siehe "Probabilistic Obfuscation Through Covert Channels" !!!
 - [ ] Was ist, wenn $x=$LLONG_MAX ? $\implies$ $u=1 \implies$ CDF-Methode funktioniert nicht, da Prädikate sagt, dass $\leq k$. Lieber bitmixing? 
 
 - [ ] GUTES CDF GENERIERUNG (STRENG MONOTON STEIGEND = SCHWIERIG OHNE SPLINES !!!) 

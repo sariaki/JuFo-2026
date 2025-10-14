@@ -41,7 +41,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
-\usepackage{biblatex}
+\usepackage[backend=biber]{biblatex}
 \addbibresource{bib.bib}
 
 \usepackage{amsmath}
@@ -67,20 +67,20 @@
 \date{}
 
 \begin{document}
-
 \begin{titlepage}
-\centering
-  \maketitle
-  \vfill
-  \begin{tabular}{ll}
-    Teilnehmende: & Paul Baumgartner (18 J.) \\
-    Erarbeitungsort: & Hildesheim \\
-    Projektbetreuende: & Dr. Arndt Latußeck\\
-    Fachgebiet: & Mathematik/Informatik \\
-    Wettbewerbssparte: & Jugend forscht \\
-    Bundesland: & Niedersachsen \\
-    Wettbewerbsjahr: & 2026 \\
-  \end{tabular}
+	\centering
+  	\maketitle
+	\vfill
+	\begin{tabular}{ll}
+		Teilnehmende: & Paul Baumgartner (18 J.) \\
+		Erarbeitungsort: & Hildesheim \\
+		Projektbetreuende: & Dr. Arndt Latußeck\\
+		Fachgebiet: & Mathematik/Informatik \\
+		Wettbewerbssparte: & Jugend forscht \\
+		Bundesland: & Niedersachsen \\
+		Wettbewerbsjahr: & 2026 \\
+	\end{tabular}
+	\thispagestyle{empty}
 \end{titlepage}
 
 \thispagestyle{empty}
@@ -90,21 +90,20 @@
 \setcounter{page}{0}
 \section{Projektüberblick}
 %In diesem Projekt wird eine neue Klasse an opaken Prädikaten präsentiert; die Klasse stochastischer Prädikate $\mathcal{P}_{stoch}$, welche sich als resisten gegenüber symbolischen Ausführungsattacken erweist. Ihr Ansatz wird dargestellt und eine konkrete Art in Form eines LLVM-Passes implementiert. Schließlich wird die neue Obfuskation mit existierenden Methoden verglichen und Vor- und Nachteile sowie mögliche Angriffe sowie Härtungen dagegen diskutiert.
-In diesem Projekt wird sich mit der Softwareobfuskation, also dem Verschleiern/Verstecken wichtiger Funktionalitäten von Programmen, beschäftigt. Konkret wird eine neue Art der Obfuskation vorgestellt, welche sich als resistent gegenüber existierender Methoden zur Deobfuskation erweist. Hierfür werden Wahrscheinlichkeiten in Bedingungen innerhalb des Programmes verknüpft, wobei für einen Angreifer, welcher das Programm verstehen möchte, unklar ist, inwiefern diese Bedingungen wahr oder falsch sind. Obwohl die Erfüllung dieser Bedingungen zufällig ist, werden Wahrscheinlichkeiten verwendet, welche in der Praxis garantieren, dass immer das gewünschte Verhalten auftritt.
+Dieses Projekt behandelt Softwareobfuskation, also das Verschleiern/Verstecken wichtiger Funktionalitäten von Programmen. Konkret wird eine neue Art der Obfuskation vorgestellt, welche sich als resistent gegenüber existierender Methoden zur Deobfuskation erweist. Hierfür werden Wahrscheinlichkeiten in Bedingungen innerhalb des Programmes verknüpft, wobei für einen Angreifer, welcher das Programm verstehen möchte, unklar ist, inwiefern diese Bedingungen wahr oder falsch sind. Obwohl die Erfüllung dieser Bedingungen zufällig ist, werden Wahrscheinlichkeiten verwendet, welche in der Praxis garantieren, dass immer das gewünschte Verhalten auftritt.
 
 \newpage
 
 \section{Einleitung}
 % TODO: Vielleicht was auf Makro-Ebene sagen? Krieg, geopol. Spannungen, Cyber-Angriffe
-\emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren. Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. EDRS zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
+\emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren. Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. \emph{EDR}s zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
 
 Diese Arbeit fokussiert sich auf eine Art der Obfuskation, der Kontrollflussobfuskation, und der meist verbreiteten Angriffsweise, um diese zu bekämpfen. ...
 
 % TODO: Beitrag dieser Arbeit
 % TODO: Annahmen klären: Grundverständnis von Assembler, Kompilern, grundlegende Zahlentheorie etc.
-Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern, grundlegender Zahlentheorie und linearer Algebra an.
-% TODO: Notation erklären für z.B. Matrizen, Vektoren
-Matrizen und Vektoren werden fettgedruckt, wobei Matrizen großgeschrieben werden (z.B. $\mathbf{A}$) und Vektoren klein (z.B. $\textbf{b}$).
+Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet mit $[P]=1$, falls die Aussage $P$ wahr ist und $[P]=0$ sonst. Vergleicht eine Aussage zwei Variablen, so wird hierfür ''$==$'' verwendet.
+
 % TODO: Klären, was in welchem Abschnitt gemacht wird.
 
 \section{Theoretische Grundlagen}
@@ -115,7 +114,7 @@ Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren 
 	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
 \end{definition}
 
-Per Definition sind somit Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen stark aus, wie später ersichtlich sein wird.
+Per Definition sind somit Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \emph{Stärke}, \emph{Resilienz}, \emph{Kosten} und \emph{Tarnung} verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
 %Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
@@ -126,7 +125,7 @@ Die folgenden Definitionen sind aus \cite{tofighi-shiraziDefeatingOpaquePredicat
 \begin{definition}[Opake Prädikate]
 	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn für alle $\phi\in \Phi$ gilt, dass $\mathcal{O}(\phi)$ denselben Wert ($1$ oder $0$ bzw. wahr oder falsch) hat.
 \end{definition}
-In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert für alle möglichen Parameter \emph{a priori} bestimmt ist (also für den Programmierer bekannt ist) aber für ein Verständnis einer weiteren Person (ein Angreifer) \emph{a posteriori} (durch Beobachtung) zu bestimmen ist.
+In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert für alle möglichen Parameter \emph{a priori} bestimmt ist (also für den Programmierer bekannt ist) aber für ein Verständnis einer weiteren Person (ein Angreifer) \emph{a posteriori} (durch Beobachtung) zu bestimmen ist \cite{collbergManufacturingCheapResilient1998}.
 
 Diese Arbeit unterscheidet zwischen zwei Arten opaker Prädikate:
 \begin{definition}
@@ -178,14 +177,14 @@ Diese Arbeit unterscheidet zwischen zwei Arten opaker Prädikate:
 \end{minipage} \\
 
 % TODO: erklären was das mit Obfuskation zu tun hat + auf Grafik eingehen
-Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
+Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
 
 \begin{example}
-Das Prädikat $\mathcal{O}(\phi)=(-1977224191 \space \& \space 1 == 1)$ aus \cref{fig:overwatchGraph}, wobei ''$\&$'' dem bitweisen ''und'' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
+Das Prädikat $\mathcal{O}(\phi)=\left[-1977224191 \space \& \space 1 == 1\right]$ aus \cref{fig:overwatchGraph}, wobei ''$\&$'' dem bitweisen ''und'' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
 \end{example}
 
 \begin{example}
-Das Prädikat $\mathcal{O}(\phi)= (y < 10) \vee (x \cdot (x + 1) \text{ mod } 2 == 0)$ aus \text{\cite{ieeespro2015-JunodRWM}} mit $\phi=(x,y)$ und $x, y \in \mathbb{Z}$ ist etwas komplexer. Auch dieses Prädikat ist immer wahr, da $x\cdot (x+1)$ immer gerade ist. Der Wert von $y$ ist folglich egal.
+Das Prädikat $\mathcal{O}(\phi)= \left[(y < 10) \vee (x \cdot (x + 1) \mod{2} \equiv 0)\right]$ aus \text{\cite{ieeespro2015-JunodRWM}} mit $\phi=(x,y)$ und $x, y \in \mathbb{Z}$ ist etwas komplexer. Auch dieses Prädikat ist immer wahr, da $x\cdot (x+1)$ immer gerade ist. Der Wert is folglich von $y$ unabhängig.
 \end{example}
 
 %Mehrere Methoden zur Generierung solcher starken opaken Prädikate wurden bereits publiziert. Ein Überblick über diese sowie ihre Limitationen wird in \cref{sec:motivation} gegeben.
@@ -234,52 +233,24 @@ Symbolische Ausführung ist ein populärer Ansatz für die Bekämpfung opaker Pr
 % \subsection{Bernstein-Polynome}
 
 \section{Hintergrund und Motivation} \label{sec:motivation}
-Der folgende Abschnitt soll einen Überblick über existierende Arten opaker Prädikate liefern und diese in Bezug auf ihre Qualität evaulieren. Hierfür werden die Faktoren aus \cref{par:metriken} verwendet.
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{ccccc}
-        \toprule
-                & Stärke & Resilienz & Kosten & Tarnung \\
-        \midrule
-        Obfuscator-LLVM \cite{ieeespro2015-JunodRWM}            & X & trivial & sehr gering & hoch \\
-        \emph{Bi-Opake} Prädikate \cite{xuManufacturingResilientBiOpaque2018}  & X & mittel & hoch & hoch \\
-        \emph{Exceptions} \cite{linBranchObfuscationUsing2013}         & X & mittel & sehr hoch & gering \\
-        NP-schwere Probleme \cite{}       & X & gering & mittel & mittel \\
-        ungelöste Probleme \cite{wangLinearObfuscationCombat2011}        & X & hoch & sehr hoch & hoch \\
-        \bottomrule
-    \end{tabular}
-    \caption{Vergleich existierende Arten opaker Prädikate.}
-    \label{tab:vergleichderMethoden}
-\end{table}
 \textcolor{red}{Hier objektiver werden, evtl. ''Literature Reviews'' zitieren und zusammenfassen}
-% Das Obfuscator-LLVM-Projekt \cite{ieeespro2015-JunodRWM} generiert opake Prädikate der Form $$y < 10 \vee  x \cdot (x + 1) \text{ mod } 2 == 0$$ wobei $x$ und $y$ symbolische Variablen sind, deren Wert statisch nicht bestimmbar ist. Ein Blick darauf zeigt, dass $\forall x:  x \cdot (x+1)$ gerade und somit durch $2$ teilbar ist. Die generierten opaken Prädikate sind somit auch vulnerabel gegenüber automatisierten symbolischen Ausführungsattacken. Stärke und Resilienz sind somit gering. Da nur wenige arithmetische Anweisungen zum Programm hinzugefügt werden sind Kosten gering und Tarnung hoch, da diese einem Angreifer nicht automatisch suspekt sind.
-
-% Die sog. ''symbolischen'' Prädikate, wie sie in \cite{xuManufacturingResilientBiOpaque2018} vorgestellt wurden, versuchen eine solche Deobfuskation zu vermeiden. Hierfür nutzen diese Prädikate bewusste Konzepte, welche in den symbolischen Ausführungsengines entweder gar nicht (wie z.B. Thread-Support) oder nur teilweise implementiert sind (wie z.B. Gleitkommazahlen).
-% \begin{figure}[h]
-%     \centering
-%     \begin{lstlisting}[language=c++]
-% int func(int symvar) {
-%     int j = symvar;
-%     float f = j/1000000.0;
-%     if(f==0.1){
-%         Bogus();
-%     }
-%     if(1024+f==1024&&f>0%%j==7){
-%         Foo();
-%     }
-% }
-% \end{lstlisting}
-%     \caption{''symbollisches'' Prädikat mit Gleitkommazahlen, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen.}
-%     \label{fig:enter-label}
-% \end{figure}
-% % TODO: Stärke
-% Zwar waren die Prädikate zur Zeit ihrer Veröffentlichung 2018 noch resilient gegenüber automatisierten Attacken - aufgrund ihrer Natur basiert deren Resilienz allerdings auf fehlenden Implementierungsfeinheiten der symbolischen Ausführungsengines, nicht fundamentalen Limitationen derer. Jegliche Weiterentwicklung dieser Methode wird also von einer Anpassung der anderen Seite beantwortet - es handelt sich um ein spieltheoretisches Nullsummenspiel \cite{}.
-% Je nach Methode variieren die Kosten stark von gering (z.B. bei Gleitkommazahlen) bis zu hoch (z.B. bei Threads).
-
-% Ähnliche Probleme bezüglicher ihrer Resilienz haben \emph{exception}basierte opake Prädikate \cite{linBranchObfuscationUsing2013}. Zudem tragen diese sehr hohe Kosten
-
+%Seit der ursprünglichen Publikation Collbergs et al. zu dem Thema \cite{collbergManufacturingCheapResilient1998} wurden mehrere Arten opaker Prädikate vorgestellt.
+Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit.
+Da seit der Formalisierung opaker Prädikate \cite{collbergATaxonomyOfObfuscatingTransformations} eine Vielzahl unterschiedlicher Varianten opaker Prädikate veröffentlicht wurden, erhebt dieser Abschnitt keinen Anspruch auf Vollständigkeit. Stattdessen werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen.
 % TODO: Einfach Tabelle machen und dann losschreiben, warum wir *das* brauchen?
+
+Im Allgemeinen lässt sich erkennen, dass existierende Literatur sich vornehmlich auf statischen Analyseansätze beschränkt. Ideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich.
+
+Trotz der ''Effektivität'' existierender Methoden, bleiben viele theoretisch-formell unbegründet. Ihre Resistenz basiert auf Implementierungsschwächen\footnote{bzw. Heuristikschwächen.} existierender symbolischer Ausführungsengines und nicht ihren fundamentalen Grenzen (bzw. die der SMT-Solver) \cite{xuManufacturingResilientBiOpaque2018}. Als Beispiel hierfür dienen die Bi-Opaken Prädikate \cite{xuManufacturingResilientBiOpaque2018}. Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen von \emph{Angr} \cite{shoshitaishvili2016state} ergab: drei der vier in \cite{xuManufacturingResilientBiOpaque2018} dargestellten Methoden können nun von \emph{Angr} problemlos symbolisch ausgeführt werden
+\footnote{
+	(a) symbolischer RAM: Ausführbar für Arrays mit einer Länge unter $257$. \\
+	(b) Gleitkommazahlen: Ausführbar, wenn keine x86 \texttt{long double} Datentypen verwendet werden. \\
+	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{covert symbolic propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
+	(d) Threads: Noch nicht implementiert.
+}.
+Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013} und \cite{tigress2025} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
+Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit. 
+%Es lässt sich aus diesem Fallbeispiel induktiv folgern, dass die Deobfuskation existierender Ansätze in gewisser Weise nur eine Frage der Zeit ist - eine Verbesserung existierender, öffentlicher Methoden.
 
 \begin{itemize}
     \item Obfuscator-LLVM \checkmark
@@ -293,7 +264,7 @@ Der folgende Abschnitt soll einen Überblick über existierende Arten opaker Pr�
 
 \section{Ansatz} 
 \subsection{Angreifermodell}
-Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem ähnlichen Angreifermodell wie \cite{xuManufacturingResilientBiOpaque2018} aus.
+Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem Angreifermodell aufbauend auf \cite{xuManufacturingResilientBiOpaque2018} aus.
 Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch analysieren. 
 Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
 \begin{wrapfigure}{r}{0.3\textwidth}
@@ -304,9 +275,10 @@ Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Sol
 \end{wrapfigure}
 %Sog.  \emph{Pattern Matching}, \textcolor{red}{TODO} sowie symbolische Ausführung ist möglich. \textcolor{red}{TODO aus ''When are opaque predicates useful?''}
 Pattern matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
-%Taint analysis - ... - kann eingesetzt werden, um vom Obfuskator generierten Füllcode zu erkennen und löschen
 
 Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an den SMT-Solver kann hierbei geprüft werden, ob ein Prädikat für alle Eingabewerte wahr ist. Ist dies der Fall, so handelt es sich um ein opakes Prädikat, welches gelöscht werden kann.
+
+\textcolor{red}{TODO: weitere Methoden aus ''When are opaque predicates useful?'' übernehmen}
 
 Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
 
@@ -342,16 +314,15 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. % wenn die Wahrscheinlichkeit eines Eintretens des Falls $A\in \{0, 1\}$ unter der eines Hardwarefehlers liegt. % TODO: 10^{-k} Präzision
 \end{definition}
 \begin{definition}[Konstruktionsschema stochastisch opaker Prädikate]
-	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
+	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das stochastisch opake Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
 	$$
 	\mathcal{O}(\phi) = \left[f(X) \bowtie c \right],
 	$$
 	wobei:
 	\begin{enumerate}
-		\item $f$ eine Transformation durch arithmetische und bitweise Operationen ist (z. B. $f(X) = m \cdot (X \oplus k) + b$, mit Konstanten $(m, k, b) \in \mathbb{R}$),
-		\item $c$ eine festgelegte Konstante ist,
+		\item $f$ eine Transformation durch arithmetische und bitweise Operationen ist (z. B. $f(X) = m \cdot (X \oplus k) + b$), mit Konstanten $(m, k, b) \in \mathbb{R}$),
 		\item $\bowtie$ ein Zahlenvergleichsoperator ist ($=$, $>$, $<$, $\geq$, $\leq$) und
-		\item $[\cdot]$ die Indikatorfunktion ist (1, wenn die Bedingung wahr ist, 0 sonst).
+		\item $c$ eine festgelegte Konstante ist.
 	\end{enumerate}
 \end{definition}
 \begin{definition} \label{def:pStoch}
@@ -371,11 +342,14 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...% TODO: Wahrscheinlichkeit eines Hardwarefehlers zitieren.
 
 \subsection{Theoretische Sicherheit}
-Aus dem Angreifermodell ergibt sich, dass ein sicheres opakes Prädikat folgende Eigenschaften aufweisen muss:
+Aus dem Angreifermodell und den Evaulierungskriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations, collbergManufacturingCheapResilient1998} ergibt sich, dass ein sicheres opakes Prädikat folgende Eigenschaften aufweisen muss:
 \begin{enumerate}[]
-	\item 
+	\item Ununterscheidbarkeit des Füllcodes
+	\item Geringe Laufzeitkosten
+	\item Nichtablesbarkeit der Pfadwahrscheinlichkeiten
+	\item Resistenz gegenüber symbolischer Ausführung, \textcolor{red}{...TODO}
 \end{enumerate}
-
+\textcolor{red}{TODO: erklären, warum alles zutrifft.}
 \subsection{Algorithmus}
 % TODO: Es kann mehrere Arten geben!
 %Während andere präsentierte Ansätze auf schweren Problemen beruhen, welche gelöst werden müsse, um einen Pfad auszuschließen, macht dieser Algorithmus dieses Ausschließen mit herkömmlichen Methoden unmöglich. Hierfür wird mit Wahrscheinlichkeit gearbeitet. 
@@ -456,7 +430,7 @@ Mehrere Methoden kommen hierfür infrage:
 \textcolor{red}{lorem ipsum dolor sit amet...
 Der Nachteil hiervon ist, dass ...}
 
-\paragraph{Generierung über Verteilungsklasse}
+\paragraph{Generierung über zufälliges Polynom}
 Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt. Das allgemeine Vorgehen hierfür ist Folgendes:
 \begin{enumerate}
     \item Wähle ein zufälliges Intervall $[a;b]$.
@@ -470,14 +444,14 @@ $$
 
 
 \subsection{Generierung von ununterscheidbarem Füllcode}
-Probfuscation übernehmen \cite{caballeroDetectionIntrusionsMalware2016} % TODO: Probfuscation zitieren!
+\textcolor{red}{Probfuscation übernehmen \cite{caballeroDetectionIntrusionsMalware2016}} % TODO: Probfuscation zitieren!
 % \subsection{Härtung gegen dynamische Ausführungsangriffe}
 % Probfuscation übernehmen \cite{caballeroDetectionIntrusionsMalware2016} % TODO: Probfuscation zitieren!
 
 \section{Evaluierung}
-IDEE: Programmierern das geben und empirisch ermitteln!
+\textcolor{red}{IDEE: Programmierern das geben und empirisch ermitteln!}
 \subsection{Kriterien}
-Kriterien nach Collberg et al. ...
+\textcolor{red}{Kriterien nach Collberg et al. evtl. auch was modernes zu KI...}
 
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
 

@@ -1,0 +1,7 @@
+- viele Ansätze resistent und stark
+- Konzentriert auf symbolische Ausführung; Resistenz gegen Pattern matching leicht, gegen Tainting abhängig von Qualität des Füllcodes
+- wenig theoretisch begründet, mehr auf praktischen Limitationen basierend
+	- Bsp: xuManufacturingResilientBiOpaque2018 -> Nach Publikation 3/4 Methoden nicht mehr resistent bei Angr
+	- langsam Fortschritt: ogisoSoftwareObfuscationTheoretical2003
+- trotzdem "effektiv" cf. schrittwieserProtectingSoftwareObfuscation2017
+- 

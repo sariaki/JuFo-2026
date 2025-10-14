@@ -13,9 +13,9 @@ N = 10
 def bernvander(x, deg):
     return binom.pmf(np.arange(1 + deg), deg, x.reshape(-1, 1))
 
-def fit_poly(vandermode_matrix, n, alpha, xs, ys):
+def fit_poly(vandermonde_matrix, n, alpha, xs, ys):
     model = Ridge(fit_intercept=False, alpha=alpha)
-    model.fit(vandermode_matrix(xs, deg=n), ys)
+    model.fit(vandermonde_matrix(xs, deg=n), ys)
     return model
 
 # Generate features

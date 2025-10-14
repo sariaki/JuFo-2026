@@ -15,6 +15,5 @@
 	- [x] Einleitung
 - [x] Funktionsweise von SMT-Solvern / symbolic execution (siehe Paper "Manufacturing Resilient Bi-Opaque Predicates Against Symbolic Execution")
 #### Low Priority (Muss nicht gemacht werden)
-- [ ] **LLVM Tutorial: Kaleidoscope**
 - [ ] https://en.wikipedia.org/wiki/Hilbert's_tenth_problem für Obfuskation
 - [ ] Mind-Map machen von allem

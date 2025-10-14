@@ -1,3 +1,7 @@
+#### Neu
+- 3.3 Symbolische Ausführung: Immer dasselbe zitieren; wie besser?
+- Stochastische opake Prädikate und Konstruktionsschema zusammenfügen?
+#### Alt
 - Deutsche oder englische Begriffe?
 - Regel für Annahme von Vorwissen?
 	- ALLES NÖTIGE ANNEHMEN NEBEN OBFUSKATION
