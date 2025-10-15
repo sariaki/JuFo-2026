@@ -19,7 +19,7 @@
 
 - [ ] `bib.bib` "and" -> "und"
 - [ ] fix bib uneinheitlichkeiten
-- [ ] Gänsefüßchen fix
+- [ ] fix Gänsefüßchen ""
 
 - [ ] $P$ und $P'$ sehen aus wie $P^T$ etc.
 - [x] zweites Bsp opake Präd. aber mit Parameter Nutzung

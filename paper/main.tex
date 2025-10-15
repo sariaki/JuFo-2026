@@ -22,6 +22,9 @@
 }
 \captionsetup[wrapfigure]{}
 
+\usepackage{subcaption}
+\captionsetup[subfigure]{skip=4pt}
+
 \usepackage{enumitem}
 
 \usepackage{listings}
@@ -37,6 +40,17 @@
 	keepspaces=true, % keeps spaces in text
 	numbers=left, numbersep=5pt, showspaces=false,showstringspaces=true,
 	showtabs=false, tabsize=2, title=\lstname
+}
+\lstdefinestyle{customc_compact}{
+    language=C,
+    basicstyle=\scriptsize\ttfamily, % <-- WICHTIG: Kleinere Schriftart
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    breaklines=true,
+    showstringspaces=false,
+    frame=none,
 }
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -102,7 +116,7 @@ Diese Arbeit fokussiert sich auf eine Art der Obfuskation, der Kontrollflussobfu
 
 % TODO: Beitrag dieser Arbeit
 % TODO: Annahmen klären: Grundverständnis von Assembler, Kompilern, grundlegende Zahlentheorie etc.
-Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet mit $[P]=1$, falls die Aussage $P$ wahr ist und $[P]=0$ sonst. Vergleicht eine Aussage zwei Variablen, so wird hierfür ''$==$'' verwendet.
+Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet mit $[P]=1$, falls die Aussage $P$ wahr ist und $[P]=0$ sonst. Vergleicht eine Aussage zwei Variablen, so wird hierfür "`$==$"' verwendet.
 
 % TODO: Klären, was in welchem Abschnitt gemacht wird.
 
@@ -114,7 +128,9 @@ Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren 
 	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
 \end{definition}
 
-Per Definition sind somit Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
+Eine Obfuskation hat immer das Ziel, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. \textcolor{red}{Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}}.
+
+Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \emph{Stärke}, \emph{Resilienz}, \emph{Kosten} und \emph{Tarnung} verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
 %Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
@@ -180,7 +196,7 @@ Diese Arbeit unterscheidet zwischen zwei Arten opaker Prädikate:
 Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
 
 \begin{example}
-Das Prädikat $\mathcal{O}(\phi)=\left[-1977224191 \space \& \space 1 == 1\right]$ aus \cref{fig:overwatchGraph}, wobei ''$\&$'' dem bitweisen ''und'' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
+Das Prädikat $\mathcal{O}(\phi)=\left[-1977224191 \space \& \space 1 == 1\right]$ aus \cref{fig:overwatchGraph}, wobei "`$\&$"' dem bitweisen "`und"' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
 \end{example}
 
 \begin{example}
@@ -210,7 +226,7 @@ Die Notwendigkeit symbolischer Ausführung ergibt sich schon am Beispiel einer e
 Ein symbolischer \emph{Ausführungsengine} besteht aus 2 Hauptkomponenten: einem \emph{symbolischen Ausführungsmodul} und einem SMT-Solver zur Lösung/zum Prüfen von Bedingungen/Einschränkungen. Es gibt zwei Arten symbolischer Ausführungsengines: statisch und dynamisch (\emph{concolic execution}) \cite{xuManufacturingResilientBiOpaque2018}.
 Bei der statischen symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfadformel} und ein \emph{symbolischer Speicher} mitgeführt \cite{baldoniSurveySymbolicExecution2018}. 
 \begin{enumerate}[]
-	\item Die Pfadformel, eine boolesche Formel erster Stufe, führt die Bedingungen der entlang des Pfades genommenen Verzweigungen zusammen \cite{baldoniSurveySymbolicExecution2018}. 
+	\item Die Pfadformel, eine boolesche Formel erster Ordnung, führt die Bedingungen der entlang des Pfades genommenen Verzweigungen zusammen \cite{baldoniSurveySymbolicExecution2018}. 
 	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variablen) auf symbolische Ausdrücke ab \cite{baldoniSurveySymbolicExecution2018}.
 \end{enumerate}
 Hierdurch können schließlich über den SMT-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden \cite{baldoniSurveySymbolicExecution2018}. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern \cite{baldoniSurveySymbolicExecution2018}. %Symbolische Ausführung gewährleistet somit Korrektheit\footnote{Sofern die Implementierung korrekt ist.} und Vollständigkeit
@@ -239,27 +255,109 @@ Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädi
 Da seit der Formalisierung opaker Prädikate \cite{collbergATaxonomyOfObfuscatingTransformations} eine Vielzahl unterschiedlicher Varianten opaker Prädikate veröffentlicht wurden, erhebt dieser Abschnitt keinen Anspruch auf Vollständigkeit. Stattdessen werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen.
 % TODO: Einfach Tabelle machen und dann losschreiben, warum wir *das* brauchen?
 
-Im Allgemeinen lässt sich erkennen, dass existierende Literatur sich vornehmlich auf statischen Analyseansätze beschränkt. Ideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich.
+Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich.
+\begin{figure}[t!]
+    \centering 
+    \begin{subfigure}[t]{0.32\textwidth}
+        \begin{lstlisting}[style=customc_compact, captionpos=b]
+int func(int symvar){
+    int j = symvar;
+    if(j == 7){
+        Foo();
+    }
+}
+        \end{lstlisting}
+        \caption{Ursprüngliches Programm, übernommen aus \cite{xuManufacturingResilientBiOpaque2018}.}
+        \label{fig:code_a_compact}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
+int func(int symvar){
+    int j = symvar;
+    int l1_ary[] = {1,2,3,4,5,6,7};
+    int l2_ary[] = {j,1,2,3,4,5,6,7};
+    int i = l2_ary[l1_ary[j%7]];
+    if(i == j)
+        Bogus();
+    if(i == 1 && j == 7)
+        Foo();
+}
+        \end{lstlisting}
+        \caption{Bi-Opakes Prädikat (symbolischer Arbeitsspeicher) \cite{xuManufacturingResilientBiOpaque2018}.}
+        \label{fig:code_b_compact}
+    \end{subfigure}
+    \hfill 
+    \begin{subfigure}[t]{0.32\textwidth}
+        \begin{lstlisting}[style=customc_compact, captionpos=b]
+int func(int symvar){
+    int j = symvar;
+    float f = j/1000000.0;
+    if(f==0.1){
+        Bogus();
+    }
+    if((1024+f == 1024 && f>0 && j==7)){
+        Foo();
+    }
+}
+        \end{lstlisting}
+        \caption{Floating-point number.}
+        \label{fig:code_c_compact}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \begin{lstlisting}[style=customc_compact, captionpos=b, escapechar=|]
+...
+        \end{lstlisting}
+        \caption{Covert symbolic propagation.}
+        \label{fig:code_d_compact}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
+...
+        \end{lstlisting}
+        \caption{Parallel programming.}
+        \label{fig:code_e_compact}
+    \end{subfigure}
+    \caption{Opaque predicate examples attacking the challenges of symbolic execution.}
+    \label{fig:methodenÜberblick}
+\end{figure}
 
-Trotz der ''Effektivität'' existierender Methoden, bleiben viele theoretisch-formell unbegründet. Ihre Resistenz basiert auf Implementierungsschwächen\footnote{bzw. Heuristikschwächen.} existierender symbolischer Ausführungsengines und nicht ihren fundamentalen Grenzen (bzw. die der SMT-Solver) \cite{xuManufacturingResilientBiOpaque2018}. Als Beispiel hierfür dienen die Bi-Opaken Prädikate \cite{xuManufacturingResilientBiOpaque2018}. Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen von \emph{Angr} \cite{shoshitaishvili2016state} ergab: drei der vier in \cite{xuManufacturingResilientBiOpaque2018} dargestellten Methoden können nun von \emph{Angr} problemlos symbolisch ausgeführt werden
+Trotz der "`Effektivität"' existierender Methoden, bleiben viele theoretisch-formell unbegründet. Ihre Resistenz basiert auf Implementierungsschwächen\footnote{bzw. Heuristikschwächen.} existierender symbolischer Ausführungsengines und nicht ihren fundamentalen Grenzen (bzw. den der SMT-Solver) \cite{xuManufacturingResilientBiOpaque2018}. Als Beispiel hierfür dienen die Bi-Opaken Prädikate \cite{xuManufacturingResilientBiOpaque2018}. Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen von \emph{Angr} \cite{shoshitaishvili2016state} ergab: drei der vier in \cite{xuManufacturingResilientBiOpaque2018} dargestellten Methoden können nun von \emph{Angr} problemlos symbolisch ausgeführt werden
 \footnote{
 	(a) symbolischer RAM: Ausführbar für Arrays mit einer Länge unter $257$. \\
 	(b) Gleitkommazahlen: Ausführbar, wenn keine x86 \texttt{long double} Datentypen verwendet werden. \\
 	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{covert symbolic propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
 	(d) Threads: Noch nicht implementiert.
 }.
+%Es lässt sich aus diesem Fallbeispiel induktiv folgern, dass die Deobfuskation existierender Ansätze in gewisser Weise nur eine Frage der Zeit ist - eine Verbesserung existierender, öffentlicher Methoden.
 Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013} und \cite{tigress2025} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
 Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit. 
-%Es lässt sich aus diesem Fallbeispiel induktiv folgern, dass die Deobfuskation existierender Ansätze in gewisser Weise nur eine Frage der Zeit ist - eine Verbesserung existierender, öffentlicher Methoden.
+
+\textcolor{red}{TODO: evtl. mit Lit. Review stützen}
+
+\textcolor{red}{TODO: Tabelle evtl basierend auf Lit. Review?}
+
+\textcolor{red}{TODO: Abbildung mit verschiedenen Varianten}
+
+\textcolor{red}{TODO: Code obfuscation against symbolic execution attacks: "`(1) path explosion, (2) path divergence and (3) complex constraints."'}
+
+\textcolor{red}{TODO: mehr Obfuskationsmechanismen + Deobfuskatoren einbringen!!! => Zeigen, was ich alles recherchiert habe!}
 
 \begin{itemize}
-    \item Obfuscator-LLVM \checkmark
-    \item Bi-Opaque Prädikate \checkmark
+    \item Obfuscator-LLVM 
+    \item (Collberg et al.) Tigress (dynamic opaque predicates!!)
+    \item Bi-Opaque Prädikate 
     \item Linear Obfuscation to Combat Symbolic Execution
-    \item Binary Code Side Effects \checkmark
-    \item ''When Are Opaque Predicates Useful''
-    \item ''Software obfuscation on a theoretical basis and its implementation,'' IEICE Trans. on Fundamentals of Electronics, Communications and Computer Sciences, 2003.
-    \item (Collberg et al.) Tigress (dynamic opaque prediactes!!)
+    \item "`When Are Opaque Predicates Useful"'
+    \item "`Software obfuscation on a theoretical basis and its implementation,"'
+\end{itemize}
+
+Begründung für meinen Ansatz:
+\begin{itemize}
+    \item Schnell
+    \item Resistent gegenüber Pattern-Matching
 \end{itemize}
 
 \section{Ansatz} 

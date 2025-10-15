@@ -1,6 +1,7 @@
 #### Neu
 - 3.3 Symbolische Ausführung: Immer dasselbe zitieren; wie besser?
 - Stochastische opake Prädikate und Konstruktionsschema zusammenfügen?
+- Projektüberblick = Abstract (wissenschaftlich) oder "für Medien" (für Laien) wie bei JuFo steht?
 #### Alt
 - Deutsche oder englische Begriffe?
 - Regel für Annahme von Vorwissen?
