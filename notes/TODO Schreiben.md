@@ -3,8 +3,16 @@
 	- [x] Im Angr Discord fragen, ob BiOpake Prädikate gefixt wurden?
 - [ ] Ansatz->Algorithmus besser mit Implementierung abstimmen
 - [ ] Implementierung zu Ende
-- [ ] Ziele aus Angreifermodell folgern
+- [ ] Ziele aus Angreifermodell folgern?
 - [ ] Ansatz besser erklären $\implies$ wichtigster Teil!!
+
+- [ ] Formelle Definition von Sicherheit mit Zeit (wie in Kryptologie)
+  und dann Sicherheit **beweisen**? 
+  **-> Unentscheidbarkeit beweisen!**
+  - **Turing Maschinen lernen**
+  - **Komplexitätsklassen beweisen können (was heißt NP wirklich)**
+  - **Turing Maschinen Halteproblem**
+  - **Unentscheidbarkeit**
 
 - [ ] Grafiken aus IDA ersetzen mit Flowchart
 - Generierung von Pseudozufallszahlen/Wahrscheinlichkeitsverteilungsgenerierung bei Ansatz?
@@ -14,8 +22,6 @@
 - [ ] SYMBOLISCHE AUSFÜHRUNG MIT ANGR + TRITON + KLEE
 
 #### Später
-- [ ] Formelle Definition von Sicherheit mit Zeit (wie in Kryptologie)
-  und dann Sicherheit **beweisen**? 
 
 - [ ] `bib.bib` "and" -> "und"
 - [ ] fix bib uneinheitlichkeiten

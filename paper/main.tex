@@ -133,6 +133,7 @@ Eine Obfuskation hat immer das Ziel, die Komplexität eines Programmes so zu erh
 Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \emph{Stärke}, \emph{Resilienz}, \emph{Kosten} und \emph{Tarnung} verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
+\textcolor{red}{TODO: evtl. Tabellarisch (bei Evaulierung?) ausführen.}
 %Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
 %TODO: Arten der Obfuskation?
 
@@ -200,7 +201,7 @@ Das Prädikat $\mathcal{O}(\phi)=\left[-1977224191 \space \& \space 1 == 1\right
 \end{example}
 
 \begin{example}
-Das Prädikat $\mathcal{O}(\phi)= \left[(y < 10) \vee (x \cdot (x + 1) \mod{2} \equiv 0)\right]$ aus \text{\cite{ieeespro2015-JunodRWM}} mit $\phi=(x,y)$ und $x, y \in \mathbb{Z}$ ist etwas komplexer. Auch dieses Prädikat ist immer wahr, da $x\cdot (x+1)$ immer gerade ist. Der Wert is folglich von $y$ unabhängig.
+Das Prädikat $\mathcal{O}(\phi)= \left[(y < 10) \vee (x \cdot (x + 1) \mod{2} \equiv 0)\right]$ aus \text{\cite{ieeespro2015-JunodRWM}} mit $\phi=(x,y)$ und $x, y \in \mathbb{Z}$ ist immer wahr, da $x\cdot (x+1)$ immer gerade ist. Der Wert is folglich von $y$ unabhängig.
 \end{example}
 
 %Mehrere Methoden zur Generierung solcher starken opaken Prädikate wurden bereits publiziert. Ein Überblick über diese sowie ihre Limitationen wird in \cref{sec:motivation} gegeben.
@@ -381,12 +382,10 @@ Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an
 Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
 
 \subsection{Stochastische opake Prädikate} % Grundidee
-Während andere Methoden wie \cite{xuManufacturingResilientBiOpaque2018} auf den praktischen Implementierungslimitationen symbolischer Ausführungsengines basieren, nutzt diese Methode deren fundamentale Grenzen aus. 
-
 \textcolor{red}{TODO: Funktion von symbolischen Ausführungsengines}
 Dies genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
 
-Will man allerdings Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Beschränkungen (\emph{constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Wariablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
+Will man allerdings Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Beschränkungen (\emph{constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
 Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999999999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0000000001$ den Wert $0$ zurückgibt. 
 \begin{algorithm}[!htb] 
@@ -454,47 +453,13 @@ Aus dem Angreifermodell und den Evaulierungskriterien von Collberg et al. \cite{
 
 % TODO: Erklären, warum wir nur diesen Fall betrachten
 Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $x$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $x$ nicht statisch bestimmen kann. Es wird angenommen, dass $x$ gleichverteilt ist. Diese Verteilung wird nun in eine andere (z.B. Normal-, Exponential-, Bernoulliverteilung) transformiert. Über diese können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
-\begin{algorithm}[!htb] \label{alg:Imp}
-    \caption{Beispiel eines stochastisch opaken Prädikats}
-    \begin{algorithmic}[1]
-    \Require{$x$: zufällige, unbekannte Zahl}
-    
-    \State $\mathit{SkalierteZufallszahl} \gets \Call{AbbildungAufEinheitsintervall}{\mathit{x}}$ \Comment{Einheitsintervall: [0; 1]}
-    \State $\mathit{PoissonVerteilt} \gets \Call{InverseCDF}{\mathit{SkalierteZufallszahl}, \lambda=\mathit{5}}$
-    \If{$\mathit{PoissonVerteilt} \leq 10$}
-        \State ... \Comment{Praktisch immer wahr ($P(X\leq10)=0,9863$)}
-    \Else
-        \State ... \Comment{Praktisch nie wahr ($P(X\geq10)=0,03183$)}
-    \EndIf
-    \end{algorithmic}
-\end{algorithm}
-\cref{alg:Imp} zeigt die Umsetzung eines stochastischen opaken Prädikats in einem Programm.
 
 Der Pseudocode für die Generierung solcher stochastischer opaker Prädikate ist in \cref{alg:stochasticOpaque} beschreiben.
 \begin{algorithm}[!htb] 
     \caption{Generierung stochastischer opaker Prädikate}
     \label{alg:stochasticOpaque}
     \begin{algorithmic}[1]
-    \State Erstelle Funktion $\mathit{TransformiereVerteilung}(x)$ im Modul, welche die gleichverteilte Variable $x\in\space ]0; 1]$ ...
-    \Procedure{FügePrädikatEin}{$\mathit{Modul, T}$}
-    \ForAll{Funktion in Modul}
-    
-        \State $BasisBlock \gets \Call{ZufälligerBasisBlock}{\mathit{Funktion}}$
-        \State $\mathit{Entry} \gets \Call{ZufälligeAnweisung}{\mathit{BasisBlock}}$
-        %\State $\mathit{LebendeVariable} \gets \Call{ZufälligeLebendeVariable}{\mathit{Entry}}$ \\
-        \State $\mathit{ZufaelligerWert} \gets \Call{ErstelleFunktionsAufruf}{\mathit{Gleichverteilung}, ]0; 1]}$ \\
-        
-        \State $\mathit{TransformierteVariable} \gets \Call{ErstelleFunktionsAufruf}{\mathit{TransformiereVerteilung, ZufaelligerWert}}$
-        \State $\Call{ErstelleVergleich}{\mathit{TransformierteVariable}}$ \\
-        
-        \State $BB_{\mathrm{immer\_wahr}} \gets \Call{Splitblock}{\mathit{BasisBlock, Entry}}$
-        \Comment{Basisblöcke für Prädikatenfälle generieren}
-        \State $BB_{\mathrm{nie\_wahr}} \gets \Call{NeuerBlock}{\mathit{Funktion}}$ \\
-    
-        \State $\Call{ErstelleBedingteVerzweigung}{"\mathit{TransformierteVariable \geq T}", BB_{\mathrm{immer\_wahr}}, BB_{\mathrm{nie\_wahr}}}$ \\
-
-        \State Fülle Basisblock $BB_{\mathrm{nie\_wahr}}$ mit zufälligen Anweisungen.
-    \EndFor
+    \Procedure{...}{$\mathit{...}$}
     \EndProcedure
     \end{algorithmic}
 \end{algorithm}
