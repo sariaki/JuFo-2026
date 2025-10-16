@@ -63,7 +63,8 @@
               "title": "FRAGEN"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,10 +212,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c9573842c805652c",
+  "active": "1b3dbdcb4d3c2143",
   "lastOpenFiles": [
-    "FRAGEN.md",
     "TODO Schreiben.md",
+    "FRAGEN.md",
     "Hintergrund & Motivation.md",
     "TODO Implementierung.md",
     "TODO Recherche.md",
