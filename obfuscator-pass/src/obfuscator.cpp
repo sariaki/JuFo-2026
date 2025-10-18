@@ -19,7 +19,7 @@ namespace
 {
     struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
     {
-        const double Threshold = 80;//140;
+        const double Threshold = 140;
         const double Lambda = 100;
 
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
@@ -30,7 +30,8 @@ namespace
             std::random_device Dev;
             std::mt19937 Rng(Dev());
 
-            const auto Sampler = Distribution::CreatePoisson(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
+            //const auto Sampler = Distribution::CreatePoisson(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
+            const auto Sampler = Distribution::CreateRandom(M, Rng);
 
             for (Function& F : M)
             {
@@ -38,19 +39,17 @@ namespace
                 if (F.isDeclaration()) continue;
 
                 // Check if function has required annotation
-                // TODO: improve this ghetto check and check fn attributes
-                // This just prevents us from entering an infinite loop
-                //if (demangle(F.getName().str()) == "sample_poisson")
-                //    continue;
+                // TODO
                 if (!(demangle(F.getName().str()) == "foo"))
                     continue;
 
-                //Distribution::CreateRandom(M, Rng);
-                
+
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();
                 IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
                
+                // TODO: Multiple Methods for getting randomness
+
                 // Get Parameter to create a symbolic variable for the solver
                 if (F.arg_empty())
                     continue;
@@ -62,10 +61,8 @@ namespace
                 // We do this this way because LLVM *somehow* messes up if we perform a division with IRB.CreateFDiv in the IR
                 constexpr double RecipMax = 1.0 / std::numeric_limits<double>::max();
                 Value* RecipMaxConstant = ConstantFP::get(IRB.getDoubleTy(), RecipMax);
-                const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
 
-                //Utils::PrintIRDouble(M, IRB, DoubleCallParameter, "DoubleCallParameter: ");
-                //Utils::PrintIRDouble(M, IRB, SmallCallParameter, "SmallCallParameter: ");
+                const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
 
                 // i64 x = sample_poisson(u))
                 const auto SampleRet = IRB.CreateCall(Sampler, { SmallCallParameter });
@@ -92,6 +89,7 @@ namespace
         }
     };
 
+#pragma region Setup Boilerplate
     // Legacy PassManager registration
     struct LegacyStochasticOpaquePredicate : public ModulePass
     {
@@ -139,3 +137,4 @@ extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo
 {
     return getStochasticOpaquePredicatePluginInfo();
 }
+#pragma endregion

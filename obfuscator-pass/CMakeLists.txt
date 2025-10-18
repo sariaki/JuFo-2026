@@ -31,25 +31,26 @@ include(FetchContent)
 #  GIT_TAG 3.4.0
 #)
 #FetchContent_MakeAvailable(eigen)
-FetchContent_Declare(
-  nlopt
-  GIT_REPOSITORY https://github.com/stevengj/nlopt.git
-  GIT_TAG v2.10.0
-)
 
-set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build NLopt static" FORCE)
-set(NLOPT_BUILD_PYTHON OFF CACHE BOOL "Disable python build" FORCE)
-set(NLOPT_BUILD_OCTAVE OFF CACHE BOOL "Disable octave build" FORCE)
-set(NLOPT_BUILD_MATLAB OFF CACHE BOOL "Disable matlab build" FORCE)
-set(NLOPT_BUILD_EXAMPLES OFF CACHE BOOL "Disable examples" FORCE)
-set(NLOPT_LUKSAN OFF CACHE BOOL "Do not build Luksan LGPL parts" FORCE)
-
-FetchContent_MakeAvailable(nlopt)
-
-# Extra safety: if a target named 'nlopt' exists, ensure it compiles with /MT (applies to the target created by NLopt)
-if(MSVC AND TARGET nlopt)
-  target_compile_options(nlopt PRIVATE $<$<CONFIG:Debug>:/MTd> $<$<NOT:$<CONFIG:Debug>>:/MT>)
-endif()
+#FetchContent_Declare(
+#  nlopt
+#  GIT_REPOSITORY https://github.com/stevengj/nlopt.git
+#  GIT_TAG v2.10.0
+#)
+#
+#set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build NLopt static" FORCE)
+#set(NLOPT_BUILD_PYTHON OFF CACHE BOOL "Disable python build" FORCE)
+#set(NLOPT_BUILD_OCTAVE OFF CACHE BOOL "Disable octave build" FORCE)
+#set(NLOPT_BUILD_MATLAB OFF CACHE BOOL "Disable matlab build" FORCE)
+#set(NLOPT_BUILD_EXAMPLES OFF CACHE BOOL "Disable examples" FORCE)
+#set(NLOPT_LUKSAN OFF CACHE BOOL "Do not build Luksan LGPL parts" FORCE)
+#
+#FetchContent_MakeAvailable(nlopt)
+#
+## Extra safety: if a target named 'nlopt' exists, ensure it compiles with /MT (applies to the target created by NLopt)
+#if(MSVC AND TARGET nlopt)
+#  target_compile_options(nlopt PRIVATE $<$<CONFIG:Debug>:/MTd> $<$<NOT:$<CONFIG:Debug>>:/MT>)
+#endif()
 
 # Our pass lives in this subdirectory.
 add_subdirectory(src)

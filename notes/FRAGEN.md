@@ -2,6 +2,8 @@
 - 3.3 Symbolische Ausführung: Immer dasselbe zitieren; wie besser?
 - Stochastische opake Prädikate und Konstruktionsschema zusammenfügen?
 - Projektüberblick = Abstract (wissenschaftlich) oder "für Medien" (für Laien) wie bei JuFo steht?
+- Formatierung bei anderen erfolgreichen Arbeiten immer anders
+- Zitieren mit Zeilenangaben?
 #### Alt
 - Deutsche oder englische Begriffe?
 - Regel für Annahme von Vorwissen?

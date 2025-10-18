@@ -11,7 +11,7 @@
 #include <random>
 #include <optional>
 #include "../Utils/Utils.hpp"
-#include "BernsteinPolynomialRegression.hpp"
+#include "Bernsteinpolynomial.hpp"
 
 using namespace llvm;
 

@@ -42,5 +42,5 @@ set_target_properties(Obfuscator PROPERTIES
 # Hook up to LLVM & NLopt
 find_package(LLVM REQUIRED CONFIG)
 target_include_directories(Obfuscator PRIVATE ${LLVM_INCLUDE_DIRS})
-target_link_libraries(Obfuscator PRIVATE LLVMCore LLVMSupport nlopt) # Eigen3::Eigen
+target_link_libraries(Obfuscator PRIVATE LLVMCore LLVMSupport) # nlopt Eigen3::Eigen
 llvm_update_compile_flags(Obfuscator)

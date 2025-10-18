@@ -41,30 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO Recherche.md",
+                "file": "Methoden.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO Recherche"
-            }
-          },
-          {
-            "id": "1b3dbdcb4d3c2143",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FRAGEN.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FRAGEN"
+              "title": "Methoden"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,17 +198,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b3dbdcb4d3c2143",
+  "active": "4b06bbf36e8fd559",
   "lastOpenFiles": [
     "TODO Schreiben.md",
-    "FRAGEN.md",
-    "Hintergrund & Motivation.md",
-    "TODO Implementierung.md",
+    "Methoden.md",
     "TODO Recherche.md",
     "Notizen.md",
+    "FRAGEN.md",
+    "TODO Implementierung.md",
+    "IDEE GEGEN PATTERN-MATCHING.md",
+    "Hintergrund & Motivation.md",
     "Gleichung.png",
     "gleichung.png",
-    "Untitled.png",
-    "IDEE GEGEN PATTERN-MATCHING.md"
+    "Untitled.png"
   ]
 }

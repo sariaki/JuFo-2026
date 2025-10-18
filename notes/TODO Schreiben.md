@@ -1,33 +1,42 @@
+###### Allgemein:
+- KI-Resistenz
+- symExec-Resistenz
+- Pattern-Matching-Resistenz
+- Geschwindigkeit
+- Dynamische Ausführung Resistenz? (Gegen Herausfinden, ob immer gleich)
+- In Tigress implementieren??? $\implies$ Collberg fragen
 
+#### Jetzt
+- MUSS ICH NICHT VIELLEICHT DOCH REGRESSION NUTZEN!?
+  ODER REICHT ES, WENN ALL $c$ STEIGEN UND $c_0=0$ und $c_n=1$
+- stephensProbabilisticObfuscationCovert2018 implementieren!
 - [ ] Hintergrund/Motivation neu
 	- [x] Im Angr Discord fragen, ob BiOpake Prädikate gefixt wurden?
-- [ ] Ansatz->Algorithmus besser mit Implementierung abstimmen
+- [ ] Ansatz->Algorithmus neu 
+      (besser mit Implementierung abstimmen)
 - [ ] Implementierung zu Ende
 - [ ] Ziele aus Angreifermodell folgern?
+      von stephensProbabilisticObfuscationCovert2018 übernehmen
 - [ ] Ansatz besser erklären $\implies$ wichtigster Teil!!
 
-- [ ] Formelle Definition von Sicherheit mit Zeit (wie in Kryptologie)
-  und dann Sicherheit **beweisen**? 
-  **-> Unentscheidbarkeit beweisen!**
-  - **Turing Maschinen lernen**
-  - **Komplexitätsklassen beweisen können (was heißt NP wirklich)**
-  - **Turing Maschinen Halteproblem**
-  - **Unentscheidbarkeit**
-
-- [ ] Grafiken aus IDA ersetzen mit Flowchart
-- Generierung von Pseudozufallszahlen/Wahrscheinlichkeitsverteilungsgenerierung bei Ansatz?
 - [ ] Pseudocode verbessern
 	- evtl. ganz auf Englisch?
 
-- [ ] SYMBOLISCHE AUSFÜHRUNG MIT ANGR + TRITON + KLEE
-
+- [ ] SYMBOLISCHE AUSFÜHRUNG EVAULIERUNG WIE COLLBERG
+      stephensProbabilisticObfuscationCovert2018
+      caballeroDetectionIntrusionsMalware2016
+      stephensProbabilisticObfuscationCovert2018
 #### Später
+- [ ] `\usepackage[algoruled, nosemicolon]{algorithm2e}`
 
 - [ ] `bib.bib` "and" -> "und"
 - [ ] fix bib uneinheitlichkeiten
-- [ ] fix Gänsefüßchen ""
+- [ ] ``\emph`` -> Anführungszeichen
+- [ ] fix Anführungszeichen ""
 
-- [ ] $P$ und $P'$ sehen aus wie $P^T$ etc.
+- [ ] Grafiken aus IDA ersetzen mit Flowchart
+- Generierung von Pseudozufallszahlen/Wahrscheinlichkeitsverteilungsgenerierung bei Ansatz?
+
 - [x] zweites Bsp opake Präd. aber mit Parameter Nutzung
 
 - [ ] `\cref` funktioniert nicht für Algpseudocode!

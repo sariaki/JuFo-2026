@@ -8,8 +8,9 @@
 \usepackage{geometry}
 \geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2cm}
 
-\usepackage{setspace}
-\linespread{1.25} % Word berechnet Zeilenabstände falsch...
+%\usepackage{setspace}
+%\linespread{1.25} % Word berechnet Zeilenabstände falsch...
+\usepackage[onehalfspacing]{setspace}
 
 \usepackage{graphicx}
 \graphicspath{{img/}}
@@ -120,21 +121,25 @@ Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kom
 % TODO: Klären, was in welchem Abschnitt gemacht wird.
 
 \section{Theoretische Grundlagen}
-\subsection{Obfuskation}
+\subsection{(Stochastische) Obfuskation}
 Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
 \begin{definition}[Obfuskation]
 	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
 	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
 \end{definition}
 
-Eine Obfuskation hat immer das Ziel, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. \textcolor{red}{Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}}.
+Eine Obfuskation hat immer das Ziel, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. \textcolor{red}{Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}. Im besten Fall soll die Komplexität so hoch sein, dass ein Reverse-Engineering zu lange braucht, um für einen Angreifer sinnvoll zu sein.}
 
 Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Um eine Obfuskationsmethode zu evaluieren werden typischerweise die Metriken \emph{Stärke}, \emph{Resilienz}, \emph{Kosten} und \emph{Tarnung} verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
 \textcolor{red}{TODO: evtl. Tabellarisch (bei Evaulierung?) ausführen.}
 %Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
-%TODO: Arten der Obfuskation?
+
+\begin{definition}[Stochastische Obfuskation]
+    ....
+\end{definition}
+
 
 \subsection{Opake Prädikate}
 Die folgenden Definitionen sind aus \cite{tofighi-shiraziDefeatingOpaquePredicates2019} sowie vom Pionierwerk \cite{collbergManufacturingCheapResilient1998} modifiziert übernommen. Es wird sich auf hierbei auf invariante opake Prädikate beschränkt. Ferner wird angenommen, dass alle Funktionen/Prädikatenterme evaluierbar sind.
@@ -354,15 +359,16 @@ Begründung für meinen Ansatz:
 
 \section{Ansatz} 
 \subsection{Angreifermodell}
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{sym_exec}
+    \end{center}
+    \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung \cite{xuManufacturingResilientBiOpaque2018} %\textcolor{red}{TODO: selbst machen}
+    } 
+\end{wrapfigure}
 Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem Angreifermodell aufbauend auf \cite{xuManufacturingResilientBiOpaque2018} aus.
 Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch analysieren. 
 Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
-\begin{wrapfigure}{r}{0.3\textwidth}
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]{sym_exec}
-	\end{center}
-	\caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung, Abb. aus \cite{xuManufacturingResilientBiOpaque2018} übernommen} \textcolor{red}{TODO: selbst machen}
-\end{wrapfigure}
 %Sog.  \emph{Pattern Matching}, \textcolor{red}{TODO} sowie symbolische Ausführung ist möglich. \textcolor{red}{TODO aus ''When are opaque predicates useful?''}
 Pattern matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
 
@@ -373,10 +379,9 @@ Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an
 Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
 
 \subsection{Stochastische opake Prädikate} % Grundidee
-\textcolor{red}{TODO: Funktion von symbolischen Ausführungsengines}
-Dies genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
-
-Will man allerdings Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Beschränkungen (\emph{constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
+%\textcolor{red}{TODO: Funktion von symbolischen Ausführungsengines zusammenfassen}
+Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
+Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
 Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999999999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0000000001$ den Wert $0$ zurückgibt. 
 \begin{algorithm}[!htb] 
@@ -401,11 +406,14 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 \begin{definition}[Stochastische opake Prädikate] \label{def:stochOpaque} \label{def:konstruktionsschema}
 	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. % wenn die Wahrscheinlichkeit eines Eintretens des Falls $A\in \{0, 1\}$ unter der eines Hardwarefehlers liegt. % TODO: 10^{-k} Präzision
 \end{definition}
+
+%\textcolor{red}{TODO: Neuste wissenschaftliche Forschung schätzt die Wahrscheinlichkeit eines Hardwareversagens auf $n \approx ...$.}
+
 \begin{definition}[Konstruktionsschema stochastisch opaker Prädikate]
 	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das stochastisch opake Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
-	$$
+\begin{equation}
 	\mathcal{O}(\phi) = \left[f(X) \bowtie c \right],
-	$$
+\end{equation}
 	wobei:
 	\begin{enumerate}
 		\item $f$ eine Transformation durch arithmetische und bitweise Operationen ist (z. B. $f(X) = m \cdot (X \oplus k) + b$), mit Konstanten $(m, k, b) \in \mathbb{R}$),
@@ -429,21 +437,12 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 
 Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...% TODO: Wahrscheinlichkeit eines Hardwarefehlers zitieren.
 
-\subsection{Theoretische Sicherheit}
-Im Folgenden wird die Resistenz des Ansatzes gegen symbolische Ausführung bewiesen.
-\begin{theorem}
-    \textcolor{red}{TODO: Theorem}
-\end{theorem}
-\begin{proof}
-    \textcolor{red}{TODO: Beweis}
-\end{proof}
-
 \subsection{Algorithmus}
 % TODO: Es kann mehrere Arten geben!
 %Während andere präsentierte Ansätze auf schweren Problemen beruhen, welche gelöst werden müsse, um einen Pfad auszuschließen, macht dieser Algorithmus dieses Ausschließen mit herkömmlichen Methoden unmöglich. Hierfür wird mit Wahrscheinlichkeit gearbeitet. 
 
 % TODO: Erklären, warum wir nur diesen Fall betrachten
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $x$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $x$ nicht statisch bestimmen kann. Es wird angenommen, dass $x$ gleichverteilt ist. Diese Verteilung wird nun in eine andere (z.B. Normal-, Exponential-, Bernoulliverteilung) transformiert. Über diese können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $x$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $x$ nicht statisch bestimmen kann. Es wird angenommen, dass $x$ gleichverteilt ist. Diese Verteilung wird nun in eine andere (z.B. Normal-, Exponential-, Bernoulliverteilung) transformiert. \textcolor{red}{TODO: INVERSIONSMETHODE!} Methoden hierfür werden in \cref{sec:genProb} vorgestellt. Über diese können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
 
 Der Pseudocode für die Generierung solcher stochastischer opaker Prädikate ist in \cref{alg:stochasticOpaque} beschreiben.
 \begin{algorithm}[!htb] 
@@ -476,19 +475,20 @@ Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hi
 Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. % TODO
 Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
 \textcolor{red}{TODO: Mögliche Ansätze wie in Collberg Paper durchgehen}
+
+\textcolor{red}{TODO: Beweis der Inversionsmethode}
 % TODO: ERKLÄREN rand() würde schlecht funktionieren, weil man SMT-solver konfigurieren könnte (auch hier hat man theoretisch gewonnen, weil sich Reverse-Engineer damit beschäftigen muss), sodass rand()=Konstante und somit alles determinierbar ist
 
-
-\subsection{Wahrscheinlichkeitsverteilungsgenerierung}
+\subsection{Wahrscheinlichkeitsverteilungsgenerierung} \label{sec:genProb}
 Um den Ansatz gegen \emph{Pattern Matching} resistent zu machen, wird er generalisiert implementiert. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes stochastisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
 Mehrere Methoden kommen hierfür infrage:
 \paragraph{Generierung über Verteilungsfamilie}
 Eine Möglichkeit ist die Nutzung einer Wahrscheinlichkeitsverteilung, deren Wahrscheinlichkeits-(dichte-)funktion über einen oder mehrere Parameter bestimmt wird.
 
 Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, Formparameter $r > 0$ und folgender Dichtefunktion \cite{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}:
-$$
+\begin{equation}
 \gamma_{\alpha,r}(x) \;=\; \frac{\alpha^r}{\Gamma(r)}x^{r-1}e^{-\alpha x}, x > 0.
-$$
+\end{equation}
 Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste.
 \textcolor{red}{Der Nachteil hiervon ist, dass ...}
 
@@ -500,9 +500,9 @@ Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $
     \item \textcolor{red}{...TODO}
 \end{enumerate}
 Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome gelöst:
-$$
+\begin{equation}
 B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}.
-$$
+\end{equation}
 
 \textcolor{red}{Hierdurch kann man nicht patternmatchen, weil man nach Polynom der Form $ax^k(1-x)^l$ sucht}
 \subsection{Generierung von ununterscheidbarem Füllcode}

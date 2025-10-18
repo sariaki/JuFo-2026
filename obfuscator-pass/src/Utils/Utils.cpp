@@ -63,3 +63,16 @@ CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* DoubleValue, 
     return reinterpret_cast<CallInst*>(0);
 #endif
 }
+
+double Utils::BinomialCoefficient(int n, int k)
+{
+    if (k > n || k < 0) return 0.0;
+    if (k == 0 || k == n) return 1.0;
+
+    double Result = 1.0;
+    for (int i = 1; i <= k; ++i)
+    {
+        Result = Result * (n - k + i) / i;
+    }
+    return Result;
+}

@@ -21,9 +21,9 @@ $__local_stdio_printf_options = comdat any
 
 $_vfprintf_l = comdat any
 
-$"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@" = comdat any
+$"??_C@_07ODMBGAAE@foo?5?$CFi?6?$AA@" = comdat any
 
-@"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@" = linkonce_odr dso_local unnamed_addr constant [8 x i8] c"foo %d\0A\00", comdat, align 1, !dbg !0
+@"??_C@_07ODMBGAAE@foo?5?$CFi?6?$AA@" = linkonce_odr dso_local unnamed_addr constant [8 x i8] c"foo %i\0A\00", comdat, align 1, !dbg !0
 @__local_stdio_printf_options._OptionsStorage = internal global i64 0, align 8, !dbg !7
 @.str = private unnamed_addr constant [28 x i8] c"insert_stochastic_predicate\00", section "llvm.metadata"
 @.str.1 = private unnamed_addr constant [10 x i8] c"example.c\00", section "llvm.metadata"
@@ -121,22 +121,12 @@ define linkonce_odr dso_local i32 @_vsnprintf(ptr noundef %0, i64 noundef %1, pt
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @foo(i32 noundef %0) #0 !dbg !92 {
-  %sitofp_to_double = sitofp i32 %0 to double
-  %2 = fmul double %sitofp_to_double, 0x4000000000000
-  %3 = call i64 @sample_poisson(double %2)
-  %4 = icmp slt i64 %3, 80
-  br i1 %4, label %always_hit, label %never_hit
-
-always_hit:                                       ; preds = %1
-  %5 = alloca i32, align 4
-  store i32 %0, ptr %5, align 4
-    #dbg_declare(ptr %5, !95, !DIExpression(), !96)
-  %6 = load i32, ptr %5, align 4, !dbg !97
-  %7 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_07OLBJPDFH@foo?5?$CFd?6?$AA@", i32 noundef %6), !dbg !97
+  %2 = alloca i32, align 4
+  store i32 %0, ptr %2, align 4
+    #dbg_declare(ptr %2, !95, !DIExpression(), !96)
+  %3 = load i32, ptr %2, align 4, !dbg !97
+  %4 = call i32 (ptr, ...) @printf(ptr noundef @"??_C@_07ODMBGAAE@foo?5?$CFi?6?$AA@", i32 noundef %3), !dbg !97
   ret void, !dbg !98
-
-never_hit:                                        ; preds = %1
-  unreachable
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
@@ -163,7 +153,7 @@ define linkonce_odr dso_local i32 @printf(ptr noundef %0, ...) #0 comdat !dbg !9
 define dso_local i32 @main() #0 !dbg !112 {
   %1 = alloca i32, align 4
   store i32 0, ptr %1, align 4
-  call void @foo(i32 noundef poison), !dbg !115
+  call void @foo(i32 noundef 123123), !dbg !115
   ret i32 0, !dbg !116
 }
 
@@ -299,6 +289,74 @@ exit:                                             ; preds = %loop
 
 declare double @exp(double)
 
+define i64 @sample_random(double %u) {
+entry:
+  %one_minus_u = fsub double 0x10000000000000, %u
+  %u_pow_1 = fmul double 0x10000000000000, %u
+  %u_pow_2 = fmul double %u_pow_1, %u
+  %u_pow_3 = fmul double %u_pow_2, %u
+  %u_pow_4 = fmul double %u_pow_3, %u
+  %u_pow_5 = fmul double %u_pow_4, %u
+  %u_pow_6 = fmul double %u_pow_5, %u
+  %u_pow_7 = fmul double %u_pow_6, %u
+  %u_pow_8 = fmul double %u_pow_7, %u
+  %u_pow_9 = fmul double %u_pow_8, %u
+  %u_pow_10 = fmul double %u_pow_9, %u
+  %omu_pow_1 = fmul double 0x10000000000000, %one_minus_u
+  %omu_pow_2 = fmul double %omu_pow_1, %one_minus_u
+  %omu_pow_3 = fmul double %omu_pow_2, %one_minus_u
+  %omu_pow_4 = fmul double %omu_pow_3, %one_minus_u
+  %omu_pow_5 = fmul double %omu_pow_4, %one_minus_u
+  %omu_pow_6 = fmul double %omu_pow_5, %one_minus_u
+  %omu_pow_7 = fmul double %omu_pow_6, %one_minus_u
+  %omu_pow_8 = fmul double %omu_pow_7, %one_minus_u
+  %omu_pow_9 = fmul double %omu_pow_8, %one_minus_u
+  %omu_pow_10 = fmul double %omu_pow_9, %one_minus_u
+  br label %loop
+
+loop:                                             ; preds = %loop, %entry
+  %k = phi i64 [ 0, %entry ], [ %0, %loop ]
+  %s = phi double [ 0.000000e+00, %entry ], [ %acc_10, %loop ]
+  %term_0 = fmul double 0.000000e+00, %omu_pow_10
+  %acc_0 = fadd double %s, %term_0
+  %term_cu_1 = fmul double 0x1DC609CC004ED2, %u_pow_1
+  %term_1 = fmul double %term_cu_1, %omu_pow_9
+  %acc_1 = fadd double %s, %term_1
+  %term_cu_2 = fmul double 0x1A434B8C1923B9, %u_pow_2
+  %term_2 = fmul double %term_cu_2, %omu_pow_8
+  %acc_2 = fadd double %s, %term_2
+  %term_cu_3 = fmul double 0x10F2F8A1678EC6, %u_pow_3
+  %term_3 = fmul double %term_cu_3, %omu_pow_7
+  %acc_3 = fadd double %s, %term_3
+  %term_cu_4 = fmul double 0x15D93978903544, %u_pow_4
+  %term_4 = fmul double %term_cu_4, %omu_pow_6
+  %acc_4 = fadd double %s, %term_4
+  %term_cu_5 = fmul double 0x13B702E457D29F, %u_pow_5
+  %term_5 = fmul double %term_cu_5, %omu_pow_5
+  %acc_5 = fadd double %s, %term_5
+  %term_cu_6 = fmul double 0x11CA239C0D32FA, %u_pow_6
+  %term_6 = fmul double %term_cu_6, %omu_pow_4
+  %acc_6 = fadd double %s, %term_6
+  %term_cu_7 = fmul double 0x16EE91E72906FC, %u_pow_7
+  %term_7 = fmul double %term_cu_7, %omu_pow_3
+  %acc_7 = fadd double %s, %term_7
+  %term_cu_8 = fmul double 0x1D8F8813FAE302, %u_pow_8
+  %term_8 = fmul double %term_cu_8, %omu_pow_2
+  %acc_8 = fadd double %s, %term_8
+  %term_cu_9 = fmul double 0x196758F12B9B16, %u_pow_9
+  %term_9 = fmul double %term_cu_9, %omu_pow_1
+  %acc_9 = fadd double %s, %term_9
+  %term_cu_10 = fmul double 0x10000000000000, %u_pow_10
+  %term_10 = fmul double %term_cu_10, 0x10000000000000
+  %acc_10 = fadd double %s, %term_10
+  %0 = add i64 %k, 1
+  %1 = fcmp ogt double %u, %s
+  br i1 %1, label %loop, label %exit
+
+exit:                                             ; preds = %loop
+  ret i64 %k
+}
+
 attributes #0 = { noinline nounwind optnone uwtable "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #1 = { nocallback nofree nosync nounwind willreturn }
 attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
@@ -310,7 +368,7 @@ attributes #3 = { alwaysinline }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 8, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "example.c", directory: "C:\\Users\\sariaki\\Documents\\code\\py\\JuFo-2026\\examples", checksumkind: CSK_MD5, checksum: "95c20b0b45336c3621a3bf86ad645625")
+!2 = !DIFile(filename: "example.c", directory: "C:\\Users\\sariaki\\Documents\\code\\py\\JuFo-2026\\examples", checksumkind: CSK_MD5, checksum: "6fd78dce024844d71dc778657bd5154e")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 64, elements: !5)
 !4 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
 !5 = !{!6}
