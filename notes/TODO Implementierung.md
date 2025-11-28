@@ -1,18 +1,19 @@
 #### High Priority:
-- [ ] **Symbolische Variablen finden, deren Wertebereiche vorhersehbar sind, deren Werte allerdings nicht**
-	- siehe "Probabilistic Obfuscation Through Covert Channels" !!!
-- [ ] Was ist, wenn $x=$LLONG_MAX ? $\implies$ $u=1 \implies$ CDF-Methode funktioniert nicht, da Prädikate sagt, dass $\leq k$. Lieber bitmixing? 
+- [ ] ~~**Symbolische Variablen finden, deren Wertebereiche vorhersehbar sind, deren Werte allerdings nicht**~~
+	- ~~siehe "Probabilistic Obfuscation Through Covert Channels" !!!~~
+- [ ] ~~Was ist, wenn $x=$LLONG_MAX ? $\implies$ $u=1 \implies$ CDF-Methode funktioniert nicht, da Prädikate sagt, dass $\leq k$. Lieber bitmixing?~~ 
 
 - [ ] GUTES CDF GENERIERUNG (STRENG MONOTON STEIGEND = SCHWIERIG OHNE SPLINES !!!) 
 	- **Können wir nicht Regression überspringen und einfach zufällige Bernstein-Parameter wählen, da es sowieso steigt => einfacher und schneller**
-- [ ] Untersuchen, wie taint analysis dagegen eingesetzt werden kann
+
+- [ ] **Zufällige Prädikatenorte + zufällige T/F Prädikatenwerte (vgl. Obfuscator-LLVM)**
+- [ ] **Ununterscheidbaren Code generieren**
 
 - Praxis:
 	- [ ] SymExec dagegen ausprobieren
 	- [ ] Andere Deobfuskationsmethoden analysieren
 #### Medium Priority
-- [ ] **Zufällige Prädikatenorte + zufällige T/F Prädikatenwerte (vgl. Obfuscator-LLVM)**
-- [ ] **Ununterscheidbaren Code generieren**
+- [ ] Refactoring (Einheitlicher LLVM-Datentypenzugriff, Kommentare etc.)
 - [ ] Probabilistic Control Flows: Mehrere Branches gleich, um dynamische Attacken abzuwehren
 
 - [ ] examples -> tests
@@ -31,3 +32,4 @@
 - [ ] LLVM Statistics für Pass hinzufügen
 
 - [ ] Nicht nur für Prädikate, auch Ausdrücke !?
+- [ ] Untersuchen, wie taint analysis dagegen eingesetzt werden kann

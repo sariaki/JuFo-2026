@@ -1,4 +1,5 @@
 ﻿#include <llvm/IR/IRBuilder.h>
+#include <llvm/IR/NoFolder.h>
 #include <llvm/IR/IntrinsicInst.h>
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Constants.h>
@@ -25,13 +26,14 @@ namespace
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
-            IRBuilder<> IRB(LLVMCtx);
+            IRBuilder<NoFolder> IRB(LLVMCtx);
+            IRB.clearFastMathFlags();
 
             std::random_device Dev;
             std::mt19937 Rng(Dev());
 
             //const auto Sampler = Distribution::CreatePoisson(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
-            const auto Sampler = Distribution::CreateRandom(M, Rng);
+            //const auto [SamplerFn, Bernsteinpolynomial] = Distribution::CreateRandom(M, Rng);
 
             for (Function& F : M)
             {
@@ -54,35 +56,65 @@ namespace
                 if (F.arg_empty())
                     continue;
 
+                auto Two = ConstantFP::get(IRB.getFloatTy(), APFloat(2.0));
+                auto One = ConstantFP::get(IRB.getFloatTy(), APFloat(1.0));
+                Value* OneMinusU = IRB.CreateFSub(Two, One, "oneMinusU");
+
+                //if (DISubprogram* SP = F.getSubprogram())
+                //{
+                //    DebugLoc DL = DebugLoc(DILocation::get(LLVMCtx,/*line*/ 1, /*col*/ 0, SP));   // choose sensible line/col
+                //    // Option A: set builder's current location before creating the call
+                //    IRB.SetCurrentDebugLocation(DL);
+                //    Value* ci = Utils::PrintIRDouble(M, IRB, Two, "OneMinusU: ");
+                //    // Optionally clear it afterwards:
+                //    IRB.SetCurrentDebugLocation(DebugLoc());
+                //    // Option B: or set it on the call after creation
+                //    if (auto* CI = dyn_cast_or_null<CallInst>(ci))
+                //        CI->setDebugLoc(DL);
+                //}
+
                 // Cast the variable to a double
-                const auto DoubleCallParameter = Utils::CastIRValueToDouble(&*F.arg_begin(), IRB);
+                //const auto DoubleCallParameter = Utils::CastIRValueToDouble(&*F.arg_begin(), IRB);
 
-                // Make variable lie \in [0;1]
-                // We do this this way because LLVM *somehow* messes up if we perform a division with IRB.CreateFDiv in the IR
-                constexpr double RecipMax = 1.0 / std::numeric_limits<double>::max();
-                Value* RecipMaxConstant = ConstantFP::get(IRB.getDoubleTy(), RecipMax);
+                //// Make variable lie in [0;1]
+                //// We do this this way because LLVM *somehow* messes up if we perform a division with IRB.CreateFDiv in the IR
+                //constexpr double RecipMax = 1.0 / std::numeric_limits<double>::max();
+                //Value* RecipMaxConstant = ConstantFP::get(IRB.getDoubleTy(), RecipMax);
 
-                const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
+                //const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
 
-                // i64 x = sample_poisson(u))
-                const auto SampleRet = IRB.CreateCall(Sampler, { SmallCallParameter });
+                //// i64 x = sampler(u))
+                //const auto SampleRet = IRB.CreateCall(SamplerFn, { SmallCallParameter });
+                ////const auto SampleRet = IRB.CreateCall(Sampler, { SmallCallParameter });
 
-                // if x < Threshold...
-                const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
-                    ConstantInt::get(IRB.getInt64Ty(), Threshold));
-                
-                // Create new BasicBlocks for branches
-                const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
-                const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
+                //// Compute needed threshold for bernsteinpolynomial
+                //double Threshold = 0.99;
+                ////for (double i = 0.0; i < 1.0; i += 0.01)
+                ////{
+                ////    if (Bernsteinpolynomial.EvaluateAt(i) > 0.99)
+                ////    {
+                ////        Threshold = i;
+                ////        break;
+                ////    }
+                ////}
 
-                // Replace terminator of entry BasicBlock (unconditional br added by splitBasicBlock) with ours
-                EntryBB.getTerminator()->eraseFromParent();
-                IRB.SetInsertPoint(&EntryBB);
-                IRB.CreateCondBr(CmpResult, TrueBB, FalseBB);
+                //// if x < Threshold...
+                ////const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
+                ////    ConstantInt::get(IRB.getInt64Ty(), Threshold));
+                //const auto CmpResult = IRB.CreateFCmpOLT(SampleRet,
+                //    ConstantFP::get(IRB.getDoubleTy(), Threshold));
+                //
+                //// Create new BasicBlocks for branches
+                //const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
+                //const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
 
-                IRB.SetInsertPoint(FalseBB);
-                IRB.CreateUnreachable(); // TODO
-                
+                //// Replace terminator of entry BasicBlock (unconditional br added by splitBasicBlock) with ours
+                //EntryBB.getTerminator()->eraseFromParent();
+                //IRB.SetInsertPoint(&EntryBB);
+                //IRB.CreateCondBr(CmpResult, TrueBB, FalseBB);
+
+                //IRB.SetInsertPoint(FalseBB);
+                //IRB.CreateUnreachable(); // TODO
             }
 
             return PreservedAnalyses::all();

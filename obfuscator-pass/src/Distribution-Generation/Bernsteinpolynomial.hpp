@@ -20,4 +20,5 @@ public:
 
     const std::vector<double>& GetRandomCoefficients();
     const int GetDegree() const;
+    const double EvaluateAt(double x) const;
 };

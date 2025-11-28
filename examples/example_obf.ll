@@ -1,7 +1,7 @@
 ; ModuleID = 'example_obf.bc'
 source_filename = "example.c"
 target datalayout = "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
-target triple = "x86_64-pc-windows-msvc19.44.35215"
+target triple = "x86_64-pc-windows-msvc19.44.35221"
 
 $sprintf = comdat any
 
@@ -121,6 +121,7 @@ define linkonce_odr dso_local i32 @_vsnprintf(ptr noundef %0, i64 noundef %1, pt
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @foo(i32 noundef %0) #0 !dbg !92 {
+  %oneMinusU = fsub double 0x10000000000000, 0x10000000000000
   %2 = alloca i32, align 4
   store i32 %0, ptr %2, align 4
     #dbg_declare(ptr %2, !95, !DIExpression(), !96)
@@ -265,102 +266,9 @@ declare dso_local ptr @__acrt_iob_func(i32 noundef) #2
 
 declare dso_local i32 @__stdio_common_vfprintf(i64 noundef, ptr noundef, ptr noundef, ptr noundef, ptr noundef) #2
 
-; Function Attrs: alwaysinline
-define i64 @sample_poisson(double %u) #3 {
-entry:
-  %p0 = call double @exp(double 0x19000000000000)
-  br label %loop
-
-loop:                                             ; preds = %loop, %entry
-  %k = phi i64 [ 0, %entry ], [ %0, %loop ]
-  %p = phi double [ %p0, %entry ], [ %3, %loop ]
-  %s = phi double [ %p0, %entry ], [ %4, %loop ]
-  %0 = add i64 %k, 1
-  %1 = sitofp i64 %0 to double
-  %2 = fdiv double 0x19000000000000, %1
-  %3 = fmul double %p, %2
-  %4 = fadd double %s, %3
-  %5 = fcmp ogt double %u, %s
-  br i1 %5, label %loop, label %exit
-
-exit:                                             ; preds = %loop
-  ret i64 %0
-}
-
-declare double @exp(double)
-
-define i64 @sample_random(double %u) {
-entry:
-  %one_minus_u = fsub double 0x10000000000000, %u
-  %u_pow_1 = fmul double 0x10000000000000, %u
-  %u_pow_2 = fmul double %u_pow_1, %u
-  %u_pow_3 = fmul double %u_pow_2, %u
-  %u_pow_4 = fmul double %u_pow_3, %u
-  %u_pow_5 = fmul double %u_pow_4, %u
-  %u_pow_6 = fmul double %u_pow_5, %u
-  %u_pow_7 = fmul double %u_pow_6, %u
-  %u_pow_8 = fmul double %u_pow_7, %u
-  %u_pow_9 = fmul double %u_pow_8, %u
-  %u_pow_10 = fmul double %u_pow_9, %u
-  %omu_pow_1 = fmul double 0x10000000000000, %one_minus_u
-  %omu_pow_2 = fmul double %omu_pow_1, %one_minus_u
-  %omu_pow_3 = fmul double %omu_pow_2, %one_minus_u
-  %omu_pow_4 = fmul double %omu_pow_3, %one_minus_u
-  %omu_pow_5 = fmul double %omu_pow_4, %one_minus_u
-  %omu_pow_6 = fmul double %omu_pow_5, %one_minus_u
-  %omu_pow_7 = fmul double %omu_pow_6, %one_minus_u
-  %omu_pow_8 = fmul double %omu_pow_7, %one_minus_u
-  %omu_pow_9 = fmul double %omu_pow_8, %one_minus_u
-  %omu_pow_10 = fmul double %omu_pow_9, %one_minus_u
-  br label %loop
-
-loop:                                             ; preds = %loop, %entry
-  %k = phi i64 [ 0, %entry ], [ %0, %loop ]
-  %s = phi double [ 0.000000e+00, %entry ], [ %acc_10, %loop ]
-  %term_0 = fmul double 0.000000e+00, %omu_pow_10
-  %acc_0 = fadd double %s, %term_0
-  %term_cu_1 = fmul double 0x1DC609CC004ED2, %u_pow_1
-  %term_1 = fmul double %term_cu_1, %omu_pow_9
-  %acc_1 = fadd double %s, %term_1
-  %term_cu_2 = fmul double 0x1A434B8C1923B9, %u_pow_2
-  %term_2 = fmul double %term_cu_2, %omu_pow_8
-  %acc_2 = fadd double %s, %term_2
-  %term_cu_3 = fmul double 0x10F2F8A1678EC6, %u_pow_3
-  %term_3 = fmul double %term_cu_3, %omu_pow_7
-  %acc_3 = fadd double %s, %term_3
-  %term_cu_4 = fmul double 0x15D93978903544, %u_pow_4
-  %term_4 = fmul double %term_cu_4, %omu_pow_6
-  %acc_4 = fadd double %s, %term_4
-  %term_cu_5 = fmul double 0x13B702E457D29F, %u_pow_5
-  %term_5 = fmul double %term_cu_5, %omu_pow_5
-  %acc_5 = fadd double %s, %term_5
-  %term_cu_6 = fmul double 0x11CA239C0D32FA, %u_pow_6
-  %term_6 = fmul double %term_cu_6, %omu_pow_4
-  %acc_6 = fadd double %s, %term_6
-  %term_cu_7 = fmul double 0x16EE91E72906FC, %u_pow_7
-  %term_7 = fmul double %term_cu_7, %omu_pow_3
-  %acc_7 = fadd double %s, %term_7
-  %term_cu_8 = fmul double 0x1D8F8813FAE302, %u_pow_8
-  %term_8 = fmul double %term_cu_8, %omu_pow_2
-  %acc_8 = fadd double %s, %term_8
-  %term_cu_9 = fmul double 0x196758F12B9B16, %u_pow_9
-  %term_9 = fmul double %term_cu_9, %omu_pow_1
-  %acc_9 = fadd double %s, %term_9
-  %term_cu_10 = fmul double 0x10000000000000, %u_pow_10
-  %term_10 = fmul double %term_cu_10, 0x10000000000000
-  %acc_10 = fadd double %s, %term_10
-  %0 = add i64 %k, 1
-  %1 = fcmp ogt double %u, %s
-  br i1 %1, label %loop, label %exit
-
-exit:                                             ; preds = %loop
-  ret i64 %k
-}
-
 attributes #0 = { noinline nounwind optnone uwtable "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #1 = { nocallback nofree nosync nounwind willreturn }
 attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #3 = { alwaysinline }
 
 !llvm.dbg.cu = !{!15}
 !llvm.module.flags = !{!20, !21, !22, !23, !24, !25}
@@ -381,7 +289,7 @@ attributes #3 = { alwaysinline }
 !12 = !{!13}
 !13 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !14, size: 64)
 !14 = !DIBasicType(name: "unsigned long long", size: 64, encoding: DW_ATE_unsigned)
-!15 = distinct !DICompileUnit(language: DW_LANG_C11, file: !2, producer: "clang version 20.1.8", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !16, globals: !19, splitDebugInlining: false, nameTableKind: None)
+!15 = distinct !DICompileUnit(language: DW_LANG_C11, file: !2, producer: "clang version 21.1.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !16, globals: !19, splitDebugInlining: false, nameTableKind: None)
 !16 = !{!17}
 !17 = !DIDerivedType(tag: DW_TAG_typedef, name: "size_t", file: !18, line: 188, baseType: !14)
 !18 = !DIFile(filename: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h", directory: "", checksumkind: CSK_MD5, checksum: "52b0f67d23fb299eb670469dd77ef832")
@@ -392,7 +300,7 @@ attributes #3 = { alwaysinline }
 !23 = !{i32 8, !"PIC Level", i32 2}
 !24 = !{i32 7, !"uwtable", i32 2}
 !25 = !{i32 1, !"MaxTLSAlign", i32 65536}
-!26 = !{!"clang version 20.1.8"}
+!26 = !{!"clang version 21.1.0"}
 !27 = distinct !DISubprogram(name: "sprintf", scope: !28, file: !28, line: 1764, type: !29, scopeLine: 1771, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !15, retainedNodes: !37)
 !28 = !DIFile(filename: "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h", directory: "", checksumkind: CSK_MD5, checksum: "c1a1fbc43e7d45f0ea4ae539ddcffb19")
 !29 = !DISubroutineType(types: !30)
@@ -488,7 +396,7 @@ attributes #3 = { alwaysinline }
 !119 = !{!31, !32, !34, !120, !45}
 !120 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !121)
 !121 = !DIDerivedType(tag: DW_TAG_typedef, name: "_locale_t", file: !122, line: 623, baseType: !123)
-!122 = !DIFile(filename: "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h", directory: "", checksumkind: CSK_MD5, checksum: "4ce81db8e96f94c79f8dce86dd46b97f")
+!122 = !DIFile(filename: "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h", directory: "", checksumkind: CSK_MD5, checksum: "93b3a419bcf351413b7b408357260994")
 !123 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !124, size: 64)
 !124 = !DIDerivedType(tag: DW_TAG_typedef, name: "__crt_locale_pointers", file: !122, line: 621, baseType: !125)
 !125 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__crt_locale_pointers", file: !122, line: 617, size: 128, align: 64, elements: !126)

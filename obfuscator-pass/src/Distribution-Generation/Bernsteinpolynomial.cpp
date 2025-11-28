@@ -6,7 +6,7 @@ double MonotonicBernstein::BensteinBasisPolynomial(double x, int i, int n) const
 }
 
 MonotonicBernstein::MonotonicBernstein(uint64_t Degree, std::mt19937 Rng)
-    : m_Degree(Degree + 1), m_Rng(Rng)
+    : m_Degree(Degree), m_Rng(Rng)
 {
     m_Coefficients.resize(m_Degree);
 }
@@ -24,9 +24,6 @@ const std::vector<double>& MonotonicBernstein::GetRandomCoefficients()
     {
         m_Coefficients[i] = m_Coefficients[i - 1] + std::uniform_real_distribution(0.0, 
             1.0 / static_cast<double>(m_Degree))(m_Rng);
-
-        // Multiply with appropriate binomial coefficients
-        m_Coefficients[i] *= Utils::BinomialCoefficient(m_Degree, i);
     }
 
     return m_Coefficients;
@@ -34,5 +31,17 @@ const std::vector<double>& MonotonicBernstein::GetRandomCoefficients()
 
 const int MonotonicBernstein::GetDegree() const
 {
-    return m_Degree;
+    return m_Degree - 1;
+}
+
+const double MonotonicBernstein::EvaluateAt(double x) const
+{
+    double Result = 0.0;
+    for (int i = 0; i < m_Degree; i++)
+    {
+        double Coefficient = m_Coefficients[i];
+        Result += Coefficient * BensteinBasisPolynomial(x, i, m_Degree - 1);
+    }
+
+    return Result;
 }

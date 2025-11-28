@@ -35,14 +35,14 @@ FunctionCallee Distribution::CreatePoisson(Module& M, Value* Lambda)
     BasicBlock* ExitBB = BasicBlock::Create(LLVMCtx, "exit", SamplerFn);
 
     /* Knuth's Algorithm: find a valid (possion distributed) k that has the cumulative probability u
-    k = 0
-    p = e^{-\lambda}
-    s = p
-    While s < u:
-        k = k + 1
-        p = p * lambda / k
-        s = s + p
-    return k
+        k = 0
+        p = e^{-\lambda}
+        s = p
+        While s < u:
+            k = k + 1
+            p = p * lambda / k
+            s = s + p
+        return k
     */
 
     // Let p_0 = e^{-\lambda}
@@ -59,12 +59,12 @@ FunctionCallee Distribution::CreatePoisson(Module& M, Value* Lambda)
     PHINode* Iterator = IRB.CreatePHI(IRB.getInt64Ty(), 2, "k");
     PHINode* Prob = IRB.CreatePHI(IRB.getDoubleTy(), 2, "p");
     PHINode* Sum = IRB.CreatePHI(IRB.getDoubleTy(), 2, "s");
-    Iterator->addIncoming(ConstantInt::get(IRB.getInt64Ty(), 0), EntryBB);
+    Iterator->addIncoming(IRB.getInt64(0), EntryBB);
     Prob->addIncoming(P0, EntryBB);
     Sum->addIncoming(P0, EntryBB);
 
     // k_next = k + 1
-    Value* IteratorNext = IRB.CreateAdd(Iterator, ConstantInt::get(IRB.getInt64Ty(), 1));
+    Value* IteratorNext = IRB.CreateAdd(Iterator, IRB.getInt64(1));
     // p_next = p * lambda / k_next
     Value* LambdaDiv = IRB.CreateFDiv(
         Lambda,
@@ -90,7 +90,7 @@ FunctionCallee Distribution::CreatePoisson(Module& M, Value* Lambda)
     return SamplerCallee;
 }
 
-FunctionCallee Distribution::CreateRandom(Module& M, std::mt19937 Rng)
+std::pair<FunctionCallee, MonotonicBernstein> Distribution::CreateRandom(Module& M, std::mt19937 Rng)
 {
     // Choose random interval as the CDF's domain
     //const double DomainStart = std::uniform_real_distribution(0.0, 50.0)(Rng);
@@ -100,24 +100,12 @@ FunctionCallee Distribution::CreateRandom(Module& M, std::mt19937 Rng)
 
     // Construct random Bernsteinpolynomial s.t. it is...
     // ...monotonically increasing and goes through (0|0) && (0|1)
-    const int Degree = 10;
+    const int Degree = 4;
     const int N = Degree + 1;
     auto Bernsteinpolynomial = MonotonicBernstein(Degree, Rng);
 
-    const std::vector<double>& Coefficients = Bernsteinpolynomial.GetRandomCoefficients();
-    for (int i = 0; i < N; i++)
-    {
-        errs() << Coefficients[i] << ",";
-    }
-    errs() << "\n";
-
-    // Build Bernstein Polynomial
-    //errs() << "B_" + std::to_string(Degree) + "(x) = ";
-    //for (int i = 0; i < Coefficients.size(); i++)
-    //{
-    //    errs() << Coefficients[i] << " * ";
-    //    errs() << "x^" + std::to_string(i) + " * (1-x)^" + std::to_string(Degree - i) + " + ";
-    //}
+    const std::vector<double>& Coefficients = {0.0, 0.1, 0.6, 0.9, 1.0};
+    //const std::vector<double>& Coefficients = Bernsteinpolynomial.GetRandomCoefficients();
 
     // Compile Bernsteinpolynomial to LLVM-IR
     LLVMContext& LLVMCtx = M.getContext();
@@ -125,10 +113,10 @@ FunctionCallee Distribution::CreateRandom(Module& M, std::mt19937 Rng)
 
     Type* DoubleTy = IRB.getDoubleTy();
 
-    // Declare sampler function: inline i64 sample_random(double)
-    FunctionType* FT = FunctionType::get(IRB.getInt64Ty(),
+    // Declare sampler function: inline i64 sample_bernstein(double)
+    FunctionType* FT = FunctionType::get(DoubleTy,
         { DoubleTy }, false);
-    FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_random", FT);
+    FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_bernstein", FT);
     Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
 
     //SamplerFn->addFnAttr(Attribute::AttrKind::AlwaysInline);
@@ -138,79 +126,68 @@ FunctionCallee Distribution::CreateRandom(Module& M, std::mt19937 Rng)
     UniformArg->setName("u");
 
     // Create BasicBlocks for loop
-    BasicBlock* EntryBB = BasicBlock::Create(LLVMCtx, "entry", SamplerFn); // We need this for Phi nodes to work
-    BasicBlock* LoopBB = BasicBlock::Create(LLVMCtx, "loop", SamplerFn);
-    BasicBlock* ExitBB = BasicBlock::Create(LLVMCtx, "exit", SamplerFn);
+    BasicBlock* EntryBB = BasicBlock::Create(LLVMCtx, "entry", SamplerFn);
 
     IRB.SetInsertPoint(EntryBB);
 
-    // Convert coeffs to ConstantFPs
+    // Convert Coeffs into IR
     std::vector<Constant*> IRCoefficients;
-    IRCoefficients.reserve(N + 1);
-    for (int i = 0; i <= Degree; ++i)
-        IRCoefficients.push_back(ConstantFP::get(DoubleTy, Coefficients[i]));
-
-    // Compute 1.0 - u
-    Value* UValue = UniformArg;
-    Value* OneMinusU = IRB.CreateFSub(ConstantFP::get(DoubleTy, 1.0), UValue, "one_minus_u");
-
-    // Compute all the powers of u
-    std::vector<Value*> UPowers(N + 1);
-    UPowers[0] = ConstantFP::get(DoubleTy, 1.0);
-    for (int i = 1; i <= Degree; ++i)
+    for (int i = 0; i <= Degree; i++)
     {
-        UPowers[i] = IRB.CreateFMul(UPowers[i - 1], UValue, Twine("u_pow_") + Twine(i));
+        IRCoefficients.push_back(ConstantFP::get(IRB.getDoubleTy(), Coefficients[i]));
     }
 
-    // Compute all of the powers of (1-u)
-    std::vector<Value*> OneMinusUPowers(N + 1);
-    OneMinusUPowers[0] = ConstantFP::get(DoubleTy, 1.0);
-    for (int i = 1; i <= Degree; ++i)
-    {
-        OneMinusUPowers[i] = IRB.CreateFMul(OneMinusUPowers[i - 1], OneMinusU, Twine("omu_pow_") + Twine(i));
-    }
+    // 1.0 - u
+    Value* OneMinusU = IRB.CreateFSub(ConstantFP::get(DoubleTy, APFloat::getOne(APFloat::IEEEdouble())), UniformArg, "oneMinusU");
+    //// (1-u)^Degree by repeated multiplication
+    //Value* PowOneMinusU = ConstantFP::get(DoubleTy, 1.0);
+    //for (unsigned i = 0; i < Degree; i++)
+    //{
+    //    PowOneMinusU = IRB.CreateFMul(PowOneMinusU, OneMinusU, "powOneMinusU_mul");
+    //}
 
-    IRB.CreateBr(LoopBB);
-    IRB.SetInsertPoint(LoopBB);
+    //// Compute u^i by repeated multiplication with u each iteration
+    //Value* PowU = ConstantFP::get(DoubleTy, 1.0);
 
-    /*
-        s = 0
-        k = 0
-        While s < u:
-            s = s + bernstein(k)
-            k = k + 1
-        return k - 1
-    */
-    PHINode* Iterator = IRB.CreatePHI(IRB.getInt64Ty(), 2, "k");
-    PHINode* Sum = IRB.CreatePHI(IRB.getDoubleTy(), 2, "s");
-    Iterator->addIncoming(ConstantInt::get(IRB.getInt64Ty(), 0), EntryBB);
-    Sum->addIncoming(ConstantFP::get(DoubleTy, 0.0), EntryBB);
-    
-    // Compute resulting polynomial: s = sum_{i=0..n-1} coeff[i] * u^i * (1-u)^(n-i)
-    Value* SumNext = ConstantFP::get(DoubleTy, 0.0);
-    for (int i = 0; i <= Degree; ++i)
-    {
-        // coeff[i] * u_pow[i] * omu_pow_[n-i]
-        Value* T = IRB.CreateFMul(IRCoefficients[i], UPowers[i], Twine("term_cu_") + Twine(i));
-        T = IRB.CreateFMul(T, OneMinusUPowers[Degree - i], Twine("term_") + Twine(i));
-        SumNext = IRB.CreateFAdd(Sum, T, Twine("acc_") + Twine(i));
-    }
+    //// Accumulator for Bernstein Fn
+    //Value* Result = ConstantFP::get(DoubleTy, 0.0);
 
-    Value* IteratorNext = IRB.CreateAdd(Iterator, ConstantInt::get(IRB.getInt64Ty(), 1));
+    //// Precompute coeff_i * binomial_i
+    //std::vector<double> BinomMulCoeff(N);
+    //for (unsigned i = 0; i <= Degree; i++)
+    //{
+    //    double BinomialCoefficient = Utils::BinomialCoefficient(Degree, i);
+    //    BinomMulCoeff[i] = Coefficients[i] * BinomialCoefficient;
+    //}
 
-    // Update values
-    Iterator->addIncoming(IteratorNext, LoopBB);
-    Sum->addIncoming(SumNext, LoopBB);
+    //// For each i:
+    //// term = coeff_i * binom_i * powU_i * powOneMinusU_i
+    //// bernstein_poly_res += term
+    //// powU *= u                    # u^i         -> u^{i+1}
+    //// powOneMinusU /= oneMinusU    # (1-u)^{n-i} -> (1-u)^{n-(i+1)}
+    //for (unsigned i = 0; i <= Degree; i++)
+    //{
+    //    // Precomputed constant
+    //    Value* Coeff = ConstantFP::get(DoubleTy, BinomMulCoeff[i]);
 
-    // If u > s: goto ExitBB else: goto LoopBB
-    Value* CmpRes = IRB.CreateFCmpOGT(UniformArg, Sum);
-    IRB.CreateCondBr(CmpRes, LoopBB, ExitBB);
+    //    // NextTerm = Coeff * u^i
+    //    Value* NextTerm = IRB.CreateFMul(Coeff, PowU, "t_mul_c_powU");
 
-    // Return k
-    IRB.SetInsertPoint(ExitBB);
-    IRB.CreateRet(Iterator);
+    //    // NextTerm = NextTerm * (1-u)^i
+    //    NextTerm = IRB.CreateFMul(NextTerm, PowOneMinusU, "t_mul_powOneMinusU");
 
-    //Utils::PrintIRDouble(M, IRB, Result, "bernstein: ");
+    //    Result = IRB.CreateFAdd(Result, NextTerm, "accum");
 
-    return SamplerCallee;
+    //    // update powU = powU * u
+    //    if (i < Degree) // no need to update after last iteration
+    //        PowU = IRB.CreateFMul(PowU, UniformArg, "powU_next");
+
+    //    // update powOneMinusU = powOneMinusU / oneMinusU  (if oneMinusU == 0 this is runtime NaN/Inf)
+    //    if (i < Degree)
+    //        PowOneMinusU = IRB.CreateFDiv(PowOneMinusU, OneMinusU, "powOneMinusU_div");
+    //}
+
+    IRB.CreateRet(OneMinusU);
+
+    return { SamplerCallee, Bernsteinpolynomial };
 }

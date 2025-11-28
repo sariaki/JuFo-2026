@@ -1,7 +1,7 @@
 ; ModuleID = './example.c'
 source_filename = "./example.c"
 target datalayout = "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
-target triple = "x86_64-pc-windows-msvc19.44.35215"
+target triple = "x86_64-pc-windows-msvc19.44.35221"
 
 $sprintf = comdat any
 
@@ -288,7 +288,7 @@ attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "t
 !12 = !{!13}
 !13 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !14, size: 64)
 !14 = !DIBasicType(name: "unsigned long long", size: 64, encoding: DW_ATE_unsigned)
-!15 = distinct !DICompileUnit(language: DW_LANG_C11, file: !16, producer: "clang version 20.1.8", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !17, globals: !20, splitDebugInlining: false, nameTableKind: None)
+!15 = distinct !DICompileUnit(language: DW_LANG_C11, file: !16, producer: "clang version 21.1.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !17, globals: !20, splitDebugInlining: false, nameTableKind: None)
 !16 = !DIFile(filename: "example.c", directory: "C:\\Users\\sariaki\\Documents\\code\\py\\JuFo-2026\\examples", checksumkind: CSK_MD5, checksum: "6fd78dce024844d71dc778657bd5154e")
 !17 = !{!18}
 !18 = !DIDerivedType(tag: DW_TAG_typedef, name: "size_t", file: !19, line: 188, baseType: !14)
@@ -300,7 +300,7 @@ attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "t
 !24 = !{i32 8, !"PIC Level", i32 2}
 !25 = !{i32 7, !"uwtable", i32 2}
 !26 = !{i32 1, !"MaxTLSAlign", i32 65536}
-!27 = !{!"clang version 20.1.8"}
+!27 = !{!"clang version 21.1.0"}
 !28 = distinct !DISubprogram(name: "sprintf", scope: !29, file: !29, line: 1764, type: !30, scopeLine: 1771, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !15, retainedNodes: !38)
 !29 = !DIFile(filename: "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h", directory: "", checksumkind: CSK_MD5, checksum: "c1a1fbc43e7d45f0ea4ae539ddcffb19")
 !30 = !DISubroutineType(types: !31)
@@ -396,7 +396,7 @@ attributes #2 = { "no-trapping-math"="true" "stack-protector-buffer-size"="8" "t
 !120 = !{!32, !33, !35, !121, !46}
 !121 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !122)
 !122 = !DIDerivedType(tag: DW_TAG_typedef, name: "_locale_t", file: !123, line: 623, baseType: !124)
-!123 = !DIFile(filename: "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h", directory: "", checksumkind: CSK_MD5, checksum: "4ce81db8e96f94c79f8dce86dd46b97f")
+!123 = !DIFile(filename: "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h", directory: "", checksumkind: CSK_MD5, checksum: "93b3a419bcf351413b7b408357260994")
 !124 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !125, size: 64)
 !125 = !DIDerivedType(tag: DW_TAG_typedef, name: "__crt_locale_pointers", file: !123, line: 621, baseType: !126)
 !126 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__crt_locale_pointers", file: !123, line: 617, size: 128, align: 64, elements: !127)

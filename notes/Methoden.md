@@ -1,10 +1,10 @@
 1. `std::uniform_distribution(...)` oder `rand()` etc.
 2. Parameter $U$ über $F^{-1}(U)$ deterministisch transformieren
-3. stephensProbabilisticObfuscationCovert2018 nutzen:
-   - Timing für Syscalls nutzen (vermutlich normalverteilt?) mit quasi unmöglichen constraints
-   - Thread race condition für Zufallszahlgenerierung
-   - if fast_process > slow_process: ...
 
+3. Timing
+4. RSP/RIP (->ASLR)?
+5. Thread race condition?
+6. Harware-Zufälligkeit
 #### ZIEL: Unbekannter Zufall -> gleichverteilter Zufall
 #### Lösung:
 Hashing garantiert, dass Ergebnisse uniform verteilt sind im Keyspace!
