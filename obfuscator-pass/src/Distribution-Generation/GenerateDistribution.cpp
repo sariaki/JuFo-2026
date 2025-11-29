@@ -104,8 +104,7 @@ std::pair<FunctionCallee, MonotonicBernstein> Distribution::CreateRandom(Module&
     const int N = Degree + 1;
     auto Bernsteinpolynomial = MonotonicBernstein(Degree, Rng);
 
-    const std::vector<double>& Coefficients = {0.0, 0.1, 0.6, 0.9, 1.0};
-    //const std::vector<double>& Coefficients = Bernsteinpolynomial.GetRandomCoefficients();
+    const std::vector<double>& Coefficients = Bernsteinpolynomial.GetRandomCoefficients();
 
     // Compile Bernsteinpolynomial to LLVM-IR
     LLVMContext& LLVMCtx = M.getContext();
@@ -179,16 +178,16 @@ std::pair<FunctionCallee, MonotonicBernstein> Distribution::CreateRandom(Module&
 
        Result = IRB.CreateFAdd(Result, NextTerm, "accum");
 
-       // update powU = powU * u
+       // Update powU = powU * u
        if (i < Degree) // no need to update after last iteration
            PowU = IRB.CreateFMul(PowU, UniformArg, "powU_next");
 
-       // update powOneMinusU = powOneMinusU / oneMinusU  (if oneMinusU == 0 this is runtime NaN/Inf)
+       // Update powOneMinusU = powOneMinusU / oneMinusU  (if oneMinusU == 0 this is runtime NaN/Inf)
        if (i < Degree)
            PowOneMinusU = IRB.CreateFDiv(PowOneMinusU, OneMinusU, "powOneMinusU_div");
     }
 
-    IRB.CreateRet(OneMinusU);
+    IRB.CreateRet(Result);
 
     return { SamplerCallee, Bernsteinpolynomial };
 }
