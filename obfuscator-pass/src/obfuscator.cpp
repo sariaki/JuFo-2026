@@ -44,7 +44,6 @@ namespace
                 if (!(demangle(F.getName().str()) == "foo"))
                     continue;
 
-
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();
                 IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
@@ -54,23 +53,6 @@ namespace
                 // Get Parameter to create a symbolic variable for the solver
                 if (F.arg_empty())
                     continue;
-
-                // auto Two = ConstantFP::get(IRB.getFloatTy(), APFloat(2.0));
-                // auto One = ConstantFP::get(IRB.getFloatTy(), APFloat(1.0));
-                // Value* OneMinusU = IRB.CreateFSub(Two, One, "oneMinusU");
-
-                // if (DISubprogram* SP = F.getSubprogram())
-                // {
-                //    DebugLoc DL = DebugLoc(DILocation::get(LLVMCtx,/*line*/ 1, /*col*/ 0, SP));   // choose sensible line/col
-                //    // Option A: set builder's current location before creating the call
-                //    IRB.SetCurrentDebugLocation(DL);
-                //    Value* ci = Utils::PrintIRDouble(M, IRB, OneMinusU, "OneMinusU: ");
-                //    // Optionally clear it afterwards:
-                //    IRB.SetCurrentDebugLocation(DebugLoc());
-                //    // Option B: or set it on the call after creation
-                //    if (auto* CI = dyn_cast_or_null<CallInst>(ci))
-                //        CI->setDebugLoc(DL);
-                // }
 
                 // Cast the variable to a double
                 const auto DoubleCallParameter = Utils::CastIRValueToDouble(&*F.arg_begin(), IRB);
@@ -88,14 +70,14 @@ namespace
 
                 // Compute needed threshold for bernsteinpolynomial
                 double Threshold = 0.99;
-                //for (double i = 0.0; i < 1.0; i += 0.01)
-                //{
-                //    if (Bernsteinpolynomial.EvaluateAt(i) > 0.99)
-                //    {
-                //        Threshold = i;
-                //        break;
-                //    }
-                //}
+                for (double i = 0.0; i < 1.0; i += 0.01)
+                {
+                   if (Bernsteinpolynomial.EvaluateAt(i) > 0.99)
+                   {
+                       Threshold = i;
+                       break;
+                   }
+                }
 
                 // if x < Threshold...
                 //const auto CmpResult = IRB.CreateICmpSLT(SampleRet,

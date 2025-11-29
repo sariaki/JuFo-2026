@@ -52,12 +52,12 @@ entry:
   %accum = fadd double 0.000000e+00, %t_mul_powOneMinusU
   %powU_next = fmul double 1.000000e+00, %u
   %powOneMinusU_div = fdiv double %powOneMinusU_mul3, %oneMinusU
-  %t_mul_c_powU = fmul double 0x3FD2E6C291189742, %powU_next
+  %t_mul_c_powU = fmul double 0x3FE6E4BDB6FC02D6, %powU_next
   %t_mul_powOneMinusU4 = fmul double %t_mul_c_powU, %powOneMinusU_div
   %accum5 = fadd double %accum, %t_mul_powOneMinusU4
   %powU_next6 = fmul double %powU_next, %u
   %powOneMinusU_div7 = fdiv double %powOneMinusU_div, %oneMinusU
-  %t_mul_c_powU8 = fmul double 0x3FF0119DB69B4738, %powU_next6
+  %t_mul_c_powU8 = fmul double 0x3FFD0AC3394828D4, %powU_next6
   %t_mul_powOneMinusU9 = fmul double %t_mul_c_powU8, %powOneMinusU_div7
   %accum10 = fadd double %accum5, %t_mul_powOneMinusU9
   %powU_next11 = fmul double %powU_next6, %u
@@ -67,7 +67,7 @@ entry:
   %accum15 = fadd double %accum10, %t_mul_powOneMinusU14
   %powU_next16 = fmul double %powU_next11, %u
   %powOneMinusU_div17 = fdiv double %powOneMinusU_div12, %oneMinusU
-  %t_mul_c_powU18 = fmul double 0x5664139CA980, %powU_next16
+  %t_mul_c_powU18 = fmul double 0x57B3F9AEA980, %powU_next16
   %t_mul_powOneMinusU19 = fmul double %t_mul_c_powU18, %powOneMinusU_div17
   %accum20 = fadd double %accum15, %t_mul_powOneMinusU19
   ret double %accum20
