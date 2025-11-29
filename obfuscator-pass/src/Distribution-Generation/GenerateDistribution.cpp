@@ -138,54 +138,55 @@ std::pair<FunctionCallee, MonotonicBernstein> Distribution::CreateRandom(Module&
     }
 
     // 1.0 - u
-    Value* OneMinusU = IRB.CreateFSub(ConstantFP::get(DoubleTy, APFloat::getOne(APFloat::IEEEdouble())), UniformArg, "oneMinusU");
-    //// (1-u)^Degree by repeated multiplication
-    //Value* PowOneMinusU = ConstantFP::get(DoubleTy, 1.0);
-    //for (unsigned i = 0; i < Degree; i++)
-    //{
-    //    PowOneMinusU = IRB.CreateFMul(PowOneMinusU, OneMinusU, "powOneMinusU_mul");
-    //}
+    Value* OneMinusU = IRB.CreateFSub(ConstantFP::get(DoubleTy, APFloat(1.0)), UniformArg, "oneMinusU");
+    
+    // (1-u)^Degree by repeated multiplication
+    Value* PowOneMinusU = ConstantFP::get(DoubleTy, 1.0);
+    for (unsigned i = 0; i < Degree; i++)
+    {
+       PowOneMinusU = IRB.CreateFMul(PowOneMinusU, OneMinusU, "powOneMinusU_mul");
+    }
 
-    //// Compute u^i by repeated multiplication with u each iteration
-    //Value* PowU = ConstantFP::get(DoubleTy, 1.0);
+    // Compute u^i by repeated multiplication with u each iteration
+    Value* PowU = ConstantFP::get(DoubleTy, 1.0);
 
-    //// Accumulator for Bernstein Fn
-    //Value* Result = ConstantFP::get(DoubleTy, 0.0);
+    // Accumulator for Bernstein Fn
+    Value* Result = ConstantFP::get(DoubleTy, 0.0);
 
-    //// Precompute coeff_i * binomial_i
-    //std::vector<double> BinomMulCoeff(N);
-    //for (unsigned i = 0; i <= Degree; i++)
-    //{
-    //    double BinomialCoefficient = Utils::BinomialCoefficient(Degree, i);
-    //    BinomMulCoeff[i] = Coefficients[i] * BinomialCoefficient;
-    //}
+    // Precompute coeff_i * binomial_i
+    std::vector<double> BinomMulCoeff(N);
+    for (unsigned i = 0; i <= Degree; i++)
+    {
+       double BinomialCoefficient = Utils::BinomialCoefficient(Degree, i);
+       BinomMulCoeff[i] = Coefficients[i] * BinomialCoefficient;
+    }
 
-    //// For each i:
-    //// term = coeff_i * binom_i * powU_i * powOneMinusU_i
-    //// bernstein_poly_res += term
-    //// powU *= u                    # u^i         -> u^{i+1}
-    //// powOneMinusU /= oneMinusU    # (1-u)^{n-i} -> (1-u)^{n-(i+1)}
-    //for (unsigned i = 0; i <= Degree; i++)
-    //{
-    //    // Precomputed constant
-    //    Value* Coeff = ConstantFP::get(DoubleTy, BinomMulCoeff[i]);
+    // For each i:
+    // term = coeff_i * binom_i * powU_i * powOneMinusU_i
+    // bernstein_poly_res += term
+    // powU *= u                    # u^i         -> u^{i+1}
+    // powOneMinusU /= oneMinusU    # (1-u)^{n-i} -> (1-u)^{n-(i+1)}
+    for (unsigned i = 0; i <= Degree; i++)
+    {
+       // Precomputed constant
+       Value* Coeff = ConstantFP::get(DoubleTy, BinomMulCoeff[i]);
 
-    //    // NextTerm = Coeff * u^i
-    //    Value* NextTerm = IRB.CreateFMul(Coeff, PowU, "t_mul_c_powU");
+       // NextTerm = Coeff * u^i
+       Value* NextTerm = IRB.CreateFMul(Coeff, PowU, "t_mul_c_powU");
 
-    //    // NextTerm = NextTerm * (1-u)^i
-    //    NextTerm = IRB.CreateFMul(NextTerm, PowOneMinusU, "t_mul_powOneMinusU");
+       // NextTerm = NextTerm * (1-u)^i
+       NextTerm = IRB.CreateFMul(NextTerm, PowOneMinusU, "t_mul_powOneMinusU");
 
-    //    Result = IRB.CreateFAdd(Result, NextTerm, "accum");
+       Result = IRB.CreateFAdd(Result, NextTerm, "accum");
 
-    //    // update powU = powU * u
-    //    if (i < Degree) // no need to update after last iteration
-    //        PowU = IRB.CreateFMul(PowU, UniformArg, "powU_next");
+       // update powU = powU * u
+       if (i < Degree) // no need to update after last iteration
+           PowU = IRB.CreateFMul(PowU, UniformArg, "powU_next");
 
-    //    // update powOneMinusU = powOneMinusU / oneMinusU  (if oneMinusU == 0 this is runtime NaN/Inf)
-    //    if (i < Degree)
-    //        PowOneMinusU = IRB.CreateFDiv(PowOneMinusU, OneMinusU, "powOneMinusU_div");
-    //}
+       // update powOneMinusU = powOneMinusU / oneMinusU  (if oneMinusU == 0 this is runtime NaN/Inf)
+       if (i < Degree)
+           PowOneMinusU = IRB.CreateFDiv(PowOneMinusU, OneMinusU, "powOneMinusU_div");
+    }
 
     IRB.CreateRet(OneMinusU);
 

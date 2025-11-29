@@ -1,24 +1,26 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.20)
 project(Obfuscator)
 
-# TODO: Linux support
-
-set(CMAKE_CXX_STANDARD 20)
-
-# TODO: Download this for Windows (https://github.com/llvm/llvm-project/releases)
-
-# Load LLVMConfig.cmake. If this fails, consider setting `LLVM_DIR` to point
-# to your LLVM installation's `lib/cmake/llvm` directory
+# Load LLVM Config
 find_package(LLVM REQUIRED CONFIG)
-
-# TODO: Maybe use precompiled header for LLVM?
-
-# Include the part of LLVM's CMake libraries that defines `add_llvm_pass_plugin`
+list(APPEND CMAKE_MODULE_PATH "${LLVM_CMAKE_DIR}")
 include(AddLLVM)
 
-add_definitions(${LLVM_DEFINITIONS})
+# Set strict compiler flags matching LLVM
 include_directories(${LLVM_INCLUDE_DIRS})
-link_directories(${LLVM_LIBRARY_DIRS})
+add_definitions(${LLVM_DEFINITIONS})
 
-# Our pass lives in this subdirectory.
-add_subdirectory(src)
+# Gather sources
+# GLOB_RECURSE returns absolute paths
+file(GLOB_RECURSE OBFUSCATOR_SOURCES 
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp" 
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.hpp"
+)
+
+# Make IDEs (VS) mirror folder structure
+# Base the tree starting from the 'src' directory
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/src" FILES ${OBFUSCATOR_SOURCES})
+
+# Create the Plugin
+# add_llvm_pass_plugin automatically creates a MODULE library and prevents static linking issues
+add_llvm_pass_plugin(Obfuscator ${OBFUSCATOR_SOURCES})
