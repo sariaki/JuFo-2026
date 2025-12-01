@@ -12,8 +12,8 @@ target triple = "x86_64-pc-linux-gnu"
 define dso_local void @foo(i32 noundef %0) #0 !dbg !17 {
   %sitofp_to_double = sitofp i32 %0 to double
   %2 = fmul double %sitofp_to_double, 0x4000000000000
-  %3 = call double @sample_bernstein(double %2)
-  %4 = fcmp olt double %3, 0x3FEFAE147AE147AE
+  %3 = call double @sample_bernstein_inverse(double %2)
+  %4 = fcmp olt double %3, 0xC0337552CE86D724
   br i1 %4, label %always_hit, label %never_hit
 
 always_hit:                                       ; preds = %1
@@ -41,36 +41,48 @@ define dso_local i32 @main() #0 !dbg !27 {
   ret i32 0, !dbg !31
 }
 
-define double @sample_bernstein(double %u) {
+define double @sample_bernstein_inverse(double %u) {
 entry:
-  %oneMinusU = fsub double 1.000000e+00, %u
-  %powOneMinusU_mul = fmul double 1.000000e+00, %oneMinusU
-  %powOneMinusU_mul1 = fmul double %powOneMinusU_mul, %oneMinusU
-  %powOneMinusU_mul2 = fmul double %powOneMinusU_mul1, %oneMinusU
-  %powOneMinusU_mul3 = fmul double %powOneMinusU_mul2, %oneMinusU
-  %t_mul_powOneMinusU = fmul double 0.000000e+00, %powOneMinusU_mul3
-  %accum = fadd double 0.000000e+00, %t_mul_powOneMinusU
-  %powU_next = fmul double 1.000000e+00, %u
-  %powOneMinusU_div = fdiv double %powOneMinusU_mul3, %oneMinusU
-  %t_mul_c_powU = fmul double 0x3FE6E4BDB6FC02D6, %powU_next
-  %t_mul_powOneMinusU4 = fmul double %t_mul_c_powU, %powOneMinusU_div
-  %accum5 = fadd double %accum, %t_mul_powOneMinusU4
-  %powU_next6 = fmul double %powU_next, %u
-  %powOneMinusU_div7 = fdiv double %powOneMinusU_div, %oneMinusU
-  %t_mul_c_powU8 = fmul double 0x3FFD0AC3394828D4, %powU_next6
-  %t_mul_powOneMinusU9 = fmul double %t_mul_c_powU8, %powOneMinusU_div7
-  %accum10 = fadd double %accum5, %t_mul_powOneMinusU9
-  %powU_next11 = fmul double %powU_next6, %u
-  %powOneMinusU_div12 = fdiv double %powOneMinusU_div7, %oneMinusU
-  %t_mul_c_powU13 = fmul double 4.000000e+00, %powU_next11
-  %t_mul_powOneMinusU14 = fmul double %t_mul_c_powU13, %powOneMinusU_div12
-  %accum15 = fadd double %accum10, %t_mul_powOneMinusU14
-  %powU_next16 = fmul double %powU_next11, %u
-  %powOneMinusU_div17 = fdiv double %powOneMinusU_div12, %oneMinusU
-  %t_mul_c_powU18 = fmul double 0x57B3F9AEA980, %powU_next16
-  %t_mul_powOneMinusU19 = fmul double %t_mul_c_powU18, %powOneMinusU_div17
-  %accum20 = fadd double %accum15, %t_mul_powOneMinusU19
-  ret double %accum20
+  br label %loop
+
+loop:                                             ; preds = %loop, %entry
+  %low = phi double [ 0xC0337D9402E600D2, %entry ], [ %next_low, %loop ]
+  %high = phi double [ 0xC03374E395E025F8, %entry ], [ %next_high, %loop ]
+  %iter = phi i32 [ 0, %entry ], [ %24, %loop ]
+  %0 = fadd double %low, %high
+  %mid = fmul double %0, 5.000000e-01
+  %1 = fsub double %mid, 0xC0337D9402E600D2
+  %2 = fmul double 0x403D764499D16CD5, %1
+  %3 = fsub double 1.000000e+00, %2
+  %4 = fmul double 1.000000e+00, %3
+  %5 = fmul double %4, %3
+  %6 = fmul double %5, %3
+  %7 = fmul double 0.000000e+00, %6
+  %8 = fadd double 0.000000e+00, %7
+  %9 = fmul double 1.000000e+00, %2
+  %10 = fdiv double %6, %3
+  %11 = fmul double 0x3FEC0E9DFC33C161, %9
+  %12 = fmul double %11, %10
+  %13 = fadd double %8, %12
+  %14 = fmul double %9, %2
+  %15 = fdiv double %10, %3
+  %16 = fmul double 0x3FF2AA7D56643D58, %14
+  %17 = fmul double %16, %15
+  %18 = fadd double %13, %17
+  %19 = fmul double %14, %2
+  %20 = fdiv double %15, %3
+  %21 = fmul double 1.000000e+00, %19
+  %22 = fmul double %21, %20
+  %23 = fadd double %18, %22
+  %is_too_low = fcmp olt double %23, %u
+  %next_low = select i1 %is_too_low, double %mid, double %low
+  %next_high = select i1 %is_too_low, double %high, double %mid
+  %24 = add i32 %iter, 1
+  %25 = icmp eq i32 %24, 64
+  br i1 %25, label %exit, label %loop
+
+exit:                                             ; preds = %loop
+  ret double %next_low
 }
 
 attributes #0 = { noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }

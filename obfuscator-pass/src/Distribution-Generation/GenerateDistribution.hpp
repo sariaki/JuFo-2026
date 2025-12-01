@@ -9,6 +9,7 @@
 #include <llvm/Passes/PassPlugin.h>
 #include <llvm/Support/raw_ostream.h>
 #include <random>
+#include <limits>
 #include "../Utils/Utils.hpp"
 #include "Bernsteinpolynomial.hpp"
 
@@ -17,5 +18,5 @@ using namespace llvm;
 namespace Distribution
 {
     FunctionCallee CreatePoisson(Module& M, Value* Lambda);
-    std::pair<FunctionCallee, MonotonicBernstein> CreateRandom(Module& M, std::mt19937 Rng);
+    std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandom(Module& M, std::mt19937 Rng);
 }

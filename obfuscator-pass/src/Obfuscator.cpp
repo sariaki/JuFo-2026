@@ -32,7 +32,7 @@ namespace
             std::mt19937 Rng(Dev());
 
             //const auto Sampler = Distribution::CreatePoisson(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
-            const auto [SamplerFn, Bernsteinpolynomial] = Distribution::CreateRandom(M, Rng);
+            const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::CreateRandom(M, Rng);
 
             for (Function& F : M)
             {
@@ -64,24 +64,27 @@ namespace
 
                 const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
 
-                // i64 x = sampler(u))
+                // i64 x = sampler(u)
                 const auto SampleRet = IRB.CreateCall(SamplerFn, { SmallCallParameter });
-                //const auto SampleRet = IRB.CreateCall(Sampler, { SmallCallParameter });
 
-                // Compute needed threshold for bernsteinpolynomial
-                double Threshold = 0.99;
-                for (double i = 0.0; i < 1.0; i += 0.01)
+                errs() << "Start: " << DomainStart << " End: " << DomainEnd << "\n";
+
+                // Compute needed threshold for Bernsteinpolynomial
+                double DomainWidth = DomainEnd - DomainStart;
+                double StepSize = DomainWidth / 100.0;
+                double Threshold = std::numeric_limits<double>::lowest(); // We use this value for debugging purposes (easily identifiable)
+                for (double i = DomainStart; i < DomainEnd; i += StepSize)
                 {
-                   if (Bernsteinpolynomial.EvaluateAt(i) > 0.99)
+                   if (Bernsteinpolynomial.EvaluateAt(i) >= 0.9) 
                    {
                        Threshold = i;
                        break;
                    }
                 }
+                
+                errs() << "Threshold: " << Threshold << "\n";
 
                 // if x < Threshold...
-                //const auto CmpResult = IRB.CreateICmpSLT(SampleRet,
-                //    ConstantInt::get(IRB.getInt64Ty(), Threshold));
                 const auto CmpResult = IRB.CreateFCmpOLT(SampleRet,
                    ConstantFP::get(IRB.getDoubleTy(), Threshold));
                 
