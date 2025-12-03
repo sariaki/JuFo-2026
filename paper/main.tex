@@ -313,7 +313,7 @@ Um zu garantieren, dass das Programm, in welchem das probabilistische opake Prä
 Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistische opaken zu unterscheiden.
 
 \subsection{Algorithmus}
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere, z.B. normal-, exponential- oder bernoulliverteilte, Variable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
 %Über die transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
 Mit dieser transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
@@ -323,9 +323,25 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
     \label{alg:probOpaque}
     \begin{algorithmic}[1]
     \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}$}
-    \For{$Function \; \Var{F} \in \Var{Modul}$}
-    	\If{\Call{ShouldObfuscate}{$\Var{F}$}}
-    		${U} \gets \Call{InsertSymbolicVariable}{$$}$
+    \For{$Function \; \Var{F} \in \Var{Module}$}
+        \If{\Call{ShouldObfuscate}{$\Var{F}$}}
+            \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
+            
+    		\State $\Var{U} \gets \Call{BB.InsertSymbolicVariable}{$$}$ \Comment{Generate a random variable $\in [0;1]$.}
+            \State $\Var{U} \gets \Call{BB.InsertCallInverseCDF}{\Var{U}}$
+            
+            \State $\Var{Threshold} \gets \text{undefined}$ \Comment{Compute threshold.}
+            \For{$i \gets \Var{DomainStart};\; i < \Var{DomainEnd};\; i \gets i + \Var{StepSize}$}
+                \If{$\Call{CDF.EvaluateAt}{i} \ge 0.99$}
+                    \State $\Var{Threshold} \gets i$
+                    \State \textbf{break} \Comment{Stop at first satisfying $i$}
+                \EndIf
+            \EndFor
+            
+            \State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$
+            \State $\Var{FalseBB} \gets \Call{F.CreateBB}{}$
+            \State $\Call{BB.InsertIf}{\Var{U} \le \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
+            \State $\Call{FalseBB.InsertJunkCode}{$$}$
     	\EndIf
     \EndFor
     \EndProcedure
