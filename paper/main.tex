@@ -47,6 +47,7 @@
 }
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\algnewcommand{\Var}[1]{\mathit{#1}}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bib.bib}
 \usepackage{amsmath}
@@ -307,13 +308,12 @@ Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikat
 	$\mathcal{O}(\phi) = \left[\Call{Poisson}{{5}} \geq 15 \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat unwahr ist beträgt $\sum_{k=15}^{\infty} \frac{5^ke^{-5}}{k!} = 1 - \sum_{k=0}^{14} \frac{5^ke^{-5}}{k!} \approx 0,023\%$
 \end{example}
 
-
 Um zu garantieren, dass das Programm, in welchem das probabilistische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...
 
 Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistische opaken zu unterscheiden.
 
 \subsection{Algorithmus}
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $X$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $X$ nicht statisch bestimmen kann. Es wird angenommen, dass $X$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $X$ in eine andere, z.B. normal-, exponential- oder bernoulliverteilte, Variable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere, z.B. normal-, exponential- oder bernoulliverteilte, Variable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
 %Über die transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
 Mit dieser transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
@@ -322,7 +322,12 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
     \caption{Generierung probabilistischer opaker Prädikate}
     \label{alg:probOpaque}
     \begin{algorithmic}[1]
-    \Procedure{...}{$\mathit{...}$}
+    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}$}
+    \For{$Function \; \Var{F} \in \Var{Modul}$}
+    	\If{\Call{ShouldObfuscate}{$\Var{F}$}}
+    		${U} \gets \Call{InsertSymbolicVariable}{$$}$
+    	\EndIf
+    \EndFor
     \EndProcedure
     \end{algorithmic}
 \end{algorithm}
