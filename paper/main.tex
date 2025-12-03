@@ -96,9 +96,9 @@
 \section{Einleitung}
 % TODO: Vielleicht was auf Makro-Ebene sagen? Krieg, geopol. Spannungen, Cyber-Angriffe
 \emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren.
-Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. \emph{EDR}s zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
-Besonderes Interesse wurde im akademischen Bereich dabei opaken Prädikaten, einer Kontrollflussobfuskation durch immer wahre bzw. falsche Verzweigungen, geschenkt.
-In dieser wird dabei folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine automatische Deobfuskation unmöglich machen?}
+Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. \emph{Endpoint Detection and Response} Systemen zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
+Von besonderem Interesse im Bereich der Obfuskation sind opake Prädikate, eine Kontrollflussobfuskation welche immer wahre bzw. falsche Verzweigungen in Programme einfügt.
+In dieser Arbeit wird folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine perfekte automatische Deobfuskation unmöglich machen?}
 Aufbauend auf den Gedanken von \cite{stephensProbabilisticObfuscationCovert2018} wird hierfür die neue Klasse probabilistischer opaker Prädikate vorgestellt. Implementiert wird die Idee in Form eines LLVM-Passes. Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, sondern auch gegenüber neuster KI-Deobfuskationsmethoden.
 
 Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet mit $[P]=1$, falls die Aussage $P$ wahr ist und $[P]=0$ sonst. Vergleicht eine Aussage zwei Variablen, so wird hierfür "`$==$"' verwendet.
@@ -106,7 +106,7 @@ Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kom
 % TODO: Klären, was in welchem Abschnitt gemacht wird.
 
 \section{Theoretische Grundlagen}
-\subsection{(Stochastische) Obfuskation}
+\subsection{Obfuskation}
 Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
 \begin{definition}[Obfuskation]
 	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
@@ -258,7 +258,7 @@ Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in 
 
 \subsection{Stochastische opake Prädikate} 
 Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
-Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom constraint solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus heißt dies allerdings, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
+Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{Constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom Constraint Solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus bedeutet dies, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
 Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999999999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0000000001$ den Wert $0$ zurückgibt. 
 \begin{algorithm}[!htb] 
@@ -275,7 +275,7 @@ Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,99
     \end{algorithmic}
 \end{algorithm}
 
-Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob dieser Algorithmus den Wert $1$ wiedergibt, so würde dieser behaupten, dass dies falsch sei.
+Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob der vorliegende Algorithmus den Wert $1$ wiedergibt, so würde dieser behaupten, dass dies falsch sei.
 \end{example}
 
 Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
@@ -300,17 +300,17 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 \end{definition}
 
 \begin{example}
-	Das wahrscheinlich einfachste stochastische opake Prädikat ist $\mathcal{O}(\phi) = \left[\Call{Uniform}{{0,1}} \leq 1-10^{-5} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $10^{-5}=0,001\%$.
+	Das wahrscheinlich einfachste stochastische opake Prädikat ist $\mathcal{O}(\phi) = \left[\Call{Uniform}{{0,1}} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
 \end{example}
 
 \begin{example}
-	$\mathcal{O}(\phi) = \left[\Call{Pois}{{5}} \geq 15 \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat unwahr ist beträgt $\sum_{k=15}^{\infty} \frac{5^ke^{-5}}{k!} = 1 - \sum_{k=0}^{14} \frac{5^ke^{-5}}{k!} \approx 0,023\%$
+	$\mathcal{O}(\phi) = \left[\Call{Poisson}{{5}} \geq 15 \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat unwahr ist beträgt $\sum_{k=15}^{\infty} \frac{5^ke^{-5}}{k!} = 1 - \sum_{k=0}^{14} \frac{5^ke^{-5}}{k!} \approx 0,023\%$
 \end{example}
 
 
 Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...
 
-Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{stoch}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem stochastisch opaken zu unterscheiden.
+Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{stoch}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem stochastisch opaken zu unterscheiden.
 
 \subsection{Algorithmus}
 Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $x$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $x$ nicht statisch bestimmen kann. Es wird angenommen, dass $x$ gleichverteilt ist. Diese Verteilung wird nun in eine andere (z.B. Normal-, Exponential-, Bernoulliverteilung) transformiert. Methoden hierfür werden in \cref{sec:genProb} vorgestellt. Über diese können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
@@ -372,9 +372,9 @@ Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $
     \item Teile $[a;b]$ in $n$ Teile ein.
     \item \textcolor{red}{...TODO}
 \end{enumerate}
-Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome gelöst:
+Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
 \begin{equation}
-B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}.
+B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \; c_0 \leq c_1 \leq ... c_n
 \end{equation}
 
 \subsection{Generierung von ununterscheidbarem Füllcode}
