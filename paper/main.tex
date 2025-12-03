@@ -256,7 +256,7 @@ Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an
 
 Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
 
-\subsection{Stochastische opake Prädikate} 
+\subsection{Probabilistische opake Prädikate} 
 Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
 Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{Constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom Constraint Solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus bedeutet dies, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
@@ -278,13 +278,13 @@ Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,99
 Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob der vorliegende Algorithmus den Wert $1$ wiedergibt, so würde dieser behaupten, dass dies falsch sei.
 \end{example}
 
-Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
-\begin{definition}[Stochastische opake Prädikate] \label{def:stochOpaque} \label{def:konstruktionsschema}
-	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist stochastisch opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. 
+Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
+\begin{definition}[Probabilistische opake Prädikate] \label{def:probOpaque} \label{def:konstruktionsschema}
+	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. 
 \end{definition}
 
 \begin{definition}
-	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das stochastisch opake Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
+	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das probabilistische opake Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
 \begin{equation}
 	\mathcal{O}(\phi) = \left[f(X) \bowtie c \right],
 \end{equation}
@@ -295,12 +295,12 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 		\item $c$ eine festgelegte Konstante ist.
 	\end{enumerate}
 \end{definition}
-\begin{definition} \label{def:pStoch}
-	$\mathcal{P}_{stoch}$ ist die Klasse aller stochastischen opaken Prädikate.
+\begin{definition} \label{def:pProb}
+	$\mathcal{P}_{prob}$ ist die Klasse aller probabilistische opaker Prädikate.
 \end{definition}
 
-\begin{example}
-	Das wahrscheinlich einfachste stochastische opake Prädikat ist $\mathcal{O}(\phi) = \left[\Call{Uniform}{{0,1}} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
+\begin{example} \label{ex:gleich}
+	Das wahrscheinlich einfachste probabilistische opake Prädikat ist $\mathcal{O}(\phi) = \left[\Call{Uniform}{{0,1}} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
 \end{example}
 
 \begin{example}
@@ -308,22 +308,57 @@ Dies bildet die Grundidee stochastischer opaker Prädikate. Anstatt Prädikate z
 \end{example}
 
 
-Um zu garantieren, dass das Programm, in welchem das stochastische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...
+Um zu garantieren, dass das Programm, in welchem das probabilistische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...
 
-Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{stoch}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem stochastisch opaken zu unterscheiden.
+Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistische opaken zu unterscheiden.
 
 \subsection{Algorithmus}
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $x$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $x$ nicht statisch bestimmen kann. Es wird angenommen, dass $x$ gleichverteilt ist. Diese Verteilung wird nun in eine andere (z.B. Normal-, Exponential-, Bernoulliverteilung) transformiert. Methoden hierfür werden in \cref{sec:genProb} vorgestellt. Über diese können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $X$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $X$ nicht statisch bestimmen kann. Es wird angenommen, dass $X$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $X$ in eine andere, z.B. normal-, exponential- oder bernoulliverteilte, Variable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
+%Über die transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
+Mit dieser transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
-Der Pseudocode für die Generierung solcher stochastischer opaker Prädikate ist in \cref{alg:stochasticOpaque} beschreiben.
+Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschreiben.
 \begin{algorithm}[!htb] 
-    \caption{Generierung stochastischer opaker Prädikate}
-    \label{alg:stochasticOpaque}
+    \caption{Generierung probabilistischer opaker Prädikate}
+    \label{alg:probOpaque}
     \begin{algorithmic}[1]
     \Procedure{...}{$\mathit{...}$}
     \EndProcedure
     \end{algorithmic}
 \end{algorithm}
+
+\subsection{Wahrscheinlichkeitsverteilungsgenerierung} \label{sec:genProb}
+Um den Ansatz gegen Pattern Matching resistent zu machen, soll dieser möglichst generalisiert werden. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes probabilistisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
+Mehrere Methoden kommen hierfür infrage:
+\paragraph{Generierung über Verteilungsfamilie}
+Eine Möglichkeit ist die Nutzung einer Wahrscheinlichkeitsverteilung, deren Wahrscheinlichkeits-(dichte-)funktion über einen oder mehrere Parameter bestimmt wird.
+
+Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, Formparameter $r > 0$ und folgender Dichtefunktion \cite{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}:
+\begin{equation}
+	\gamma_{\alpha,r}(x) \;=\; \frac{\alpha^r}{\Gamma(r)}x^{r-1}e^{-\alpha x}, x > 0.
+\end{equation}
+Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste. 
+\textcolor{red}{Der Nachteil hiervon ist, dass ...}
+
+\paragraph{Generierung über zufälliges Polynom}
+Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt.
+Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
+\begin{equation}
+	B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \\
+	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
+\end{equation}
+Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
+Für eine weitere Verallgemeinerung lassen sich des Weiteren der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
+
+Das Vorgehen für diese Methode ist somit Folgendes:
+\begin{enumerate}
+	\item Wähle zwei zufällige rationale Zahlen $(a,k) \in \mathbb{R}$.
+	\item Bestimme das Intervall $[x_1, x_2]$ mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
+	\item Teile $[x_1;x_2]$ in $n$ Teile ein.
+	\item Sei $c_0 = 0$ und $c_n = 1$. Für Intervallteil $i=1$ bis $n-1$: \\
+	Wähle eine zufällige rationale Zahl $c$. Berechne $c_i = c_{i-1} + c$.
+	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}$ mit gegebenen Parametern.
+\end{enumerate}
 
 \section{Implementierung}
 \subsection{Entscheidungen}
@@ -351,33 +386,6 @@ Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall li
 \paragraph{Zeit}
 \paragraph{Race-Conditions}
 \paragraph{Hardware}
-
-\subsection{Wahrscheinlichkeitsverteilungsgenerierung} \label{sec:genProb}
-Um den Ansatz gegen \emph{Pattern Matching} resistent zu machen, wird er generalisiert implementiert. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes stochastisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
-Mehrere Methoden kommen hierfür infrage:
-\paragraph{Generierung über Verteilungsfamilie}
-Eine Möglichkeit ist die Nutzung einer Wahrscheinlichkeitsverteilung, deren Wahrscheinlichkeits-(dichte-)funktion über einen oder mehrere Parameter bestimmt wird.
-
-Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, Formparameter $r > 0$ und folgender Dichtefunktion \cite{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}:
-\begin{equation}
-\gamma_{\alpha,r}(x) \;=\; \frac{\alpha^r}{\Gamma(r)}x^{r-1}e^{-\alpha x}, x > 0.
-\end{equation}
-Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste.
-\textcolor{red}{Der Nachteil hiervon ist, dass ...}
-
-\paragraph{Generierung über zufälliges Polynom}
-Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt. Das allgemeine Vorgehen hierfür ist Folgendes:
-\begin{enumerate}
-    \item Wähle ein zufälliges Intervall $[a;b]$.
-    \item Teile $[a;b]$ in $n$ Teile ein.
-    \item \textcolor{red}{...TODO}
-\end{enumerate}
-Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
-\begin{equation}
-B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \; c_0 \leq c_1 \leq ... c_n
-\end{equation}
-
-\subsection{Generierung von ununterscheidbarem Füllcode}
 
 \section{Evaluierung}
 \subsection{Kriterien}
