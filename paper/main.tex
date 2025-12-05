@@ -434,16 +434,22 @@ Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \em
 
 \subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
 %Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
-Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. 
+Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. Folgende Methoden existieren hierfür:
 %Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
 %Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
 %Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
 
-\paragraph{Betriebssystem-APIs}
+\paragraph{Explizite Quellen (APIs, Zeit, Hardwaretimer)}
+CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc} oder \texttt{rand()}). 
+In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
+
 \paragraph{Parameter-Sampling}
-\paragraph{Zeit}
-\paragraph{Race-Conditions}
-\paragraph{Hardware}
+In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom Engine als symbolisch markiert.
+
+Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normal in jedem Programm. Nachteilhaft ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
+
+\paragraph{Race Conditions}
+
 
 \section{Evaluierung}
 \subsection{Kriterien}
