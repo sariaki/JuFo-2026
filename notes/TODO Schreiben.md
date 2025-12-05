@@ -7,8 +7,8 @@
 - In Tigress implementieren??? $\implies$ Collberg fragen
 
 #### Jetzt
-- MUSS ICH NICHT VIELLEICHT DOCH REGRESSION NUTZEN!?
-  ODER REICHT ES, WENN ALL $c$ STEIGEN UND $c_0=0$ und $c_n=1$
+- [ ] Fachbegriffnutzung konsistenter machen
+
 - stephensProbabilisticObfuscationCovert2018 implementieren!
 - [ ] Hintergrund/Motivation neu
 	- [x] Im Angr Discord fragen, ob BiOpake Prädikate gefixt wurden?
@@ -17,7 +17,7 @@
 - [ ] Implementierung zu Ende
 - [ ] Ziele aus Angreifermodell folgern?
       von stephensProbabilisticObfuscationCovert2018 übernehmen
-- [ ] Ansatz besser erklären $\implies$ wichtigster Teil!!
+- [x] Ansatz besser erklären $\implies$ wichtigster Teil!!
 
 - [ ] Pseudocode verbessern
 	- evtl. ganz auf Englisch?

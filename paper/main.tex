@@ -322,7 +322,10 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
     \caption{Generierung probabilistischer opaker Prädikate}
     \label{alg:probOpaque}
     \begin{algorithmic}[1]
-    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}$}
+    \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{Stepsize}$ ($\Var{Threshold}$ precision in predicate)
+    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{StepSize} \in [0, 1]$}
+%    \Require Module, CDF (cumulative distribution function), target quantile $p$ (e.g. $0.99$), $\Var{Stepsize}$ ($\Var{Threshold}$ precision in predicate (e.g. $0.01$)).
+%    \Ensure Module with inserted probabilistic opaque predicates
     \For{$Function \; \Var{F} \in \Var{Module}$}
         \If{\Call{ShouldObfuscate}{$\Var{F}$}}
             \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
@@ -331,16 +334,16 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
             \State $\Var{U} \gets \Call{BB.InsertCallInverseCDF}{\Var{U}}$
             
             \State $\Var{Threshold} \gets \text{undefined}$ \Comment{Compute threshold.}
-            \For{$i \gets \Var{DomainStart};\; i < \Var{DomainEnd};\; i \gets i + \Var{StepSize}$}
-                \If{$\Call{CDF.EvaluateAt}{i} \ge 0.99$}
+            \For{$i \gets \Var{D_{start}};\; i < \Var{D_{end}};\; i \gets i + \Var{StepSize}$}
+                \If{$\Call{CDF.EvaluateAt}{i} \ge \Var{p}$}
                     \State $\Var{Threshold} \gets i$
                     \State \textbf{break} \Comment{Stop at first satisfying $i$}
                 \EndIf
             \EndFor
             
             \State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$
-            \State $\Var{FalseBB} \gets \Call{F.CreateBB}{}$
-            \State $\Call{BB.InsertIf}{\Var{U} \le \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
+            \State $\Var{FalseBB} \gets \Call{F.CreateBB}{$$}$
+            \State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
             \State $\Call{FalseBB.InsertJunkCode}{$$}$
     	\EndIf
     \EndFor
@@ -380,6 +383,40 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 	Wähle eine zufällige rationale Zahl $c$. Berechne $c_i = c_{i-1} + c$.
 	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}$ mit gegebenen Parametern.
 \end{enumerate}
+Die Berechnung des Inversen der kumulativen Wahrscheinlichkeitsdichtefunktion geschieht folgendermaßen:
+\begin{algorithm}[!htb] 
+    \caption{Berechnung des Inversen (Binärsuche)}
+    \label{alg:invCumSum}
+    \begin{algorithmic}[1]
+        \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein Coefficients)
+        \Function{SampleBernsteinInverse}{$\Var{U} \in [0, 1]$}
+            \State $\Var{Low} \leftarrow \Var{D_{start}}$
+            \State $\Var{High} \leftarrow \Var{D_{end}}$
+            \State $\Var{Iter} \leftarrow 0$
+            
+            \While{$\Var{Iter} < 64$} \Comment{Fixed iterations for double precision}
+                \State $\Var{Mid} \leftarrow \frac{\Var{Low} + \Var{High}}{2}$
+                \State $y \leftarrow 0.0$
+                \State $t \leftarrow ...$ \textcolor{red}{TODO}
+                
+                \For{$\Var{k} \leftarrow 0$ \textbf{to} $\Var{Degree}$} \Comment{Evaluate monotonic Bernstein polynomial $B(mid)$}
+                    \State $\Var{b_{k}} \leftarrow \binom{n}{k} \cdot t^k \cdot (1-t)^{n-k}$ \Comment{Sum Bernstein basis polynomials}
+                    \State $\Var{y} \leftarrow y + C[k] \cdot b_{k}$
+                \EndFor
+                
+                \If{$\Var{y} < \Var{U}$}
+                    \State $\Var{Low} \leftarrow \Var{Mid}$
+                \Else
+                    \State $\Var{High} \leftarrow \Var{Mid}$
+                \EndIf
+                
+                \State $\Var{Iter} \leftarrow \Var{Iter} + 1$
+            \EndWhile
+            
+            \State \Return $\Var{Low}$
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
 
 \section{Implementierung}
 \subsection{Entscheidungen}
@@ -392,15 +429,15 @@ Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vor
     \item \textbf{Entwicklungsaufwand:} Bin2Bin-Obfuskatoren und umfangreiche Quellcodemanipulation erfordern viel manuellen Aufwand und sind fehlerhaftig. Ein LLVM-Pass ermöglicht den reinen Fokus auf die Obfuskationslogik.
 \end{enumerate}
 
-Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis der \emph{low-level} Kontrolle sowie Laufzeiteffizienz und der \emph{high-level} Portabilität und geringem Entwicklungsaufwand. %Im Falle anderer Obfuskatoren mit architekturspezifischem Fokus mag dies anders sein.
+Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand. %Im Falle anderer Obfuskatoren mit architekturspezifischem Fokus mag dies anders sein.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
 
 \subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
-Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
-% Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. 
-Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
-Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
-Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
+%Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
+Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. 
+%Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
+%Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
+%Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
 
 \paragraph{Betriebssystem-APIs}
 \paragraph{Parameter-Sampling}
@@ -410,9 +447,12 @@ Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall li
 
 \section{Evaluierung}
 \subsection{Kriterien}
+\subsection{Praktische Anwendung}
+\subsection{Sicherheit}
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
 \section{Ergebnisdiskussion}
 \section{Fazit und Ausblick} \label{sec:fazit}
+\textcolor{red}{TODO: Anwendung auf Ausdrücke}
 
 \newpage
 \pagenumbering{Alph}
