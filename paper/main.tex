@@ -436,8 +436,8 @@ Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einhe
 %Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
 %Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
 
-\paragraph{Explizite Quellen (APIs, Zeit, Hardwaretimer)}
-CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc} oder \texttt{rand()}). 
+\paragraph{Explizite Quellen (Betriebssystem-APIs, Hardware)}
+CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc}, \texttt{rand() oder \texttt{time()}}). 
 In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
 
 \paragraph{Parameter-Sampling}
@@ -446,7 +446,7 @@ In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen s
 Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normal in jedem Programm. Nachteilhaft ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
 
 \paragraph{Race Conditions}
-\cite{colesaRandomRace} ... \\
+Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \\
 
 Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
 
@@ -471,6 +471,7 @@ Um die Obfuskationsmethode zu evaluieren werden folgende Metriken verwendet \cit
 \subsection{Praktische Anwendung}
 \subsection{Sicherheit}
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
+
 \section{Ergebnisdiskussion}
 \section{Fazit und Ausblick} \label{sec:fazit}
 \textcolor{red}{TODO: Anwendung auf Ausdrücke}
