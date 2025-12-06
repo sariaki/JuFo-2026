@@ -2,12 +2,20 @@
 #include <limits.h>
 #include <float.h>
 
-__attribute__((annotate("insert_stochastic_predicate")))
-void foo(int x)
+#define OBFUSCATE __attribute__((annotate("POP")))
+
+OBFUSCATE void foo(int x)
 {
   printf("foo %i\n", x);
   //__asm__("int3");
 } 
+
+OBFUSCATE int bar(int x)
+{
+  int y = x + 1;
+  printf("bar %i", y);
+  return y;
+}
 
 int main()
 {

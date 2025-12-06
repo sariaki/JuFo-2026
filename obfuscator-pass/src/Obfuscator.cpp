@@ -16,13 +16,12 @@
 
 using namespace llvm;
 
+constexpr const char* PASS_NAME = "POP";
+
 namespace
 {
     struct ProbabilisticOpaquePredicatesPass : public PassInfoMixin<ProbabilisticOpaquePredicatesPass>
     {
-        const double Threshold = 140;
-        const double Lambda = 100;
-
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
@@ -31,7 +30,7 @@ namespace
             std::random_device Dev;
             std::mt19937 Rng(Dev());
 
-            //const auto Sampler = Distribution::CreatePoisson(M, ConstantFP::get(IRB.getDoubleTy(), Lambda));
+            // Generate random inverse CDF
             const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::CreateRandom(M, Rng);
 
             for (Function& F : M)
@@ -40,9 +39,9 @@ namespace
                 if (F.isDeclaration()) continue;
 
                 // Check if function has required annotation
-                // TODO
-                if (!(demangle(F.getName().str()) == "foo"))
-                    continue;
+                if (!Utils::HasAnnotation(&F, PASS_NAME)) continue;
+
+                errs() << "Running on " << demangle(F.getName()) << "\n";
 
                 // Insert at entry block
                 BasicBlock& EntryBB = F.getEntryBlock();
@@ -116,7 +115,7 @@ extern "C" llvm::PassPluginLibraryInfo getProbabilisticOpaquePredicatesPluginInf
         {
             PB.registerPipelineParsingCallback([](StringRef Name, ModulePassManager& MPM, ...)
             {
-                if (Name == "obfuscator")
+                if (Name == PASS_NAME)
                 {
                     MPM.addPass(ProbabilisticOpaquePredicatesPass());
                     return true;

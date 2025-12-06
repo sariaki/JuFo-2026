@@ -9,7 +9,7 @@ clang-18 -g -$OPT_LVL -emit-llvm -c example.c -o example.bc
 # Run the pass using opt-18
 /usr/bin/opt-18 \
   -load-pass-plugin="/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so" \
-  -passes=obfuscator \
+  -passes=POP \
   example.bc -o example_obf.bc
 
 # Disassemble to verify

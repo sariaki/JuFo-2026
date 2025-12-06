@@ -76,3 +76,35 @@ double Utils::BinomialCoefficient(int n, int k)
     }
     return Result;
 }
+
+bool Utils::HasAnnotation(Function *F, std::string_view Annotation)
+{
+    Module* M = F->getParent();
+
+    GlobalVariable* Glob = M->getGlobalVariable("llvm.global.annotations");
+    if (!Glob) return false;
+
+    auto* CA = dyn_cast<ConstantArray>(Glob->getInitializer());
+    if (!CA) return false;
+
+    for (unsigned i = 0; i < CA->getNumOperands(); ++i) 
+    {
+        auto* Struct = dyn_cast<ConstantStruct>(CA->getOperand(i));
+        if (!Struct) continue;
+
+        // First field is the function pointer
+        auto* FuncPtr = dyn_cast<Function>(Struct->getOperand(0)->stripPointerCasts());
+        
+        // Second field is the annotation string
+        auto* GStr = dyn_cast<GlobalVariable>(Struct->getOperand(1)->stripPointerCasts());
+        
+        if (FuncPtr == F && GStr) 
+        {
+            auto* Data = dyn_cast<ConstantDataArray>(GStr->getInitializer());
+            if (Data && Data->getAsCString() == Annotation.data()) 
+                return true;
+        }
+    }
+
+    return false;
+}
