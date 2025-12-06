@@ -18,7 +18,7 @@ using namespace llvm;
 
 namespace
 {
-    struct StochasticOpaquePredicate : public PassInfoMixin<StochasticOpaquePredicate>
+    struct ProbabilisticOpaquePredicatesPass : public PassInfoMixin<ProbabilisticOpaquePredicatesPass>
     {
         const double Threshold = 140;
         const double Lambda = 100;
@@ -104,42 +104,21 @@ namespace
             return PreservedAnalyses::all();
         }
     };
-
-#pragma region Setup Boilerplate
-    // Legacy PassManager registration
-    struct LegacyStochasticOpaquePredicate : public ModulePass
-    {
-        static char ID;
-        LegacyStochasticOpaquePredicate() : ModulePass(ID)
-        {}
-        bool runOnModule(Module& M) override
-        {
-            auto& P = *new StochasticOpaquePredicate();
-            ModuleAnalysisManager MAM;
-            P.run(M, MAM);
-            return true;
-        }
-    };
 }
 
-//char LegacyStochasticOpaquePredicate::ID = 0;
-//static RegisterPass<LegacyStochasticOpaquePredicate> X(
-//    "stoch-opaque", "Inject stochastic opaque predicates", false, false
-//);
-
 // New PassManager registration
-extern "C" llvm::PassPluginLibraryInfo getStochasticOpaquePredicatePluginInfo()
+extern "C" llvm::PassPluginLibraryInfo getProbabilisticOpaquePredicatesPluginInfo()
 {
     return 
     { 
-        LLVM_PLUGIN_API_VERSION, "StochasticOpaquePredicates", "v0.1", 
+        LLVM_PLUGIN_API_VERSION, "ProbabilisticOpaquePredicates", "v0.1", 
         [](PassBuilder& PB)
         {
             PB.registerPipelineParsingCallback([](StringRef Name, ModulePassManager& MPM, ...)
             {
                 if (Name == "obfuscator")
                 {
-                    MPM.addPass(StochasticOpaquePredicate());
+                    MPM.addPass(ProbabilisticOpaquePredicatesPass());
                     return true;
                 }
                 return false;
@@ -151,6 +130,5 @@ extern "C" llvm::PassPluginLibraryInfo getStochasticOpaquePredicatePluginInfo()
 extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo
     llvmGetPassPluginInfo()
 {
-    return getStochasticOpaquePredicatePluginInfo();
+    return getProbabilisticOpaquePredicatesPluginInfo();
 }
-#pragma endregion
