@@ -120,9 +120,6 @@ Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erl
 
 Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
 
-Um eine Obfuskationsmethode zu evaluieren werden typischerweise folgende Metriken verwendet: \emph{Stärke} (Wie unverständlich ist die Obfuskation für einen Angreifer), \emph{Resilienz} (Wie schwer ist eine Deobfuskation?), \emph{Kosten} (Wie sehr erhöht die Obfuskation die Laufzeitkosten?) und \emph{Tarnung} (Wie leicht lässt sich ein obfuskiertes Programm als solches erkennen?) \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}
-
-
 \subsection{Opake Prädikate}
 Die folgenden Definitionen sind aus \cite{tofighi-shiraziDefeatingOpaquePredicates2019} sowie vom Pionierwerk \cite{collbergManufacturingCheapResilient1998} modifiziert übernommen. Es wird sich auf hierbei auf invariante opake Prädikate beschränkt.
 \begin{definition}[Opake Prädikate]
@@ -388,7 +385,7 @@ Die Berechnung des Inversen der kumulativen Wahrscheinlichkeitsdichtefunktion ge
     \caption{Berechnung des Inversen (Binärsuche)}
     \label{alg:invCumSum}
     \begin{algorithmic}[1]
-        \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein Coefficients)
+        \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift and stretch)
         \Function{SampleBernsteinInverse}{$\Var{U} \in [0, 1]$}
             \State $\Var{Low} \leftarrow \Var{D_{start}}$
             \State $\Var{High} \leftarrow \Var{D_{end}}$
@@ -397,7 +394,7 @@ Die Berechnung des Inversen der kumulativen Wahrscheinlichkeitsdichtefunktion ge
             \While{$\Var{Iter} < 64$} \Comment{Fixed iterations for double precision}
                 \State $\Var{Mid} \leftarrow \frac{\Var{Low} + \Var{High}}{2}$
                 \State $y \leftarrow 0.0$
-                \State $t \leftarrow ...$ \textcolor{red}{TODO}
+                \State $t \leftarrow \Var{HStretch} \cdot (\Var{Mid} - \Var{HShift})$
                 
                 \For{$\Var{k} \leftarrow 0$ \textbf{to} $\Var{Degree}$} \Comment{Evaluate monotonic Bernstein polynomial $B(mid)$}
                     \State $\Var{b_{k}} \leftarrow \binom{n}{k} \cdot t^k \cdot (1-t)^{n-k}$ \Comment{Sum Bernstein basis polynomials}
@@ -449,10 +446,28 @@ In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen s
 Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normal in jedem Programm. Nachteilhaft ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
 
 \paragraph{Race Conditions}
+\cite{colesaRandomRace} ... \\
 
+Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
 
 \section{Evaluierung}
 \subsection{Kriterien}
+Um die Obfuskationsmethode zu evaluieren werden folgende Metriken verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}:
+
+\begin{center}
+\begin{tabular}{c|l}
+	Kriterium & Beschreibung \\
+	\hline
+	Stärke & Wie unverständlich ist die Obfuskation für einen Angreifer? \\
+	\hline
+	Resilienz & Wie schwer ist eine (automatisierte) Deobfuskation? \\
+	\hline
+	Kosten & Wie sehr erhöht die Obfuskation die Laufzeitkosten? \\
+	\hline
+	Tarnung & Wie leicht lässt sich ein obfuskiertes Programm als solches erkennen? \\
+\end{tabular}
+\end{center}
+
 \subsection{Praktische Anwendung}
 \subsection{Sicherheit}
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
