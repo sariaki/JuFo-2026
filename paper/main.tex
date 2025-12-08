@@ -361,7 +361,6 @@ Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, 
 Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste. 
 \textcolor{red}{Der Nachteil hiervon ist, dass ...}
 
-\paragraph{Generierung über zufälliges Polynom}
 Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt.
 Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Eigenschaften erfüllen:
 \begin{enumerate}[]
@@ -375,8 +374,19 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 	B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \\
 	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
 \end{equation}
+
+\paragraph{Generierung über zufälliges Polynom}
+\begin{wrapfigure}{r}{6.5cm}
+    \vspace{-1.25cm}
+    \centering
+    \setlength{\abovecaptionskip}{-8pt}
+    \includegraphics[width=6.5cm]{img/bernstein}
+    \caption{Zufällige Bernsteinpolynome} %mit $k=0$ und $a=1$
+    \label{fig:bernstein}
+\end{wrapfigure}
+
 %Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
-%Für eine weitere Verallgemeinerung lassen sich des Weiteren der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
+Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
 Das Vorgehen für diese Methode ist somit Folgendes:
 \begin{enumerate}
@@ -394,13 +404,13 @@ Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $
     \caption{Berechnung des Inversen (Binärsuche)}
     \label{alg:invCumSum}
     \begin{algorithmic}[1]
-        \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift and stretch)
+        \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift and stretch), $\Var{Prec}$ (Precision)
         \Function{SampleBernsteinInverse}{$\Var{U} \in [0, 1]$}
             \State $\Var{Low} \leftarrow \Var{D_{start}}$
             \State $\Var{High} \leftarrow \Var{D_{end}}$
             \State $\Var{Iter} \leftarrow 0$
             
-            \While{$\Var{Iter} < 64$} \Comment{Fixed iterations for double precision}
+            \While{$\Var{Iter} < \Var{Prec}$} \Comment{Fixed iterations for double precision}
                 \State $\Var{Mid} \leftarrow \frac{\Var{Low} + \Var{High}}{2}$
                 \State $y \leftarrow 0.0$
                 \State $t \leftarrow \Var{HStretch} \cdot (\Var{Mid} - \Var{HShift})$
@@ -457,7 +467,7 @@ In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen s
 Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normal in jedem Programm. Nachteilhaft ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
 
 \paragraph{Race Conditions}
-Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \\
+Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{...} \\
 
 Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
 
@@ -479,8 +489,8 @@ Um die Obfuskationsmethode zu evaluieren werden folgende Metriken verwendet \cit
 \end{tabular}
 \end{center}
 
+\subsection{Evaluierung}
 \subsection{Praktische Anwendung}
-\subsection{Sicherheit}
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
 
 \section{Ergebnisdiskussion}
