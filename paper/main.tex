@@ -363,24 +363,33 @@ Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quad
 
 \paragraph{Generierung über zufälliges Polynom}
 Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt.
-Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges streng monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
+Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Eigenschaften erfüllen:
+\begin{enumerate}[]
+    \item $F$ ist monoton steigend.
+    \item $F$ ist rechtsseitig stetig.
+    \item $\lim\limits_{x\to \inf \mathbb{D}+}F(x)=0$ und $\lim\limits_{x\to \sup \mathbb{D}-}F(x)=1$.
+\end{enumerate}
+%Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
+Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzusetzen, ist über Bernsteinpolynome folgender Form. Die Umsetzung über Polynome in der Standardbasis ist durch deren häufigen Oszillationen erschwert.
 \begin{equation}
 	B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \\
 	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
 \end{equation}
-Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
-Für eine weitere Verallgemeinerung lassen sich des Weiteren der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
+%Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
+%Für eine weitere Verallgemeinerung lassen sich des Weiteren der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
 Das Vorgehen für diese Methode ist somit Folgendes:
 \begin{enumerate}
 	\item Wähle zwei zufällige rationale Zahlen $(a,k) \in \mathbb{R}$.
-	\item Bestimme das Intervall $[x_1, x_2]$ mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
+	\item Wähle den Definitionsbereich $\mathbb{D} = [x_1, x_2]$ mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
 	\item Teile $[x_1;x_2]$ in $n$ Teile ein.
 	\item Sei $c_0 = 0$ und $c_n = 1$. Für Intervallteil $i=1$ bis $n-1$: \\
-	Wähle eine zufällige rationale Zahl $c$. Berechne $c_i = c_{i-1} + c$.
+	Wähle eine zufällige rationale Zahl $c$. \\
+    Berechne $c_i = c_{i-1} + c$.
 	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}$ mit gegebenen Parametern.
 \end{enumerate}
-Die Berechnung des Inversen der kumulativen Wahrscheinlichkeitsdichtefunktion geschieht folgendermaßen:
+Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich über eine Binärsuche wie folgt berechnen:
+%Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
 \begin{algorithm}[!htb] 
     \caption{Berechnung des Inversen (Binärsuche)}
     \label{alg:invCumSum}
@@ -426,7 +435,9 @@ Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vor
     \item \textbf{Entwicklungsaufwand:} Bin2Bin-Obfuskatoren und umfangreiche Quellcodemanipulation erfordern viel manuellen Aufwand und sind fehlerhaftig. Ein LLVM-Pass ermöglicht den reinen Fokus auf die Obfuskationslogik.
 \end{enumerate}
 
-Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand. %Im Falle anderer Obfuskatoren mit architekturspezifischem Fokus mag dies anders sein.
+Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand.
+
+Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
 
 \subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
