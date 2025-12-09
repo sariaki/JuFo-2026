@@ -160,7 +160,7 @@ Bei der symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfa
 	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variablen) auf symbolische Ausdrücke ab \cite{baldoniSurveySymbolicExecution2018}.
 \end{enumerate}
 Hierdurch können schließlich über den Constraint-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden \cite{baldoniSurveySymbolicExecution2018}. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern \cite{baldoniSurveySymbolicExecution2018}.
-Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{concolic execution}) \cite{baldoniSurveySymbolicExecution2018} entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
+Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{Concolic Execution}) \cite{baldoniSurveySymbolicExecution2018} entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
 
 \section{Hintergrund und Motivation} \label{sec:motivation}
 Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen.
@@ -229,7 +229,7 @@ Trotz der Effektivität mancher existierender Methoden, bleiben viele theoretisc
 \footnote{
 	(a) symbolischer RAM: Ausführbar für Arrays mit einer Länge unter $257$. \\
 	(b) Gleitkommazahlen: Ausführbar, wenn keine x86 \texttt{long double} Datentypen verwendet werden. \\
-	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{covert symbolic propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
+	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{Covert Symbolic Propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
 	(d) Threads: Noch nicht implementiert.
 }.
 Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013} und \cite{tigress2025} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
@@ -381,7 +381,7 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 \paragraph{Generierung über zufälliges Polynom}
 \begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \vspace{-1cm}
+    \vspace{-1.5cm}
     \setlength{\abovecaptionskip}{-4pt}
     \includegraphics[width=0.4\textwidth]{img/bernstein}
     \caption{Zufällige Bernsteinpolynome} %mit $k=0$ und $a=1$
@@ -443,7 +443,7 @@ Zur Implementierung wurden drei Ansätze erwogen: die Entwicklung eines Bin2Bin-
 Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vorteile:
 
 \begin{enumerate}[]
-    \item \textbf{Abstraktion und Portabilität:} LLVM entkoppelt durch eine abstrakte Zwischensprache (\emph{Intermediate Representation}) von Architektur-/Betriebssystemdetails. Viele \emph{low-level} Aufgaben (z.B. \emph{relocations}, Einfügen von Assembler-Anweisungen etc.) werden übernommen.
+    \item \textbf{Abstraktion und Portabilität:} LLVM entkoppelt durch eine abstrakte Zwischensprache (\emph{Intermediate Representation}) von Architektur-/Betriebssystemdetails. Viele \emph{low-level} Aufgaben (z.B. \emph{Relocations}, Einfügen von Assembler-Anweisungen etc.) werden übernommen.
     \item \textbf{Optimierung:} Die LLVM-Toolchain enthält etablierte Optimierungs-Pässe und profitiert fortlaufend von der Arbeit zahlreicher Beiträgender. Dies ermöglicht eine nahezu optimale Kompilation obfuskierter Programme, welche sich als nützlich und sogar erforderlich in vielen Anweundungssituationen erweist (z.B. \emph{Embedded Systems}, IoT, Echtzeitsysteme etc.).
     \item \textbf{Entwicklungsaufwand:} Bin2Bin-Obfuskatoren und umfangreiche Quellcodemanipulation erfordern viel manuellen Aufwand und sind fehlerhaftig. Ein LLVM-Pass ermöglicht den reinen Fokus auf die Obfuskationslogik.
 \end{enumerate}

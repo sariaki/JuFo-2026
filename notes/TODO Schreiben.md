@@ -7,19 +7,17 @@
 - In Tigress implementieren??? $\implies$ Collberg fragen
 
 #### Jetzt
-- [ ] Fachbegriffnutzung konsistenter machen
 
 - stephensProbabilisticObfuscationCovert2018 implementieren!
 - [ ] Hintergrund/Motivation neu
 	- [x] Im Angr Discord fragen, ob BiOpake Prädikate gefixt wurden?
-- [ ] Ansatz->Algorithmus neu 
+- [x] Ansatz->Algorithmus neu 
       (besser mit Implementierung abstimmen)
-- [ ] Implementierung zu Ende
-- [ ] Ziele aus Angreifermodell folgern?
-      von stephensProbabilisticObfuscationCovert2018 übernehmen
+- [x] Implementierung zu Ende
+- [ ] Ziele aus Angreifermodell folgern? von stephensProbabilisticObfuscationCovert2018 übernehmen
 - [x] Ansatz besser erklären $\implies$ wichtigster Teil!!
 
-- [ ] Pseudocode verbessern
+- [x] Pseudocode verbessern
 	- evtl. ganz auf Englisch?
 
 - [ ] SYMBOLISCHE AUSFÜHRUNG EVAULIERUNG WIE COLLBERG
@@ -31,8 +29,8 @@
 
 - [ ] `bib.bib` "and" -> "und"
 - [ ] fix bib uneinheitlichkeiten
-- [ ] ``\emph`` -> Anführungszeichen
-- [ ] fix Anführungszeichen ""
+- [x] ``\emph`` -> Anführungszeichen
+- [x] fix Anführungszeichen ""
 
 - [ ] Grafiken aus IDA ersetzen mit Flowchart
 - Generierung von Pseudozufallszahlen/Wahrscheinlichkeitsverteilungsgenerierung bei Ansatz?
@@ -50,7 +48,6 @@
 
 - Prompt
 #### Ideen
-- [ ] KNUTHS POISSON INVERSIONSMETHODE ZITIEREN
 - [ ] Erklärung aus 5.2 zu Sym Exec in Angreifermodell verschieben?
 #### Erledigt
 - [x] In der Einleitung Prädikatabbildung definieren 
@@ -59,3 +56,4 @@
 	- [x] Ansatz noch weiter generalisieren über arithmetische und bitweise Operatoren in Terme
 - [x] CDF-Axiome?
 - [x] Symbolische Ausführung ausführlicher erklären
+- [ ] Fachbegriffnutzung konsistenter machen
