@@ -239,9 +239,8 @@ Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit.
 \section{Ansatz} 
 \subsection{Angreifermodell}
 \begin{wrapfigure}{r}{0.3\textwidth}
-    \begin{center}
-        \includegraphics[width=0.3\textwidth]{sym_exec}
-    \end{center}
+    \centering
+    \includegraphics[width=0.3\textwidth]{sym_exec}
     \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung \cite{xuManufacturingResilientBiOpaque2018} %\textcolor{red}{TODO: selbst machen}
     } 
 \end{wrapfigure}
@@ -258,14 +257,14 @@ Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in 
 Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
 Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{Constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom Constraint Solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus bedeutet dies, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
-Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999999999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0000000001$ den Wert $0$ zurückgibt. 
+Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0001$ den Wert $0$ zurückgibt. 
 \begin{algorithm}[!htb] 
     \caption{Beispiel eines probabilistischen Algorithmus}
     \label{alg:bspProb1}
     \begin{algorithmic}[1]
     \Procedure{Foo}{{}}
-        \State $x \gets \Call{UniformRand}{{0,1}}$
-        \If{$x \leq 0,999999999999$}
+        \State $\Var{X} \gets \Call{UniformRand}{0,1}$
+        \If{$\Var{X} \leq 0,999999$}
             \State \Return $1$
         \EndIf
         \State \Return $0$
@@ -278,13 +277,13 @@ Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob der vorliegen
 
 Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
 \begin{definition}[Probabilistische opake Prädikate] \label{def:probOpaque} \label{def:konstruktionsschema}
-	Sei $\mathcal{O} : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. 
+	Sei $\mathcal{O}_p : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}_p(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. 
 \end{definition}
 
 \begin{definition}
-	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das probabilistische opake Prädikat $\mathcal{O}(\phi)$ wird wie folgt konstruiert:  
+	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das probabilistische opake Prädikat $\mathcal{O}_p(\phi)$ wird wie folgt konstruiert:  
 \begin{equation}
-	\mathcal{O}(\phi) = \left[f(X) \bowtie c \right],
+	\mathcal{O}_p(\phi) = \left[f(X) \bowtie c \right],
 \end{equation}
 	wobei:
 	\begin{enumerate}
@@ -298,16 +297,21 @@ Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikat
 \end{definition}
 
 \begin{example} \label{ex:gleich}
-	Das wahrscheinlich einfachste probabilistische opake Prädikat ist $\mathcal{O}(\phi) = \left[\Call{Uniform}{{0,1}} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
+	Das wahrscheinlich einfachste probabilistische opake Prädikat ist $\mathcal{O}_p(\phi) = \left[\Call{Uniform}{0,1} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
 \end{example}
 
 \begin{example}
-	$\mathcal{O}(\phi) = \left[\Call{Poisson}{{5}} \geq 15 \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat unwahr ist beträgt $\sum_{k=15}^{\infty} \frac{5^ke^{-5}}{k!} = 1 - \sum_{k=0}^{14} \frac{5^ke^{-5}}{k!} \approx 0,023\%$
+	$\mathcal{O}_p(\phi) = \left[\Call{Poisson}{5} \geq 15 \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat unwahr ist beträgt $\sum_{k=15}^{\infty} \frac{5^ke^{-5}}{k!} = 1 - \sum_{k=0}^{14} \frac{5^ke^{-5}}{k!} \approx 0,023\%$
 \end{example}
 
 Um zu garantieren, dass das Programm, in welchem das probabilistische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...
 
-Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistische opaken zu unterscheiden.
+Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es (bei adäquater Implementierung) theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistischen opaken Prädikat zu unterscheiden.
+
+\begin{example}
+    Sei $p$ ein Prädikat, welches zu $95\%$ der Zeit wahr ist. Ist $p \in \mathcal{P}_{prob}$ oder einfach besonders häufig wahr?
+\end{example}
+Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
 \subsection{Algorithmus}
 Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
@@ -376,11 +380,11 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 \end{equation}
 
 \paragraph{Generierung über zufälliges Polynom}
-\begin{wrapfigure}{r}{6.5cm}
-    \vspace{-1.25cm}
+\begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \setlength{\abovecaptionskip}{-8pt}
-    \includegraphics[width=6.5cm]{img/bernstein}
+    \vspace{-1cm}
+    \setlength{\abovecaptionskip}{-4pt}
+    \includegraphics[width=0.4\textwidth]{img/bernstein}
     \caption{Zufällige Bernsteinpolynome} %mit $k=0$ und $a=1$
     \label{fig:bernstein}
 \end{wrapfigure}
@@ -445,6 +449,13 @@ Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vor
     \item \textbf{Entwicklungsaufwand:} Bin2Bin-Obfuskatoren und umfangreiche Quellcodemanipulation erfordern viel manuellen Aufwand und sind fehlerhaftig. Ein LLVM-Pass ermöglicht den reinen Fokus auf die Obfuskationslogik.
 \end{enumerate}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/llvm-pass}
+    \caption{Schematische Darstellung eines LLVM-basierten Build-Prozesses mit optionalem Obfuskator-Pass.}
+    \label{fig:llvm-pass}
+\end{figure}
+
 Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand.
 
 Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden.
@@ -476,17 +487,17 @@ Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pse
 Um die Obfuskationsmethode zu evaluieren werden folgende Metriken verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}:
 
 \begin{center}
-\begin{tabular}{c|l}
-	\textbf{Kriterium} & \textbf{Beschreibung} \\
-	\hline
-	Stärke & Wie unverständlich ist die Obfuskation für einen Angreifer? \\
-	\hline
-	Resilienz & Wie schwer ist eine (automatisierte) Deobfuskation? \\
-	\hline
-	Kosten & Wie sehr erhöht die Obfuskation die Laufzeitkosten? \\
-	\hline
-	Tarnung & Wie auffällig ist die Obfuskation? %Wie leicht lässt sich ein obfuskiertes Programm als solches erkennen? \\
-\end{tabular}
+    \begin{tabular}{c|l}
+    	\textbf{Kriterium} & \textbf{Beschreibung} \\
+    	\hline
+    	Stärke & Wie unverständlich ist die Obfuskation für einen Angreifer? \\
+    	\hline
+    	Resilienz & Wie schwer ist eine (automatisierte) Deobfuskation? \\
+    	\hline
+    	Kosten & Wie sehr erhöht die Obfuskation die Laufzeitkosten? \\
+    	\hline
+    	Tarnung & Wie auffällig ist die Obfuskation? %Wie leicht lässt sich ein obfuskiertes Programm als solches erkennen? \\
+    \end{tabular}
 \end{center}
 
 \subsection{Evaluierung}

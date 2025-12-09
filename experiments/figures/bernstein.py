@@ -58,7 +58,7 @@ def get_coeffs_from_uniform(n):
 # ys_poly_pred = np.polyval(poly_coeffs, xs)
 
 # Plot
-def plot_many_bernsteins(ax, count=200, alpha=0.05):
+def plot_many_bernsteins(ax, count=200, alpha=0.10):
     ax.set_xlabel(f"$x$")
     ax.set_ylabel(f"$y=B_n(x)$")
 
@@ -86,10 +86,10 @@ def plot_many_bernsteins(ax, count=200, alpha=0.05):
         ax.plot(xs, ys_all[ys], linewidth=1.2, color = dataset_line_colors[2], alpha=alpha)
 
     med = np.median(ys_all, axis=0)
-    q05 = np.quantile(ys_all, 0.05, axis=0)
-    q95 = np.quantile(ys_all, 0.95, axis=0)
-    plt.fill_between(xs, q05, q95, color = dataset_colors[1], alpha=0.18, label='5-95% envelope')
-    plt.plot(xs, med, color = dataset_colors[0], linewidth=2.0, label='median')
+    # q05 = np.quantile(ys_all, 0.05, axis=0)
+    # q95 = np.quantile(ys_all, 0.95, axis=0)
+    # plt.fill_between(xs, q05, q95, color = dataset_colors[1], alpha=0.18, label='5-95% envelope')
+    plt.plot(xs, med, color = dataset_colors[0], linewidth=2.0, label='Median')
 
     bern_proxy = Line2D([0], [0],
                         color=dataset_line_colors[2],
@@ -98,7 +98,7 @@ def plot_many_bernsteins(ax, count=200, alpha=0.05):
     handles, labels = ax.get_legend_handles_labels() # get all legend items
 
     handles = [bern_proxy] + handles
-    labels = ["Bernstein samples"] + labels
+    labels = ["Bernsteinpolynome"] + labels
 
     ax.legend(
         handles,
@@ -107,7 +107,7 @@ def plot_many_bernsteins(ax, count=200, alpha=0.05):
         bbox_to_anchor=(0.5, 1.10),
         ncol=4,
         frameon=False,
-        fontsize='small'
+        fontsize='large'
     )
 
     plt.savefig("output/bernstein.pdf")
