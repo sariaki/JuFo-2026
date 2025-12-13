@@ -7,6 +7,10 @@
 OBFUSCATE void foo(int x)
 {
   printf("foo %i\n", x);
+  volatile int a = 1;
+  volatile int b = 2;
+  volatile int c = a % b;
+  volatile int d = c + b * a;
   //__asm__("int3");
 } 
 

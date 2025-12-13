@@ -3,6 +3,7 @@
 #include <llvm/IR/IntrinsicInst.h>
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Constants.h>
+#include <llvm/IR/InstIterator.h>
 #include <llvm/Pass.h>
 #include <llvm/IR/PassManager.h>
 #include <llvm/Passes/PassBuilder.h>
@@ -43,9 +44,26 @@ namespace
 
                 errs() << "Running on " << demangle(F.getName()) << "\n";
 
-                // Insert at entry block
-                BasicBlock& EntryBB = F.getEntryBlock();
-                IRB.SetInsertPoint(EntryBB.getFirstInsertionPt());
+                // Insert at random place in function
+                // We have to guarantee that this random place is after all PHI instructions
+                std::vector<BasicBlock::iterator> ValidInsertionPts;
+
+                for (BasicBlock& BB : F)
+                {
+                    auto It = BB.getFirstInsertionPt();
+
+                    // BB is either empty or malformed
+                    if (It == BB.end()) continue;
+
+                    for (; It != BB.end(); It++)
+                        ValidInsertionPts.push_back(It);
+                }
+
+                const auto RandomInsertionIdx = std::uniform_int_distribution(static_cast<size_t>(0), ValidInsertionPts.size() - 1)(Rng);
+                const auto RandomInsertionPt = ValidInsertionPts[RandomInsertionIdx];
+                auto RandomBasicBlock = (*RandomInsertionPt).getParent();
+
+                IRB.SetInsertPoint(RandomInsertionPt);
                
                 // TODO: Multiple Methods for getting randomness
 
@@ -91,9 +109,9 @@ namespace
                 const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
                 const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
 
-                // Replace terminator of entry BasicBlock (unconditional br added by splitBasicBlock) with ours
-                EntryBB.getTerminator()->eraseFromParent();
-                IRB.SetInsertPoint(&EntryBB);
+                // Replace terminator of BasicBlock (unconditional br added by splitBasicBlock) with ours
+                RandomBasicBlock->getTerminator()->eraseFromParent();
+                IRB.SetInsertPoint(RandomBasicBlock);
                 IRB.CreateCondBr(CmpResult, TrueBB, FalseBB);
 
                 IRB.SetInsertPoint(FalseBB);

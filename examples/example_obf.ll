@@ -7,26 +7,46 @@ target triple = "x86_64-pc-linux-gnu"
 @.str.1 = private unnamed_addr constant [7 x i8] c"bar %i\00", align 1, !dbg !7
 @.str.2 = private unnamed_addr constant [4 x i8] c"POP\00", section "llvm.metadata"
 @.str.3 = private unnamed_addr constant [10 x i8] c"example.c\00", section "llvm.metadata"
-@llvm.global.annotations = appending global [2 x { ptr, ptr, ptr, i32, ptr }] [{ ptr, ptr, ptr, i32, ptr } { ptr @bar, ptr @.str.2, ptr @.str.3, i32 13, ptr null }, { ptr, ptr, ptr, i32, ptr } { ptr @foo, ptr @.str.2, ptr @.str.3, i32 7, ptr null }], section "llvm.metadata"
+@llvm.global.annotations = appending global [2 x { ptr, ptr, ptr, i32, ptr }] [{ ptr, ptr, ptr, i32, ptr } { ptr @bar, ptr @.str.2, ptr @.str.3, i32 17, ptr null }, { ptr, ptr, ptr, i32, ptr } { ptr @foo, ptr @.str.2, ptr @.str.3, i32 7, ptr null }], section "llvm.metadata"
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @foo(i32 noundef %0) #0 !dbg !22 {
-  %sitofp_to_double = sitofp i32 %0 to double
-  %2 = fmul double %sitofp_to_double, 0x4000000000000
-  %3 = call double @sample_bernstein_inverse(double %2)
-  %4 = fcmp olt double %3, 0xC030C6A1B699D702
-  br i1 %4, label %always_hit, label %never_hit
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  store i32 %0, ptr %2, align 4
+  %sitofp_to_double = sitofp i32 %0 to double, !dbg !27
+  %7 = fmul double %sitofp_to_double, 0x4000000000000, !dbg !27
+  %8 = call double @sample_bernstein_inverse(double %7), !dbg !27
+  %9 = fcmp olt double %8, 0x402F2DFF7895760E, !dbg !27
+  br i1 %9, label %always_hit, label %never_hit, !dbg !27
 
 always_hit:                                       ; preds = %1
-  %5 = alloca i32, align 4
-  store i32 %0, ptr %5, align 4
-  call void @llvm.dbg.declare(metadata ptr %5, metadata !27, metadata !DIExpression()), !dbg !28
-  %6 = load i32, ptr %5, align 4, !dbg !29
-  %7 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %6), !dbg !30
-  ret void, !dbg !31
+  call void @llvm.dbg.declare(metadata ptr %2, metadata !28, metadata !DIExpression()), !dbg !29
+  %10 = load i32, ptr %2, align 4, !dbg !27
+  %11 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %10), !dbg !30
+  call void @llvm.dbg.declare(metadata ptr %3, metadata !31, metadata !DIExpression()), !dbg !33
+  store volatile i32 1, ptr %3, align 4, !dbg !33
+  call void @llvm.dbg.declare(metadata ptr %4, metadata !34, metadata !DIExpression()), !dbg !35
+  store volatile i32 2, ptr %4, align 4, !dbg !35
+  call void @llvm.dbg.declare(metadata ptr %5, metadata !36, metadata !DIExpression()), !dbg !37
+  %12 = load volatile i32, ptr %3, align 4, !dbg !38
+  %13 = load volatile i32, ptr %4, align 4, !dbg !39
+  %14 = srem i32 %12, %13, !dbg !40
+  store volatile i32 %14, ptr %5, align 4, !dbg !37
+  call void @llvm.dbg.declare(metadata ptr %6, metadata !41, metadata !DIExpression()), !dbg !42
+  %15 = load volatile i32, ptr %5, align 4, !dbg !43
+  %16 = load volatile i32, ptr %4, align 4, !dbg !44
+  %17 = load volatile i32, ptr %3, align 4, !dbg !45
+  %18 = mul nsw i32 %16, %17, !dbg !46
+  %19 = add nsw i32 %15, %18, !dbg !47
+  store volatile i32 %19, ptr %6, align 4, !dbg !42
+  ret void, !dbg !48
 
 never_hit:                                        ; preds = %1
-  unreachable
+  unreachable, !dbg !27
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -35,37 +55,37 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 declare i32 @printf(ptr noundef, ...) #2
 
 ; Function Attrs: noinline nounwind optnone uwtable
-define dso_local i32 @bar(i32 noundef %0) #0 !dbg !32 {
-  %sitofp_to_double = sitofp i32 %0 to double
-  %2 = fmul double %sitofp_to_double, 0x4000000000000
-  %3 = call double @sample_bernstein_inverse(double %2)
-  %4 = fcmp olt double %3, 0xC030C6A1B699D702
-  br i1 %4, label %always_hit, label %never_hit
+define dso_local i32 @bar(i32 noundef %0) #0 !dbg !49 {
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  store i32 %0, ptr %2, align 4
+  call void @llvm.dbg.declare(metadata ptr %2, metadata !52, metadata !DIExpression()), !dbg !53
+  %sitofp_to_double = sitofp i32 %0 to double, !dbg !54
+  %4 = fmul double %sitofp_to_double, 0x4000000000000, !dbg !54
+  %5 = call double @sample_bernstein_inverse(double %4), !dbg !54
+  %6 = fcmp olt double %5, 0x402F2DFF7895760E, !dbg !54
+  br i1 %6, label %always_hit, label %never_hit, !dbg !54
 
 always_hit:                                       ; preds = %1
-  %5 = alloca i32, align 4
-  %6 = alloca i32, align 4
-  store i32 %0, ptr %5, align 4
-  call void @llvm.dbg.declare(metadata ptr %5, metadata !35, metadata !DIExpression()), !dbg !36
-  call void @llvm.dbg.declare(metadata ptr %6, metadata !37, metadata !DIExpression()), !dbg !38
-  %7 = load i32, ptr %5, align 4, !dbg !39
-  %8 = add nsw i32 %7, 1, !dbg !40
-  store i32 %8, ptr %6, align 4, !dbg !38
-  %9 = load i32, ptr %6, align 4, !dbg !41
-  %10 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %9), !dbg !42
-  %11 = load i32, ptr %6, align 4, !dbg !43
-  ret i32 %11, !dbg !44
+  call void @llvm.dbg.declare(metadata ptr %3, metadata !55, metadata !DIExpression()), !dbg !56
+  %7 = load i32, ptr %2, align 4, !dbg !54
+  %8 = add nsw i32 %7, 1, !dbg !57
+  store i32 %8, ptr %3, align 4, !dbg !56
+  %9 = load i32, ptr %3, align 4, !dbg !58
+  %10 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %9), !dbg !59
+  %11 = load i32, ptr %3, align 4, !dbg !60
+  ret i32 %11, !dbg !61
 
 never_hit:                                        ; preds = %1
-  unreachable
+  unreachable, !dbg !54
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
-define dso_local i32 @main() #0 !dbg !45 {
+define dso_local i32 @main() #0 !dbg !62 {
   %1 = alloca i32, align 4
   store i32 0, ptr %1, align 4
-  call void @foo(i32 noundef 123123), !dbg !48
-  ret i32 0, !dbg !49
+  call void @foo(i32 noundef 123123), !dbg !65
+  ret i32 0, !dbg !66
 }
 
 define double @sample_bernstein_inverse(double %u) {
@@ -73,13 +93,13 @@ entry:
   br label %loop
 
 loop:                                             ; preds = %loop, %entry
-  %low = phi double [ 0xC030D686EB9A16E6, %entry ], [ %next_low, %loop ]
-  %high = phi double [ 0xC030C56F6DCB5E85, %entry ], [ %next_high, %loop ]
+  %low = phi double [ 0x402F14A84124D518, %entry ], [ %next_low, %loop ]
+  %high = phi double [ 0x402F2F54E74A8BD7, %entry ], [ %next_high, %loop ]
   %iter = phi i32 [ 0, %entry ], [ %24, %loop ]
   %0 = fadd double %low, %high
   %mid = fmul double %0, 5.000000e-01
-  %1 = fsub double %mid, 0xC030D686EB9A16E6
-  %2 = fmul double 0x402DF4B91966F2FD, %1
+  %1 = fsub double %mid, 0x402F14A84124D518
+  %2 = fmul double 0x403331C5EB852C01, %1
   %3 = fsub double 1.000000e+00, %2
   %4 = fmul double 1.000000e+00, %3
   %5 = fmul double %4, %3
@@ -88,12 +108,12 @@ loop:                                             ; preds = %loop, %entry
   %8 = fadd double 0.000000e+00, %7
   %9 = fmul double 1.000000e+00, %2
   %10 = fdiv double %6, %3
-  %11 = fmul double 0x3FEE3C9C4EA10B14, %9
+  %11 = fmul double 0x3FD44EE3BC2C99DA, %9
   %12 = fmul double %11, %10
   %13 = fadd double %8, %12
   %14 = fmul double %9, %2
   %15 = fdiv double %10, %3
-  %16 = fmul double 0x3FFAD6EA037AC87D, %14
+  %16 = fmul double 0x3FF1C352C9A02032, %14
   %17 = fmul double %16, %15
   %18 = fadd double %13, %17
   %19 = fmul double %14, %2
@@ -122,13 +142,13 @@ attributes #2 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 9, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "example.c", directory: "/home/paul/Documents/JuFo-2026/examples", checksumkind: CSK_MD5, checksum: "a6eb3bfa9d310204b0913a34d627c941")
+!2 = !DIFile(filename: "example.c", directory: "/home/paul/Documents/JuFo-2026/examples", checksumkind: CSK_MD5, checksum: "45a9bc3947b170af3aadf3a5ee22dde9")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 64, elements: !5)
 !4 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
 !5 = !{!6}
 !6 = !DISubrange(count: 8)
 !7 = !DIGlobalVariableExpression(var: !8, expr: !DIExpression())
-!8 = distinct !DIGlobalVariable(scope: null, file: !2, line: 16, type: !9, isLocal: true, isDefinition: true)
+!8 = distinct !DIGlobalVariable(scope: null, file: !2, line: 20, type: !9, isLocal: true, isDefinition: true)
 !9 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 56, elements: !10)
 !10 = !{!11}
 !11 = !DISubrange(count: 7)
@@ -147,26 +167,43 @@ attributes #2 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 !24 = !{null, !25}
 !25 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
 !26 = !{}
-!27 = !DILocalVariable(name: "x", arg: 1, scope: !22, file: !2, line: 7, type: !25)
-!28 = !DILocation(line: 7, column: 24, scope: !22)
-!29 = !DILocation(line: 9, column: 22, scope: !22)
+!27 = !DILocation(line: 9, column: 22, scope: !22)
+!28 = !DILocalVariable(name: "x", arg: 1, scope: !22, file: !2, line: 7, type: !25)
+!29 = !DILocation(line: 7, column: 24, scope: !22)
 !30 = !DILocation(line: 9, column: 3, scope: !22)
-!31 = !DILocation(line: 11, column: 1, scope: !22)
-!32 = distinct !DISubprogram(name: "bar", scope: !2, file: !2, line: 13, type: !33, scopeLine: 14, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !12, retainedNodes: !26)
-!33 = !DISubroutineType(types: !34)
-!34 = !{!25, !25}
-!35 = !DILocalVariable(name: "x", arg: 1, scope: !32, file: !2, line: 13, type: !25)
-!36 = !DILocation(line: 13, column: 23, scope: !32)
-!37 = !DILocalVariable(name: "y", scope: !32, file: !2, line: 15, type: !25)
-!38 = !DILocation(line: 15, column: 7, scope: !32)
-!39 = !DILocation(line: 15, column: 11, scope: !32)
-!40 = !DILocation(line: 15, column: 13, scope: !32)
-!41 = !DILocation(line: 16, column: 20, scope: !32)
-!42 = !DILocation(line: 16, column: 3, scope: !32)
-!43 = !DILocation(line: 17, column: 10, scope: !32)
-!44 = !DILocation(line: 17, column: 3, scope: !32)
-!45 = distinct !DISubprogram(name: "main", scope: !2, file: !2, line: 20, type: !46, scopeLine: 21, spFlags: DISPFlagDefinition, unit: !12)
-!46 = !DISubroutineType(types: !47)
-!47 = !{!25}
-!48 = !DILocation(line: 22, column: 3, scope: !45)
-!49 = !DILocation(line: 23, column: 3, scope: !45)
+!31 = !DILocalVariable(name: "a", scope: !22, file: !2, line: 10, type: !32)
+!32 = !DIDerivedType(tag: DW_TAG_volatile_type, baseType: !25)
+!33 = !DILocation(line: 10, column: 16, scope: !22)
+!34 = !DILocalVariable(name: "b", scope: !22, file: !2, line: 11, type: !32)
+!35 = !DILocation(line: 11, column: 16, scope: !22)
+!36 = !DILocalVariable(name: "c", scope: !22, file: !2, line: 12, type: !32)
+!37 = !DILocation(line: 12, column: 16, scope: !22)
+!38 = !DILocation(line: 12, column: 20, scope: !22)
+!39 = !DILocation(line: 12, column: 24, scope: !22)
+!40 = !DILocation(line: 12, column: 22, scope: !22)
+!41 = !DILocalVariable(name: "d", scope: !22, file: !2, line: 13, type: !32)
+!42 = !DILocation(line: 13, column: 16, scope: !22)
+!43 = !DILocation(line: 13, column: 20, scope: !22)
+!44 = !DILocation(line: 13, column: 24, scope: !22)
+!45 = !DILocation(line: 13, column: 28, scope: !22)
+!46 = !DILocation(line: 13, column: 26, scope: !22)
+!47 = !DILocation(line: 13, column: 22, scope: !22)
+!48 = !DILocation(line: 15, column: 1, scope: !22)
+!49 = distinct !DISubprogram(name: "bar", scope: !2, file: !2, line: 17, type: !50, scopeLine: 18, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !12, retainedNodes: !26)
+!50 = !DISubroutineType(types: !51)
+!51 = !{!25, !25}
+!52 = !DILocalVariable(name: "x", arg: 1, scope: !49, file: !2, line: 17, type: !25)
+!53 = !DILocation(line: 17, column: 23, scope: !49)
+!54 = !DILocation(line: 19, column: 11, scope: !49)
+!55 = !DILocalVariable(name: "y", scope: !49, file: !2, line: 19, type: !25)
+!56 = !DILocation(line: 19, column: 7, scope: !49)
+!57 = !DILocation(line: 19, column: 13, scope: !49)
+!58 = !DILocation(line: 20, column: 20, scope: !49)
+!59 = !DILocation(line: 20, column: 3, scope: !49)
+!60 = !DILocation(line: 21, column: 10, scope: !49)
+!61 = !DILocation(line: 21, column: 3, scope: !49)
+!62 = distinct !DISubprogram(name: "main", scope: !2, file: !2, line: 24, type: !63, scopeLine: 25, spFlags: DISPFlagDefinition, unit: !12)
+!63 = !DISubroutineType(types: !64)
+!64 = !{!25}
+!65 = !DILocation(line: 26, column: 3, scope: !62)
+!66 = !DILocation(line: 27, column: 3, scope: !62)
