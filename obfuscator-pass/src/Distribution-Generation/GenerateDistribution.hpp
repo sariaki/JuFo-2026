@@ -17,6 +17,7 @@ using namespace llvm;
 
 namespace Distribution
 {
-    FunctionCallee CreatePoisson(Module& M, Value* Lambda);
-    std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandom(Module& M, std::mt19937 Rng);
+    FunctionCallee CreatePoissonFn(Module& M, Value* Lambda);
+    std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinBinarySearchFn(Module& M, std::mt19937 Rng);
+    std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinNewtonRaphsonFn(llvm::Module& M, std::mt19937 Rng);
 }

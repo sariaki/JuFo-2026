@@ -36,32 +36,76 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
     }
 }
 
-// TODO: Generalize this
-CallInst* Utils::PrintIRDouble(Module& M, IRBuilder<>& IRB, Value* DoubleValue, std::string Message)
+CallInst* Utils::PrintfIR(Module& M, IRBuilder<>& IRB, StringRef Format, ArrayRef<Value*> Args) 
 {
-//#ifdef _DEBUG
     LLVMContext& C = M.getContext();
-    if (!DoubleValue || !DoubleValue->getType()->isDoubleTy())
-    {
-        report_fatal_error("Utils::PrintIRDouble: unsupported parameter type\n");
+
+    if (!IRB.GetInsertBlock()) {
+        report_fatal_error("Utils::Printf: IRBuilder has no insertion point\n");
+        return nullptr;
     }
 
-    Type* i32Ty = Type::getInt32Ty(C);
-    Type* i8PtrTy = Type::getInt8Ty(C)->getPointerTo();
-    FunctionType* printfTy = FunctionType::get(i32Ty, { i8PtrTy }, /*isVarArg=*/true);
-    FunctionCallee Callee = M.getOrInsertFunction("printf", printfTy);
+    // Manually create the Global Variable for the format string.
+    Constant *StrConstant = ConstantDataArray::getString(C, Format);
+    
+    // Check if this string already exists to avoid bloating the module
+    GlobalVariable *FmtStrGV = M.getGlobalVariable(("fmt_" + Format).str(), true);
+    
+    if (!FmtStrGV) {
+        FmtStrGV = new GlobalVariable(
+            M,
+            StrConstant->getType(),
+            true,
+            GlobalValue::PrivateLinkage,
+            StrConstant,
+            "fmt_str"
+        );
+        FmtStrGV->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);
+    }
 
-    Value* Fmt = IRB.CreateGlobalStringPtr(Message.append("%0.17g\n"), "fmt_u");
+    // Prepare printf arguments
+    std::vector<Value*> FinalArgs;
+    
+    Value* FmtPtr = IRB.CreateInBoundsGEP(
+        FmtStrGV->getValueType(), // The array type ([N x i8])
+        FmtStrGV,                 // The pointer to the array
+        { IRB.getInt64(0), IRB.getInt64(0) }, // Indices: [0, 0]
+        "fmt_ptr"
+    );
+    
+    FinalArgs.push_back(FmtPtr);
 
-    SmallVector<Value*, 2> Args;
-    Args.push_back(Fmt);
-    Args.push_back(DoubleValue);
+    // Process Variable Arguments
+    for (Value* Arg : Args) {
+        Type* Ty = Arg->getType();
 
-    CallInst* CallInst = IRB.CreateCall(Callee, Args);
-    return CallInst;
-//#else
-//    return reinterpret_cast<CallInst*>(0);
-//#endif
+        if (Ty->isFloatingPointTy()) 
+        {
+            if (Ty->isFloatTy() || Ty->isHalfTy() || Ty->isBFloatTy())
+                FinalArgs.push_back(IRB.CreateFPExt(Arg, Type::getDoubleTy(C)));
+            else
+                FinalArgs.push_back(Arg);
+        } 
+        else if (Ty->isIntegerTy()) 
+        {
+            if (Ty->getIntegerBitWidth() < 32)
+                FinalArgs.push_back(IRB.CreateZExt(Arg, Type::getInt32Ty(C)));
+            else
+                FinalArgs.push_back(Arg);
+        } 
+        else
+            // Pointers and others pass through (Opaque Pointers handle the types)
+            FinalArgs.push_back(Arg);
+    }
+
+    FunctionType* PrintfTy = FunctionType::get(
+        Type::getInt32Ty(C), 
+        { PointerType::getUnqual(C) },
+        true 
+    );
+    
+    FunctionCallee PrintfFunc = M.getOrInsertFunction("printf", PrintfTy);
+    return IRB.CreateCall(PrintfFunc, FinalArgs);
 }
 
 double Utils::BinomialCoefficient(int n, int k)

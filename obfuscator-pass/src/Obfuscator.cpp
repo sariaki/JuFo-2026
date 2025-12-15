@@ -32,7 +32,7 @@ namespace
             std::mt19937 Rng(Dev());
 
             // Generate random inverse CDF
-            const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::CreateRandom(M, Rng);
+            const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::CreateRandomBernsteinNewtonRaphsonFn(M, Rng);
 
             for (Function& F : M)
             {
@@ -86,35 +86,59 @@ namespace
 
                 errs() << "Start: " << DomainStart << " End: " << DomainEnd << "\n";
 
+                // Choose whether the predicate should always be true or false
+                const bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
+
                 // Compute needed threshold for Bernsteinpolynomial
                 double DomainWidth = DomainEnd - DomainStart;
                 double StepSize = DomainWidth / 100.0;
                 double Threshold = std::numeric_limits<double>::lowest(); // We use this value for debugging purposes (easily identifiable)
+
                 for (double i = DomainStart; i < DomainEnd; i += StepSize)
                 {
-                   if (Bernsteinpolynomial.EvaluateAt(i) >= 0.9) 
-                   {
-                       Threshold = i;
-                       break;
-                   }
+                    if (Bernsteinpolynomial.EvaluateAt(i) >= 0.9) 
+                    {
+                        Threshold = i;
+                        break;
+                    }
                 }
                 
                 errs() << "Threshold: " << Threshold << "\n";
+                errs() << "PredicateType: " << PredicateType << "\n";
 
-                // if x < Threshold...
-                const auto CmpResult = IRB.CreateFCmpOLT(SampleRet,
-                   ConstantFP::get(IRB.getDoubleTy(), Threshold));
-                
+                // Create predicate
+                Value* CmpResult;
+                if (PredicateType == true) // always true predicate
+                {
+                    // if x < Threshold...
+                    CmpResult = IRB.CreateFCmpOLT(SampleRet,
+                        ConstantFP::get(IRB.getDoubleTy(), Threshold));
+                }
+                else // always false predicate
+                {
+                    // if x > Threshold...
+                    CmpResult = IRB.CreateFCmpOGT(SampleRet,
+                        ConstantFP::get(IRB.getDoubleTy(), Threshold));
+                }
+
                 // Create new BasicBlocks for branches
                 const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
                 const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
 
                 // Replace terminator of BasicBlock (unconditional br added by splitBasicBlock) with ours
                 RandomBasicBlock->getTerminator()->eraseFromParent();
+
+                IRB.SetInsertPoint(TrueBB->getFirstInsertionPt());
+                Utils::PrintfIR(M, IRB, "TrueBB says hi\n");
+
                 IRB.SetInsertPoint(RandomBasicBlock);
-                IRB.CreateCondBr(CmpResult, TrueBB, FalseBB);
+                if (PredicateType == true)
+                    IRB.CreateCondBr(CmpResult, TrueBB, FalseBB);
+                else
+                    IRB.CreateCondBr(CmpResult, FalseBB, TrueBB);
 
                 IRB.SetInsertPoint(FalseBB);
+                Utils::PrintfIR(M, IRB, "FalseBB says hi\n");
                 IRB.CreateUnreachable(); // TODO
             }
 
