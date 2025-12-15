@@ -1,10 +1,5 @@
 ﻿#include "GenerateDistribution.hpp"
 
-void InsertBasis(Module& M, std::string DistributionName)
-{
-    // TODO
-}
-
 // For testing
 FunctionCallee Distribution::CreatePoissonFn(Module& M, Value* Lambda)
 {
@@ -237,11 +232,8 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Cre
     const std::vector<double>& Coefficients = Bernsteinpolynomial.GetRandomCoefficients();
 
     // Pre-calculate the derivative's coefficients of B(x)
-    // B'(x) of degree n is a Bernstein polynomial of degree n-1 scaled by n
-    std::vector<double> DerivCoefficients;
-    DerivCoefficients.reserve(Degree);
-    for (int i = 0; i < Degree; ++i) 
-        DerivCoefficients.push_back((Coefficients[i + 1] - Coefficients[i]) * Degree);
+    // b_v'(x) = n * (b_{v-1}(x) - b_v(x))
+    std::vector<double> DerivativeCoefficients  = Bernsteinpolynomial.GetDerivativeCoefficients();
 
     // Compile Bernsteinpolynomial to LLVM-IR
     LLVMContext& LLVMCtx = M.getContext();
@@ -333,7 +325,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Cre
 
         if (Binom == 0.0) continue;
 
-        Value* TermVal = ConstantFP::get(DoubleTy, DerivCoefficients[i] * Binom);
+        Value* TermVal = ConstantFP::get(DoubleTy, DerivativeCoefficients[i] * Binom);
 
         Value* T_Part = (i == 0) ? ConstOne : CreatePow(ATimesXMinusK, i);
         Value* OneT_Part = (Degree - 1 - i == 0) ? ConstOne : CreatePow(One_minus_T, Degree - 1 - i);
@@ -362,7 +354,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Cre
     // Exit after 16 iterations
     Value* Done = IRB.CreateICmpEQ(NextIter, IRB.getInt32(16));
     IRB.CreateCondBr(Done, ExitBB, LoopBB);
-    
+
     IRB.SetInsertPoint(ExitBB);
     IRB.CreateRet(NextX);
 

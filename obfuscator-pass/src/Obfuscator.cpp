@@ -90,17 +90,20 @@ namespace
                 const bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
 
                 // Compute needed threshold for Bernsteinpolynomial
-                double DomainWidth = DomainEnd - DomainStart;
-                double StepSize = DomainWidth / 100.0;
-                double Threshold = std::numeric_limits<double>::lowest(); // We use this value for debugging purposes (easily identifiable)
+                double Threshold = Bernsteinpolynomial.GetHorizontalShift() + (0.5 / Bernsteinpolynomial.GetVerticalStretch());
 
-                for (double i = DomainStart; i < DomainEnd; i += StepSize)
+                const std::vector<double> DerivativeCoefficients = Bernsteinpolynomial.GetDerivativeCoefficients();
+
+                for (int i = 0; i < 16; i++)
                 {
-                    if (Bernsteinpolynomial.EvaluateAt(i) >= 0.9) 
-                    {
-                        Threshold = i;
-                        break;
-                    }
+                    double CurrentY = Bernsteinpolynomial.EvaluateAt(Threshold);
+                    double CurrentSlope = Bernsteinpolynomial.EvaluateDerivativeAt(Threshold);
+
+                    // f(x) = B(x) - Target
+                    double F = CurrentY - 0.9;
+                    
+                    // Newton Step: x = x - f(x) / f'(x)
+                    Threshold -= F / CurrentSlope;
                 }
                 
                 errs() << "Threshold: " << Threshold << "\n";

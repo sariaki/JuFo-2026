@@ -19,40 +19,40 @@ define dso_local void @foo(i32 noundef %0) #0 !dbg !22 {
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
   %5 = alloca i32, align 4
-  %6 = alloca i32, align 4
+  %sitofp_to_double = sitofp i32 %0 to double
+  %6 = fmul double %sitofp_to_double, 0x4000000000000
+  %7 = call double @sample_bernstein_newtonraphson(double %6)
+  %8 = fcmp olt double %7, 0x4047B83DB56240E4
+  br i1 %8, label %always_hit, label %never_hit
+
+always_hit:                                       ; preds = %1
+  %9 = call i32 (ptr, ...) @printf(ptr @fmt_str)
+  %10 = alloca i32, align 4
   store i32 %0, ptr %2, align 4
   call void @llvm.dbg.declare(metadata ptr %2, metadata !27, metadata !DIExpression()), !dbg !28
-  %7 = load i32, ptr %2, align 4, !dbg !29
-  %8 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %7), !dbg !30
+  %11 = load i32, ptr %2, align 4, !dbg !29
+  %12 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %11), !dbg !30
   call void @llvm.dbg.declare(metadata ptr %3, metadata !31, metadata !DIExpression()), !dbg !33
   store volatile i32 1, ptr %3, align 4, !dbg !33
   call void @llvm.dbg.declare(metadata ptr %4, metadata !34, metadata !DIExpression()), !dbg !35
-  %sitofp_to_double = sitofp i32 %0 to double, !dbg !35
-  %9 = fmul double %sitofp_to_double, 0x4000000000000, !dbg !35
-  %10 = call double @sample_bernstein_newtonraphson(double %9), !dbg !35
-  %11 = fcmp olt double %10, 0xC043CA806AEF832C, !dbg !35
-  br i1 %11, label %always_hit, label %never_hit, !dbg !35
-
-always_hit:                                       ; preds = %1
-  %12 = call i32 (ptr, ...) @printf(ptr @fmt_str), !dbg !35
   store volatile i32 2, ptr %4, align 4, !dbg !35
   call void @llvm.dbg.declare(metadata ptr %5, metadata !36, metadata !DIExpression()), !dbg !37
   %13 = load volatile i32, ptr %3, align 4, !dbg !38
   %14 = load volatile i32, ptr %4, align 4, !dbg !39
   %15 = srem i32 %13, %14, !dbg !40
   store volatile i32 %15, ptr %5, align 4, !dbg !37
-  call void @llvm.dbg.declare(metadata ptr %6, metadata !41, metadata !DIExpression()), !dbg !42
+  call void @llvm.dbg.declare(metadata ptr %10, metadata !41, metadata !DIExpression()), !dbg !42
   %16 = load volatile i32, ptr %5, align 4, !dbg !43
   %17 = load volatile i32, ptr %4, align 4, !dbg !44
   %18 = load volatile i32, ptr %3, align 4, !dbg !45
   %19 = mul nsw i32 %17, %18, !dbg !46
   %20 = add nsw i32 %16, %19, !dbg !47
-  store volatile i32 %20, ptr %6, align 4, !dbg !42
+  store volatile i32 %20, ptr %10, align 4, !dbg !42
   ret void, !dbg !48
 
 never_hit:                                        ; preds = %1
-  %21 = call i32 (ptr, ...) @printf(ptr @fmt_str.1), !dbg !35
-  unreachable, !dbg !35
+  %21 = call i32 (ptr, ...) @printf(ptr @fmt_str.1)
+  unreachable
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -68,24 +68,24 @@ define dso_local i32 @bar(i32 noundef %0) #0 !dbg !49 {
   call void @llvm.dbg.declare(metadata ptr %2, metadata !52, metadata !DIExpression()), !dbg !53
   call void @llvm.dbg.declare(metadata ptr %3, metadata !54, metadata !DIExpression()), !dbg !55
   %4 = load i32, ptr %2, align 4, !dbg !56
-  %sitofp_to_double = sitofp i32 %0 to double, !dbg !57
-  %5 = fmul double %sitofp_to_double, 0x4000000000000, !dbg !57
-  %6 = call double @sample_bernstein_newtonraphson(double %5), !dbg !57
-  %7 = fcmp ogt double %6, 0xC043CA806AEF832C, !dbg !57
-  br i1 %7, label %never_hit, label %always_hit, !dbg !57
+  %5 = add nsw i32 %4, 1, !dbg !57
+  store i32 %5, ptr %3, align 4, !dbg !55
+  %6 = load i32, ptr %3, align 4, !dbg !58
+  %7 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %6), !dbg !59
+  %8 = load i32, ptr %3, align 4, !dbg !60
+  %sitofp_to_double = sitofp i32 %0 to double, !dbg !61
+  %9 = fmul double %sitofp_to_double, 0x4000000000000, !dbg !61
+  %10 = call double @sample_bernstein_newtonraphson(double %9), !dbg !61
+  %11 = fcmp olt double %10, 0x4047B83DB56240E4, !dbg !61
+  br i1 %11, label %always_hit, label %never_hit, !dbg !61
 
 always_hit:                                       ; preds = %1
-  %8 = call i32 (ptr, ...) @printf(ptr @fmt_str.2), !dbg !57
-  %9 = add nsw i32 %4, 1, !dbg !57
-  store i32 %9, ptr %3, align 4, !dbg !55
-  %10 = load i32, ptr %3, align 4, !dbg !58
-  %11 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %10), !dbg !59
-  %12 = load i32, ptr %3, align 4, !dbg !60
-  ret i32 %12, !dbg !61
+  %12 = call i32 (ptr, ...) @printf(ptr @fmt_str.2), !dbg !61
+  ret i32 %8, !dbg !61
 
 never_hit:                                        ; preds = %1
-  %13 = call i32 (ptr, ...) @printf(ptr @fmt_str.3), !dbg !57
-  unreachable, !dbg !57
+  %13 = call i32 (ptr, ...) @printf(ptr @fmt_str.3), !dbg !61
+  unreachable, !dbg !61
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
@@ -101,21 +101,21 @@ entry:
   br label %loop
 
 loop:                                             ; preds = %loop, %entry
-  %0 = phi double [ 0xC043CC8E673134BA, %entry ], [ %35, %loop ]
+  %0 = phi double [ 0x4047B70301595B8A, %entry ], [ %35, %loop ]
   %1 = phi i32 [ 0, %entry ], [ %36, %loop ]
-  %2 = fsub double %0, 0xC043CECA2057386C
-  %3 = fmul double %2, 0x403CA83FBC19DC90
+  %2 = fsub double %0, 0x4047B592B0E7B3D8
+  %3 = fmul double %2, 0x40463DEBAB71CA7A
   %4 = fsub double 1.000000e+00, %3
   %5 = fmul double %4, %4
   %6 = fmul double %5, %4
   %7 = fmul double 0.000000e+00, %6
   %8 = fadd double 0.000000e+00, %7
   %9 = fmul double %4, %4
-  %10 = fmul double 0x3FD3A23CDB78872F, %3
+  %10 = fmul double 0x3FE71315D5C0626A, %3
   %11 = fmul double %10, %9
   %12 = fadd double %8, %11
   %13 = fmul double %3, %3
-  %14 = fmul double 0x3FEAF4EAC58A4E0D, %13
+  %14 = fmul double 0x3FF963BA1C110564, %13
   %15 = fmul double %14, %4
   %16 = fadd double %12, %15
   %17 = fmul double %3, %3
@@ -124,17 +124,17 @@ loop:                                             ; preds = %loop, %entry
   %20 = fmul double %19, 1.000000e+00
   %21 = fadd double %16, %20
   %22 = fmul double %4, %4
-  %23 = fmul double 0x3FD3A23CDB78872F, %22
+  %23 = fmul double 0x3FE71315D5C0626A, %22
   %24 = fadd double 0.000000e+00, %23
-  %25 = fmul double 0x3FF123CC57CE0A76, %3
+  %25 = fmul double 0x3FFBB45E6261A85F, %3
   %26 = fmul double %25, %4
   %27 = fadd double %24, %26
   %28 = fmul double %3, %3
-  %29 = fmul double 0x400142C54E9D6C7D, %28
+  %29 = fmul double 0x3FF69C45E3EEFA9C, %28
   %30 = fmul double %29, 1.000000e+00
   %31 = fadd double %27, %30
   %32 = fsub double %21, %u
-  %33 = fmul double %31, 0x403CA83FBC19DC90
+  %33 = fmul double %31, 0x40463DEBAB71CA7A
   %34 = fdiv double %32, %33
   %35 = fsub double %0, %34
   %36 = add i32 %1, 1
