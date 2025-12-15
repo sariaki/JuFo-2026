@@ -281,13 +281,13 @@ Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikat
 \end{definition}
 
 \begin{definition}
-	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellen. Das probabilistische opake Prädikat $\mathcal{O}_p(\phi)$ wird wie folgt konstruiert:  
+	Sei $X$ eine Zufallsvariable mit beliebiger Wahrscheinlichkeitsverteilung $P(X; \theta)$, wobei $\theta$ die Parameter der Verteilung darstellt. Das probabilistische opake Prädikat $\mathcal{O}_p(\phi)$ wird wie folgt konstruiert:  
 \begin{equation}
 	\mathcal{O}_p(\phi) = \left[f(X) \bowtie c \right],
 \end{equation}
 	wobei:
 	\begin{enumerate}
-		\item $f$ eine Transformation durch arithmetische und bitweise Operationen ist (z. B. $f(X) = m \cdot (X \oplus k) + b$), mit Konstanten $(m, k, b) \in \mathbb{R}$),
+		\item $f$ eine Transformation durch arithmetische und bitweise Operationen ist (z. B. $f(X) = m \cdot (X \oplus k) + b$)), mit Konstanten $(m, k, b) \in \mathbb{R}$,
 		\item $\bowtie$ ein Zahlenvergleichsoperator ist ($=$, $>$, $<$, $\geq$, $\leq$) und
 		\item $c$ eine festgelegte Konstante ist.
 	\end{enumerate}
@@ -314,9 +314,9 @@ Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich
 Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
 \subsection{Algorithmus}
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt. 5
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
 %Über die transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
-Mit dieser transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
+Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
 Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschreiben.
 \begin{algorithm}[!htb] 
@@ -365,6 +365,7 @@ Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, 
 Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste. 
 \textcolor{red}{Der Nachteil hiervon ist, dass ...}
 
+\paragraph{Generierung über zufälliges Polynom}
 Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt.
 Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Eigenschaften erfüllen:
 \begin{enumerate}[]
@@ -379,7 +380,6 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
 \end{equation}
 
-\paragraph{Generierung über zufälliges Polynom}
 \begin{wrapfigure}{r}{0.4\textwidth}
     \centering
     \vspace{-1.5cm}
@@ -402,7 +402,7 @@ Das Vorgehen für diese Methode ist somit Folgendes:
     Berechne $c_i = c_{i-1} + c$.
 	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}$ mit gegebenen Parametern.
 \end{enumerate}
-Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich über eine Binärsuche wie folgt berechnen:
+Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
 \begin{algorithm}[!htb] 
     \caption{Berechnung des Inversen (Binärsuche)}
