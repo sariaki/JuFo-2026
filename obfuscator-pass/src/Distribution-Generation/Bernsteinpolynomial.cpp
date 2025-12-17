@@ -11,8 +11,8 @@ double MonotonicBernstein::BensteinBasisPolynomialDerivative(double x, int i, in
     return Utils::BinomialCoefficient(n - 1, i) * std::pow(x, i) * std::pow(1.0 - x, n - 1 - i);
 }
 
-MonotonicBernstein::MonotonicBernstein(uint64_t Degree, std::mt19937 Rng, double VerticalStretch, double HorizontalShift)
-    : m_Degree(Degree), m_Rng(Rng), m_VerticalStretch(VerticalStretch), m_HorizontalShift(HorizontalShift)
+MonotonicBernstein::MonotonicBernstein(uint64_t Degree, std::mt19937 Rng, double HorizontalStretch, double HorizontalShift)
+    : m_Degree(Degree), m_Rng(Rng), m_HorizontalStretch(HorizontalStretch), m_HorizontalShift(HorizontalShift)
 {
     m_Coefficients.reserve(m_Degree + 1);
     m_DerivativeCoefficients.reserve(m_Degree);
@@ -51,11 +51,13 @@ const int MonotonicBernstein::GetDegree() const
     return m_Degree;
 }
 
-const int MonotonicBernstein::GetVerticalStretch() const
+// a
+const int MonotonicBernstein::GetHorizontalStretch() const
 {
-    return m_VerticalStretch;
+    return m_HorizontalStretch;
 }
 
+// k
 const int MonotonicBernstein::GetHorizontalShift() const
 {
     return m_HorizontalShift;
@@ -67,7 +69,7 @@ const double MonotonicBernstein::EvaluateAt(double x) const
     for (int i = 0; i <= m_Degree; i++)
     {
         double Coefficient = m_Coefficients[i];
-        Result += Coefficient * BensteinBasisPolynomial(m_VerticalStretch * (x - m_HorizontalShift), i, m_Degree);
+        Result += Coefficient * BensteinBasisPolynomial(m_HorizontalStretch * (x - m_HorizontalShift), i, m_Degree);
     }
 
     return Result;
@@ -80,9 +82,9 @@ const double MonotonicBernstein::EvaluateDerivativeAt(double x) const
     for (int i = 0; i < m_Degree; i++)
     {
         double Coefficient = m_DerivativeCoefficients[i];
-        Result += Coefficient * BensteinBasisPolynomialDerivative(m_VerticalStretch * (x - m_HorizontalShift), i, m_Degree);
+        Result += Coefficient * BensteinBasisPolynomialDerivative(m_HorizontalStretch * (x - m_HorizontalShift), i, m_Degree);
     }
 
     // Apply chain rule
-    return Result * m_VerticalStretch;
+    return Result * m_HorizontalStretch;
 }

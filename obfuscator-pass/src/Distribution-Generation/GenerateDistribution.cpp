@@ -269,8 +269,8 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Cre
     IRB.SetInsertPoint(LoopBB);
 
     // Initialize Phi nodes: Current X estimate, Iteration Counter
-    PHINode* CurrentX = IRB.CreatePHI(DoubleTy, 2, "");
-    PHINode* IterCounter  = IRB.CreatePHI(IRB.getInt32Ty(), 2, "");
+    PHINode* CurrentX = IRB.CreatePHI(DoubleTy, 2);
+    PHINode* IterCounter  = IRB.CreatePHI(IRB.getInt32Ty(), 2);
 
     CurrentX->addIncoming(ConstStartGuess, EntryBB);
     IterCounter->addIncoming(IRB.getInt32(0), EntryBB);
@@ -422,8 +422,8 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     IRB.SetInsertPoint(LoopBB);
 
     // Initialize Phi nodes: Current X estimate, Iteration Counter
-    PHINode* CurrentX = IRB.CreatePHI(DoubleTy, 2, "");
-    PHINode* IterCounter  = IRB.CreatePHI(IRB.getInt32Ty(), 2, "");
+    PHINode* CurrentX = IRB.CreatePHI(DoubleTy, 2);
+    PHINode* IterCounter  = IRB.CreatePHI(IRB.getInt32Ty(), 2);
 
     CurrentX->addIncoming(ConstStartGuess, EntryBB);
     IterCounter->addIncoming(IRB.getInt32(0), EntryBB);
@@ -492,11 +492,11 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     // f(x) = B(t) - u = 0 ==> root
     // f'(x) = B'(t) * (dt/dx) = B'(t) * VerticalStretch
     // x_new = x - (B(t) - u) / (B'(t) * VerticalStretch)
-    Value* F = IRB.CreateFSub(AccumulatorAntiDerv, TargetProb); // B(t) - u
-    Value* FDerv = IRB.CreateFMul(AccumulatorDerv, ConstVertStretch); // Chain rule applied
+    Value* OffsetY = IRB.CreateFSub(AccumulatorAntiDerv, TargetProb); // B(t) - u
+    Value* Slope = IRB.CreateFMul(AccumulatorDerv, ConstVertStretch); // Chain rule applied
     
     // Update Bounds
-    Value* Step = IRB.CreateFDiv(F, FDerv);
+    Value* Step = IRB.CreateFDiv(OffsetY, Slope);
     Value* NextX = IRB.CreateFSub(CurrentX, Step);
 
     // Update Loop Variables

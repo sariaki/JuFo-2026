@@ -320,14 +320,12 @@ Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsv
 Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
 Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschreiben.
-\begin{algorithm}[t] 
+\begin{algorithm}[!t] 
     \caption{Generierung probabilistischer opaker Prädikate}
     \label{alg:probOpaque}
     \begin{algorithmic}[1]
-    \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{Stepsize}$ ($\Var{Threshold}$ precision in predicate)
-    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{StepSize} \in [0, 1]$}
-%    \Require Module, CDF (cumulative distribution function), target quantile $p$ (e.g. $0.99$), $\Var{Stepsize}$ ($\Var{Threshold}$ precision in predicate (e.g. $0.01$)).
-%    \Ensure Module with inserted probabilistic opaque predicates
+    \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{p}$ (Probability of generated predicate being true), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
+    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{StepCount} \in \mathbb{N}$}
     \For{$Function \; \Var{F} \in \Var{Module}$}
         \If{\Call{ShouldObfuscate}{$\Var{F}$}}
             \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
@@ -335,12 +333,12 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
     		\State $\Var{U} \gets \Call{BB.InsertSymbolicVariable}{$$}$ \Comment{Generate a random variable $\in [0;1]$.}
             \State $\Var{U} \gets \Call{BB.InsertCallInverseCDF}{\Var{U}}$
             
-            \State $\Var{Threshold} \gets \text{undefined}$ \Comment{Compute threshold.}
-            \For{$i \gets \Var{D_{start}};\; i < \Var{D_{end}};\; i \gets i + \Var{StepSize}$}
-                \If{$\Call{CDF.EvaluateAt}{i} \ge \Var{p}$}
-                    \State $\Var{Threshold} \gets i$
-                    \State \textbf{break} \Comment{Stop at first satisfying $i$}
-                \EndIf
+            \State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$ \Comment{Compute threshold using the Newton–Raphson method.}
+            \For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
+            	\State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - \Var{p}$
+            	\State $\Var{Slope} \gets \Call{CDF.EvaluateDerivativeAt}{\Var{Threshold}}$ \Comment{Evaluate PDF.}
+            	
+                \State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
             \EndFor
             
             \State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$
@@ -408,37 +406,37 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
 \begin{algorithm}[!htb] 
-    \caption{Berechnung der inversen kumulativen Verteilungsfunktion (PPF) über Binärsuche}
-    \label{alg:invCumSum}
-    \begin{algorithmic}[1]
-        \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift and stretch), $\Var{Prec}$ (Precision)
-        \Function{SampleBernsteinInverse}{$\Var{U} \in [0, 1]$}
-            \State $\Var{Low} \leftarrow \Var{D_{start}}$
-            \State $\Var{High} \leftarrow \Var{D_{end}}$
-            \State $\Var{Iter} \leftarrow 0$
-            
-            \While{$\Var{Iter} < \Var{Prec}$} \Comment{Fixed iterations for double precision}
-                \State $\Var{Mid} \leftarrow \frac{\Var{Low} + \Var{High}}{2}$
-                \State $y \leftarrow 0.0$
-                \State $t \leftarrow \Var{HStretch} \cdot (\Var{Mid} - \Var{HShift})$
-                
-                \For{$\Var{k} \leftarrow 0$ \textbf{to} $\Var{Degree}$} \Comment{Evaluate monotonic Bernstein polynomial $B(mid)$}
-                    \State $\Var{b_{k}} \leftarrow \binom{n}{k} \cdot t^k \cdot (1-t)^{n-k}$ \Comment{Sum Bernstein basis polynomials}
-                    \State $\Var{y} \leftarrow y + C[k] \cdot b_{k}$
-                \EndFor
-                
-                \If{$\Var{y} < \Var{U}$}
-                    \State $\Var{Low} \leftarrow \Var{Mid}$
-                \Else
-                    \State $\Var{High} \leftarrow \Var{Mid}$
-                \EndIf
-                
-                \State $\Var{Iter} \leftarrow \Var{Iter} + 1$
-            \EndWhile
-            
-            \State \Return $\Var{Low}$
-        \EndFunction
-    \end{algorithmic}
+	\caption{Berechnung der inversen kumulativen Verteilungsfunktion (PPF) über Newton–Raphson}
+	\label{alg:invCumSum}
+	\begin{algorithmic}[1]
+		\Require $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift/stretch), $\Var{Precision}$ (determines precision of Bernstein evaluation) %\textbf{as hardcoded constants}
+		\Function{SampleBernsteinInverse}{$\Var{U} \in [0, 1]$}
+		\State $\Var{Estimate} \gets \Var{HShift} + \frac{0.5}{\Var{HStretch}}$ \Comment{Start guess at center of domain.}
+		
+		\For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
+			\State $\Var{t} \gets \Var{HStretch} \cdot (\Var{Estimate} - \Var{HShift})$ \Comment{Transformed $\Var{Estimate}$.}
+			\State $\Var{y} \gets 0.0$ \Comment{Accumulator for $B(t)$.}
+			\State $\Var{y'} \gets 0.0$ \Comment{Accumulator for $B'(t)$.}
+			
+			\For{$\Var{k} \gets 0$ \textbf{to} $\Var{Degree}$} \Comment{Evaluate CDF $B(t)$}
+			\State $\Var{b_{k}} \gets \binom{n}{k} \cdot t^k \cdot (1-t)^{n-k}$ 
+			\State $\Var{y} \gets \Var{y} + \Var{C}[k] \cdot \Var{b_{k}}$
+			\EndFor
+			
+			\For{$\Var{k} \gets 0$ \textbf{to} $\Var{Degree}-1$} \Comment{Evaluate PDF.}
+			\State $\Var{b'_{k}} \gets \binom{n-1}{k} \cdot t^k \cdot (1-t)^{n-1-k}$ 
+			\State $\Var{y'} \gets \Var{y'} + \Var{C'}[k] \cdot \Var{b'_{k}}$
+			\EndFor
+			
+			\State $\Var{OffsetY} \gets \Var{y} - \Var{U}$
+			\State $\Var{Slope} \gets \Var{y'} \cdot \Var{HStretch}$ \Comment{Apply chain rule: $\frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx}$.}
+			
+			\State $\Var{Estimate} \gets \Var{Estimate} - \frac{\Var{OffsetY}}{\Var{Slope}}$ \Comment{Newton Step.}
+		\EndFor
+		
+		\State \Return $\Var{Estimate}$
+		\EndFunction
+	\end{algorithmic}
 \end{algorithm}
 
 \section{Implementierung}

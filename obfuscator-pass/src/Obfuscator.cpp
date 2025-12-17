@@ -56,7 +56,8 @@ namespace
                         ValidInsertionPts.push_back(It);
                 }
 
-                const auto RandomInsertionIdx = std::uniform_int_distribution(static_cast<size_t>(0), ValidInsertionPts.size() - 1)(Rng);
+                const auto RandomInsertionIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
+                    ValidInsertionPts.size() - 1)(Rng);
                 const auto RandomInsertionPt = ValidInsertionPts[RandomInsertionIdx];
                 auto RandomBasicBlock = (*RandomInsertionPt).getParent();
 
@@ -90,7 +91,7 @@ namespace
                 const bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
 
                 // Compute needed threshold for Bernsteinpolynomial
-                double Threshold = Bernsteinpolynomial.GetHorizontalShift() + (0.5 / Bernsteinpolynomial.GetVerticalStretch());
+                double Threshold = Bernsteinpolynomial.GetHorizontalShift() + (0.5 / Bernsteinpolynomial.GetHorizontalStretch());
 
                 const std::vector<double> DerivativeCoefficients = Bernsteinpolynomial.GetDerivativeCoefficients();
 
@@ -100,10 +101,10 @@ namespace
                     double CurrentSlope = Bernsteinpolynomial.EvaluateDerivativeAt(Threshold);
 
                     // f(x) = B(x) - Target
-                    double F = CurrentY - 0.9;
+                    double OffsetY = CurrentY - 0.9;
                     
                     // Newton Step: x = x - f(x) / f'(x)
-                    Threshold -= F / CurrentSlope;
+                    Threshold -= OffsetY / CurrentSlope;
                 }
                 
                 errs() << "Threshold: " << Threshold << "\n";

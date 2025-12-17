@@ -15,7 +15,7 @@ private:
     std::mt19937 m_Rng;
 
     // Transformation parameters
-    double m_VerticalStretch;
+    double m_HorizontalStretch;
     double m_HorizontalShift;
 
     double BensteinBasisPolynomial(double x, int i, int n) const;
@@ -28,7 +28,7 @@ public:
     const std::vector<double>& GetDerivativeCoefficients() const;
 
     const int GetDegree() const;
-    const int GetVerticalStretch() const;
+    const int GetHorizontalStretch() const;
     const int GetHorizontalShift() const;
 
     const double EvaluateAt(double x) const;
