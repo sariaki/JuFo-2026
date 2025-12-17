@@ -3,6 +3,7 @@ from matplotlib.patches import Patch
 import math
 import numpy as np
 np.math = math
+from scipy.interpolate import BPoly, PPoly
 import matplotlib.pyplot as plt
 import os
 
@@ -11,8 +12,7 @@ os.chdir(script_dir)
 
 dataset_colors = ['#9671bd', '#7e7e7e', '#77b5b6'] 
 dataset_line_colors = ['#6a408d', '#4e4e4e', '#378d94']
-regression_color = '#8a8a8a'
-marker_colors = ['#b25ef7']
+tick_colors = ['#feda75', '#fa7e1e', '#d62976', '#962fbf', '#4f5bd5']
 
 a = 1 # np.random.rand()
 k = 0 # np.random.randint(0, 10)
@@ -33,6 +33,37 @@ def eval_bernstein(coeffs, xs):
     terms = (coeffs[:, None] * binom) * x_pow * one_minus
     
     return terms.sum(axis=0)
+
+def inv_berinstein(y_targets, coeffs):
+    # Ensure input is iterable (if a single float is passed)
+    if np.isscalar(y_targets):
+        y_targets = [y_targets]
+        
+    x_roots = []
+    
+    for y in y_targets:
+        # Shift coefficients: P(t) - y = 0
+        shifted_coeffs = coeffs - y
+        
+        # Create BPoly for y
+        # Shape must be (n, 1) because we have 1 interval [0, 1]
+        bp = BPoly(shifted_coeffs[:, None], [0, 1])
+        
+        # Convert to PPoly (Power basis) to access .roots()
+        pp = PPoly.from_bernstein_basis(bp)
+        roots = pp.roots()
+        
+        # Filter for roots in [0, 1]
+        valid_roots = roots[(roots >= -1e-8) & (roots <= 1.0 + 1e-8)]
+        
+        if len(valid_roots) > 0:
+            # Take the first valid root found
+            t = valid_roots[0]
+            x_roots.append(t / a + k)
+        else:
+            x_roots.append(np.nan)
+
+    return np.array(x_roots)
 
 def get_coeffs_from_dirichlet(n, alpha=0.2):
     # smaller alpha -> spikier / fewer big jumps.
@@ -69,12 +100,38 @@ def plot_cdf_inv(ax):
 
     ax.plot(xs, ys, linewidth=1.2, color = dataset_line_colors[2])
 
-    # Add some x and y-values and mark them
-    # plt.xticks(list(plt.xticks()[0]) + [0.3])
-    # print(eval_bernstein(coeffs, [0.3]))
-    # plt.yticks(list(plt.yticks()[0]) + eval_bernstein(coeffs, [0.3]))
-    ax.get_xticklabels()[1].set_color(marker_colors[0])
-    ax.get_yticklabels()[1].set_color(marker_colors[0])
+    # Add some x and y-values
+    tick_count = 10
+    yticks = np.linspace(0.0, 1.0, tick_count)
+    xticks = inv_berinstein(yticks, coeffs)
+    ax.set_xticks(xticks)
+    ax.set_yticks(yticks)
+
+    # Set formatted text labels (2 decimal places)
+    labels = [f"{val:.2f}" for val in xticks]
+    ax.set_xticklabels(labels)
+    labels = [f"{val:.2f}" for val in yticks]
+    ax.set_yticklabels(labels)
+
+    ax.tick_params(axis='x', rotation=315)
+    plt.setp(ax.get_xticklabels(), rotation=315, ha='left', rotation_mode='anchor')
+
+    # Color ticks
+    for i, tick in enumerate(ax.xaxis.get_major_ticks()):
+        c = tick_colors[i % len(tick_colors)]
+        # label on bottom (label1) and top (label2) if present
+        tick.label1.set_color(c)
+        tick.label2.set_color(c)
+        # the tick mark lines (tick1line, tick2line)
+        tick.tick1line.set_color(c)
+        tick.tick2line.set_color(c)
+
+    for i, tick in enumerate(ax.yaxis.get_major_ticks()):
+        c = tick_colors[i % len(tick_colors)]
+        tick.label1.set_color(c)
+        tick.label2.set_color(c)
+        tick.tick1line.set_color(c)
+        tick.tick2line.set_color(c)
 
     handles, labels = ax.get_legend_handles_labels() # get all legend items
     labels = ["Bernsteinpolynome"] + labels
@@ -89,7 +146,7 @@ def plot_cdf_inv(ax):
         fontsize='large'
     )
 
-    plt.savefig("output/bernstein.pdf")
+    plt.savefig("output/cdf_inv.pdf")
     plt.show()
 
 plt.rcParams.update({
@@ -97,7 +154,7 @@ plt.rcParams.update({
     'font.size': 20,
     'axes.titlesize': 20,
     'axes.labelsize': 20,
-    'xtick.labelsize': 20,
+    'xtick.labelsize': 16,
     'ytick.labelsize': 20,
     'legend.fontsize': 20,
     'figure.titlesize': 20
