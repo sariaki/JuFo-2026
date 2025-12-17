@@ -110,7 +110,7 @@ Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kom
 \subsection{Obfuskation}
 Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
 \begin{definition}[Obfuskation]
-	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
+	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation $\mathcal{T}$ eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
 	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
 \end{definition}
 
@@ -138,7 +138,7 @@ In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert 
   \centering
   % \resizebox{\columnwidth}{!}{\usebox{\idacode1}}
   \includegraphics[scale=0.2]{komplex_cropped}
-  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
+  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Durch die vielen opaken Prädikate wird die Funktion unübersichtlich und eine Analyse aufgrund der Unklarheit tatsächlich ausführbarer Pfade erschwert. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
 \end{minipage} \\
 
 Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
@@ -380,15 +380,6 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
 \end{equation}
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \vspace{-1.5cm}
-    \setlength{\abovecaptionskip}{-4pt}
-    \includegraphics[width=0.4\textwidth]{img/bernstein}
-    \caption{Zufällige Bernsteinpolynome} %mit $k=0$ und $a=1$
-    \label{fig:bernstein}
-\end{wrapfigure}
-
 %Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
 Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
@@ -400,8 +391,19 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 	\item Sei $c_0 = 0$ und $c_n = 1$. Für Intervallteil $i=1$ bis $n-1$: \\
 	Wähle eine zufällige rationale Zahl $c$. \\
     Berechne $c_i = c_{i-1} + c$.
-	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}$ mit gegebenen Parametern.
+	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{n-k}$ \\
+	mit gegebenen Parametern.
 \end{enumerate}
+
+\begin{wrapfigure}{r}{0.37\textwidth}
+	\centering
+	\vspace{-6cm}
+	\setlength{\abovecaptionskip}{-4pt}
+	\includegraphics[width=0.37\textwidth]{img/bernstein}
+	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
+	\label{fig:bernstein}
+\end{wrapfigure}
+
 Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
 \begin{algorithm}[!htb] 
