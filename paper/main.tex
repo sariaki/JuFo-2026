@@ -171,37 +171,36 @@ Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädi
 Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich.
 \begin{figure}[t!]
     \centering 
-    \begin{subfigure}[t]{0.32\textwidth}
+    \begin{subfigure}[t]{0.25\textwidth}
         \begin{lstlisting}[style=customc_compact, captionpos=b]
 int func(int symvar){
     int j = symvar;
     if(j == 7){
         Foo();
     }
-}
-        \end{lstlisting}
+}		\end{lstlisting}
         \caption{Ursprüngliches Programm, übernommen aus \cite{xuManufacturingResilientBiOpaque2018}.}
         \label{fig:code_a_compact}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.32\textwidth}
+    \begin{subfigure}[t]{0.35\textwidth}
         \begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
 int func(int symvar){
     int j = symvar;
     int l1_ary[] = {1,2,3,4,5,6,7};
-    int l2_ary[] = {j,1,2,3,4,5,6,7};
+    int l2_ary[] = 
+    	{j,1,2,3,4,5,6,7};
     int i = l2_ary[l1_ary[j%7]];
     if(i == j)
         Bogus();
     if(i == 1 && j == 7)
         Foo();
-}
-        \end{lstlisting}
+}		\end{lstlisting}
         \caption{Bi-Opakes Prädikat (symbolischer Arbeitsspeicher) \cite{xuManufacturingResilientBiOpaque2018}.}
         \label{fig:code_b_compact}
     \end{subfigure}
     \hfill 
-    \begin{subfigure}[t]{0.32\textwidth}
+    \begin{subfigure}[t]{0.35\textwidth}
         \begin{lstlisting}[style=customc_compact, captionpos=b]
 ...
         \end{lstlisting}
@@ -385,15 +384,6 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 %Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
 Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
-\begin{wrapfigure}{r}{0.37\textwidth}
-	\centering
-	%	\vspace{-5.5cm}
-	\setlength{\abovecaptionskip}{-4pt}
-	\includegraphics[width=0.37\textwidth]{img/bernstein}
-	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
-	\label{fig:bernstein}
-\end{wrapfigure}
-
 Das Vorgehen für diese Methode ist somit Folgendes:
 \begin{enumerate}
 	\item Wähle zwei zufällige rationale Zahlen $(a,k) \in \mathbb{R}$.
@@ -405,6 +395,15 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 	\item Generiere die Funktion $B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{n-k}$ \\
 	mit gegebenen Parametern.
 \end{enumerate}
+
+\begin{wrapfigure}{R}{0.37\textwidth}
+	\centering
+	\vspace{-5.7cm}
+	\setlength{\abovecaptionskip}{-4pt}
+	\includegraphics[width=0.37\textwidth]{img/bernstein}
+	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
+	\label{fig:bernstein}
+\end{wrapfigure}
 
 Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
@@ -494,8 +493,7 @@ __attribute__(annotate("POP"))
 void foo(int x)
 {
 	printf("foo %i\n", x);
-}
-		\end{lstlisting}
+}		\end{lstlisting}
 		\caption{Eine einfache zu obfuskierende Funktion.}
 		\label{fig:toObf}
 	\end{subfigure}
@@ -533,8 +531,7 @@ void __cdecl foo(int x)
 		__debugbreak() // This Basic Block is never reached.
 	}
 	printf("foo %i\n", x); // This Basic Block will always be executed.
-}
-		\end{lstlisting}
+}		\end{lstlisting}
 		\caption{Die mit POP obfuskierte Funktion. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
 		\label{fig:doneObf}
 	\end{subfigure}
