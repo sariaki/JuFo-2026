@@ -132,13 +132,13 @@ In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert 
   \includegraphics[ 
     scale=1.25
     ]{overwatch_byfron_cropped}
-  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. Abbildung aus der Dekompilation des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph}
+  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.5\textwidth}
   \centering
   % \resizebox{\columnwidth}{!}{\usebox{\idacode1}}
   \includegraphics[scale=0.2]{komplex_cropped}
-  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Dekompilation des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
+  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
 \end{minipage} \\
 
 Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
@@ -277,7 +277,7 @@ Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob der vorliegen
 
 Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
 \begin{definition}[Probabilistische opake Prädikate] \label{def:probOpaque} \label{def:konstruktionsschema}
-	Sei $\mathcal{O}_p : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}_p(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. 
+	Sei $\mathcal{O}_p : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}_p(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. \textcolor{red}{TODO: formeller}
 \end{definition}
 
 \begin{definition}
