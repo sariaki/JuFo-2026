@@ -34,7 +34,7 @@
 	showtabs=false, tabsize=2, title=\lstname
 }
 \lstdefinestyle{customc_compact}{
-    language=C,
+    language=C++,
     basicstyle=\scriptsize\ttfamily, % <-- WICHTIG: Kleinere Schriftart
     numbers=left,
     numberstyle=\tiny\color{gray},
@@ -42,7 +42,9 @@
     numbersep=5pt,
     breaklines=true,
     showstringspaces=false,
-    frame=none,
+	frame=tb,
+	framexleftmargin=5pt,
+	backgroundcolor=\color{gray!5},
 }
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -94,12 +96,12 @@
 \newpage
 
 \section{Einleitung}
-% TODO: Vielleicht was auf Makro-Ebene sagen? Krieg, geopol. Spannungen, Cyber-Angriffe
 \emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren.
 Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. \emph{Endpoint Detection and Response} Systemen zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
 Von besonderem Interesse im Bereich der Obfuskation sind opake Prädikate, eine Kontrollflussobfuskation welche immer wahre bzw. falsche Verzweigungen in Programme einfügt.
-In dieser Arbeit wird folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine perfekte automatische Deobfuskation unmöglich machen?}
-Aufbauend auf den Gedanken von \cite{stephensProbabilisticObfuscationCovert2018} wird hierfür die neue Klasse probabilistischer opaker Prädikate vorgestellt. Implementiert wird die Idee in Form eines LLVM-Passes. Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, sondern auch gegenüber neuster KI-Deobfuskationsmethoden.
+
+In dieser Arbeit wird folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine perfekte automatische Deobfuskation (mit aktuellen Methoden) unmöglich machen?}
+Aufbauend auf den Gedanken von \cite{stephensProbabilisticObfuscationCovert2018} wird hierfür die neue Klasse probabilistischer opaker Prädikate vorgestellt. Implementiert wird die Idee in Form eines LLVM-Passes. \textcolor{red}{Aufgrund der Seitenbegrenzung sowie der Fülle an verfügbaren Informationen und Methoden wird die Generierung von getarntem Füllcode (sog. Junkcode) nicht behandelt und implementiert. Die Bedeutung von Füllcode für die Qualität der generierten opaken Prädikate dieser Arbeit wird in \cref{sec:stärke} behandelt.} Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, sondern auch gegenüber neusten KI-Deobfuskationsmethoden.
 
 Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet: Unter der Voraussetung, dass die Aussage $P$ wahr ist, gilt $[P]=1$. Ansonsten gilt $[P]=0$. 
 %Vergleicht eine Aussage zwei Variablen, so wird hierfür "`$==$"' verwendet.
@@ -141,7 +143,7 @@ In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert 
   \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Durch die vielen opaken Prädikate wird die Funktion unübersichtlich und eine Analyse aufgrund der Unklarheit tatsächlich ausführbarer Pfade erschwert. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
 \end{minipage} \\
 
-Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
+Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu (vgl. \cref{fig:overwatchGraph2}).
 
 \begin{example}
 Das Prädikat $\mathcal{O}(\phi)=\left[-1977224191 \space \& \space 1 = 1\right]$ aus \cref{fig:overwatchGraph}, wobei "`$\&$"' dem bitweisen "`und"' Operator entspricht, ist sehr einfach. Eine Berechnung genügt, um zu erkennen, dass das Prädikat immer wahr ist.
@@ -164,7 +166,7 @@ Hierdurch können schließlich über den Constraint-Solver allgemeine Aussagen �
 Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{Concolic Execution}) \cite{baldoniSurveySymbolicExecution2018} entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
 
 \section{Hintergrund und Motivation} \label{sec:motivation}
-Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen.
+Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen. Die geschieht anhand der Kriterien aus \cref{sec:kriterien}.
 
 Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich.
 \begin{figure}[t!]
@@ -319,7 +321,7 @@ Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsv
 Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
 Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschreiben.
-\begin{algorithm}[!htb] 
+\begin{algorithm}[t] 
     \caption{Generierung probabilistischer opaker Prädikate}
     \label{alg:probOpaque}
     \begin{algorithmic}[1]
@@ -366,7 +368,7 @@ Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quad
 \textcolor{red}{Der Nachteil hiervon ist, dass ...}
 
 \paragraph{Generierung über zufälliges Polynom}
-Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion (vgl. \cref{def:kumVer}) erfüllt.
+Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion erfüllt.
 Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Eigenschaften erfüllen:
 \begin{enumerate}[]
     \item $F$ ist monoton steigend.
@@ -383,6 +385,15 @@ Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzuset
 %Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
 Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
+\begin{wrapfigure}{r}{0.37\textwidth}
+	\centering
+	%	\vspace{-5.5cm}
+	\setlength{\abovecaptionskip}{-4pt}
+	\includegraphics[width=0.37\textwidth]{img/bernstein}
+	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
+	\label{fig:bernstein}
+\end{wrapfigure}
+
 Das Vorgehen für diese Methode ist somit Folgendes:
 \begin{enumerate}
 	\item Wähle zwei zufällige rationale Zahlen $(a,k) \in \mathbb{R}$.
@@ -395,19 +406,10 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 	mit gegebenen Parametern.
 \end{enumerate}
 
-\begin{wrapfigure}{r}{0.37\textwidth}
-	\centering
-	\vspace{-6cm}
-	\setlength{\abovecaptionskip}{-4pt}
-	\includegraphics[width=0.37\textwidth]{img/bernstein}
-	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
-	\label{fig:bernstein}
-\end{wrapfigure}
-
 Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
 \begin{algorithm}[!htb] 
-    \caption{Berechnung des Inversen (Binärsuche)}
+    \caption{Berechnung der inversen kumulativen Verteilungsfunktion (PPF) über Binärsuche}
     \label{alg:invCumSum}
     \begin{algorithmic}[1]
         \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain), $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift and stretch), $\Var{Prec}$ (Precision)
@@ -486,19 +488,19 @@ Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pse
 
 \begin{figure}[h]
 	\centering 
-	\begin{subfigure}[t]{0.3\textwidth}
+	\begin{subfigure}[c]{0.32\textwidth}
 		\begin{lstlisting}[style=customc_compact, captionpos=b]	
-__attribute__((annotate("POP")))
+__attribute__(annotate("POP"))
 void foo(int x)
 {
 	printf("foo %i\n", x);
 }
 		\end{lstlisting}
-		\caption{Eine zu obfuskierende Funktion.}
+		\caption{Eine einfache zu obfuskierende Funktion.}
 		\label{fig:toObf}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.6\textwidth}
+	\begin{subfigure}[c]{0.6\textwidth}
 		\begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
 void __cdecl foo(int x)
 {
@@ -527,11 +529,10 @@ void __cdecl foo(int x)
 	}
 	if ( v2 >= 19.80279674504742 )
 	{
-		printf("FalseBB says hi\n");
-		__debugbreak()
+		// Junkcode
+		__debugbreak() // This Basic Block is never reached.
 	}
-	printf("TrueBB says hi\n");
-	printf("foo %i\n", x);
+	printf("foo %i\n", x); // This Basic Block will always be executed.
 }
 		\end{lstlisting}
 		\caption{Die mit POP obfuskierte Funktion. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
@@ -539,8 +540,11 @@ void __cdecl foo(int x)
 	\end{subfigure}
 \end{figure}
 
+\subsection{Füllcode}
+\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
+
 \section{Evaluierung}
-\subsection{Vorgehen}
+\subsection{Vorgehen} \label{sec:kriterien}
 Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} gegenüber anderen (\textcolor{red}{...}) entschieden\label{par:metriken}:
 
 \begin{center}
@@ -561,7 +565,7 @@ Folgende Programme wurden dabei als Input verwendet: \textcolor{red}{TODO: ...}
 
 \subsection{Evaluierung}
 
-\paragraph{Stärke}
+\paragraph{Stärke} \label{sec:stärke}
 
 \paragraph{Resilienz}
 ´
