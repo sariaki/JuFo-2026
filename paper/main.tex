@@ -132,13 +132,13 @@ In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn dessen Wert 
   \includegraphics[ 
     scale=1.25
     ]{overwatch_byfron_cropped}
-  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph}
+  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. Abbildung aus der Dekompilation des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.5\textwidth}
   \centering
   % \resizebox{\columnwidth}{!}{\usebox{\idacode1}}
   \includegraphics[scale=0.2]{komplex_cropped}
-  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
+  \captionof{figure}{Ausschnitt des Kontrollflussgraphen einer Funktion mit vielen opaken Prädikaten. Abbildung aus der Dekompilation des Spiels \emph{Overwatch} mittels IDA entnommen.} \label{fig:overwatchGraph2}
 \end{minipage} \\
 
 Opake Prädikate werden in der Softwareobfuskation eingesetzt, um ein Verständnis über den Kontrollfluss des Programms zu behindern \cite{collbergManufacturingCheapResilient1998, tofighi-shiraziDefeatingOpaquePredicates2019}. Damit opake Prädikate als Obfuskationsmethode \footnote{D.h, dass der wirkiche Pfad, welcher von einem opaken Prädikat verschleiert wird, nicht einfach erkannt werden kann} genutzt werden können, müssen sie wiederholt angewandt werden. Dadurch entsteht ein komplexerer Kontrollflussgraph und der Angreifer weiß folglich nicht, welche Basisblöcke zu analysieren sind. Die Stärke der opaken Prädikate ist hierbei abhängig von der Stärke ihres Terms/Ausdrucks \cite{collbergManufacturingCheapResilient1998}. Mit zunehmender Komplexität der Prädikate und zunehmender Anzahl dieser, nimmt also auch die Obfuskationsstärke (Verwirrung und Unverständnis) beim Angreifer zu. 
@@ -473,18 +473,73 @@ CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallsza
 In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
 
 \paragraph{Parameter-Sampling}
-In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom Engine als symbolisch markiert.
+In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom symbolischen Ausführungsengine als symbolische Variablen behandelt.
 
-Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normal in jedem Programm. Nachteilhaft ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
+Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Problematisch ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate durch einen Angreifer erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
 
 \paragraph{Race Conditions}
 Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{TODO...} \\
 
 Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
 
+\begin{figure}[h]
+	\centering 
+	\begin{subfigure}[t]{0.3\textwidth}
+		\begin{lstlisting}[style=customc_compact, captionpos=b]	
+__attribute__((annotate("POP")))
+void foo(int x)
+{
+	printf("foo %i\n", x);
+}
+		\end{lstlisting}
+		\caption{Eine zu obfuskierende Funktion.}
+		\label{fig:toObf}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.6\textwidth}
+		\begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
+void __cdecl foo(int x)
+{
+	double v1;
+	double v2;
+	double v3;
+	int i;
+	
+	v3 = 20.7517909733016;
+	for ( i = 0; i != 16; ++i )
+	{
+		v1 = (v3 - 20.70639451264049) * 11.01407450533519;
+		v2 = v3
+		- (0.0 * ((1.0 - v1) * (1.0 - v1) * (1.0 - v1))
+		+ 0.0
+		+ 0.3788140306973082 * v1 * ((1.0 - v1) * (1.0 - v1))
+		+ 1.326401583206529 * (v1 * v1) * (1.0 - v1)
+		+ v1 * v1 * v1
+		- (double)x * COERCE_DOUBLE(0x4000000000000LL))
+		/ ((0.3788140306973082 * ((1.0 - v1) * (1.0 - v1))
+		+ 0.0
+		+ 1.895175105018441 * v1 * (1.0 - v1)
+		+ 1.673598416793471 * (v1 * v1))
+		* 11.01407450533519);
+		v3 = v2;
+	}
+	if ( v2 >= 19.80279674504742 )
+	{
+		printf("FalseBB says hi\n");
+		__debugbreak()
+	}
+	printf("TrueBB says hi\n");
+	printf("foo %i\n", x);
+}
+		\end{lstlisting}
+		\caption{Die mit POP obfuskierte Funktion. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
+		\label{fig:doneObf}
+	\end{subfigure}
+\end{figure}
+
 \section{Evaluierung}
-\subsection{Kriterien}
-Um die Obfuskationsmethode zu evaluieren werden folgende Metriken verwendet \cite{collbergATaxonomyOfObfuscatingTransformations}. \label{par:metriken}:
+\subsection{Vorgehen}
+Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} gegenüber anderen (\textcolor{red}{...}) entschieden\label{par:metriken}:
 
 \begin{center}
     \begin{tabular}{c|l}
@@ -500,9 +555,21 @@ Um die Obfuskationsmethode zu evaluieren werden folgende Metriken verwendet \cit
     \end{tabular}
 \end{center}
 
+Folgende Programme wurden dabei als Input verwendet: \textcolor{red}{TODO: ...}
+
 \subsection{Evaluierung}
-\subsection{Praktische Anwendung}
+
+\paragraph{Stärke}
+
+\paragraph{Resilienz}
+´
+\paragraph{Kosten}
+
+\paragraph{Tarnung}
+
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
+
+%\subsection{Praktische Anwendung}
 
 \section{Ergebnisdiskussion}
 \section{Fazit und Ausblick} \label{sec:fazit}
