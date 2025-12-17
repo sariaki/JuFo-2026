@@ -7,20 +7,15 @@
 - In Tigress implementieren??? $\implies$ Collberg fragen
 
 #### Jetzt
+- [ ] stephensProbabilisticObfuscationCovert2018  erwähnen
+- [ ] Hintergrund/Motivation ausführen
 
-- stephensProbabilisticObfuscationCovert2018 implementieren!
-- [ ] Hintergrund/Motivation neu
-	- [x] Im Angr Discord fragen, ob BiOpake Prädikate gefixt wurden?
-- [x] Ansatz->Algorithmus neu 
-      (besser mit Implementierung abstimmen)
-- [x] Implementierung zu Ende
-- [ ] Ziele aus Angreifermodell folgern? von stephensProbabilisticObfuscationCovert2018 übernehmen
-- [x] Ansatz besser erklären $\implies$ wichtigster Teil!!
+- [ ] Inverse CDF Methode besser erklären
+	- [ ] Grafik wie Wikipedia
+- [ ] Füllcode
+- [ ] Pseudocode updaten
 
-- [x] Pseudocode verbessern
-	- evtl. ganz auf Englisch?
-
-- [ ] SYMBOLISCHE AUSFÜHRUNG EVAULIERUNG WIE COLLBERG
+- [ ] EVAULIERUNG WIE COLLBERG
       stephensProbabilisticObfuscationCovert2018
       caballeroDetectionIntrusionsMalware2016
       stephensProbabilisticObfuscationCovert2018
@@ -39,7 +34,7 @@
 
 - [ ] `\cref` funktioniert nicht für Algpseudocode!
 
-- [ ] Erklären, warum wir nicht einfach Aussagen über eine uniforme Verteilung treffen
+- [x] Erklären, warum wir nicht einfach Aussagen über eine uniforme Verteilung treffen
 	- Pattern-Matching
 	- Erkennbarkeit (Resillienz) -> Wahrscheinlichkeit wird direkt angegeben!
 		- Stärke nun abhängig von Verschleierung der Warhscheinlichkeit
@@ -56,4 +51,11 @@
 	- [x] Ansatz noch weiter generalisieren über arithmetische und bitweise Operatoren in Terme
 - [x] CDF-Axiome?
 - [x] Symbolische Ausführung ausführlicher erklären
+- [x] Ansatz->Algorithmus neu 
+- [x] m Angr Discord fragen, ob BiOpake Prädikate gefixt wurden?
+      (besser mit Implementierung abstimmen)
+- [x] Implementierung zu Ende
+- [x] Ansatz besser erklären $\implies$ wichtigster Teil!!
+- [x] Pseudocode verbessern
+	- evtl. ganz auf Englisch?
 - [ ] Fachbegriffnutzung konsistenter machen
