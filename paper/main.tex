@@ -315,7 +315,14 @@ Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich
 Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
 \subsection{Algorithmus}
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}). Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}).
+\begin{wrapfigure}{R}{0pt}
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/cdf_inv}
+    \caption{\textcolor{red}{TODO}}
+    \label{fig:cdfInv}
+\end{wrapfigure}
+Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
 %Über die transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
 Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
@@ -385,7 +392,8 @@ Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x
 Das Vorgehen für diese Methode ist somit Folgendes:
 \begin{enumerate}
 	\item Wähle zwei zufällige rationale Zahlen $(a,k) \in \mathbb{R}$.
-	\item Wähle den Definitionsbereich $\mathbb{D} = [x_1, x_2]$ mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
+	\item Wähle den Definitionsbereich $\mathbb{D} = [x_1, x_2]$ \\
+    mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
 	\item Teile $[x_1;x_2]$ in $n$ Teile ein.
 	\item Sei $c_0 = 0$ und $c_n = 1$. Für Intervallteil $i=1$ bis $n-1$: \\
 	Wähle eine zufällige rationale Zahl $c$. \\
@@ -396,8 +404,8 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 \begin{wrapfigure}{R}{0.37\textwidth}
 	\centering
-	\vspace{-5.7cm}
-	\setlength{\abovecaptionskip}{-4pt}
+	\vspace{-7.5cm}
+%	\setlength{\abovecaptionskip}{-4pt}
 	\includegraphics[width=0.37\textwidth]{img/bernstein}
 	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
 	\label{fig:bernstein}
