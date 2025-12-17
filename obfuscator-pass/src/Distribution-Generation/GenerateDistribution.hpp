@@ -20,4 +20,5 @@ namespace Distribution
     FunctionCallee CreatePoissonFn(Module& M, Value* Lambda);
     std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinBinarySearchFn(Module& M, std::mt19937 Rng);
     std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinNewtonRaphsonFn(llvm::Module& M, std::mt19937 Rng);
+    std::tuple<FunctionCallee, MonotonicBernstein, double, double> InsertRandomBernsteinNewtonRaphson(llvm::Module& M, std::mt19937 Rng);
 }

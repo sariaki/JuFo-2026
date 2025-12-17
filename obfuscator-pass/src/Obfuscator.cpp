@@ -31,9 +31,6 @@ namespace
             std::random_device Dev;
             std::mt19937 Rng(Dev());
 
-            // Generate random inverse CDF
-            const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::CreateRandomBernsteinNewtonRaphsonFn(M, Rng);
-
             for (Function& F : M)
             {
                 // Check if our function is defined and not just declared
@@ -80,6 +77,9 @@ namespace
                 Value* RecipMaxConstant = ConstantFP::get(IRB.getDoubleTy(), RecipMax);
 
                 const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
+
+                // Generate random inverse CDF
+                const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::InsertRandomBernsteinNewtonRaphson(M, Rng);
 
                 // i64 x = sampler(u)
                 const auto SampleRet = IRB.CreateCall(SamplerFn, { SmallCallParameter });
