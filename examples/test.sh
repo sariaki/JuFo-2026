@@ -2,7 +2,7 @@
 
 OPT_LVL=O0
 
-# Compile source to bitcode using CLANG-18 (Matches your opt-18)
+# Compile source to bitcode using clang-18 (matching opt version)
 clang-18 -g -$OPT_LVL -S -emit-llvm ./example.c -o example.ll
 clang-18 -g -$OPT_LVL -emit-llvm -c example.c -o example.bc
 

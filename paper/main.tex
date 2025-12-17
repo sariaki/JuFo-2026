@@ -485,19 +485,42 @@ Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pse
 
 \begin{figure}[h]
 	\centering 
-	\begin{subfigure}[c]{0.32\textwidth}
-		\begin{lstlisting}[style=customc_compact, captionpos=b]	
+	
+	\begin{minipage}[c]{0.36\textwidth}
+		\begin{subfigure}[b]{\linewidth}
+			\begin{lstlisting}[style=customc_compact, captionpos=b, language=bash]	
+#!/bin/bash
+
+OPT_LVL=O0
+FILENAME="hello_world"
+PASS_PLUGIN_DIR="Obfuscator.so"
+
+clang -fno-legacy-pass-manager \
+	-fpass-plugin=$PASS_PLUGIN_DIR \
+	${FILENAME}.c \
+	-o $FILENAME
+
+\end{lstlisting}
+			\caption{Bash-Skript zur Ausführung der implementierten Obfuskation auf C(++) Quellcode.}
+			\end{subfigure}
+
+		\vspace{1em}
+		
+		\begin{subfigure}[b]{\linewidth}
+			\begin{lstlisting}[style=customc_compact, captionpos=b]	
 __attribute__(annotate("POP"))
 void foo(int x)
 {
 	printf("foo %i\n", x);
-}		\end{lstlisting}
-		\caption{Eine einfache zu obfuskierende Funktion.}
-		\label{fig:toObf}
-	\end{subfigure}
+}			\end{lstlisting}
+			\caption{Eine einfache zu obfuskierende Funktion.}
+			\label{fig:toObf}
+		\end{subfigure}
+	\end{minipage}
 	\hfill
-	\begin{subfigure}[c]{0.6\textwidth}
-		\begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
+	\begin{minipage}[c]{0.6\textwidth}
+		\begin{subfigure}[c]{\linewidth}
+			\begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
 void __cdecl foo(int x)
 {
 	double v1;
@@ -529,10 +552,11 @@ void __cdecl foo(int x)
 		__debugbreak() // This Basic Block is never reached.
 	}
 	printf("foo %i\n", x); // This Basic Block will always be executed.
-}		\end{lstlisting}
-		\caption{Die mit POP obfuskierte Funktion. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
-		\label{fig:doneObf}
-	\end{subfigure}
+}			\end{lstlisting}
+			\caption{Dieselbe Funktion aber mit PoP obfuskiert. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
+			\label{fig:doneObf}
+		\end{subfigure}
+	\end{minipage}
 \end{figure}
 
 \subsection{Füllcode}

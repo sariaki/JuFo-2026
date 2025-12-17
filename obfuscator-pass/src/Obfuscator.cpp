@@ -152,7 +152,8 @@ namespace
 }
 
 // New PassManager registration
-extern "C" llvm::PassPluginLibraryInfo getProbabilisticOpaquePredicatesPluginInfo()
+extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo
+    llvmGetPassPluginInfo()
 {
     return 
     { 
@@ -170,10 +171,4 @@ extern "C" llvm::PassPluginLibraryInfo getProbabilisticOpaquePredicatesPluginInf
             });
         }
     };
-}
-
-extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo
-    llvmGetPassPluginInfo()
-{
-    return getProbabilisticOpaquePredicatesPluginInfo();
 }
