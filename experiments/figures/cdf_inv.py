@@ -11,8 +11,10 @@ os.chdir(script_dir)
 
 dataset_colors = ['#9671bd', '#7e7e7e', '#77b5b6'] 
 dataset_line_colors = ['#6a408d', '#4e4e4e', '#378d94']
+
+tick_count = 11
 cmap = plt.get_cmap('viridis') 
-indices = np.linspace(0.1, 0.75, 10) # Sample from 0.3 to 0.9 to avoid colors that are too bright/dark
+indices = np.linspace(0.1, 0.75, tick_count) # Sample from 0.3 to 0.9 to avoid colors that are too bright/dark
 tick_colors = [cmap(i) for i in indices]
 
 a = 1 # np.random.rand()
@@ -102,7 +104,6 @@ def plot_cdf_inv(ax):
     ax.plot(xs, ys, linewidth=1.2, color = dataset_line_colors[2])
 
     # Add some x and y-values
-    tick_count = 10
     yticks = np.linspace(0.0, 1.0, tick_count)
     xticks = inv_berinstein(yticks, coeffs)
     ax.set_xticks(xticks)
@@ -166,7 +167,7 @@ plt.rcParams.update({
     'font.size': 20,
     'axes.titlesize': 20,
     'axes.labelsize': 20,
-    'xtick.labelsize': 16,
+    'xtick.labelsize': 20,
     'ytick.labelsize': 20,
     'legend.fontsize': 20,
     'figure.titlesize': 20
