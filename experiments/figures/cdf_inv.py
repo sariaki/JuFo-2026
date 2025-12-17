@@ -1,10 +1,9 @@
-from matplotlib.lines import Line2D
-from matplotlib.patches import Patch
 import math
 import numpy as np
 np.math = math
 from scipy.interpolate import BPoly, PPoly
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -12,7 +11,9 @@ os.chdir(script_dir)
 
 dataset_colors = ['#9671bd', '#7e7e7e', '#77b5b6'] 
 dataset_line_colors = ['#6a408d', '#4e4e4e', '#378d94']
-tick_colors = ['#feda75', '#fa7e1e', '#d62976', '#962fbf', '#4f5bd5']
+cmap = plt.get_cmap('viridis') 
+indices = np.linspace(0.1, 0.75, 10) # Sample from 0.3 to 0.9 to avoid colors that are too bright/dark
+tick_colors = [cmap(i) for i in indices]
 
 a = 1 # np.random.rand()
 k = 0 # np.random.randint(0, 10)
@@ -132,6 +133,17 @@ def plot_cdf_inv(ax):
         tick.label2.set_color(c)
         tick.tick1line.set_color(c)
         tick.tick2line.set_color(c)
+    
+    ax.scatter(
+        xticks,
+        yticks,
+        s=50,
+        c=tick_colors,
+        marker='o',
+        edgecolor='white',
+        linewidth=1.5,
+        zorder=10
+    )
 
     handles, labels = ax.get_legend_handles_labels() # get all legend items
     labels = ["Bernsteinpolynome"] + labels

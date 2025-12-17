@@ -1,7 +1,7 @@
-from matplotlib.lines import Line2D
-from matplotlib.patches import Patch
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
