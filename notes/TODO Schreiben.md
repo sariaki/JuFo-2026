@@ -11,7 +11,8 @@
 - [ ] Hintergrund/Motivation ausführen
 
 - [ ] Inverse CDF Methode besser erklären
-	- [ ] Grafik wie Wikipedia
+	- [x] Grafik wie Wikipedia
+	- [ ] Grafikbeschriftungen vergrößern
 - [ ] Füllcode
 - [ ] Pseudocode updaten
 

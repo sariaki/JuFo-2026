@@ -116,7 +116,7 @@ Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren 
 	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
 \end{definition}
 
-Eine Obfuskation hat immer das Ziel, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}.
+Obfuskation zielt darauf ab, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}. Näheres hierzu folgt in \cref{sec:kriterien}.
 
 Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
@@ -316,10 +316,10 @@ Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzus
 
 \subsection{Algorithmus}
 Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}).
-\begin{wrapfigure}{R}{0pt}
+\begin{wrapfigure}{r}{0pt}
     \centering
     \includegraphics[width=0.4\textwidth]{img/cdf_inv}
-    \caption{\textcolor{red}{TODO}}
+    \caption{Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion $B_n^{-1}(y_i)$, einem x-Wert zugeordnet. }
     \label{fig:cdfInv}
 \end{wrapfigure}
 Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
@@ -338,7 +338,7 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
             \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
             
     		\State $\Var{U} \gets \Call{BB.InsertSymbolicVariable}{$$}$ \Comment{Generate a random variable $\in [0;1]$.}
-            \State $\Var{U} \gets \Call{BB.InsertCallInverseCDF}{\Var{U}}$
+            \State $\Call{BB.InsertCallInverseCDF}{\Var{U}}$
             
             \State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$ \Comment{Compute threshold using the Newton–Raphson method.}
             \For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
@@ -348,8 +348,8 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
                 \State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
             \EndFor
             
-            \State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$
-            \State $\Var{FalseBB} \gets \Call{F.CreateBB}{$$}$
+            \State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
+            \State $\Var{FalseBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
             \State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
             \State $\Call{FalseBB.InsertJunkCode}{$$}$
     	\EndIf
@@ -589,6 +589,9 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
 \end{center}
 
 Folgende Programme wurden obfuskiert: \textcolor{red}{TODO: ...}
+Folgende symbolische Ausführungsengines wurden verwendet: \textcolor{red}{TODO: ...}
+Alle Experimente wurden mit Ubuntu 24.04.3 und einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU ausgeführt.
+Alle Programme wurden mit clang 18.0.0 kompilliert mit Optimierungslevel \texttt{-O3}.
 
 \subsection{Evaluierung}
 

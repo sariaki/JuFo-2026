@@ -35,8 +35,7 @@
               "title": "TODO Implementierung"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,11 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "6373db0bc07efff5",
+  "active": "b581a3a2d5e02637",
   "lastOpenFiles": [
+    "TODO Implementierung.md",
     "TODO Schreiben.md",
     "TODO Recherche.md",
-    "TODO Implementierung.md",
     "IDEE GEGEN PATTERN-MATCHING.md",
     "Methoden.md",
     "FRAGEN.md",
