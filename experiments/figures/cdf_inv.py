@@ -115,7 +115,7 @@ def plot_cdf_inv(ax):
     # Set formatted text labels (2 decimal places)
     labels = [f"{val:.2f}" for val in xticks]
     ax.set_xticklabels(labels)
-    labels = [f"{val:.2f}" for val in yticks]
+    labels = [f"{val:.1f}" for val in yticks]
     ax.set_yticklabels(labels)
 
     ax.tick_params(axis='x', rotation=315)
@@ -131,7 +131,7 @@ def plot_cdf_inv(ax):
         # tick.tick1line.set_color(c)
         # tick.tick2line.set_color(c)
 
-        # TODO: Add dashed arrow from curve to tick using ax.annotate
+        # Add dashed arrow from curve to tick
         ax.annotate('', xy=(xticks[i], yticks[i]), xytext=(xticks[i], 0),
                     arrowprops=dict(arrowstyle='<-', linestyle='--', color=dataset_line_colors[0], alpha=0.6))
 

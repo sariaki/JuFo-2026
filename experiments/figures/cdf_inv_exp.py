@@ -14,145 +14,110 @@ dataset_line_colors = ['#6a408d', '#4e4e4e', '#378d94']
 
 tick_count = 11
 cmap = plt.get_cmap('hsv') 
-indices = np.linspace(0.0, 1.0, tick_count) # Sample from 0.3 to 0.9 to avoid colors that are too bright/dark
+indices = np.linspace(0.0, 1.0, tick_count) 
 tick_colors = [cmap(i) for i in indices]
-# tick_colors = ['#440154', '#31688e', '#35b779', "#008111", "#ff8000", "#ff0004", "#6b0019", "#00078B", "#006eff", "#009dff", "#575757"]
 
-a = 1 # np.random.rand()
-k = 0 # np.random.randint(0, 10)
+a = 1
+k = 0
 
 xs = np.linspace(k, k + 1/a, 100)
 
-def eval_bernstein(coeffs, xs):
-    # Map to normalized [0; 1]
-    xs_norm = np.asarray(xs)
-    xs_norm -= k
-    xs_norm *= a
-    n = len(coeffs) - 1
+def eval_exponential(lambda_, xs):
+    xs = np.asarray(xs)
+    L = 1.0 / a
 
-    # Compute Bernstein polynomial
-    binom = np.array([np.math.comb(n, k) for k in range(n+1)])[:, None]
-    x_pow = np.array([xs_norm**k for k in range(n+1)])
-    one_minus = np.array([(1.0 - xs_norm)**(n - k) for k in range(n+1)])
-    terms = (coeffs[:, None] * binom) * x_pow * one_minus
-    
-    return terms.sum(axis=0)
+    if lambda_ == 0:
+        # Uniform: linear mapping from [k, k+L] -> [0,1]
+        t = (xs - k) / L
+        return np.clip(t, 0.0, 1.0)
 
-def inv_berinstein(y_targets, coeffs):
-    # Ensure input is iterable (if a single float is passed)
-    if np.isscalar(y_targets):
-        y_targets = [y_targets]
-        
-    x_roots = []
-    
-    for y in y_targets:
-        # Shift coefficients: P(t) - y = 0
-        shifted_coeffs = coeffs - y
-        
-        # Create BPoly for y
-        # Shape must be (n, 1) because we have 1 interval [0, 1]
-        bp = BPoly(shifted_coeffs[:, None], [0, 1])
-        
-        # Convert to PPoly (Power basis) to access .roots()
-        pp = PPoly.from_bernstein_basis(bp)
-        roots = pp.roots()
-        
-        # Filter for roots in [0, 1]
-        valid_roots = roots[(roots >= -1e-8) & (roots <= 1.0 + 1e-8)]
-        
-        if len(valid_roots) > 0:
-            # Take the first valid root found
-            t = valid_roots[0]
-            x_roots.append(t / a + k)
-        else:
-            x_roots.append(np.nan)
+    # Numeric safe
+    lam = float(lambda_)
+    denom = 1.0 - np.exp(-lam * L)
+    # For numerical stability if denom is extremely small, treat as almost uniform.
+    if denom < 1e-12:
+        t = (xs - k) / L
+        return np.clip(t, 0.0, 1.0)
 
-    return np.array(x_roots)
+    t = xs - k
+    # Ensure non-negative inside exp
+    t = np.maximum(t, 0.0)
+    numer = 1.0 - np.exp(-lam * t)
+    return np.clip(numer / denom, 0.0, 1.0)
 
-def get_coeffs_from_dirichlet(n, alpha=0.2):
-    # smaller alpha -> spikier / fewer big jumps.
-    # rng = np.random.default_rng()
-    rng = np.random.default_rng(0)
+def inv_exponential(y_targets, lambda_):
+    L = 1.0 / a
+    lam = float(lambda_)
 
-    if n < 1:
-        return np.array([0.0, 1.0])
-    
-    pieces = rng.dirichlet(np.ones(n) * alpha)  # length n
-    coeffs = np.concatenate(([0.0], np.cumsum(pieces)[:-1], [1.0]))
-    return coeffs
+    # Convert to array (keeps shape)
+    y = np.atleast_1d(y_targets).astype(float)
+    y = np.clip(y, 0.0, 1.0)
+
+    # Uniform special-case
+    if np.isclose(lam, 0.0):
+        out = k + y * L
+        return out
+
+    denom_factor = 1.0 - np.exp(-lam * L)
+
+    # Avoid negative/zero inside log
+    inner = 1.0 - y * denom_factor
+    inner = np.clip(inner, 1e-16, 1.0)
+
+    t = - (1.0 / lam) * np.log(inner)
+    x = k + t
+    x = np.clip(x, k, k + L)
+    return x
 
 # Plot
 def plot_cdf_inv(ax):
-    ax.set_xlabel(r"$x = B_{n}^{-1}(y)$")
-    ax.set_ylabel(r"$y=B_n(x)$")
+    ax.set_xlabel(r"$x = F^{-1}(y)$")
+    ax.set_ylabel(r"$y=F(x)$")
 
     ax.set_aspect('equal', adjustable='datalim') # Lock the square shape
-
-    # Major grid:
     ax.grid(True, which='major', linestyle='-', linewidth=0.75, alpha=0.25)
-
-    # Minor ticks and grid:
     ax.minorticks_on()
     ax.grid(True, which='minor', linestyle='-', linewidth=0.25, alpha=0.15)
+    ax.set_axisbelow(True)
 
-    ax.set_axisbelow(True) # Ensure grid is below data
+    # Choose an exponential rate lambda_. Try a few example values:
+    lambda_ = 3.0  # change this to make distribution more/less concentrated near k
 
-    # Create random Bernstein coefficient satisfying CDF requirements and plot
-    degree = 10 #np.random.randint(3, 10)
-    coeffs = get_coeffs_from_dirichlet(degree, alpha=0.1)
-    ys = eval_bernstein(coeffs, xs)
+    ys = eval_exponential(lambda_, xs)
 
     curve, = ax.plot(xs, ys, linewidth=1.2, color = dataset_line_colors[2])
-
-    curve.set_label(f"Bernsteinpolynom (CDF)")
+    curve.set_label(f"Exponentialverteilung CDF")
 
     # Add some x and y-values
     yticks = np.linspace(0.0, 1.0, tick_count)
-    xticks = inv_berinstein(yticks, coeffs)
+    xticks = inv_exponential(yticks, lambda_)
     ax.set_xticks(xticks)
     ax.set_yticks(yticks)
 
-    # Set formatted text labels (2 decimal places)
+    # Set formatted text labels
     labels = [f"{val:.2f}" for val in xticks]
     ax.set_xticklabels(labels)
-    labels = [f"{val:.2f}" for val in yticks]
+    labels = [f"{val:.1f}" for val in yticks]
     ax.set_yticklabels(labels)
 
     ax.tick_params(axis='x', rotation=315)
     plt.setp(ax.get_xticklabels(), rotation=315, ha='left', rotation_mode='anchor')
 
-    # Color ticks and add lines from the ticks to the curve
+    # Add dashed arrow from curve to tick
     for i, tick in enumerate(ax.xaxis.get_major_ticks()):
-        # c = tick_colors[i % len(tick_colors)]
-        # # label on bottom (label1) and top (label2) if present
-        # tick.label1.set_color(c)
-        # tick.label2.set_color(c)
-        # # the tick mark lines (tick1line, tick2line)
-        # tick.tick1line.set_color(c)
-        # tick.tick2line.set_color(c)
-
-        # TODO: Add dashed arrow from curve to tick using ax.annotate
         ax.annotate('', xy=(xticks[i], yticks[i]), xytext=(xticks[i], 0),
                     arrowprops=dict(arrowstyle='<-', linestyle='--', color=dataset_line_colors[0], alpha=0.6))
 
-
+    # Add dashed line from tick to curve
     for i, tick in enumerate(ax.yaxis.get_major_ticks()):
-        # c = tick_colors[i % len(tick_colors)]
-        # tick.label1.set_color(c)
-        # tick.label2.set_color(c)
-        # tick.tick1line.set_color(c)
-        # tick.tick2line.set_color(c)
-
-        # Add dashed line from tick to curve
         y_val = tick.get_loc()
-        x_val = inv_berinstein(y_val, coeffs)[0]
+        x_val = inv_exponential(y_val, lambda_)[0]
         ax.plot([k, x_val], [y_val, y_val], color=dataset_line_colors[0], linewidth=1.0, linestyle='--', alpha=0.6)
-    
+
     ax.scatter(
         xticks,
         yticks,
         s=75,
-        # c=tick_colors,
         c=dataset_line_colors[0],
         marker='o',
         edgecolor='white',
@@ -160,8 +125,7 @@ def plot_cdf_inv(ax):
         zorder=10
     )
 
-    handles, labels = ax.get_legend_handles_labels() # get all legend items
-
+    handles, labels = ax.get_legend_handles_labels()
     ax.legend(
         handles,
         labels,
@@ -172,11 +136,11 @@ def plot_cdf_inv(ax):
         fontsize='large'
     )
 
-    plt.savefig("output/cdf_inv.pdf")
+    plt.savefig("output/cdf_inv_exp.pdf")
     plt.show()
 
 plt.rcParams.update({
-    'font.family': 'Courier New',  # monospace font
+    'font.family': 'Courier New',
     'font.size': 20,
     'axes.titlesize': 20,
     'axes.labelsize': 20,
@@ -187,7 +151,4 @@ plt.rcParams.update({
 })
 
 fig, ax = plt.subplots(figsize=(10, 10))
-
 plot_cdf_inv(ax)
-# ax.plot(xs, ys, linewidth = 2.6, color = dataset_line_colors[2])
-# ax.plot(xs, ys_poly_pred, linewidth = 2.6, color = regression_color, linestyle='--')

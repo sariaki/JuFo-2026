@@ -315,11 +315,11 @@ Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich
 Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
 \subsection{Algorithmus}
-Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten mit dieser Zufallsvariable die Wahrscheinlichkeitswerte bereits erkennen lassen (vgl. \cref{ex:gleich}).
+Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten  ohne Transformationen ($F(X)=X$) mit dieser Zufallsvariable die Wahrscheinlichkeitswerte direkt herauslesen lassen (vgl. \cref{ex:gleich}).
 \begin{wrapfigure}{r}{0pt}
     \centering
-    \includegraphics[width=0.4\textwidth]{img/cdf_inv}
-    \caption{Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion $B_n^{-1}(y_i)$, einem x-Wert zugeordnet. }
+    \includegraphics[width=0.4\textwidth]{img/cdf_inv_exp}
+    \caption{\centering Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion der Exponentialverteilung $F^{-1}(x)$, einem x-Wert zugeordnet. Wie bei einer Exponentialverteilung sammeln sich hierdurch die $x=F^{-1}(x)$-Werte um 0.}
     \label{fig:cdfInv}
 \end{wrapfigure}
 Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
@@ -332,7 +332,7 @@ Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate 
     \label{alg:probOpaque}
     \begin{algorithmic}[1]
     \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{p}$ (Probability of generated predicate being true), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
-    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{StepCount} \in \mathbb{N}$}
+    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{Threshold} \in \mathbb{N}$}
     \For{$Function \; \Var{F} \in \Var{Module}$}
         \If{\Call{ShouldObfuscate}{$\Var{F}$}}
             \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
@@ -368,7 +368,7 @@ Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, 
 \begin{equation}
 	\gamma_{\alpha,r}(x) \;=\; \frac{\alpha^r}{\Gamma(r)}x^{r-1}e^{-\alpha x}, x > 0.
 \end{equation}
-Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste. 
+Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste \footnote{Die Faktoren werden im Vorhinein zur Kompillationszeit miteinander multipliziert}. 
 \textcolor{red}{Der Nachteil hiervon ist, dass ...}
 
 \paragraph{Generierung über zufälliges Polynom}
@@ -411,10 +411,11 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 	\label{fig:bernstein}
 \end{wrapfigure}
 
-Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
+%Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
+Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. \textcolor{red}{TODO: kann man beweisen, dass das Newtonverfahren hier immer numerisch stabil ist?}
 \begin{algorithm}[!htb] 
-	\caption{Berechnung der inversen kumulativen Verteilungsfunktion (PPF) über Newton–Raphson}
+	\caption{Berechnung der inversen kumulativen Verteilungsfunktion über das Newton-Raphson-Verfahren }
 	\label{alg:invCumSum}
 	\begin{algorithmic}[1]
 		\Require $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift/stretch), $\Var{Precision}$ (determines precision of Bernstein evaluation) %\textbf{as hardcoded constants}
@@ -491,7 +492,7 @@ Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch z
 
 Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering 
 	
 	\begin{minipage}[c]{0.36\textwidth}
@@ -591,7 +592,7 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
 Folgende Programme wurden obfuskiert: \textcolor{red}{TODO: ...}
 Folgende symbolische Ausführungsengines wurden verwendet: \textcolor{red}{TODO: ...}
 Alle Experimente wurden mit Ubuntu 24.04.3 und einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU ausgeführt.
-Alle Programme wurden mit clang 18.0.0 kompilliert mit Optimierungslevel \texttt{-O3}.
+Alle Programme wurden mit clang 18.0.0 und Optimierungslevel \texttt{-O3} kompilliert.
 
 \subsection{Evaluierung}
 
