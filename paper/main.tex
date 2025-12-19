@@ -118,7 +118,7 @@ Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren 
 
 Obfuskation zielt darauf ab, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}. Näheres hierzu folgt in \cref{sec:kriterien}.
 
-Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
+Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. % Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
 
@@ -319,7 +319,7 @@ Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsv
 \begin{wrapfigure}{r}{0pt}
     \centering
     \includegraphics[width=0.4\textwidth]{img/cdf_inv_exp}
-    \caption{\centering Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion der Exponentialverteilung $F^{-1}(x)$, einem x-Wert zugeordnet. Wie bei einer Exponentialverteilung sammeln sich hierdurch die $x=F^{-1}(x)$-Werte um 0.}
+    \caption{\centering Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion der Exponentialverteilung $F^{-1}(x)$, einem $x$-Wert zugeordnet. Wie bei einer Exponentialverteilung sammeln sich hierdurch die $x=F^{-1}(x)$-Werte um 0.}
     \label{fig:cdfInv}
 \end{wrapfigure}
 Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
@@ -591,7 +591,7 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
 
 Folgende Programme wurden obfuskiert: \textcolor{red}{TODO: ...}
 Folgende symbolische Ausführungsengines wurden verwendet: \textcolor{red}{TODO: ...}
-Alle Experimente wurden mit Ubuntu 24.04.3 und einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU ausgeführt.
+Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16 und einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU ausgeführt.
 Alle Programme wurden mit clang 18.0.0 und Optimierungslevel \texttt{-O3} kompilliert.
 
 \subsection{Evaluierung}
