@@ -113,12 +113,12 @@ Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kom
 Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
 \begin{definition}[Obfuskation]
 	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation $\mathcal{T}$ eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
-	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist. 
+	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist.  \textcolor{red}{TODO: Barak et al. nutzen!}
 \end{definition}
 
 Obfuskation zielt darauf ab, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}. Näheres hierzu folgt in \cref{sec:kriterien}.
 
-Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. % Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
+Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
 
@@ -278,7 +278,7 @@ Nutzt man einen symbolischen Ausführungsengine, um zu prüfen, ob der vorliegen
 
 Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikate zu bilden, welche für alle Werte ihrer Parameter \emph{wahr} bzw. \emph{falsch} sind, werden Prädikate erzeugt, deren gewünschter Wert so wahrscheinlich ist, dass das Gegenteil praktisch nie auftritt.
 \begin{definition}[Probabilistische opake Prädikate] \label{def:probOpaque} \label{def:konstruktionsschema}
-	Sei $\mathcal{O}_p : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}_p(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. \textcolor{red}{TODO: formeller}
+	Sei $\mathcal{O}_p : \Phi \rightarrow \{0, 1\}$ eine Abbildung einer Variable $\phi\in \Phi$ zu einem Prädikat. Das Prädikat $\mathcal{O}_p(\phi)$ ist probabilistische opak, wenn der Fall $A\in \{0, 1\}$ mit einer so hohen Wahrscheinlichkeit eintritt, dass der Fall $\overline{A}$ vernachlässigbar ist. \textcolor{red}{TODO: formeller mit $\epsilon$ wie Barak et al.}
 \end{definition}
 
 \begin{definition}
@@ -298,7 +298,7 @@ Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikat
 \end{definition}
 
 \begin{example} \label{ex:gleich}
-	Das wahrscheinlich einfachste probabilistische opake Prädikat ist $\mathcal{O}_p(\phi) = \left[\Call{Uniform}{0,1} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
+	Ein einfaches probabilistisches opakes Prädikat ist $\mathcal{O}_p(\phi) = \left[\Call{Uniform}{0,1} \leq 1-10^{-2} \right]$. Die Wahrscheinlichkeit, dass dieses Prädikat wahr ist, beträgt $1-10^{-2}=0,99\%$.
 \end{example}
 
 \begin{example}
@@ -591,7 +591,7 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
 
 Für den Evaluationsprozess wurde gemäß \cite{jinFrameworkQuantifyQuality2024} vorgegangen.
 %Folgende Programme wurden entsprechend obfuskiert: \textcolor{red}{TODO: obfuscator-benchmarks, Paper mit GNU core utilities und NIST Juliet}
-Es wurden dabei die Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{https://github.com/tum-i4/obfuscation-benchmarks}, die GNU Core Utilities sowie ausgewählte Programme aus der NIST Juliet Test Suite v.1.3 \cite{NISTJuliet} verwendet.
+Es wurden dabei die Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{https://github.com/tum-i4/obfuscation-benchmarks} sowie die GNU Core Utilities verwendet. % sowie ausgewählte Programme aus der NIST Juliet Test Suite v.1.3 \cite{NISTJuliet}
 
 Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
 
