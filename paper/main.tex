@@ -504,7 +504,7 @@ OPT_LVL=O0
 FILENAME="hello_world"
 PASS_PLUGIN_DIR="Obfuscator.so"
 
-clang -fno-legacy-pass-manager \
+clang -$OPT_LVL \
 	-fpass-plugin=$PASS_PLUGIN_DIR \
 	${FILENAME}.c \
 	-o $FILENAME

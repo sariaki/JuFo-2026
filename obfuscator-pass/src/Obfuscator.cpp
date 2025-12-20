@@ -4,6 +4,7 @@
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/InstIterator.h>
+#include <llvm/IR/InlineAsm.h>
 #include <llvm/Pass.h>
 #include <llvm/IR/PassManager.h>
 #include <llvm/Passes/PassBuilder.h>
@@ -65,12 +66,21 @@ namespace
                
                 // TODO: Multiple Methods for getting randomness
 
-                // Get Parameter to create a symbolic variable for the solver
+                // Get parameter to create a symbolic variable for the solver
                 if (F.arg_empty())
                     continue;
 
+                Value* Parameter = &*F.arg_begin();
+
+                // Tell LLVM that we might modify the value in a way it can't predict
+                // so that it doesn't perform constant folding
+                Type* Ty = Parameter->getType();
+                // "r" means use a register, "0" means the output is the same as input 0
+                InlineAsm* IA = InlineAsm::get(FunctionType::get(Ty, {Ty}, false), "", "=r, ~{memory},~{dirflag},~{fpsr},~{flags}", true);
+                Value* VolatileParameter = IRB.CreateCall(IA, {Parameter});
+
                 // Cast the variable to a double
-                const auto DoubleCallParameter = Utils::CastIRValueToDouble(&*F.arg_begin(), IRB);
+                const auto DoubleCallParameter = Utils::CastIRValueToDouble(VolatileParameter, IRB);
 
                 // Make variable lie in [0;1]
                 // We do this this way because LLVM *somehow* messes up if we perform a division with IRB.CreateFDiv in the IR
@@ -143,7 +153,14 @@ namespace
 
                 IRB.SetInsertPoint(FalseBB);
                 Utils::PrintfIR(M, IRB, "FalseBB says hi\n");
-                IRB.CreateUnreachable(); // TODO
+                // IRB.CreateUnreachable(); // TODO
+                // Function *Trap = Intrinsic::getDeclaration(&M, Intrinsic::trap);
+                // IRB.CreateCall(Trap);
+                // IRB.CreateBr(FalseBB);
+                if (F.getReturnType()->isVoidTy()) 
+                    IRB.CreateRetVoid();
+                else 
+                    IRB.CreateRet(Constant::getNullValue(F.getReturnType()));
             }
 
             return PreservedAnalyses::all();
@@ -160,6 +177,7 @@ extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo
         LLVM_PLUGIN_API_VERSION, "ProbabilisticOpaquePredicates", "v0.1", 
         [](PassBuilder& PB)
         {
+            // For opt -passes=PASS_NAME
             PB.registerPipelineParsingCallback([](StringRef Name, ModulePassManager& MPM, ...)
             {
                 if (Name == PASS_NAME)
@@ -168,6 +186,13 @@ extern "C" LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo
                     return true;
                 }
                 return false;
+            });
+
+            // For clang -fpass-plugin
+            // This registers the pass to run at the start of the pipeline.
+            PB.registerPipelineStartEPCallback([](ModulePassManager &MPM, OptimizationLevel Level) 
+            {
+                MPM.addPass(ProbabilisticOpaquePredicatesPass());
             });
         }
     };

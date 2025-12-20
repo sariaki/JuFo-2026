@@ -1,10 +1,10 @@
 #!/bin/bash
 
-OPT_LVL=O0
+OPT_LVL=O1
 
 # Compile source to bitcode using clang-18 (matching opt version)
-clang-18 -g -$OPT_LVL -S -emit-llvm ./example.c -o example.ll
-clang-18 -g -$OPT_LVL -emit-llvm -c example.c -o example.bc
+clang-18 -g -O0 -S -emit-llvm ./example.c -o example.ll
+clang-18 -g -O0 -emit-llvm -c example.c -o example.bc
 
 # Run the pass using opt-18
 /usr/bin/opt-18 \
