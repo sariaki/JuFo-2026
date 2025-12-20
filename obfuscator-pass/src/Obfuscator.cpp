@@ -19,6 +19,11 @@
 using namespace llvm;
 
 constexpr const char* PASS_NAME = "POP";
+static cl::opt<int> POPProbability(
+    "pop-probability",
+    cl::desc("Probability of applying the obfuscation (0-100)"), 
+    cl::init(50)
+);
 
 namespace
 {
@@ -37,8 +42,15 @@ namespace
                 // Check if our function is defined and not just declared
                 if (F.isDeclaration()) continue;
 
-                // Check if function has required annotation
-                if (!Utils::HasAnnotation(&F, PASS_NAME)) continue;
+                // Check if function was inserted by us
+                if (F.getName().contains("sample_bernstein_")) continue; 
+
+                // Randomly decide if we should apply the obfuscation
+                if (std::uniform_int_distribution(0, 99)(Rng) > POPProbability)
+                {
+                    // If the function is annotated, we have to apply the obfuscation anyway
+                    if (!Utils::HasAnnotation(&F, PASS_NAME)) continue;
+                }
 
                 errs() << "Running on " << demangle(F.getName()) << "\n";
 

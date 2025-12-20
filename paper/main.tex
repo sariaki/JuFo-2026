@@ -503,9 +503,12 @@ Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pse
 OPT_LVL=O0
 FILENAME="hello_world"
 PASS_PLUGIN_DIR="Obfuscator.so"
+PROBABILITY=50
 
 clang -$OPT_LVL \
 	-fpass-plugin=$PASS_PLUGIN_DIR \
+	-Xclang -load -Xclang $PASS_PLUGIN_DIR \
+	-mllvm -pop-probability=$PROBABILITY \
 	${FILENAME}.c \
 	-o $FILENAME
 

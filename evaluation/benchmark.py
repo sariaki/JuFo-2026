@@ -3,6 +3,7 @@ import subprocess
 import sys
 from pathlib import Path
 from termcolor import colored
+import time
 
 # Configuration
 BENCHMARK_DIR = Path("/home/paul/Documents/JuFo-2026/evaluation/obfuscation-benchmarks")
@@ -17,42 +18,29 @@ LLVM_DIS = "llvm-dis-18"
 def obfuscate_file(source_file: Path, output_dir: Path) -> bool:
     try:
         # Generate output filenames
-        bc_file = output_dir / f"{source_file.stem}.bc"
-        obf_bc_file = output_dir / f"{source_file.stem}_obf.bc"
-        obf_ll_file = output_dir / f"{source_file.stem}_obf.ll"
         output_exe = output_dir / source_file.stem
 
-        # Compile to bitcode
-        # This needs to be O0 to prevent LLVM optimizations from interfering
-        # We can always optimize later
-        # print(f"Compiling {source_file.name} to bitcode...")
+        # Directly compile and obfuscate in one step
+        # print(f"Obfuscating and compiling {source_file.name} to executable...")
+        t = time.time_ns()
         subprocess.run(
-            [CLANG, "-g", f"-O0", "-emit-llvm", "-c", str(source_file), "-o", str(bc_file)],
+            [
+                CLANG,
+                f"-{OPT_LVL}",
+                "-fpass-plugin=" + str(OBFUSCATOR_SO),
+                str(source_file),
+                "-o",
+                str(output_exe)
+            ],
             check=True
         )
+        t = time.time_ns() - t
+        print(colored(f"✓ {source_file.name} obfuscated and compiled in {t / 1_000_000} ms", "green"))
 
-        # Run obfuscation pass
-        # print(f"Running obfuscation pass on {source_file.name}...")
-        subprocess.run(
-            [OPT, "-load-pass-plugin", str(OBFUSCATOR_SO), "-passes=POP", str(bc_file), "-o", str(obf_bc_file)],
-            check=True
-        )
+        # Measure size of output executable
+        size_bytes = output_exe.stat().st_size
+        print(colored(f"  Output executable size: {size_bytes} bytes\n", "cyan"))
 
-        # Disassemble
-        # print(f"Disassembling {source_file.name}...")
-        subprocess.run(
-            [LLVM_DIS, str(obf_bc_file), "-o", str(obf_ll_file)],
-            check=True
-        )
-
-        # Compile to executable
-        # print(f"Compiling to executable...")
-        subprocess.run(
-            [CLANG, f"-{OPT_LVL}", "-g", str(obf_bc_file), "-o", str(output_exe)],
-            check=True
-        )
-
-        # print(f"✓ Successfully obfuscated {source_file.name}\n")
         return True
     except subprocess.CalledProcessError as e:
         print(colored(f"✗ Error processing {source_file.name}: {e}\n", "red"))
