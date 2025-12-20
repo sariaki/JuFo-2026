@@ -589,10 +589,15 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
     \end{tabular}
 \end{center}
 
-Folgende Programme wurden obfuskiert: \textcolor{red}{TODO: ...}
-Folgende symbolische Ausführungsengines wurden verwendet: \textcolor{red}{TODO: ...}
-Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16 und einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU ausgeführt.
-Alle Programme wurden mit clang 18.0.0 und Optimierungslevel \texttt{-O3} kompilliert.
+Für den Evaluationsprozess wurde gemäß \cite{jinFrameworkQuantifyQuality2024} vorgegangen.
+%Folgende Programme wurden entsprechend obfuskiert: \textcolor{red}{TODO: obfuscator-benchmarks, Paper mit GNU core utilities und NIST Juliet}
+Es wurden dabei die Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{https://github.com/tum-i4/obfuscation-benchmarks}, die GNU Core Utilities sowie ausgewählte Programme aus der NIST Juliet Test Suite v.1.3 \cite{NISTJuliet} verwendet.
+
+Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
+
+Folgende symbolische Ausführungsengines wurden verwendet: Angr, Triton, Miasm \textcolor{red}{TODO: ...}
+
+Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU und $16$Gb DDR4 RAM ausgeführt.
 
 \subsection{Evaluierung}
 
