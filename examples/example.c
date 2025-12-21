@@ -14,7 +14,7 @@ OBFUSCATE void foo(int x)
   //__asm__("int3");
 } 
 
-OBFUSCATE int bar(int x)
+int bar(int x)
 {
   int y = x + 1;
   printf("bar %i", y);

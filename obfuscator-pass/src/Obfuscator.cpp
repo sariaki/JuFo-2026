@@ -127,6 +127,10 @@ namespace
                     
                     // Newton Step: x = x - f(x) / f'(x)
                     Threshold -= OffsetY / CurrentSlope;
+
+                    // Clamp to domain to avoid chaotic behavior
+                    if (Threshold < DomainStart) Threshold = DomainStart;
+                    if (Threshold > DomainEnd)   Threshold = DomainEnd;
                 }
                 
                 errs() << "Threshold: " << Threshold << "\n";
@@ -165,10 +169,8 @@ namespace
 
                 IRB.SetInsertPoint(FalseBB);
                 Utils::PrintfIR(M, IRB, "FalseBB says hi\n");
-                // IRB.CreateUnreachable(); // TODO
-                // Function *Trap = Intrinsic::getDeclaration(&M, Intrinsic::trap);
-                // IRB.CreateCall(Trap);
-                // IRB.CreateBr(FalseBB);
+
+                // TODO: Add junkcode
                 if (F.getReturnType()->isVoidTy()) 
                     IRB.CreateRetVoid();
                 else 

@@ -376,7 +376,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
 
     // Construct random Bernsteinpolynomial B(Degree, a * (x - k)) s.t. it is
     // monotonically increasing and goes through (k | 0) && (k + 1/a | 1)
-    const int Degree = 3; //std::uniform_int_distribution(3, 50)(Rng);
+    const int Degree = std::uniform_int_distribution(3, 20)(Rng);
     const int n = Degree + 1;
     auto Bernsteinpolynomial = MonotonicBernstein(Degree, Rng, VerticalStretch, HorizontalShift);
     
@@ -416,6 +416,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     Value* ConstOne = ConstantFP::get(DoubleTy, 1.0);
     Value* ConstZero = ConstantFP::get(DoubleTy, 0.0);
     Value* ConstStartGuess = ConstantFP::get(DoubleTy, InitialGuess);
+    Value* ConstDomainEnd = ConstantFP::get(DoubleTy, DomainEnd);
 
     IRB.CreateBr(LoopBB);
 
@@ -499,9 +500,18 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     Value* Step = IRB.CreateFDiv(OffsetY, Slope);
     Value* NextX = IRB.CreateFSub(CurrentX, Step);
 
+    // Clamp Max
+    // if (NextX > DomainEnd) NextX = DomainEnd;
+    Value* TooHigh = IRB.CreateFCmpOGT(NextX, ConstDomainEnd);
+    Value* ClampedHigh = IRB.CreateSelect(TooHigh, ConstDomainEnd, NextX);
+
+    // Clamp Min: if (NextX < DomainStart) NextX = DomainStart;
+    Value* TooLow = IRB.CreateFCmpOLT(ClampedHigh, ConstHorizShift);
+    Value* ClampedFinal = IRB.CreateSelect(TooLow, ConstHorizShift, ClampedHigh);
+
     // Update Loop Variables
     Value* NextIter = IRB.CreateAdd(IterCounter, IRB.getInt32(1));
-    CurrentX->addIncoming(NextX, LoopBB);
+    CurrentX->addIncoming(ClampedFinal, LoopBB);
     IterCounter->addIncoming(NextIter, LoopBB);
 
     // Exit after 16 iterations

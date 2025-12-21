@@ -315,6 +315,37 @@ Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich
 Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
 \subsection{Algorithmus}
+\begin{algorithm}[!h] 
+	\caption{Generierung probabilistischer opaker Prädikate}
+	\label{alg:probOpaque}
+	\begin{algorithmic}[1]
+		\Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{p}$ (Probability of generated predicate being true), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
+		\Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{Threshold} \in \mathbb{N}$}
+		\For{$Function \; \Var{F} \in \Var{Module}$}
+		\If{\Call{ShouldObfuscate}{$\Var{F}$}}
+		\State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
+		
+		\State $\Var{U} \gets \Call{BB.InsertSymbolicVariable}{$$}$ \Comment{Generate a random variable $\in [0;1]$.}
+		\State $\Call{BB.InsertCallInverseCDF}{\Var{U}}$
+		
+		\State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$ \Comment{Compute threshold using the Newton–Raphson method.}
+		\For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
+		\State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - \Var{p}$
+		\State $\Var{Slope} \gets \Call{CDF.EvaluateDerivativeAt}{\Var{Threshold}}$ \Comment{Evaluate PDF.}
+		
+		\State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
+		\EndFor
+		
+		\State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
+		\State $\Var{FalseBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
+		\State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
+		\State $\Call{FalseBB.InsertJunkCode}{$$}$
+		\EndIf
+		\EndFor
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
 Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten  ohne Transformationen ($F(X)=X$) mit dieser Zufallsvariable die Wahrscheinlichkeitswerte direkt herauslesen lassen (vgl. \cref{ex:gleich}).
 \begin{wrapfigure}{r}{0pt}
     \centering
@@ -327,36 +358,6 @@ Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, 
 Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 
 Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschreiben.
-\begin{algorithm}[!t] 
-    \caption{Generierung probabilistischer opaker Prädikate}
-    \label{alg:probOpaque}
-    \begin{algorithmic}[1]
-    \Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{p}$ (Probability of generated predicate being true), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
-    \Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{Threshold} \in \mathbb{N}$}
-    \For{$Function \; \Var{F} \in \Var{Module}$}
-        \If{\Call{ShouldObfuscate}{$\Var{F}$}}
-            \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
-            
-    		\State $\Var{U} \gets \Call{BB.InsertSymbolicVariable}{$$}$ \Comment{Generate a random variable $\in [0;1]$.}
-            \State $\Call{BB.InsertCallInverseCDF}{\Var{U}}$
-            
-            \State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$ \Comment{Compute threshold using the Newton–Raphson method.}
-            \For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
-            	\State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - \Var{p}$
-            	\State $\Var{Slope} \gets \Call{CDF.EvaluateDerivativeAt}{\Var{Threshold}}$ \Comment{Evaluate PDF.}
-            	
-                \State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
-            \EndFor
-            
-            \State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
-            \State $\Var{FalseBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
-            \State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
-            \State $\Call{FalseBB.InsertJunkCode}{$$}$
-    	\EndIf
-    \EndFor
-    \EndProcedure
-    \end{algorithmic}
-\end{algorithm}
 
 \subsection{Wahrscheinlichkeitsverteilungsgenerierung} \label{sec:genProb}
 Um den Ansatz gegen Pattern Matching resistent zu machen, soll dieser möglichst generalisiert werden. Anstatt sich auf eine Wahrscheinlichkeitsdichtefunktion bzw. Umkehrfunktion der kumulativen Verteilungsfunktion zu beschränken, soll für jedes probabilistisches opakes Prädikat eine neue Wahrscheinlichkeitsverteilung verwendet werden.
@@ -413,8 +414,8 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 %Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
-Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. \textcolor{red}{TODO: kann man beweisen, dass das Newtonverfahren hier immer numerisch stabil ist?}
-\begin{algorithm}[!htb] 
+Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. \textcolor{red}{TODO: Auf chaotisches Verhalten/Divergenz eingehen!}
+\begin{algorithm}[!h] 
 	\caption{Berechnung der inversen kumulativen Verteilungsfunktion über das Newton-Raphson-Verfahren }
 	\label{alg:invCumSum}
 	\begin{algorithmic}[1]
@@ -503,12 +504,12 @@ Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pse
 OPT_LVL=O0
 FILENAME="hello_world"
 PASS_PLUGIN_DIR="Obfuscator.so"
-PROBABILITY=50
+PROB=50
 
 clang -$OPT_LVL \
 	-fpass-plugin=$PASS_PLUGIN_DIR \
-	-Xclang -load -Xclang $PASS_PLUGIN_DIR \
-	-mllvm -pop-probability=$PROBABILITY \
+	-Xclang -load $PASS_PLUGIN_DIR \
+	-mllvm -pop-probability=$PROB \
 	${FILENAME}.c \
 	-o $FILENAME
 
@@ -561,11 +562,11 @@ void __cdecl foo(int x)
 	if ( v2 >= 19.80279674504742 )
 	{
 		// Junkcode
-		__debugbreak() // This Basic Block is never reached.
+		return; // This Basic Block is never reached.
 	}
 	printf("foo %i\n", x); // This Basic Block will always be executed.
 }			\end{lstlisting}
-			\caption{Dieselbe Funktion aber mit PoP obfuskiert. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
+			\caption{Dieselbe Funktion aber mit PoP (Bernsteinpolynomgrad $n=3 $) obfuskiert. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
 			\label{fig:doneObf}
 		\end{subfigure}
 	\end{minipage}
@@ -592,9 +593,8 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
     \end{tabular}
 \end{center}
 
-Für den Evaluationsprozess wurde gemäß \cite{jinFrameworkQuantifyQuality2024} vorgegangen.
-%Folgende Programme wurden entsprechend obfuskiert: \textcolor{red}{TODO: obfuscator-benchmarks, Paper mit GNU core utilities und NIST Juliet}
-Es wurden dabei die Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{https://github.com/tum-i4/obfuscation-benchmarks} sowie die GNU Core Utilities verwendet. % sowie ausgewählte Programme aus der NIST Juliet Test Suite v.1.3 \cite{NISTJuliet}
+Für den Evaluationsprozess wurde gemäß \cite{jinFrameworkQuantifyQuality2024} vorgegangen.\textcolor{red}{TODO: updaten oder nicht erwähnen!}
+Es wurden dabei die Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}} sowie die GNU Core Utilities verwendet. % sowie ausgewählte Programme aus der NIST Juliet Test Suite v.1.3 \cite{NISTJuliet}
 
 Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
 
@@ -618,7 +618,8 @@ Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer In
 
 \section{Ergebnisdiskussion}
 \section{Fazit und Ausblick} \label{sec:fazit}
-%\textcolor{red}{TODO: Anwendung auf Ausdrücke}
+\textcolor{red}{Verbesserung durch Anwendung anderer Obfuscationsmethoden (z.B. MBAs)} \\
+\textcolor{red}{später: Anwendung auf Ausdrücke}
 
 \newpage
 \pagenumbering{Alph}
