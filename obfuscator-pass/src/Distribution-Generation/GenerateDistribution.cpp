@@ -519,6 +519,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     IRB.CreateCondBr(Done, ExitBB, LoopBB);
 
     IRB.SetInsertPoint(ExitBB);
+    Utils::PrintfIR(M, IRB, "NextX: %f.\n", NextX);
     IRB.CreateRet(NextX);
 
     return { SamplerCallee, Bernsteinpolynomial, DomainStart, DomainEnd };

@@ -22,7 +22,7 @@ constexpr const char* PASS_NAME = "POP";
 static cl::opt<int> POPProbability(
     "pop-probability",
     cl::desc("Probability of applying the obfuscation (0-100)"), 
-    cl::init(50)
+    cl::init(0)
 );
 
 namespace
@@ -86,10 +86,14 @@ namespace
 
                 // Tell LLVM that we might modify the value in a way it can't predict
                 // so that it doesn't perform constant folding
-                Type* Ty = Parameter->getType();
-                // "r" means use a register, "0" means the output is the same as input 0
-                InlineAsm* IA = InlineAsm::get(FunctionType::get(Ty, {Ty}, false), "", "=r, ~{memory},~{dirflag},~{fpsr},~{flags}", true);
-                Value* VolatileParameter = IRB.CreateCall(IA, {Parameter});
+                // Create a stack slot allocation for double
+                AllocaInst* Alloc = IRB.CreateAlloca(Parameter->getType());
+
+                // Volatile store parameter into it
+                IRB.CreateStore(Parameter, Alloc, true);
+
+                // Volatile Load it back
+                Value* VolatileParameter = IRB.CreateLoad(Parameter->getType(), Alloc, /*isVolatile=*/true);
 
                 // Cast the variable to a double
                 const auto DoubleCallParameter = Utils::CastIRValueToDouble(VolatileParameter, IRB);
@@ -110,7 +114,7 @@ namespace
                 errs() << "Start: " << DomainStart << " End: " << DomainEnd << "\n";
 
                 // Choose whether the predicate should always be true or false
-                const bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
+                bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
 
                 // Compute needed threshold for Bernsteinpolynomial
                 double Threshold = Bernsteinpolynomial.GetHorizontalShift() + (0.5 / Bernsteinpolynomial.GetHorizontalStretch());
@@ -132,7 +136,7 @@ namespace
                     if (Threshold < DomainStart) Threshold = DomainStart;
                     if (Threshold > DomainEnd)   Threshold = DomainEnd;
                 }
-                
+
                 errs() << "Threshold: " << Threshold << "\n";
                 errs() << "PredicateType: " << PredicateType << "\n";
 

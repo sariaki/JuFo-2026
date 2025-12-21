@@ -4,9 +4,10 @@
 
 #define OBFUSCATE __attribute__((annotate("POP")))
 
-OBFUSCATE void foo(int x)
+OBFUSCATE void foo(double x)
 {
-  printf("foo %i\n", x);
+  // printf("foo %f\n", x);
+  printf("foo\n");
   volatile int a = 1;
   volatile int b = 2;
   volatile int c = a % b;
@@ -17,12 +18,12 @@ OBFUSCATE void foo(int x)
 int bar(int x)
 {
   int y = x + 1;
-  printf("bar %i", y);
+  printf("bar %i\n", y);
   return y;
 }
 
 int main()
 {
-  foo(123123);
+  foo(DBL_MAX);
   return 0;
 }
