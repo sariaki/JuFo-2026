@@ -22,18 +22,22 @@ const std::vector<double>& MonotonicBernstein::GetRandomCoefficients()
 {
     // Guarantee that the polynomial goes through (0|0) && (0|1)
     m_Coefficients.push_back(0.0);
+    errs() << "m_Coefficients[0]: " << m_Coefficients[0] << "\n";
 
     // Generate coefficients randomly, 
-    // guaranteeing that the polynomial is monotonically increasing:
-    // c_0 <= c_1 <= ... <= c_n
+    // guaranteeing that the polynomial is strictly monotonically increasing:
+    // c_0 < c_1 < ... < c_n
+    // If we instead guarantee monotonicity (<=), we could end up with flat areas
+    // which would break the Newton-Raphson method (division by zero)
     for (int i = 1; i < m_Degree; i++)
     {
-        m_Coefficients.push_back(m_Coefficients[i - 1] + std::uniform_real_distribution(0.0, 
+        m_Coefficients.push_back(m_Coefficients[i - 1] + std::uniform_real_distribution(1e-6, // avoid zero-difference
             1.0 / static_cast<double>(m_Degree))(m_Rng));
         errs() << "m_Coefficients[i]: " << m_Coefficients[i] << "\n";
     }
 
     m_Coefficients.push_back(1.0);
+    errs() << "m_Coefficients[i]: " << m_Coefficients.back() << "\n";
 
     for (int i = 0; i < m_Degree; i++) 
         m_DerivativeCoefficients.push_back((m_Coefficients[i + 1] - m_Coefficients[i]) * m_Degree);
