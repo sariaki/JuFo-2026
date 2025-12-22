@@ -117,10 +117,12 @@ def obfuscate_file(source_file: Path, output_dir: Path) -> bool:
             [
                 CLANG,
                 f"-{OPT_LVL}",
+                # both ways to load plugin (keep both if your shell used both)
                 "-fpass-plugin=" + str(OBFUSCATOR_SO),
+                "-Xclang", "-load", "-Xclang", str(OBFUSCATOR_SO),
+                "-mllvm", "-pop-probability=100",
                 str(source_file),
-                "-o",
-                str(output_obf_exe)
+                "-o", str(output_obf_exe)
             ],
             check=True,
             stdout=subprocess.DEVNULL,
@@ -414,7 +416,7 @@ def main():
     ax.bar(x + width/2, obf_vals, width, label='Obfuskiert', color=dataset_line_colors[0])
 
     ax.set_ylabel('Häufigkeit')
-    ax.set_title('Top 10 Mnemonics vor/nach der Obfuskation')
+    ax.set_title('Häufigsten Mnemonics vor/nach der Obfuskation')
     ax.set_xticks(x)
     ax.set_xticklabels(common_opcodes)
     ax.legend()
