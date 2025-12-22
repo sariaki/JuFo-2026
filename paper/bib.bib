@@ -198,7 +198,7 @@
   doi = {10.1109/dsn.2018.00073},
   url = {https://ieeexplore.ieee.org/document/8416525/},
   urldate = {2025-07-17},
-  abstract = {Control-flow obfuscation increases program complexity by semantic-preserving transformation. Opaque predicates are essential gadgets to achieve such transformation. However, we observe that real-world opaque predicates are generally very simple and engage little security consideration. Recently, such insecure opaque predicates have been severely attacked by symbolic execution-based adversaries and jeopardize the security of control-flow obfuscation. This paper, therefore, proposes symbolic opaque predicates which can be resilient to symbolic execution-based adversaries. We design a general framework to compose such opaque predicates, which requires introducing challenging symbolic analysis problems (e.g., symbolic memory) in each opaque predicate. In this way, we may mislead symbolic execution engines into reaching false conclusions. We observe a novel bi-opaque property about symbolic opaque predicates, which can incur not only false negative issues but also false positive issues to attackers. To evaluate the efficacy of our idea, we have implemented a prototype obfuscation tool based on Obfuscator-LLVM and conduct experiments with real-world programs. Our evaluation results show that symbolic opaque predicates demonstrate excellent resilience to prevalent symbolic execution engines, such as BAP, Triton, and Angr. Moreover, although the costs of symbolic opaque predicates may vary for different problem settings, some predicates can be very efficient. Therefore, our framework is both secure and usable. Users can follow the framework to introduce symbolic opaque predicates into their obfuscation tools and made them more powerful.},
+  abstract = {Control-flow obfuscation increases program complexity by semantic-preserving transformation. Opaque predicates are essential gadgets to achieve such transformation. However, we observe that real-world opaque predicates are generally very simple and engage little security consideration. Recently, such insecure opaque predicates have been severely attacked by symbolic execution-based adversaries and jeopardize the security of control-flow obfuscation. This paper, therefore, proposes symbolic opaque predicates which can be resilient to symbolic execution-based adversaries. We design a general framework to compose such opaque predicates, which requires introducing challenging symbolic analysis problems (e.g., symbolic memory) in each opaque predicate. In this way, we may mislead symbolic execution engines into reaching false conclusions. We observe a novel bi-opaque property about symbolic opaque predicates, which can incur not only false negative issues but also false positive issues to attackers. To evaluate the efficacy of our idea, we have implemented a prototype obfuscation tool based on Obfuscator-LLVM and conduct experiments with real-world programs. Our evaluation results show that symbolic opaque predicates demonstrate excellent resilience to prevalent symbolic execution engines, such as BAP, Triton, and . Moreover, although the costs of symbolic opaque predicates may vary for different problem settings, some predicates can be very efficient. Therefore, our framework is both secure and usable. Users can follow the framework to introduce symbolic opaque predicates into their obfuscation tools and made them more powerful.},
   eventtitle = {2018 48th {{Annual IEEE}}/{{IFIP International Conference}} on {{Dependable Systems}} and {{Networks}} ({{DSN}})},
   langid = {english},
   keywords = {⭐wichtig,gelesen wichtig},
@@ -356,21 +356,21 @@
 	doi={10.1109/SYNASC.2008.36}
 }
 
-@article{jinFrameworkQuantifyQuality2024,
-	title = {A {{Framework}} to {{Quantify}} the {{Quality}} of {{Source Code Obfuscation}}},
-	author = {Jin, Hongjoo and Lee, Jiwon and Yang, Sumin and Kim, Kijoong and Lee, Dong Hoon},
-	date = {2024-06-10},
-	journaltitle = {Applied Sciences},
-	shortjournal = {Applied Sciences},
-	volume = {14},
-	number = {12},
-	pages = {5056},
-	issn = {2076-3417},
-	doi = {10.3390/app14125056},
-	url = {https://www.mdpi.com/2076-3417/14/12/5056},
-	urldate = {2025-12-19},
-	langid = {english},
-}
+%@article{jinFrameworkQuantifyQuality2024,
+%	title = {A {{Framework}} to {{Quantify}} the {{Quality}} of {{Source Code Obfuscation}}},
+%	author = {Jin, Hongjoo and Lee, Jiwon and Yang, Sumin and Kim, Kijoong and Lee, Dong Hoon},
+%	date = {2024-06-10},
+%	journaltitle = {Applied Sciences},
+%	shortjournal = {Applied Sciences},
+%	volume = {14},
+%	number = {12},
+%	pages = {5056},
+%	issn = {2076-3417},
+%	doi = {10.3390/app14125056},
+%	url = {https://www.mdpi.com/2076-3417/14/12/5056},
+%	urldate = {2025-12-19},
+%	langid = {english},
+%}
 
 @inproceedings{banescuCodeObfuscationSymbolic2016,
 	title = {Code Obfuscation against Symbolic Execution Attacks},
@@ -396,3 +396,31 @@
 %	doi = {https://doi.org/10.6028/NIST.TN.1995},
 %	language = {en},
 %}
+
+@article{blazytkoSyntiaSynthesizingSemanticsa,
+	title = {Syntia: {{Synthesizing}} the {{Semantics}} of {{Obfuscated Code}}},
+	author = {Blazytko, Tim and Contag, Moritz and Aschermann, Cornelius and Holz, Thorsten},
+	abstract = {Current state-of-the-art deobfuscation approaches operate on instruction traces and use a mixed approach of symbolic execution and taint analysis; two techniques that require precise analysis of the underlying code. However, recent research has shown that both techniques can easily be thwarted by specific transformations.},
+	langid = {english},
+}
+
+@misc{desclaux2018miasm,
+	author       = {F. Desclaux and C. Mougey},
+	title        = {Miasm2: Reverse engineering framework},
+	howpublished = {Slides, Black Hat / conference presentation},
+	month        = aug,
+	year         = {2018},
+	note         = {\url{https://i.blackhat.com/us-18/Wed-August-8/us-18-DesclauxMougey-Miasm-Reverse-Engineering-Framework.pdf}, accessed: <access-date>}
+}
+
+@inproceedings{SSTIC2015-Saudel-Salwan,
+	author    = {Saudel, Florent and Salwan, Jonathan},
+	title     = {Triton: A Dynamic Symbolic Execution Framework},
+	booktitle = {Symposium sur la s{\'{e}}curit{\'{e}} des technologies de l'information
+	et des communications},
+	series    = {SSTIC},
+	pages     = {31--54},
+	address   = {Rennes, France},
+	month     = jun,
+	year      = {2015},
+}

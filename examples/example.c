@@ -6,8 +6,8 @@
 
 OBFUSCATE void foo(double x)
 {
-  // printf("foo %f\n", x);
-  printf("foo\n");
+  printf("foo %f\n", x);
+  // printf("foo\n");
   volatile int a = 1;
   volatile int b = 2;
   volatile int c = a % b;
@@ -24,6 +24,6 @@ int bar(int x)
 
 int main()
 {
-  foo(DBL_MAX);
+  foo(3.141592653);
   return 0;
 }

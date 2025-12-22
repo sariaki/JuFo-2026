@@ -245,14 +245,14 @@ Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit.
     \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung \cite{xuManufacturingResilientBiOpaque2018} %\textcolor{red}{TODO: selbst machen}
     } 
 \end{wrapfigure}
-Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem Angreifermodell aufbauend auf \cite{xuManufacturingResilientBiOpaque2018} aus.
-Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen. Es sei dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm nur statisch analysieren. 
-Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
-Pattern matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
+Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem \emph{Man-at-the-End} (MATE) Angreifermodell aus, aufbauend auf \cite{xuManufacturingResilientBiOpaque2018, zobernigWhenAreOpaque2019}.
+Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen sowie volle Kontrolle über das Endsystem, auf dem sie ausgeführt werden. Es ist dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm statisch und dynamisch analysieren. Das Ziel des Angreifers ist dabei, ein Verständnis der obfuskierten Programmlogik zu gewinnen.
+%Der Angreifer kann das Programm nur statisch analysieren. Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
+Pattern Matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
 
 Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an den Constraint-Solver kann hierbei geprüft werden, ob ein Prädikat für alle Eingabewerte wahr ist. Ist dies der Fall, so handelt es sich um ein opakes Prädikat, welches gelöscht werden kann.
 
-Eine Härtung gegen weitere (dynamische) Analysemethoden des Angreifers wird in \cref{sec:fazit} diskutiert.
+Die Bedeutung weiterer dynamischer Analysemethoden wird in \cref{sec:fazit} diskutiert.
 
 \subsection{Probabilistische opake Prädikate} 
 Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
@@ -369,7 +369,7 @@ Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, 
 \begin{equation}
 	\gamma_{\alpha,r}(x) \;=\; \frac{\alpha^r}{\Gamma(r)}x^{r-1}e^{-\alpha x}, x > 0.
 \end{equation}
-Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern-Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste \footnote{Die Faktoren werden im Vorhinein zur Kompillationszeit miteinander multipliziert}. 
+Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste \footnote{Die Faktoren werden im Vorhinein zur Kompilationszeit miteinander multipliziert}. 
 \textcolor{red}{Der Nachteil hiervon ist, dass ...}
 
 \paragraph{Generierung über zufälliges Polynom}
@@ -469,7 +469,7 @@ Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vor
 
 Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand.
 
-Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden.
+Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
 
 \subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
@@ -493,6 +493,10 @@ Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch z
 
 Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
 
+\subsection{Füllcode}
+\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
+
+\subsection{Fallbeispiel}
 \begin{figure}[!h]
 	\centering 
 	
@@ -511,12 +515,10 @@ clang -$OPT_LVL \
 	-Xclang -load $PASS_PLUGIN_DIR \
 	-mllvm -pop-probability=$PROB \
 	${FILENAME}.c \
-	-o $FILENAME
-
-\end{lstlisting}
+	-o $FILENAME\end{lstlisting}
 			\caption{Bash-Skript zur Ausführung der implementierten Obfuskation auf C(++) Quellcode.}
-			\end{subfigure}
-
+		\end{subfigure}
+		
 		\vspace{1em}
 		
 		\begin{subfigure}[b]{\linewidth}
@@ -572,12 +574,9 @@ void __cdecl foo(int x)
 	\end{minipage}
 \end{figure}
 
-\subsection{Füllcode}
-\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
-
 \section{Evaluierung}
 \subsection{Vorgehen} \label{sec:kriterien}
-Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} gegenüber anderen (\textcolor{red}{...}) entschieden\label{par:metriken}:
+Für die Evaluierung wird gemäß der weitverbreiteten Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} vorgegangen\label{par:metriken}:
 
 \begin{center}
     \begin{tabular}{c|l}
@@ -593,24 +592,42 @@ Für die Evaluierung wurde sich aufgrund ihrer Verbreitung für die Kriterien vo
     \end{tabular}
 \end{center}
 
-Für den Evaluationsprozess wurde gemäß \cite{jinFrameworkQuantifyQuality2024} vorgegangen.\textcolor{red}{TODO: updaten oder nicht erwähnen!}
-Es wurden dabei die Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}} sowie die GNU Core Utilities verwendet. % sowie ausgewählte Programme aus der NIST Juliet Test Suite v.1.3 \cite{NISTJuliet}
+Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) sowie auf die GNU Core Utilities angewandt. Die Programme wurden gewählt, um repräsentativ typische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
 
 Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
 
-Folgende symbolische Ausführungsengines wurden verwendet: Angr, Triton, Miasm \textcolor{red}{TODO: ...}
+Folgende Angriffsmethoden werden betrachtet: 
+\begin{itemize}
+	\item Symbolische Ausführung mit Angr \cite{shoshitaishvili2016state} (v.9.2.189), Triton \cite{SSTIC2015-Saudel-Salwan} (v.1.0.0rc4) und Miasm \cite{desclaux2018miasm} (v.0.1.5)
 
+	\item Programmsynthese mittels Syntia \cite{blazytkoSyntiaSynthesizingSemanticsa} (commit 3602893) 
+
+	\item dynamische Analyse über mehrfache Ausführung obfuskierter Programme wie in \cite{zobernigWhenAreOpaque2019} beschrieben
+
+	\item Pattern Matching
+\end{itemize}
 Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU und $16$Gb DDR4 RAM ausgeführt.
 
 \subsection{Evaluierung}
 
-\paragraph{Stärke} \label{sec:stärke}
+\subsubsection{Kosten}
 
-\paragraph{Resilienz}
-´
-\paragraph{Kosten}
+\paragraph{Programmgröße}
+\paragraph{Geschwindigkeit}
+\paragraph{Arbeitsspeicheraufwand}
+\paragraph{Kompilationszeit}
 
-\paragraph{Tarnung}
+\subsubsection{Tarnung}
+
+\paragraph{Opcode Verteilung}
+\paragraph{Entropie}
+
+\subsubsection{Resilienz}
+
+\subsubsection{Stärke} \label{sec:stärke}
+
+\paragraph{Komplexität}
+\paragraph{Menschliche Analyse}
 
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
 
