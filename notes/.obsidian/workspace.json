@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eae7102b0e4e01a8",
+        "id": "3da4c089f9a17789",
         "type": "tabs",
         "children": [
           {
-            "id": "10fc9f7d77da13a0",
+            "id": "8c739b13d4ffca7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -169,8 +169,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "10fc9f7d77da13a0",
+  "active": "8c739b13d4ffca7f",
   "lastOpenFiles": [
+    "Gleichung.png",
     "EVALUIERUNG.md",
     "TODO Implementierung.md",
     "TODO Schreiben.md",
@@ -178,7 +179,6 @@
     "IDEE GEGEN PATTERN-MATCHING.md",
     "Methoden.md",
     "FRAGEN.md",
-    "Gleichung.png",
     "Hintergrund & Motivation.md",
     "Notizen.md",
     "gleichung.png",

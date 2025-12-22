@@ -1,7 +1,6 @@
 import math
 import numpy as np
 np.math = math
-from scipy.interpolate import BPoly, PPoly
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import os

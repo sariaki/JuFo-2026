@@ -4,3 +4,6 @@
 [submodule "evaluation/coreutils"]
 	path = evaluation/coreutils
 	url = git://git.sv.gnu.org/coreutils
+[submodule "evaluation/hade"]
+	path = evaluation/hade
+	url = https://github.com/binsec/hade

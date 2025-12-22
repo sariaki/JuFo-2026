@@ -1,23 +1,24 @@
 - Meta:
-	- Echte Programme kompilieren (--> GNU coreutils!)
-	- Mehrere realistische Tools verwenden --> Triton, Angr, Miasm, Syntia; Dynamische Attacken
+	- [x] Echte Programme kompilieren (--> GNU coreutils!)
+	- [ ] Mehrere realistische Tools verwenden --> Triton, Angr, Miasm, Syntia; Dynamische Attacken
+	- [ ] mehrere Male durchführen -->`yerrs`
 
 - Stealth
-	- Entropy
-	- Opcode distribution
+	- [x] Entropy
+	- [x] Opcode distribution
 - Potency
-	- Controlled human experiment analysis
+	- [ ] Controlled human experiment analysis
 	- Code complexity: 
-		- McCabe Cyclomatic Complexity
-		- CFG-Größe
-		- Anweisungsanzahl
+		- [x] McCabe Cyclomatic Complexity
+		- [ ] CFG-Größe
+		- [x] Anweisungsanzahl
 - Resilience
 - Cost
-	- Size
-	- Performance overhead
-	- Memory usage
-	- Applicability (code coverage)
-	- Compilation time
+	- [x] Size
+	- [ ] Performance overhead
+	- [ ] Memory usage
+	- [ ] Applicability (code coverage)
+	- [x] Compilation time
 
 - Discussion
 	- Layered obfuscation

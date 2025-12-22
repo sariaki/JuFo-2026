@@ -472,29 +472,30 @@ Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \em
 Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
 
-\subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
-%Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
-Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. Folgende Methoden existieren hierfür:
-%Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
-%Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
-%Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
-
-\paragraph{Explizite Quellen (Betriebssystem-APIs, Hardware)}
-CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc}, \texttt{rand() oder \texttt{time()}}). 
-In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
-
-\paragraph{Parameter-Sampling}
-In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom symbolischen Ausführungsengine als symbolische Variablen behandelt.
-
-Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Problematisch ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate durch einen Angreifer erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
-
-\paragraph{Race Conditions}
-Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{TODO...} \\
-
-Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
-
-\subsection{Füllcode}
-\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
+%\subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
+%\textcolor{red}{TODO: Das hier kürzen/verschieben/löschen}
+%%Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
+%Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. Folgende Methoden existieren hierfür:
+%%Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
+%%Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
+%%Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
+%
+%\paragraph{Explizite Quellen (Betriebssystem-APIs, Hardware)}
+%CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc}, \texttt{rand() oder \texttt{time()}}). 
+%In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
+%
+%\paragraph{Parameter-Sampling}
+%In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom symbolischen Ausführungsengine als symbolische Variablen behandelt.
+%
+%Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Problematisch ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate durch einen Angreifer erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
+%
+%\paragraph{Race Conditions}
+%Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{TODO...} \\
+%
+%Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
+%
+%\subsection{Füllcode}
+%\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
 
 \subsection{Fallbeispiel}
 \begin{figure}[!h]
@@ -568,7 +569,7 @@ void __cdecl foo(int x)
 	}
 	printf("foo %i\n", x); // This Basic Block will always be executed.
 }			\end{lstlisting}
-			\caption{Dieselbe Funktion aber mit PoP (Bernsteinpolynomgrad $n=3 $) obfuskiert. Pseudo-C wurde aus der Dekompilation von IDA entnommen.}
+			\caption{Dieselbe Funktion aber mit PoP (Bernsteinpolynomgrad $n=3 $) obfuskiert. Pseudo-C wurde aus der Dekompilation von IDA entnommen.\textcolor{red}{TODO: update mit neuer Version}}
 			\label{fig:doneObf}
 		\end{subfigure}
 	\end{minipage}
@@ -592,7 +593,7 @@ Für die Evaluierung wird gemäß der weitverbreiteten Kriterien von Collberg et
     \end{tabular}
 \end{center}
 
-Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) sowie auf die GNU Core Utilities angewandt. Die Programme wurden gewählt, um repräsentativ typische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
+Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) von \cite{ollivierHowKillSymbolic2019a} sowie auf die GNU Core Utilities angewandt. Die Programme wurden gewählt, um repräsentativ typische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
 
 Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
 
@@ -615,7 +616,7 @@ Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer In
 \paragraph{Programmgröße}
 \paragraph{Geschwindigkeit}
 \paragraph{Arbeitsspeicheraufwand}
-\paragraph{Kompilationszeit}
+%\paragraph{Kompilationszeit}
 
 \subsubsection{Tarnung}
 
