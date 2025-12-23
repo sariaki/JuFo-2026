@@ -503,6 +503,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
 
     // Clamp Max
     // if (NextX > DomainEnd) NextX = DomainEnd;
+    // TODO: Make this not get compiled to fmax/fmin
     Value* TooHigh = IRB.CreateFCmpOGT(NextX, ConstDomainEnd);
     Value* ClampedHigh = IRB.CreateSelect(TooHigh, ConstDomainEnd, NextX);
 

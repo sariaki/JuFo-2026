@@ -320,8 +320,8 @@ Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzus
 	\caption{Generierung probabilistischer opaker Prädikate}
 	\label{alg:probOpaque}
 	\begin{algorithmic}[1]
-		\Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $\Var{p}$ (Probability of generated predicate being true), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
-		\Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{Threshold} \in \mathbb{N}$}
+		\Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $P(\Var{TrueBB})$ (Probability of generated predicate having wanted value), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
+		\Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{Precision} \in \mathbb{N}$}
 		\For{$Function \; \Var{F} \in \Var{Module}$}
 		\If{\Call{ShouldObfuscate}{$\Var{F}$}}
 		\State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
@@ -331,7 +331,7 @@ Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzus
 		
 		\State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$ \Comment{Compute threshold using the Newton–Raphson method.}
 		\For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
-		\State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - \Var{p}$
+		\State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - P(\Var{TrueBB})$
 		\State $\Var{Slope} \gets \Call{CDF.EvaluateDerivativeAt}{\Var{Threshold}}$ \Comment{Evaluate PDF.}
 		
 		\State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
@@ -602,19 +602,23 @@ Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer In
 \subsection{Evaluierung}
 
 \subsubsection{Kosten}
-Um die Obfuskationskosten zu messen wurde die Programmgröße, -laufzeit sowie die Kompilationszeit mit und ohne Obfuskation gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf die Kompillationszeit. Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden. 
-\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{minipage}[t]{0.49\textwidth}
 	\centering
-	\includegraphics[width=0.37\textwidth]{img/stats/size}
-	\caption{Größe}
-	\label{fig:size}
-\end{wrapfigure}
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\centering
-	\includegraphics[width=0.37\textwidth]{img/stats/compilation_time}
-	\caption{Kompilationszeit}
+	\includegraphics[width=1\textwidth]{img/stats/compilation_time}
+	\captionof{figure}{Kompilationszeit mit/ohne der Obfuskation}
 	\label{fig:compilationTime}
-\end{wrapfigure}
+\end{minipage} \hfill
+\begin{minipage}[t]{0.49\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/stats/size}
+	\captionof{figure}{Größe vor/nach der Obfuskation}
+	\label{fig:size}
+\end{minipage}
+Um die Obfuskationskosten zu messen wurde die Programmgröße, -laufzeit sowie die Kompilationszeit mit und ohne Obfuskation gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf die Kompilationszeit.
+Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden.
+Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate alle GNU Core Utilities fehlerfrei funktionierten. Hierfür wurde die Erfolgswahrscheinlichkeit $P(\Var{TrueBB})=0.99$ verwendet.
+
+\textcolor{red}{TODO: Programmgröße}
 %\paragraph{Programmgröße}
 %\paragraph{Geschwindigkeit}
 %\paragraph{Arbeitsspeicheraufwand}
@@ -625,7 +629,7 @@ Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus d
 \begin{wrapfigure}{r}{0.4\textwidth}
 	\centering
 	\includegraphics[width=0.37\textwidth]{img/stats/complexity}
-	\caption{zyklomatische Komplexität (McCabe-Metrik)} 
+	\caption{zyklomatische Komplexität (McCabe-Metrik) vor/nach der Obfuskation} 
 	\label{fig:mcCabe}
 \end{wrapfigure}
 
@@ -654,7 +658,7 @@ Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen
 \begin{wrapfigure}{r}{0.4\textwidth}
 	\centering
 	\includegraphics[width=0.37\textwidth]{img/stats/opcode_dist}
-	\caption{Mnemonicverteilung} 
+	\caption{Programmanweisungverteilung vor/nach der Obfuskation} 
 	\label{fig:opcodeDist}
 \end{wrapfigure}
 \begin{wrapfigure}{r}{0.4\textwidth}
