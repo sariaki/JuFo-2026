@@ -1,9 +1,0 @@
-[submodule "evaluation/obfuscation-benchmarks"]
-	path = evaluation/obfuscation-benchmarks
-	url = https://github.com/tum-i4/obfuscation-benchmarks
-[submodule "evaluation/coreutils"]
-	path = evaluation/coreutils
-	url = git://git.sv.gnu.org/coreutils
-[submodule "evaluation/hade"]
-	path = evaluation/hade
-	url = https://github.com/binsec/hade
