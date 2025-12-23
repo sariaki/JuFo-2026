@@ -5,6 +5,7 @@
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/InstIterator.h>
 #include <llvm/IR/InlineAsm.h>
+#include <llvm/IR/DataLayout.h>
 #include <llvm/Pass.h>
 #include <llvm/IR/PassManager.h>
 #include <llvm/Passes/PassBuilder.h>
@@ -52,7 +53,7 @@ namespace
                     if (!Utils::HasAnnotation(&F, PASS_NAME)) continue;
                 }
 
-                errs() << "Running on " << demangle(F.getName()) << "\n";
+                // errs() << "Running on " << demangle(F.getName()) << "\n";
 
                 // Insert at random place in function
                 // We have to guarantee that this random place is after all PHI instructions
@@ -78,25 +79,97 @@ namespace
                
                 // TODO: Multiple Methods for getting randomness
 
-                // Get parameter to create a symbolic variable for the solver
-                if (F.arg_empty())
+                // Get >=64 bit parameter derived from external fn to create a symbolic variable for the solver
+                const DataLayout &DL = F.getParent()->getDataLayout();
+                Value* Parameter = nullptr;
+
+                // Find all callers of F through bitcasts/aliases
+                SmallVector<CallBase*, 8> CallSites;
+                for (User *U : F.users())
+                {
+                    // A user might be a CallInst or a BitCast of the function
+                    Value *StrippedU = U;
+                    if (auto *CB = dyn_cast<CallBase>(StrippedU))
+                        CallSites.push_back(CB);
+                    else 
+                    {
+                        // If the user is a bitcast, look at the users of the bitcast
+                        for (User *UU : U->users()) 
+                        {
+                            if (auto *CB = dyn_cast<CallBase>(UU))
+                                CallSites.push_back(CB);
+                        }
+                    }
+                }
+
+                // Analyze arguments
+                for (CallBase *CB : CallSites)
+                {
+                    for (unsigned i = 0; i < CB->arg_size(); i++)
+                    {
+                        if (i >= F.arg_size()) break; // Varargs or mismatch
+
+                        Value *Arg = CB->getArgOperand(i);
+
+                        // Bit-width check
+                        if (DL.getTypeSizeInBits(Arg->getType()) == 64) // TODO: >= 64
+                        {
+                            SmallPtrSet<Value*, 32> Visited;
+                            if (Utils::IsDerivedFromExternalFn(Arg, Visited, 0))
+                            {
+                                Parameter = F.getArg(i);
+                                // errs() << "Match found: Function " << F.getName() 
+                                //     << " has external 64-bit arg at index " << i << "\n";
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // Edge case for functions without callsites (e.g., main)
+                if (CallSites.empty())
+                {
+                    for (Argument &Arg : F.args())
+                    {
+                        // Check if the argument is at least 64 bits wide
+                        if (DL.getTypeSizeInBits(Arg.getType()) >= 64) {
+                            Parameter = &Arg;
+                            // errs() << "Match found: Function " << F.getName() 
+                            //         << " has external 64-bit arg"<< "\n";
+                            break;
+                        }
+                    }
+                }
+
+                if (!Parameter)
+                {
+                    // Add a dummy parameter to the function and make all callsites pass an external-derived value
+                    // errs() << "Function " << demangle(F.getName()) 
+                    //        << " has no (external-derived) argument (greater than 64 bits). Adding one.\n";
+
+                    // Function types in LLVM are immutable, so we have to create a new function with the new type
                     continue;
+                }
 
-                Value* Parameter = &*F.arg_begin();
+                // // Tell LLVM that we might modify the value in a way it can't predict
+                // // so that it doesn't perform constant folding
+                // // Create a stack slot allocation for double
+                // AllocaInst* Alloc = IRB.CreateAlloca(Parameter->getType());
 
-                // Tell LLVM that we might modify the value in a way it can't predict
-                // so that it doesn't perform constant folding
-                // Create a stack slot allocation for double
-                AllocaInst* Alloc = IRB.CreateAlloca(Parameter->getType());
+                // // Volatile store parameter into it
+                // IRB.CreateStore(Parameter, Alloc, true);
 
-                // Volatile store parameter into it
-                IRB.CreateStore(Parameter, Alloc, true);
-
-                // Volatile Load it back
-                Value* VolatileParameter = IRB.CreateLoad(Parameter->getType(), Alloc, /*isVolatile=*/true);
+                // // Volatile Load it back
+                // Value* VolatileParameter = IRB.CreateLoad(Parameter->getType(), Alloc, /*isVolatile=*/true);
 
                 // Cast the variable to a double
-                const auto DoubleCallParameter = Utils::CastIRValueToDouble(VolatileParameter, IRB);
+                const auto DoubleCallParameter = Utils::CastIRValueToDouble(Parameter, IRB);
+
+                if (!DoubleCallParameter)
+                {
+                    errs() << "Warning: Could not cast parameter in function " << demangle(F.getName()) << " - skipping.\n";
+                    continue;
+                }
 
                 // Make variable lie in [0;1]
                 // We do this this way because LLVM *somehow* messes up if we perform a division with IRB.CreateFDiv in the IR
@@ -106,12 +179,13 @@ namespace
                 const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
 
                 // Generate random inverse CDF
-                const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = Distribution::InsertRandomBernsteinNewtonRaphson(M, Rng);
+                const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = 
+                    Distribution::InsertRandomBernsteinNewtonRaphson(M, F, Rng);
 
                 // i64 x = sampler(u)
                 const auto SampleRet = IRB.CreateCall(SamplerFn, { SmallCallParameter });
 
-                errs() << "Start: " << DomainStart << " End: " << DomainEnd << "\n";
+                // errs() << "Start: " << DomainStart << " End: " << DomainEnd << "\n";
 
                 // Choose whether the predicate should always be true or false
                 bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
@@ -127,7 +201,7 @@ namespace
                     double CurrentSlope = Bernsteinpolynomial.EvaluateDerivativeAt(Threshold);
 
                     // f(x) = B(x) - Target
-                    double OffsetY = CurrentY - 0.9;
+                    double OffsetY = CurrentY - 0.999;
                     
                     // Newton Step: x = x - f(x) / f'(x)
                     Threshold -= OffsetY / CurrentSlope;
@@ -137,8 +211,8 @@ namespace
                     if (Threshold > DomainEnd)   Threshold = DomainEnd;
                 }
 
-                errs() << "Threshold: " << Threshold << "\n";
-                errs() << "PredicateType: " << PredicateType << "\n";
+                // errs() << "Threshold: " << Threshold << "\n";
+                // errs() << "PredicateType: " << PredicateType << "\n";
 
                 // Create predicate
                 Value* CmpResult;
@@ -163,7 +237,7 @@ namespace
                 RandomBasicBlock->getTerminator()->eraseFromParent();
 
                 IRB.SetInsertPoint(TrueBB->getFirstInsertionPt());
-                Utils::PrintfIR(M, IRB, "TrueBB says hi\n");
+                // Utils::PrintfIR(M, IRB, "TrueBB says hi\n");
 
                 IRB.SetInsertPoint(RandomBasicBlock);
                 if (PredicateType == true)
@@ -172,7 +246,7 @@ namespace
                     IRB.CreateCondBr(CmpResult, FalseBB, TrueBB);
 
                 IRB.SetInsertPoint(FalseBB);
-                Utils::PrintfIR(M, IRB, "FalseBB says hi\n");
+                // Utils::PrintfIR(M, IRB, "FalseBB says hi\n");
 
                 // TODO: Add junkcode
                 if (F.getReturnType()->isVoidTy()) 

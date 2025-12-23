@@ -6,6 +6,7 @@
 - Stealth
 	- [x] Entropy
 	- [x] Opcode distribution
+	- Vorteile von MBAs!
 - Potency
 	- [ ] Controlled human experiment analysis
 	- Code complexity: 

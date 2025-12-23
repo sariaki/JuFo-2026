@@ -60,7 +60,8 @@
 \theoremstyle{plain}
 \newtheorem{example}{Beispiel}
 \newtheorem{theorem}{Theorem}[section]
-\usepackage{booktabs}  
+\usepackage{booktabs}
+\usepackage{lipsum}
 % Muss immer letztes Packet sein
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -405,7 +406,7 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 \begin{wrapfigure}{R}{0.37\textwidth}
 	\centering
-	\vspace{-7.5cm}
+	\vspace{-9cm}
 %	\setlength{\abovecaptionskip}{-4pt}
 	\includegraphics[width=0.37\textwidth]{img/bernstein}
 	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
@@ -497,7 +498,7 @@ Die Implementierung, Beispiele und Experimente sind unter \url{https://github.co
 %\subsection{Füllcode}
 %\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
 
-\subsection{Fallbeispiel}
+\subsection{Fallbeispiel} \label{fallbsp}
 \begin{figure}[!h]
 	\centering 
 	
@@ -513,7 +514,7 @@ PROB=50
 
 clang -$OPT_LVL \
 	-fpass-plugin=$PASS_PLUGIN_DIR \
-	-Xclang -load $PASS_PLUGIN_DIR \
+	-Xclang -load -Xclang $PASS_PLUGIN_DIR \
 	-mllvm -pop-probability=$PROB \
 	${FILENAME}.c \
 	-o $FILENAME\end{lstlisting}
@@ -583,7 +584,7 @@ Für die Evaluierung wird gemäß der weitverbreiteten Kriterien von Collberg et
     \begin{tabular}{c|l}
     	\textbf{Kriterium} & \textbf{Beschreibung} \\
     	\hline
-    	Stärke & Wie unverständlich ist die Obfuskation für einen Angreifer? \\
+    	Stärke & Wie unverständlich ist das obfuskierte Programm für einen Angreifer? \\
     	\hline
     	Resilienz & Wie schwer ist eine (automatisierte) Deobfuskation? \\
     	\hline
@@ -593,50 +594,88 @@ Für die Evaluierung wird gemäß der weitverbreiteten Kriterien von Collberg et
     \end{tabular}
 \end{center}
 
-Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) von \cite{ollivierHowKillSymbolic2019a} sowie auf die GNU Core Utilities angewandt. Die Programme wurden gewählt, um repräsentativ typische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
+Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) von \cite{ollivierHowKillSymbolic2019a} sowie auf die GNU Core Utilities angewandt. Insgesamt wurden somit über \textcolor{red}{TODO} Programme obfuskiert. Die Programme wurden bewusst gewählt, um typische realistische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
 
 Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
-
-Folgende Angriffsmethoden werden betrachtet: 
-\begin{itemize}
-	\item Symbolische Ausführung mit Angr \cite{shoshitaishvili2016state} (v.9.2.189), Triton \cite{SSTIC2015-Saudel-Salwan} (v.1.0.0rc4) und Miasm \cite{desclaux2018miasm} (v.0.1.5)
-
-	\item Programmsynthese mittels Syntia \cite{blazytkoSyntiaSynthesizingSemanticsa} (commit 3602893) 
-
-	\item dynamische Analyse über mehrfache Ausführung obfuskierter Programme wie in \cite{zobernigWhenAreOpaque2019} beschrieben
-
-	\item Pattern Matching
-\end{itemize}
 Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU und $16$Gb DDR4 RAM ausgeführt.
 
 \subsection{Evaluierung}
 
 \subsubsection{Kosten}
-
-\paragraph{Programmgröße}
-\paragraph{Geschwindigkeit}
-\paragraph{Arbeitsspeicheraufwand}
+Um die Obfuskationskosten zu messen wurde die Programmgröße, -laufzeit sowie die Kompilationszeit mit und ohne Obfuskation gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf die Kompillationszeit. Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden. 
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.37\textwidth]{img/stats/size}
+	\caption{Größe}
+	\label{fig:size}
+\end{wrapfigure}
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.37\textwidth]{img/stats/compilation_time}
+	\caption{Kompilationszeit}
+	\label{fig:compilationTime}
+\end{wrapfigure}
+%\paragraph{Programmgröße}
+%\paragraph{Geschwindigkeit}
+%\paragraph{Arbeitsspeicheraufwand}
 %\paragraph{Kompilationszeit}
 
-\subsubsection{Tarnung}
+\subsubsection{Stärke} \label{sec:stärke}
+Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus der Softwareentwicklung verwendet. Konkret betrachtet wurden die zyklomatische Komplexität (McCabe-Metrik) sowie die Anzahl an Anweisungen vor und nach der Obfuskation.
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.37\textwidth]{img/stats/complexity}
+	\caption{zyklomatische Komplexität (McCabe-Metrik)} 
+	\label{fig:mcCabe}
+\end{wrapfigure}
 
-\paragraph{Opcode Verteilung}
-\paragraph{Entropie}
+%\paragraph{Komplexität}
+%\paragraph{Menschliche Analyse}
 
 \subsubsection{Resilienz}
+Um die Resilienz zu messen wurden folgende Angriffsmethoden auf das einfache Programm aus \cref{fallbsp} angewandt: 
+\begin{itemize}
+	\item Symbolische Ausführung mit Angr \cite{shoshitaishvili2016state} (v.9.2.189), Triton \cite{SSTIC2015-Saudel-Salwan} (v.1.0.0rc4) und Miasm \cite{desclaux2018miasm} (v.0.1.5)
+	
+	\item Programmsynthese mittels Syntia \cite{blazytkoSyntiaSynthesizingSemanticsa} (commit 3602893) 
+	
+	\item dynamische Analyse über mehrfache Ausführung obfuskierter Programme wie in \cite{zobernigWhenAreOpaque2019} beschrieben
+\end{itemize}
 
-\subsubsection{Stärke} \label{sec:stärke}
+Wie postuliert waren keine der symbolischen Ausführungsengines in der Lage, den korrekten Pfad zu finden. \textcolor{red}{TODO: Verhalten beschreiben (Angr fickt Computer usw.)}
 
-\paragraph{Komplexität}
-\paragraph{Menschliche Analyse}
+\textcolor{red}{Eine Ausführung von Syntia ergab ...}
+
+\textcolor{red}{Manuelle Angriffe und Heuristiken}
+Die Resilienz der Obfuskation basiert somit letztendlich auf dessen Tarnung.
+
+\subsubsection{Tarnung}
+Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen sowie die Entropie vor und nach der Obfuskation gemessen.
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.37\textwidth]{img/stats/opcode_dist}
+	\caption{Mnemonicverteilung} 
+	\label{fig:opcodeDist}
+\end{wrapfigure}
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.37\textwidth]{img/stats/entropy}
+	\caption{Entropie} 
+	\label{fig:entropy}
+\end{wrapfigure}
+
+%\paragraph{Opcode Verteilung}
+%\paragraph{Entropie}
+% Pattern Matching
 
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
 
 %\subsection{Praktische Anwendung}
 
 \section{Ergebnisdiskussion}
-\section{Fazit und Ausblick} \label{sec:fazit}
 \textcolor{red}{Verbesserung durch Anwendung anderer Obfuscationsmethoden (z.B. MBAs)} \\
+
+\section{Fazit und Ausblick} \label{sec:fazit}
 \textcolor{red}{später: Anwendung auf Ausdrücke}
 
 \newpage

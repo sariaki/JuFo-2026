@@ -362,7 +362,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Cre
 }
 
 static int InsertedFns = 0;
-std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::InsertRandomBernsteinNewtonRaphson(llvm::Module &M, std::mt19937 Rng)
+std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::InsertRandomBernsteinNewtonRaphson(Module &M, Function& Where, std::mt19937 Rng)
 {
     InsertedFns++;
     // Choose random interval as the CDF's domain
@@ -394,9 +394,10 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
 
     // Create Function: double sample(double u)
     FunctionType* FT = FunctionType::get(DoubleTy, { DoubleTy }, false);
-    FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_bernstein_newtonraphson_" + std::to_string(InsertedFns), FT);
+    FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_bernstein_newtonraphson_" + demangle(Where.getName()) + std::to_string(InsertedFns), FT);
     Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
 
+    SamplerFn->setLinkage(GlobalValue::PrivateLinkage);
     SamplerFn->addFnAttr(Attribute::AlwaysInline); 
 
     // Get function argument: double u in [0;1]

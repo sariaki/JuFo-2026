@@ -10,9 +10,16 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
     {
         return V;
     }
-    else if (srcTy->isFloatTy())
+    else if (srcTy->isFloatingPointTy()) // isFloatTy() only checks for 32-bit float
     {
-        return B.CreateFPExt(V, doubleTy, "fpext_to_double");
+        unsigned srcWidth = srcTy->getPrimitiveSizeInBits();
+        if (srcWidth < 64)
+            return B.CreateFPExt(V, doubleTy, "fpext_to_double");
+        else
+        {
+            // This handles x86_fp80 (80-bit) or fp128
+            return B.CreateFPTrunc(V, doubleTy, "fptrunc_to_double");
+        }
     }
     else if (srcTy->isIntegerTy())
     {
@@ -23,17 +30,15 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
     }
     else if (srcTy->isPointerTy())
     {
-        IntegerType* intptrTy = Type::getInt64Ty(C);
+        // Use DataLayout to get the correct pointer size
+        IntegerType* intptrTy = B.getInt64Ty(); 
         Value* intVal = B.CreatePtrToInt(V, intptrTy, "ptrtoint");
-        if (IsSigned)
-            return B.CreateSIToFP(intVal, doubleTy, "ptrsitofp_to_double");
-        else
-            return B.CreateUIToFP(intVal, doubleTy, "ptruitofp_to_double");
+        // Always use UI (Unsigned) for pointers, as pointers don't have a "sign"
+        return B.CreateUIToFP(intVal, doubleTy, "ptruitofp_to_double");
     }
-    else
-    {
-        report_fatal_error("Utils::CastIRValueToDouble: unsupported source type\n");
-    }
+    // We don't want to crash the compiler, so just return nullptr here
+    // report_fatal_error("Utils::CastIRValueToDouble: unsupported source type\n");
+    return nullptr;
 }
 
 CallInst* Utils::PrintfIR(Module& M, IRBuilder<>& IRB, StringRef Format, ArrayRef<Value*> Args) 
@@ -146,6 +151,92 @@ bool Utils::HasAnnotation(Function *F, std::string_view Annotation)
         {
             auto* Data = dyn_cast<ConstantDataArray>(GStr->getInitializer());
             if (Data && Data->getAsCString() == Annotation.data()) 
+                return true;
+        }
+    }
+
+    return false;
+}
+
+bool Utils::IsDerivedFromExternalFn(Value *V, SmallPtrSetImpl<Value*> &Visited, int Depth)
+{
+    if (!V || Depth > 20) return false;
+    if (!Visited.insert(V).second) return false;
+
+    // Handle Calls
+    if (auto *CB = dyn_cast<CallBase>(V))
+    {
+        // Strip casts to find the actual function being called
+        Value *Callee = CB->getCalledOperand()->stripPointerCasts();
+        if (Function *CalledF = dyn_cast<Function>(Callee)) 
+        {
+            // Library/external function
+            if (CalledF->isDeclaration()) return true;
+            else
+            {
+                // Internal function
+                // We must check every return statement inside it.
+                for (auto &BB : *CalledF)
+                {
+                    if (auto *RI = dyn_cast<ReturnInst>(BB.getTerminator()))
+                    {
+                        if (Value *RetVal = RI->getReturnValue())
+                        {
+                            if (IsDerivedFromExternalFn(RetVal, Visited, Depth + 1))
+                                return true;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // If we are loading a value, check where it was stored.
+    if (auto *LI = dyn_cast<LoadInst>(V))
+    {
+        Value *Ptr = LI->getPointerOperand()->stripPointerCasts();
+        for (User *U : Ptr->users())
+        {
+            if (auto *SI = dyn_cast<StoreInst>(U))
+            {
+                // If this store puts something into our pointer, trace the source
+                if (SI->getPointerOperand()->stripPointerCasts() == Ptr)
+                {
+                    if (IsDerivedFromExternalFn(SI->getValueOperand(), Visited, Depth + 1))
+                        return true;
+                }
+            }
+        }
+    }
+
+    // Handle PHI Nodes
+    if (auto *PN = dyn_cast<PHINode>(V))
+    {
+        for (Value *Incoming : PN->incoming_values())
+        {
+            if (IsDerivedFromExternalFn(Incoming, Visited, Depth + 1))
+                return true;
+        }
+    }
+
+    // Trace through Casts and Binary Operations
+    if (auto *I = dyn_cast<Instruction>(V))
+    {
+        for (Value *Op : I->operands())
+        {
+            if (isa<Function>(Op)) continue;
+
+            if (IsDerivedFromExternalFn(Op, Visited, Depth + 1))
+                return true;
+        }
+    }
+
+    // Handle Constant Expressions (e.g. bitcast of a function)
+    if (auto *CE = dyn_cast<ConstantExpr>(V))
+    {
+        for (unsigned i = 0; i < CE->getNumOperands(); ++i)
+        {
+            if (IsDerivedFromExternalFn(CE->getOperand(i), Visited, Depth + 1))
                 return true;
         }
     }

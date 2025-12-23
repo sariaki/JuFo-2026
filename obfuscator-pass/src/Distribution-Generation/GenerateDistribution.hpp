@@ -8,6 +8,7 @@
 #include <llvm/Passes/PassBuilder.h>
 #include <llvm/Passes/PassPlugin.h>
 #include <llvm/Support/raw_ostream.h>
+#include <llvm/Demangle/Demangle.h>
 #include <random>
 #include <limits>
 #include "../Utils/Utils.hpp"
@@ -19,6 +20,6 @@ namespace Distribution
 {
     FunctionCallee CreatePoissonFn(Module& M, Value* Lambda);
     std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinBinarySearchFn(Module& M, std::mt19937 Rng);
-    std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinNewtonRaphsonFn(llvm::Module& M, std::mt19937 Rng);
-    std::tuple<FunctionCallee, MonotonicBernstein, double, double> InsertRandomBernsteinNewtonRaphson(llvm::Module& M, std::mt19937 Rng);
+    std::tuple<FunctionCallee, MonotonicBernstein, double, double> CreateRandomBernsteinNewtonRaphsonFn(Module& M, std::mt19937 Rng);
+    std::tuple<FunctionCallee, MonotonicBernstein, double, double> InsertRandomBernsteinNewtonRaphson(Module& M, Function& Where, std::mt19937 Rng);
 }

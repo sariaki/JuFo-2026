@@ -5,8 +5,7 @@ from pathlib import Path
 import numpy as np
 from termcolor import colored
 import matplotlib.pyplot as plt
-from capstone import *
-from elftools.elf.elffile import ELFFile
+import angr
 import math
 from collections import Counter
 import time
@@ -53,29 +52,29 @@ def file_entropy(path: str) -> float:
         return entropy  # bits per byte, range [0, 8]
 
 def get_opcode_distribution(file_path: Path) -> Counter:
+    proj = angr.Project(file_path, auto_load_libs=False)
+
+    # this uses recursive descent
+    cfg = proj.analyses.CFGFast()
+
     opcode_counts = Counter()
     
-    try:
-        with open(file_path, 'rb') as f:
-            elffile = ELFFile(f)
-            text_section = elffile.get_section_by_name('.text')
-            
-            if not text_section:
-                return opcode_counts
+    # Track visited addresses to avoid double-counting instructions 
+    visited_insns = set()
 
-            code = text_section.data()
-            base_addr = text_section['sh_addr']
-
-            md = Cs(CS_ARCH_X86, CS_MODE_64)
+    for node in cfg.graph.nodes():
+        # Some nodes might be "HookNodes" or metadata; we only want code blocks
+        if node.block is None:
+            continue
             
-            # disasm_lite is faster as it only returns (address, size, mnemonic, op_str)
-            for _, _, mnemonic, _ in md.disasm_lite(code, base_addr):
-                opcode_counts[mnemonic] += 1
-                
-    except Exception as e:
-        print(f"Error analyzing opcodes in {file_path}: {e}")
-        
+        # Use the capstone disassembly integrated into angr's block
+        for insn in node.block.capstone.insns:
+            if insn.address not in visited_insns:
+                opcode_counts[insn.mnemonic] += 1
+                visited_insns.add(insn.address)
+
     return opcode_counts
+
 
 def get_instruction_count(opcode_dist: Counter) -> int:
     return sum(opcode_dist.values())
@@ -397,7 +396,7 @@ def main():
     plt.show()
     fig.savefig("output/complexity.pdf")
 
-        # Opcode distribution (10 most common)
+    # Opcode distribution (10 most common)
     total_orig = Counter()
     total_obf = Counter()
     for c in opcodes: total_orig.update(c)
