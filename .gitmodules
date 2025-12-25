@@ -1,0 +1,3 @@
+[submodule "evaluation"]
+	path = evaluation
+	url = https://github.com/sariaki/Jufo-2026-evaluation
