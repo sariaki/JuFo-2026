@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/depend.make
@@ -72,58 +72,58 @@ include MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/flags.make
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/flags.make
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/c4.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o -MF CMakeFiles/fhourstones.dir/c4.c.o.d -o CMakeFiles/fhourstones.dir/c4.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/c4.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.o -MF CMakeFiles/fhourstones.dir/c4.c.o.d -o CMakeFiles/fhourstones.dir/c4.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fhourstones.dir/c4.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c > CMakeFiles/fhourstones.dir/c4.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c > CMakeFiles/fhourstones.dir/c4.c.i
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/c4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fhourstones.dir/c4.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c -o CMakeFiles/fhourstones.dir/c4.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/c4.c -o CMakeFiles/fhourstones.dir/c4.c.s
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/flags.make
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/play.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o -MF CMakeFiles/fhourstones.dir/play.c.o.d -o CMakeFiles/fhourstones.dir/play.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/play.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.o -MF CMakeFiles/fhourstones.dir/play.c.o.d -o CMakeFiles/fhourstones.dir/play.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fhourstones.dir/play.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c > CMakeFiles/fhourstones.dir/play.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c > CMakeFiles/fhourstones.dir/play.c.i
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/play.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fhourstones.dir/play.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c -o CMakeFiles/fhourstones.dir/play.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/play.c -o CMakeFiles/fhourstones.dir/play.c.s
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/flags.make
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/time.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o -MF CMakeFiles/fhourstones.dir/time.c.o.d -o CMakeFiles/fhourstones.dir/time.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/time.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.o -MF CMakeFiles/fhourstones.dir/time.c.o.d -o CMakeFiles/fhourstones.dir/time.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fhourstones.dir/time.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c > CMakeFiles/fhourstones.dir/time.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c > CMakeFiles/fhourstones.dir/time.c.i
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fhourstones.dir/time.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c -o CMakeFiles/fhourstones.dir/time.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/time.c -o CMakeFiles/fhourstones.dir/time.c.s
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/flags.make
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/trans.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o -MF CMakeFiles/fhourstones.dir/trans.c.o.d -o CMakeFiles/fhourstones.dir/trans.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/fhourstones.dir/trans.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o -MF CMakeFiles/fhourstones.dir/trans.c.o.d -o CMakeFiles/fhourstones.dir/trans.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fhourstones.dir/trans.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c > CMakeFiles/fhourstones.dir/trans.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c > CMakeFiles/fhourstones.dir/trans.c.i
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fhourstones.dir/trans.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c -o CMakeFiles/fhourstones.dir/trans.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/trans.c -o CMakeFiles/fhourstones.dir/trans.c.s
 
 # Object files for target fhourstones
 fhourstones_OBJECTS = \
@@ -141,21 +141,21 @@ MultiSource/Benchmarks/Fhourstones/fhourstones: MultiSource/Benchmarks/Fhourston
 MultiSource/Benchmarks/Fhourstones/fhourstones: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/trans.c.o
 MultiSource/Benchmarks/Fhourstones/fhourstones: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/build.make
 MultiSource/Benchmarks/Fhourstones/fhourstones: MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable fhourstones"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fhourstones.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones/fhourstones > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones/fhourstones.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/fhourstones.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones/fhourstones.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/input /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones/input
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable fhourstones"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fhourstones.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones/fhourstones > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones/fhourstones.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/fhourstones.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones/fhourstones.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones/input /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones/input
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/build: MultiSource/Benchmarks/Fhourstones/fhourstones
 .PHONY : MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/build
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones && $(CMAKE_COMMAND) -P CMakeFiles/fhourstones.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones && $(CMAKE_COMMAND) -P CMakeFiles/fhourstones.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/clean
 
 MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Fhourstones /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Fhourstones/CMakeFiles/fhourstones.dir/depend
 

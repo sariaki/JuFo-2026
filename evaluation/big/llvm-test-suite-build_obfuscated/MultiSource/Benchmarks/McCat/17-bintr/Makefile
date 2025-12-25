@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/rule
 .PHONY : MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ bintr: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/rule
 
 # fast build rule for target.
 bintr/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build
 .PHONY : bintr/fast
 
 bintree.o: bintree.c.o
@@ -136,7 +135,7 @@ bintree.o: bintree.c.o
 
 # target to build an object file
 bintree.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o
 .PHONY : bintree.c.o
 
 bintree.i: bintree.c.i
@@ -144,7 +143,7 @@ bintree.i: bintree.c.i
 
 # target to preprocess a source file
 bintree.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.i
 .PHONY : bintree.c.i
 
 bintree.s: bintree.c.s
@@ -152,7 +151,7 @@ bintree.s: bintree.c.s
 
 # target to generate assembly for a file
 bintree.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.s
 .PHONY : bintree.c.s
 
 bnchmrk.o: bnchmrk.c.o
@@ -160,7 +159,7 @@ bnchmrk.o: bnchmrk.c.o
 
 # target to build an object file
 bnchmrk.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o
 .PHONY : bnchmrk.c.o
 
 bnchmrk.i: bnchmrk.c.i
@@ -168,7 +167,7 @@ bnchmrk.i: bnchmrk.c.i
 
 # target to preprocess a source file
 bnchmrk.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.i
 .PHONY : bnchmrk.c.i
 
 bnchmrk.s: bnchmrk.c.s
@@ -176,7 +175,7 @@ bnchmrk.s: bnchmrk.c.s
 
 # target to generate assembly for a file
 bnchmrk.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.s
 .PHONY : bnchmrk.c.s
 
 # Help Target
@@ -205,7 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

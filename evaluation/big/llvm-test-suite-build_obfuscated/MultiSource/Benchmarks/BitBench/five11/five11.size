@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/five11/five11  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/five11/five11  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    160    4128
 .plt.got                  8    4288
-.text                  8597    4304
-.fini                    13   12904
-.rodata                1829   16384
-.eh_frame_hdr           132   18216
-.eh_frame               592   18352
-.init_array               8   24008
-.fini_array               8   24016
-.dynamic                480   24024
-.got                     48   24504
-.got.plt                 96   24552
-.data                    16   24648
-.bss                      8   24664
+.text                  5359    4304
+.fini                    13    9664
+.rodata                1045   12288
+.eh_frame_hdr           132   13336
+.eh_frame               552   13472
+.init_array               8   19912
+.fini_array               8   19920
+.dynamic                480   19928
+.got                     48   20408
+.got.plt                 96   20456
+.data                    16   20552
+.bss                      8   20568
 .comment                 82       0
-Total                 13367
+Total                  9305
 
 

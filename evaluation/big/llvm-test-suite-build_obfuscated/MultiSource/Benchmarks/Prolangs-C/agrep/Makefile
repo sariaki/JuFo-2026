@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/agrep//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/agrep//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ agrep: MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/rule
 
 # fast build rule for target.
 agrep/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build
 .PHONY : agrep/fast
 
 asearch.o: asearch.c.o
@@ -136,7 +135,7 @@ asearch.o: asearch.c.o
 
 # target to build an object file
 asearch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch.c.o
 .PHONY : asearch.c.o
 
 asearch.i: asearch.c.i
@@ -144,7 +143,7 @@ asearch.i: asearch.c.i
 
 # target to preprocess a source file
 asearch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch.c.i
 .PHONY : asearch.c.i
 
 asearch.s: asearch.c.s
@@ -152,7 +151,7 @@ asearch.s: asearch.c.s
 
 # target to generate assembly for a file
 asearch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch.c.s
 .PHONY : asearch.c.s
 
 asearch1.o: asearch1.c.o
@@ -160,7 +159,7 @@ asearch1.o: asearch1.c.o
 
 # target to build an object file
 asearch1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch1.c.o
 .PHONY : asearch1.c.o
 
 asearch1.i: asearch1.c.i
@@ -168,7 +167,7 @@ asearch1.i: asearch1.c.i
 
 # target to preprocess a source file
 asearch1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch1.c.i
 .PHONY : asearch1.c.i
 
 asearch1.s: asearch1.c.s
@@ -176,7 +175,7 @@ asearch1.s: asearch1.c.s
 
 # target to generate assembly for a file
 asearch1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/asearch1.c.s
 .PHONY : asearch1.c.s
 
 bitap.o: bitap.c.o
@@ -184,7 +183,7 @@ bitap.o: bitap.c.o
 
 # target to build an object file
 bitap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/bitap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/bitap.c.o
 .PHONY : bitap.c.o
 
 bitap.i: bitap.c.i
@@ -192,7 +191,7 @@ bitap.i: bitap.c.i
 
 # target to preprocess a source file
 bitap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/bitap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/bitap.c.i
 .PHONY : bitap.c.i
 
 bitap.s: bitap.c.s
@@ -200,7 +199,7 @@ bitap.s: bitap.c.s
 
 # target to generate assembly for a file
 bitap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/bitap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/bitap.c.s
 .PHONY : bitap.c.s
 
 checkfile.o: checkfile.c.o
@@ -208,7 +207,7 @@ checkfile.o: checkfile.c.o
 
 # target to build an object file
 checkfile.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/checkfile.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/checkfile.c.o
 .PHONY : checkfile.c.o
 
 checkfile.i: checkfile.c.i
@@ -216,7 +215,7 @@ checkfile.i: checkfile.c.i
 
 # target to preprocess a source file
 checkfile.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/checkfile.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/checkfile.c.i
 .PHONY : checkfile.c.i
 
 checkfile.s: checkfile.c.s
@@ -224,7 +223,7 @@ checkfile.s: checkfile.c.s
 
 # target to generate assembly for a file
 checkfile.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/checkfile.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/checkfile.c.s
 .PHONY : checkfile.c.s
 
 compat.o: compat.c.o
@@ -232,7 +231,7 @@ compat.o: compat.c.o
 
 # target to build an object file
 compat.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/compat.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/compat.c.o
 .PHONY : compat.c.o
 
 compat.i: compat.c.i
@@ -240,7 +239,7 @@ compat.i: compat.c.i
 
 # target to preprocess a source file
 compat.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/compat.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/compat.c.i
 .PHONY : compat.c.i
 
 compat.s: compat.c.s
@@ -248,7 +247,7 @@ compat.s: compat.c.s
 
 # target to generate assembly for a file
 compat.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/compat.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/compat.c.s
 .PHONY : compat.c.s
 
 follow.o: follow.c.o
@@ -256,7 +255,7 @@ follow.o: follow.c.o
 
 # target to build an object file
 follow.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/follow.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/follow.c.o
 .PHONY : follow.c.o
 
 follow.i: follow.c.i
@@ -264,7 +263,7 @@ follow.i: follow.c.i
 
 # target to preprocess a source file
 follow.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/follow.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/follow.c.i
 .PHONY : follow.c.i
 
 follow.s: follow.c.s
@@ -272,7 +271,7 @@ follow.s: follow.c.s
 
 # target to generate assembly for a file
 follow.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/follow.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/follow.c.s
 .PHONY : follow.c.s
 
 main.o: main.c.o
@@ -280,7 +279,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -288,7 +287,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -296,7 +295,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/main.c.s
 .PHONY : main.c.s
 
 maskgen.o: maskgen.c.o
@@ -304,7 +303,7 @@ maskgen.o: maskgen.c.o
 
 # target to build an object file
 maskgen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/maskgen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/maskgen.c.o
 .PHONY : maskgen.c.o
 
 maskgen.i: maskgen.c.i
@@ -312,7 +311,7 @@ maskgen.i: maskgen.c.i
 
 # target to preprocess a source file
 maskgen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/maskgen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/maskgen.c.i
 .PHONY : maskgen.c.i
 
 maskgen.s: maskgen.c.s
@@ -320,7 +319,7 @@ maskgen.s: maskgen.c.s
 
 # target to generate assembly for a file
 maskgen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/maskgen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/maskgen.c.s
 .PHONY : maskgen.c.s
 
 mgrep.o: mgrep.c.o
@@ -328,7 +327,7 @@ mgrep.o: mgrep.c.o
 
 # target to build an object file
 mgrep.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/mgrep.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/mgrep.c.o
 .PHONY : mgrep.c.o
 
 mgrep.i: mgrep.c.i
@@ -336,7 +335,7 @@ mgrep.i: mgrep.c.i
 
 # target to preprocess a source file
 mgrep.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/mgrep.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/mgrep.c.i
 .PHONY : mgrep.c.i
 
 mgrep.s: mgrep.c.s
@@ -344,7 +343,7 @@ mgrep.s: mgrep.c.s
 
 # target to generate assembly for a file
 mgrep.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/mgrep.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/mgrep.c.s
 .PHONY : mgrep.c.s
 
 parse.o: parse.c.o
@@ -352,7 +351,7 @@ parse.o: parse.c.o
 
 # target to build an object file
 parse.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/parse.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/parse.c.o
 .PHONY : parse.c.o
 
 parse.i: parse.c.i
@@ -360,7 +359,7 @@ parse.i: parse.c.i
 
 # target to preprocess a source file
 parse.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/parse.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/parse.c.i
 .PHONY : parse.c.i
 
 parse.s: parse.c.s
@@ -368,7 +367,7 @@ parse.s: parse.c.s
 
 # target to generate assembly for a file
 parse.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/parse.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/parse.c.s
 .PHONY : parse.c.s
 
 preprocess.o: preprocess.c.o
@@ -376,7 +375,7 @@ preprocess.o: preprocess.c.o
 
 # target to build an object file
 preprocess.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/preprocess.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/preprocess.c.o
 .PHONY : preprocess.c.o
 
 preprocess.i: preprocess.c.i
@@ -384,7 +383,7 @@ preprocess.i: preprocess.c.i
 
 # target to preprocess a source file
 preprocess.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/preprocess.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/preprocess.c.i
 .PHONY : preprocess.c.i
 
 preprocess.s: preprocess.c.s
@@ -392,7 +391,7 @@ preprocess.s: preprocess.c.s
 
 # target to generate assembly for a file
 preprocess.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/preprocess.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/preprocess.c.s
 .PHONY : preprocess.c.s
 
 sgrep.o: sgrep.c.o
@@ -400,7 +399,7 @@ sgrep.o: sgrep.c.o
 
 # target to build an object file
 sgrep.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/sgrep.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/sgrep.c.o
 .PHONY : sgrep.c.o
 
 sgrep.i: sgrep.c.i
@@ -408,7 +407,7 @@ sgrep.i: sgrep.c.i
 
 # target to preprocess a source file
 sgrep.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/sgrep.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/sgrep.c.i
 .PHONY : sgrep.c.i
 
 sgrep.s: sgrep.c.s
@@ -416,7 +415,7 @@ sgrep.s: sgrep.c.s
 
 # target to generate assembly for a file
 sgrep.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/sgrep.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/sgrep.c.s
 .PHONY : sgrep.c.s
 
 utilities.o: utilities.c.o
@@ -424,7 +423,7 @@ utilities.o: utilities.c.o
 
 # target to build an object file
 utilities.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/utilities.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/utilities.c.o
 .PHONY : utilities.c.o
 
 utilities.i: utilities.c.i
@@ -432,7 +431,7 @@ utilities.i: utilities.c.i
 
 # target to preprocess a source file
 utilities.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/utilities.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/utilities.c.i
 .PHONY : utilities.c.i
 
 utilities.s: utilities.c.s
@@ -440,7 +439,7 @@ utilities.s: utilities.c.s
 
 # target to generate assembly for a file
 utilities.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/utilities.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/build.make MultiSource/Benchmarks/Prolangs-C/agrep/CMakeFiles/agrep.dir/utilities.c.s
 .PHONY : utilities.c.s
 
 # Help Target
@@ -502,7 +501,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/allroots/allroots  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/allroots/allroots  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     96    4128
 .plt.got                  8    4224
-.text                  6638    4240
-.fini                    13   10880
-.rodata                1569   12288
-.eh_frame_hdr            84   13860
-.eh_frame               552   13944
+.text                  5223    4240
+.fini                    13    9464
+.rodata                1265   12288
+.eh_frame_hdr            84   13556
+.eh_frame               552   13640
 .init_array               8   19904
 .fini_array               8   19912
 .dynamic                496   19920
@@ -27,6 +27,6 @@ section                size    addr
 .data                    48   20528
 .bss                     16   20576
 .comment                 82       0
-Total                 10766
+Total                  9047
 
 

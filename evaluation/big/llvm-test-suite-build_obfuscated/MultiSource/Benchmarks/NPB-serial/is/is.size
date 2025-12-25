@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is  :
 section                     size    addr
 .interp                       28     792
 .note.gnu.property            32     824
@@ -14,11 +14,11 @@ section                     size    addr
 .init                         27    4096
 .plt                          64    4128
 .plt.got                       8    4192
-.text                       5732    4208
-.fini                         13    9940
-.rodata                     1113   12288
-.eh_frame_hdr                 84   13404
-.eh_frame                    372   13488
+.text                       5361    4208
+.fini                         13    9572
+.rodata                     1049   12288
+.eh_frame_hdr                 84   13340
+.eh_frame                    372   13424
 .init_array                    8   19920
 .fini_array                    8   19928
 .dynamic                     480   19936
@@ -27,6 +27,6 @@ section                     size    addr
 .data                        388   20512
 .bss                   276832424   20912
 .comment                      82       0
-Total                  276841756
+Total                  276841321
 
 

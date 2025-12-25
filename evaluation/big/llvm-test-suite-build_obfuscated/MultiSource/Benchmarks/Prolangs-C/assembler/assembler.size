@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/assembler/assembler  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/assembler/assembler  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    8192
 .plt                     432    8224
 .plt.got                   8    8656
-.text                  42404    8672
-.fini                     13   51076
-.rodata                 9348   53248
-.eh_frame_hdr            444   62596
-.eh_frame               3432   63040
-.init_array                8   73152
-.fini_array                8   73160
-.dynamic                 496   73168
-.got                      40   73664
-.got.plt                 232   73704
-.data                   1996   73936
-.bss                     424   75936
+.text                  32340    8672
+.fini                     13   41012
+.rodata                 7212   45056
+.eh_frame_hdr            444   52268
+.eh_frame               3336   52712
+.init_array                8   60864
+.fini_array                8   60872
+.dynamic                 496   60880
+.got                      40   61376
+.got.plt                 232   61416
+.data                   1996   61648
+.bss                     424   63648
 .comment                  82       0
-Total                  64526
+Total                  52230
 
 

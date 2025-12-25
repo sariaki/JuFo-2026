@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/Burg/burg  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/Burg/burg  :
 section                 size     addr
 .interp                   28      792
 .note.gnu.property        32      824
@@ -14,19 +14,19 @@ section                 size     addr
 .init                     27     4096
 .plt                     432     4128
 .plt.got                   8     4560
-.text                  92085     4576
-.fini                     13    96664
-.rodata                22776    98304
-.eh_frame_hdr           1212   121080
-.eh_frame               7528   122296
-.init_array                8   134584
-.fini_array                8   134592
-.dynamic                 480   134600
-.got                      64   135080
-.got.plt                 232   135144
-.data                    194   135376
-.bss                   16704   135584
+.text                  83028     4576
+.fini                     13    87604
+.rodata                20632    90112
+.eh_frame_hdr           1212   110744
+.eh_frame               7496   111960
+.init_array                8   126392
+.fini_array                8   126400
+.dynamic                 480   126408
+.got                      64   126888
+.got.plt                 232   126952
+.data                    194   127184
+.bss                   16704   127392
 .comment                  82        0
-Total                 144259
+Total                 133026
 
 

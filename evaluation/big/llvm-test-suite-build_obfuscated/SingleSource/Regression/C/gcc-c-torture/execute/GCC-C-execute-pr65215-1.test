@@ -1,1 +1,0 @@
-RUN: %S/GCC-C-execute-pr65215-1 

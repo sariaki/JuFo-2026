@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/depend.make
@@ -72,30 +72,30 @@ include MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/flags.make
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/flags.make
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/pifft.dir/fftsg.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o -MF CMakeFiles/pifft.dir/fftsg.c.o.d -o CMakeFiles/pifft.dir/fftsg.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/pifft.dir/fftsg.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o -MF CMakeFiles/pifft.dir/fftsg.c.o.d -o CMakeFiles/pifft.dir/fftsg.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/pifft.dir/fftsg.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c > CMakeFiles/pifft.dir/fftsg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c > CMakeFiles/pifft.dir/fftsg.c.i
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/pifft.dir/fftsg.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c -o CMakeFiles/pifft.dir/fftsg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/fftsg.c -o CMakeFiles/pifft.dir/fftsg.c.s
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/flags.make
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/pifft.dir/pifft.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o -MF CMakeFiles/pifft.dir/pifft.c.o.d -o CMakeFiles/pifft.dir/pifft.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/pifft.dir/pifft.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o -MF CMakeFiles/pifft.dir/pifft.c.o.d -o CMakeFiles/pifft.dir/pifft.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/pifft.dir/pifft.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c > CMakeFiles/pifft.dir/pifft.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c > CMakeFiles/pifft.dir/pifft.c.i
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/pifft.dir/pifft.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c -o CMakeFiles/pifft.dir/pifft.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.c -o CMakeFiles/pifft.dir/pifft.c.s
 
 # Object files for target pifft
 pifft_OBJECTS = \
@@ -109,21 +109,21 @@ MultiSource/Benchmarks/FreeBench/pifft/pifft: MultiSource/Benchmarks/FreeBench/p
 MultiSource/Benchmarks/FreeBench/pifft/pifft: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o
 MultiSource/Benchmarks/FreeBench/pifft/pifft: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make
 MultiSource/Benchmarks/FreeBench/pifft/pifft: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable pifft"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pifft.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/test.in /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/test.in
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable pifft"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pifft.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/pifft.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft/test.in /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/test.in
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build: MultiSource/Benchmarks/FreeBench/pifft/pifft
 .PHONY : MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && $(CMAKE_COMMAND) -P CMakeFiles/pifft.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft && $(CMAKE_COMMAND) -P CMakeFiles/pifft.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/clean
 
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/pifft /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/depend
 

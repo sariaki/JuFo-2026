@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/covariance 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/covariance.reference_output

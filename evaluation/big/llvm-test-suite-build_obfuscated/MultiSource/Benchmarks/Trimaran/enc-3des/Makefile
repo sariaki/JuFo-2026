@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-3des//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-3des//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/rule
 .PHONY : MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ enc-3des: MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/rule
 
 # fast build rule for target.
 enc-3des/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build
 .PHONY : enc-3des/fast
 
 des.o: des.c.o
@@ -136,7 +135,7 @@ des.o: des.c.o
 
 # target to build an object file
 des.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/des.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/des.c.o
 .PHONY : des.c.o
 
 des.i: des.c.i
@@ -144,7 +143,7 @@ des.i: des.c.i
 
 # target to preprocess a source file
 des.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/des.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/des.c.i
 .PHONY : des.c.i
 
 des.s: des.c.s
@@ -152,7 +151,7 @@ des.s: des.c.s
 
 # target to generate assembly for a file
 des.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/des.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/build.make MultiSource/Benchmarks/Trimaran/enc-3des/CMakeFiles/enc-3des.dir/des.c.s
 .PHONY : des.c.s
 
 # Help Target
@@ -178,7 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

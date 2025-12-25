@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/archie-client/archie  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/archie-client/archie  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27   16384
 .plt                     656   16416
 .plt.got                   8   17072
-.text                  41147   17088
-.fini                     13   58236
-.rodata                10404   61440
-.eh_frame_hdr            348   71844
-.eh_frame               2332   72192
-.init_array                8   81352
-.fini_array                8   81360
-.dynamic                 480   81368
-.got                      48   81848
-.got.plt                 344   81896
-.data                   6180   82240
-.bss                    2328   88432
+.text                  30363   17088
+.fini                     13   47452
+.rodata                 8368   49152
+.eh_frame_hdr            348   57520
+.eh_frame               2172   57872
+.init_array                8   64968
+.fini_array                8   64976
+.dynamic                 480   64984
+.got                      48   65464
+.got.plt                 344   65512
+.data                   6180   65856
+.bss                    2328   72048
 .comment                  82       0
-Total                  79782
+Total                  66802
 
 

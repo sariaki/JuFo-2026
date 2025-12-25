@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/depend.make
@@ -72,58 +72,58 @@ include MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/flags.make
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/flags.make
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/align.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o -MF CMakeFiles/SIBsim4.dir/align.c.o.d -o CMakeFiles/SIBsim4.dir/align.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/align.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.o -MF CMakeFiles/SIBsim4.dir/align.c.o.d -o CMakeFiles/SIBsim4.dir/align.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SIBsim4.dir/align.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c > CMakeFiles/SIBsim4.dir/align.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c > CMakeFiles/SIBsim4.dir/align.c.i
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/align.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SIBsim4.dir/align.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c -o CMakeFiles/SIBsim4.dir/align.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/align.c -o CMakeFiles/SIBsim4.dir/align.c.s
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/flags.make
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/misc.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o -MF CMakeFiles/SIBsim4.dir/misc.c.o.d -o CMakeFiles/SIBsim4.dir/misc.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/misc.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.o -MF CMakeFiles/SIBsim4.dir/misc.c.o.d -o CMakeFiles/SIBsim4.dir/misc.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SIBsim4.dir/misc.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c > CMakeFiles/SIBsim4.dir/misc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c > CMakeFiles/SIBsim4.dir/misc.c.i
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/misc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SIBsim4.dir/misc.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c -o CMakeFiles/SIBsim4.dir/misc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/misc.c -o CMakeFiles/SIBsim4.dir/misc.c.s
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/flags.make
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/sim4.init.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o -MF CMakeFiles/SIBsim4.dir/sim4.init.c.o.d -o CMakeFiles/SIBsim4.dir/sim4.init.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/sim4.init.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.o -MF CMakeFiles/SIBsim4.dir/sim4.init.c.o.d -o CMakeFiles/SIBsim4.dir/sim4.init.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SIBsim4.dir/sim4.init.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c > CMakeFiles/SIBsim4.dir/sim4.init.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c > CMakeFiles/SIBsim4.dir/sim4.init.c.i
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4.init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SIBsim4.dir/sim4.init.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c -o CMakeFiles/SIBsim4.dir/sim4.init.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4.init.c -o CMakeFiles/SIBsim4.dir/sim4.init.c.s
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/flags.make
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/sim4b1.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o -MF CMakeFiles/SIBsim4.dir/sim4b1.c.o.d -o CMakeFiles/SIBsim4.dir/sim4b1.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/SIBsim4.dir/sim4b1.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o -MF CMakeFiles/SIBsim4.dir/sim4b1.c.o.d -o CMakeFiles/SIBsim4.dir/sim4b1.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SIBsim4.dir/sim4b1.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c > CMakeFiles/SIBsim4.dir/sim4b1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c > CMakeFiles/SIBsim4.dir/sim4b1.c.i
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SIBsim4.dir/sim4b1.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c -o CMakeFiles/SIBsim4.dir/sim4b1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/sim4b1.c -o CMakeFiles/SIBsim4.dir/sim4b1.c.s
 
 # Object files for target SIBsim4
 SIBsim4_OBJECTS = \
@@ -141,22 +141,22 @@ MultiSource/Applications/SIBsim4/SIBsim4: MultiSource/Applications/SIBsim4/CMake
 MultiSource/Applications/SIBsim4/SIBsim4: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/sim4b1.c.o
 MultiSource/Applications/SIBsim4/SIBsim4: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/build.make
 MultiSource/Applications/SIBsim4/SIBsim4: MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable SIBsim4"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SIBsim4.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4 > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/SIBsim4.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/x.fa /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/x.fa
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/y.fa /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/y.fa
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable SIBsim4"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SIBsim4.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4 > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/SIBsim4.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/x.fa /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/x.fa
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4/y.fa /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/y.fa
 
 # Rule to build all files generated by this target.
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/build: MultiSource/Applications/SIBsim4/SIBsim4
 .PHONY : MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/build
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 && $(CMAKE_COMMAND) -P CMakeFiles/SIBsim4.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 && $(CMAKE_COMMAND) -P CMakeFiles/SIBsim4.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/clean
 
 MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/SIBsim4 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/SIBsim4/CMakeFiles/SIBsim4.dir/depend
 

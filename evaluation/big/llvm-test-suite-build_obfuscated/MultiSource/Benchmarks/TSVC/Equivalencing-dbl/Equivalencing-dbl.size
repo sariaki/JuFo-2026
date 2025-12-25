@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/TSVC/Equivalencing-dbl/Equivalencing-dbl  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/TSVC/Equivalencing-dbl/Equivalencing-dbl  :
 section                   size    addr
 .interp                     28     792
 .note.gnu.property          32     824
@@ -14,11 +14,11 @@ section                   size    addr
 .init                       27    4096
 .plt                       128    4128
 .plt.got                     8    4256
-.text                    48480    4272
-.fini                       13   52752
-.rodata                   2312   53248
-.eh_frame_hdr              156   55560
-.eh_frame                  812   55720
+.text                    47450    4272
+.fini                       13   51724
+.rodata                   2104   53248
+.eh_frame_hdr              156   55352
+.eh_frame                  812   55512
 .init_array                  8   60592
 .fini_array                  8   60600
 .data.rel.ro               264   60608
@@ -28,6 +28,6 @@ section                   size    addr
 .data                       24   61496
 .bss                   5566056   61536
 .comment                    82       0
-Total                  5620322
+Total                  5619084
 
 

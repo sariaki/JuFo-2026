@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/shapes/shapes  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/shapes/shapes  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,21 +14,21 @@ section                 size    addr
 .init                     27    4096
 .plt                     112    4128
 .plt.got                   8    4240
-.text                  22611    4256
-.fini                     13   26868
-.rodata                 4953   28672
-.eh_frame_hdr            316   33628
-.eh_frame               1524   33944
-.gcc_except_table        120   35468
-.init_array                8   39968
-.fini_array                8   39976
-.data.rel.ro             376   39984
-.dynamic                 528   40360
-.got                      48   40888
-.got.plt                  72   40936
-.data                     24   41008
-.bss                     984   41040
+.text                  16493    4256
+.fini                     13   20752
+.rodata                 3577   24576
+.eh_frame_hdr            316   28156
+.eh_frame               1472   28472
+.gcc_except_table        120   29944
+.init_array                8   35872
+.fini_array                8   35880
+.data.rel.ro             376   35888
+.dynamic                 528   36264
+.got                      48   36792
+.got.plt                  72   36840
+.data                     24   36912
+.bss                     984   36944
 .comment                  82       0
-Total                  34519
+Total                  26973
 
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/automotive-bitcount//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/automotive-bitcount//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/rule
 .PHONY : MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ automotive-bitcount: MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFil
 
 # fast build rule for target.
 automotive-bitcount/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build
 .PHONY : automotive-bitcount/fast
 
 bitarray.o: bitarray.c.o
@@ -136,7 +135,7 @@ bitarray.o: bitarray.c.o
 
 # target to build an object file
 bitarray.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitarray.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitarray.c.o
 .PHONY : bitarray.c.o
 
 bitarray.i: bitarray.c.i
@@ -144,7 +143,7 @@ bitarray.i: bitarray.c.i
 
 # target to preprocess a source file
 bitarray.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitarray.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitarray.c.i
 .PHONY : bitarray.c.i
 
 bitarray.s: bitarray.c.s
@@ -152,7 +151,7 @@ bitarray.s: bitarray.c.s
 
 # target to generate assembly for a file
 bitarray.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitarray.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitarray.c.s
 .PHONY : bitarray.c.s
 
 bitcnt_1.o: bitcnt_1.c.o
@@ -160,7 +159,7 @@ bitcnt_1.o: bitcnt_1.c.o
 
 # target to build an object file
 bitcnt_1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_1.c.o
 .PHONY : bitcnt_1.c.o
 
 bitcnt_1.i: bitcnt_1.c.i
@@ -168,7 +167,7 @@ bitcnt_1.i: bitcnt_1.c.i
 
 # target to preprocess a source file
 bitcnt_1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_1.c.i
 .PHONY : bitcnt_1.c.i
 
 bitcnt_1.s: bitcnt_1.c.s
@@ -176,7 +175,7 @@ bitcnt_1.s: bitcnt_1.c.s
 
 # target to generate assembly for a file
 bitcnt_1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_1.c.s
 .PHONY : bitcnt_1.c.s
 
 bitcnt_2.o: bitcnt_2.c.o
@@ -184,7 +183,7 @@ bitcnt_2.o: bitcnt_2.c.o
 
 # target to build an object file
 bitcnt_2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_2.c.o
 .PHONY : bitcnt_2.c.o
 
 bitcnt_2.i: bitcnt_2.c.i
@@ -192,7 +191,7 @@ bitcnt_2.i: bitcnt_2.c.i
 
 # target to preprocess a source file
 bitcnt_2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_2.c.i
 .PHONY : bitcnt_2.c.i
 
 bitcnt_2.s: bitcnt_2.c.s
@@ -200,7 +199,7 @@ bitcnt_2.s: bitcnt_2.c.s
 
 # target to generate assembly for a file
 bitcnt_2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_2.c.s
 .PHONY : bitcnt_2.c.s
 
 bitcnt_3.o: bitcnt_3.c.o
@@ -208,7 +207,7 @@ bitcnt_3.o: bitcnt_3.c.o
 
 # target to build an object file
 bitcnt_3.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_3.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_3.c.o
 .PHONY : bitcnt_3.c.o
 
 bitcnt_3.i: bitcnt_3.c.i
@@ -216,7 +215,7 @@ bitcnt_3.i: bitcnt_3.c.i
 
 # target to preprocess a source file
 bitcnt_3.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_3.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_3.c.i
 .PHONY : bitcnt_3.c.i
 
 bitcnt_3.s: bitcnt_3.c.s
@@ -224,7 +223,7 @@ bitcnt_3.s: bitcnt_3.c.s
 
 # target to generate assembly for a file
 bitcnt_3.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_3.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_3.c.s
 .PHONY : bitcnt_3.c.s
 
 bitcnt_4.o: bitcnt_4.c.o
@@ -232,7 +231,7 @@ bitcnt_4.o: bitcnt_4.c.o
 
 # target to build an object file
 bitcnt_4.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_4.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_4.c.o
 .PHONY : bitcnt_4.c.o
 
 bitcnt_4.i: bitcnt_4.c.i
@@ -240,7 +239,7 @@ bitcnt_4.i: bitcnt_4.c.i
 
 # target to preprocess a source file
 bitcnt_4.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_4.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_4.c.i
 .PHONY : bitcnt_4.c.i
 
 bitcnt_4.s: bitcnt_4.c.s
@@ -248,7 +247,7 @@ bitcnt_4.s: bitcnt_4.c.s
 
 # target to generate assembly for a file
 bitcnt_4.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_4.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnt_4.c.s
 .PHONY : bitcnt_4.c.s
 
 bitcnts.o: bitcnts.c.o
@@ -256,7 +255,7 @@ bitcnts.o: bitcnts.c.o
 
 # target to build an object file
 bitcnts.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnts.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnts.c.o
 .PHONY : bitcnts.c.o
 
 bitcnts.i: bitcnts.c.i
@@ -264,7 +263,7 @@ bitcnts.i: bitcnts.c.i
 
 # target to preprocess a source file
 bitcnts.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnts.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnts.c.i
 .PHONY : bitcnts.c.i
 
 bitcnts.s: bitcnts.c.s
@@ -272,7 +271,7 @@ bitcnts.s: bitcnts.c.s
 
 # target to generate assembly for a file
 bitcnts.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnts.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitcnts.c.s
 .PHONY : bitcnts.c.s
 
 bitfiles.o: bitfiles.c.o
@@ -280,7 +279,7 @@ bitfiles.o: bitfiles.c.o
 
 # target to build an object file
 bitfiles.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitfiles.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitfiles.c.o
 .PHONY : bitfiles.c.o
 
 bitfiles.i: bitfiles.c.i
@@ -288,7 +287,7 @@ bitfiles.i: bitfiles.c.i
 
 # target to preprocess a source file
 bitfiles.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitfiles.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitfiles.c.i
 .PHONY : bitfiles.c.i
 
 bitfiles.s: bitfiles.c.s
@@ -296,7 +295,7 @@ bitfiles.s: bitfiles.c.s
 
 # target to generate assembly for a file
 bitfiles.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitfiles.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitfiles.c.s
 .PHONY : bitfiles.c.s
 
 bitstrng.o: bitstrng.c.o
@@ -304,7 +303,7 @@ bitstrng.o: bitstrng.c.o
 
 # target to build an object file
 bitstrng.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitstrng.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitstrng.c.o
 .PHONY : bitstrng.c.o
 
 bitstrng.i: bitstrng.c.i
@@ -312,7 +311,7 @@ bitstrng.i: bitstrng.c.i
 
 # target to preprocess a source file
 bitstrng.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitstrng.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitstrng.c.i
 .PHONY : bitstrng.c.i
 
 bitstrng.s: bitstrng.c.s
@@ -320,7 +319,7 @@ bitstrng.s: bitstrng.c.s
 
 # target to generate assembly for a file
 bitstrng.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitstrng.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bitstrng.c.s
 .PHONY : bitstrng.c.s
 
 bstr_i.o: bstr_i.c.o
@@ -328,7 +327,7 @@ bstr_i.o: bstr_i.c.o
 
 # target to build an object file
 bstr_i.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bstr_i.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bstr_i.c.o
 .PHONY : bstr_i.c.o
 
 bstr_i.i: bstr_i.c.i
@@ -336,7 +335,7 @@ bstr_i.i: bstr_i.c.i
 
 # target to preprocess a source file
 bstr_i.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bstr_i.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bstr_i.c.i
 .PHONY : bstr_i.c.i
 
 bstr_i.s: bstr_i.c.s
@@ -344,7 +343,7 @@ bstr_i.s: bstr_i.c.s
 
 # target to generate assembly for a file
 bstr_i.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bstr_i.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/build.make MultiSource/Benchmarks/MiBench/automotive-bitcount/CMakeFiles/automotive-bitcount.dir/bstr_i.c.s
 .PHONY : bstr_i.c.s
 
 # Help Target
@@ -394,7 +393,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

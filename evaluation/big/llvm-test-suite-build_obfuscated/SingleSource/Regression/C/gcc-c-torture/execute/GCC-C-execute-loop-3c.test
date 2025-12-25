@@ -1,1 +1,0 @@
-RUN: %S/GCC-C-execute-loop-3c 

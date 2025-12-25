@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Utility rule file for lua_input.
 
@@ -67,13 +67,13 @@ include MultiSource/Applications/lua/CMakeFiles/lua_input.dir/compiler_depend.ma
 include MultiSource/Applications/lua/CMakeFiles/lua_input.dir/progress.make
 
 MultiSource/Applications/lua/generate_inputs.sh:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating lua test inputs"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && cp /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/generate_inputs.sh /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/test /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/bench /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/input /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/*.lua /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua/generate_inputs.sh
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating lua test inputs"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && cp /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/generate_inputs.sh /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/test /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/bench /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/input /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && cp -r /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua/*.lua /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua/generate_inputs.sh
 
 lua_input: MultiSource/Applications/lua/generate_inputs.sh
 lua_input: MultiSource/Applications/lua/CMakeFiles/lua_input.dir/build.make
@@ -84,10 +84,10 @@ MultiSource/Applications/lua/CMakeFiles/lua_input.dir/build: lua_input
 .PHONY : MultiSource/Applications/lua/CMakeFiles/lua_input.dir/build
 
 MultiSource/Applications/lua/CMakeFiles/lua_input.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua && $(CMAKE_COMMAND) -P CMakeFiles/lua_input.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua && $(CMAKE_COMMAND) -P CMakeFiles/lua_input.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/lua/CMakeFiles/lua_input.dir/clean
 
 MultiSource/Applications/lua/CMakeFiles/lua_input.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua/CMakeFiles/lua_input.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/lua /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua/CMakeFiles/lua_input.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/lua/CMakeFiles/lua_input.dir/depend
 

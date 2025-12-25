@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/primes/primes  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/primes/primes  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     64    4128
 .plt.got                  8    4192
-.text                  3754    4208
-.fini                    13    7964
-.rodata                 938    8192
-.eh_frame_hdr            76    9132
-.eh_frame               308    9208
+.text                  1837    4208
+.fini                    13    6048
+.rodata                 522    8192
+.eh_frame_hdr            68    8716
+.eh_frame               256    8784
 .init_array               8   15616
 .fini_array               8   15624
 .data.rel.ro            160   15632
@@ -28,6 +28,6 @@ section                size    addr
 .data                    16   16408
 .bss                      8   16424
 .comment                 82       0
-Total                  7602
+Total                  5209
 
 

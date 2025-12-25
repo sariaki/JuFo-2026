@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/testcase-CGExprConstant 
-VERIFY: %b/fpcmp-target %o %S/testcase-CGExprConstant.reference_output

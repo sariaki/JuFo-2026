@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     80    4128
 .plt.got                  8    4208
-.text                  7700    4224
-.fini                    13   11924
-.rodata                1583   12288
-.eh_frame_hdr            92   13872
-.eh_frame               628   13968
+.text                  4945    4224
+.fini                    13    9172
+.rodata                1023   12288
+.eh_frame_hdr            92   13312
+.eh_frame               600   13408
 .init_array               8   19920
 .fini_array               8   19928
 .dynamic                480   19936
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   20512
 .bss                      8   20528
 .comment                 82       0
-Total                 11749
+Total                  8406
 
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ miniFE: MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/ru
 
 # fast build rule for target.
 miniFE/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build
 .PHONY : miniFE/fast
 
 BoxPartition.o: BoxPartition.cpp.o
@@ -136,7 +135,7 @@ BoxPartition.o: BoxPartition.cpp.o
 
 # target to build an object file
 BoxPartition.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/BoxPartition.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/BoxPartition.cpp.o
 .PHONY : BoxPartition.cpp.o
 
 BoxPartition.i: BoxPartition.cpp.i
@@ -144,7 +143,7 @@ BoxPartition.i: BoxPartition.cpp.i
 
 # target to preprocess a source file
 BoxPartition.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/BoxPartition.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/BoxPartition.cpp.i
 .PHONY : BoxPartition.cpp.i
 
 BoxPartition.s: BoxPartition.cpp.s
@@ -152,7 +151,7 @@ BoxPartition.s: BoxPartition.cpp.s
 
 # target to generate assembly for a file
 BoxPartition.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/BoxPartition.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/BoxPartition.cpp.s
 .PHONY : BoxPartition.cpp.s
 
 YAML_Doc.o: YAML_Doc.cpp.o
@@ -160,7 +159,7 @@ YAML_Doc.o: YAML_Doc.cpp.o
 
 # target to build an object file
 YAML_Doc.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Doc.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Doc.cpp.o
 .PHONY : YAML_Doc.cpp.o
 
 YAML_Doc.i: YAML_Doc.cpp.i
@@ -168,7 +167,7 @@ YAML_Doc.i: YAML_Doc.cpp.i
 
 # target to preprocess a source file
 YAML_Doc.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Doc.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Doc.cpp.i
 .PHONY : YAML_Doc.cpp.i
 
 YAML_Doc.s: YAML_Doc.cpp.s
@@ -176,7 +175,7 @@ YAML_Doc.s: YAML_Doc.cpp.s
 
 # target to generate assembly for a file
 YAML_Doc.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Doc.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Doc.cpp.s
 .PHONY : YAML_Doc.cpp.s
 
 YAML_Element.o: YAML_Element.cpp.o
@@ -184,7 +183,7 @@ YAML_Element.o: YAML_Element.cpp.o
 
 # target to build an object file
 YAML_Element.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Element.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Element.cpp.o
 .PHONY : YAML_Element.cpp.o
 
 YAML_Element.i: YAML_Element.cpp.i
@@ -192,7 +191,7 @@ YAML_Element.i: YAML_Element.cpp.i
 
 # target to preprocess a source file
 YAML_Element.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Element.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Element.cpp.i
 .PHONY : YAML_Element.cpp.i
 
 YAML_Element.s: YAML_Element.cpp.s
@@ -200,7 +199,7 @@ YAML_Element.s: YAML_Element.cpp.s
 
 # target to generate assembly for a file
 YAML_Element.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Element.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/YAML_Element.cpp.s
 .PHONY : YAML_Element.cpp.s
 
 main.o: main.cpp.o
@@ -208,7 +207,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/main.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -216,7 +215,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/main.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -224,7 +223,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/main.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mytimer.o: mytimer.cpp.o
@@ -232,7 +231,7 @@ mytimer.o: mytimer.cpp.o
 
 # target to build an object file
 mytimer.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/mytimer.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/mytimer.cpp.o
 .PHONY : mytimer.cpp.o
 
 mytimer.i: mytimer.cpp.i
@@ -240,7 +239,7 @@ mytimer.i: mytimer.cpp.i
 
 # target to preprocess a source file
 mytimer.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/mytimer.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/mytimer.cpp.i
 .PHONY : mytimer.cpp.i
 
 mytimer.s: mytimer.cpp.s
@@ -248,7 +247,7 @@ mytimer.s: mytimer.cpp.s
 
 # target to generate assembly for a file
 mytimer.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/mytimer.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/mytimer.cpp.s
 .PHONY : mytimer.cpp.s
 
 param_utils.o: param_utils.cpp.o
@@ -256,7 +255,7 @@ param_utils.o: param_utils.cpp.o
 
 # target to build an object file
 param_utils.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/param_utils.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/param_utils.cpp.o
 .PHONY : param_utils.cpp.o
 
 param_utils.i: param_utils.cpp.i
@@ -264,7 +263,7 @@ param_utils.i: param_utils.cpp.i
 
 # target to preprocess a source file
 param_utils.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/param_utils.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/param_utils.cpp.i
 .PHONY : param_utils.cpp.i
 
 param_utils.s: param_utils.cpp.s
@@ -272,7 +271,7 @@ param_utils.s: param_utils.cpp.s
 
 # target to generate assembly for a file
 param_utils.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/param_utils.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/param_utils.cpp.s
 .PHONY : param_utils.cpp.s
 
 utils.o: utils.cpp.o
@@ -280,7 +279,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/utils.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -288,7 +287,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/utils.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -296,7 +295,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/utils.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/CMakeFiles/miniFE.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -340,7 +339,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

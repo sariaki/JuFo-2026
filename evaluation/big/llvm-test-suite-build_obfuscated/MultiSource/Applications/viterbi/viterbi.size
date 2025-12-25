@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi/viterbi  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi/viterbi  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                    208    4128
 .plt.got                  8    4336
-.text                  6621    4352
-.fini                    13   10976
-.rodata                1028   12288
-.eh_frame_hdr            68   13316
-.eh_frame               400   13384
+.text                  5325    4352
+.fini                    13    9680
+.rodata                 820   12288
+.eh_frame_hdr            68   13108
+.eh_frame               400   13176
 .init_array               8   19920
 .fini_array               8   19928
 .dynamic                480   19936
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   20576
 .bss                      8   20592
 .comment                 82       0
-Total                 10574
+Total                  9070
 
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/treecc//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/treecc//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/treecc/CMakeFiles/treecc.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/CMakeFiles/treecc.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/treecc/CMakeFiles/treecc.dir/rule
 .PHONY : MultiSource/Applications/treecc/CMakeFiles/treecc.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ treecc: MultiSource/Applications/treecc/CMakeFiles/treecc.dir/rule
 
 # fast build rule for target.
 treecc/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build
 .PHONY : treecc/fast
 
 context.o: context.c.o
@@ -136,7 +135,7 @@ context.o: context.c.o
 
 # target to build an object file
 context.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/context.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/context.c.o
 .PHONY : context.c.o
 
 context.i: context.c.i
@@ -144,7 +143,7 @@ context.i: context.c.i
 
 # target to preprocess a source file
 context.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/context.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/context.c.i
 .PHONY : context.c.i
 
 context.s: context.c.s
@@ -152,7 +151,7 @@ context.s: context.c.s
 
 # target to generate assembly for a file
 context.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/context.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/context.c.s
 .PHONY : context.c.s
 
 errors.o: errors.c.o
@@ -160,7 +159,7 @@ errors.o: errors.c.o
 
 # target to build an object file
 errors.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/errors.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/errors.c.o
 .PHONY : errors.c.o
 
 errors.i: errors.c.i
@@ -168,7 +167,7 @@ errors.i: errors.c.i
 
 # target to preprocess a source file
 errors.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/errors.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/errors.c.i
 .PHONY : errors.c.i
 
 errors.s: errors.c.s
@@ -176,7 +175,7 @@ errors.s: errors.c.s
 
 # target to generate assembly for a file
 errors.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/errors.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/errors.c.s
 .PHONY : errors.c.s
 
 gen.o: gen.c.o
@@ -184,7 +183,7 @@ gen.o: gen.c.o
 
 # target to build an object file
 gen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen.c.o
 .PHONY : gen.c.o
 
 gen.i: gen.c.i
@@ -192,7 +191,7 @@ gen.i: gen.c.i
 
 # target to preprocess a source file
 gen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen.c.i
 .PHONY : gen.c.i
 
 gen.s: gen.c.s
@@ -200,7 +199,7 @@ gen.s: gen.c.s
 
 # target to generate assembly for a file
 gen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen.c.s
 .PHONY : gen.c.s
 
 gen_c.o: gen_c.c.o
@@ -208,7 +207,7 @@ gen_c.o: gen_c.c.o
 
 # target to build an object file
 gen_c.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_c.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_c.c.o
 .PHONY : gen_c.c.o
 
 gen_c.i: gen_c.c.i
@@ -216,7 +215,7 @@ gen_c.i: gen_c.c.i
 
 # target to preprocess a source file
 gen_c.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_c.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_c.c.i
 .PHONY : gen_c.c.i
 
 gen_c.s: gen_c.c.s
@@ -224,7 +223,7 @@ gen_c.s: gen_c.c.s
 
 # target to generate assembly for a file
 gen_c.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_c.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_c.c.s
 .PHONY : gen_c.c.s
 
 gen_cpp.o: gen_cpp.c.o
@@ -232,7 +231,7 @@ gen_cpp.o: gen_cpp.c.o
 
 # target to build an object file
 gen_cpp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cpp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cpp.c.o
 .PHONY : gen_cpp.c.o
 
 gen_cpp.i: gen_cpp.c.i
@@ -240,7 +239,7 @@ gen_cpp.i: gen_cpp.c.i
 
 # target to preprocess a source file
 gen_cpp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cpp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cpp.c.i
 .PHONY : gen_cpp.c.i
 
 gen_cpp.s: gen_cpp.c.s
@@ -248,7 +247,7 @@ gen_cpp.s: gen_cpp.c.s
 
 # target to generate assembly for a file
 gen_cpp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cpp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cpp.c.s
 .PHONY : gen_cpp.c.s
 
 gen_cs.o: gen_cs.c.o
@@ -256,7 +255,7 @@ gen_cs.o: gen_cs.c.o
 
 # target to build an object file
 gen_cs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cs.c.o
 .PHONY : gen_cs.c.o
 
 gen_cs.i: gen_cs.c.i
@@ -264,7 +263,7 @@ gen_cs.i: gen_cs.c.i
 
 # target to preprocess a source file
 gen_cs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cs.c.i
 .PHONY : gen_cs.c.i
 
 gen_cs.s: gen_cs.c.s
@@ -272,7 +271,7 @@ gen_cs.s: gen_cs.c.s
 
 # target to generate assembly for a file
 gen_cs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_cs.c.s
 .PHONY : gen_cs.c.s
 
 gen_java.o: gen_java.c.o
@@ -280,7 +279,7 @@ gen_java.o: gen_java.c.o
 
 # target to build an object file
 gen_java.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_java.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_java.c.o
 .PHONY : gen_java.c.o
 
 gen_java.i: gen_java.c.i
@@ -288,7 +287,7 @@ gen_java.i: gen_java.c.i
 
 # target to preprocess a source file
 gen_java.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_java.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_java.c.i
 .PHONY : gen_java.c.i
 
 gen_java.s: gen_java.c.s
@@ -296,7 +295,7 @@ gen_java.s: gen_java.c.s
 
 # target to generate assembly for a file
 gen_java.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_java.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_java.c.s
 .PHONY : gen_java.c.s
 
 gen_php.o: gen_php.c.o
@@ -304,7 +303,7 @@ gen_php.o: gen_php.c.o
 
 # target to build an object file
 gen_php.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_php.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_php.c.o
 .PHONY : gen_php.c.o
 
 gen_php.i: gen_php.c.i
@@ -312,7 +311,7 @@ gen_php.i: gen_php.c.i
 
 # target to preprocess a source file
 gen_php.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_php.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_php.c.i
 .PHONY : gen_php.c.i
 
 gen_php.s: gen_php.c.s
@@ -320,7 +319,7 @@ gen_php.s: gen_php.c.s
 
 # target to generate assembly for a file
 gen_php.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_php.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_php.c.s
 .PHONY : gen_php.c.s
 
 gen_ruby.o: gen_ruby.c.o
@@ -328,7 +327,7 @@ gen_ruby.o: gen_ruby.c.o
 
 # target to build an object file
 gen_ruby.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_ruby.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_ruby.c.o
 .PHONY : gen_ruby.c.o
 
 gen_ruby.i: gen_ruby.c.i
@@ -336,7 +335,7 @@ gen_ruby.i: gen_ruby.c.i
 
 # target to preprocess a source file
 gen_ruby.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_ruby.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_ruby.c.i
 .PHONY : gen_ruby.c.i
 
 gen_ruby.s: gen_ruby.c.s
@@ -344,7 +343,7 @@ gen_ruby.s: gen_ruby.c.s
 
 # target to generate assembly for a file
 gen_ruby.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_ruby.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/gen_ruby.c.s
 .PHONY : gen_ruby.c.s
 
 input.o: input.c.o
@@ -352,7 +351,7 @@ input.o: input.c.o
 
 # target to build an object file
 input.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/input.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/input.c.o
 .PHONY : input.c.o
 
 input.i: input.c.i
@@ -360,7 +359,7 @@ input.i: input.c.i
 
 # target to preprocess a source file
 input.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/input.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/input.c.i
 .PHONY : input.c.i
 
 input.s: input.c.s
@@ -368,7 +367,7 @@ input.s: input.c.s
 
 # target to generate assembly for a file
 input.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/input.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/input.c.s
 .PHONY : input.c.s
 
 literal.o: literal.c.o
@@ -376,7 +375,7 @@ literal.o: literal.c.o
 
 # target to build an object file
 literal.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/literal.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/literal.c.o
 .PHONY : literal.c.o
 
 literal.i: literal.c.i
@@ -384,7 +383,7 @@ literal.i: literal.c.i
 
 # target to preprocess a source file
 literal.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/literal.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/literal.c.i
 .PHONY : literal.c.i
 
 literal.s: literal.c.s
@@ -392,7 +391,7 @@ literal.s: literal.c.s
 
 # target to generate assembly for a file
 literal.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/literal.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/literal.c.s
 .PHONY : literal.c.s
 
 main.o: main.c.o
@@ -400,7 +399,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -408,7 +407,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -416,7 +415,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/main.c.s
 .PHONY : main.c.s
 
 node.o: node.c.o
@@ -424,7 +423,7 @@ node.o: node.c.o
 
 # target to build an object file
 node.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/node.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/node.c.o
 .PHONY : node.c.o
 
 node.i: node.c.i
@@ -432,7 +431,7 @@ node.i: node.c.i
 
 # target to preprocess a source file
 node.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/node.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/node.c.i
 .PHONY : node.c.i
 
 node.s: node.c.s
@@ -440,7 +439,7 @@ node.s: node.c.s
 
 # target to generate assembly for a file
 node.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/node.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/node.c.s
 .PHONY : node.c.s
 
 oper.o: oper.c.o
@@ -448,7 +447,7 @@ oper.o: oper.c.o
 
 # target to build an object file
 oper.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/oper.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/oper.c.o
 .PHONY : oper.c.o
 
 oper.i: oper.c.i
@@ -456,7 +455,7 @@ oper.i: oper.c.i
 
 # target to preprocess a source file
 oper.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/oper.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/oper.c.i
 .PHONY : oper.c.i
 
 oper.s: oper.c.s
@@ -464,7 +463,7 @@ oper.s: oper.c.s
 
 # target to generate assembly for a file
 oper.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/oper.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/oper.c.s
 .PHONY : oper.c.s
 
 options.o: options.c.o
@@ -472,7 +471,7 @@ options.o: options.c.o
 
 # target to build an object file
 options.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/options.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/options.c.o
 .PHONY : options.c.o
 
 options.i: options.c.i
@@ -480,7 +479,7 @@ options.i: options.c.i
 
 # target to preprocess a source file
 options.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/options.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/options.c.i
 .PHONY : options.c.i
 
 options.s: options.c.s
@@ -488,7 +487,7 @@ options.s: options.c.s
 
 # target to generate assembly for a file
 options.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/options.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/options.c.s
 .PHONY : options.c.s
 
 parse.o: parse.c.o
@@ -496,7 +495,7 @@ parse.o: parse.c.o
 
 # target to build an object file
 parse.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/parse.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/parse.c.o
 .PHONY : parse.c.o
 
 parse.i: parse.c.i
@@ -504,7 +503,7 @@ parse.i: parse.c.i
 
 # target to preprocess a source file
 parse.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/parse.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/parse.c.i
 .PHONY : parse.c.i
 
 parse.s: parse.c.s
@@ -512,7 +511,7 @@ parse.s: parse.c.s
 
 # target to generate assembly for a file
 parse.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/parse.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/parse.c.s
 .PHONY : parse.c.s
 
 skeleton.o: skeleton.c.o
@@ -520,7 +519,7 @@ skeleton.o: skeleton.c.o
 
 # target to build an object file
 skeleton.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skeleton.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skeleton.c.o
 .PHONY : skeleton.c.o
 
 skeleton.i: skeleton.c.i
@@ -528,7 +527,7 @@ skeleton.i: skeleton.c.i
 
 # target to preprocess a source file
 skeleton.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skeleton.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skeleton.c.i
 .PHONY : skeleton.c.i
 
 skeleton.s: skeleton.c.s
@@ -536,7 +535,7 @@ skeleton.s: skeleton.c.s
 
 # target to generate assembly for a file
 skeleton.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skeleton.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skeleton.c.s
 .PHONY : skeleton.c.s
 
 skels.o: skels.c.o
@@ -544,7 +543,7 @@ skels.o: skels.c.o
 
 # target to build an object file
 skels.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skels.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skels.c.o
 .PHONY : skels.c.o
 
 skels.i: skels.c.i
@@ -552,7 +551,7 @@ skels.i: skels.c.i
 
 # target to preprocess a source file
 skels.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skels.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skels.c.i
 .PHONY : skels.c.i
 
 skels.s: skels.c.s
@@ -560,7 +559,7 @@ skels.s: skels.c.s
 
 # target to generate assembly for a file
 skels.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skels.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/skels.c.s
 .PHONY : skels.c.s
 
 stream.o: stream.c.o
@@ -568,7 +567,7 @@ stream.o: stream.c.o
 
 # target to build an object file
 stream.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/stream.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/stream.c.o
 .PHONY : stream.c.o
 
 stream.i: stream.c.i
@@ -576,7 +575,7 @@ stream.i: stream.c.i
 
 # target to preprocess a source file
 stream.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/stream.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/stream.c.i
 .PHONY : stream.c.i
 
 stream.s: stream.c.s
@@ -584,7 +583,7 @@ stream.s: stream.c.s
 
 # target to generate assembly for a file
 stream.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/stream.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/treecc/CMakeFiles/treecc.dir/build.make MultiSource/Applications/treecc/CMakeFiles/treecc.dir/stream.c.s
 .PHONY : stream.c.s
 
 # Help Target
@@ -664,7 +663,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

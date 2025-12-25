@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-3des/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-md5/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-pc1/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-url/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-3des/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-md5/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-pc1/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-url/cmake_install.cmake")
 
 endif()
 

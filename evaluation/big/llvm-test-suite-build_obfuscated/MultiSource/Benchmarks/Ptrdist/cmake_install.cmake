@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/anagram/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/bc/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ks/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/yacr2/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/anagram/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/bc/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ks/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/yacr2/cmake_install.cmake")
 
 endif()
 

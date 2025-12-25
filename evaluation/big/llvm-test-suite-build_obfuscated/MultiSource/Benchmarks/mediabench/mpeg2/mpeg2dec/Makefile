@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/rule
 .PHONY : MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ mpeg2decode: MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2de
 
 # fast build rule for target.
 mpeg2decode/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build
 .PHONY : mpeg2decode/fast
 
 display.o: display.c.o
@@ -136,7 +135,7 @@ display.o: display.c.o
 
 # target to build an object file
 display.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/display.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/display.c.o
 .PHONY : display.c.o
 
 display.i: display.c.i
@@ -144,7 +143,7 @@ display.i: display.c.i
 
 # target to preprocess a source file
 display.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/display.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/display.c.i
 .PHONY : display.c.i
 
 display.s: display.c.s
@@ -152,7 +151,7 @@ display.s: display.c.s
 
 # target to generate assembly for a file
 display.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/display.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/display.c.s
 .PHONY : display.c.s
 
 getbits.o: getbits.c.o
@@ -160,7 +159,7 @@ getbits.o: getbits.c.o
 
 # target to build an object file
 getbits.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getbits.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getbits.c.o
 .PHONY : getbits.c.o
 
 getbits.i: getbits.c.i
@@ -168,7 +167,7 @@ getbits.i: getbits.c.i
 
 # target to preprocess a source file
 getbits.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getbits.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getbits.c.i
 .PHONY : getbits.c.i
 
 getbits.s: getbits.c.s
@@ -176,7 +175,7 @@ getbits.s: getbits.c.s
 
 # target to generate assembly for a file
 getbits.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getbits.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getbits.c.s
 .PHONY : getbits.c.s
 
 getblk.o: getblk.c.o
@@ -184,7 +183,7 @@ getblk.o: getblk.c.o
 
 # target to build an object file
 getblk.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getblk.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getblk.c.o
 .PHONY : getblk.c.o
 
 getblk.i: getblk.c.i
@@ -192,7 +191,7 @@ getblk.i: getblk.c.i
 
 # target to preprocess a source file
 getblk.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getblk.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getblk.c.i
 .PHONY : getblk.c.i
 
 getblk.s: getblk.c.s
@@ -200,7 +199,7 @@ getblk.s: getblk.c.s
 
 # target to generate assembly for a file
 getblk.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getblk.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getblk.c.s
 .PHONY : getblk.c.s
 
 gethdr.o: gethdr.c.o
@@ -208,7 +207,7 @@ gethdr.o: gethdr.c.o
 
 # target to build an object file
 gethdr.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/gethdr.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/gethdr.c.o
 .PHONY : gethdr.c.o
 
 gethdr.i: gethdr.c.i
@@ -216,7 +215,7 @@ gethdr.i: gethdr.c.i
 
 # target to preprocess a source file
 gethdr.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/gethdr.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/gethdr.c.i
 .PHONY : gethdr.c.i
 
 gethdr.s: gethdr.c.s
@@ -224,7 +223,7 @@ gethdr.s: gethdr.c.s
 
 # target to generate assembly for a file
 gethdr.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/gethdr.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/gethdr.c.s
 .PHONY : gethdr.c.s
 
 getpic.o: getpic.c.o
@@ -232,7 +231,7 @@ getpic.o: getpic.c.o
 
 # target to build an object file
 getpic.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getpic.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getpic.c.o
 .PHONY : getpic.c.o
 
 getpic.i: getpic.c.i
@@ -240,7 +239,7 @@ getpic.i: getpic.c.i
 
 # target to preprocess a source file
 getpic.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getpic.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getpic.c.i
 .PHONY : getpic.c.i
 
 getpic.s: getpic.c.s
@@ -248,7 +247,7 @@ getpic.s: getpic.c.s
 
 # target to generate assembly for a file
 getpic.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getpic.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getpic.c.s
 .PHONY : getpic.c.s
 
 getvlc.o: getvlc.c.o
@@ -256,7 +255,7 @@ getvlc.o: getvlc.c.o
 
 # target to build an object file
 getvlc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getvlc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getvlc.c.o
 .PHONY : getvlc.c.o
 
 getvlc.i: getvlc.c.i
@@ -264,7 +263,7 @@ getvlc.i: getvlc.c.i
 
 # target to preprocess a source file
 getvlc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getvlc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getvlc.c.i
 .PHONY : getvlc.c.i
 
 getvlc.s: getvlc.c.s
@@ -272,7 +271,7 @@ getvlc.s: getvlc.c.s
 
 # target to generate assembly for a file
 getvlc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getvlc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/getvlc.c.s
 .PHONY : getvlc.c.s
 
 idct.o: idct.c.o
@@ -280,7 +279,7 @@ idct.o: idct.c.o
 
 # target to build an object file
 idct.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idct.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idct.c.o
 .PHONY : idct.c.o
 
 idct.i: idct.c.i
@@ -288,7 +287,7 @@ idct.i: idct.c.i
 
 # target to preprocess a source file
 idct.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idct.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idct.c.i
 .PHONY : idct.c.i
 
 idct.s: idct.c.s
@@ -296,7 +295,7 @@ idct.s: idct.c.s
 
 # target to generate assembly for a file
 idct.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idct.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idct.c.s
 .PHONY : idct.c.s
 
 idctref.o: idctref.c.o
@@ -304,7 +303,7 @@ idctref.o: idctref.c.o
 
 # target to build an object file
 idctref.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idctref.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idctref.c.o
 .PHONY : idctref.c.o
 
 idctref.i: idctref.c.i
@@ -312,7 +311,7 @@ idctref.i: idctref.c.i
 
 # target to preprocess a source file
 idctref.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idctref.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idctref.c.i
 .PHONY : idctref.c.i
 
 idctref.s: idctref.c.s
@@ -320,7 +319,7 @@ idctref.s: idctref.c.s
 
 # target to generate assembly for a file
 idctref.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idctref.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/idctref.c.s
 .PHONY : idctref.c.s
 
 motion.o: motion.c.o
@@ -328,7 +327,7 @@ motion.o: motion.c.o
 
 # target to build an object file
 motion.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/motion.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/motion.c.o
 .PHONY : motion.c.o
 
 motion.i: motion.c.i
@@ -336,7 +335,7 @@ motion.i: motion.c.i
 
 # target to preprocess a source file
 motion.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/motion.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/motion.c.i
 .PHONY : motion.c.i
 
 motion.s: motion.c.s
@@ -344,7 +343,7 @@ motion.s: motion.c.s
 
 # target to generate assembly for a file
 motion.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/motion.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/motion.c.s
 .PHONY : motion.c.s
 
 mpeg2dec.o: mpeg2dec.c.o
@@ -352,7 +351,7 @@ mpeg2dec.o: mpeg2dec.c.o
 
 # target to build an object file
 mpeg2dec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/mpeg2dec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/mpeg2dec.c.o
 .PHONY : mpeg2dec.c.o
 
 mpeg2dec.i: mpeg2dec.c.i
@@ -360,7 +359,7 @@ mpeg2dec.i: mpeg2dec.c.i
 
 # target to preprocess a source file
 mpeg2dec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/mpeg2dec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/mpeg2dec.c.i
 .PHONY : mpeg2dec.c.i
 
 mpeg2dec.s: mpeg2dec.c.s
@@ -368,7 +367,7 @@ mpeg2dec.s: mpeg2dec.c.s
 
 # target to generate assembly for a file
 mpeg2dec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/mpeg2dec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/mpeg2dec.c.s
 .PHONY : mpeg2dec.c.s
 
 recon.o: recon.c.o
@@ -376,7 +375,7 @@ recon.o: recon.c.o
 
 # target to build an object file
 recon.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/recon.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/recon.c.o
 .PHONY : recon.c.o
 
 recon.i: recon.c.i
@@ -384,7 +383,7 @@ recon.i: recon.c.i
 
 # target to preprocess a source file
 recon.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/recon.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/recon.c.i
 .PHONY : recon.c.i
 
 recon.s: recon.c.s
@@ -392,7 +391,7 @@ recon.s: recon.c.s
 
 # target to generate assembly for a file
 recon.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/recon.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/recon.c.s
 .PHONY : recon.c.s
 
 spatscal.o: spatscal.c.o
@@ -400,7 +399,7 @@ spatscal.o: spatscal.c.o
 
 # target to build an object file
 spatscal.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/spatscal.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/spatscal.c.o
 .PHONY : spatscal.c.o
 
 spatscal.i: spatscal.c.i
@@ -408,7 +407,7 @@ spatscal.i: spatscal.c.i
 
 # target to preprocess a source file
 spatscal.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/spatscal.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/spatscal.c.i
 .PHONY : spatscal.c.i
 
 spatscal.s: spatscal.c.s
@@ -416,7 +415,7 @@ spatscal.s: spatscal.c.s
 
 # target to generate assembly for a file
 spatscal.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/spatscal.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/spatscal.c.s
 .PHONY : spatscal.c.s
 
 store.o: store.c.o
@@ -424,7 +423,7 @@ store.o: store.c.o
 
 # target to build an object file
 store.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/store.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/store.c.o
 .PHONY : store.c.o
 
 store.i: store.c.i
@@ -432,7 +431,7 @@ store.i: store.c.i
 
 # target to preprocess a source file
 store.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/store.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/store.c.i
 .PHONY : store.c.i
 
 store.s: store.c.s
@@ -440,7 +439,7 @@ store.s: store.c.s
 
 # target to generate assembly for a file
 store.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/store.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/store.c.s
 .PHONY : store.c.s
 
 subspic.o: subspic.c.o
@@ -448,7 +447,7 @@ subspic.o: subspic.c.o
 
 # target to build an object file
 subspic.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/subspic.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/subspic.c.o
 .PHONY : subspic.c.o
 
 subspic.i: subspic.c.i
@@ -456,7 +455,7 @@ subspic.i: subspic.c.i
 
 # target to preprocess a source file
 subspic.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/subspic.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/subspic.c.i
 .PHONY : subspic.c.i
 
 subspic.s: subspic.c.s
@@ -464,7 +463,7 @@ subspic.s: subspic.c.s
 
 # target to generate assembly for a file
 subspic.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/subspic.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/subspic.c.s
 .PHONY : subspic.c.s
 
 systems.o: systems.c.o
@@ -472,7 +471,7 @@ systems.o: systems.c.o
 
 # target to build an object file
 systems.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/systems.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/systems.c.o
 .PHONY : systems.c.o
 
 systems.i: systems.c.i
@@ -480,7 +479,7 @@ systems.i: systems.c.i
 
 # target to preprocess a source file
 systems.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/systems.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/systems.c.i
 .PHONY : systems.c.i
 
 systems.s: systems.c.s
@@ -488,7 +487,7 @@ systems.s: systems.c.s
 
 # target to generate assembly for a file
 systems.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/systems.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/systems.c.s
 .PHONY : systems.c.s
 
 verify.o: verify.c.o
@@ -496,7 +495,7 @@ verify.o: verify.c.o
 
 # target to build an object file
 verify.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/verify.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/verify.c.o
 .PHONY : verify.c.o
 
 verify.i: verify.c.i
@@ -504,7 +503,7 @@ verify.i: verify.c.i
 
 # target to preprocess a source file
 verify.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/verify.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/verify.c.i
 .PHONY : verify.c.i
 
 verify.s: verify.c.s
@@ -512,7 +511,7 @@ verify.s: verify.c.s
 
 # target to generate assembly for a file
 verify.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/verify.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/build.make MultiSource/Benchmarks/mediabench/mpeg2/mpeg2dec/CMakeFiles/mpeg2decode.dir/verify.c.s
 .PHONY : verify.c.s
 
 # Help Target
@@ -583,7 +582,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

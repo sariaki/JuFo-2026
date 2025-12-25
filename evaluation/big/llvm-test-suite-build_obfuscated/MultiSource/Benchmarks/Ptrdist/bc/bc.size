@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/bc/bc  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/bc/bc  :
 section                 size     addr
 .interp                   28      792
 .note.gnu.property        32      824
@@ -14,19 +14,19 @@ section                 size     addr
 .init                     27     4096
 .plt                     512     4128
 .plt.got                   8     4640
-.text                  75905     4656
-.fini                     13    80564
-.rodata                17726    81920
-.eh_frame_hdr            820    99648
-.eh_frame               5240   100472
-.init_array                8   110000
-.fini_array                8   110008
-.dynamic                 480   110016
-.got                      72   110496
-.got.plt                 272   110568
-.data                   2993   110848
-.bss                    4112   113856
+.text                  68845     4656
+.fini                     13    73504
+.rodata                15246    73728
+.eh_frame_hdr            804    88976
+.eh_frame               5204    89784
+.init_array                8   101808
+.fini_array                8   101816
+.dynamic                 480   101824
+.got                      72   102304
+.got.plt                 272   102376
+.data                   2993   102656
+.bss                    4112   105664
 .comment                  82        0
-Total                 111038
+Total                 101446
 
 

@@ -1,4 +1,4 @@
-exit 137
-real       809.8675
-user       809.6198
-sys        0.1320
+exit 0
+real       12.4245
+user       12.3973
+sys        0.0100

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ CLAMR: MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/rule
 
 # fast build rule for target.
 CLAMR/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build
 .PHONY : CLAMR/fast
 
 Bounds.o: Bounds.c.o
@@ -136,7 +135,7 @@ Bounds.o: Bounds.c.o
 
 # target to build an object file
 Bounds.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Bounds.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Bounds.c.o
 .PHONY : Bounds.c.o
 
 Bounds.i: Bounds.c.i
@@ -144,7 +143,7 @@ Bounds.i: Bounds.c.i
 
 # target to preprocess a source file
 Bounds.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Bounds.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Bounds.c.i
 .PHONY : Bounds.c.i
 
 Bounds.s: Bounds.c.s
@@ -152,7 +151,7 @@ Bounds.s: Bounds.c.s
 
 # target to generate assembly for a file
 Bounds.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Bounds.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Bounds.c.s
 .PHONY : Bounds.c.s
 
 Cmd.o: Cmd.cc.o
@@ -160,7 +159,7 @@ Cmd.o: Cmd.cc.o
 
 # target to build an object file
 Cmd.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Cmd.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Cmd.cc.o
 .PHONY : Cmd.cc.o
 
 Cmd.i: Cmd.cc.i
@@ -168,7 +167,7 @@ Cmd.i: Cmd.cc.i
 
 # target to preprocess a source file
 Cmd.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Cmd.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Cmd.cc.i
 .PHONY : Cmd.cc.i
 
 Cmd.s: Cmd.cc.s
@@ -176,7 +175,7 @@ Cmd.s: Cmd.cc.s
 
 # target to generate assembly for a file
 Cmd.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Cmd.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Cmd.cc.s
 .PHONY : Cmd.cc.s
 
 Comm.o: Comm.cc.o
@@ -184,7 +183,7 @@ Comm.o: Comm.cc.o
 
 # target to build an object file
 Comm.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Comm.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Comm.cc.o
 .PHONY : Comm.cc.o
 
 Comm.i: Comm.cc.i
@@ -192,7 +191,7 @@ Comm.i: Comm.cc.i
 
 # target to preprocess a source file
 Comm.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Comm.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Comm.cc.i
 .PHONY : Comm.cc.i
 
 Comm.s: Comm.cc.s
@@ -200,7 +199,7 @@ Comm.s: Comm.cc.s
 
 # target to generate assembly for a file
 Comm.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Comm.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Comm.cc.s
 .PHONY : Comm.cc.s
 
 Function.o: Function.cc.o
@@ -208,7 +207,7 @@ Function.o: Function.cc.o
 
 # target to build an object file
 Function.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Function.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Function.cc.o
 .PHONY : Function.cc.o
 
 Function.i: Function.cc.i
@@ -216,7 +215,7 @@ Function.i: Function.cc.i
 
 # target to preprocess a source file
 Function.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Function.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Function.cc.i
 .PHONY : Function.cc.i
 
 Function.s: Function.cc.s
@@ -224,7 +223,7 @@ Function.s: Function.cc.s
 
 # target to generate assembly for a file
 Function.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Function.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Function.cc.s
 .PHONY : Function.cc.s
 
 KDTree.o: KDTree.c.o
@@ -232,7 +231,7 @@ KDTree.o: KDTree.c.o
 
 # target to build an object file
 KDTree.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/KDTree.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/KDTree.c.o
 .PHONY : KDTree.c.o
 
 KDTree.i: KDTree.c.i
@@ -240,7 +239,7 @@ KDTree.i: KDTree.c.i
 
 # target to preprocess a source file
 KDTree.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/KDTree.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/KDTree.c.i
 .PHONY : KDTree.c.i
 
 KDTree.s: KDTree.c.s
@@ -248,7 +247,7 @@ KDTree.s: KDTree.c.s
 
 # target to generate assembly for a file
 KDTree.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/KDTree.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/KDTree.c.s
 .PHONY : KDTree.c.s
 
 MallocPlus.o: MallocPlus.cpp.o
@@ -256,7 +255,7 @@ MallocPlus.o: MallocPlus.cpp.o
 
 # target to build an object file
 MallocPlus.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/MallocPlus.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/MallocPlus.cpp.o
 .PHONY : MallocPlus.cpp.o
 
 MallocPlus.i: MallocPlus.cpp.i
@@ -264,7 +263,7 @@ MallocPlus.i: MallocPlus.cpp.i
 
 # target to preprocess a source file
 MallocPlus.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/MallocPlus.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/MallocPlus.cpp.i
 .PHONY : MallocPlus.cpp.i
 
 MallocPlus.s: MallocPlus.cpp.s
@@ -272,7 +271,7 @@ MallocPlus.s: MallocPlus.cpp.s
 
 # target to generate assembly for a file
 MallocPlus.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/MallocPlus.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/MallocPlus.cpp.s
 .PHONY : MallocPlus.cpp.s
 
 Parser_math.o: Parser_math.cc.o
@@ -280,7 +279,7 @@ Parser_math.o: Parser_math.cc.o
 
 # target to build an object file
 Parser_math.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_math.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_math.cc.o
 .PHONY : Parser_math.cc.o
 
 Parser_math.i: Parser_math.cc.i
@@ -288,7 +287,7 @@ Parser_math.i: Parser_math.cc.i
 
 # target to preprocess a source file
 Parser_math.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_math.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_math.cc.i
 .PHONY : Parser_math.cc.i
 
 Parser_math.s: Parser_math.cc.s
@@ -296,7 +295,7 @@ Parser_math.s: Parser_math.cc.s
 
 # target to generate assembly for a file
 Parser_math.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_math.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_math.cc.s
 .PHONY : Parser_math.cc.s
 
 Parser_utils.o: Parser_utils.cc.o
@@ -304,7 +303,7 @@ Parser_utils.o: Parser_utils.cc.o
 
 # target to build an object file
 Parser_utils.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_utils.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_utils.cc.o
 .PHONY : Parser_utils.cc.o
 
 Parser_utils.i: Parser_utils.cc.i
@@ -312,7 +311,7 @@ Parser_utils.i: Parser_utils.cc.i
 
 # target to preprocess a source file
 Parser_utils.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_utils.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_utils.cc.i
 .PHONY : Parser_utils.cc.i
 
 Parser_utils.s: Parser_utils.cc.s
@@ -320,7 +319,7 @@ Parser_utils.s: Parser_utils.cc.s
 
 # target to generate assembly for a file
 Parser_utils.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_utils.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Parser_utils.cc.s
 .PHONY : Parser_utils.cc.s
 
 PowerParser.o: PowerParser.cc.o
@@ -328,7 +327,7 @@ PowerParser.o: PowerParser.cc.o
 
 # target to build an object file
 PowerParser.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/PowerParser.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/PowerParser.cc.o
 .PHONY : PowerParser.cc.o
 
 PowerParser.i: PowerParser.cc.i
@@ -336,7 +335,7 @@ PowerParser.i: PowerParser.cc.i
 
 # target to preprocess a source file
 PowerParser.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/PowerParser.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/PowerParser.cc.i
 .PHONY : PowerParser.cc.i
 
 PowerParser.s: PowerParser.cc.s
@@ -344,7 +343,7 @@ PowerParser.s: PowerParser.cc.s
 
 # target to generate assembly for a file
 PowerParser.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/PowerParser.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/PowerParser.cc.s
 .PHONY : PowerParser.cc.s
 
 Restartblock.o: Restartblock.cc.o
@@ -352,7 +351,7 @@ Restartblock.o: Restartblock.cc.o
 
 # target to build an object file
 Restartblock.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Restartblock.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Restartblock.cc.o
 .PHONY : Restartblock.cc.o
 
 Restartblock.i: Restartblock.cc.i
@@ -360,7 +359,7 @@ Restartblock.i: Restartblock.cc.i
 
 # target to preprocess a source file
 Restartblock.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Restartblock.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Restartblock.cc.i
 .PHONY : Restartblock.cc.i
 
 Restartblock.s: Restartblock.cc.s
@@ -368,7 +367,7 @@ Restartblock.s: Restartblock.cc.s
 
 # target to generate assembly for a file
 Restartblock.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Restartblock.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Restartblock.cc.s
 .PHONY : Restartblock.cc.s
 
 Variable.o: Variable.cc.o
@@ -376,7 +375,7 @@ Variable.o: Variable.cc.o
 
 # target to build an object file
 Variable.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Variable.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Variable.cc.o
 .PHONY : Variable.cc.o
 
 Variable.i: Variable.cc.i
@@ -384,7 +383,7 @@ Variable.i: Variable.cc.i
 
 # target to preprocess a source file
 Variable.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Variable.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Variable.cc.i
 .PHONY : Variable.cc.i
 
 Variable.s: Variable.cc.s
@@ -392,7 +391,7 @@ Variable.s: Variable.cc.s
 
 # target to generate assembly for a file
 Variable.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Variable.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Variable.cc.s
 .PHONY : Variable.cc.s
 
 Whenthen.o: Whenthen.cc.o
@@ -400,7 +399,7 @@ Whenthen.o: Whenthen.cc.o
 
 # target to build an object file
 Whenthen.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Whenthen.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Whenthen.cc.o
 .PHONY : Whenthen.cc.o
 
 Whenthen.i: Whenthen.cc.i
@@ -408,7 +407,7 @@ Whenthen.i: Whenthen.cc.i
 
 # target to preprocess a source file
 Whenthen.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Whenthen.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Whenthen.cc.i
 .PHONY : Whenthen.cc.i
 
 Whenthen.s: Whenthen.cc.s
@@ -416,7 +415,7 @@ Whenthen.s: Whenthen.cc.s
 
 # target to generate assembly for a file
 Whenthen.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Whenthen.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Whenthen.cc.s
 .PHONY : Whenthen.cc.s
 
 Word.o: Word.cc.o
@@ -424,7 +423,7 @@ Word.o: Word.cc.o
 
 # target to build an object file
 Word.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Word.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Word.cc.o
 .PHONY : Word.cc.o
 
 Word.i: Word.cc.i
@@ -432,7 +431,7 @@ Word.i: Word.cc.i
 
 # target to preprocess a source file
 Word.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Word.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Word.cc.i
 .PHONY : Word.cc.i
 
 Word.s: Word.cc.s
@@ -440,7 +439,7 @@ Word.s: Word.cc.s
 
 # target to generate assembly for a file
 Word.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Word.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/Word.cc.s
 .PHONY : Word.cc.s
 
 clamr_cpuonly.o: clamr_cpuonly.cpp.o
@@ -448,7 +447,7 @@ clamr_cpuonly.o: clamr_cpuonly.cpp.o
 
 # target to build an object file
 clamr_cpuonly.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/clamr_cpuonly.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/clamr_cpuonly.cpp.o
 .PHONY : clamr_cpuonly.cpp.o
 
 clamr_cpuonly.i: clamr_cpuonly.cpp.i
@@ -456,7 +455,7 @@ clamr_cpuonly.i: clamr_cpuonly.cpp.i
 
 # target to preprocess a source file
 clamr_cpuonly.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/clamr_cpuonly.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/clamr_cpuonly.cpp.i
 .PHONY : clamr_cpuonly.cpp.i
 
 clamr_cpuonly.s: clamr_cpuonly.cpp.s
@@ -464,7 +463,7 @@ clamr_cpuonly.s: clamr_cpuonly.cpp.s
 
 # target to generate assembly for a file
 clamr_cpuonly.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/clamr_cpuonly.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/clamr_cpuonly.cpp.s
 .PHONY : clamr_cpuonly.cpp.s
 
 crux.o: crux.cpp.o
@@ -472,7 +471,7 @@ crux.o: crux.cpp.o
 
 # target to build an object file
 crux.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/crux.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/crux.cpp.o
 .PHONY : crux.cpp.o
 
 crux.i: crux.cpp.i
@@ -480,7 +479,7 @@ crux.i: crux.cpp.i
 
 # target to preprocess a source file
 crux.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/crux.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/crux.cpp.i
 .PHONY : crux.cpp.i
 
 crux.s: crux.cpp.s
@@ -488,7 +487,7 @@ crux.s: crux.cpp.s
 
 # target to generate assembly for a file
 crux.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/crux.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/crux.cpp.s
 .PHONY : crux.cpp.s
 
 fmemopen.o: fmemopen.c.o
@@ -496,7 +495,7 @@ fmemopen.o: fmemopen.c.o
 
 # target to build an object file
 fmemopen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/fmemopen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/fmemopen.c.o
 .PHONY : fmemopen.c.o
 
 fmemopen.i: fmemopen.c.i
@@ -504,7 +503,7 @@ fmemopen.i: fmemopen.c.i
 
 # target to preprocess a source file
 fmemopen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/fmemopen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/fmemopen.c.i
 .PHONY : fmemopen.c.i
 
 fmemopen.s: fmemopen.c.s
@@ -512,7 +511,7 @@ fmemopen.s: fmemopen.c.s
 
 # target to generate assembly for a file
 fmemopen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/fmemopen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/fmemopen.c.s
 .PHONY : fmemopen.c.s
 
 genmalloc.o: genmalloc.c.o
@@ -520,7 +519,7 @@ genmalloc.o: genmalloc.c.o
 
 # target to build an object file
 genmalloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/genmalloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/genmalloc.c.o
 .PHONY : genmalloc.c.o
 
 genmalloc.i: genmalloc.c.i
@@ -528,7 +527,7 @@ genmalloc.i: genmalloc.c.i
 
 # target to preprocess a source file
 genmalloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/genmalloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/genmalloc.c.i
 .PHONY : genmalloc.c.i
 
 genmalloc.s: genmalloc.c.s
@@ -536,7 +535,7 @@ genmalloc.s: genmalloc.c.s
 
 # target to generate assembly for a file
 genmalloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/genmalloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/genmalloc.c.s
 .PHONY : genmalloc.c.s
 
 glibc_compat_rand.o: glibc_compat_rand.c.o
@@ -544,7 +543,7 @@ glibc_compat_rand.o: glibc_compat_rand.c.o
 
 # target to build an object file
 glibc_compat_rand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/glibc_compat_rand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/glibc_compat_rand.c.o
 .PHONY : glibc_compat_rand.c.o
 
 glibc_compat_rand.i: glibc_compat_rand.c.i
@@ -552,7 +551,7 @@ glibc_compat_rand.i: glibc_compat_rand.c.i
 
 # target to preprocess a source file
 glibc_compat_rand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/glibc_compat_rand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/glibc_compat_rand.c.i
 .PHONY : glibc_compat_rand.c.i
 
 glibc_compat_rand.s: glibc_compat_rand.c.s
@@ -560,7 +559,7 @@ glibc_compat_rand.s: glibc_compat_rand.c.s
 
 # target to generate assembly for a file
 glibc_compat_rand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/glibc_compat_rand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/glibc_compat_rand.c.s
 .PHONY : glibc_compat_rand.c.s
 
 graphics.o: graphics.c.o
@@ -568,7 +567,7 @@ graphics.o: graphics.c.o
 
 # target to build an object file
 graphics.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/graphics.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/graphics.c.o
 .PHONY : graphics.c.o
 
 graphics.i: graphics.c.i
@@ -576,7 +575,7 @@ graphics.i: graphics.c.i
 
 # target to preprocess a source file
 graphics.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/graphics.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/graphics.c.i
 .PHONY : graphics.c.i
 
 graphics.s: graphics.c.s
@@ -584,7 +583,7 @@ graphics.s: graphics.c.s
 
 # target to generate assembly for a file
 graphics.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/graphics.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/graphics.c.s
 .PHONY : graphics.c.s
 
 hash.o: hash.c.o
@@ -592,7 +591,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hash.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -600,7 +599,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hash.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -608,7 +607,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hash.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hash.c.s
 .PHONY : hash.c.s
 
 hsfc.o: hsfc.c.o
@@ -616,7 +615,7 @@ hsfc.o: hsfc.c.o
 
 # target to build an object file
 hsfc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfc.c.o
 .PHONY : hsfc.c.o
 
 hsfc.i: hsfc.c.i
@@ -624,7 +623,7 @@ hsfc.i: hsfc.c.i
 
 # target to preprocess a source file
 hsfc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfc.c.i
 .PHONY : hsfc.c.i
 
 hsfc.s: hsfc.c.s
@@ -632,7 +631,7 @@ hsfc.s: hsfc.c.s
 
 # target to generate assembly for a file
 hsfc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfc.c.s
 .PHONY : hsfc.c.s
 
 hsfcsort.o: hsfcsort.c.o
@@ -640,7 +639,7 @@ hsfcsort.o: hsfcsort.c.o
 
 # target to build an object file
 hsfcsort.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfcsort.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfcsort.c.o
 .PHONY : hsfcsort.c.o
 
 hsfcsort.i: hsfcsort.c.i
@@ -648,7 +647,7 @@ hsfcsort.i: hsfcsort.c.i
 
 # target to preprocess a source file
 hsfcsort.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfcsort.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfcsort.c.i
 .PHONY : hsfcsort.c.i
 
 hsfcsort.s: hsfcsort.c.s
@@ -656,7 +655,7 @@ hsfcsort.s: hsfcsort.c.s
 
 # target to generate assembly for a file
 hsfcsort.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfcsort.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/hsfcsort.c.s
 .PHONY : hsfcsort.c.s
 
 input.o: input.cpp.o
@@ -664,7 +663,7 @@ input.o: input.cpp.o
 
 # target to build an object file
 input.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/input.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/input.cpp.o
 .PHONY : input.cpp.o
 
 input.i: input.cpp.i
@@ -672,7 +671,7 @@ input.i: input.cpp.i
 
 # target to preprocess a source file
 input.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/input.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/input.cpp.i
 .PHONY : input.cpp.i
 
 input.s: input.cpp.s
@@ -680,7 +679,7 @@ input.s: input.cpp.s
 
 # target to generate assembly for a file
 input.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/input.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/input.cpp.s
 .PHONY : input.cpp.s
 
 memstats.o: memstats.c.o
@@ -688,7 +687,7 @@ memstats.o: memstats.c.o
 
 # target to build an object file
 memstats.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/memstats.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/memstats.c.o
 .PHONY : memstats.c.o
 
 memstats.i: memstats.c.i
@@ -696,7 +695,7 @@ memstats.i: memstats.c.i
 
 # target to preprocess a source file
 memstats.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/memstats.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/memstats.c.i
 .PHONY : memstats.c.i
 
 memstats.s: memstats.c.s
@@ -704,7 +703,7 @@ memstats.s: memstats.c.s
 
 # target to generate assembly for a file
 memstats.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/memstats.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/memstats.c.s
 .PHONY : memstats.c.s
 
 mesh.o: mesh.cpp.o
@@ -712,7 +711,7 @@ mesh.o: mesh.cpp.o
 
 # target to build an object file
 mesh.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/mesh.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/mesh.cpp.o
 .PHONY : mesh.cpp.o
 
 mesh.i: mesh.cpp.i
@@ -720,7 +719,7 @@ mesh.i: mesh.cpp.i
 
 # target to preprocess a source file
 mesh.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/mesh.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/mesh.cpp.i
 .PHONY : mesh.cpp.i
 
 mesh.s: mesh.cpp.s
@@ -728,7 +727,7 @@ mesh.s: mesh.cpp.s
 
 # target to generate assembly for a file
 mesh.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/mesh.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/mesh.cpp.s
 .PHONY : mesh.cpp.s
 
 partition.o: partition.cpp.o
@@ -736,7 +735,7 @@ partition.o: partition.cpp.o
 
 # target to build an object file
 partition.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/partition.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/partition.cpp.o
 .PHONY : partition.cpp.o
 
 partition.i: partition.cpp.i
@@ -744,7 +743,7 @@ partition.i: partition.cpp.i
 
 # target to preprocess a source file
 partition.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/partition.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/partition.cpp.i
 .PHONY : partition.cpp.i
 
 partition.s: partition.cpp.s
@@ -752,7 +751,7 @@ partition.s: partition.cpp.s
 
 # target to generate assembly for a file
 partition.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/partition.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/partition.cpp.s
 .PHONY : partition.cpp.s
 
 reduce.o: reduce.c.o
@@ -760,7 +759,7 @@ reduce.o: reduce.c.o
 
 # target to build an object file
 reduce.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/reduce.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/reduce.c.o
 .PHONY : reduce.c.o
 
 reduce.i: reduce.c.i
@@ -768,7 +767,7 @@ reduce.i: reduce.c.i
 
 # target to preprocess a source file
 reduce.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/reduce.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/reduce.c.i
 .PHONY : reduce.c.i
 
 reduce.s: reduce.c.s
@@ -776,7 +775,7 @@ reduce.s: reduce.c.s
 
 # target to generate assembly for a file
 reduce.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/reduce.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/reduce.c.s
 .PHONY : reduce.c.s
 
 s7.o: s7.c.o
@@ -784,7 +783,7 @@ s7.o: s7.c.o
 
 # target to build an object file
 s7.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/s7.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/s7.c.o
 .PHONY : s7.c.o
 
 s7.i: s7.c.i
@@ -792,7 +791,7 @@ s7.i: s7.c.i
 
 # target to preprocess a source file
 s7.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/s7.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/s7.c.i
 .PHONY : s7.c.i
 
 s7.s: s7.c.s
@@ -800,7 +799,7 @@ s7.s: s7.c.s
 
 # target to generate assembly for a file
 s7.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/s7.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/s7.c.s
 .PHONY : s7.c.s
 
 state.o: state.cpp.o
@@ -808,7 +807,7 @@ state.o: state.cpp.o
 
 # target to build an object file
 state.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/state.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/state.cpp.o
 .PHONY : state.cpp.o
 
 state.i: state.cpp.i
@@ -816,7 +815,7 @@ state.i: state.cpp.i
 
 # target to preprocess a source file
 state.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/state.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/state.cpp.i
 .PHONY : state.cpp.i
 
 state.s: state.cpp.s
@@ -824,7 +823,7 @@ state.s: state.cpp.s
 
 # target to generate assembly for a file
 state.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/state.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/state.cpp.s
 .PHONY : state.cpp.s
 
 timer.o: timer.c.o
@@ -832,7 +831,7 @@ timer.o: timer.c.o
 
 # target to build an object file
 timer.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/timer.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/timer.c.o
 .PHONY : timer.c.o
 
 timer.i: timer.c.i
@@ -840,7 +839,7 @@ timer.i: timer.c.i
 
 # target to preprocess a source file
 timer.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/timer.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/timer.c.i
 .PHONY : timer.c.i
 
 timer.s: timer.c.s
@@ -848,7 +847,7 @@ timer.s: timer.c.s
 
 # target to generate assembly for a file
 timer.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/timer.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/timer.c.s
 .PHONY : timer.c.s
 
 zorder.o: zorder.c.o
@@ -856,7 +855,7 @@ zorder.o: zorder.c.o
 
 # target to build an object file
 zorder.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/zorder.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/zorder.c.o
 .PHONY : zorder.c.o
 
 zorder.i: zorder.c.i
@@ -864,7 +863,7 @@ zorder.i: zorder.c.i
 
 # target to preprocess a source file
 zorder.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/zorder.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/zorder.c.i
 .PHONY : zorder.c.i
 
 zorder.s: zorder.c.s
@@ -872,7 +871,7 @@ zorder.s: zorder.c.s
 
 # target to generate assembly for a file
 zorder.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/zorder.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/CLAMR/CMakeFiles/CLAMR.dir/zorder.c.s
 .PHONY : zorder.c.s
 
 # Help Target
@@ -988,7 +987,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

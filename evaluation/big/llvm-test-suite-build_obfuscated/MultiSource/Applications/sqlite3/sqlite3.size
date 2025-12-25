@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/sqlite3  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/sqlite3  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -9,25 +9,25 @@ section                  size     addr
 .dynstr                   564     2504
 .gnu.version              128     3068
 .gnu.version_r             96     3200
-.rela.dyn                3600     3296
-.rela.plt                1320     6896
+.rela.dyn                7056     3296
+.rela.plt                1320    10352
 .init                      27    12288
 .plt                      896    12320
 .plt.got                    8    13216
-.text                  605578    13232
-.fini                      13   618812
-.rodata                107664   622592
-.eh_frame_hdr            4828   730256
-.eh_frame               34396   735088
-.init_array                 8   771952
-.fini_array                 8   771960
-.data.rel.ro             1608   771968
-.dynamic                  480   773576
-.got                       64   774056
-.got.plt                  464   774120
-.data                    2143   774592
-.bss                      664   776736
+.text                  595043    13232
+.fini                      13   608276
+.rodata                 91424   610304
+.eh_frame_hdr            5580   701728
+.eh_frame               39376   707312
+.init_array                 8   750320
+.fini_array                 8   750328
+.data.rel.ro             2760   750336
+.dynamic                  480   753096
+.got                       64   753576
+.got.plt                  464   753640
+.data                    2143   754112
+.bss                      664   756256
 .comment                   82        0
-Total                  766339
+Total                  749904
 
 

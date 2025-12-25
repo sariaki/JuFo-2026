@@ -49,7 +49,7 @@ PROBABILITY=100
 PASS_PLUGIN_DIR="/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so"
 cmake -DCMAKE_C_COMPILER=/usr/bin/clang-18 \
       -DCMAKE_CXX_COMPILER=/usr/bin/clang++-18 \
-      -DTEST_SUITE_SUBDIRS="SingleSource;MultiSource" \
+      -DTEST_SUITE_SUBDIRS="MultiSource" \
       -DCMAKE_C_FLAGS="-fpass-plugin=$PASS_PLUGIN_DIR -Xclang -load -Xclang $PASS_PLUGIN_DIR -mllvm -pop-probability=$PROBABILITY" \
       -DCMAKE_CXX_FLAGS="-fpass-plugin=$PASS_PLUGIN_DIR -Xclang -load -Xclang $PASS_PLUGIN_DIR -mllvm -pop-probability=$PROBABILITY" \
       -C ../llvm-test-suite/cmake/caches/O3.cmake \
@@ -57,7 +57,7 @@ cmake -DCMAKE_C_COMPILER=/usr/bin/clang-18 \
 
 make -j$(nproc)
 
-lit -v -j 1 -o results.json .
+lit -v -j $(nproc) --timeout 600 -o results.json .
 
 ../llvm-test-suite/utils/compare.py results.json
 ```

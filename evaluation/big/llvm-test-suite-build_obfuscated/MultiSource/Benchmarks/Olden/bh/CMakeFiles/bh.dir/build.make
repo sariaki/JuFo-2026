@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/depend.make
@@ -72,58 +72,58 @@ include MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/flags.make
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/flags.make
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/args.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o -MF CMakeFiles/bh.dir/args.c.o.d -o CMakeFiles/bh.dir/args.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/args.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.o -MF CMakeFiles/bh.dir/args.c.o.d -o CMakeFiles/bh.dir/args.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bh.dir/args.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c > CMakeFiles/bh.dir/args.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c > CMakeFiles/bh.dir/args.c.i
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/args.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bh.dir/args.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c -o CMakeFiles/bh.dir/args.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/args.c -o CMakeFiles/bh.dir/args.c.s
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/flags.make
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/newbh.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o -MF CMakeFiles/bh.dir/newbh.c.o.d -o CMakeFiles/bh.dir/newbh.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/newbh.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.o -MF CMakeFiles/bh.dir/newbh.c.o.d -o CMakeFiles/bh.dir/newbh.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bh.dir/newbh.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c > CMakeFiles/bh.dir/newbh.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c > CMakeFiles/bh.dir/newbh.c.i
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/newbh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bh.dir/newbh.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c -o CMakeFiles/bh.dir/newbh.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/newbh.c -o CMakeFiles/bh.dir/newbh.c.s
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/flags.make
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/util.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o -MF CMakeFiles/bh.dir/util.c.o.d -o CMakeFiles/bh.dir/util.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/util.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.o -MF CMakeFiles/bh.dir/util.c.o.d -o CMakeFiles/bh.dir/util.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bh.dir/util.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c > CMakeFiles/bh.dir/util.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c > CMakeFiles/bh.dir/util.c.i
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bh.dir/util.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c -o CMakeFiles/bh.dir/util.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/util.c -o CMakeFiles/bh.dir/util.c.s
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/flags.make
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/walksub.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o -MF CMakeFiles/bh.dir/walksub.c.o.d -o CMakeFiles/bh.dir/walksub.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bh.dir/walksub.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o -MF CMakeFiles/bh.dir/walksub.c.o.d -o CMakeFiles/bh.dir/walksub.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bh.dir/walksub.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c > CMakeFiles/bh.dir/walksub.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c > CMakeFiles/bh.dir/walksub.c.i
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bh.dir/walksub.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c -o CMakeFiles/bh.dir/walksub.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/walksub.c -o CMakeFiles/bh.dir/walksub.c.s
 
 # Object files for target bh
 bh_OBJECTS = \
@@ -141,20 +141,20 @@ MultiSource/Benchmarks/Olden/bh/bh: MultiSource/Benchmarks/Olden/bh/CMakeFiles/b
 MultiSource/Benchmarks/Olden/bh/bh: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/walksub.c.o
 MultiSource/Benchmarks/Olden/bh/bh: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/build.make
 MultiSource/Benchmarks/Olden/bh/bh: MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable bh"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bh.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/bh.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable bh"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bh.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh/bh.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/build: MultiSource/Benchmarks/Olden/bh/bh
 .PHONY : MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/build
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh && $(CMAKE_COMMAND) -P CMakeFiles/bh.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh && $(CMAKE_COMMAND) -P CMakeFiles/bh.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/clean
 
 MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/bh /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Olden/bh/CMakeFiles/bh.dir/depend
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Rodinia/hotspot/hotspot  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Rodinia/hotspot/hotspot  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     80    4128
 .plt.got                  8    4208
-.text                  7630    4224
-.fini                    13   11856
-.rodata                 806   12288
-.eh_frame_hdr            76   13096
-.eh_frame               332   13176
+.text                  6238    4224
+.fini                    13   10464
+.rodata                 638   12288
+.eh_frame_hdr            76   12928
+.eh_frame               332   13008
 .init_array               8   19904
 .fini_array               8   19912
 .dynamic                480   19920
@@ -27,6 +27,6 @@ section                size    addr
 .data                    48   20512
 .bss                   1408   20560
 .comment                 82       0
-Total                 12155
+Total                 10595
 
 

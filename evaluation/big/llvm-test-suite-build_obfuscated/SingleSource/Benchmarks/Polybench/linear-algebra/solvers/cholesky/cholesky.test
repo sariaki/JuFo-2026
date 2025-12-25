@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/cholesky 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/cholesky.reference_output

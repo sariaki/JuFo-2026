@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-testtrace 
-VERIFY: %b/fpcmp-target %o %S/testtrace.reference_output

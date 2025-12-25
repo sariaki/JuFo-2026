@@ -1,32 +1,32 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-FFT/telecomm-fft  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-FFT/telecomm-fft  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
 .note.gnu.build-id       36     856
 .note.ABI-tag            32     892
 .gnu.hash                48     928
-.dynsym                 480     976
-.dynstr                 220    1456
-.gnu.version             40    1676
-.gnu.version_r           80    1720
-.rela.dyn               216    1800
-.rela.plt               264    2016
+.dynsym                 504     976
+.dynstr                 227    1480
+.gnu.version             42    1708
+.gnu.version_r           80    1752
+.rela.dyn               216    1832
+.rela.plt               288    2048
 .init                    27    4096
-.plt                    192    4128
-.plt.got                  8    4320
-.text                  8381    4336
-.fini                    13   12720
-.rodata                1552   16384
-.eh_frame_hdr           108   17936
-.eh_frame               476   18048
-.init_array               8   23992
-.fini_array               8   24000
-.dynamic                496   24008
-.got                     48   24504
-.got.plt                112   24552
-.data                    24   24664
-.bss                      8   24688
+.plt                    208    4128
+.plt.got                  8    4336
+.text                  6445    4352
+.fini                    13   10800
+.rodata                1144   12288
+.eh_frame_hdr           108   13432
+.eh_frame               476   13544
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                120   20456
+.data                    24   20576
+.bss                      8   20600
 .comment                 82       0
-Total                 13019
+Total                 10756
 
 

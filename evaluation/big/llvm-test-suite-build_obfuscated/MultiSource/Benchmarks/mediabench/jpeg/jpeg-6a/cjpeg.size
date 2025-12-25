@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/jpeg/jpeg-6a/cjpeg  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/mediabench/jpeg/jpeg-6a/cjpeg  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -9,25 +9,25 @@ section                  size     addr
 .dynstr                   338     1640
 .gnu.version               56     1978
 .gnu.version_r             96     2040
-.rela.dyn                4224     2136
-.rela.plt                 456     6360
+.rela.dyn                4248     2136
+.rela.plt                 456     6384
 .init                      27     8192
 .plt                      320     8224
 .plt.got                    8     8544
-.text                  382683     8560
-.fini                      13   391244
-.rodata                 70480   393216
-.eh_frame_hdr            2476   463696
-.eh_frame               17608   466176
-.init_array                 8   489568
-.fini_array                 8   489576
-.data.rel.ro             1360   489584
-.dynamic                  480   490944
-.got                       64   491424
-.got.plt                  176   491496
-.data                      16   491672
-.bss                       32   491688
+.text                  285275     8560
+.fini                      13   293836
+.rodata                 48432   294912
+.eh_frame_hdr            2484   343344
+.eh_frame               17280   345832
+.init_array                 8   366688
+.fini_array                 8   366696
+.data.rel.ro             1360   366704
+.dynamic                  480   368064
+.got                       72   368544
+.got.plt                  176   368616
+.data                      16   368792
+.bss                       32   368808
 .comment                   82        0
-Total                  481847
+Total                  362103
 
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/depend.make
@@ -72,58 +72,58 @@ include MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/flags.make
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/flags.make
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/dec_viterbi_F.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o -MF CMakeFiles/viterbi.dir/dec_viterbi_F.c.o.d -o CMakeFiles/viterbi.dir/dec_viterbi_F.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/dec_viterbi_F.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.o -MF CMakeFiles/viterbi.dir/dec_viterbi_F.c.o.d -o CMakeFiles/viterbi.dir/dec_viterbi_F.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/viterbi.dir/dec_viterbi_F.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c > CMakeFiles/viterbi.dir/dec_viterbi_F.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c > CMakeFiles/viterbi.dir/dec_viterbi_F.c.i
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/dec_viterbi_F.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/viterbi.dir/dec_viterbi_F.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c -o CMakeFiles/viterbi.dir/dec_viterbi_F.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/dec_viterbi_F.c -o CMakeFiles/viterbi.dir/dec_viterbi_F.c.s
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/flags.make
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/init_viterbi.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o -MF CMakeFiles/viterbi.dir/init_viterbi.c.o.d -o CMakeFiles/viterbi.dir/init_viterbi.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/init_viterbi.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.o -MF CMakeFiles/viterbi.dir/init_viterbi.c.o.d -o CMakeFiles/viterbi.dir/init_viterbi.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/viterbi.dir/init_viterbi.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c > CMakeFiles/viterbi.dir/init_viterbi.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c > CMakeFiles/viterbi.dir/init_viterbi.c.i
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/init_viterbi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/viterbi.dir/init_viterbi.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c -o CMakeFiles/viterbi.dir/init_viterbi.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/init_viterbi.c -o CMakeFiles/viterbi.dir/init_viterbi.c.s
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/flags.make
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/read_dmatrix.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o -MF CMakeFiles/viterbi.dir/read_dmatrix.c.o.d -o CMakeFiles/viterbi.dir/read_dmatrix.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/read_dmatrix.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.o -MF CMakeFiles/viterbi.dir/read_dmatrix.c.o.d -o CMakeFiles/viterbi.dir/read_dmatrix.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/viterbi.dir/read_dmatrix.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c > CMakeFiles/viterbi.dir/read_dmatrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c > CMakeFiles/viterbi.dir/read_dmatrix.c.i
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/read_dmatrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/viterbi.dir/read_dmatrix.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c -o CMakeFiles/viterbi.dir/read_dmatrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/read_dmatrix.c -o CMakeFiles/viterbi.dir/read_dmatrix.c.s
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/flags.make
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/test.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o -MF CMakeFiles/viterbi.dir/test.c.o.d -o CMakeFiles/viterbi.dir/test.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/viterbi.dir/test.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o -MF CMakeFiles/viterbi.dir/test.c.o.d -o CMakeFiles/viterbi.dir/test.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/viterbi.dir/test.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c > CMakeFiles/viterbi.dir/test.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c > CMakeFiles/viterbi.dir/test.c.i
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/viterbi.dir/test.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c -o CMakeFiles/viterbi.dir/test.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/test.c -o CMakeFiles/viterbi.dir/test.c.s
 
 # Object files for target viterbi
 viterbi_OBJECTS = \
@@ -141,21 +141,21 @@ MultiSource/Applications/viterbi/viterbi: MultiSource/Applications/viterbi/CMake
 MultiSource/Applications/viterbi/viterbi: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/test.c.o
 MultiSource/Applications/viterbi/viterbi: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/build.make
 MultiSource/Applications/viterbi/viterbi: MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable viterbi"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/viterbi.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi/viterbi > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi/viterbi.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/viterbi.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi/viterbi.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/Dist_demux /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi/Dist_demux
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable viterbi"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/viterbi.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi/viterbi > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi/viterbi.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/viterbi.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi/viterbi.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi/Dist_demux /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi/Dist_demux
 
 # Rule to build all files generated by this target.
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/build: MultiSource/Applications/viterbi/viterbi
 .PHONY : MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/build
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi && $(CMAKE_COMMAND) -P CMakeFiles/viterbi.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi && $(CMAKE_COMMAND) -P CMakeFiles/viterbi.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/clean
 
 MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/viterbi /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/viterbi/CMakeFiles/viterbi.dir/depend
 

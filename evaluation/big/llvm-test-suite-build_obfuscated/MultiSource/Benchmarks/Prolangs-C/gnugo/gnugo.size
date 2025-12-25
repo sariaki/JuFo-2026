@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/gnugo/gnugo  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/gnugo/gnugo  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,11 +14,11 @@ section                 size    addr
 .init                     27    4096
 .plt                     256    4128
 .plt.got                   8    4384
-.text                  25182    4400
-.fini                     13   29584
-.rodata                 4924   32768
-.eh_frame_hdr            252   37692
-.eh_frame               1568   37944
+.text                  24718    4400
+.fini                     13   29120
+.rodata                 4972   32768
+.eh_frame_hdr            252   37740
+.eh_frame               1576   37992
 .init_array                8   44448
 .fini_array                8   44456
 .dynamic                 480   44464
@@ -27,6 +27,6 @@ section                 size    addr
 .data                     16   45176
 .bss                    1584   45200
 .comment                  82       0
-Total                  36395
+Total                  35987
 
 

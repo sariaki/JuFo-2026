@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lambda-0.1.3//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lambda-0.1.3//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/rule
 .PHONY : MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ lambda: MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/rule
 
 # fast build rule for target.
 lambda/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build
 .PHONY : lambda/fast
 
 lambda.o: lambda.cc.o
@@ -136,7 +135,7 @@ lambda.o: lambda.cc.o
 
 # target to build an object file
 lambda.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/lambda.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/lambda.cc.o
 .PHONY : lambda.cc.o
 
 lambda.i: lambda.cc.i
@@ -144,7 +143,7 @@ lambda.i: lambda.cc.i
 
 # target to preprocess a source file
 lambda.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/lambda.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/lambda.cc.i
 .PHONY : lambda.cc.i
 
 lambda.s: lambda.cc.s
@@ -152,7 +151,7 @@ lambda.s: lambda.cc.s
 
 # target to generate assembly for a file
 lambda.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/lambda.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/lambda.cc.s
 .PHONY : lambda.cc.s
 
 node.o: node.cc.o
@@ -160,7 +159,7 @@ node.o: node.cc.o
 
 # target to build an object file
 node.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/node.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/node.cc.o
 .PHONY : node.cc.o
 
 node.i: node.cc.i
@@ -168,7 +167,7 @@ node.i: node.cc.i
 
 # target to preprocess a source file
 node.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/node.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/node.cc.i
 .PHONY : node.cc.i
 
 node.s: node.cc.s
@@ -176,7 +175,7 @@ node.s: node.cc.s
 
 # target to generate assembly for a file
 node.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/node.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/node.cc.s
 .PHONY : node.cc.s
 
 parse.o: parse.cc.o
@@ -184,7 +183,7 @@ parse.o: parse.cc.o
 
 # target to build an object file
 parse.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/parse.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/parse.cc.o
 .PHONY : parse.cc.o
 
 parse.i: parse.cc.i
@@ -192,7 +191,7 @@ parse.i: parse.cc.i
 
 # target to preprocess a source file
 parse.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/parse.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/parse.cc.i
 .PHONY : parse.cc.i
 
 parse.s: parse.cc.s
@@ -200,7 +199,7 @@ parse.s: parse.cc.s
 
 # target to generate assembly for a file
 parse.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/parse.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/parse.cc.s
 .PHONY : parse.cc.s
 
 token_stream.o: token_stream.cc.o
@@ -208,7 +207,7 @@ token_stream.o: token_stream.cc.o
 
 # target to build an object file
 token_stream.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/token_stream.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/token_stream.cc.o
 .PHONY : token_stream.cc.o
 
 token_stream.i: token_stream.cc.i
@@ -216,7 +215,7 @@ token_stream.i: token_stream.cc.i
 
 # target to preprocess a source file
 token_stream.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/token_stream.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/token_stream.cc.i
 .PHONY : token_stream.cc.i
 
 token_stream.s: token_stream.cc.s
@@ -224,7 +223,7 @@ token_stream.s: token_stream.cc.s
 
 # target to generate assembly for a file
 token_stream.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/token_stream.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/build.make MultiSource/Applications/lambda-0.1.3/CMakeFiles/lambda.dir/token_stream.cc.s
 .PHONY : token_stream.cc.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

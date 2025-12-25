@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/office/office  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/office/office  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     80    4128
 .plt.got                  8    4208
-.text                  7727    4224
-.fini                    13   11952
-.rodata                2070   12288
-.eh_frame_hdr           108   14360
-.eh_frame               492   14472
+.text                  5688    4224
+.fini                    13    9912
+.rodata                1534   12288
+.eh_frame_hdr           108   13824
+.eh_frame               452   13936
 .init_array               8   19656
 .fini_array               8   19664
 .data.rel.ro            208   19672
@@ -28,6 +28,6 @@ section                size    addr
 .data                    16   20512
 .bss                     40   20528
 .comment                 82       0
-Total                 13510
+Total                 10895
 
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/SciMark2-C//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/SciMark2-C//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/rule
 .PHONY : MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ scimark2: MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/rule
 
 # fast build rule for target.
 scimark2/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build
 .PHONY : scimark2/fast
 
 FFT.o: FFT.c.o
@@ -136,7 +135,7 @@ FFT.o: FFT.c.o
 
 # target to build an object file
 FFT.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/FFT.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/FFT.c.o
 .PHONY : FFT.c.o
 
 FFT.i: FFT.c.i
@@ -144,7 +143,7 @@ FFT.i: FFT.c.i
 
 # target to preprocess a source file
 FFT.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/FFT.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/FFT.c.i
 .PHONY : FFT.c.i
 
 FFT.s: FFT.c.s
@@ -152,7 +151,7 @@ FFT.s: FFT.c.s
 
 # target to generate assembly for a file
 FFT.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/FFT.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/FFT.c.s
 .PHONY : FFT.c.s
 
 LU.o: LU.c.o
@@ -160,7 +159,7 @@ LU.o: LU.c.o
 
 # target to build an object file
 LU.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/LU.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/LU.c.o
 .PHONY : LU.c.o
 
 LU.i: LU.c.i
@@ -168,7 +167,7 @@ LU.i: LU.c.i
 
 # target to preprocess a source file
 LU.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/LU.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/LU.c.i
 .PHONY : LU.c.i
 
 LU.s: LU.c.s
@@ -176,7 +175,7 @@ LU.s: LU.c.s
 
 # target to generate assembly for a file
 LU.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/LU.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/LU.c.s
 .PHONY : LU.c.s
 
 MonteCarlo.o: MonteCarlo.c.o
@@ -184,7 +183,7 @@ MonteCarlo.o: MonteCarlo.c.o
 
 # target to build an object file
 MonteCarlo.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/MonteCarlo.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/MonteCarlo.c.o
 .PHONY : MonteCarlo.c.o
 
 MonteCarlo.i: MonteCarlo.c.i
@@ -192,7 +191,7 @@ MonteCarlo.i: MonteCarlo.c.i
 
 # target to preprocess a source file
 MonteCarlo.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/MonteCarlo.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/MonteCarlo.c.i
 .PHONY : MonteCarlo.c.i
 
 MonteCarlo.s: MonteCarlo.c.s
@@ -200,7 +199,7 @@ MonteCarlo.s: MonteCarlo.c.s
 
 # target to generate assembly for a file
 MonteCarlo.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/MonteCarlo.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/MonteCarlo.c.s
 .PHONY : MonteCarlo.c.s
 
 Random.o: Random.c.o
@@ -208,7 +207,7 @@ Random.o: Random.c.o
 
 # target to build an object file
 Random.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Random.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Random.c.o
 .PHONY : Random.c.o
 
 Random.i: Random.c.i
@@ -216,7 +215,7 @@ Random.i: Random.c.i
 
 # target to preprocess a source file
 Random.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Random.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Random.c.i
 .PHONY : Random.c.i
 
 Random.s: Random.c.s
@@ -224,7 +223,7 @@ Random.s: Random.c.s
 
 # target to generate assembly for a file
 Random.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Random.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Random.c.s
 .PHONY : Random.c.s
 
 SOR.o: SOR.c.o
@@ -232,7 +231,7 @@ SOR.o: SOR.c.o
 
 # target to build an object file
 SOR.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SOR.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SOR.c.o
 .PHONY : SOR.c.o
 
 SOR.i: SOR.c.i
@@ -240,7 +239,7 @@ SOR.i: SOR.c.i
 
 # target to preprocess a source file
 SOR.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SOR.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SOR.c.i
 .PHONY : SOR.c.i
 
 SOR.s: SOR.c.s
@@ -248,7 +247,7 @@ SOR.s: SOR.c.s
 
 # target to generate assembly for a file
 SOR.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SOR.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SOR.c.s
 .PHONY : SOR.c.s
 
 SparseCompRow.o: SparseCompRow.c.o
@@ -256,7 +255,7 @@ SparseCompRow.o: SparseCompRow.c.o
 
 # target to build an object file
 SparseCompRow.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SparseCompRow.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SparseCompRow.c.o
 .PHONY : SparseCompRow.c.o
 
 SparseCompRow.i: SparseCompRow.c.i
@@ -264,7 +263,7 @@ SparseCompRow.i: SparseCompRow.c.i
 
 # target to preprocess a source file
 SparseCompRow.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SparseCompRow.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SparseCompRow.c.i
 .PHONY : SparseCompRow.c.i
 
 SparseCompRow.s: SparseCompRow.c.s
@@ -272,7 +271,7 @@ SparseCompRow.s: SparseCompRow.c.s
 
 # target to generate assembly for a file
 SparseCompRow.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SparseCompRow.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/SparseCompRow.c.s
 .PHONY : SparseCompRow.c.s
 
 Stopwatch.o: Stopwatch.c.o
@@ -280,7 +279,7 @@ Stopwatch.o: Stopwatch.c.o
 
 # target to build an object file
 Stopwatch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Stopwatch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Stopwatch.c.o
 .PHONY : Stopwatch.c.o
 
 Stopwatch.i: Stopwatch.c.i
@@ -288,7 +287,7 @@ Stopwatch.i: Stopwatch.c.i
 
 # target to preprocess a source file
 Stopwatch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Stopwatch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Stopwatch.c.i
 .PHONY : Stopwatch.c.i
 
 Stopwatch.s: Stopwatch.c.s
@@ -296,7 +295,7 @@ Stopwatch.s: Stopwatch.c.s
 
 # target to generate assembly for a file
 Stopwatch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Stopwatch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/Stopwatch.c.s
 .PHONY : Stopwatch.c.s
 
 array.o: array.c.o
@@ -304,7 +303,7 @@ array.o: array.c.o
 
 # target to build an object file
 array.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/array.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/array.c.o
 .PHONY : array.c.o
 
 array.i: array.c.i
@@ -312,7 +311,7 @@ array.i: array.c.i
 
 # target to preprocess a source file
 array.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/array.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/array.c.i
 .PHONY : array.c.i
 
 array.s: array.c.s
@@ -320,7 +319,7 @@ array.s: array.c.s
 
 # target to generate assembly for a file
 array.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/array.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/array.c.s
 .PHONY : array.c.s
 
 kernel.o: kernel.c.o
@@ -328,7 +327,7 @@ kernel.o: kernel.c.o
 
 # target to build an object file
 kernel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/kernel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/kernel.c.o
 .PHONY : kernel.c.o
 
 kernel.i: kernel.c.i
@@ -336,7 +335,7 @@ kernel.i: kernel.c.i
 
 # target to preprocess a source file
 kernel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/kernel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/kernel.c.i
 .PHONY : kernel.c.i
 
 kernel.s: kernel.c.s
@@ -344,7 +343,7 @@ kernel.s: kernel.c.s
 
 # target to generate assembly for a file
 kernel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/kernel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/kernel.c.s
 .PHONY : kernel.c.s
 
 scimark2.o: scimark2.c.o
@@ -352,7 +351,7 @@ scimark2.o: scimark2.c.o
 
 # target to build an object file
 scimark2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/scimark2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/scimark2.c.o
 .PHONY : scimark2.c.o
 
 scimark2.i: scimark2.c.i
@@ -360,7 +359,7 @@ scimark2.i: scimark2.c.i
 
 # target to preprocess a source file
 scimark2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/scimark2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/scimark2.c.i
 .PHONY : scimark2.c.i
 
 scimark2.s: scimark2.c.s
@@ -368,7 +367,7 @@ scimark2.s: scimark2.c.s
 
 # target to generate assembly for a file
 scimark2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/scimark2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/build.make MultiSource/Benchmarks/SciMark2-C/CMakeFiles/scimark2.dir/scimark2.c.s
 .PHONY : scimark2.c.s
 
 # Help Target
@@ -421,7 +420,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

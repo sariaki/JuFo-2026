@@ -1,34 +1,34 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Bullet/bullet  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Bullet/bullet  :
 section                   size      addr
 .interp                     28       792
 .note.gnu.property          32       824
 .note.gnu.build-id          36       856
 .note.ABI-tag               32       892
 .gnu.hash                   36       928
-.dynsym                   1008       968
-.dynstr                    655      1976
-.gnu.version                84      2632
-.gnu.version_r             208      2720
-.rela.dyn                66816      2928
-.rela.plt                  744     69744
+.dynsym                   1032       968
+.dynstr                    662      2000
+.gnu.version                86      2662
+.gnu.version_r             208      2752
+.rela.dyn                66984      2960
+.rela.plt                  768     69944
 .init                       27     73728
-.plt                       512     73760
-.plt.got                     8     74272
-.text                  1716955     74288
-.fini                       13   1791244
-.rodata                 327551   1794048
-.eh_frame_hdr            16348   2121600
-.eh_frame                85016   2137952
-.gcc_except_table        13048   2222968
-.init_array                 56   2236800
-.fini_array                  8   2236856
-.data.rel.ro             23536   2236864
-.dynamic                   528   2260400
-.got                        40   2260928
-.got.plt                   272   2260968
-.data                   748208   2261248
-.bss                     43440   3009456
+.plt                       528     73760
+.plt.got                     8     74288
+.text                  1325743     74304
+.fini                       13   1400048
+.rodata                 226447   1400832
+.eh_frame_hdr            16332   1627280
+.eh_frame                81792   1643616
+.gcc_except_table        13064   1725408
+.init_array                 56   1741120
+.fini_array                  8   1741176
+.data.rel.ro             23600   1741184
+.dynamic                   528   1764784
+.got                        40   1765312
+.got.plt                   280   1765352
+.data                   748208   1765632
+.bss                     43432   2513840
 .comment                    82         0
-Total                  3045327
+Total                  2550092
 
 

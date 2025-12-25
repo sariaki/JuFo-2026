@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/JM/lencod//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/JM/lencod//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rule
 .PHONY : MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ lencod: MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rule
 
 # fast build rule for target.
 lencod/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build
 .PHONY : lencod/fast
 
 annexb.o: annexb.c.o
@@ -136,7 +135,7 @@ annexb.o: annexb.c.o
 
 # target to build an object file
 annexb.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/annexb.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/annexb.c.o
 .PHONY : annexb.c.o
 
 annexb.i: annexb.c.i
@@ -144,7 +143,7 @@ annexb.i: annexb.c.i
 
 # target to preprocess a source file
 annexb.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/annexb.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/annexb.c.i
 .PHONY : annexb.c.i
 
 annexb.s: annexb.c.s
@@ -152,7 +151,7 @@ annexb.s: annexb.c.s
 
 # target to generate assembly for a file
 annexb.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/annexb.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/annexb.c.s
 .PHONY : annexb.c.s
 
 biariencode.o: biariencode.c.o
@@ -160,7 +159,7 @@ biariencode.o: biariencode.c.o
 
 # target to build an object file
 biariencode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/biariencode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/biariencode.c.o
 .PHONY : biariencode.c.o
 
 biariencode.i: biariencode.c.i
@@ -168,7 +167,7 @@ biariencode.i: biariencode.c.i
 
 # target to preprocess a source file
 biariencode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/biariencode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/biariencode.c.i
 .PHONY : biariencode.c.i
 
 biariencode.s: biariencode.c.s
@@ -176,7 +175,7 @@ biariencode.s: biariencode.c.s
 
 # target to generate assembly for a file
 biariencode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/biariencode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/biariencode.c.s
 .PHONY : biariencode.c.s
 
 block.o: block.c.o
@@ -184,7 +183,7 @@ block.o: block.c.o
 
 # target to build an object file
 block.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/block.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/block.c.o
 .PHONY : block.c.o
 
 block.i: block.c.i
@@ -192,7 +191,7 @@ block.i: block.c.i
 
 # target to preprocess a source file
 block.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/block.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/block.c.i
 .PHONY : block.c.i
 
 block.s: block.c.s
@@ -200,7 +199,7 @@ block.s: block.c.s
 
 # target to generate assembly for a file
 block.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/block.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/block.c.s
 .PHONY : block.c.s
 
 cabac.o: cabac.c.o
@@ -208,7 +207,7 @@ cabac.o: cabac.c.o
 
 # target to build an object file
 cabac.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/cabac.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/cabac.c.o
 .PHONY : cabac.c.o
 
 cabac.i: cabac.c.i
@@ -216,7 +215,7 @@ cabac.i: cabac.c.i
 
 # target to preprocess a source file
 cabac.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/cabac.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/cabac.c.i
 .PHONY : cabac.c.i
 
 cabac.s: cabac.c.s
@@ -224,7 +223,7 @@ cabac.s: cabac.c.s
 
 # target to generate assembly for a file
 cabac.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/cabac.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/cabac.c.s
 .PHONY : cabac.c.s
 
 configfile.o: configfile.c.o
@@ -232,7 +231,7 @@ configfile.o: configfile.c.o
 
 # target to build an object file
 configfile.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/configfile.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/configfile.c.o
 .PHONY : configfile.c.o
 
 configfile.i: configfile.c.i
@@ -240,7 +239,7 @@ configfile.i: configfile.c.i
 
 # target to preprocess a source file
 configfile.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/configfile.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/configfile.c.i
 .PHONY : configfile.c.i
 
 configfile.s: configfile.c.s
@@ -248,7 +247,7 @@ configfile.s: configfile.c.s
 
 # target to generate assembly for a file
 configfile.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/configfile.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/configfile.c.s
 .PHONY : configfile.c.s
 
 context_ini.o: context_ini.c.o
@@ -256,7 +255,7 @@ context_ini.o: context_ini.c.o
 
 # target to build an object file
 context_ini.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/context_ini.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/context_ini.c.o
 .PHONY : context_ini.c.o
 
 context_ini.i: context_ini.c.i
@@ -264,7 +263,7 @@ context_ini.i: context_ini.c.i
 
 # target to preprocess a source file
 context_ini.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/context_ini.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/context_ini.c.i
 .PHONY : context_ini.c.i
 
 context_ini.s: context_ini.c.s
@@ -272,7 +271,7 @@ context_ini.s: context_ini.c.s
 
 # target to generate assembly for a file
 context_ini.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/context_ini.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/context_ini.c.s
 .PHONY : context_ini.c.s
 
 decoder.o: decoder.c.o
@@ -280,7 +279,7 @@ decoder.o: decoder.c.o
 
 # target to build an object file
 decoder.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/decoder.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/decoder.c.o
 .PHONY : decoder.c.o
 
 decoder.i: decoder.c.i
@@ -288,7 +287,7 @@ decoder.i: decoder.c.i
 
 # target to preprocess a source file
 decoder.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/decoder.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/decoder.c.i
 .PHONY : decoder.c.i
 
 decoder.s: decoder.c.s
@@ -296,7 +295,7 @@ decoder.s: decoder.c.s
 
 # target to generate assembly for a file
 decoder.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/decoder.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/decoder.c.s
 .PHONY : decoder.c.s
 
 explicit_gop.o: explicit_gop.c.o
@@ -304,7 +303,7 @@ explicit_gop.o: explicit_gop.c.o
 
 # target to build an object file
 explicit_gop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/explicit_gop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/explicit_gop.c.o
 .PHONY : explicit_gop.c.o
 
 explicit_gop.i: explicit_gop.c.i
@@ -312,7 +311,7 @@ explicit_gop.i: explicit_gop.c.i
 
 # target to preprocess a source file
 explicit_gop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/explicit_gop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/explicit_gop.c.i
 .PHONY : explicit_gop.c.i
 
 explicit_gop.s: explicit_gop.c.s
@@ -320,7 +319,7 @@ explicit_gop.s: explicit_gop.c.s
 
 # target to generate assembly for a file
 explicit_gop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/explicit_gop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/explicit_gop.c.s
 .PHONY : explicit_gop.c.s
 
 filehandle.o: filehandle.c.o
@@ -328,7 +327,7 @@ filehandle.o: filehandle.c.o
 
 # target to build an object file
 filehandle.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/filehandle.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/filehandle.c.o
 .PHONY : filehandle.c.o
 
 filehandle.i: filehandle.c.i
@@ -336,7 +335,7 @@ filehandle.i: filehandle.c.i
 
 # target to preprocess a source file
 filehandle.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/filehandle.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/filehandle.c.i
 .PHONY : filehandle.c.i
 
 filehandle.s: filehandle.c.s
@@ -344,7 +343,7 @@ filehandle.s: filehandle.c.s
 
 # target to generate assembly for a file
 filehandle.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/filehandle.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/filehandle.c.s
 .PHONY : filehandle.c.s
 
 fmo.o: fmo.c.o
@@ -352,7 +351,7 @@ fmo.o: fmo.c.o
 
 # target to build an object file
 fmo.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/fmo.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/fmo.c.o
 .PHONY : fmo.c.o
 
 fmo.i: fmo.c.i
@@ -360,7 +359,7 @@ fmo.i: fmo.c.i
 
 # target to preprocess a source file
 fmo.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/fmo.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/fmo.c.i
 .PHONY : fmo.c.i
 
 fmo.s: fmo.c.s
@@ -368,7 +367,7 @@ fmo.s: fmo.c.s
 
 # target to generate assembly for a file
 fmo.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/fmo.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/fmo.c.s
 .PHONY : fmo.c.s
 
 header.o: header.c.o
@@ -376,7 +375,7 @@ header.o: header.c.o
 
 # target to build an object file
 header.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/header.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/header.c.o
 .PHONY : header.c.o
 
 header.i: header.c.i
@@ -384,7 +383,7 @@ header.i: header.c.i
 
 # target to preprocess a source file
 header.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/header.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/header.c.i
 .PHONY : header.c.i
 
 header.s: header.c.s
@@ -392,7 +391,7 @@ header.s: header.c.s
 
 # target to generate assembly for a file
 header.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/header.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/header.c.s
 .PHONY : header.c.s
 
 image.o: image.c.o
@@ -400,7 +399,7 @@ image.o: image.c.o
 
 # target to build an object file
 image.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/image.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/image.c.o
 .PHONY : image.c.o
 
 image.i: image.c.i
@@ -408,7 +407,7 @@ image.i: image.c.i
 
 # target to preprocess a source file
 image.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/image.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/image.c.i
 .PHONY : image.c.i
 
 image.s: image.c.s
@@ -416,7 +415,7 @@ image.s: image.c.s
 
 # target to generate assembly for a file
 image.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/image.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/image.c.s
 .PHONY : image.c.s
 
 img_chroma.o: img_chroma.c.o
@@ -424,7 +423,7 @@ img_chroma.o: img_chroma.c.o
 
 # target to build an object file
 img_chroma.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_chroma.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_chroma.c.o
 .PHONY : img_chroma.c.o
 
 img_chroma.i: img_chroma.c.i
@@ -432,7 +431,7 @@ img_chroma.i: img_chroma.c.i
 
 # target to preprocess a source file
 img_chroma.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_chroma.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_chroma.c.i
 .PHONY : img_chroma.c.i
 
 img_chroma.s: img_chroma.c.s
@@ -440,7 +439,7 @@ img_chroma.s: img_chroma.c.s
 
 # target to generate assembly for a file
 img_chroma.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_chroma.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_chroma.c.s
 .PHONY : img_chroma.c.s
 
 img_luma.o: img_luma.c.o
@@ -448,7 +447,7 @@ img_luma.o: img_luma.c.o
 
 # target to build an object file
 img_luma.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_luma.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_luma.c.o
 .PHONY : img_luma.c.o
 
 img_luma.i: img_luma.c.i
@@ -456,7 +455,7 @@ img_luma.i: img_luma.c.i
 
 # target to preprocess a source file
 img_luma.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_luma.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_luma.c.i
 .PHONY : img_luma.c.i
 
 img_luma.s: img_luma.c.s
@@ -464,7 +463,7 @@ img_luma.s: img_luma.c.s
 
 # target to generate assembly for a file
 img_luma.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_luma.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/img_luma.c.s
 .PHONY : img_luma.c.s
 
 intrarefresh.o: intrarefresh.c.o
@@ -472,7 +471,7 @@ intrarefresh.o: intrarefresh.c.o
 
 # target to build an object file
 intrarefresh.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/intrarefresh.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/intrarefresh.c.o
 .PHONY : intrarefresh.c.o
 
 intrarefresh.i: intrarefresh.c.i
@@ -480,7 +479,7 @@ intrarefresh.i: intrarefresh.c.i
 
 # target to preprocess a source file
 intrarefresh.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/intrarefresh.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/intrarefresh.c.i
 .PHONY : intrarefresh.c.i
 
 intrarefresh.s: intrarefresh.c.s
@@ -488,7 +487,7 @@ intrarefresh.s: intrarefresh.c.s
 
 # target to generate assembly for a file
 intrarefresh.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/intrarefresh.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/intrarefresh.c.s
 .PHONY : intrarefresh.c.s
 
 leaky_bucket.o: leaky_bucket.c.o
@@ -496,7 +495,7 @@ leaky_bucket.o: leaky_bucket.c.o
 
 # target to build an object file
 leaky_bucket.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/leaky_bucket.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/leaky_bucket.c.o
 .PHONY : leaky_bucket.c.o
 
 leaky_bucket.i: leaky_bucket.c.i
@@ -504,7 +503,7 @@ leaky_bucket.i: leaky_bucket.c.i
 
 # target to preprocess a source file
 leaky_bucket.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/leaky_bucket.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/leaky_bucket.c.i
 .PHONY : leaky_bucket.c.i
 
 leaky_bucket.s: leaky_bucket.c.s
@@ -512,7 +511,7 @@ leaky_bucket.s: leaky_bucket.c.s
 
 # target to generate assembly for a file
 leaky_bucket.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/leaky_bucket.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/leaky_bucket.c.s
 .PHONY : leaky_bucket.c.s
 
 lencod.o: lencod.c.o
@@ -520,7 +519,7 @@ lencod.o: lencod.c.o
 
 # target to build an object file
 lencod.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/lencod.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/lencod.c.o
 .PHONY : lencod.c.o
 
 lencod.i: lencod.c.i
@@ -528,7 +527,7 @@ lencod.i: lencod.c.i
 
 # target to preprocess a source file
 lencod.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/lencod.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/lencod.c.i
 .PHONY : lencod.c.i
 
 lencod.s: lencod.c.s
@@ -536,7 +535,7 @@ lencod.s: lencod.c.s
 
 # target to generate assembly for a file
 lencod.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/lencod.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/lencod.c.s
 .PHONY : lencod.c.s
 
 loopFilter.o: loopFilter.c.o
@@ -544,7 +543,7 @@ loopFilter.o: loopFilter.c.o
 
 # target to build an object file
 loopFilter.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/loopFilter.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/loopFilter.c.o
 .PHONY : loopFilter.c.o
 
 loopFilter.i: loopFilter.c.i
@@ -552,7 +551,7 @@ loopFilter.i: loopFilter.c.i
 
 # target to preprocess a source file
 loopFilter.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/loopFilter.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/loopFilter.c.i
 .PHONY : loopFilter.c.i
 
 loopFilter.s: loopFilter.c.s
@@ -560,7 +559,7 @@ loopFilter.s: loopFilter.c.s
 
 # target to generate assembly for a file
 loopFilter.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/loopFilter.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/loopFilter.c.s
 .PHONY : loopFilter.c.s
 
 macroblock.o: macroblock.c.o
@@ -568,7 +567,7 @@ macroblock.o: macroblock.c.o
 
 # target to build an object file
 macroblock.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/macroblock.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/macroblock.c.o
 .PHONY : macroblock.c.o
 
 macroblock.i: macroblock.c.i
@@ -576,7 +575,7 @@ macroblock.i: macroblock.c.i
 
 # target to preprocess a source file
 macroblock.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/macroblock.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/macroblock.c.i
 .PHONY : macroblock.c.i
 
 macroblock.s: macroblock.c.s
@@ -584,7 +583,7 @@ macroblock.s: macroblock.c.s
 
 # target to generate assembly for a file
 macroblock.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/macroblock.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/macroblock.c.s
 .PHONY : macroblock.c.s
 
 mb_access.o: mb_access.c.o
@@ -592,7 +591,7 @@ mb_access.o: mb_access.c.o
 
 # target to build an object file
 mb_access.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mb_access.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mb_access.c.o
 .PHONY : mb_access.c.o
 
 mb_access.i: mb_access.c.i
@@ -600,7 +599,7 @@ mb_access.i: mb_access.c.i
 
 # target to preprocess a source file
 mb_access.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mb_access.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mb_access.c.i
 .PHONY : mb_access.c.i
 
 mb_access.s: mb_access.c.s
@@ -608,7 +607,7 @@ mb_access.s: mb_access.c.s
 
 # target to generate assembly for a file
 mb_access.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mb_access.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mb_access.c.s
 .PHONY : mb_access.c.s
 
 mbuffer.o: mbuffer.c.o
@@ -616,7 +615,7 @@ mbuffer.o: mbuffer.c.o
 
 # target to build an object file
 mbuffer.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mbuffer.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mbuffer.c.o
 .PHONY : mbuffer.c.o
 
 mbuffer.i: mbuffer.c.i
@@ -624,7 +623,7 @@ mbuffer.i: mbuffer.c.i
 
 # target to preprocess a source file
 mbuffer.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mbuffer.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mbuffer.c.i
 .PHONY : mbuffer.c.i
 
 mbuffer.s: mbuffer.c.s
@@ -632,7 +631,7 @@ mbuffer.s: mbuffer.c.s
 
 # target to generate assembly for a file
 mbuffer.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mbuffer.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mbuffer.c.s
 .PHONY : mbuffer.c.s
 
 md_high.o: md_high.c.o
@@ -640,7 +639,7 @@ md_high.o: md_high.c.o
 
 # target to build an object file
 md_high.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_high.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_high.c.o
 .PHONY : md_high.c.o
 
 md_high.i: md_high.c.i
@@ -648,7 +647,7 @@ md_high.i: md_high.c.i
 
 # target to preprocess a source file
 md_high.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_high.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_high.c.i
 .PHONY : md_high.c.i
 
 md_high.s: md_high.c.s
@@ -656,7 +655,7 @@ md_high.s: md_high.c.s
 
 # target to generate assembly for a file
 md_high.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_high.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_high.c.s
 .PHONY : md_high.c.s
 
 md_highfast.o: md_highfast.c.o
@@ -664,7 +663,7 @@ md_highfast.o: md_highfast.c.o
 
 # target to build an object file
 md_highfast.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highfast.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highfast.c.o
 .PHONY : md_highfast.c.o
 
 md_highfast.i: md_highfast.c.i
@@ -672,7 +671,7 @@ md_highfast.i: md_highfast.c.i
 
 # target to preprocess a source file
 md_highfast.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highfast.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highfast.c.i
 .PHONY : md_highfast.c.i
 
 md_highfast.s: md_highfast.c.s
@@ -680,7 +679,7 @@ md_highfast.s: md_highfast.c.s
 
 # target to generate assembly for a file
 md_highfast.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highfast.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highfast.c.s
 .PHONY : md_highfast.c.s
 
 md_highloss.o: md_highloss.c.o
@@ -688,7 +687,7 @@ md_highloss.o: md_highloss.c.o
 
 # target to build an object file
 md_highloss.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highloss.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highloss.c.o
 .PHONY : md_highloss.c.o
 
 md_highloss.i: md_highloss.c.i
@@ -696,7 +695,7 @@ md_highloss.i: md_highloss.c.i
 
 # target to preprocess a source file
 md_highloss.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highloss.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highloss.c.i
 .PHONY : md_highloss.c.i
 
 md_highloss.s: md_highloss.c.s
@@ -704,7 +703,7 @@ md_highloss.s: md_highloss.c.s
 
 # target to generate assembly for a file
 md_highloss.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highloss.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_highloss.c.s
 .PHONY : md_highloss.c.s
 
 md_low.o: md_low.c.o
@@ -712,7 +711,7 @@ md_low.o: md_low.c.o
 
 # target to build an object file
 md_low.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_low.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_low.c.o
 .PHONY : md_low.c.o
 
 md_low.i: md_low.c.i
@@ -720,7 +719,7 @@ md_low.i: md_low.c.i
 
 # target to preprocess a source file
 md_low.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_low.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_low.c.i
 .PHONY : md_low.c.i
 
 md_low.s: md_low.c.s
@@ -728,7 +727,7 @@ md_low.s: md_low.c.s
 
 # target to generate assembly for a file
 md_low.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_low.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/md_low.c.s
 .PHONY : md_low.c.s
 
 me_distortion.o: me_distortion.c.o
@@ -736,7 +735,7 @@ me_distortion.o: me_distortion.c.o
 
 # target to build an object file
 me_distortion.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_distortion.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_distortion.c.o
 .PHONY : me_distortion.c.o
 
 me_distortion.i: me_distortion.c.i
@@ -744,7 +743,7 @@ me_distortion.i: me_distortion.c.i
 
 # target to preprocess a source file
 me_distortion.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_distortion.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_distortion.c.i
 .PHONY : me_distortion.c.i
 
 me_distortion.s: me_distortion.c.s
@@ -752,7 +751,7 @@ me_distortion.s: me_distortion.c.s
 
 # target to generate assembly for a file
 me_distortion.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_distortion.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_distortion.c.s
 .PHONY : me_distortion.c.s
 
 me_epzs.o: me_epzs.c.o
@@ -760,7 +759,7 @@ me_epzs.o: me_epzs.c.o
 
 # target to build an object file
 me_epzs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_epzs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_epzs.c.o
 .PHONY : me_epzs.c.o
 
 me_epzs.i: me_epzs.c.i
@@ -768,7 +767,7 @@ me_epzs.i: me_epzs.c.i
 
 # target to preprocess a source file
 me_epzs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_epzs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_epzs.c.i
 .PHONY : me_epzs.c.i
 
 me_epzs.s: me_epzs.c.s
@@ -776,7 +775,7 @@ me_epzs.s: me_epzs.c.s
 
 # target to generate assembly for a file
 me_epzs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_epzs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_epzs.c.s
 .PHONY : me_epzs.c.s
 
 me_fullfast.o: me_fullfast.c.o
@@ -784,7 +783,7 @@ me_fullfast.o: me_fullfast.c.o
 
 # target to build an object file
 me_fullfast.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullfast.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullfast.c.o
 .PHONY : me_fullfast.c.o
 
 me_fullfast.i: me_fullfast.c.i
@@ -792,7 +791,7 @@ me_fullfast.i: me_fullfast.c.i
 
 # target to preprocess a source file
 me_fullfast.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullfast.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullfast.c.i
 .PHONY : me_fullfast.c.i
 
 me_fullfast.s: me_fullfast.c.s
@@ -800,7 +799,7 @@ me_fullfast.s: me_fullfast.c.s
 
 # target to generate assembly for a file
 me_fullfast.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullfast.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullfast.c.s
 .PHONY : me_fullfast.c.s
 
 me_fullsearch.o: me_fullsearch.c.o
@@ -808,7 +807,7 @@ me_fullsearch.o: me_fullsearch.c.o
 
 # target to build an object file
 me_fullsearch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullsearch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullsearch.c.o
 .PHONY : me_fullsearch.c.o
 
 me_fullsearch.i: me_fullsearch.c.i
@@ -816,7 +815,7 @@ me_fullsearch.i: me_fullsearch.c.i
 
 # target to preprocess a source file
 me_fullsearch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullsearch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullsearch.c.i
 .PHONY : me_fullsearch.c.i
 
 me_fullsearch.s: me_fullsearch.c.s
@@ -824,7 +823,7 @@ me_fullsearch.s: me_fullsearch.c.s
 
 # target to generate assembly for a file
 me_fullsearch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullsearch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_fullsearch.c.s
 .PHONY : me_fullsearch.c.s
 
 me_umhex.o: me_umhex.c.o
@@ -832,7 +831,7 @@ me_umhex.o: me_umhex.c.o
 
 # target to build an object file
 me_umhex.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhex.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhex.c.o
 .PHONY : me_umhex.c.o
 
 me_umhex.i: me_umhex.c.i
@@ -840,7 +839,7 @@ me_umhex.i: me_umhex.c.i
 
 # target to preprocess a source file
 me_umhex.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhex.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhex.c.i
 .PHONY : me_umhex.c.i
 
 me_umhex.s: me_umhex.c.s
@@ -848,7 +847,7 @@ me_umhex.s: me_umhex.c.s
 
 # target to generate assembly for a file
 me_umhex.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhex.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhex.c.s
 .PHONY : me_umhex.c.s
 
 me_umhexsmp.o: me_umhexsmp.c.o
@@ -856,7 +855,7 @@ me_umhexsmp.o: me_umhexsmp.c.o
 
 # target to build an object file
 me_umhexsmp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhexsmp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhexsmp.c.o
 .PHONY : me_umhexsmp.c.o
 
 me_umhexsmp.i: me_umhexsmp.c.i
@@ -864,7 +863,7 @@ me_umhexsmp.i: me_umhexsmp.c.i
 
 # target to preprocess a source file
 me_umhexsmp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhexsmp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhexsmp.c.i
 .PHONY : me_umhexsmp.c.i
 
 me_umhexsmp.s: me_umhexsmp.c.s
@@ -872,7 +871,7 @@ me_umhexsmp.s: me_umhexsmp.c.s
 
 # target to generate assembly for a file
 me_umhexsmp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhexsmp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/me_umhexsmp.c.s
 .PHONY : me_umhexsmp.c.s
 
 memalloc.o: memalloc.c.o
@@ -880,7 +879,7 @@ memalloc.o: memalloc.c.o
 
 # target to build an object file
 memalloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/memalloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/memalloc.c.o
 .PHONY : memalloc.c.o
 
 memalloc.i: memalloc.c.i
@@ -888,7 +887,7 @@ memalloc.i: memalloc.c.i
 
 # target to preprocess a source file
 memalloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/memalloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/memalloc.c.i
 .PHONY : memalloc.c.i
 
 memalloc.s: memalloc.c.s
@@ -896,7 +895,7 @@ memalloc.s: memalloc.c.s
 
 # target to generate assembly for a file
 memalloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/memalloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/memalloc.c.s
 .PHONY : memalloc.c.s
 
 mode_decision.o: mode_decision.c.o
@@ -904,7 +903,7 @@ mode_decision.o: mode_decision.c.o
 
 # target to build an object file
 mode_decision.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mode_decision.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mode_decision.c.o
 .PHONY : mode_decision.c.o
 
 mode_decision.i: mode_decision.c.i
@@ -912,7 +911,7 @@ mode_decision.i: mode_decision.c.i
 
 # target to preprocess a source file
 mode_decision.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mode_decision.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mode_decision.c.i
 .PHONY : mode_decision.c.i
 
 mode_decision.s: mode_decision.c.s
@@ -920,7 +919,7 @@ mode_decision.s: mode_decision.c.s
 
 # target to generate assembly for a file
 mode_decision.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mode_decision.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mode_decision.c.s
 .PHONY : mode_decision.c.s
 
 mv-search.o: mv-search.c.o
@@ -928,7 +927,7 @@ mv-search.o: mv-search.c.o
 
 # target to build an object file
 mv-search.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mv-search.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mv-search.c.o
 .PHONY : mv-search.c.o
 
 mv-search.i: mv-search.c.i
@@ -936,7 +935,7 @@ mv-search.i: mv-search.c.i
 
 # target to preprocess a source file
 mv-search.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mv-search.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mv-search.c.i
 .PHONY : mv-search.c.i
 
 mv-search.s: mv-search.c.s
@@ -944,7 +943,7 @@ mv-search.s: mv-search.c.s
 
 # target to generate assembly for a file
 mv-search.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mv-search.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/mv-search.c.s
 .PHONY : mv-search.c.s
 
 nal.o: nal.c.o
@@ -952,7 +951,7 @@ nal.o: nal.c.o
 
 # target to build an object file
 nal.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nal.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nal.c.o
 .PHONY : nal.c.o
 
 nal.i: nal.c.i
@@ -960,7 +959,7 @@ nal.i: nal.c.i
 
 # target to preprocess a source file
 nal.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nal.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nal.c.i
 .PHONY : nal.c.i
 
 nal.s: nal.c.s
@@ -968,7 +967,7 @@ nal.s: nal.c.s
 
 # target to generate assembly for a file
 nal.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nal.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nal.c.s
 .PHONY : nal.c.s
 
 nalu.o: nalu.c.o
@@ -976,7 +975,7 @@ nalu.o: nalu.c.o
 
 # target to build an object file
 nalu.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalu.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalu.c.o
 .PHONY : nalu.c.o
 
 nalu.i: nalu.c.i
@@ -984,7 +983,7 @@ nalu.i: nalu.c.i
 
 # target to preprocess a source file
 nalu.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalu.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalu.c.i
 .PHONY : nalu.c.i
 
 nalu.s: nalu.c.s
@@ -992,7 +991,7 @@ nalu.s: nalu.c.s
 
 # target to generate assembly for a file
 nalu.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalu.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalu.c.s
 .PHONY : nalu.c.s
 
 nalucommon.o: nalucommon.c.o
@@ -1000,7 +999,7 @@ nalucommon.o: nalucommon.c.o
 
 # target to build an object file
 nalucommon.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalucommon.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalucommon.c.o
 .PHONY : nalucommon.c.o
 
 nalucommon.i: nalucommon.c.i
@@ -1008,7 +1007,7 @@ nalucommon.i: nalucommon.c.i
 
 # target to preprocess a source file
 nalucommon.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalucommon.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalucommon.c.i
 .PHONY : nalucommon.c.i
 
 nalucommon.s: nalucommon.c.s
@@ -1016,7 +1015,7 @@ nalucommon.s: nalucommon.c.s
 
 # target to generate assembly for a file
 nalucommon.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalucommon.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/nalucommon.c.s
 .PHONY : nalucommon.c.s
 
 output.o: output.c.o
@@ -1024,7 +1023,7 @@ output.o: output.c.o
 
 # target to build an object file
 output.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/output.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/output.c.o
 .PHONY : output.c.o
 
 output.i: output.c.i
@@ -1032,7 +1031,7 @@ output.i: output.c.i
 
 # target to preprocess a source file
 output.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/output.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/output.c.i
 .PHONY : output.c.i
 
 output.s: output.c.s
@@ -1040,7 +1039,7 @@ output.s: output.c.s
 
 # target to generate assembly for a file
 output.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/output.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/output.c.s
 .PHONY : output.c.s
 
 parset.o: parset.c.o
@@ -1048,7 +1047,7 @@ parset.o: parset.c.o
 
 # target to build an object file
 parset.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parset.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parset.c.o
 .PHONY : parset.c.o
 
 parset.i: parset.c.i
@@ -1056,7 +1055,7 @@ parset.i: parset.c.i
 
 # target to preprocess a source file
 parset.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parset.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parset.c.i
 .PHONY : parset.c.i
 
 parset.s: parset.c.s
@@ -1064,7 +1063,7 @@ parset.s: parset.c.s
 
 # target to generate assembly for a file
 parset.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parset.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parset.c.s
 .PHONY : parset.c.s
 
 parsetcommon.o: parsetcommon.c.o
@@ -1072,7 +1071,7 @@ parsetcommon.o: parsetcommon.c.o
 
 # target to build an object file
 parsetcommon.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parsetcommon.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parsetcommon.c.o
 .PHONY : parsetcommon.c.o
 
 parsetcommon.i: parsetcommon.c.i
@@ -1080,7 +1079,7 @@ parsetcommon.i: parsetcommon.c.i
 
 # target to preprocess a source file
 parsetcommon.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parsetcommon.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parsetcommon.c.i
 .PHONY : parsetcommon.c.i
 
 parsetcommon.s: parsetcommon.c.s
@@ -1088,7 +1087,7 @@ parsetcommon.s: parsetcommon.c.s
 
 # target to generate assembly for a file
 parsetcommon.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parsetcommon.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/parsetcommon.c.s
 .PHONY : parsetcommon.c.s
 
 q_matrix.o: q_matrix.c.o
@@ -1096,7 +1095,7 @@ q_matrix.o: q_matrix.c.o
 
 # target to build an object file
 q_matrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_matrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_matrix.c.o
 .PHONY : q_matrix.c.o
 
 q_matrix.i: q_matrix.c.i
@@ -1104,7 +1103,7 @@ q_matrix.i: q_matrix.c.i
 
 # target to preprocess a source file
 q_matrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_matrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_matrix.c.i
 .PHONY : q_matrix.c.i
 
 q_matrix.s: q_matrix.c.s
@@ -1112,7 +1111,7 @@ q_matrix.s: q_matrix.c.s
 
 # target to generate assembly for a file
 q_matrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_matrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_matrix.c.s
 .PHONY : q_matrix.c.s
 
 q_offsets.o: q_offsets.c.o
@@ -1120,7 +1119,7 @@ q_offsets.o: q_offsets.c.o
 
 # target to build an object file
 q_offsets.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_offsets.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_offsets.c.o
 .PHONY : q_offsets.c.o
 
 q_offsets.i: q_offsets.c.i
@@ -1128,7 +1127,7 @@ q_offsets.i: q_offsets.c.i
 
 # target to preprocess a source file
 q_offsets.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_offsets.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_offsets.c.i
 .PHONY : q_offsets.c.i
 
 q_offsets.s: q_offsets.c.s
@@ -1136,7 +1135,7 @@ q_offsets.s: q_offsets.c.s
 
 # target to generate assembly for a file
 q_offsets.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_offsets.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/q_offsets.c.s
 .PHONY : q_offsets.c.s
 
 ratectl.o: ratectl.c.o
@@ -1144,7 +1143,7 @@ ratectl.o: ratectl.c.o
 
 # target to build an object file
 ratectl.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/ratectl.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/ratectl.c.o
 .PHONY : ratectl.c.o
 
 ratectl.i: ratectl.c.i
@@ -1152,7 +1151,7 @@ ratectl.i: ratectl.c.i
 
 # target to preprocess a source file
 ratectl.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/ratectl.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/ratectl.c.i
 .PHONY : ratectl.c.i
 
 ratectl.s: ratectl.c.s
@@ -1160,7 +1159,7 @@ ratectl.s: ratectl.c.s
 
 # target to generate assembly for a file
 ratectl.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/ratectl.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/ratectl.c.s
 .PHONY : ratectl.c.s
 
 rc_quadratic.o: rc_quadratic.c.o
@@ -1168,7 +1167,7 @@ rc_quadratic.o: rc_quadratic.c.o
 
 # target to build an object file
 rc_quadratic.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rc_quadratic.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rc_quadratic.c.o
 .PHONY : rc_quadratic.c.o
 
 rc_quadratic.i: rc_quadratic.c.i
@@ -1176,7 +1175,7 @@ rc_quadratic.i: rc_quadratic.c.i
 
 # target to preprocess a source file
 rc_quadratic.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rc_quadratic.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rc_quadratic.c.i
 .PHONY : rc_quadratic.c.i
 
 rc_quadratic.s: rc_quadratic.c.s
@@ -1184,7 +1183,7 @@ rc_quadratic.s: rc_quadratic.c.s
 
 # target to generate assembly for a file
 rc_quadratic.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rc_quadratic.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rc_quadratic.c.s
 .PHONY : rc_quadratic.c.s
 
 rdopt.o: rdopt.c.o
@@ -1192,7 +1191,7 @@ rdopt.o: rdopt.c.o
 
 # target to build an object file
 rdopt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt.c.o
 .PHONY : rdopt.c.o
 
 rdopt.i: rdopt.c.i
@@ -1200,7 +1199,7 @@ rdopt.i: rdopt.c.i
 
 # target to preprocess a source file
 rdopt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt.c.i
 .PHONY : rdopt.c.i
 
 rdopt.s: rdopt.c.s
@@ -1208,7 +1207,7 @@ rdopt.s: rdopt.c.s
 
 # target to generate assembly for a file
 rdopt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt.c.s
 .PHONY : rdopt.c.s
 
 rdopt_coding_state.o: rdopt_coding_state.c.o
@@ -1216,7 +1215,7 @@ rdopt_coding_state.o: rdopt_coding_state.c.o
 
 # target to build an object file
 rdopt_coding_state.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt_coding_state.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt_coding_state.c.o
 .PHONY : rdopt_coding_state.c.o
 
 rdopt_coding_state.i: rdopt_coding_state.c.i
@@ -1224,7 +1223,7 @@ rdopt_coding_state.i: rdopt_coding_state.c.i
 
 # target to preprocess a source file
 rdopt_coding_state.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt_coding_state.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt_coding_state.c.i
 .PHONY : rdopt_coding_state.c.i
 
 rdopt_coding_state.s: rdopt_coding_state.c.s
@@ -1232,7 +1231,7 @@ rdopt_coding_state.s: rdopt_coding_state.c.s
 
 # target to generate assembly for a file
 rdopt_coding_state.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt_coding_state.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdopt_coding_state.c.s
 .PHONY : rdopt_coding_state.c.s
 
 rdpicdecision.o: rdpicdecision.c.o
@@ -1240,7 +1239,7 @@ rdpicdecision.o: rdpicdecision.c.o
 
 # target to build an object file
 rdpicdecision.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdpicdecision.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdpicdecision.c.o
 .PHONY : rdpicdecision.c.o
 
 rdpicdecision.i: rdpicdecision.c.i
@@ -1248,7 +1247,7 @@ rdpicdecision.i: rdpicdecision.c.i
 
 # target to preprocess a source file
 rdpicdecision.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdpicdecision.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdpicdecision.c.i
 .PHONY : rdpicdecision.c.i
 
 rdpicdecision.s: rdpicdecision.c.s
@@ -1256,7 +1255,7 @@ rdpicdecision.s: rdpicdecision.c.s
 
 # target to generate assembly for a file
 rdpicdecision.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdpicdecision.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rdpicdecision.c.s
 .PHONY : rdpicdecision.c.s
 
 refbuf.o: refbuf.c.o
@@ -1264,7 +1263,7 @@ refbuf.o: refbuf.c.o
 
 # target to build an object file
 refbuf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/refbuf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/refbuf.c.o
 .PHONY : refbuf.c.o
 
 refbuf.i: refbuf.c.i
@@ -1272,7 +1271,7 @@ refbuf.i: refbuf.c.i
 
 # target to preprocess a source file
 refbuf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/refbuf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/refbuf.c.i
 .PHONY : refbuf.c.i
 
 refbuf.s: refbuf.c.s
@@ -1280,7 +1279,7 @@ refbuf.s: refbuf.c.s
 
 # target to generate assembly for a file
 refbuf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/refbuf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/refbuf.c.s
 .PHONY : refbuf.c.s
 
 rtp.o: rtp.c.o
@@ -1288,7 +1287,7 @@ rtp.o: rtp.c.o
 
 # target to build an object file
 rtp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rtp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rtp.c.o
 .PHONY : rtp.c.o
 
 rtp.i: rtp.c.i
@@ -1296,7 +1295,7 @@ rtp.i: rtp.c.i
 
 # target to preprocess a source file
 rtp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rtp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rtp.c.i
 .PHONY : rtp.c.i
 
 rtp.s: rtp.c.s
@@ -1304,7 +1303,7 @@ rtp.s: rtp.c.s
 
 # target to generate assembly for a file
 rtp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rtp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/rtp.c.s
 .PHONY : rtp.c.s
 
 sei.o: sei.c.o
@@ -1312,7 +1311,7 @@ sei.o: sei.c.o
 
 # target to build an object file
 sei.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/sei.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/sei.c.o
 .PHONY : sei.c.o
 
 sei.i: sei.c.i
@@ -1320,7 +1319,7 @@ sei.i: sei.c.i
 
 # target to preprocess a source file
 sei.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/sei.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/sei.c.i
 .PHONY : sei.c.i
 
 sei.s: sei.c.s
@@ -1328,7 +1327,7 @@ sei.s: sei.c.s
 
 # target to generate assembly for a file
 sei.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/sei.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/sei.c.s
 .PHONY : sei.c.s
 
 slice.o: slice.c.o
@@ -1336,7 +1335,7 @@ slice.o: slice.c.o
 
 # target to build an object file
 slice.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/slice.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/slice.c.o
 .PHONY : slice.c.o
 
 slice.i: slice.c.i
@@ -1344,7 +1343,7 @@ slice.i: slice.c.i
 
 # target to preprocess a source file
 slice.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/slice.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/slice.c.i
 .PHONY : slice.c.i
 
 slice.s: slice.c.s
@@ -1352,7 +1351,7 @@ slice.s: slice.c.s
 
 # target to generate assembly for a file
 slice.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/slice.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/slice.c.s
 .PHONY : slice.c.s
 
 symbol.o: symbol.c.o
@@ -1360,7 +1359,7 @@ symbol.o: symbol.c.o
 
 # target to build an object file
 symbol.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/symbol.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/symbol.c.o
 .PHONY : symbol.c.o
 
 symbol.i: symbol.c.i
@@ -1368,7 +1367,7 @@ symbol.i: symbol.c.i
 
 # target to preprocess a source file
 symbol.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/symbol.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/symbol.c.i
 .PHONY : symbol.c.i
 
 symbol.s: symbol.c.s
@@ -1376,7 +1375,7 @@ symbol.s: symbol.c.s
 
 # target to generate assembly for a file
 symbol.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/symbol.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/symbol.c.s
 .PHONY : symbol.c.s
 
 transform8x8.o: transform8x8.c.o
@@ -1384,7 +1383,7 @@ transform8x8.o: transform8x8.c.o
 
 # target to build an object file
 transform8x8.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/transform8x8.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/transform8x8.c.o
 .PHONY : transform8x8.c.o
 
 transform8x8.i: transform8x8.c.i
@@ -1392,7 +1391,7 @@ transform8x8.i: transform8x8.c.i
 
 # target to preprocess a source file
 transform8x8.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/transform8x8.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/transform8x8.c.i
 .PHONY : transform8x8.c.i
 
 transform8x8.s: transform8x8.c.s
@@ -1400,7 +1399,7 @@ transform8x8.s: transform8x8.c.s
 
 # target to generate assembly for a file
 transform8x8.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/transform8x8.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/transform8x8.c.s
 .PHONY : transform8x8.c.s
 
 vlc.o: vlc.c.o
@@ -1408,7 +1407,7 @@ vlc.o: vlc.c.o
 
 # target to build an object file
 vlc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/vlc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/vlc.c.o
 .PHONY : vlc.c.o
 
 vlc.i: vlc.c.i
@@ -1416,7 +1415,7 @@ vlc.i: vlc.c.i
 
 # target to preprocess a source file
 vlc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/vlc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/vlc.c.i
 .PHONY : vlc.c.i
 
 vlc.s: vlc.c.s
@@ -1424,7 +1423,7 @@ vlc.s: vlc.c.s
 
 # target to generate assembly for a file
 vlc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/vlc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/vlc.c.s
 .PHONY : vlc.c.s
 
 weighted_prediction.o: weighted_prediction.c.o
@@ -1432,7 +1431,7 @@ weighted_prediction.o: weighted_prediction.c.o
 
 # target to build an object file
 weighted_prediction.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/weighted_prediction.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/weighted_prediction.c.o
 .PHONY : weighted_prediction.c.o
 
 weighted_prediction.i: weighted_prediction.c.i
@@ -1440,7 +1439,7 @@ weighted_prediction.i: weighted_prediction.c.i
 
 # target to preprocess a source file
 weighted_prediction.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/weighted_prediction.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/weighted_prediction.c.i
 .PHONY : weighted_prediction.c.i
 
 weighted_prediction.s: weighted_prediction.c.s
@@ -1448,7 +1447,7 @@ weighted_prediction.s: weighted_prediction.c.s
 
 # target to generate assembly for a file
 weighted_prediction.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/weighted_prediction.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/build.make MultiSource/Applications/JM/lencod/CMakeFiles/lencod.dir/weighted_prediction.c.s
 .PHONY : weighted_prediction.c.s
 
 # Help Target
@@ -1636,7 +1635,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/rule
 .PHONY : MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/rule:
 
 # fast build rule for target.
 8b10b/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build
 .PHONY : 8b10b/fast
 
 calc.o: calc.c.o
@@ -136,7 +135,7 @@ calc.o: calc.c.o
 
 # target to build an object file
 calc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o
 .PHONY : calc.c.o
 
 calc.i: calc.c.i
@@ -144,7 +143,7 @@ calc.i: calc.c.i
 
 # target to preprocess a source file
 calc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.i
 .PHONY : calc.c.i
 
 calc.s: calc.c.s
@@ -152,7 +151,7 @@ calc.s: calc.c.s
 
 # target to generate assembly for a file
 calc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.s
 .PHONY : calc.c.s
 
 main.o: main.c.o
@@ -160,7 +159,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -168,7 +167,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -176,7 +175,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.s
 .PHONY : main.c.s
 
 testbench.o: testbench.c.o
@@ -184,7 +183,7 @@ testbench.o: testbench.c.o
 
 # target to build an object file
 testbench.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o
 .PHONY : testbench.c.o
 
 testbench.i: testbench.c.i
@@ -192,7 +191,7 @@ testbench.i: testbench.c.i
 
 # target to preprocess a source file
 testbench.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.i
 .PHONY : testbench.c.i
 
 testbench.s: testbench.c.s
@@ -200,7 +199,7 @@ testbench.s: testbench.c.s
 
 # target to generate assembly for a file
 testbench.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.s
 .PHONY : testbench.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

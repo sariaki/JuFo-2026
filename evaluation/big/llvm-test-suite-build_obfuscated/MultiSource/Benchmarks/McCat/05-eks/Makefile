@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/05-eks//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/05-eks//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/rule
 .PHONY : MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ eks: MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/rule
 
 # fast build rule for target.
 eks/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build
 .PHONY : eks/fast
 
 Divsol.o: Divsol.c.o
@@ -136,7 +135,7 @@ Divsol.o: Divsol.c.o
 
 # target to build an object file
 Divsol.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Divsol.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Divsol.c.o
 .PHONY : Divsol.c.o
 
 Divsol.i: Divsol.c.i
@@ -144,7 +143,7 @@ Divsol.i: Divsol.c.i
 
 # target to preprocess a source file
 Divsol.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Divsol.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Divsol.c.i
 .PHONY : Divsol.c.i
 
 Divsol.s: Divsol.c.s
@@ -152,7 +151,7 @@ Divsol.s: Divsol.c.s
 
 # target to generate assembly for a file
 Divsol.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Divsol.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Divsol.c.s
 .PHONY : Divsol.c.s
 
 Jacobi.o: Jacobi.c.o
@@ -160,7 +159,7 @@ Jacobi.o: Jacobi.c.o
 
 # target to build an object file
 Jacobi.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Jacobi.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Jacobi.c.o
 .PHONY : Jacobi.c.o
 
 Jacobi.i: Jacobi.c.i
@@ -168,7 +167,7 @@ Jacobi.i: Jacobi.c.i
 
 # target to preprocess a source file
 Jacobi.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Jacobi.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Jacobi.c.i
 .PHONY : Jacobi.c.i
 
 Jacobi.s: Jacobi.c.s
@@ -176,7 +175,7 @@ Jacobi.s: Jacobi.c.s
 
 # target to generate assembly for a file
 Jacobi.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Jacobi.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Jacobi.c.s
 .PHONY : Jacobi.c.s
 
 MM.o: MM.c.o
@@ -184,7 +183,7 @@ MM.o: MM.c.o
 
 # target to build an object file
 MM.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/MM.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/MM.c.o
 .PHONY : MM.c.o
 
 MM.i: MM.c.i
@@ -192,7 +191,7 @@ MM.i: MM.c.i
 
 # target to preprocess a source file
 MM.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/MM.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/MM.c.i
 .PHONY : MM.c.i
 
 MM.s: MM.c.s
@@ -200,7 +199,7 @@ MM.s: MM.c.s
 
 # target to generate assembly for a file
 MM.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/MM.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/MM.c.s
 .PHONY : MM.c.s
 
 QRfact.o: QRfact.c.o
@@ -208,7 +207,7 @@ QRfact.o: QRfact.c.o
 
 # target to build an object file
 QRfact.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/QRfact.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/QRfact.c.o
 .PHONY : QRfact.c.o
 
 QRfact.i: QRfact.c.i
@@ -216,7 +215,7 @@ QRfact.i: QRfact.c.i
 
 # target to preprocess a source file
 QRfact.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/QRfact.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/QRfact.c.i
 .PHONY : QRfact.c.i
 
 QRfact.s: QRfact.c.s
@@ -224,7 +223,7 @@ QRfact.s: QRfact.c.s
 
 # target to generate assembly for a file
 QRfact.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/QRfact.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/QRfact.c.s
 .PHONY : QRfact.c.s
 
 Triang.o: Triang.c.o
@@ -232,7 +231,7 @@ Triang.o: Triang.c.o
 
 # target to build an object file
 Triang.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Triang.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Triang.c.o
 .PHONY : Triang.c.o
 
 Triang.i: Triang.c.i
@@ -240,7 +239,7 @@ Triang.i: Triang.c.i
 
 # target to preprocess a source file
 Triang.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Triang.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Triang.c.i
 .PHONY : Triang.c.i
 
 Triang.s: Triang.c.s
@@ -248,7 +247,7 @@ Triang.s: Triang.c.s
 
 # target to generate assembly for a file
 Triang.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Triang.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/Triang.c.s
 .PHONY : Triang.c.s
 
 main.o: main.c.o
@@ -256,7 +255,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -264,7 +263,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -272,7 +271,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/main.c.s
 .PHONY : main.c.s
 
 print.o: print.c.o
@@ -280,7 +279,7 @@ print.o: print.c.o
 
 # target to build an object file
 print.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/print.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/print.c.o
 .PHONY : print.c.o
 
 print.i: print.c.i
@@ -288,7 +287,7 @@ print.i: print.c.i
 
 # target to preprocess a source file
 print.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/print.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/print.c.i
 .PHONY : print.c.i
 
 print.s: print.c.s
@@ -296,7 +295,7 @@ print.s: print.c.s
 
 # target to generate assembly for a file
 print.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/print.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/build.make MultiSource/Benchmarks/McCat/05-eks/CMakeFiles/eks.dir/print.c.s
 .PHONY : print.c.s
 
 # Help Target
@@ -340,7 +339,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

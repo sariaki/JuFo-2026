@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ XSBench: MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/r
 
 # fast build rule for target.
 XSBench/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build
 .PHONY : XSBench/fast
 
 CalculateXS.o: CalculateXS.c.o
@@ -136,7 +135,7 @@ CalculateXS.o: CalculateXS.c.o
 
 # target to build an object file
 CalculateXS.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/CalculateXS.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/CalculateXS.c.o
 .PHONY : CalculateXS.c.o
 
 CalculateXS.i: CalculateXS.c.i
@@ -144,7 +143,7 @@ CalculateXS.i: CalculateXS.c.i
 
 # target to preprocess a source file
 CalculateXS.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/CalculateXS.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/CalculateXS.c.i
 .PHONY : CalculateXS.c.i
 
 CalculateXS.s: CalculateXS.c.s
@@ -152,7 +151,7 @@ CalculateXS.s: CalculateXS.c.s
 
 # target to generate assembly for a file
 CalculateXS.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/CalculateXS.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/CalculateXS.c.s
 .PHONY : CalculateXS.c.s
 
 GridInit.o: GridInit.c.o
@@ -160,7 +159,7 @@ GridInit.o: GridInit.c.o
 
 # target to build an object file
 GridInit.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/GridInit.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/GridInit.c.o
 .PHONY : GridInit.c.o
 
 GridInit.i: GridInit.c.i
@@ -168,7 +167,7 @@ GridInit.i: GridInit.c.i
 
 # target to preprocess a source file
 GridInit.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/GridInit.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/GridInit.c.i
 .PHONY : GridInit.c.i
 
 GridInit.s: GridInit.c.s
@@ -176,7 +175,7 @@ GridInit.s: GridInit.c.s
 
 # target to generate assembly for a file
 GridInit.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/GridInit.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/GridInit.c.s
 .PHONY : GridInit.c.s
 
 Main.o: Main.c.o
@@ -184,7 +183,7 @@ Main.o: Main.c.o
 
 # target to build an object file
 Main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Main.c.o
 .PHONY : Main.c.o
 
 Main.i: Main.c.i
@@ -192,7 +191,7 @@ Main.i: Main.c.i
 
 # target to preprocess a source file
 Main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Main.c.i
 .PHONY : Main.c.i
 
 Main.s: Main.c.s
@@ -200,7 +199,7 @@ Main.s: Main.c.s
 
 # target to generate assembly for a file
 Main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Main.c.s
 .PHONY : Main.c.s
 
 Materials.o: Materials.c.o
@@ -208,7 +207,7 @@ Materials.o: Materials.c.o
 
 # target to build an object file
 Materials.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Materials.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Materials.c.o
 .PHONY : Materials.c.o
 
 Materials.i: Materials.c.i
@@ -216,7 +215,7 @@ Materials.i: Materials.c.i
 
 # target to preprocess a source file
 Materials.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Materials.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Materials.c.i
 .PHONY : Materials.c.i
 
 Materials.s: Materials.c.s
@@ -224,7 +223,7 @@ Materials.s: Materials.c.s
 
 # target to generate assembly for a file
 Materials.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Materials.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/Materials.c.s
 .PHONY : Materials.c.s
 
 XSutils.o: XSutils.c.o
@@ -232,7 +231,7 @@ XSutils.o: XSutils.c.o
 
 # target to build an object file
 XSutils.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/XSutils.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/XSutils.c.o
 .PHONY : XSutils.c.o
 
 XSutils.i: XSutils.c.i
@@ -240,7 +239,7 @@ XSutils.i: XSutils.c.i
 
 # target to preprocess a source file
 XSutils.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/XSutils.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/XSutils.c.i
 .PHONY : XSutils.c.i
 
 XSutils.s: XSutils.c.s
@@ -248,7 +247,7 @@ XSutils.s: XSutils.c.s
 
 # target to generate assembly for a file
 XSutils.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/XSutils.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/XSutils.c.s
 .PHONY : XSutils.c.s
 
 io.o: io.c.o
@@ -256,7 +255,7 @@ io.o: io.c.o
 
 # target to build an object file
 io.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/io.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/io.c.o
 .PHONY : io.c.o
 
 io.i: io.c.i
@@ -264,7 +263,7 @@ io.i: io.c.i
 
 # target to preprocess a source file
 io.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/io.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/io.c.i
 .PHONY : io.c.i
 
 io.s: io.c.s
@@ -272,7 +271,7 @@ io.s: io.c.s
 
 # target to generate assembly for a file
 io.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/io.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/CMakeFiles/XSBench.dir/io.c.s
 .PHONY : io.c.s
 
 # Help Target
@@ -313,7 +312,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/depend.make
@@ -72,44 +72,44 @@ include MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/flags.make
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/flags.make
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bisect.dir/allocvector.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o -MF CMakeFiles/bisect.dir/allocvector.c.o.d -o CMakeFiles/bisect.dir/allocvector.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bisect.dir/allocvector.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o -MF CMakeFiles/bisect.dir/allocvector.c.o.d -o CMakeFiles/bisect.dir/allocvector.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bisect.dir/allocvector.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c > CMakeFiles/bisect.dir/allocvector.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c > CMakeFiles/bisect.dir/allocvector.c.i
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bisect.dir/allocvector.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c -o CMakeFiles/bisect.dir/allocvector.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/allocvector.c -o CMakeFiles/bisect.dir/allocvector.c.s
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/flags.make
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bisect.dir/bisect_test.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o -MF CMakeFiles/bisect.dir/bisect_test.c.o.d -o CMakeFiles/bisect.dir/bisect_test.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bisect.dir/bisect_test.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o -MF CMakeFiles/bisect.dir/bisect_test.c.o.d -o CMakeFiles/bisect.dir/bisect_test.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bisect.dir/bisect_test.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c > CMakeFiles/bisect.dir/bisect_test.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c > CMakeFiles/bisect.dir/bisect_test.c.i
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bisect.dir/bisect_test.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c -o CMakeFiles/bisect.dir/bisect_test.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.c -o CMakeFiles/bisect.dir/bisect_test.c.s
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/flags.make
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bisect.dir/dbisect.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o -MF CMakeFiles/bisect.dir/dbisect.c.o.d -o CMakeFiles/bisect.dir/dbisect.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bisect.dir/dbisect.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o -MF CMakeFiles/bisect.dir/dbisect.c.o.d -o CMakeFiles/bisect.dir/dbisect.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bisect.dir/dbisect.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c > CMakeFiles/bisect.dir/dbisect.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c > CMakeFiles/bisect.dir/dbisect.c.i
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bisect.dir/dbisect.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c -o CMakeFiles/bisect.dir/dbisect.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/dbisect.c -o CMakeFiles/bisect.dir/dbisect.c.s
 
 # Object files for target bisect
 bisect_OBJECTS = \
@@ -125,21 +125,21 @@ MultiSource/Benchmarks/McCat/04-bisect/bisect: MultiSource/Benchmarks/McCat/04-b
 MultiSource/Benchmarks/McCat/04-bisect/bisect: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o
 MultiSource/Benchmarks/McCat/04-bisect/bisect: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make
 MultiSource/Benchmarks/McCat/04-bisect/bisect: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bisect"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bisect.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.in /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.in
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bisect"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bisect.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.in /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect_test.in
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build: MultiSource/Benchmarks/McCat/04-bisect/bisect
 .PHONY : MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && $(CMAKE_COMMAND) -P CMakeFiles/bisect.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect && $(CMAKE_COMMAND) -P CMakeFiles/bisect.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/clean
 
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/04-bisect /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/depend
 

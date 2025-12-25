@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect/bisect  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  9344    4256
-.fini                    13   13600
-.rodata                1946   16384
-.eh_frame_hdr           100   18332
-.eh_frame               500   18432
-.init_array               8   23992
-.fini_array               8   24000
-.dynamic                496   24008
-.got                     48   24504
-.got.plt                 72   24552
-.data                    16   24624
-.bss                      8   24640
+.text                  7229    4256
+.fini                    13   11488
+.rodata                1330   12288
+.eh_frame_hdr           100   13620
+.eh_frame               464   13720
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                 72   20456
+.data                    16   20528
+.bss                      8   20544
 .comment                 82       0
-Total                 13923
+Total                 11156
 
 

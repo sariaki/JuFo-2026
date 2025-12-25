@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C++-BuiltinTypeInfo 
-VERIFY: %b/fpcmp-target %o %S/BuiltinTypeInfo.reference_output

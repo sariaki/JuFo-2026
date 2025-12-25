@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Rodinia/backprop//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Rodinia/backprop//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/rule
 .PHONY : MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ backprop: MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/rule
 
 # fast build rule for target.
 backprop/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build
 .PHONY : backprop/fast
 
 __/Common/glibc_compat_rand.o: __/Common/glibc_compat_rand.c.o
@@ -136,7 +135,7 @@ __/Common/glibc_compat_rand.o: __/Common/glibc_compat_rand.c.o
 
 # target to build an object file
 __/Common/glibc_compat_rand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/__/Common/glibc_compat_rand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/__/Common/glibc_compat_rand.c.o
 .PHONY : __/Common/glibc_compat_rand.c.o
 
 __/Common/glibc_compat_rand.i: __/Common/glibc_compat_rand.c.i
@@ -144,7 +143,7 @@ __/Common/glibc_compat_rand.i: __/Common/glibc_compat_rand.c.i
 
 # target to preprocess a source file
 __/Common/glibc_compat_rand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/__/Common/glibc_compat_rand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/__/Common/glibc_compat_rand.c.i
 .PHONY : __/Common/glibc_compat_rand.c.i
 
 __/Common/glibc_compat_rand.s: __/Common/glibc_compat_rand.c.s
@@ -152,7 +151,7 @@ __/Common/glibc_compat_rand.s: __/Common/glibc_compat_rand.c.s
 
 # target to generate assembly for a file
 __/Common/glibc_compat_rand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/__/Common/glibc_compat_rand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/__/Common/glibc_compat_rand.c.s
 .PHONY : __/Common/glibc_compat_rand.c.s
 
 backpropKernel.o: backpropKernel.c.o
@@ -160,7 +159,7 @@ backpropKernel.o: backpropKernel.c.o
 
 # target to build an object file
 backpropKernel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/backpropKernel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/backpropKernel.c.o
 .PHONY : backpropKernel.c.o
 
 backpropKernel.i: backpropKernel.c.i
@@ -168,7 +167,7 @@ backpropKernel.i: backpropKernel.c.i
 
 # target to preprocess a source file
 backpropKernel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/backpropKernel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/backpropKernel.c.i
 .PHONY : backpropKernel.c.i
 
 backpropKernel.s: backpropKernel.c.s
@@ -176,7 +175,7 @@ backpropKernel.s: backpropKernel.c.s
 
 # target to generate assembly for a file
 backpropKernel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/backpropKernel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/backpropKernel.c.s
 .PHONY : backpropKernel.c.s
 
 main.o: main.c.o
@@ -184,7 +183,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -192,7 +191,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -200,7 +199,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/build.make MultiSource/Benchmarks/Rodinia/backprop/CMakeFiles/backprop.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

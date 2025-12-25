@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/kimwitu++//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/kimwitu++//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rule
 .PHONY : MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ kc: MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rule
 
 # fast build rule for target.
 kc/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build
 .PHONY : kc/fast
 
 abs.o: abs.cc.o
@@ -136,7 +135,7 @@ abs.o: abs.cc.o
 
 # target to build an object file
 abs.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/abs.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/abs.cc.o
 .PHONY : abs.cc.o
 
 abs.i: abs.cc.i
@@ -144,7 +143,7 @@ abs.i: abs.cc.i
 
 # target to preprocess a source file
 abs.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/abs.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/abs.cc.i
 .PHONY : abs.cc.i
 
 abs.s: abs.cc.s
@@ -152,7 +151,7 @@ abs.s: abs.cc.s
 
 # target to generate assembly for a file
 abs.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/abs.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/abs.cc.s
 .PHONY : abs.cc.s
 
 error.o: error.cc.o
@@ -160,7 +159,7 @@ error.o: error.cc.o
 
 # target to build an object file
 error.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/error.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/error.cc.o
 .PHONY : error.cc.o
 
 error.i: error.cc.i
@@ -168,7 +167,7 @@ error.i: error.cc.i
 
 # target to preprocess a source file
 error.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/error.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/error.cc.i
 .PHONY : error.cc.i
 
 error.s: error.cc.s
@@ -176,7 +175,7 @@ error.s: error.cc.s
 
 # target to generate assembly for a file
 error.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/error.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/error.cc.s
 .PHONY : error.cc.s
 
 gen.o: gen.cc.o
@@ -184,7 +183,7 @@ gen.o: gen.cc.o
 
 # target to build an object file
 gen.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gen.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gen.cc.o
 .PHONY : gen.cc.o
 
 gen.i: gen.cc.i
@@ -192,7 +191,7 @@ gen.i: gen.cc.i
 
 # target to preprocess a source file
 gen.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gen.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gen.cc.i
 .PHONY : gen.cc.i
 
 gen.s: gen.cc.s
@@ -200,7 +199,7 @@ gen.s: gen.cc.s
 
 # target to generate assembly for a file
 gen.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gen.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gen.cc.s
 .PHONY : gen.cc.s
 
 gutil.o: gutil.cc.o
@@ -208,7 +207,7 @@ gutil.o: gutil.cc.o
 
 # target to build an object file
 gutil.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gutil.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gutil.cc.o
 .PHONY : gutil.cc.o
 
 gutil.i: gutil.cc.i
@@ -216,7 +215,7 @@ gutil.i: gutil.cc.i
 
 # target to preprocess a source file
 gutil.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gutil.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gutil.cc.i
 .PHONY : gutil.cc.i
 
 gutil.s: gutil.cc.s
@@ -224,7 +223,7 @@ gutil.s: gutil.cc.s
 
 # target to generate assembly for a file
 gutil.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gutil.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/gutil.cc.s
 .PHONY : gutil.cc.s
 
 k.o: k.cc.o
@@ -232,7 +231,7 @@ k.o: k.cc.o
 
 # target to build an object file
 k.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/k.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/k.cc.o
 .PHONY : k.cc.o
 
 k.i: k.cc.i
@@ -240,7 +239,7 @@ k.i: k.cc.i
 
 # target to preprocess a source file
 k.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/k.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/k.cc.i
 .PHONY : k.cc.i
 
 k.s: k.cc.s
@@ -248,7 +247,7 @@ k.s: k.cc.s
 
 # target to generate assembly for a file
 k.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/k.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/k.cc.s
 .PHONY : k.cc.s
 
 kimwl.o: kimwl.cc.o
@@ -256,7 +255,7 @@ kimwl.o: kimwl.cc.o
 
 # target to build an object file
 kimwl.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwl.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwl.cc.o
 .PHONY : kimwl.cc.o
 
 kimwl.i: kimwl.cc.i
@@ -264,7 +263,7 @@ kimwl.i: kimwl.cc.i
 
 # target to preprocess a source file
 kimwl.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwl.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwl.cc.i
 .PHONY : kimwl.cc.i
 
 kimwl.s: kimwl.cc.s
@@ -272,7 +271,7 @@ kimwl.s: kimwl.cc.s
 
 # target to generate assembly for a file
 kimwl.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwl.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwl.cc.s
 .PHONY : kimwl.cc.s
 
 kimwy.o: kimwy.cc.o
@@ -280,7 +279,7 @@ kimwy.o: kimwy.cc.o
 
 # target to build an object file
 kimwy.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwy.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwy.cc.o
 .PHONY : kimwy.cc.o
 
 kimwy.i: kimwy.cc.i
@@ -288,7 +287,7 @@ kimwy.i: kimwy.cc.i
 
 # target to preprocess a source file
 kimwy.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwy.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwy.cc.i
 .PHONY : kimwy.cc.i
 
 kimwy.s: kimwy.cc.s
@@ -296,7 +295,7 @@ kimwy.s: kimwy.cc.s
 
 # target to generate assembly for a file
 kimwy.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwy.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/kimwy.cc.s
 .PHONY : kimwy.cc.s
 
 main.o: main.cc.o
@@ -304,7 +303,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/main.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -312,7 +311,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/main.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -320,7 +319,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/main.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/main.cc.s
 .PHONY : main.cc.s
 
 occur.o: occur.cc.o
@@ -328,7 +327,7 @@ occur.o: occur.cc.o
 
 # target to build an object file
 occur.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/occur.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/occur.cc.o
 .PHONY : occur.cc.o
 
 occur.i: occur.cc.i
@@ -336,7 +335,7 @@ occur.i: occur.cc.i
 
 # target to preprocess a source file
 occur.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/occur.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/occur.cc.i
 .PHONY : occur.cc.i
 
 occur.s: occur.cc.s
@@ -344,7 +343,7 @@ occur.s: occur.cc.s
 
 # target to generate assembly for a file
 occur.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/occur.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/occur.cc.s
 .PHONY : occur.cc.s
 
 parse.o: parse.cc.o
@@ -352,7 +351,7 @@ parse.o: parse.cc.o
 
 # target to build an object file
 parse.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/parse.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/parse.cc.o
 .PHONY : parse.cc.o
 
 parse.i: parse.cc.i
@@ -360,7 +359,7 @@ parse.i: parse.cc.i
 
 # target to preprocess a source file
 parse.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/parse.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/parse.cc.i
 .PHONY : parse.cc.i
 
 parse.s: parse.cc.s
@@ -368,7 +367,7 @@ parse.s: parse.cc.s
 
 # target to generate assembly for a file
 parse.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/parse.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/parse.cc.s
 .PHONY : parse.cc.s
 
 pat.o: pat.cc.o
@@ -376,7 +375,7 @@ pat.o: pat.cc.o
 
 # target to build an object file
 pat.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/pat.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/pat.cc.o
 .PHONY : pat.cc.o
 
 pat.i: pat.cc.i
@@ -384,7 +383,7 @@ pat.i: pat.cc.i
 
 # target to preprocess a source file
 pat.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/pat.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/pat.cc.i
 .PHONY : pat.cc.i
 
 pat.s: pat.cc.s
@@ -392,7 +391,7 @@ pat.s: pat.cc.s
 
 # target to generate assembly for a file
 pat.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/pat.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/pat.cc.s
 .PHONY : pat.cc.s
 
 rk.o: rk.cc.o
@@ -400,7 +399,7 @@ rk.o: rk.cc.o
 
 # target to build an object file
 rk.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rk.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rk.cc.o
 .PHONY : rk.cc.o
 
 rk.i: rk.cc.i
@@ -408,7 +407,7 @@ rk.i: rk.cc.i
 
 # target to preprocess a source file
 rk.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rk.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rk.cc.i
 .PHONY : rk.cc.i
 
 rk.s: rk.cc.s
@@ -416,7 +415,7 @@ rk.s: rk.cc.s
 
 # target to generate assembly for a file
 rk.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rk.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/rk.cc.s
 .PHONY : rk.cc.s
 
 unpk.o: unpk.cc.o
@@ -424,7 +423,7 @@ unpk.o: unpk.cc.o
 
 # target to build an object file
 unpk.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/unpk.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/unpk.cc.o
 .PHONY : unpk.cc.o
 
 unpk.i: unpk.cc.i
@@ -432,7 +431,7 @@ unpk.i: unpk.cc.i
 
 # target to preprocess a source file
 unpk.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/unpk.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/unpk.cc.i
 .PHONY : unpk.cc.i
 
 unpk.s: unpk.cc.s
@@ -440,7 +439,7 @@ unpk.s: unpk.cc.s
 
 # target to generate assembly for a file
 unpk.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/unpk.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/unpk.cc.s
 .PHONY : unpk.cc.s
 
 util.o: util.cc.o
@@ -448,7 +447,7 @@ util.o: util.cc.o
 
 # target to build an object file
 util.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/util.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/util.cc.o
 .PHONY : util.cc.o
 
 util.i: util.cc.i
@@ -456,7 +455,7 @@ util.i: util.cc.i
 
 # target to preprocess a source file
 util.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/util.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/util.cc.i
 .PHONY : util.cc.i
 
 util.s: util.cc.s
@@ -464,7 +463,7 @@ util.s: util.cc.s
 
 # target to generate assembly for a file
 util.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/util.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/build.make MultiSource/Applications/kimwitu++/CMakeFiles/kc.dir/util.cc.s
 .PHONY : util.cc.s
 
 # Help Target
@@ -529,7 +528,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

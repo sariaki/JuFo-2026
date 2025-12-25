@@ -4,7 +4,7 @@
 # compile C with /usr/bin/clang-18
 C_DEFINES = -DNDEBUG
 
-C_INCLUDES = -I/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/Burg
+C_INCLUDES = -I/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/Burg
 
 C_FLAGS = -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -O3   -w -Werror=date-time -std=gnu89 -Wno-int-conversion -DDEBUG
 

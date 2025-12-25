@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/gsm/toast//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/mediabench/gsm/toast//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rule
 .PHONY : MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ toast: MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rule
 
 # fast build rule for target.
 toast/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build
 .PHONY : toast/fast
 
 add.o: add.c.o
@@ -136,7 +135,7 @@ add.o: add.c.o
 
 # target to build an object file
 add.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/add.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/add.c.o
 .PHONY : add.c.o
 
 add.i: add.c.i
@@ -144,7 +143,7 @@ add.i: add.c.i
 
 # target to preprocess a source file
 add.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/add.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/add.c.i
 .PHONY : add.c.i
 
 add.s: add.c.s
@@ -152,7 +151,7 @@ add.s: add.c.s
 
 # target to generate assembly for a file
 add.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/add.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/add.c.s
 .PHONY : add.c.s
 
 code.o: code.c.o
@@ -160,7 +159,7 @@ code.o: code.c.o
 
 # target to build an object file
 code.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/code.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/code.c.o
 .PHONY : code.c.o
 
 code.i: code.c.i
@@ -168,7 +167,7 @@ code.i: code.c.i
 
 # target to preprocess a source file
 code.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/code.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/code.c.i
 .PHONY : code.c.i
 
 code.s: code.c.s
@@ -176,7 +175,7 @@ code.s: code.c.s
 
 # target to generate assembly for a file
 code.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/code.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/code.c.s
 .PHONY : code.c.s
 
 debug.o: debug.c.o
@@ -184,7 +183,7 @@ debug.o: debug.c.o
 
 # target to build an object file
 debug.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/debug.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/debug.c.o
 .PHONY : debug.c.o
 
 debug.i: debug.c.i
@@ -192,7 +191,7 @@ debug.i: debug.c.i
 
 # target to preprocess a source file
 debug.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/debug.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/debug.c.i
 .PHONY : debug.c.i
 
 debug.s: debug.c.s
@@ -200,7 +199,7 @@ debug.s: debug.c.s
 
 # target to generate assembly for a file
 debug.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/debug.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/debug.c.s
 .PHONY : debug.c.s
 
 decode.o: decode.c.o
@@ -208,7 +207,7 @@ decode.o: decode.c.o
 
 # target to build an object file
 decode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/decode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/decode.c.o
 .PHONY : decode.c.o
 
 decode.i: decode.c.i
@@ -216,7 +215,7 @@ decode.i: decode.c.i
 
 # target to preprocess a source file
 decode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/decode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/decode.c.i
 .PHONY : decode.c.i
 
 decode.s: decode.c.s
@@ -224,7 +223,7 @@ decode.s: decode.c.s
 
 # target to generate assembly for a file
 decode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/decode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/decode.c.s
 .PHONY : decode.c.s
 
 gsm_create.o: gsm_create.c.o
@@ -232,7 +231,7 @@ gsm_create.o: gsm_create.c.o
 
 # target to build an object file
 gsm_create.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_create.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_create.c.o
 .PHONY : gsm_create.c.o
 
 gsm_create.i: gsm_create.c.i
@@ -240,7 +239,7 @@ gsm_create.i: gsm_create.c.i
 
 # target to preprocess a source file
 gsm_create.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_create.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_create.c.i
 .PHONY : gsm_create.c.i
 
 gsm_create.s: gsm_create.c.s
@@ -248,7 +247,7 @@ gsm_create.s: gsm_create.c.s
 
 # target to generate assembly for a file
 gsm_create.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_create.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_create.c.s
 .PHONY : gsm_create.c.s
 
 gsm_decode.o: gsm_decode.c.o
@@ -256,7 +255,7 @@ gsm_decode.o: gsm_decode.c.o
 
 # target to build an object file
 gsm_decode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_decode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_decode.c.o
 .PHONY : gsm_decode.c.o
 
 gsm_decode.i: gsm_decode.c.i
@@ -264,7 +263,7 @@ gsm_decode.i: gsm_decode.c.i
 
 # target to preprocess a source file
 gsm_decode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_decode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_decode.c.i
 .PHONY : gsm_decode.c.i
 
 gsm_decode.s: gsm_decode.c.s
@@ -272,7 +271,7 @@ gsm_decode.s: gsm_decode.c.s
 
 # target to generate assembly for a file
 gsm_decode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_decode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_decode.c.s
 .PHONY : gsm_decode.c.s
 
 gsm_destroy.o: gsm_destroy.c.o
@@ -280,7 +279,7 @@ gsm_destroy.o: gsm_destroy.c.o
 
 # target to build an object file
 gsm_destroy.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_destroy.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_destroy.c.o
 .PHONY : gsm_destroy.c.o
 
 gsm_destroy.i: gsm_destroy.c.i
@@ -288,7 +287,7 @@ gsm_destroy.i: gsm_destroy.c.i
 
 # target to preprocess a source file
 gsm_destroy.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_destroy.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_destroy.c.i
 .PHONY : gsm_destroy.c.i
 
 gsm_destroy.s: gsm_destroy.c.s
@@ -296,7 +295,7 @@ gsm_destroy.s: gsm_destroy.c.s
 
 # target to generate assembly for a file
 gsm_destroy.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_destroy.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_destroy.c.s
 .PHONY : gsm_destroy.c.s
 
 gsm_encode.o: gsm_encode.c.o
@@ -304,7 +303,7 @@ gsm_encode.o: gsm_encode.c.o
 
 # target to build an object file
 gsm_encode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_encode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_encode.c.o
 .PHONY : gsm_encode.c.o
 
 gsm_encode.i: gsm_encode.c.i
@@ -312,7 +311,7 @@ gsm_encode.i: gsm_encode.c.i
 
 # target to preprocess a source file
 gsm_encode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_encode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_encode.c.i
 .PHONY : gsm_encode.c.i
 
 gsm_encode.s: gsm_encode.c.s
@@ -320,7 +319,7 @@ gsm_encode.s: gsm_encode.c.s
 
 # target to generate assembly for a file
 gsm_encode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_encode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_encode.c.s
 .PHONY : gsm_encode.c.s
 
 gsm_explode.o: gsm_explode.c.o
@@ -328,7 +327,7 @@ gsm_explode.o: gsm_explode.c.o
 
 # target to build an object file
 gsm_explode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_explode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_explode.c.o
 .PHONY : gsm_explode.c.o
 
 gsm_explode.i: gsm_explode.c.i
@@ -336,7 +335,7 @@ gsm_explode.i: gsm_explode.c.i
 
 # target to preprocess a source file
 gsm_explode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_explode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_explode.c.i
 .PHONY : gsm_explode.c.i
 
 gsm_explode.s: gsm_explode.c.s
@@ -344,7 +343,7 @@ gsm_explode.s: gsm_explode.c.s
 
 # target to generate assembly for a file
 gsm_explode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_explode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_explode.c.s
 .PHONY : gsm_explode.c.s
 
 gsm_implode.o: gsm_implode.c.o
@@ -352,7 +351,7 @@ gsm_implode.o: gsm_implode.c.o
 
 # target to build an object file
 gsm_implode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_implode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_implode.c.o
 .PHONY : gsm_implode.c.o
 
 gsm_implode.i: gsm_implode.c.i
@@ -360,7 +359,7 @@ gsm_implode.i: gsm_implode.c.i
 
 # target to preprocess a source file
 gsm_implode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_implode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_implode.c.i
 .PHONY : gsm_implode.c.i
 
 gsm_implode.s: gsm_implode.c.s
@@ -368,7 +367,7 @@ gsm_implode.s: gsm_implode.c.s
 
 # target to generate assembly for a file
 gsm_implode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_implode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_implode.c.s
 .PHONY : gsm_implode.c.s
 
 gsm_option.o: gsm_option.c.o
@@ -376,7 +375,7 @@ gsm_option.o: gsm_option.c.o
 
 # target to build an object file
 gsm_option.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_option.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_option.c.o
 .PHONY : gsm_option.c.o
 
 gsm_option.i: gsm_option.c.i
@@ -384,7 +383,7 @@ gsm_option.i: gsm_option.c.i
 
 # target to preprocess a source file
 gsm_option.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_option.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_option.c.i
 .PHONY : gsm_option.c.i
 
 gsm_option.s: gsm_option.c.s
@@ -392,7 +391,7 @@ gsm_option.s: gsm_option.c.s
 
 # target to generate assembly for a file
 gsm_option.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_option.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_option.c.s
 .PHONY : gsm_option.c.s
 
 gsm_print.o: gsm_print.c.o
@@ -400,7 +399,7 @@ gsm_print.o: gsm_print.c.o
 
 # target to build an object file
 gsm_print.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_print.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_print.c.o
 .PHONY : gsm_print.c.o
 
 gsm_print.i: gsm_print.c.i
@@ -408,7 +407,7 @@ gsm_print.i: gsm_print.c.i
 
 # target to preprocess a source file
 gsm_print.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_print.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_print.c.i
 .PHONY : gsm_print.c.i
 
 gsm_print.s: gsm_print.c.s
@@ -416,7 +415,7 @@ gsm_print.s: gsm_print.c.s
 
 # target to generate assembly for a file
 gsm_print.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_print.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/gsm_print.c.s
 .PHONY : gsm_print.c.s
 
 long_term.o: long_term.c.o
@@ -424,7 +423,7 @@ long_term.o: long_term.c.o
 
 # target to build an object file
 long_term.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/long_term.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/long_term.c.o
 .PHONY : long_term.c.o
 
 long_term.i: long_term.c.i
@@ -432,7 +431,7 @@ long_term.i: long_term.c.i
 
 # target to preprocess a source file
 long_term.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/long_term.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/long_term.c.i
 .PHONY : long_term.c.i
 
 long_term.s: long_term.c.s
@@ -440,7 +439,7 @@ long_term.s: long_term.c.s
 
 # target to generate assembly for a file
 long_term.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/long_term.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/long_term.c.s
 .PHONY : long_term.c.s
 
 lpc.o: lpc.c.o
@@ -448,7 +447,7 @@ lpc.o: lpc.c.o
 
 # target to build an object file
 lpc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/lpc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/lpc.c.o
 .PHONY : lpc.c.o
 
 lpc.i: lpc.c.i
@@ -456,7 +455,7 @@ lpc.i: lpc.c.i
 
 # target to preprocess a source file
 lpc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/lpc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/lpc.c.i
 .PHONY : lpc.c.i
 
 lpc.s: lpc.c.s
@@ -464,7 +463,7 @@ lpc.s: lpc.c.s
 
 # target to generate assembly for a file
 lpc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/lpc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/lpc.c.s
 .PHONY : lpc.c.s
 
 preprocess.o: preprocess.c.o
@@ -472,7 +471,7 @@ preprocess.o: preprocess.c.o
 
 # target to build an object file
 preprocess.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/preprocess.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/preprocess.c.o
 .PHONY : preprocess.c.o
 
 preprocess.i: preprocess.c.i
@@ -480,7 +479,7 @@ preprocess.i: preprocess.c.i
 
 # target to preprocess a source file
 preprocess.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/preprocess.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/preprocess.c.i
 .PHONY : preprocess.c.i
 
 preprocess.s: preprocess.c.s
@@ -488,7 +487,7 @@ preprocess.s: preprocess.c.s
 
 # target to generate assembly for a file
 preprocess.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/preprocess.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/preprocess.c.s
 .PHONY : preprocess.c.s
 
 rpe.o: rpe.c.o
@@ -496,7 +495,7 @@ rpe.o: rpe.c.o
 
 # target to build an object file
 rpe.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rpe.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rpe.c.o
 .PHONY : rpe.c.o
 
 rpe.i: rpe.c.i
@@ -504,7 +503,7 @@ rpe.i: rpe.c.i
 
 # target to preprocess a source file
 rpe.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rpe.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rpe.c.i
 .PHONY : rpe.c.i
 
 rpe.s: rpe.c.s
@@ -512,7 +511,7 @@ rpe.s: rpe.c.s
 
 # target to generate assembly for a file
 rpe.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rpe.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/rpe.c.s
 .PHONY : rpe.c.s
 
 short_term.o: short_term.c.o
@@ -520,7 +519,7 @@ short_term.o: short_term.c.o
 
 # target to build an object file
 short_term.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/short_term.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/short_term.c.o
 .PHONY : short_term.c.o
 
 short_term.i: short_term.c.i
@@ -528,7 +527,7 @@ short_term.i: short_term.c.i
 
 # target to preprocess a source file
 short_term.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/short_term.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/short_term.c.i
 .PHONY : short_term.c.i
 
 short_term.s: short_term.c.s
@@ -536,7 +535,7 @@ short_term.s: short_term.c.s
 
 # target to generate assembly for a file
 short_term.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/short_term.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/short_term.c.s
 .PHONY : short_term.c.s
 
 table.o: table.c.o
@@ -544,7 +543,7 @@ table.o: table.c.o
 
 # target to build an object file
 table.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/table.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/table.c.o
 .PHONY : table.c.o
 
 table.i: table.c.i
@@ -552,7 +551,7 @@ table.i: table.c.i
 
 # target to preprocess a source file
 table.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/table.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/table.c.i
 .PHONY : table.c.i
 
 table.s: table.c.s
@@ -560,7 +559,7 @@ table.s: table.c.s
 
 # target to generate assembly for a file
 table.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/table.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/table.c.s
 .PHONY : table.c.s
 
 toast.o: toast.c.o
@@ -568,7 +567,7 @@ toast.o: toast.c.o
 
 # target to build an object file
 toast.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast.c.o
 .PHONY : toast.c.o
 
 toast.i: toast.c.i
@@ -576,7 +575,7 @@ toast.i: toast.c.i
 
 # target to preprocess a source file
 toast.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast.c.i
 .PHONY : toast.c.i
 
 toast.s: toast.c.s
@@ -584,7 +583,7 @@ toast.s: toast.c.s
 
 # target to generate assembly for a file
 toast.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast.c.s
 .PHONY : toast.c.s
 
 toast_alaw.o: toast_alaw.c.o
@@ -592,7 +591,7 @@ toast_alaw.o: toast_alaw.c.o
 
 # target to build an object file
 toast_alaw.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_alaw.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_alaw.c.o
 .PHONY : toast_alaw.c.o
 
 toast_alaw.i: toast_alaw.c.i
@@ -600,7 +599,7 @@ toast_alaw.i: toast_alaw.c.i
 
 # target to preprocess a source file
 toast_alaw.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_alaw.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_alaw.c.i
 .PHONY : toast_alaw.c.i
 
 toast_alaw.s: toast_alaw.c.s
@@ -608,7 +607,7 @@ toast_alaw.s: toast_alaw.c.s
 
 # target to generate assembly for a file
 toast_alaw.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_alaw.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_alaw.c.s
 .PHONY : toast_alaw.c.s
 
 toast_audio.o: toast_audio.c.o
@@ -616,7 +615,7 @@ toast_audio.o: toast_audio.c.o
 
 # target to build an object file
 toast_audio.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_audio.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_audio.c.o
 .PHONY : toast_audio.c.o
 
 toast_audio.i: toast_audio.c.i
@@ -624,7 +623,7 @@ toast_audio.i: toast_audio.c.i
 
 # target to preprocess a source file
 toast_audio.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_audio.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_audio.c.i
 .PHONY : toast_audio.c.i
 
 toast_audio.s: toast_audio.c.s
@@ -632,7 +631,7 @@ toast_audio.s: toast_audio.c.s
 
 # target to generate assembly for a file
 toast_audio.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_audio.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_audio.c.s
 .PHONY : toast_audio.c.s
 
 toast_lin.o: toast_lin.c.o
@@ -640,7 +639,7 @@ toast_lin.o: toast_lin.c.o
 
 # target to build an object file
 toast_lin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_lin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_lin.c.o
 .PHONY : toast_lin.c.o
 
 toast_lin.i: toast_lin.c.i
@@ -648,7 +647,7 @@ toast_lin.i: toast_lin.c.i
 
 # target to preprocess a source file
 toast_lin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_lin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_lin.c.i
 .PHONY : toast_lin.c.i
 
 toast_lin.s: toast_lin.c.s
@@ -656,7 +655,7 @@ toast_lin.s: toast_lin.c.s
 
 # target to generate assembly for a file
 toast_lin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_lin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_lin.c.s
 .PHONY : toast_lin.c.s
 
 toast_ulaw.o: toast_ulaw.c.o
@@ -664,7 +663,7 @@ toast_ulaw.o: toast_ulaw.c.o
 
 # target to build an object file
 toast_ulaw.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_ulaw.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_ulaw.c.o
 .PHONY : toast_ulaw.c.o
 
 toast_ulaw.i: toast_ulaw.c.i
@@ -672,7 +671,7 @@ toast_ulaw.i: toast_ulaw.c.i
 
 # target to preprocess a source file
 toast_ulaw.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_ulaw.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_ulaw.c.i
 .PHONY : toast_ulaw.c.i
 
 toast_ulaw.s: toast_ulaw.c.s
@@ -680,7 +679,7 @@ toast_ulaw.s: toast_ulaw.c.s
 
 # target to generate assembly for a file
 toast_ulaw.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_ulaw.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/build.make MultiSource/Benchmarks/mediabench/gsm/toast/CMakeFiles/toast.dir/toast_ulaw.c.s
 .PHONY : toast_ulaw.c.s
 
 # Help Target
@@ -772,7 +771,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

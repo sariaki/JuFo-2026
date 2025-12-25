@@ -1,4 +1,4 @@
 exit 0
-real       0.0818
-user       0.0150
-sys        0.0150
+real       0.0333
+user       0.0197
+sys        0.0128

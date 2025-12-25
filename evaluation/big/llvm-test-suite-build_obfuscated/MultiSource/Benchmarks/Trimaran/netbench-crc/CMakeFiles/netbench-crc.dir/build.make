@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/depend.make
@@ -72,30 +72,30 @@ include MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/flags.make
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/netbench-crc.dir/crc32.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o -MF CMakeFiles/netbench-crc.dir/crc32.c.o.d -o CMakeFiles/netbench-crc.dir/crc32.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/netbench-crc.dir/crc32.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o -MF CMakeFiles/netbench-crc.dir/crc32.c.o.d -o CMakeFiles/netbench-crc.dir/crc32.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/netbench-crc.dir/crc32.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c > CMakeFiles/netbench-crc.dir/crc32.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c > CMakeFiles/netbench-crc.dir/crc32.c.i
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/netbench-crc.dir/crc32.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c -o CMakeFiles/netbench-crc.dir/crc32.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/crc32.c -o CMakeFiles/netbench-crc.dir/crc32.c.s
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/flags.make
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/netbench-crc.dir/packet.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o -MF CMakeFiles/netbench-crc.dir/packet.c.o.d -o CMakeFiles/netbench-crc.dir/packet.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/netbench-crc.dir/packet.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o -MF CMakeFiles/netbench-crc.dir/packet.c.o.d -o CMakeFiles/netbench-crc.dir/packet.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/netbench-crc.dir/packet.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c > CMakeFiles/netbench-crc.dir/packet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c > CMakeFiles/netbench-crc.dir/packet.c.i
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/netbench-crc.dir/packet.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c -o CMakeFiles/netbench-crc.dir/packet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/packet.c -o CMakeFiles/netbench-crc.dir/packet.c.s
 
 # Object files for target netbench-crc
 netbench__crc_OBJECTS = \
@@ -109,20 +109,20 @@ MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc: MultiSource/Benchmark
 MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o
 MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make
 MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable netbench-crc"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/netbench-crc.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable netbench-crc"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/netbench-crc.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build: MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc
 .PHONY : MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && $(CMAKE_COMMAND) -P CMakeFiles/netbench-crc.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc && $(CMAKE_COMMAND) -P CMakeFiles/netbench-crc.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/clean
 
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/netbench-crc /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/depend
 

@@ -1,34 +1,34 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/trees/trees  :
-section                 size    addr
-.interp                   28     792
-.note.gnu.property        32     824
-.note.gnu.build-id        36     856
-.note.ABI-tag             32     892
-.gnu.hash                 36     928
-.dynsym                  288     968
-.dynstr                  334    1256
-.gnu.version              24    1590
-.gnu.version_r           128    1616
-.rela.dyn                768    1744
-.rela.plt                 72    2512
-.init                     27    4096
-.plt                      64    4128
-.plt.got                   8    4192
-.text                  12748    4208
-.fini                     13   16956
-.rodata                 2642   20480
-.eh_frame_hdr            228   23124
-.eh_frame               1200   23352
-.gcc_except_table        164   24552
-.init_array                8   31952
-.fini_array                8   31960
-.data.rel.ro             208   31968
-.dynamic                 528   32176
-.got                      40   32704
-.got.plt                  48   32744
-.data                     24   32792
-.bss                      16   32816
-.comment                  82       0
-Total                  19834
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/trees/trees  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 288     968
+.dynstr                 334    1256
+.gnu.version             24    1590
+.gnu.version_r          128    1616
+.rela.dyn               768    1744
+.rela.plt                72    2512
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                  8497    4208
+.fini                    13   12708
+.rodata                1698   16384
+.eh_frame_hdr           228   18084
+.eh_frame              1132   18312
+.gcc_except_table       172   19444
+.init_array               8   23760
+.fini_array               8   23768
+.data.rel.ro            208   23776
+.dynamic                528   23984
+.got                     40   24512
+.got.plt                 48   24552
+.data                    24   24600
+.bss                     16   24624
+.comment                 82       0
+Total                 14579
 
 

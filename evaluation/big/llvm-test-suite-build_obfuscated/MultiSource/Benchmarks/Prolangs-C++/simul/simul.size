@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/simul/simul  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/simul/simul  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,20 +14,20 @@ section                 size    addr
 .init                     27    4096
 .plt                      64    4128
 .plt.got                   8    4192
-.text                   4811    4208
-.fini                     13    9020
-.rodata                 1111   12288
-.eh_frame_hdr            380   13400
-.eh_frame               1148   13784
-.init_array                8   19720
-.fini_array                8   19728
-.data.rel.ro             152   19736
-.dynamic                 528   19888
-.got                      40   20416
-.got.plt                  48   20456
-.data                     24   20504
-.bss                   16024   20528
+.text                   3339    4208
+.fini                     13    7548
+.rodata                  703    8192
+.eh_frame_hdr            380    8896
+.eh_frame               1124    9280
+.init_array                8   15624
+.fini_array                8   15632
+.data.rel.ro             152   15640
+.dynamic                 528   15792
+.got                      40   16320
+.got.plt                  48   16360
+.data                     24   16408
+.bss                   16024   16432
 .comment                  82       0
-Total                  25991
+Total                  24087
 
 

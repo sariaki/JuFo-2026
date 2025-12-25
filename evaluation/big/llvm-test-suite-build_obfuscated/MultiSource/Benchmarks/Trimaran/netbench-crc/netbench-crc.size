@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,11 +14,11 @@ section                 size    addr
 .init                     27    4096
 .plt                     112    4128
 .plt.got                   8    4240
-.text                   3501    4256
-.fini                     13    7760
-.rodata                  750    8192
-.eh_frame_hdr             76    8944
-.eh_frame                304    9024
+.text                   2653    4256
+.fini                     13    6912
+.rodata                  590    8192
+.eh_frame_hdr             76    8784
+.eh_frame                288    8864
 .init_array                8   15808
 .fini_array                8   15816
 .dynamic                 480   15824
@@ -27,6 +27,6 @@ section                 size    addr
 .data                  43616   16432
 .bss                    2064   60048
 .comment                  82       0
-Total                  52328
+Total                  51304
 
 

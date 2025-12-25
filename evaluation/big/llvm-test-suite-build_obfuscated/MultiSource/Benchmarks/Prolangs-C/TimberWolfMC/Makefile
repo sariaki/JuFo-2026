@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/TimberWolfMC//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/TimberWolfMC//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ timberwolfmc: MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwo
 
 # fast build rule for target.
 timberwolfmc/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build
 .PHONY : timberwolfmc/fast
 
 23tree.o: 23tree.c.o
@@ -136,7 +135,7 @@ timberwolfmc/fast:
 
 # target to build an object file
 23tree.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/23tree.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/23tree.c.o
 .PHONY : 23tree.c.o
 
 23tree.i: 23tree.c.i
@@ -144,7 +143,7 @@ timberwolfmc/fast:
 
 # target to preprocess a source file
 23tree.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/23tree.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/23tree.c.i
 .PHONY : 23tree.c.i
 
 23tree.s: 23tree.c.s
@@ -152,7 +151,7 @@ timberwolfmc/fast:
 
 # target to generate assembly for a file
 23tree.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/23tree.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/23tree.c.s
 .PHONY : 23tree.c.s
 
 addpins.o: addpins.c.o
@@ -160,7 +159,7 @@ addpins.o: addpins.c.o
 
 # target to build an object file
 addpins.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/addpins.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/addpins.c.o
 .PHONY : addpins.c.o
 
 addpins.i: addpins.c.i
@@ -168,7 +167,7 @@ addpins.i: addpins.c.i
 
 # target to preprocess a source file
 addpins.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/addpins.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/addpins.c.i
 .PHONY : addpins.c.i
 
 addpins.s: addpins.c.s
@@ -176,7 +175,7 @@ addpins.s: addpins.c.s
 
 # target to generate assembly for a file
 addpins.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/addpins.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/addpins.c.s
 .PHONY : addpins.c.s
 
 analyze.o: analyze.c.o
@@ -184,7 +183,7 @@ analyze.o: analyze.c.o
 
 # target to build an object file
 analyze.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/analyze.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/analyze.c.o
 .PHONY : analyze.c.o
 
 analyze.i: analyze.c.i
@@ -192,7 +191,7 @@ analyze.i: analyze.c.i
 
 # target to preprocess a source file
 analyze.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/analyze.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/analyze.c.i
 .PHONY : analyze.c.i
 
 analyze.s: analyze.c.s
@@ -200,7 +199,7 @@ analyze.s: analyze.c.s
 
 # target to generate assembly for a file
 analyze.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/analyze.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/analyze.c.s
 .PHONY : analyze.c.s
 
 bellman.o: bellman.c.o
@@ -208,7 +207,7 @@ bellman.o: bellman.c.o
 
 # target to build an object file
 bellman.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/bellman.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/bellman.c.o
 .PHONY : bellman.c.o
 
 bellman.i: bellman.c.i
@@ -216,7 +215,7 @@ bellman.i: bellman.c.i
 
 # target to preprocess a source file
 bellman.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/bellman.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/bellman.c.i
 .PHONY : bellman.c.i
 
 bellman.s: bellman.c.s
@@ -224,7 +223,7 @@ bellman.s: bellman.c.s
 
 # target to generate assembly for a file
 bellman.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/bellman.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/bellman.c.s
 .PHONY : bellman.c.s
 
 buster.o: buster.c.o
@@ -232,7 +231,7 @@ buster.o: buster.c.o
 
 # target to build an object file
 buster.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/buster.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/buster.c.o
 .PHONY : buster.c.o
 
 buster.i: buster.c.i
@@ -240,7 +239,7 @@ buster.i: buster.c.i
 
 # target to preprocess a source file
 buster.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/buster.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/buster.c.i
 .PHONY : buster.c.i
 
 buster.s: buster.c.s
@@ -248,7 +247,7 @@ buster.s: buster.c.s
 
 # target to generate assembly for a file
 buster.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/buster.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/buster.c.s
 .PHONY : buster.c.s
 
 changraph.o: changraph.c.o
@@ -256,7 +255,7 @@ changraph.o: changraph.c.o
 
 # target to build an object file
 changraph.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/changraph.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/changraph.c.o
 .PHONY : changraph.c.o
 
 changraph.i: changraph.c.i
@@ -264,7 +263,7 @@ changraph.i: changraph.c.i
 
 # target to preprocess a source file
 changraph.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/changraph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/changraph.c.i
 .PHONY : changraph.c.i
 
 changraph.s: changraph.c.s
@@ -272,7 +271,7 @@ changraph.s: changraph.c.s
 
 # target to generate assembly for a file
 changraph.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/changraph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/changraph.c.s
 .PHONY : changraph.c.s
 
 checkpen.o: checkpen.c.o
@@ -280,7 +279,7 @@ checkpen.o: checkpen.c.o
 
 # target to build an object file
 checkpen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/checkpen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/checkpen.c.o
 .PHONY : checkpen.c.o
 
 checkpen.i: checkpen.c.i
@@ -288,7 +287,7 @@ checkpen.i: checkpen.c.i
 
 # target to preprocess a source file
 checkpen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/checkpen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/checkpen.c.i
 .PHONY : checkpen.c.i
 
 checkpen.s: checkpen.c.s
@@ -296,7 +295,7 @@ checkpen.s: checkpen.c.s
 
 # target to generate assembly for a file
 checkpen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/checkpen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/checkpen.c.s
 .PHONY : checkpen.c.s
 
 config1.o: config1.c.o
@@ -304,7 +303,7 @@ config1.o: config1.c.o
 
 # target to build an object file
 config1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config1.c.o
 .PHONY : config1.c.o
 
 config1.i: config1.c.i
@@ -312,7 +311,7 @@ config1.i: config1.c.i
 
 # target to preprocess a source file
 config1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config1.c.i
 .PHONY : config1.c.i
 
 config1.s: config1.c.s
@@ -320,7 +319,7 @@ config1.s: config1.c.s
 
 # target to generate assembly for a file
 config1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config1.c.s
 .PHONY : config1.c.s
 
 config2.o: config2.c.o
@@ -328,7 +327,7 @@ config2.o: config2.c.o
 
 # target to build an object file
 config2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config2.c.o
 .PHONY : config2.c.o
 
 config2.i: config2.c.i
@@ -336,7 +335,7 @@ config2.i: config2.c.i
 
 # target to preprocess a source file
 config2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config2.c.i
 .PHONY : config2.c.i
 
 config2.s: config2.c.s
@@ -344,7 +343,7 @@ config2.s: config2.c.s
 
 # target to generate assembly for a file
 config2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config2.c.s
 .PHONY : config2.c.s
 
 config3.o: config3.c.o
@@ -352,7 +351,7 @@ config3.o: config3.c.o
 
 # target to build an object file
 config3.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config3.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config3.c.o
 .PHONY : config3.c.o
 
 config3.i: config3.c.i
@@ -360,7 +359,7 @@ config3.i: config3.c.i
 
 # target to preprocess a source file
 config3.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config3.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config3.c.i
 .PHONY : config3.c.i
 
 config3.s: config3.c.s
@@ -368,7 +367,7 @@ config3.s: config3.c.s
 
 # target to generate assembly for a file
 config3.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config3.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/config3.c.s
 .PHONY : config3.c.s
 
 density.o: density.c.o
@@ -376,7 +375,7 @@ density.o: density.c.o
 
 # target to build an object file
 density.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/density.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/density.c.o
 .PHONY : density.c.o
 
 density.i: density.c.i
@@ -384,7 +383,7 @@ density.i: density.c.i
 
 # target to preprocess a source file
 density.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/density.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/density.c.i
 .PHONY : density.c.i
 
 density.s: density.c.s
@@ -392,7 +391,7 @@ density.s: density.c.s
 
 # target to generate assembly for a file
 density.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/density.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/density.c.s
 .PHONY : density.c.s
 
 doborder.o: doborder.c.o
@@ -400,7 +399,7 @@ doborder.o: doborder.c.o
 
 # target to build an object file
 doborder.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doborder.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doborder.c.o
 .PHONY : doborder.c.o
 
 doborder.i: doborder.c.i
@@ -408,7 +407,7 @@ doborder.i: doborder.c.i
 
 # target to preprocess a source file
 doborder.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doborder.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doborder.c.i
 .PHONY : doborder.c.i
 
 doborder.s: doborder.c.s
@@ -416,7 +415,7 @@ doborder.s: doborder.c.s
 
 # target to generate assembly for a file
 doborder.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doborder.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doborder.c.s
 .PHONY : doborder.c.s
 
 doublecheck.o: doublecheck.c.o
@@ -424,7 +423,7 @@ doublecheck.o: doublecheck.c.o
 
 # target to build an object file
 doublecheck.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doublecheck.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doublecheck.c.o
 .PHONY : doublecheck.c.o
 
 doublecheck.i: doublecheck.c.i
@@ -432,7 +431,7 @@ doublecheck.i: doublecheck.c.i
 
 # target to preprocess a source file
 doublecheck.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doublecheck.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doublecheck.c.i
 .PHONY : doublecheck.c.i
 
 doublecheck.s: doublecheck.c.s
@@ -440,7 +439,7 @@ doublecheck.s: doublecheck.c.s
 
 # target to generate assembly for a file
 doublecheck.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doublecheck.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/doublecheck.c.s
 .PHONY : doublecheck.c.s
 
 finalout.o: finalout.c.o
@@ -448,7 +447,7 @@ finalout.o: finalout.c.o
 
 # target to build an object file
 finalout.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalout.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalout.c.o
 .PHONY : finalout.c.o
 
 finalout.i: finalout.c.i
@@ -456,7 +455,7 @@ finalout.i: finalout.c.i
 
 # target to preprocess a source file
 finalout.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalout.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalout.c.i
 .PHONY : finalout.c.i
 
 finalout.s: finalout.c.s
@@ -464,7 +463,7 @@ finalout.s: finalout.c.s
 
 # target to generate assembly for a file
 finalout.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalout.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalout.c.s
 .PHONY : finalout.c.s
 
 finalpin.o: finalpin.c.o
@@ -472,7 +471,7 @@ finalpin.o: finalpin.c.o
 
 # target to build an object file
 finalpin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalpin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalpin.c.o
 .PHONY : finalpin.c.o
 
 finalpin.i: finalpin.c.i
@@ -480,7 +479,7 @@ finalpin.i: finalpin.c.i
 
 # target to preprocess a source file
 finalpin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalpin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalpin.c.i
 .PHONY : finalpin.c.i
 
 finalpin.s: finalpin.c.s
@@ -488,7 +487,7 @@ finalpin.s: finalpin.c.s
 
 # target to generate assembly for a file
 finalpin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalpin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/finalpin.c.s
 .PHONY : finalpin.c.s
 
 findcheck.o: findcheck.c.o
@@ -496,7 +495,7 @@ findcheck.o: findcheck.c.o
 
 # target to build an object file
 findcheck.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcheck.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcheck.c.o
 .PHONY : findcheck.c.o
 
 findcheck.i: findcheck.c.i
@@ -504,7 +503,7 @@ findcheck.i: findcheck.c.i
 
 # target to preprocess a source file
 findcheck.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcheck.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcheck.c.i
 .PHONY : findcheck.c.i
 
 findcheck.s: findcheck.c.s
@@ -512,7 +511,7 @@ findcheck.s: findcheck.c.s
 
 # target to generate assembly for a file
 findcheck.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcheck.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcheck.c.s
 .PHONY : findcheck.c.s
 
 findcost.o: findcost.c.o
@@ -520,7 +519,7 @@ findcost.o: findcost.c.o
 
 # target to build an object file
 findcost.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcost.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcost.c.o
 .PHONY : findcost.c.o
 
 findcost.i: findcost.c.i
@@ -528,7 +527,7 @@ findcost.i: findcost.c.i
 
 # target to preprocess a source file
 findcost.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcost.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcost.c.i
 .PHONY : findcost.c.i
 
 findcost.s: findcost.c.s
@@ -536,7 +535,7 @@ findcost.s: findcost.c.s
 
 # target to generate assembly for a file
 findcost.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcost.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findcost.c.s
 .PHONY : findcost.c.s
 
 findloc.o: findloc.c.o
@@ -544,7 +543,7 @@ findloc.o: findloc.c.o
 
 # target to build an object file
 findloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findloc.c.o
 .PHONY : findloc.c.o
 
 findloc.i: findloc.c.i
@@ -552,7 +551,7 @@ findloc.i: findloc.c.i
 
 # target to preprocess a source file
 findloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findloc.c.i
 .PHONY : findloc.c.i
 
 findloc.s: findloc.c.s
@@ -560,7 +559,7 @@ findloc.s: findloc.c.s
 
 # target to generate assembly for a file
 findloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findloc.c.s
 .PHONY : findloc.c.s
 
 findnodes.o: findnodes.c.o
@@ -568,7 +567,7 @@ findnodes.o: findnodes.c.o
 
 # target to build an object file
 findnodes.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findnodes.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findnodes.c.o
 .PHONY : findnodes.c.o
 
 findnodes.i: findnodes.c.i
@@ -576,7 +575,7 @@ findnodes.i: findnodes.c.i
 
 # target to preprocess a source file
 findnodes.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findnodes.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findnodes.c.i
 .PHONY : findnodes.c.i
 
 findnodes.s: findnodes.c.s
@@ -584,7 +583,7 @@ findnodes.s: findnodes.c.s
 
 # target to generate assembly for a file
 findnodes.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findnodes.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findnodes.c.s
 .PHONY : findnodes.c.s
 
 findside.o: findside.c.o
@@ -592,7 +591,7 @@ findside.o: findside.c.o
 
 # target to build an object file
 findside.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findside.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findside.c.o
 .PHONY : findside.c.o
 
 findside.i: findside.c.i
@@ -600,7 +599,7 @@ findside.i: findside.c.i
 
 # target to preprocess a source file
 findside.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findside.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findside.c.i
 .PHONY : findside.c.i
 
 findside.s: findside.c.s
@@ -608,7 +607,7 @@ findside.s: findside.c.s
 
 # target to generate assembly for a file
 findside.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findside.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/findside.c.s
 .PHONY : findside.c.s
 
 fixpenal.o: fixpenal.c.o
@@ -616,7 +615,7 @@ fixpenal.o: fixpenal.c.o
 
 # target to build an object file
 fixpenal.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fixpenal.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fixpenal.c.o
 .PHONY : fixpenal.c.o
 
 fixpenal.i: fixpenal.c.i
@@ -624,7 +623,7 @@ fixpenal.i: fixpenal.c.i
 
 # target to preprocess a source file
 fixpenal.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fixpenal.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fixpenal.c.i
 .PHONY : fixpenal.c.i
 
 fixpenal.s: fixpenal.c.s
@@ -632,7 +631,7 @@ fixpenal.s: fixpenal.c.s
 
 # target to generate assembly for a file
 fixpenal.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fixpenal.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fixpenal.c.s
 .PHONY : fixpenal.c.s
 
 fulllink.o: fulllink.c.o
@@ -640,7 +639,7 @@ fulllink.o: fulllink.c.o
 
 # target to build an object file
 fulllink.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fulllink.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fulllink.c.o
 .PHONY : fulllink.c.o
 
 fulllink.i: fulllink.c.i
@@ -648,7 +647,7 @@ fulllink.i: fulllink.c.i
 
 # target to preprocess a source file
 fulllink.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fulllink.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fulllink.c.i
 .PHONY : fulllink.c.i
 
 fulllink.s: fulllink.c.s
@@ -656,7 +655,7 @@ fulllink.s: fulllink.c.s
 
 # target to generate assembly for a file
 fulllink.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fulllink.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fulllink.c.s
 .PHONY : fulllink.c.s
 
 fuloop.o: fuloop.c.o
@@ -664,7 +663,7 @@ fuloop.o: fuloop.c.o
 
 # target to build an object file
 fuloop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fuloop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fuloop.c.o
 .PHONY : fuloop.c.o
 
 fuloop.i: fuloop.c.i
@@ -672,7 +671,7 @@ fuloop.i: fuloop.c.i
 
 # target to preprocess a source file
 fuloop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fuloop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fuloop.c.i
 .PHONY : fuloop.c.i
 
 fuloop.s: fuloop.c.s
@@ -680,7 +679,7 @@ fuloop.s: fuloop.c.s
 
 # target to generate assembly for a file
 fuloop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fuloop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/fuloop.c.s
 .PHONY : fuloop.c.s
 
 genorient.o: genorient.c.o
@@ -688,7 +687,7 @@ genorient.o: genorient.c.o
 
 # target to build an object file
 genorient.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/genorient.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/genorient.c.o
 .PHONY : genorient.c.o
 
 genorient.i: genorient.c.i
@@ -696,7 +695,7 @@ genorient.i: genorient.c.i
 
 # target to preprocess a source file
 genorient.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/genorient.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/genorient.c.i
 .PHONY : genorient.c.i
 
 genorient.s: genorient.c.s
@@ -704,7 +703,7 @@ genorient.s: genorient.c.s
 
 # target to generate assembly for a file
 genorient.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/genorient.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/genorient.c.s
 .PHONY : genorient.c.s
 
 gentwf.o: gentwf.c.o
@@ -712,7 +711,7 @@ gentwf.o: gentwf.c.o
 
 # target to build an object file
 gentwf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gentwf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gentwf.c.o
 .PHONY : gentwf.c.o
 
 gentwf.i: gentwf.c.i
@@ -720,7 +719,7 @@ gentwf.i: gentwf.c.i
 
 # target to preprocess a source file
 gentwf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gentwf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gentwf.c.i
 .PHONY : gentwf.c.i
 
 gentwf.s: gentwf.c.s
@@ -728,7 +727,7 @@ gentwf.s: gentwf.c.s
 
 # target to generate assembly for a file
 gentwf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gentwf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gentwf.c.s
 .PHONY : gentwf.c.s
 
 ggenorien.o: ggenorien.c.o
@@ -736,7 +735,7 @@ ggenorien.o: ggenorien.c.o
 
 # target to build an object file
 ggenorien.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ggenorien.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ggenorien.c.o
 .PHONY : ggenorien.c.o
 
 ggenorien.i: ggenorien.c.i
@@ -744,7 +743,7 @@ ggenorien.i: ggenorien.c.i
 
 # target to preprocess a source file
 ggenorien.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ggenorien.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ggenorien.c.i
 .PHONY : ggenorien.c.i
 
 ggenorien.s: ggenorien.c.s
@@ -752,7 +751,7 @@ ggenorien.s: ggenorien.c.s
 
 # target to generate assembly for a file
 ggenorien.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ggenorien.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ggenorien.c.s
 .PHONY : ggenorien.c.s
 
 gglobals.o: gglobals.c.o
@@ -760,7 +759,7 @@ gglobals.o: gglobals.c.o
 
 # target to build an object file
 gglobals.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gglobals.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gglobals.c.o
 .PHONY : gglobals.c.o
 
 gglobals.i: gglobals.c.i
@@ -768,7 +767,7 @@ gglobals.i: gglobals.c.i
 
 # target to preprocess a source file
 gglobals.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gglobals.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gglobals.c.i
 .PHONY : gglobals.c.i
 
 gglobals.s: gglobals.c.s
@@ -776,7 +775,7 @@ gglobals.s: gglobals.c.s
 
 # target to generate assembly for a file
 gglobals.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gglobals.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gglobals.c.s
 .PHONY : gglobals.c.s
 
 globals.o: globals.c.o
@@ -784,7 +783,7 @@ globals.o: globals.c.o
 
 # target to build an object file
 globals.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/globals.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/globals.c.o
 .PHONY : globals.c.o
 
 globals.i: globals.c.i
@@ -792,7 +791,7 @@ globals.i: globals.c.i
 
 # target to preprocess a source file
 globals.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/globals.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/globals.c.i
 .PHONY : globals.c.i
 
 globals.s: globals.c.s
@@ -800,7 +799,7 @@ globals.s: globals.c.s
 
 # target to generate assembly for a file
 globals.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/globals.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/globals.c.s
 .PHONY : globals.c.s
 
 gmain.o: gmain.c.o
@@ -808,7 +807,7 @@ gmain.o: gmain.c.o
 
 # target to build an object file
 gmain.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gmain.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gmain.c.o
 .PHONY : gmain.c.o
 
 gmain.i: gmain.c.i
@@ -816,7 +815,7 @@ gmain.i: gmain.c.i
 
 # target to preprocess a source file
 gmain.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gmain.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gmain.c.i
 .PHONY : gmain.c.i
 
 gmain.s: gmain.c.s
@@ -824,7 +823,7 @@ gmain.s: gmain.c.s
 
 # target to generate assembly for a file
 gmain.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gmain.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gmain.c.s
 .PHONY : gmain.c.s
 
 goverlap.o: goverlap.c.o
@@ -832,7 +831,7 @@ goverlap.o: goverlap.c.o
 
 # target to build an object file
 goverlap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlap.c.o
 .PHONY : goverlap.c.o
 
 goverlap.i: goverlap.c.i
@@ -840,7 +839,7 @@ goverlap.i: goverlap.c.i
 
 # target to preprocess a source file
 goverlap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlap.c.i
 .PHONY : goverlap.c.i
 
 goverlap.s: goverlap.c.s
@@ -848,7 +847,7 @@ goverlap.s: goverlap.c.s
 
 # target to generate assembly for a file
 goverlap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlap.c.s
 .PHONY : goverlap.c.s
 
 goverlapf.o: goverlapf.c.o
@@ -856,7 +855,7 @@ goverlapf.o: goverlapf.c.o
 
 # target to build an object file
 goverlapf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapf.c.o
 .PHONY : goverlapf.c.o
 
 goverlapf.i: goverlapf.c.i
@@ -864,7 +863,7 @@ goverlapf.i: goverlapf.c.i
 
 # target to preprocess a source file
 goverlapf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapf.c.i
 .PHONY : goverlapf.c.i
 
 goverlapf.s: goverlapf.c.s
@@ -872,7 +871,7 @@ goverlapf.s: goverlapf.c.s
 
 # target to generate assembly for a file
 goverlapf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapf.c.s
 .PHONY : goverlapf.c.s
 
 goverlapx.o: goverlapx.c.o
@@ -880,7 +879,7 @@ goverlapx.o: goverlapx.c.o
 
 # target to build an object file
 goverlapx.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapx.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapx.c.o
 .PHONY : goverlapx.c.o
 
 goverlapx.i: goverlapx.c.i
@@ -888,7 +887,7 @@ goverlapx.i: goverlapx.c.i
 
 # target to preprocess a source file
 goverlapx.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapx.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapx.c.i
 .PHONY : goverlapx.c.i
 
 goverlapx.s: goverlapx.c.s
@@ -896,7 +895,7 @@ goverlapx.s: goverlapx.c.s
 
 # target to generate assembly for a file
 goverlapx.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapx.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/goverlapx.c.s
 .PHONY : goverlapx.c.s
 
 gpass2.o: gpass2.c.o
@@ -904,7 +903,7 @@ gpass2.o: gpass2.c.o
 
 # target to build an object file
 gpass2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gpass2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gpass2.c.o
 .PHONY : gpass2.c.o
 
 gpass2.i: gpass2.c.i
@@ -912,7 +911,7 @@ gpass2.i: gpass2.c.i
 
 # target to preprocess a source file
 gpass2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gpass2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gpass2.c.i
 .PHONY : gpass2.c.i
 
 gpass2.s: gpass2.c.s
@@ -920,7 +919,7 @@ gpass2.s: gpass2.c.s
 
 # target to generate assembly for a file
 gpass2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gpass2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/gpass2.c.s
 .PHONY : gpass2.c.s
 
 grdcell.o: grdcell.c.o
@@ -928,7 +927,7 @@ grdcell.o: grdcell.c.o
 
 # target to build an object file
 grdcell.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grdcell.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grdcell.c.o
 .PHONY : grdcell.c.o
 
 grdcell.i: grdcell.c.i
@@ -936,7 +935,7 @@ grdcell.i: grdcell.c.i
 
 # target to preprocess a source file
 grdcell.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grdcell.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grdcell.c.i
 .PHONY : grdcell.c.i
 
 grdcell.s: grdcell.c.s
@@ -944,7 +943,7 @@ grdcell.s: grdcell.c.s
 
 # target to generate assembly for a file
 grdcell.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grdcell.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grdcell.c.s
 .PHONY : grdcell.c.s
 
 grepair.o: grepair.c.o
@@ -952,7 +951,7 @@ grepair.o: grepair.c.o
 
 # target to build an object file
 grepair.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grepair.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grepair.c.o
 .PHONY : grepair.c.o
 
 grepair.i: grepair.c.i
@@ -960,7 +959,7 @@ grepair.i: grepair.c.i
 
 # target to preprocess a source file
 grepair.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grepair.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grepair.c.i
 .PHONY : grepair.c.i
 
 grepair.s: grepair.c.s
@@ -968,7 +967,7 @@ grepair.s: grepair.c.s
 
 # target to generate assembly for a file
 grepair.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grepair.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/grepair.c.s
 .PHONY : grepair.c.s
 
 hash.o: hash.c.o
@@ -976,7 +975,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hash.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -984,7 +983,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hash.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -992,7 +991,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hash.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hash.c.s
 .PHONY : hash.c.s
 
 hprobes.o: hprobes.c.o
@@ -1000,7 +999,7 @@ hprobes.o: hprobes.c.o
 
 # target to build an object file
 hprobes.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hprobes.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hprobes.c.o
 .PHONY : hprobes.c.o
 
 hprobes.i: hprobes.c.i
@@ -1008,7 +1007,7 @@ hprobes.i: hprobes.c.i
 
 # target to preprocess a source file
 hprobes.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hprobes.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hprobes.c.i
 .PHONY : hprobes.c.i
 
 hprobes.s: hprobes.c.s
@@ -1016,7 +1015,7 @@ hprobes.s: hprobes.c.s
 
 # target to generate assembly for a file
 hprobes.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hprobes.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/hprobes.c.s
 .PHONY : hprobes.c.s
 
 initbb.o: initbb.c.o
@@ -1024,7 +1023,7 @@ initbb.o: initbb.c.o
 
 # target to build an object file
 initbb.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/initbb.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/initbb.c.o
 .PHONY : initbb.c.o
 
 initbb.i: initbb.c.i
@@ -1032,7 +1031,7 @@ initbb.i: initbb.c.i
 
 # target to preprocess a source file
 initbb.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/initbb.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/initbb.c.i
 .PHONY : initbb.c.i
 
 initbb.s: initbb.c.s
@@ -1040,7 +1039,7 @@ initbb.s: initbb.c.s
 
 # target to generate assembly for a file
 initbb.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/initbb.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/initbb.c.s
 .PHONY : initbb.c.s
 
 loadbins.o: loadbins.c.o
@@ -1048,7 +1047,7 @@ loadbins.o: loadbins.c.o
 
 # target to build an object file
 loadbins.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadbins.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadbins.c.o
 .PHONY : loadbins.c.o
 
 loadbins.i: loadbins.c.i
@@ -1056,7 +1055,7 @@ loadbins.i: loadbins.c.i
 
 # target to preprocess a source file
 loadbins.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadbins.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadbins.c.i
 .PHONY : loadbins.c.i
 
 loadbins.s: loadbins.c.s
@@ -1064,7 +1063,7 @@ loadbins.s: loadbins.c.s
 
 # target to generate assembly for a file
 loadbins.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadbins.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadbins.c.s
 .PHONY : loadbins.c.s
 
 loadpg.o: loadpg.c.o
@@ -1072,7 +1071,7 @@ loadpg.o: loadpg.c.o
 
 # target to build an object file
 loadpg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadpg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadpg.c.o
 .PHONY : loadpg.c.o
 
 loadpg.i: loadpg.c.i
@@ -1080,7 +1079,7 @@ loadpg.i: loadpg.c.i
 
 # target to preprocess a source file
 loadpg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadpg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadpg.c.i
 .PHONY : loadpg.c.i
 
 loadpg.s: loadpg.c.s
@@ -1088,7 +1087,7 @@ loadpg.s: loadpg.c.s
 
 # target to generate assembly for a file
 loadpg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadpg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/loadpg.c.s
 .PHONY : loadpg.c.s
 
 main.o: main.c.o
@@ -1096,7 +1095,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -1104,7 +1103,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -1112,7 +1111,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/main.c.s
 .PHONY : main.c.s
 
 makebins.o: makebins.c.o
@@ -1120,7 +1119,7 @@ makebins.o: makebins.c.o
 
 # target to build an object file
 makebins.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makebins.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makebins.c.o
 .PHONY : makebins.c.o
 
 makebins.i: makebins.c.i
@@ -1128,7 +1127,7 @@ makebins.i: makebins.c.i
 
 # target to preprocess a source file
 makebins.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makebins.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makebins.c.i
 .PHONY : makebins.c.i
 
 makebins.s: makebins.c.s
@@ -1136,7 +1135,7 @@ makebins.s: makebins.c.s
 
 # target to generate assembly for a file
 makebins.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makebins.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makebins.c.s
 .PHONY : makebins.c.s
 
 makelink.o: makelink.c.o
@@ -1144,7 +1143,7 @@ makelink.o: makelink.c.o
 
 # target to build an object file
 makelink.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makelink.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makelink.c.o
 .PHONY : makelink.c.o
 
 makelink.i: makelink.c.i
@@ -1152,7 +1151,7 @@ makelink.i: makelink.c.i
 
 # target to preprocess a source file
 makelink.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makelink.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makelink.c.i
 .PHONY : makelink.c.i
 
 makelink.s: makelink.c.s
@@ -1160,7 +1159,7 @@ makelink.s: makelink.c.s
 
 # target to generate assembly for a file
 makelink.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makelink.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makelink.c.s
 .PHONY : makelink.c.s
 
 makesite.o: makesite.c.o
@@ -1168,7 +1167,7 @@ makesite.o: makesite.c.o
 
 # target to build an object file
 makesite.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makesite.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makesite.c.o
 .PHONY : makesite.c.o
 
 makesite.i: makesite.c.i
@@ -1176,7 +1175,7 @@ makesite.i: makesite.c.i
 
 # target to preprocess a source file
 makesite.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makesite.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makesite.c.i
 .PHONY : makesite.c.i
 
 makesite.s: makesite.c.s
@@ -1184,7 +1183,7 @@ makesite.s: makesite.c.s
 
 # target to generate assembly for a file
 makesite.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makesite.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/makesite.c.s
 .PHONY : makesite.c.s
 
 move.o: move.c.o
@@ -1192,7 +1191,7 @@ move.o: move.c.o
 
 # target to build an object file
 move.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/move.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/move.c.o
 .PHONY : move.c.o
 
 move.i: move.c.i
@@ -1200,7 +1199,7 @@ move.i: move.c.i
 
 # target to preprocess a source file
 move.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/move.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/move.c.i
 .PHONY : move.c.i
 
 move.s: move.c.s
@@ -1208,7 +1207,7 @@ move.s: move.c.s
 
 # target to generate assembly for a file
 move.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/move.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/move.c.s
 .PHONY : move.c.s
 
 mshortest.o: mshortest.c.o
@@ -1216,7 +1215,7 @@ mshortest.o: mshortest.c.o
 
 # target to build an object file
 mshortest.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mshortest.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mshortest.c.o
 .PHONY : mshortest.c.o
 
 mshortest.i: mshortest.c.i
@@ -1224,7 +1223,7 @@ mshortest.i: mshortest.c.i
 
 # target to preprocess a source file
 mshortest.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mshortest.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mshortest.c.i
 .PHONY : mshortest.c.i
 
 mshortest.s: mshortest.c.s
@@ -1232,7 +1231,7 @@ mshortest.s: mshortest.c.s
 
 # target to generate assembly for a file
 mshortest.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mshortest.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mshortest.c.s
 .PHONY : mshortest.c.s
 
 mt.o: mt.c.o
@@ -1240,7 +1239,7 @@ mt.o: mt.c.o
 
 # target to build an object file
 mt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mt.c.o
 .PHONY : mt.c.o
 
 mt.i: mt.c.i
@@ -1248,7 +1247,7 @@ mt.i: mt.c.i
 
 # target to preprocess a source file
 mt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mt.c.i
 .PHONY : mt.c.i
 
 mt.s: mt.c.s
@@ -1256,7 +1255,7 @@ mt.s: mt.c.s
 
 # target to generate assembly for a file
 mt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/mt.c.s
 .PHONY : mt.c.s
 
 neworient.o: neworient.c.o
@@ -1264,7 +1263,7 @@ neworient.o: neworient.c.o
 
 # target to build an object file
 neworient.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/neworient.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/neworient.c.o
 .PHONY : neworient.c.o
 
 neworient.i: neworient.c.i
@@ -1272,7 +1271,7 @@ neworient.i: neworient.c.i
 
 # target to preprocess a source file
 neworient.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/neworient.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/neworient.c.i
 .PHONY : neworient.c.i
 
 neworient.s: neworient.c.s
@@ -1280,7 +1279,7 @@ neworient.s: neworient.c.s
 
 # target to generate assembly for a file
 neworient.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/neworient.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/neworient.c.s
 .PHONY : neworient.c.s
 
 outbig.o: outbig.c.o
@@ -1288,7 +1287,7 @@ outbig.o: outbig.c.o
 
 # target to build an object file
 outbig.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outbig.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outbig.c.o
 .PHONY : outbig.c.o
 
 outbig.i: outbig.c.i
@@ -1296,7 +1295,7 @@ outbig.i: outbig.c.i
 
 # target to preprocess a source file
 outbig.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outbig.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outbig.c.i
 .PHONY : outbig.c.i
 
 outbig.s: outbig.c.s
@@ -1304,7 +1303,7 @@ outbig.s: outbig.c.s
 
 # target to generate assembly for a file
 outbig.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outbig.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outbig.c.s
 .PHONY : outbig.c.s
 
 outgeo.o: outgeo.c.o
@@ -1312,7 +1311,7 @@ outgeo.o: outgeo.c.o
 
 # target to build an object file
 outgeo.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outgeo.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outgeo.c.o
 .PHONY : outgeo.c.o
 
 outgeo.i: outgeo.c.i
@@ -1320,7 +1319,7 @@ outgeo.i: outgeo.c.i
 
 # target to preprocess a source file
 outgeo.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outgeo.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outgeo.c.i
 .PHONY : outgeo.c.i
 
 outgeo.s: outgeo.c.s
@@ -1328,7 +1327,7 @@ outgeo.s: outgeo.c.s
 
 # target to generate assembly for a file
 outgeo.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outgeo.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outgeo.c.s
 .PHONY : outgeo.c.s
 
 outpin.o: outpin.c.o
@@ -1336,7 +1335,7 @@ outpin.o: outpin.c.o
 
 # target to build an object file
 outpin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outpin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outpin.c.o
 .PHONY : outpin.c.o
 
 outpin.i: outpin.c.i
@@ -1344,7 +1343,7 @@ outpin.i: outpin.c.i
 
 # target to preprocess a source file
 outpin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outpin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outpin.c.i
 .PHONY : outpin.c.i
 
 outpin.s: outpin.c.s
@@ -1352,7 +1351,7 @@ outpin.s: outpin.c.s
 
 # target to generate assembly for a file
 outpin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outpin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outpin.c.s
 .PHONY : outpin.c.s
 
 output.o: output.c.o
@@ -1360,7 +1359,7 @@ output.o: output.c.o
 
 # target to build an object file
 output.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/output.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/output.c.o
 .PHONY : output.c.o
 
 output.i: output.c.i
@@ -1368,7 +1367,7 @@ output.i: output.c.i
 
 # target to preprocess a source file
 output.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/output.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/output.c.i
 .PHONY : output.c.i
 
 output.s: output.c.s
@@ -1376,7 +1375,7 @@ output.s: output.c.s
 
 # target to generate assembly for a file
 output.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/output.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/output.c.s
 .PHONY : output.c.s
 
 outsmall.o: outsmall.c.o
@@ -1384,7 +1383,7 @@ outsmall.o: outsmall.c.o
 
 # target to build an object file
 outsmall.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outsmall.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outsmall.c.o
 .PHONY : outsmall.c.o
 
 outsmall.i: outsmall.c.i
@@ -1392,7 +1391,7 @@ outsmall.i: outsmall.c.i
 
 # target to preprocess a source file
 outsmall.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outsmall.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outsmall.c.i
 .PHONY : outsmall.c.i
 
 outsmall.s: outsmall.c.s
@@ -1400,7 +1399,7 @@ outsmall.s: outsmall.c.s
 
 # target to generate assembly for a file
 outsmall.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outsmall.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/outsmall.c.s
 .PHONY : outsmall.c.s
 
 parser.o: parser.c.o
@@ -1408,7 +1407,7 @@ parser.o: parser.c.o
 
 # target to build an object file
 parser.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/parser.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/parser.c.o
 .PHONY : parser.c.o
 
 parser.i: parser.c.i
@@ -1416,7 +1415,7 @@ parser.i: parser.c.i
 
 # target to preprocess a source file
 parser.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/parser.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/parser.c.i
 .PHONY : parser.c.i
 
 parser.s: parser.c.s
@@ -1424,7 +1423,7 @@ parser.s: parser.c.s
 
 # target to generate assembly for a file
 parser.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/parser.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/parser.c.s
 .PHONY : parser.c.s
 
 pass2.o: pass2.c.o
@@ -1432,7 +1431,7 @@ pass2.o: pass2.c.o
 
 # target to build an object file
 pass2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/pass2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/pass2.c.o
 .PHONY : pass2.c.o
 
 pass2.i: pass2.c.i
@@ -1440,7 +1439,7 @@ pass2.i: pass2.c.i
 
 # target to preprocess a source file
 pass2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/pass2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/pass2.c.i
 .PHONY : pass2.c.i
 
 pass2.s: pass2.c.s
@@ -1448,7 +1447,7 @@ pass2.s: pass2.c.s
 
 # target to generate assembly for a file
 pass2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/pass2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/pass2.c.s
 .PHONY : pass2.c.s
 
 perimeter.o: perimeter.c.o
@@ -1456,7 +1455,7 @@ perimeter.o: perimeter.c.o
 
 # target to build an object file
 perimeter.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/perimeter.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/perimeter.c.o
 .PHONY : perimeter.c.o
 
 perimeter.i: perimeter.c.i
@@ -1464,7 +1463,7 @@ perimeter.i: perimeter.c.i
 
 # target to preprocess a source file
 perimeter.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/perimeter.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/perimeter.c.i
 .PHONY : perimeter.c.i
 
 perimeter.s: perimeter.c.s
@@ -1472,7 +1471,7 @@ perimeter.s: perimeter.c.s
 
 # target to generate assembly for a file
 perimeter.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/perimeter.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/perimeter.c.s
 .PHONY : perimeter.c.s
 
 placepads.o: placepads.c.o
@@ -1480,7 +1479,7 @@ placepads.o: placepads.c.o
 
 # target to build an object file
 placepads.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepads.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepads.c.o
 .PHONY : placepads.c.o
 
 placepads.i: placepads.c.i
@@ -1488,7 +1487,7 @@ placepads.i: placepads.c.i
 
 # target to preprocess a source file
 placepads.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepads.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepads.c.i
 .PHONY : placepads.c.i
 
 placepads.s: placepads.c.s
@@ -1496,7 +1495,7 @@ placepads.s: placepads.c.s
 
 # target to generate assembly for a file
 placepads.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepads.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepads.c.s
 .PHONY : placepads.c.s
 
 placepin.o: placepin.c.o
@@ -1504,7 +1503,7 @@ placepin.o: placepin.c.o
 
 # target to build an object file
 placepin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepin.c.o
 .PHONY : placepin.c.o
 
 placepin.i: placepin.c.i
@@ -1512,7 +1511,7 @@ placepin.i: placepin.c.i
 
 # target to preprocess a source file
 placepin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepin.c.i
 .PHONY : placepin.c.i
 
 placepin.s: placepin.c.s
@@ -1520,7 +1519,7 @@ placepin.s: placepin.c.s
 
 # target to generate assembly for a file
 placepin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/placepin.c.s
 .PHONY : placepin.c.s
 
 prboard.o: prboard.c.o
@@ -1528,7 +1527,7 @@ prboard.o: prboard.c.o
 
 # target to build an object file
 prboard.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prboard.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prboard.c.o
 .PHONY : prboard.c.o
 
 prboard.i: prboard.c.i
@@ -1536,7 +1535,7 @@ prboard.i: prboard.c.i
 
 # target to preprocess a source file
 prboard.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prboard.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prboard.c.i
 .PHONY : prboard.c.i
 
 prboard.s: prboard.c.s
@@ -1544,7 +1543,7 @@ prboard.s: prboard.c.s
 
 # target to generate assembly for a file
 prboard.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prboard.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prboard.c.s
 .PHONY : prboard.c.s
 
 prepair.o: prepair.c.o
@@ -1552,7 +1551,7 @@ prepair.o: prepair.c.o
 
 # target to build an object file
 prepair.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prepair.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prepair.c.o
 .PHONY : prepair.c.o
 
 prepair.i: prepair.c.i
@@ -1560,7 +1559,7 @@ prepair.i: prepair.c.i
 
 # target to preprocess a source file
 prepair.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prepair.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prepair.c.i
 .PHONY : prepair.c.i
 
 prepair.s: prepair.c.s
@@ -1568,7 +1567,7 @@ prepair.s: prepair.c.s
 
 # target to generate assembly for a file
 prepair.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prepair.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prepair.c.s
 .PHONY : prepair.c.s
 
 prestrict.o: prestrict.c.o
@@ -1576,7 +1575,7 @@ prestrict.o: prestrict.c.o
 
 # target to build an object file
 prestrict.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prestrict.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prestrict.c.o
 .PHONY : prestrict.c.o
 
 prestrict.i: prestrict.c.i
@@ -1584,7 +1583,7 @@ prestrict.i: prestrict.c.i
 
 # target to preprocess a source file
 prestrict.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prestrict.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prestrict.c.i
 .PHONY : prestrict.c.i
 
 prestrict.s: prestrict.c.s
@@ -1592,7 +1591,7 @@ prestrict.s: prestrict.c.s
 
 # target to generate assembly for a file
 prestrict.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prestrict.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/prestrict.c.s
 .PHONY : prestrict.c.s
 
 printgph.o: printgph.c.o
@@ -1600,7 +1599,7 @@ printgph.o: printgph.c.o
 
 # target to build an object file
 printgph.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printgph.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printgph.c.o
 .PHONY : printgph.c.o
 
 printgph.i: printgph.c.i
@@ -1608,7 +1607,7 @@ printgph.i: printgph.c.i
 
 # target to preprocess a source file
 printgph.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printgph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printgph.c.i
 .PHONY : printgph.c.i
 
 printgph.s: printgph.c.s
@@ -1616,7 +1615,7 @@ printgph.s: printgph.c.s
 
 # target to generate assembly for a file
 printgph.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printgph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printgph.c.s
 .PHONY : printgph.c.s
 
 printnets.o: printnets.c.o
@@ -1624,7 +1623,7 @@ printnets.o: printnets.c.o
 
 # target to build an object file
 printnets.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printnets.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printnets.c.o
 .PHONY : printnets.c.o
 
 printnets.i: printnets.c.i
@@ -1632,7 +1631,7 @@ printnets.i: printnets.c.i
 
 # target to preprocess a source file
 printnets.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printnets.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printnets.c.i
 .PHONY : printnets.c.i
 
 printnets.s: printnets.c.s
@@ -1640,7 +1639,7 @@ printnets.s: printnets.c.s
 
 # target to generate assembly for a file
 printnets.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printnets.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/printnets.c.s
 .PHONY : printnets.c.s
 
 procesnet.o: procesnet.c.o
@@ -1648,7 +1647,7 @@ procesnet.o: procesnet.c.o
 
 # target to build an object file
 procesnet.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/procesnet.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/procesnet.c.o
 .PHONY : procesnet.c.o
 
 procesnet.i: procesnet.c.i
@@ -1656,7 +1655,7 @@ procesnet.i: procesnet.c.i
 
 # target to preprocess a source file
 procesnet.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/procesnet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/procesnet.c.i
 .PHONY : procesnet.c.i
 
 procesnet.s: procesnet.c.s
@@ -1664,7 +1663,7 @@ procesnet.s: procesnet.c.s
 
 # target to generate assembly for a file
 procesnet.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/procesnet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/procesnet.c.s
 .PHONY : procesnet.c.s
 
 readcells.o: readcells.c.o
@@ -1672,7 +1671,7 @@ readcells.o: readcells.c.o
 
 # target to build an object file
 readcells.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readcells.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readcells.c.o
 .PHONY : readcells.c.o
 
 readcells.i: readcells.c.i
@@ -1680,7 +1679,7 @@ readcells.i: readcells.c.i
 
 # target to preprocess a source file
 readcells.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readcells.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readcells.c.i
 .PHONY : readcells.c.i
 
 readcells.s: readcells.c.s
@@ -1688,7 +1687,7 @@ readcells.s: readcells.c.s
 
 # target to generate assembly for a file
 readcells.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readcells.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readcells.c.s
 .PHONY : readcells.c.s
 
 readgeo.o: readgeo.c.o
@@ -1696,7 +1695,7 @@ readgeo.o: readgeo.c.o
 
 # target to build an object file
 readgeo.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgeo.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgeo.c.o
 .PHONY : readgeo.c.o
 
 readgeo.i: readgeo.c.i
@@ -1704,7 +1703,7 @@ readgeo.i: readgeo.c.i
 
 # target to preprocess a source file
 readgeo.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgeo.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgeo.c.i
 .PHONY : readgeo.c.i
 
 readgeo.s: readgeo.c.s
@@ -1712,7 +1711,7 @@ readgeo.s: readgeo.c.s
 
 # target to generate assembly for a file
 readgeo.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgeo.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgeo.c.s
 .PHONY : readgeo.c.s
 
 readgraph.o: readgraph.c.o
@@ -1720,7 +1719,7 @@ readgraph.o: readgraph.c.o
 
 # target to build an object file
 readgraph.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgraph.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgraph.c.o
 .PHONY : readgraph.c.o
 
 readgraph.i: readgraph.c.i
@@ -1728,7 +1727,7 @@ readgraph.i: readgraph.c.i
 
 # target to preprocess a source file
 readgraph.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgraph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgraph.c.i
 .PHONY : readgraph.c.i
 
 readgraph.s: readgraph.c.s
@@ -1736,7 +1735,7 @@ readgraph.s: readgraph.c.s
 
 # target to generate assembly for a file
 readgraph.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgraph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readgraph.c.s
 .PHONY : readgraph.c.s
 
 readnets.o: readnets.c.o
@@ -1744,7 +1743,7 @@ readnets.o: readnets.c.o
 
 # target to build an object file
 readnets.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readnets.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readnets.c.o
 .PHONY : readnets.c.o
 
 readnets.i: readnets.c.i
@@ -1752,7 +1751,7 @@ readnets.i: readnets.c.i
 
 # target to preprocess a source file
 readnets.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readnets.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readnets.c.i
 .PHONY : readnets.c.i
 
 readnets.s: readnets.c.s
@@ -1760,7 +1759,7 @@ readnets.s: readnets.c.s
 
 # target to generate assembly for a file
 readnets.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readnets.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readnets.c.s
 .PHONY : readnets.c.s
 
 readpar.o: readpar.c.o
@@ -1768,7 +1767,7 @@ readpar.o: readpar.c.o
 
 # target to build an object file
 readpar.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpar.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpar.c.o
 .PHONY : readpar.c.o
 
 readpar.i: readpar.c.i
@@ -1776,7 +1775,7 @@ readpar.i: readpar.c.i
 
 # target to preprocess a source file
 readpar.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpar.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpar.c.i
 .PHONY : readpar.c.i
 
 readpar.s: readpar.c.s
@@ -1784,7 +1783,7 @@ readpar.s: readpar.c.s
 
 # target to generate assembly for a file
 readpar.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpar.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpar.c.s
 .PHONY : readpar.c.s
 
 readpnode.o: readpnode.c.o
@@ -1792,7 +1791,7 @@ readpnode.o: readpnode.c.o
 
 # target to build an object file
 readpnode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpnode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpnode.c.o
 .PHONY : readpnode.c.o
 
 readpnode.i: readpnode.c.i
@@ -1800,7 +1799,7 @@ readpnode.i: readpnode.c.i
 
 # target to preprocess a source file
 readpnode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpnode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpnode.c.i
 .PHONY : readpnode.c.i
 
 readpnode.s: readpnode.c.s
@@ -1808,7 +1807,7 @@ readpnode.s: readpnode.c.s
 
 # target to generate assembly for a file
 readpnode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpnode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/readpnode.c.s
 .PHONY : readpnode.c.s
 
 rebin.o: rebin.c.o
@@ -1816,7 +1815,7 @@ rebin.o: rebin.c.o
 
 # target to build an object file
 rebin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rebin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rebin.c.o
 .PHONY : rebin.c.o
 
 rebin.i: rebin.c.i
@@ -1824,7 +1823,7 @@ rebin.i: rebin.c.i
 
 # target to preprocess a source file
 rebin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rebin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rebin.c.i
 .PHONY : rebin.c.i
 
 rebin.s: rebin.c.s
@@ -1832,7 +1831,7 @@ rebin.s: rebin.c.s
 
 # target to generate assembly for a file
 rebin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rebin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rebin.c.s
 .PHONY : rebin.c.s
 
 reduceg.o: reduceg.c.o
@@ -1840,7 +1839,7 @@ reduceg.o: reduceg.c.o
 
 # target to build an object file
 reduceg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/reduceg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/reduceg.c.o
 .PHONY : reduceg.c.o
 
 reduceg.i: reduceg.c.i
@@ -1848,7 +1847,7 @@ reduceg.i: reduceg.c.i
 
 # target to preprocess a source file
 reduceg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/reduceg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/reduceg.c.i
 .PHONY : reduceg.c.i
 
 reduceg.s: reduceg.c.s
@@ -1856,7 +1855,7 @@ reduceg.s: reduceg.c.s
 
 # target to generate assembly for a file
 reduceg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/reduceg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/reduceg.c.s
 .PHONY : reduceg.c.s
 
 rglobals.o: rglobals.c.o
@@ -1864,7 +1863,7 @@ rglobals.o: rglobals.c.o
 
 # target to build an object file
 rglobals.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rglobals.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rglobals.c.o
 .PHONY : rglobals.c.o
 
 rglobals.i: rglobals.c.i
@@ -1872,7 +1871,7 @@ rglobals.i: rglobals.c.i
 
 # target to preprocess a source file
 rglobals.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rglobals.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rglobals.c.i
 .PHONY : rglobals.c.i
 
 rglobals.s: rglobals.c.s
@@ -1880,7 +1879,7 @@ rglobals.s: rglobals.c.s
 
 # target to generate assembly for a file
 rglobals.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rglobals.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rglobals.c.s
 .PHONY : rglobals.c.s
 
 rmain.o: rmain.c.o
@@ -1888,7 +1887,7 @@ rmain.o: rmain.c.o
 
 # target to build an object file
 rmain.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rmain.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rmain.c.o
 .PHONY : rmain.c.o
 
 rmain.i: rmain.c.i
@@ -1896,7 +1895,7 @@ rmain.i: rmain.c.i
 
 # target to preprocess a source file
 rmain.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rmain.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rmain.c.i
 .PHONY : rmain.c.i
 
 rmain.s: rmain.c.s
@@ -1904,7 +1903,7 @@ rmain.s: rmain.c.s
 
 # target to generate assembly for a file
 rmain.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rmain.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/rmain.c.s
 .PHONY : rmain.c.s
 
 routenet.o: routenet.c.o
@@ -1912,7 +1911,7 @@ routenet.o: routenet.c.o
 
 # target to build an object file
 routenet.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/routenet.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/routenet.c.o
 .PHONY : routenet.c.o
 
 routenet.i: routenet.c.i
@@ -1920,7 +1919,7 @@ routenet.i: routenet.c.i
 
 # target to preprocess a source file
 routenet.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/routenet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/routenet.c.i
 .PHONY : routenet.c.i
 
 routenet.s: routenet.c.s
@@ -1928,7 +1927,7 @@ routenet.s: routenet.c.s
 
 # target to generate assembly for a file
 routenet.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/routenet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/routenet.c.s
 .PHONY : routenet.c.s
 
 savewolf.o: savewolf.c.o
@@ -1936,7 +1935,7 @@ savewolf.o: savewolf.c.o
 
 # target to build an object file
 savewolf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/savewolf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/savewolf.c.o
 .PHONY : savewolf.c.o
 
 savewolf.i: savewolf.c.i
@@ -1944,7 +1943,7 @@ savewolf.i: savewolf.c.i
 
 # target to preprocess a source file
 savewolf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/savewolf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/savewolf.c.i
 .PHONY : savewolf.c.i
 
 savewolf.s: savewolf.c.s
@@ -1952,7 +1951,7 @@ savewolf.s: savewolf.c.s
 
 # target to generate assembly for a file
 savewolf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/savewolf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/savewolf.c.s
 .PHONY : savewolf.c.s
 
 scrapnet.o: scrapnet.c.o
@@ -1960,7 +1959,7 @@ scrapnet.o: scrapnet.c.o
 
 # target to build an object file
 scrapnet.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrapnet.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrapnet.c.o
 .PHONY : scrapnet.c.o
 
 scrapnet.i: scrapnet.c.i
@@ -1968,7 +1967,7 @@ scrapnet.i: scrapnet.c.i
 
 # target to preprocess a source file
 scrapnet.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrapnet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrapnet.c.i
 .PHONY : scrapnet.c.i
 
 scrapnet.s: scrapnet.c.s
@@ -1976,7 +1975,7 @@ scrapnet.s: scrapnet.c.s
 
 # target to generate assembly for a file
 scrapnet.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrapnet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrapnet.c.s
 .PHONY : scrapnet.c.s
 
 scrappin.o: scrappin.c.o
@@ -1984,7 +1983,7 @@ scrappin.o: scrappin.c.o
 
 # target to build an object file
 scrappin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrappin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrappin.c.o
 .PHONY : scrappin.c.o
 
 scrappin.i: scrappin.c.i
@@ -1992,7 +1991,7 @@ scrappin.i: scrappin.c.i
 
 # target to preprocess a source file
 scrappin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrappin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrappin.c.i
 .PHONY : scrappin.c.i
 
 scrappin.s: scrappin.c.s
@@ -2000,7 +1999,7 @@ scrappin.s: scrappin.c.s
 
 # target to generate assembly for a file
 scrappin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrappin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/scrappin.c.s
 .PHONY : scrappin.c.s
 
 selectpin.o: selectpin.c.o
@@ -2008,7 +2007,7 @@ selectpin.o: selectpin.c.o
 
 # target to build an object file
 selectpin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/selectpin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/selectpin.c.o
 .PHONY : selectpin.c.o
 
 selectpin.i: selectpin.c.i
@@ -2016,7 +2015,7 @@ selectpin.i: selectpin.c.i
 
 # target to preprocess a source file
 selectpin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/selectpin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/selectpin.c.i
 .PHONY : selectpin.c.i
 
 selectpin.s: selectpin.c.s
@@ -2024,7 +2023,7 @@ selectpin.s: selectpin.c.s
 
 # target to generate assembly for a file
 selectpin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/selectpin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/selectpin.c.s
 .PHONY : selectpin.c.s
 
 setpwates.o: setpwates.c.o
@@ -2032,7 +2031,7 @@ setpwates.o: setpwates.c.o
 
 # target to build an object file
 setpwates.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/setpwates.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/setpwates.c.o
 .PHONY : setpwates.c.o
 
 setpwates.i: setpwates.c.i
@@ -2040,7 +2039,7 @@ setpwates.i: setpwates.c.i
 
 # target to preprocess a source file
 setpwates.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/setpwates.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/setpwates.c.i
 .PHONY : setpwates.c.i
 
 setpwates.s: setpwates.c.s
@@ -2048,7 +2047,7 @@ setpwates.s: setpwates.c.s
 
 # target to generate assembly for a file
 setpwates.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/setpwates.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/setpwates.c.s
 .PHONY : setpwates.c.s
 
 shortpath.o: shortpath.c.o
@@ -2056,7 +2055,7 @@ shortpath.o: shortpath.c.o
 
 # target to build an object file
 shortpath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/shortpath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/shortpath.c.o
 .PHONY : shortpath.c.o
 
 shortpath.i: shortpath.c.i
@@ -2064,7 +2063,7 @@ shortpath.i: shortpath.c.i
 
 # target to preprocess a source file
 shortpath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/shortpath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/shortpath.c.i
 .PHONY : shortpath.c.i
 
 shortpath.s: shortpath.c.s
@@ -2072,7 +2071,7 @@ shortpath.s: shortpath.c.s
 
 # target to generate assembly for a file
 shortpath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/shortpath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/shortpath.c.s
 .PHONY : shortpath.c.s
 
 test2loop.o: test2loop.c.o
@@ -2080,7 +2079,7 @@ test2loop.o: test2loop.c.o
 
 # target to build an object file
 test2loop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/test2loop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/test2loop.c.o
 .PHONY : test2loop.c.o
 
 test2loop.i: test2loop.c.i
@@ -2088,7 +2087,7 @@ test2loop.i: test2loop.c.i
 
 # target to preprocess a source file
 test2loop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/test2loop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/test2loop.c.i
 .PHONY : test2loop.c.i
 
 test2loop.s: test2loop.c.s
@@ -2096,7 +2095,7 @@ test2loop.s: test2loop.c.s
 
 # target to generate assembly for a file
 test2loop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/test2loop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/test2loop.c.s
 .PHONY : test2loop.c.s
 
 testloop.o: testloop.c.o
@@ -2104,7 +2103,7 @@ testloop.o: testloop.c.o
 
 # target to build an object file
 testloop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/testloop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/testloop.c.o
 .PHONY : testloop.c.o
 
 testloop.i: testloop.c.i
@@ -2112,7 +2111,7 @@ testloop.i: testloop.c.i
 
 # target to preprocess a source file
 testloop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/testloop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/testloop.c.i
 .PHONY : testloop.c.i
 
 testloop.s: testloop.c.s
@@ -2120,7 +2119,7 @@ testloop.s: testloop.c.s
 
 # target to generate assembly for a file
 testloop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/testloop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/testloop.c.s
 .PHONY : testloop.c.s
 
 twstats.o: twstats.c.o
@@ -2128,7 +2127,7 @@ twstats.o: twstats.c.o
 
 # target to build an object file
 twstats.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/twstats.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/twstats.c.o
 .PHONY : twstats.c.o
 
 twstats.i: twstats.c.i
@@ -2136,7 +2135,7 @@ twstats.i: twstats.c.i
 
 # target to preprocess a source file
 twstats.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/twstats.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/twstats.c.i
 .PHONY : twstats.c.i
 
 twstats.s: twstats.c.s
@@ -2144,7 +2143,7 @@ twstats.s: twstats.c.s
 
 # target to generate assembly for a file
 twstats.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/twstats.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/twstats.c.s
 .PHONY : twstats.c.s
 
 uaspect.o: uaspect.c.o
@@ -2152,7 +2151,7 @@ uaspect.o: uaspect.c.o
 
 # target to build an object file
 uaspect.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uaspect.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uaspect.c.o
 .PHONY : uaspect.c.o
 
 uaspect.i: uaspect.c.i
@@ -2160,7 +2159,7 @@ uaspect.i: uaspect.c.i
 
 # target to preprocess a source file
 uaspect.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uaspect.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uaspect.c.i
 .PHONY : uaspect.c.i
 
 uaspect.s: uaspect.c.s
@@ -2168,7 +2167,7 @@ uaspect.s: uaspect.c.s
 
 # target to generate assembly for a file
 uaspect.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uaspect.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uaspect.c.s
 .PHONY : uaspect.c.s
 
 ufixnet.o: ufixnet.c.o
@@ -2176,7 +2175,7 @@ ufixnet.o: ufixnet.c.o
 
 # target to build an object file
 ufixnet.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixnet.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixnet.c.o
 .PHONY : ufixnet.c.o
 
 ufixnet.i: ufixnet.c.i
@@ -2184,7 +2183,7 @@ ufixnet.i: ufixnet.c.i
 
 # target to preprocess a source file
 ufixnet.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixnet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixnet.c.i
 .PHONY : ufixnet.c.i
 
 ufixnet.s: ufixnet.c.s
@@ -2192,7 +2191,7 @@ ufixnet.s: ufixnet.c.s
 
 # target to generate assembly for a file
 ufixnet.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixnet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixnet.c.s
 .PHONY : ufixnet.c.s
 
 ufixpin.o: ufixpin.c.o
@@ -2200,7 +2199,7 @@ ufixpin.o: ufixpin.c.o
 
 # target to build an object file
 ufixpin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixpin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixpin.c.o
 .PHONY : ufixpin.c.o
 
 ufixpin.i: ufixpin.c.i
@@ -2208,7 +2207,7 @@ ufixpin.i: ufixpin.c.i
 
 # target to preprocess a source file
 ufixpin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixpin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixpin.c.i
 .PHONY : ufixpin.c.i
 
 ufixpin.s: ufixpin.c.s
@@ -2216,7 +2215,7 @@ ufixpin.s: ufixpin.c.s
 
 # target to generate assembly for a file
 ufixpin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixpin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ufixpin.c.s
 .PHONY : ufixpin.c.s
 
 uloop.o: uloop.c.o
@@ -2224,7 +2223,7 @@ uloop.o: uloop.c.o
 
 # target to build an object file
 uloop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uloop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uloop.c.o
 .PHONY : uloop.c.o
 
 uloop.i: uloop.c.i
@@ -2232,7 +2231,7 @@ uloop.i: uloop.c.i
 
 # target to preprocess a source file
 uloop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uloop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uloop.c.i
 .PHONY : uloop.c.i
 
 uloop.s: uloop.c.s
@@ -2240,7 +2239,7 @@ uloop.s: uloop.c.s
 
 # target to generate assembly for a file
 uloop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uloop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/uloop.c.s
 .PHONY : uloop.c.s
 
 unbust.o: unbust.c.o
@@ -2248,7 +2247,7 @@ unbust.o: unbust.c.o
 
 # target to build an object file
 unbust.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/unbust.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/unbust.c.o
 .PHONY : unbust.c.o
 
 unbust.i: unbust.c.i
@@ -2256,7 +2255,7 @@ unbust.i: unbust.c.i
 
 # target to preprocess a source file
 unbust.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/unbust.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/unbust.c.i
 .PHONY : unbust.c.i
 
 unbust.s: unbust.c.s
@@ -2264,7 +2263,7 @@ unbust.s: unbust.c.s
 
 # target to generate assembly for a file
 unbust.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/unbust.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/unbust.c.s
 .PHONY : unbust.c.s
 
 upin.o: upin.c.o
@@ -2272,7 +2271,7 @@ upin.o: upin.c.o
 
 # target to build an object file
 upin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upin.c.o
 .PHONY : upin.c.o
 
 upin.i: upin.c.i
@@ -2280,7 +2279,7 @@ upin.i: upin.c.i
 
 # target to preprocess a source file
 upin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upin.c.i
 .PHONY : upin.c.i
 
 upin.s: upin.c.s
@@ -2288,7 +2287,7 @@ upin.s: upin.c.s
 
 # target to generate assembly for a file
 upin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upin.c.s
 .PHONY : upin.c.s
 
 upinswap.o: upinswap.c.o
@@ -2296,7 +2295,7 @@ upinswap.o: upinswap.c.o
 
 # target to build an object file
 upinswap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upinswap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upinswap.c.o
 .PHONY : upinswap.c.o
 
 upinswap.i: upinswap.c.i
@@ -2304,7 +2303,7 @@ upinswap.i: upinswap.c.i
 
 # target to preprocess a source file
 upinswap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upinswap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upinswap.c.i
 .PHONY : upinswap.c.i
 
 upinswap.s: upinswap.c.s
@@ -2312,7 +2311,7 @@ upinswap.s: upinswap.c.s
 
 # target to generate assembly for a file
 upinswap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upinswap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/upinswap.c.s
 .PHONY : upinswap.c.s
 
 usite0.o: usite0.c.o
@@ -2320,7 +2319,7 @@ usite0.o: usite0.c.o
 
 # target to build an object file
 usite0.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite0.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite0.c.o
 .PHONY : usite0.c.o
 
 usite0.i: usite0.c.i
@@ -2328,7 +2327,7 @@ usite0.i: usite0.c.i
 
 # target to preprocess a source file
 usite0.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite0.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite0.c.i
 .PHONY : usite0.c.i
 
 usite0.s: usite0.c.s
@@ -2336,7 +2335,7 @@ usite0.s: usite0.c.s
 
 # target to generate assembly for a file
 usite0.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite0.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite0.c.s
 .PHONY : usite0.c.s
 
 usite1.o: usite1.c.o
@@ -2344,7 +2343,7 @@ usite1.o: usite1.c.o
 
 # target to build an object file
 usite1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite1.c.o
 .PHONY : usite1.c.o
 
 usite1.i: usite1.c.i
@@ -2352,7 +2351,7 @@ usite1.i: usite1.c.i
 
 # target to preprocess a source file
 usite1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite1.c.i
 .PHONY : usite1.c.i
 
 usite1.s: usite1.c.s
@@ -2360,7 +2359,7 @@ usite1.s: usite1.c.s
 
 # target to generate assembly for a file
 usite1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite1.c.s
 .PHONY : usite1.c.s
 
 usite2.o: usite2.c.o
@@ -2368,7 +2367,7 @@ usite2.o: usite2.c.o
 
 # target to build an object file
 usite2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite2.c.o
 .PHONY : usite2.c.o
 
 usite2.i: usite2.c.i
@@ -2376,7 +2375,7 @@ usite2.i: usite2.c.i
 
 # target to preprocess a source file
 usite2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite2.c.i
 .PHONY : usite2.c.i
 
 usite2.s: usite2.c.s
@@ -2384,7 +2383,7 @@ usite2.s: usite2.c.s
 
 # target to generate assembly for a file
 usite2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usite2.c.s
 .PHONY : usite2.c.s
 
 usiteo1.o: usiteo1.c.o
@@ -2392,7 +2391,7 @@ usiteo1.o: usiteo1.c.o
 
 # target to build an object file
 usiteo1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo1.c.o
 .PHONY : usiteo1.c.o
 
 usiteo1.i: usiteo1.c.i
@@ -2400,7 +2399,7 @@ usiteo1.i: usiteo1.c.i
 
 # target to preprocess a source file
 usiteo1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo1.c.i
 .PHONY : usiteo1.c.i
 
 usiteo1.s: usiteo1.c.s
@@ -2408,7 +2407,7 @@ usiteo1.s: usiteo1.c.s
 
 # target to generate assembly for a file
 usiteo1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo1.c.s
 .PHONY : usiteo1.c.s
 
 usiteo2.o: usiteo2.c.o
@@ -2416,7 +2415,7 @@ usiteo2.o: usiteo2.c.o
 
 # target to build an object file
 usiteo2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo2.c.o
 .PHONY : usiteo2.c.o
 
 usiteo2.i: usiteo2.c.i
@@ -2424,7 +2423,7 @@ usiteo2.i: usiteo2.c.i
 
 # target to preprocess a source file
 usiteo2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo2.c.i
 .PHONY : usiteo2.c.i
 
 usiteo2.s: usiteo2.c.s
@@ -2432,7 +2431,7 @@ usiteo2.s: usiteo2.c.s
 
 # target to generate assembly for a file
 usiteo2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usiteo2.c.s
 .PHONY : usiteo2.c.s
 
 usoftnet.o: usoftnet.c.o
@@ -2440,7 +2439,7 @@ usoftnet.o: usoftnet.c.o
 
 # target to build an object file
 usoftnet.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftnet.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftnet.c.o
 .PHONY : usoftnet.c.o
 
 usoftnet.i: usoftnet.c.i
@@ -2448,7 +2447,7 @@ usoftnet.i: usoftnet.c.i
 
 # target to preprocess a source file
 usoftnet.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftnet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftnet.c.i
 .PHONY : usoftnet.c.i
 
 usoftnet.s: usoftnet.c.s
@@ -2456,7 +2455,7 @@ usoftnet.s: usoftnet.c.s
 
 # target to generate assembly for a file
 usoftnet.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftnet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftnet.c.s
 .PHONY : usoftnet.c.s
 
 usoftpin.o: usoftpin.c.o
@@ -2464,7 +2463,7 @@ usoftpin.o: usoftpin.c.o
 
 # target to build an object file
 usoftpin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftpin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftpin.c.o
 .PHONY : usoftpin.c.o
 
 usoftpin.i: usoftpin.c.i
@@ -2472,7 +2471,7 @@ usoftpin.i: usoftpin.c.i
 
 # target to preprocess a source file
 usoftpin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftpin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftpin.c.i
 .PHONY : usoftpin.c.i
 
 usoftpin.s: usoftpin.c.s
@@ -2480,7 +2479,7 @@ usoftpin.s: usoftpin.c.s
 
 # target to generate assembly for a file
 usoftpin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftpin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/usoftpin.c.s
 .PHONY : usoftpin.c.s
 
 utemp.o: utemp.c.o
@@ -2488,7 +2487,7 @@ utemp.o: utemp.c.o
 
 # target to build an object file
 utemp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/utemp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/utemp.c.o
 .PHONY : utemp.c.o
 
 utemp.i: utemp.c.i
@@ -2496,7 +2495,7 @@ utemp.i: utemp.c.i
 
 # target to preprocess a source file
 utemp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/utemp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/utemp.c.i
 .PHONY : utemp.c.i
 
 utemp.s: utemp.c.s
@@ -2504,7 +2503,7 @@ utemp.s: utemp.c.s
 
 # target to generate assembly for a file
 utemp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/utemp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/utemp.c.s
 .PHONY : utemp.c.s
 
 vprobes.o: vprobes.c.o
@@ -2512,7 +2511,7 @@ vprobes.o: vprobes.c.o
 
 # target to build an object file
 vprobes.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/vprobes.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/vprobes.c.o
 .PHONY : vprobes.c.o
 
 vprobes.i: vprobes.c.i
@@ -2520,7 +2519,7 @@ vprobes.i: vprobes.c.i
 
 # target to preprocess a source file
 vprobes.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/vprobes.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/vprobes.c.i
 .PHONY : vprobes.c.i
 
 vprobes.s: vprobes.c.s
@@ -2528,7 +2527,7 @@ vprobes.s: vprobes.c.s
 
 # target to generate assembly for a file
 vprobes.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/vprobes.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/vprobes.c.s
 .PHONY : vprobes.c.s
 
 watesides.o: watesides.c.o
@@ -2536,7 +2535,7 @@ watesides.o: watesides.c.o
 
 # target to build an object file
 watesides.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/watesides.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/watesides.c.o
 .PHONY : watesides.c.o
 
 watesides.i: watesides.c.i
@@ -2544,7 +2543,7 @@ watesides.i: watesides.c.i
 
 # target to preprocess a source file
 watesides.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/watesides.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/watesides.c.i
 .PHONY : watesides.c.i
 
 watesides.s: watesides.c.s
@@ -2552,7 +2551,7 @@ watesides.s: watesides.c.s
 
 # target to generate assembly for a file
 watesides.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/watesides.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/watesides.c.s
 .PHONY : watesides.c.s
 
 wirecosts.o: wirecosts.c.o
@@ -2560,7 +2559,7 @@ wirecosts.o: wirecosts.c.o
 
 # target to build an object file
 wirecosts.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wirecosts.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wirecosts.c.o
 .PHONY : wirecosts.c.o
 
 wirecosts.i: wirecosts.c.i
@@ -2568,7 +2567,7 @@ wirecosts.i: wirecosts.c.i
 
 # target to preprocess a source file
 wirecosts.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wirecosts.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wirecosts.c.i
 .PHONY : wirecosts.c.i
 
 wirecosts.s: wirecosts.c.s
@@ -2576,7 +2575,7 @@ wirecosts.s: wirecosts.c.s
 
 # target to generate assembly for a file
 wirecosts.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wirecosts.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wirecosts.c.s
 .PHONY : wirecosts.c.s
 
 wireest.o: wireest.c.o
@@ -2584,7 +2583,7 @@ wireest.o: wireest.c.o
 
 # target to build an object file
 wireest.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireest.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireest.c.o
 .PHONY : wireest.c.o
 
 wireest.i: wireest.c.i
@@ -2592,7 +2591,7 @@ wireest.i: wireest.c.i
 
 # target to preprocess a source file
 wireest.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireest.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireest.c.i
 .PHONY : wireest.c.i
 
 wireest.s: wireest.c.s
@@ -2600,7 +2599,7 @@ wireest.s: wireest.c.s
 
 # target to generate assembly for a file
 wireest.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireest.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireest.c.s
 .PHONY : wireest.c.s
 
 wireratio.o: wireratio.c.o
@@ -2608,7 +2607,7 @@ wireratio.o: wireratio.c.o
 
 # target to build an object file
 wireratio.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireratio.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireratio.c.o
 .PHONY : wireratio.c.o
 
 wireratio.i: wireratio.c.i
@@ -2616,7 +2615,7 @@ wireratio.i: wireratio.c.i
 
 # target to preprocess a source file
 wireratio.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireratio.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireratio.c.i
 .PHONY : wireratio.c.i
 
 wireratio.s: wireratio.c.s
@@ -2624,7 +2623,7 @@ wireratio.s: wireratio.c.s
 
 # target to generate assembly for a file
 wireratio.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireratio.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/wireratio.c.s
 .PHONY : wireratio.c.s
 
 woverlap.o: woverlap.c.o
@@ -2632,7 +2631,7 @@ woverlap.o: woverlap.c.o
 
 # target to build an object file
 woverlap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlap.c.o
 .PHONY : woverlap.c.o
 
 woverlap.i: woverlap.c.i
@@ -2640,7 +2639,7 @@ woverlap.i: woverlap.c.i
 
 # target to preprocess a source file
 woverlap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlap.c.i
 .PHONY : woverlap.c.i
 
 woverlap.s: woverlap.c.s
@@ -2648,7 +2647,7 @@ woverlap.s: woverlap.c.s
 
 # target to generate assembly for a file
 woverlap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlap.c.s
 .PHONY : woverlap.c.s
 
 woverlapf.o: woverlapf.c.o
@@ -2656,7 +2655,7 @@ woverlapf.o: woverlapf.c.o
 
 # target to build an object file
 woverlapf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapf.c.o
 .PHONY : woverlapf.c.o
 
 woverlapf.i: woverlapf.c.i
@@ -2664,7 +2663,7 @@ woverlapf.i: woverlapf.c.i
 
 # target to preprocess a source file
 woverlapf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapf.c.i
 .PHONY : woverlapf.c.i
 
 woverlapf.s: woverlapf.c.s
@@ -2672,7 +2671,7 @@ woverlapf.s: woverlapf.c.s
 
 # target to generate assembly for a file
 woverlapf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapf.c.s
 .PHONY : woverlapf.c.s
 
 woverlapx.o: woverlapx.c.o
@@ -2680,7 +2679,7 @@ woverlapx.o: woverlapx.c.o
 
 # target to build an object file
 woverlapx.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapx.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapx.c.o
 .PHONY : woverlapx.c.o
 
 woverlapx.i: woverlapx.c.i
@@ -2688,7 +2687,7 @@ woverlapx.i: woverlapx.c.i
 
 # target to preprocess a source file
 woverlapx.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapx.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapx.c.i
 .PHONY : woverlapx.c.i
 
 woverlapx.s: woverlapx.c.s
@@ -2696,7 +2695,7 @@ woverlapx.s: woverlapx.c.s
 
 # target to generate assembly for a file
 woverlapx.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapx.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/woverlapx.c.s
 .PHONY : woverlapx.c.s
 
 xgraph.o: xgraph.c.o
@@ -2704,7 +2703,7 @@ xgraph.o: xgraph.c.o
 
 # target to build an object file
 xgraph.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/xgraph.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/xgraph.c.o
 .PHONY : xgraph.c.o
 
 xgraph.i: xgraph.c.i
@@ -2712,7 +2711,7 @@ xgraph.i: xgraph.c.i
 
 # target to preprocess a source file
 xgraph.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/xgraph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/xgraph.c.i
 .PHONY : xgraph.c.i
 
 xgraph.s: xgraph.c.s
@@ -2720,7 +2719,7 @@ xgraph.s: xgraph.c.s
 
 # target to generate assembly for a file
 xgraph.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/xgraph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/xgraph.c.s
 .PHONY : xgraph.c.s
 
 ygraph.o: ygraph.c.o
@@ -2728,7 +2727,7 @@ ygraph.o: ygraph.c.o
 
 # target to build an object file
 ygraph.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ygraph.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ygraph.c.o
 .PHONY : ygraph.c.o
 
 ygraph.i: ygraph.c.i
@@ -2736,7 +2735,7 @@ ygraph.i: ygraph.c.i
 
 # target to preprocess a source file
 ygraph.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ygraph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ygraph.c.i
 .PHONY : ygraph.c.i
 
 ygraph.s: ygraph.c.s
@@ -2744,7 +2743,7 @@ ygraph.s: ygraph.c.s
 
 # target to generate assembly for a file
 ygraph.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ygraph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/build.make MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/CMakeFiles/timberwolfmc.dir/ygraph.c.s
 .PHONY : ygraph.c.s
 
 # Help Target
@@ -3094,7 +3093,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

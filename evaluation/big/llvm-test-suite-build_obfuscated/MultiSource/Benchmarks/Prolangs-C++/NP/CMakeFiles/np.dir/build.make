@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/flags.make
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o: MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/flags.make
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o: MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/np.dir/NP.cpp.o.time /usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o -MF CMakeFiles/np.dir/NP.cpp.o.d -o CMakeFiles/np.dir/NP.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/np.dir/NP.cpp.o.time /usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o -MF CMakeFiles/np.dir/NP.cpp.o.d -o CMakeFiles/np.dir/NP.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp
 
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/np.dir/NP.cpp.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp > CMakeFiles/np.dir/NP.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp > CMakeFiles/np.dir/NP.cpp.i
 
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/np.dir/NP.cpp.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp -o CMakeFiles/np.dir/NP.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/NP.cpp -o CMakeFiles/np.dir/NP.cpp.s
 
 # Object files for target np
 np_OBJECTS = \
@@ -93,20 +93,20 @@ np_EXTERNAL_OBJECTS =
 MultiSource/Benchmarks/Prolangs-C++/NP/np: MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/NP.cpp.o
 MultiSource/Benchmarks/Prolangs-C++/NP/np: MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/build.make
 MultiSource/Benchmarks/Prolangs-C++/NP/np: MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable np"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/np.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/np.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable np"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/np.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP/np.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/build: MultiSource/Benchmarks/Prolangs-C++/NP/np
 .PHONY : MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/build
 
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && $(CMAKE_COMMAND) -P CMakeFiles/np.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP && $(CMAKE_COMMAND) -P CMakeFiles/np.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/clean
 
 MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Prolangs-C++/NP /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Prolangs-C++/NP/CMakeFiles/np.dir/depend
 

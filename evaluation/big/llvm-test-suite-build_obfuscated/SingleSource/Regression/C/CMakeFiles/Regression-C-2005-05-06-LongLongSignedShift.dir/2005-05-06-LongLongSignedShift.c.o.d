@@ -1,2 +1,0 @@
-SingleSource/Regression/C/CMakeFiles/Regression-C-2005-05-06-LongLongSignedShift.dir/2005-05-06-LongLongSignedShift.c.o: \
-  /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/SingleSource/Regression/C/2005-05-06-LongLongSignedShift.c

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/office-stringsearch//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/office-stringsearch//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/rule
 .PHONY : MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ office-stringsearch: MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFil
 
 # fast build rule for target.
 office-stringsearch/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build
 .PHONY : office-stringsearch/fast
 
 bmhasrch.o: bmhasrch.c.o
@@ -136,7 +135,7 @@ bmhasrch.o: bmhasrch.c.o
 
 # target to build an object file
 bmhasrch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhasrch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhasrch.c.o
 .PHONY : bmhasrch.c.o
 
 bmhasrch.i: bmhasrch.c.i
@@ -144,7 +143,7 @@ bmhasrch.i: bmhasrch.c.i
 
 # target to preprocess a source file
 bmhasrch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhasrch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhasrch.c.i
 .PHONY : bmhasrch.c.i
 
 bmhasrch.s: bmhasrch.c.s
@@ -152,7 +151,7 @@ bmhasrch.s: bmhasrch.c.s
 
 # target to generate assembly for a file
 bmhasrch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhasrch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhasrch.c.s
 .PHONY : bmhasrch.c.s
 
 bmhisrch.o: bmhisrch.c.o
@@ -160,7 +159,7 @@ bmhisrch.o: bmhisrch.c.o
 
 # target to build an object file
 bmhisrch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhisrch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhisrch.c.o
 .PHONY : bmhisrch.c.o
 
 bmhisrch.i: bmhisrch.c.i
@@ -168,7 +167,7 @@ bmhisrch.i: bmhisrch.c.i
 
 # target to preprocess a source file
 bmhisrch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhisrch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhisrch.c.i
 .PHONY : bmhisrch.c.i
 
 bmhisrch.s: bmhisrch.c.s
@@ -176,7 +175,7 @@ bmhisrch.s: bmhisrch.c.s
 
 # target to generate assembly for a file
 bmhisrch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhisrch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhisrch.c.s
 .PHONY : bmhisrch.c.s
 
 bmhsrch.o: bmhsrch.c.o
@@ -184,7 +183,7 @@ bmhsrch.o: bmhsrch.c.o
 
 # target to build an object file
 bmhsrch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhsrch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhsrch.c.o
 .PHONY : bmhsrch.c.o
 
 bmhsrch.i: bmhsrch.c.i
@@ -192,7 +191,7 @@ bmhsrch.i: bmhsrch.c.i
 
 # target to preprocess a source file
 bmhsrch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhsrch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhsrch.c.i
 .PHONY : bmhsrch.c.i
 
 bmhsrch.s: bmhsrch.c.s
@@ -200,7 +199,7 @@ bmhsrch.s: bmhsrch.c.s
 
 # target to generate assembly for a file
 bmhsrch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhsrch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/bmhsrch.c.s
 .PHONY : bmhsrch.c.s
 
 pbmsrch.o: pbmsrch.c.o
@@ -208,7 +207,7 @@ pbmsrch.o: pbmsrch.c.o
 
 # target to build an object file
 pbmsrch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/pbmsrch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/pbmsrch.c.o
 .PHONY : pbmsrch.c.o
 
 pbmsrch.i: pbmsrch.c.i
@@ -216,7 +215,7 @@ pbmsrch.i: pbmsrch.c.i
 
 # target to preprocess a source file
 pbmsrch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/pbmsrch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/pbmsrch.c.i
 .PHONY : pbmsrch.c.i
 
 pbmsrch.s: pbmsrch.c.s
@@ -224,7 +223,7 @@ pbmsrch.s: pbmsrch.c.s
 
 # target to generate assembly for a file
 pbmsrch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/pbmsrch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/build.make MultiSource/Benchmarks/MiBench/office-stringsearch/CMakeFiles/office-stringsearch.dir/pbmsrch.c.s
 .PHONY : pbmsrch.c.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

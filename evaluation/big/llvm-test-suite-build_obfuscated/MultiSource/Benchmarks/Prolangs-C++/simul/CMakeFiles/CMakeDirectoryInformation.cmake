@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/3mm 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/3mm.reference_output

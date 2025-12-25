@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pcompress2//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pcompress2//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/rule
 .PHONY : MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ pcompress2: MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.di
 
 # fast build rule for target.
 pcompress2/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build
 .PHONY : pcompress2/fast
 
 arithmetic.o: arithmetic.c.o
@@ -136,7 +135,7 @@ arithmetic.o: arithmetic.c.o
 
 # target to build an object file
 arithmetic.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/arithmetic.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/arithmetic.c.o
 .PHONY : arithmetic.c.o
 
 arithmetic.i: arithmetic.c.i
@@ -144,7 +143,7 @@ arithmetic.i: arithmetic.c.i
 
 # target to preprocess a source file
 arithmetic.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/arithmetic.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/arithmetic.c.i
 .PHONY : arithmetic.c.i
 
 arithmetic.s: arithmetic.c.s
@@ -152,7 +151,7 @@ arithmetic.s: arithmetic.c.s
 
 # target to generate assembly for a file
 arithmetic.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/arithmetic.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/arithmetic.c.s
 .PHONY : arithmetic.c.s
 
 compress.o: compress.c.o
@@ -160,7 +159,7 @@ compress.o: compress.c.o
 
 # target to build an object file
 compress.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/compress.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/compress.c.o
 .PHONY : compress.c.o
 
 compress.i: compress.c.i
@@ -168,7 +167,7 @@ compress.i: compress.c.i
 
 # target to preprocess a source file
 compress.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/compress.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/compress.c.i
 .PHONY : compress.c.i
 
 compress.s: compress.c.s
@@ -176,7 +175,7 @@ compress.s: compress.c.s
 
 # target to generate assembly for a file
 compress.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/compress.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/compress.c.s
 .PHONY : compress.c.s
 
 pcompress2.o: pcompress2.c.o
@@ -184,7 +183,7 @@ pcompress2.o: pcompress2.c.o
 
 # target to build an object file
 pcompress2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/pcompress2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/pcompress2.c.o
 .PHONY : pcompress2.c.o
 
 pcompress2.i: pcompress2.c.i
@@ -192,7 +191,7 @@ pcompress2.i: pcompress2.c.i
 
 # target to preprocess a source file
 pcompress2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/pcompress2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/pcompress2.c.i
 .PHONY : pcompress2.c.i
 
 pcompress2.s: pcompress2.c.s
@@ -200,7 +199,7 @@ pcompress2.s: pcompress2.c.s
 
 # target to generate assembly for a file
 pcompress2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/pcompress2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/pcompress2.c.s
 .PHONY : pcompress2.c.s
 
 unarithmetic.o: unarithmetic.c.o
@@ -208,7 +207,7 @@ unarithmetic.o: unarithmetic.c.o
 
 # target to build an object file
 unarithmetic.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/unarithmetic.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/unarithmetic.c.o
 .PHONY : unarithmetic.c.o
 
 unarithmetic.i: unarithmetic.c.i
@@ -216,7 +215,7 @@ unarithmetic.i: unarithmetic.c.i
 
 # target to preprocess a source file
 unarithmetic.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/unarithmetic.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/unarithmetic.c.i
 .PHONY : unarithmetic.c.i
 
 unarithmetic.s: unarithmetic.c.s
@@ -224,7 +223,7 @@ unarithmetic.s: unarithmetic.c.s
 
 # target to generate assembly for a file
 unarithmetic.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/unarithmetic.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/unarithmetic.c.s
 .PHONY : unarithmetic.c.s
 
 uncompress.o: uncompress.c.o
@@ -232,7 +231,7 @@ uncompress.o: uncompress.c.o
 
 # target to build an object file
 uncompress.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/uncompress.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/uncompress.c.o
 .PHONY : uncompress.c.o
 
 uncompress.i: uncompress.c.i
@@ -240,7 +239,7 @@ uncompress.i: uncompress.c.i
 
 # target to preprocess a source file
 uncompress.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/uncompress.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/uncompress.c.i
 .PHONY : uncompress.c.i
 
 uncompress.s: uncompress.c.s
@@ -248,7 +247,7 @@ uncompress.s: uncompress.c.s
 
 # target to generate assembly for a file
 uncompress.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/uncompress.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/build.make MultiSource/Benchmarks/FreeBench/pcompress2/CMakeFiles/pcompress2.dir/uncompress.c.s
 .PHONY : uncompress.c.s
 
 # Help Target
@@ -286,7 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

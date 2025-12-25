@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-adpcm/telecomm-adpcm  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-adpcm/telecomm-adpcm  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     96    4128
 .plt.got                  8    4224
-.text                  2131    4240
-.fini                    13    6372
-.rodata                 887    8192
-.eh_frame_hdr            60    9080
-.eh_frame               252    9144
+.text                  2147    4240
+.fini                    13    6388
+.rodata                 823    8192
+.eh_frame_hdr            60    9016
+.eh_frame               292    9080
 .init_array               8   15800
 .fini_array               8   15808
 .dynamic                496   15816
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   16424
 .bss                   2536   16448
 .comment                 82       0
-Total                  7776
+Total                  7768
 
 

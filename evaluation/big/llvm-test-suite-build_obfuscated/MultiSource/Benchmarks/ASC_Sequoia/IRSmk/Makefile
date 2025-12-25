@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/IRSmk//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/IRSmk//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rule
 .PHONY : MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ IRSmk: MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rule
 
 # fast build rule for target.
 IRSmk/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build
 .PHONY : IRSmk/fast
 
 main.o: main.c.o
@@ -136,7 +135,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -144,7 +143,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -152,7 +151,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/main.c.s
 .PHONY : main.c.s
 
 rmatmult3.o: rmatmult3.c.o
@@ -160,7 +159,7 @@ rmatmult3.o: rmatmult3.c.o
 
 # target to build an object file
 rmatmult3.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rmatmult3.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rmatmult3.c.o
 .PHONY : rmatmult3.c.o
 
 rmatmult3.i: rmatmult3.c.i
@@ -168,7 +167,7 @@ rmatmult3.i: rmatmult3.c.i
 
 # target to preprocess a source file
 rmatmult3.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rmatmult3.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rmatmult3.c.i
 .PHONY : rmatmult3.c.i
 
 rmatmult3.s: rmatmult3.c.s
@@ -176,7 +175,7 @@ rmatmult3.s: rmatmult3.c.s
 
 # target to generate assembly for a file
 rmatmult3.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rmatmult3.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/rmatmult3.c.s
 .PHONY : rmatmult3.c.s
 
 utility.o: utility.c.o
@@ -184,7 +183,7 @@ utility.o: utility.c.o
 
 # target to build an object file
 utility.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/utility.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/utility.c.o
 .PHONY : utility.c.o
 
 utility.i: utility.c.i
@@ -192,7 +191,7 @@ utility.i: utility.c.i
 
 # target to preprocess a source file
 utility.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/utility.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/utility.c.i
 .PHONY : utility.c.i
 
 utility.s: utility.c.s
@@ -200,7 +199,7 @@ utility.s: utility.c.s
 
 # target to generate assembly for a file
 utility.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/utility.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/IRSmk/CMakeFiles/IRSmk.dir/utility.c.s
 .PHONY : utility.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

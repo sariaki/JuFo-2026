@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/depend.make
@@ -72,72 +72,72 @@ include MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/flags.make
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/flags.make
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/Fheap.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o -MF CMakeFiles/ft.dir/Fheap.c.o.d -o CMakeFiles/ft.dir/Fheap.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/Fheap.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.o -MF CMakeFiles/ft.dir/Fheap.c.o.d -o CMakeFiles/ft.dir/Fheap.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ft.dir/Fheap.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c > CMakeFiles/ft.dir/Fheap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c > CMakeFiles/ft.dir/Fheap.c.i
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fheap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ft.dir/Fheap.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c -o CMakeFiles/ft.dir/Fheap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fheap.c -o CMakeFiles/ft.dir/Fheap.c.s
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/flags.make
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/Fsanity.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o -MF CMakeFiles/ft.dir/Fsanity.c.o.d -o CMakeFiles/ft.dir/Fsanity.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/Fsanity.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.o -MF CMakeFiles/ft.dir/Fsanity.c.o.d -o CMakeFiles/ft.dir/Fsanity.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ft.dir/Fsanity.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c > CMakeFiles/ft.dir/Fsanity.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c > CMakeFiles/ft.dir/Fsanity.c.i
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/Fsanity.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ft.dir/Fsanity.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c -o CMakeFiles/ft.dir/Fsanity.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/Fsanity.c -o CMakeFiles/ft.dir/Fsanity.c.s
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/flags.make
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/ft.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o -MF CMakeFiles/ft.dir/ft.c.o.d -o CMakeFiles/ft.dir/ft.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/ft.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.o -MF CMakeFiles/ft.dir/ft.c.o.d -o CMakeFiles/ft.dir/ft.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ft.dir/ft.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c > CMakeFiles/ft.dir/ft.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c > CMakeFiles/ft.dir/ft.c.i
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/ft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ft.dir/ft.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c -o CMakeFiles/ft.dir/ft.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.c -o CMakeFiles/ft.dir/ft.c.s
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/flags.make
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/graph.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o -MF CMakeFiles/ft.dir/graph.c.o.d -o CMakeFiles/ft.dir/graph.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/graph.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.o -MF CMakeFiles/ft.dir/graph.c.o.d -o CMakeFiles/ft.dir/graph.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ft.dir/graph.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c > CMakeFiles/ft.dir/graph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c > CMakeFiles/ft.dir/graph.c.i
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ft.dir/graph.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c -o CMakeFiles/ft.dir/graph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/graph.c -o CMakeFiles/ft.dir/graph.c.s
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/flags.make
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/item.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o -MF CMakeFiles/ft.dir/item.c.o.d -o CMakeFiles/ft.dir/item.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/ft.dir/item.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o -MF CMakeFiles/ft.dir/item.c.o.d -o CMakeFiles/ft.dir/item.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ft.dir/item.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c > CMakeFiles/ft.dir/item.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c > CMakeFiles/ft.dir/item.c.i
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ft.dir/item.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c -o CMakeFiles/ft.dir/item.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/item.c -o CMakeFiles/ft.dir/item.c.s
 
 # Object files for target ft
 ft_OBJECTS = \
@@ -157,20 +157,20 @@ MultiSource/Benchmarks/Ptrdist/ft/ft: MultiSource/Benchmarks/Ptrdist/ft/CMakeFil
 MultiSource/Benchmarks/Ptrdist/ft/ft: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/item.c.o
 MultiSource/Benchmarks/Ptrdist/ft/ft: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/build.make
 MultiSource/Benchmarks/Ptrdist/ft/ft: MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ft"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/ft > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/ft.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/ft.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ft"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/ft > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/ft.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft/ft.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/ft.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/build: MultiSource/Benchmarks/Ptrdist/ft/ft
 .PHONY : MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/build
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && $(CMAKE_COMMAND) -P CMakeFiles/ft.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft && $(CMAKE_COMMAND) -P CMakeFiles/ft.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/clean
 
 MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Ptrdist/ft /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Ptrdist/ft/CMakeFiles/ft.dir/depend
 

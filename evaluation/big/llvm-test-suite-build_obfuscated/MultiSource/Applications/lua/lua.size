@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua/lua  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/lua/lua  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -9,25 +9,25 @@ section                  size     addr
 .dynstr                   830     3344
 .gnu.version              198     4174
 .gnu.version_r            160     4376
-.rela.dyn                9840     4536
-.rela.plt                2160    14376
+.rela.dyn                9936     4536
+.rela.plt                2160    14472
 .init                      27    20480
 .plt                     1456    20512
 .plt.got                    8    21968
-.text                  441169    21984
-.fini                      13   463156
-.rodata                 92328   466944
-.eh_frame_hdr            4012   559272
-.eh_frame               24956   563288
-.init_array                 8   589856
-.fini_array                 8   589864
-.data.rel.ro             3456   589872
-.dynamic                  496   593328
-.got                       64   593824
-.got.plt                  744   593896
-.data                      24   594640
-.bss                       16   594664
+.text                  309841    21984
+.fini                      13   331828
+.rodata                 64216   335872
+.eh_frame_hdr            4004   400088
+.eh_frame               24256   404096
+.init_array                 8   434160
+.fini_array                 8   434168
+.data.rel.ro             3504   434176
+.dynamic                  496   437680
+.got                       64   438176
+.got.plt                  744   438248
+.data                      24   438992
+.bss                       16   439016
 .comment                   82        0
-Total                  584595
+Total                  424591
 
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/d/make_dparser  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/d/make_dparser  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,20 +14,20 @@ section                  size     addr
 .init                      27   122880
 .plt                      656   122912
 .plt.got                    8   123568
-.text                  221551   123584
-.fini                      13   345136
-.rodata                 45284   348160
-.eh_frame_hdr            1740   393444
-.eh_frame               11188   395184
-.init_array                 8   413056
-.fini_array                 8   413064
-.data.rel.ro               56   413072
-.dynamic                  480   413128
-.got                       56   413608
-.got.plt                  344   413672
-.data                   92936   414016
-.bss                      512   506960
+.text                  173197   123584
+.fini                      13   296784
+.rodata                 33604   299008
+.eh_frame_hdr            1732   332612
+.eh_frame               10704   334344
+.init_array                 8   351616
+.fini_array                 8   351624
+.data.rel.ro               56   351632
+.dynamic                  480   351688
+.got                       56   352168
+.got.plt                  344   352232
+.data                   92936   352576
+.bss                      512   445520
 .comment                   82        0
-Total                  495807
+Total                  435281
 
 

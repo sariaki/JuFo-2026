@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MallocBench/cfrac//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MallocBench/cfrac//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/rule
 .PHONY : MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ cfrac: MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/rule
 
 # fast build rule for target.
 cfrac/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build
 .PHONY : cfrac/fast
 
 atop.o: atop.c.o
@@ -136,7 +135,7 @@ atop.o: atop.c.o
 
 # target to build an object file
 atop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/atop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/atop.c.o
 .PHONY : atop.c.o
 
 atop.i: atop.c.i
@@ -144,7 +143,7 @@ atop.i: atop.c.i
 
 # target to preprocess a source file
 atop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/atop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/atop.c.i
 .PHONY : atop.c.i
 
 atop.s: atop.c.s
@@ -152,7 +151,7 @@ atop.s: atop.c.s
 
 # target to generate assembly for a file
 atop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/atop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/atop.c.s
 .PHONY : atop.c.s
 
 cfrac.o: cfrac.c.o
@@ -160,7 +159,7 @@ cfrac.o: cfrac.c.o
 
 # target to build an object file
 cfrac.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/cfrac.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/cfrac.c.o
 .PHONY : cfrac.c.o
 
 cfrac.i: cfrac.c.i
@@ -168,7 +167,7 @@ cfrac.i: cfrac.c.i
 
 # target to preprocess a source file
 cfrac.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/cfrac.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/cfrac.c.i
 .PHONY : cfrac.c.i
 
 cfrac.s: cfrac.c.s
@@ -176,7 +175,7 @@ cfrac.s: cfrac.c.s
 
 # target to generate assembly for a file
 cfrac.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/cfrac.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/cfrac.c.s
 .PHONY : cfrac.c.s
 
 errorp.o: errorp.c.o
@@ -184,7 +183,7 @@ errorp.o: errorp.c.o
 
 # target to build an object file
 errorp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/errorp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/errorp.c.o
 .PHONY : errorp.c.o
 
 errorp.i: errorp.c.i
@@ -192,7 +191,7 @@ errorp.i: errorp.c.i
 
 # target to preprocess a source file
 errorp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/errorp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/errorp.c.i
 .PHONY : errorp.c.i
 
 errorp.s: errorp.c.s
@@ -200,7 +199,7 @@ errorp.s: errorp.c.s
 
 # target to generate assembly for a file
 errorp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/errorp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/errorp.c.s
 .PHONY : errorp.c.s
 
 itop.o: itop.c.o
@@ -208,7 +207,7 @@ itop.o: itop.c.o
 
 # target to build an object file
 itop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/itop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/itop.c.o
 .PHONY : itop.c.o
 
 itop.i: itop.c.i
@@ -216,7 +215,7 @@ itop.i: itop.c.i
 
 # target to preprocess a source file
 itop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/itop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/itop.c.i
 .PHONY : itop.c.i
 
 itop.s: itop.c.s
@@ -224,7 +223,7 @@ itop.s: itop.c.s
 
 # target to generate assembly for a file
 itop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/itop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/itop.c.s
 .PHONY : itop.c.s
 
 pabs.o: pabs.c.o
@@ -232,7 +231,7 @@ pabs.o: pabs.c.o
 
 # target to build an object file
 pabs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pabs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pabs.c.o
 .PHONY : pabs.c.o
 
 pabs.i: pabs.c.i
@@ -240,7 +239,7 @@ pabs.i: pabs.c.i
 
 # target to preprocess a source file
 pabs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pabs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pabs.c.i
 .PHONY : pabs.c.i
 
 pabs.s: pabs.c.s
@@ -248,7 +247,7 @@ pabs.s: pabs.c.s
 
 # target to generate assembly for a file
 pabs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pabs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pabs.c.s
 .PHONY : pabs.c.s
 
 padd.o: padd.c.o
@@ -256,7 +255,7 @@ padd.o: padd.c.o
 
 # target to build an object file
 padd.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/padd.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/padd.c.o
 .PHONY : padd.c.o
 
 padd.i: padd.c.i
@@ -264,7 +263,7 @@ padd.i: padd.c.i
 
 # target to preprocess a source file
 padd.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/padd.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/padd.c.i
 .PHONY : padd.c.i
 
 padd.s: padd.c.s
@@ -272,7 +271,7 @@ padd.s: padd.c.s
 
 # target to generate assembly for a file
 padd.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/padd.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/padd.c.s
 .PHONY : padd.c.s
 
 pcfrac.o: pcfrac.c.o
@@ -280,7 +279,7 @@ pcfrac.o: pcfrac.c.o
 
 # target to build an object file
 pcfrac.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcfrac.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcfrac.c.o
 .PHONY : pcfrac.c.o
 
 pcfrac.i: pcfrac.c.i
@@ -288,7 +287,7 @@ pcfrac.i: pcfrac.c.i
 
 # target to preprocess a source file
 pcfrac.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcfrac.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcfrac.c.i
 .PHONY : pcfrac.c.i
 
 pcfrac.s: pcfrac.c.s
@@ -296,7 +295,7 @@ pcfrac.s: pcfrac.c.s
 
 # target to generate assembly for a file
 pcfrac.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcfrac.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcfrac.c.s
 .PHONY : pcfrac.c.s
 
 pcmp.o: pcmp.c.o
@@ -304,7 +303,7 @@ pcmp.o: pcmp.c.o
 
 # target to build an object file
 pcmp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcmp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcmp.c.o
 .PHONY : pcmp.c.o
 
 pcmp.i: pcmp.c.i
@@ -312,7 +311,7 @@ pcmp.i: pcmp.c.i
 
 # target to preprocess a source file
 pcmp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcmp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcmp.c.i
 .PHONY : pcmp.c.i
 
 pcmp.s: pcmp.c.s
@@ -320,7 +319,7 @@ pcmp.s: pcmp.c.s
 
 # target to generate assembly for a file
 pcmp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcmp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pcmp.c.s
 .PHONY : pcmp.c.s
 
 pconst.o: pconst.c.o
@@ -328,7 +327,7 @@ pconst.o: pconst.c.o
 
 # target to build an object file
 pconst.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pconst.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pconst.c.o
 .PHONY : pconst.c.o
 
 pconst.i: pconst.c.i
@@ -336,7 +335,7 @@ pconst.i: pconst.c.i
 
 # target to preprocess a source file
 pconst.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pconst.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pconst.c.i
 .PHONY : pconst.c.i
 
 pconst.s: pconst.c.s
@@ -344,7 +343,7 @@ pconst.s: pconst.c.s
 
 # target to generate assembly for a file
 pconst.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pconst.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pconst.c.s
 .PHONY : pconst.c.s
 
 pdivmod.o: pdivmod.c.o
@@ -352,7 +351,7 @@ pdivmod.o: pdivmod.c.o
 
 # target to build an object file
 pdivmod.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pdivmod.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pdivmod.c.o
 .PHONY : pdivmod.c.o
 
 pdivmod.i: pdivmod.c.i
@@ -360,7 +359,7 @@ pdivmod.i: pdivmod.c.i
 
 # target to preprocess a source file
 pdivmod.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pdivmod.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pdivmod.c.i
 .PHONY : pdivmod.c.i
 
 pdivmod.s: pdivmod.c.s
@@ -368,7 +367,7 @@ pdivmod.s: pdivmod.c.s
 
 # target to generate assembly for a file
 pdivmod.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pdivmod.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pdivmod.c.s
 .PHONY : pdivmod.c.s
 
 pfloat.o: pfloat.c.o
@@ -376,7 +375,7 @@ pfloat.o: pfloat.c.o
 
 # target to build an object file
 pfloat.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pfloat.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pfloat.c.o
 .PHONY : pfloat.c.o
 
 pfloat.i: pfloat.c.i
@@ -384,7 +383,7 @@ pfloat.i: pfloat.c.i
 
 # target to preprocess a source file
 pfloat.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pfloat.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pfloat.c.i
 .PHONY : pfloat.c.i
 
 pfloat.s: pfloat.c.s
@@ -392,7 +391,7 @@ pfloat.s: pfloat.c.s
 
 # target to generate assembly for a file
 pfloat.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pfloat.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pfloat.c.s
 .PHONY : pfloat.c.s
 
 pgcd.o: pgcd.c.o
@@ -400,7 +399,7 @@ pgcd.o: pgcd.c.o
 
 # target to build an object file
 pgcd.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pgcd.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pgcd.c.o
 .PHONY : pgcd.c.o
 
 pgcd.i: pgcd.c.i
@@ -408,7 +407,7 @@ pgcd.i: pgcd.c.i
 
 # target to preprocess a source file
 pgcd.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pgcd.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pgcd.c.i
 .PHONY : pgcd.c.i
 
 pgcd.s: pgcd.c.s
@@ -416,7 +415,7 @@ pgcd.s: pgcd.c.s
 
 # target to generate assembly for a file
 pgcd.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pgcd.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pgcd.c.s
 .PHONY : pgcd.c.s
 
 phalf.o: phalf.c.o
@@ -424,7 +423,7 @@ phalf.o: phalf.c.o
 
 # target to build an object file
 phalf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/phalf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/phalf.c.o
 .PHONY : phalf.c.o
 
 phalf.i: phalf.c.i
@@ -432,7 +431,7 @@ phalf.i: phalf.c.i
 
 # target to preprocess a source file
 phalf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/phalf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/phalf.c.i
 .PHONY : phalf.c.i
 
 phalf.s: phalf.c.s
@@ -440,7 +439,7 @@ phalf.s: phalf.c.s
 
 # target to generate assembly for a file
 phalf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/phalf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/phalf.c.s
 .PHONY : phalf.c.s
 
 picmp.o: picmp.c.o
@@ -448,7 +447,7 @@ picmp.o: picmp.c.o
 
 # target to build an object file
 picmp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/picmp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/picmp.c.o
 .PHONY : picmp.c.o
 
 picmp.i: picmp.c.i
@@ -456,7 +455,7 @@ picmp.i: picmp.c.i
 
 # target to preprocess a source file
 picmp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/picmp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/picmp.c.i
 .PHONY : picmp.c.i
 
 picmp.s: picmp.c.s
@@ -464,7 +463,7 @@ picmp.s: picmp.c.s
 
 # target to generate assembly for a file
 picmp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/picmp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/picmp.c.s
 .PHONY : picmp.c.s
 
 pidiv.o: pidiv.c.o
@@ -472,7 +471,7 @@ pidiv.o: pidiv.c.o
 
 # target to build an object file
 pidiv.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pidiv.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pidiv.c.o
 .PHONY : pidiv.c.o
 
 pidiv.i: pidiv.c.i
@@ -480,7 +479,7 @@ pidiv.i: pidiv.c.i
 
 # target to preprocess a source file
 pidiv.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pidiv.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pidiv.c.i
 .PHONY : pidiv.c.i
 
 pidiv.s: pidiv.c.s
@@ -488,7 +487,7 @@ pidiv.s: pidiv.c.s
 
 # target to generate assembly for a file
 pidiv.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pidiv.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pidiv.c.s
 .PHONY : pidiv.c.s
 
 pimod.o: pimod.c.o
@@ -496,7 +495,7 @@ pimod.o: pimod.c.o
 
 # target to build an object file
 pimod.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pimod.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pimod.c.o
 .PHONY : pimod.c.o
 
 pimod.i: pimod.c.i
@@ -504,7 +503,7 @@ pimod.i: pimod.c.i
 
 # target to preprocess a source file
 pimod.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pimod.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pimod.c.i
 .PHONY : pimod.c.i
 
 pimod.s: pimod.c.s
@@ -512,7 +511,7 @@ pimod.s: pimod.c.s
 
 # target to generate assembly for a file
 pimod.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pimod.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pimod.c.s
 .PHONY : pimod.c.s
 
 pio.o: pio.c.o
@@ -520,7 +519,7 @@ pio.o: pio.c.o
 
 # target to build an object file
 pio.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pio.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pio.c.o
 .PHONY : pio.c.o
 
 pio.i: pio.c.i
@@ -528,7 +527,7 @@ pio.i: pio.c.i
 
 # target to preprocess a source file
 pio.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pio.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pio.c.i
 .PHONY : pio.c.i
 
 pio.s: pio.c.s
@@ -536,7 +535,7 @@ pio.s: pio.c.s
 
 # target to generate assembly for a file
 pio.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pio.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pio.c.s
 .PHONY : pio.c.s
 
 pmul.o: pmul.c.o
@@ -544,7 +543,7 @@ pmul.o: pmul.c.o
 
 # target to build an object file
 pmul.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pmul.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pmul.c.o
 .PHONY : pmul.c.o
 
 pmul.i: pmul.c.i
@@ -552,7 +551,7 @@ pmul.i: pmul.c.i
 
 # target to preprocess a source file
 pmul.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pmul.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pmul.c.i
 .PHONY : pmul.c.i
 
 pmul.s: pmul.c.s
@@ -560,7 +559,7 @@ pmul.s: pmul.c.s
 
 # target to generate assembly for a file
 pmul.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pmul.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pmul.c.s
 .PHONY : pmul.c.s
 
 pneg.o: pneg.c.o
@@ -568,7 +567,7 @@ pneg.o: pneg.c.o
 
 # target to build an object file
 pneg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pneg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pneg.c.o
 .PHONY : pneg.c.o
 
 pneg.i: pneg.c.i
@@ -576,7 +575,7 @@ pneg.i: pneg.c.i
 
 # target to preprocess a source file
 pneg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pneg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pneg.c.i
 .PHONY : pneg.c.i
 
 pneg.s: pneg.c.s
@@ -584,7 +583,7 @@ pneg.s: pneg.c.s
 
 # target to generate assembly for a file
 pneg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pneg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pneg.c.s
 .PHONY : pneg.c.s
 
 podd.o: podd.c.o
@@ -592,7 +591,7 @@ podd.o: podd.c.o
 
 # target to build an object file
 podd.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/podd.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/podd.c.o
 .PHONY : podd.c.o
 
 podd.i: podd.c.i
@@ -600,7 +599,7 @@ podd.i: podd.c.i
 
 # target to preprocess a source file
 podd.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/podd.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/podd.c.i
 .PHONY : podd.c.i
 
 podd.s: podd.c.s
@@ -608,7 +607,7 @@ podd.s: podd.c.s
 
 # target to generate assembly for a file
 podd.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/podd.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/podd.c.s
 .PHONY : podd.c.s
 
 pops.o: pops.c.o
@@ -616,7 +615,7 @@ pops.o: pops.c.o
 
 # target to build an object file
 pops.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pops.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pops.c.o
 .PHONY : pops.c.o
 
 pops.i: pops.c.i
@@ -624,7 +623,7 @@ pops.i: pops.c.i
 
 # target to preprocess a source file
 pops.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pops.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pops.c.i
 .PHONY : pops.c.i
 
 pops.s: pops.c.s
@@ -632,7 +631,7 @@ pops.s: pops.c.s
 
 # target to generate assembly for a file
 pops.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pops.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/pops.c.s
 .PHONY : pops.c.s
 
 ppowmod.o: ppowmod.c.o
@@ -640,7 +639,7 @@ ppowmod.o: ppowmod.c.o
 
 # target to build an object file
 ppowmod.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ppowmod.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ppowmod.c.o
 .PHONY : ppowmod.c.o
 
 ppowmod.i: ppowmod.c.i
@@ -648,7 +647,7 @@ ppowmod.i: ppowmod.c.i
 
 # target to preprocess a source file
 ppowmod.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ppowmod.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ppowmod.c.i
 .PHONY : ppowmod.c.i
 
 ppowmod.s: ppowmod.c.s
@@ -656,7 +655,7 @@ ppowmod.s: ppowmod.c.s
 
 # target to generate assembly for a file
 ppowmod.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ppowmod.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ppowmod.c.s
 .PHONY : ppowmod.c.s
 
 primes.o: primes.c.o
@@ -664,7 +663,7 @@ primes.o: primes.c.o
 
 # target to build an object file
 primes.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/primes.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/primes.c.o
 .PHONY : primes.c.o
 
 primes.i: primes.c.i
@@ -672,7 +671,7 @@ primes.i: primes.c.i
 
 # target to preprocess a source file
 primes.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/primes.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/primes.c.i
 .PHONY : primes.c.i
 
 primes.s: primes.c.s
@@ -680,7 +679,7 @@ primes.s: primes.c.s
 
 # target to generate assembly for a file
 primes.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/primes.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/primes.c.s
 .PHONY : primes.c.s
 
 psqrt.o: psqrt.c.o
@@ -688,7 +687,7 @@ psqrt.o: psqrt.c.o
 
 # target to build an object file
 psqrt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psqrt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psqrt.c.o
 .PHONY : psqrt.c.o
 
 psqrt.i: psqrt.c.i
@@ -696,7 +695,7 @@ psqrt.i: psqrt.c.i
 
 # target to preprocess a source file
 psqrt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psqrt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psqrt.c.i
 .PHONY : psqrt.c.i
 
 psqrt.s: psqrt.c.s
@@ -704,7 +703,7 @@ psqrt.s: psqrt.c.s
 
 # target to generate assembly for a file
 psqrt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psqrt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psqrt.c.s
 .PHONY : psqrt.c.s
 
 psub.o: psub.c.o
@@ -712,7 +711,7 @@ psub.o: psub.c.o
 
 # target to build an object file
 psub.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psub.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psub.c.o
 .PHONY : psub.c.o
 
 psub.i: psub.c.i
@@ -720,7 +719,7 @@ psub.i: psub.c.i
 
 # target to preprocess a source file
 psub.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psub.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psub.c.i
 .PHONY : psub.c.i
 
 psub.s: psub.c.s
@@ -728,7 +727,7 @@ psub.s: psub.c.s
 
 # target to generate assembly for a file
 psub.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psub.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/psub.c.s
 .PHONY : psub.c.s
 
 ptoa.o: ptoa.c.o
@@ -736,7 +735,7 @@ ptoa.o: ptoa.c.o
 
 # target to build an object file
 ptoa.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptoa.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptoa.c.o
 .PHONY : ptoa.c.o
 
 ptoa.i: ptoa.c.i
@@ -744,7 +743,7 @@ ptoa.i: ptoa.c.i
 
 # target to preprocess a source file
 ptoa.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptoa.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptoa.c.i
 .PHONY : ptoa.c.i
 
 ptoa.s: ptoa.c.s
@@ -752,7 +751,7 @@ ptoa.s: ptoa.c.s
 
 # target to generate assembly for a file
 ptoa.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptoa.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptoa.c.s
 .PHONY : ptoa.c.s
 
 ptou.o: ptou.c.o
@@ -760,7 +759,7 @@ ptou.o: ptou.c.o
 
 # target to build an object file
 ptou.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptou.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptou.c.o
 .PHONY : ptou.c.o
 
 ptou.i: ptou.c.i
@@ -768,7 +767,7 @@ ptou.i: ptou.c.i
 
 # target to preprocess a source file
 ptou.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptou.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptou.c.i
 .PHONY : ptou.c.i
 
 ptou.s: ptou.c.s
@@ -776,7 +775,7 @@ ptou.s: ptou.c.s
 
 # target to generate assembly for a file
 ptou.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptou.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/ptou.c.s
 .PHONY : ptou.c.s
 
 utop.o: utop.c.o
@@ -784,7 +783,7 @@ utop.o: utop.c.o
 
 # target to build an object file
 utop.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/utop.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/utop.c.o
 .PHONY : utop.c.o
 
 utop.i: utop.c.i
@@ -792,7 +791,7 @@ utop.i: utop.c.i
 
 # target to preprocess a source file
 utop.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/utop.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/utop.c.i
 .PHONY : utop.c.i
 
 utop.s: utop.c.s
@@ -800,7 +799,7 @@ utop.s: utop.c.s
 
 # target to generate assembly for a file
 utop.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/utop.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/build.make MultiSource/Benchmarks/MallocBench/cfrac/CMakeFiles/cfrac.dir/utop.c.s
 .PHONY : utop.c.s
 
 # Help Target
@@ -907,7 +906,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/flags.make
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o: MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/flags.make
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o: MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/drop3.dir/drop3.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o -MF CMakeFiles/drop3.dir/drop3.c.o.d -o CMakeFiles/drop3.dir/drop3.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/drop3.dir/drop3.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o -MF CMakeFiles/drop3.dir/drop3.c.o.d -o CMakeFiles/drop3.dir/drop3.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c
 
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/drop3.dir/drop3.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c > CMakeFiles/drop3.dir/drop3.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c > CMakeFiles/drop3.dir/drop3.c.i
 
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/drop3.dir/drop3.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c -o CMakeFiles/drop3.dir/drop3.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.c -o CMakeFiles/drop3.dir/drop3.c.s
 
 # Object files for target drop3
 drop3_OBJECTS = \
@@ -93,21 +93,21 @@ drop3_EXTERNAL_OBJECTS =
 MultiSource/Benchmarks/BitBench/drop3/drop3: MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/drop3.c.o
 MultiSource/Benchmarks/BitBench/drop3/drop3: MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/build.make
 MultiSource/Benchmarks/BitBench/drop3/drop3: MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable drop3"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drop3.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3 > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/input-file /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/input-file
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable drop3"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drop3.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3 > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/drop3.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3/input-file /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/input-file
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/build: MultiSource/Benchmarks/BitBench/drop3/drop3
 .PHONY : MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/build
 
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && $(CMAKE_COMMAND) -P CMakeFiles/drop3.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 && $(CMAKE_COMMAND) -P CMakeFiles/drop3.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/clean
 
 MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/BitBench/drop3 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/BitBench/drop3/CMakeFiles/drop3.dir/depend
 

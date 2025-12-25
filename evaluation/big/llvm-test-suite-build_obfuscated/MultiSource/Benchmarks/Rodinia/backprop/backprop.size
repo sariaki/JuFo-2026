@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Rodinia/backprop/backprop  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Rodinia/backprop/backprop  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  7454    4256
-.fini                    13   11712
-.rodata                 642   12288
-.eh_frame_hdr            76   12932
-.eh_frame               444   13008
+.text                  6254    4256
+.fini                    13   10512
+.rodata                 386   12288
+.eh_frame_hdr            76   12676
+.eh_frame               444   12752
 .init_array               8   19896
 .fini_array               8   19904
 .dynamic                496   19912
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   20528
 .bss                   1408   20544
 .comment                 82       0
-Total                 12057
+Total                 10601
 
 

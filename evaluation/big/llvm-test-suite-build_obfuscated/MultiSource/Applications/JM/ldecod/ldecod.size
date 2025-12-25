@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/JM/ldecod/ldecod  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/JM/ldecod/ldecod  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,20 +14,20 @@ section                  size     addr
 .init                      27     8192
 .plt                      608     8224
 .plt.got                    8     8832
-.text                  430497     8848
-.fini                      13   439348
-.rodata                105056   442368
-.eh_frame_hdr            2908   547424
-.eh_frame               18512   550336
-.init_array                 8   572528
-.fini_array                 8   572536
-.data.rel.ro              248   572544
-.dynamic                  496   572792
-.got                      128   573288
-.got.plt                  320   573416
-.data                    1360   573744
-.bss                   405400   575104
+.text                  375879     8848
+.fini                      13   384728
+.rodata                 92016   385024
+.eh_frame_hdr            2892   477040
+.eh_frame               18100   479936
+.init_array                 8   502896
+.fini_array                 8   502904
+.data.rel.ro              248   502912
+.dynamic                  496   503160
+.got                      128   503656
+.got.plt                  320   503784
+.data                    1360   504112
+.bss                   405400   505472
 .comment                   82        0
-Total                  969656
+Total                  901570
 
 

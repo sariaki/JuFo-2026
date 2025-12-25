@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/AMGmk/AMGmk  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/AMGmk/AMGmk  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     288    4128
 .plt.got                   8    4416
-.text                  42483    4432
-.fini                     13   46916
-.rodata                 7436   49152
-.eh_frame_hdr            388   56588
-.eh_frame               2188   56976
-.init_array                8   64952
-.fini_array                8   64960
-.dynamic                 496   64968
-.got                      48   65464
-.got.plt                 160   65512
-.data                     16   65672
-.bss                      24   65688
+.text                  31246    4432
+.fini                     13   35680
+.rodata                 5076   36864
+.eh_frame_hdr            388   41940
+.eh_frame               2104   42328
+.init_array                8   48568
+.fini_array                8   48576
+.dynamic                 496   48584
+.got                      48   49080
+.got.plt                 160   49128
+.data                     16   49288
+.bss                      24   49304
 .comment                  82       0
-Total                  55437
+Total                  41756
 
 

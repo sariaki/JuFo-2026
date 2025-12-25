@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/SciMark2-C/scimark2  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/SciMark2-C/scimark2  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     160    4128
 .plt.got                   8    4288
-.text                  32913    4304
-.fini                     13   37220
-.rodata                 6812   40960
-.eh_frame_hdr            348   47772
-.eh_frame               1800   48120
-.init_array                8   56760
-.fini_array                8   56768
-.dynamic                 496   56776
-.got                      48   57272
-.got.plt                  96   57320
-.data                     16   57416
-.bss                      24   57432
+.text                  21489    4304
+.fini                     13   25796
+.rodata                 4876   28672
+.eh_frame_hdr            348   33548
+.eh_frame               1720   33896
+.init_array                8   40376
+.fini_array                8   40384
+.dynamic                 496   40392
+.got                      48   40888
+.got.plt                  96   40936
+.data                     16   41032
+.bss                      24   41048
 .comment                  82       0
-Total                  44158
+Total                  30718
 
 

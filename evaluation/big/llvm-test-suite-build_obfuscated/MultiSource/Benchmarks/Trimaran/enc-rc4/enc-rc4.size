@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  4027    4256
-.fini                    13    8284
-.rodata                1826   12288
-.eh_frame_hdr            60   14116
-.eh_frame               236   14176
-.init_array               8   19920
-.fini_array               8   19928
-.dynamic                480   19936
-.got                     40   20416
-.got.plt                 72   20456
-.data                   226   20528
-.bss                      6   20754
+.text                  3483    4256
+.fini                    13    7740
+.rodata                1730    8192
+.eh_frame_hdr            60    9924
+.eh_frame               236    9984
+.init_array               8   15824
+.fini_array               8   15832
+.dynamic                480   15840
+.got                     40   16320
+.got.plt                 72   16360
+.data                   226   16432
+.bss                      6   16658
 .comment                 82       0
-Total                  8293
+Total                  7653
 
 

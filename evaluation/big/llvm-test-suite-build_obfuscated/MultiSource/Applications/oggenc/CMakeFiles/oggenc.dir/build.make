@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/flags.make
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o: MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/flags.make
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o: MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/oggenc.dir/oggenc.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o -MF CMakeFiles/oggenc.dir/oggenc.c.o.d -o CMakeFiles/oggenc.dir/oggenc.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/oggenc.dir/oggenc.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o -MF CMakeFiles/oggenc.dir/oggenc.c.o.d -o CMakeFiles/oggenc.dir/oggenc.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c
 
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/oggenc.dir/oggenc.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c > CMakeFiles/oggenc.dir/oggenc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c > CMakeFiles/oggenc.dir/oggenc.c.i
 
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/oggenc.dir/oggenc.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c -o CMakeFiles/oggenc.dir/oggenc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.c -o CMakeFiles/oggenc.dir/oggenc.c.s
 
 # Object files for target oggenc
 oggenc_OBJECTS = \
@@ -93,21 +93,21 @@ oggenc_EXTERNAL_OBJECTS =
 MultiSource/Applications/oggenc/oggenc: MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/oggenc.c.o
 MultiSource/Applications/oggenc/oggenc: MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/build.make
 MultiSource/Applications/oggenc/oggenc: MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable oggenc"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oggenc.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc/oggenc > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc/oggenc.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc/oggenc.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/tune /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc/tune
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable oggenc"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oggenc.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc/oggenc > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc/oggenc.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/oggenc.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc/oggenc.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc/tune /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc/tune
 
 # Rule to build all files generated by this target.
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/build: MultiSource/Applications/oggenc/oggenc
 .PHONY : MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/build
 
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc && $(CMAKE_COMMAND) -P CMakeFiles/oggenc.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc && $(CMAKE_COMMAND) -P CMakeFiles/oggenc.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/clean
 
 MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/oggenc /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/oggenc/CMakeFiles/oggenc.dir/depend
 

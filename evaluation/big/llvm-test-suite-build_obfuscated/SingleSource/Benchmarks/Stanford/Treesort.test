@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Treesort 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/Treesort.reference_output

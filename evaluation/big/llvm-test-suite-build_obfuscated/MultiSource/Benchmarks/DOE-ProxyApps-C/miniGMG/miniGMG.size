@@ -1,32 +1,32 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/miniGMG/miniGMG  :
-section                  size     addr
-.interp                    28      792
-.note.gnu.property         32      824
-.note.gnu.build-id         36      856
-.note.ABI-tag              32      892
-.gnu.hash                  36      928
-.dynsym                   576      968
-.dynstr                   281     1544
-.gnu.version               48     1826
-.gnu.version_r            112     1880
-.rela.dyn                 216     1992
-.rela.plt                 408     2208
-.init                      27     4096
-.plt                      288     4128
-.plt.got                    8     4416
-.text                  109699     4432
-.fini                      13   114132
-.rodata                  9420   114688
-.eh_frame_hdr             388   124108
-.eh_frame                3352   124496
-.init_array                 8   134584
-.fini_array                 8   134592
-.dynamic                  496   134600
-.got                       48   135096
-.got.plt                  160   135144
-.data                      20   135304
-.bss                        4   135324
-.comment                   82        0
-Total                  125826
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/miniGMG/miniGMG  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                  576      968
+.dynstr                  281     1544
+.gnu.version              48     1826
+.gnu.version_r           112     1880
+.rela.dyn                216     1992
+.rela.plt                408     2208
+.init                     27     4096
+.plt                     288     4128
+.plt.got                   8     4416
+.text                  93939     4432
+.fini                     13    98372
+.rodata                 6572   102400
+.eh_frame_hdr            396   108972
+.eh_frame               3272   109368
+.init_array                8   118200
+.fini_array                8   118208
+.dynamic                 496   118216
+.got                      48   118712
+.got.plt                 160   118760
+.data                     20   118920
+.bss                       4   118940
+.comment                  82        0
+Total                 107146
 
 

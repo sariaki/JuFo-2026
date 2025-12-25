@@ -1,32 +1,32 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/gsm/toast/toast  :
-section                 size     addr
-.interp                   28      792
-.note.gnu.property        32      824
-.note.gnu.build-id        36      856
-.note.ABI-tag             32      892
-.gnu.hash                 36      928
-.dynsym                 1296      968
-.dynstr                  452     2264
-.gnu.version             108     2716
-.gnu.version_r            80     2824
-.rela.dyn               1056     2904
-.rela.plt               1056     3960
-.init                     27     8192
-.plt                     720     8224
-.plt.got                   8     8944
-.text                  71949     8960
-.fini                     13    80912
-.rodata                24576    81920
-.eh_frame_hdr            532   106496
-.eh_frame               3072   107032
-.init_array                8   114096
-.fini_array                8   114104
-.dynamic                 480   114112
-.got                      72   114592
-.got.plt                 376   114664
-.data                    448   115040
-.bss                     360   115488
-.comment                  82        0
-Total                 106943
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/mediabench/gsm/toast/toast  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                 1296     968
+.dynstr                  452    2264
+.gnu.version             108    2716
+.gnu.version_r            80    2824
+.rela.dyn               1056    2904
+.rela.plt               1056    3960
+.init                     27    8192
+.plt                     720    8224
+.plt.got                   8    8944
+.text                  54781    8960
+.fini                     13   63744
+.rodata                21488   65536
+.eh_frame_hdr            524   87024
+.eh_frame               2912   87552
+.init_array                8   97712
+.fini_array                8   97720
+.dynamic                 480   97728
+.got                      72   98208
+.got.plt                 376   98280
+.data                    448   98656
+.bss                     360   99104
+.comment                  82       0
+Total                  86519
 
 

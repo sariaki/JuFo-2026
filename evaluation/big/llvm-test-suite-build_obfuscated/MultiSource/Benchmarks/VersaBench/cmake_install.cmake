@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/beamformer/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/dbms/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/ecbdes/cmake_install.cmake")
-  include("/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/beamformer/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/dbms/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/ecbdes/cmake_install.cmake")
+  include("/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/cmake_install.cmake")
 
 endif()
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-smail//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-smail//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ unix-smail: MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.d
 
 # fast build rule for target.
 unix-smail/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build
 .PHONY : unix-smail/fast
 
 alias.o: alias.c.o
@@ -136,7 +135,7 @@ alias.o: alias.c.o
 
 # target to build an object file
 alias.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/alias.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/alias.c.o
 .PHONY : alias.c.o
 
 alias.i: alias.c.i
@@ -144,7 +143,7 @@ alias.i: alias.c.i
 
 # target to preprocess a source file
 alias.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/alias.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/alias.c.i
 .PHONY : alias.c.i
 
 alias.s: alias.c.s
@@ -152,7 +151,7 @@ alias.s: alias.c.s
 
 # target to generate assembly for a file
 alias.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/alias.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/alias.c.s
 .PHONY : alias.c.s
 
 deliver.o: deliver.c.o
@@ -160,7 +159,7 @@ deliver.o: deliver.c.o
 
 # target to build an object file
 deliver.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/deliver.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/deliver.c.o
 .PHONY : deliver.c.o
 
 deliver.i: deliver.c.i
@@ -168,7 +167,7 @@ deliver.i: deliver.c.i
 
 # target to preprocess a source file
 deliver.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/deliver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/deliver.c.i
 .PHONY : deliver.c.i
 
 deliver.s: deliver.c.s
@@ -176,7 +175,7 @@ deliver.s: deliver.c.s
 
 # target to generate assembly for a file
 deliver.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/deliver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/deliver.c.s
 .PHONY : deliver.c.s
 
 getopt.o: getopt.c.o
@@ -184,7 +183,7 @@ getopt.o: getopt.c.o
 
 # target to build an object file
 getopt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getopt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getopt.c.o
 .PHONY : getopt.c.o
 
 getopt.i: getopt.c.i
@@ -192,7 +191,7 @@ getopt.i: getopt.c.i
 
 # target to preprocess a source file
 getopt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getopt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getopt.c.i
 .PHONY : getopt.c.i
 
 getopt.s: getopt.c.s
@@ -200,7 +199,7 @@ getopt.s: getopt.c.s
 
 # target to generate assembly for a file
 getopt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getopt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getopt.c.s
 .PHONY : getopt.c.s
 
 getpath.o: getpath.c.o
@@ -208,7 +207,7 @@ getpath.o: getpath.c.o
 
 # target to build an object file
 getpath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getpath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getpath.c.o
 .PHONY : getpath.c.o
 
 getpath.i: getpath.c.i
@@ -216,7 +215,7 @@ getpath.i: getpath.c.i
 
 # target to preprocess a source file
 getpath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getpath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getpath.c.i
 .PHONY : getpath.c.i
 
 getpath.s: getpath.c.s
@@ -224,7 +223,7 @@ getpath.s: getpath.c.s
 
 # target to generate assembly for a file
 getpath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getpath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/getpath.c.s
 .PHONY : getpath.c.s
 
 headers.o: headers.c.o
@@ -232,7 +231,7 @@ headers.o: headers.c.o
 
 # target to build an object file
 headers.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/headers.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/headers.c.o
 .PHONY : headers.c.o
 
 headers.i: headers.c.i
@@ -240,7 +239,7 @@ headers.i: headers.c.i
 
 # target to preprocess a source file
 headers.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/headers.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/headers.c.i
 .PHONY : headers.c.i
 
 headers.s: headers.c.s
@@ -248,7 +247,7 @@ headers.s: headers.c.s
 
 # target to generate assembly for a file
 headers.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/headers.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/headers.c.s
 .PHONY : headers.c.s
 
 main.o: main.c.o
@@ -256,7 +255,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -264,7 +263,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -272,7 +271,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/main.c.s
 .PHONY : main.c.s
 
 map.o: map.c.o
@@ -280,7 +279,7 @@ map.o: map.c.o
 
 # target to build an object file
 map.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/map.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/map.c.o
 .PHONY : map.c.o
 
 map.i: map.c.i
@@ -288,7 +287,7 @@ map.i: map.c.i
 
 # target to preprocess a source file
 map.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/map.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/map.c.i
 .PHONY : map.c.i
 
 map.s: map.c.s
@@ -296,7 +295,7 @@ map.s: map.c.s
 
 # target to generate assembly for a file
 map.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/map.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/map.c.s
 .PHONY : map.c.s
 
 misc.o: misc.c.o
@@ -304,7 +303,7 @@ misc.o: misc.c.o
 
 # target to build an object file
 misc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/misc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/misc.c.o
 .PHONY : misc.c.o
 
 misc.i: misc.c.i
@@ -312,7 +311,7 @@ misc.i: misc.c.i
 
 # target to preprocess a source file
 misc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/misc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/misc.c.i
 .PHONY : misc.c.i
 
 misc.s: misc.c.s
@@ -320,7 +319,7 @@ misc.s: misc.c.s
 
 # target to generate assembly for a file
 misc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/misc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/misc.c.s
 .PHONY : misc.c.s
 
 pw.o: pw.c.o
@@ -328,7 +327,7 @@ pw.o: pw.c.o
 
 # target to build an object file
 pw.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/pw.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/pw.c.o
 .PHONY : pw.c.o
 
 pw.i: pw.c.i
@@ -336,7 +335,7 @@ pw.i: pw.c.i
 
 # target to preprocess a source file
 pw.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/pw.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/pw.c.i
 .PHONY : pw.c.i
 
 pw.s: pw.c.s
@@ -344,7 +343,7 @@ pw.s: pw.c.s
 
 # target to generate assembly for a file
 pw.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/pw.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/pw.c.s
 .PHONY : pw.c.s
 
 resolve.o: resolve.c.o
@@ -352,7 +351,7 @@ resolve.o: resolve.c.o
 
 # target to build an object file
 resolve.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/resolve.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/resolve.c.o
 .PHONY : resolve.c.o
 
 resolve.i: resolve.c.i
@@ -360,7 +359,7 @@ resolve.i: resolve.c.i
 
 # target to preprocess a source file
 resolve.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/resolve.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/resolve.c.i
 .PHONY : resolve.c.i
 
 resolve.s: resolve.c.s
@@ -368,7 +367,7 @@ resolve.s: resolve.c.s
 
 # target to generate assembly for a file
 resolve.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/resolve.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/resolve.c.s
 .PHONY : resolve.c.s
 
 str.o: str.c.o
@@ -376,7 +375,7 @@ str.o: str.c.o
 
 # target to build an object file
 str.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/str.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/str.c.o
 .PHONY : str.c.o
 
 str.i: str.c.i
@@ -384,7 +383,7 @@ str.i: str.c.i
 
 # target to preprocess a source file
 str.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/str.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/str.c.i
 .PHONY : str.c.i
 
 str.s: str.c.s
@@ -392,7 +391,7 @@ str.s: str.c.s
 
 # target to generate assembly for a file
 str.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/str.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/build.make MultiSource/Benchmarks/Prolangs-C/unix-smail/CMakeFiles/unix-smail.dir/str.c.s
 .PHONY : str.c.s
 
 # Help Target
@@ -448,7 +447,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

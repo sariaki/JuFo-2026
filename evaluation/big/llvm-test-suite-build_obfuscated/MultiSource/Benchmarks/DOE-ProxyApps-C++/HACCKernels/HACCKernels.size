@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/HACCKernels  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/HACCKernels  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -6,20 +6,20 @@ section                size    addr
 .note.ABI-tag            32     892
 .gnu.hash                36     928
 .dynsym                 456     968
-.dynstr                 541    1424
-.gnu.version             38    1966
-.gnu.version_r          176    2008
-.rela.dyn               240    2184
-.rela.plt               240    2424
+.dynstr                 556    1424
+.gnu.version             38    1980
+.gnu.version_r          176    2024
+.rela.dyn               240    2200
+.rela.plt               240    2440
 .init                    27    4096
 .plt                    176    4128
 .plt.got                  8    4304
-.text                  7194    4320
-.fini                    13   11516
-.rodata                1329   12288
-.eh_frame_hdr            76   13620
-.eh_frame               500   13696
-.gcc_except_table       104   14196
+.text                  4870    4320
+.fini                    13    9192
+.rodata                 625   12288
+.eh_frame_hdr            76   12916
+.eh_frame               476   12992
+.gcc_except_table       104   13468
 .init_array               8   19864
 .fini_array               8   19872
 .dynamic                528   19880
@@ -28,6 +28,6 @@ section                size    addr
 .data                    56   20560
 .bss                      8   20616
 .comment                 82       0
-Total                 12124
+Total                  9087
 
 

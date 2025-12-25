@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/yacr2//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Ptrdist/yacr2//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/rule
 .PHONY : MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ yacr2: MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/rule
 
 # fast build rule for target.
 yacr2/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build
 .PHONY : yacr2/fast
 
 assign.o: assign.c.o
@@ -136,7 +135,7 @@ assign.o: assign.c.o
 
 # target to build an object file
 assign.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/assign.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/assign.c.o
 .PHONY : assign.c.o
 
 assign.i: assign.c.i
@@ -144,7 +143,7 @@ assign.i: assign.c.i
 
 # target to preprocess a source file
 assign.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/assign.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/assign.c.i
 .PHONY : assign.c.i
 
 assign.s: assign.c.s
@@ -152,7 +151,7 @@ assign.s: assign.c.s
 
 # target to generate assembly for a file
 assign.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/assign.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/assign.c.s
 .PHONY : assign.c.s
 
 channel.o: channel.c.o
@@ -160,7 +159,7 @@ channel.o: channel.c.o
 
 # target to build an object file
 channel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/channel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/channel.c.o
 .PHONY : channel.c.o
 
 channel.i: channel.c.i
@@ -168,7 +167,7 @@ channel.i: channel.c.i
 
 # target to preprocess a source file
 channel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/channel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/channel.c.i
 .PHONY : channel.c.i
 
 channel.s: channel.c.s
@@ -176,7 +175,7 @@ channel.s: channel.c.s
 
 # target to generate assembly for a file
 channel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/channel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/channel.c.s
 .PHONY : channel.c.s
 
 hcg.o: hcg.c.o
@@ -184,7 +183,7 @@ hcg.o: hcg.c.o
 
 # target to build an object file
 hcg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/hcg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/hcg.c.o
 .PHONY : hcg.c.o
 
 hcg.i: hcg.c.i
@@ -192,7 +191,7 @@ hcg.i: hcg.c.i
 
 # target to preprocess a source file
 hcg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/hcg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/hcg.c.i
 .PHONY : hcg.c.i
 
 hcg.s: hcg.c.s
@@ -200,7 +199,7 @@ hcg.s: hcg.c.s
 
 # target to generate assembly for a file
 hcg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/hcg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/hcg.c.s
 .PHONY : hcg.c.s
 
 main.o: main.c.o
@@ -208,7 +207,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -216,7 +215,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -224,7 +223,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/main.c.s
 .PHONY : main.c.s
 
 maze.o: maze.c.o
@@ -232,7 +231,7 @@ maze.o: maze.c.o
 
 # target to build an object file
 maze.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/maze.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/maze.c.o
 .PHONY : maze.c.o
 
 maze.i: maze.c.i
@@ -240,7 +239,7 @@ maze.i: maze.c.i
 
 # target to preprocess a source file
 maze.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/maze.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/maze.c.i
 .PHONY : maze.c.i
 
 maze.s: maze.c.s
@@ -248,7 +247,7 @@ maze.s: maze.c.s
 
 # target to generate assembly for a file
 maze.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/maze.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/maze.c.s
 .PHONY : maze.c.s
 
 option.o: option.c.o
@@ -256,7 +255,7 @@ option.o: option.c.o
 
 # target to build an object file
 option.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/option.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/option.c.o
 .PHONY : option.c.o
 
 option.i: option.c.i
@@ -264,7 +263,7 @@ option.i: option.c.i
 
 # target to preprocess a source file
 option.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/option.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/option.c.i
 .PHONY : option.c.i
 
 option.s: option.c.s
@@ -272,7 +271,7 @@ option.s: option.c.s
 
 # target to generate assembly for a file
 option.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/option.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/option.c.s
 .PHONY : option.c.s
 
 vcg.o: vcg.c.o
@@ -280,7 +279,7 @@ vcg.o: vcg.c.o
 
 # target to build an object file
 vcg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/vcg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/vcg.c.o
 .PHONY : vcg.c.o
 
 vcg.i: vcg.c.i
@@ -288,7 +287,7 @@ vcg.i: vcg.c.i
 
 # target to preprocess a source file
 vcg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/vcg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/vcg.c.i
 .PHONY : vcg.c.i
 
 vcg.s: vcg.c.s
@@ -296,7 +295,7 @@ vcg.s: vcg.c.s
 
 # target to generate assembly for a file
 vcg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/vcg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/build.make MultiSource/Benchmarks/Ptrdist/yacr2/CMakeFiles/yacr2.dir/vcg.c.s
 .PHONY : vcg.c.s
 
 # Help Target
@@ -340,7 +339,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

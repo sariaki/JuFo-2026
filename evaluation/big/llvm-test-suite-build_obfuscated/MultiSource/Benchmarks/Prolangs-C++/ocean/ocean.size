@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/ocean/ocean  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/ocean/ocean  :
 section                   size    addr
 .interp                     28     792
 .note.gnu.property          32     824
@@ -14,12 +14,12 @@ section                   size    addr
 .init                       27    4096
 .plt                        80    4128
 .plt.got                     8    4208
-.text                    19228    4224
-.fini                       13   23452
-.rodata                   3840   24576
-.eh_frame_hdr              380   28416
-.eh_frame                 1932   28800
-.gcc_except_table          216   30732
+.text                    17804    4224
+.fini                       13   22028
+.rodata                   2992   24576
+.eh_frame_hdr              356   27568
+.eh_frame                 1716   27928
+.gcc_except_table          196   29644
 .init_array                  8   35976
 .fini_array                  8   35984
 .data.rel.ro               280   35992
@@ -29,6 +29,6 @@ section                   size    addr
 .data                       24   36896
 .bss                   4000024   36928
 .comment                    82       0
-Total                  4028801
+Total                  4026269
 
 

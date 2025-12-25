@@ -1,32 +1,32 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/nbench/nbench  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/nbench/nbench  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
 .note.gnu.build-id        36     856
 .note.ABI-tag             32     892
 .gnu.hash                 36     928
-.dynsym                  888     968
-.dynstr                  379    1856
-.gnu.version              74    2236
-.gnu.version_r           128    2312
-.rela.dyn               3216    2440
-.rela.plt                744    5656
+.dynsym                  816     968
+.dynstr                  360    1784
+.gnu.version              68    2144
+.gnu.version_r           128    2216
+.rela.dyn               3216    2344
+.rela.plt                672    5560
 .init                     27    8192
-.plt                     512    8224
-.plt.got                   8    8736
-.text                  63652    8752
-.fini                     13   72404
-.rodata                 9900   73728
-.eh_frame_hdr            412   83628
-.eh_frame               2884   84040
-.init_array                8   93632
-.fini_array                8   93640
-.dynamic                 496   93648
-.got                      40   94144
-.got.plt                 272   94184
-.data                   1216   94464
-.bss                   15024   95680
+.plt                     464    8224
+.plt.got                   8    8688
+.text                  54132    8704
+.fini                     13   62836
+.rodata                 7252   65536
+.eh_frame_hdr            412   72788
+.eh_frame               2832   73200
+.init_array                8   81344
+.fini_array                8   81352
+.dynamic                 496   81360
+.got                      40   81856
+.got.plt                 248   81896
+.data                   1216   82144
+.bss                   15024   83360
 .comment                  82       0
-Total                 100147
+Total                  87686
 
 

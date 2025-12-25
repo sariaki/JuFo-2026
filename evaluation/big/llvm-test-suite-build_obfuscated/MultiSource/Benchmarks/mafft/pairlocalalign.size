@@ -1,32 +1,32 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mafft/pairlocalalign  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/mafft/pairlocalalign  :
 section                     size     addr
 .interp                       28      792
 .note.gnu.property            32      824
 .note.gnu.build-id            36      856
 .note.ABI-tag                 32      892
 .gnu.hash                     36      928
-.dynsym                     1272      968
-.dynstr                      535     2240
-.gnu.version                 106     2776
-.gnu.version_r               144     2888
-.rela.dyn                    360     3032
-.rela.plt                   1056     3392
+.dynsym                     1296      968
+.dynstr                      540     2264
+.gnu.version                 108     2804
+.gnu.version_r               144     2912
+.rela.dyn                    360     3056
+.rela.plt                   1080     3416
 .init                         27     8192
-.plt                         720     8224
-.plt.got                       8     8944
-.text                     732051     8960
-.fini                         13   741012
-.rodata                   100280   741376
-.eh_frame_hdr               2932   841656
-.eh_frame                  24388   844592
-.init_array                    8   875912
-.fini_array                    8   875920
-.dynamic                     496   875928
-.got                          96   876424
-.got.plt                     376   876520
-.data                       8101   876896
-.bss                   132716784   885008
+.plt                         736     8224
+.plt.got                       8     8960
+.text                     616376     8976
+.fini                         13   625352
+.rodata                    75600   626688
+.eh_frame_hdr               2868   702288
+.eh_frame                  23444   705160
+.init_array                    8   732552
+.fini_array                    8   732560
+.dynamic                     496   732568
+.got                          96   733064
+.got.plt                     384   733160
+.data                       8101   733568
+.bss                   132716752   741680
 .comment                      82        0
-Total                  133590007
+Total                  133448691
 
 

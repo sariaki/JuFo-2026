@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/TSVC/StatementReordering-dbl/StatementReordering-dbl  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/TSVC/StatementReordering-dbl/StatementReordering-dbl  :
 section                   size    addr
 .interp                     28     792
 .note.gnu.property          32     824
@@ -14,11 +14,11 @@ section                   size    addr
 .init                       27    4096
 .plt                       128    4128
 .plt.got                     8    4256
-.text                    46305    4272
-.fini                       13   50580
-.rodata                   2300   53248
-.eh_frame_hdr              140   55548
-.eh_frame                  644   55688
+.text                    45458    4272
+.fini                       13   49732
+.rodata                   2108   53248
+.eh_frame_hdr              140   55356
+.eh_frame                  644   55496
 .init_array                  8   60592
 .fini_array                  8   60600
 .data.rel.ro               264   60608
@@ -28,6 +28,6 @@ section                   size    addr
 .data                       24   61496
 .bss                   5566064   61536
 .comment                    82       0
-Total                  5617959
+Total                  5616920
 
 

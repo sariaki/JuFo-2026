@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/spiff//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/spiff//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/spiff/CMakeFiles/spiff.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/CMakeFiles/spiff.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/spiff/CMakeFiles/spiff.dir/rule
 .PHONY : MultiSource/Applications/spiff/CMakeFiles/spiff.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ spiff: MultiSource/Applications/spiff/CMakeFiles/spiff.dir/rule
 
 # fast build rule for target.
 spiff/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build
 .PHONY : spiff/fast
 
 command.o: command.c.o
@@ -136,7 +135,7 @@ command.o: command.c.o
 
 # target to build an object file
 command.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/command.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/command.c.o
 .PHONY : command.c.o
 
 command.i: command.c.i
@@ -144,7 +143,7 @@ command.i: command.c.i
 
 # target to preprocess a source file
 command.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/command.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/command.c.i
 .PHONY : command.c.i
 
 command.s: command.c.s
@@ -152,7 +151,7 @@ command.s: command.c.s
 
 # target to generate assembly for a file
 command.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/command.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/command.c.s
 .PHONY : command.c.s
 
 comment.o: comment.c.o
@@ -160,7 +159,7 @@ comment.o: comment.c.o
 
 # target to build an object file
 comment.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/comment.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/comment.c.o
 .PHONY : comment.c.o
 
 comment.i: comment.c.i
@@ -168,7 +167,7 @@ comment.i: comment.c.i
 
 # target to preprocess a source file
 comment.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/comment.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/comment.c.i
 .PHONY : comment.c.i
 
 comment.s: comment.c.s
@@ -176,7 +175,7 @@ comment.s: comment.c.s
 
 # target to generate assembly for a file
 comment.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/comment.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/comment.c.s
 .PHONY : comment.c.s
 
 compare.o: compare.c.o
@@ -184,7 +183,7 @@ compare.o: compare.c.o
 
 # target to build an object file
 compare.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/compare.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/compare.c.o
 .PHONY : compare.c.o
 
 compare.i: compare.c.i
@@ -192,7 +191,7 @@ compare.i: compare.c.i
 
 # target to preprocess a source file
 compare.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/compare.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/compare.c.i
 .PHONY : compare.c.i
 
 compare.s: compare.c.s
@@ -200,7 +199,7 @@ compare.s: compare.c.s
 
 # target to generate assembly for a file
 compare.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/compare.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/compare.c.s
 .PHONY : compare.c.s
 
 exact.o: exact.c.o
@@ -208,7 +207,7 @@ exact.o: exact.c.o
 
 # target to build an object file
 exact.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/exact.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/exact.c.o
 .PHONY : exact.c.o
 
 exact.i: exact.c.i
@@ -216,7 +215,7 @@ exact.i: exact.c.i
 
 # target to preprocess a source file
 exact.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/exact.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/exact.c.i
 .PHONY : exact.c.i
 
 exact.s: exact.c.s
@@ -224,7 +223,7 @@ exact.s: exact.c.s
 
 # target to generate assembly for a file
 exact.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/exact.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/exact.c.s
 .PHONY : exact.c.s
 
 float.o: float.c.o
@@ -232,7 +231,7 @@ float.o: float.c.o
 
 # target to build an object file
 float.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/float.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/float.c.o
 .PHONY : float.c.o
 
 float.i: float.c.i
@@ -240,7 +239,7 @@ float.i: float.c.i
 
 # target to preprocess a source file
 float.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/float.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/float.c.i
 .PHONY : float.c.i
 
 float.s: float.c.s
@@ -248,7 +247,7 @@ float.s: float.c.s
 
 # target to generate assembly for a file
 float.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/float.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/float.c.s
 .PHONY : float.c.s
 
 floatrep.o: floatrep.c.o
@@ -256,7 +255,7 @@ floatrep.o: floatrep.c.o
 
 # target to build an object file
 floatrep.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/floatrep.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/floatrep.c.o
 .PHONY : floatrep.c.o
 
 floatrep.i: floatrep.c.i
@@ -264,7 +263,7 @@ floatrep.i: floatrep.c.i
 
 # target to preprocess a source file
 floatrep.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/floatrep.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/floatrep.c.i
 .PHONY : floatrep.c.i
 
 floatrep.s: floatrep.c.s
@@ -272,7 +271,7 @@ floatrep.s: floatrep.c.s
 
 # target to generate assembly for a file
 floatrep.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/floatrep.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/floatrep.c.s
 .PHONY : floatrep.c.s
 
 line.o: line.c.o
@@ -280,7 +279,7 @@ line.o: line.c.o
 
 # target to build an object file
 line.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/line.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/line.c.o
 .PHONY : line.c.o
 
 line.i: line.c.i
@@ -288,7 +287,7 @@ line.i: line.c.i
 
 # target to preprocess a source file
 line.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/line.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/line.c.i
 .PHONY : line.c.i
 
 line.s: line.c.s
@@ -296,7 +295,7 @@ line.s: line.c.s
 
 # target to generate assembly for a file
 line.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/line.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/line.c.s
 .PHONY : line.c.s
 
 miller.o: miller.c.o
@@ -304,7 +303,7 @@ miller.o: miller.c.o
 
 # target to build an object file
 miller.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/miller.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/miller.c.o
 .PHONY : miller.c.o
 
 miller.i: miller.c.i
@@ -312,7 +311,7 @@ miller.i: miller.c.i
 
 # target to preprocess a source file
 miller.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/miller.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/miller.c.i
 .PHONY : miller.c.i
 
 miller.s: miller.c.s
@@ -320,7 +319,7 @@ miller.s: miller.c.s
 
 # target to generate assembly for a file
 miller.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/miller.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/miller.c.s
 .PHONY : miller.c.s
 
 misc.o: misc.c.o
@@ -328,7 +327,7 @@ misc.o: misc.c.o
 
 # target to build an object file
 misc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/misc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/misc.c.o
 .PHONY : misc.c.o
 
 misc.i: misc.c.i
@@ -336,7 +335,7 @@ misc.i: misc.c.i
 
 # target to preprocess a source file
 misc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/misc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/misc.c.i
 .PHONY : misc.c.i
 
 misc.s: misc.c.s
@@ -344,7 +343,7 @@ misc.s: misc.c.s
 
 # target to generate assembly for a file
 misc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/misc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/misc.c.s
 .PHONY : misc.c.s
 
 output.o: output.c.o
@@ -352,7 +351,7 @@ output.o: output.c.o
 
 # target to build an object file
 output.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/output.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/output.c.o
 .PHONY : output.c.o
 
 output.i: output.c.i
@@ -360,7 +359,7 @@ output.i: output.c.i
 
 # target to preprocess a source file
 output.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/output.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/output.c.i
 .PHONY : output.c.i
 
 output.s: output.c.s
@@ -368,7 +367,7 @@ output.s: output.c.s
 
 # target to generate assembly for a file
 output.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/output.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/output.c.s
 .PHONY : output.c.s
 
 parse.o: parse.c.o
@@ -376,7 +375,7 @@ parse.o: parse.c.o
 
 # target to build an object file
 parse.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/parse.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/parse.c.o
 .PHONY : parse.c.o
 
 parse.i: parse.c.i
@@ -384,7 +383,7 @@ parse.i: parse.c.i
 
 # target to preprocess a source file
 parse.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/parse.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/parse.c.i
 .PHONY : parse.c.i
 
 parse.s: parse.c.s
@@ -392,7 +391,7 @@ parse.s: parse.c.s
 
 # target to generate assembly for a file
 parse.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/parse.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/parse.c.s
 .PHONY : parse.c.s
 
 spiff.o: spiff.c.o
@@ -400,7 +399,7 @@ spiff.o: spiff.c.o
 
 # target to build an object file
 spiff.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/spiff.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/spiff.c.o
 .PHONY : spiff.c.o
 
 spiff.i: spiff.c.i
@@ -408,7 +407,7 @@ spiff.i: spiff.c.i
 
 # target to preprocess a source file
 spiff.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/spiff.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/spiff.c.i
 .PHONY : spiff.c.i
 
 spiff.s: spiff.c.s
@@ -416,7 +415,7 @@ spiff.s: spiff.c.s
 
 # target to generate assembly for a file
 spiff.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/spiff.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/spiff.c.s
 .PHONY : spiff.c.s
 
 strings.o: strings.c.o
@@ -424,7 +423,7 @@ strings.o: strings.c.o
 
 # target to build an object file
 strings.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/strings.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/strings.c.o
 .PHONY : strings.c.o
 
 strings.i: strings.c.i
@@ -432,7 +431,7 @@ strings.i: strings.c.i
 
 # target to preprocess a source file
 strings.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/strings.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/strings.c.i
 .PHONY : strings.c.i
 
 strings.s: strings.c.s
@@ -440,7 +439,7 @@ strings.s: strings.c.s
 
 # target to generate assembly for a file
 strings.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/strings.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/strings.c.s
 .PHONY : strings.c.s
 
 token.o: token.c.o
@@ -448,7 +447,7 @@ token.o: token.c.o
 
 # target to build an object file
 token.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/token.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/token.c.o
 .PHONY : token.c.o
 
 token.i: token.c.i
@@ -456,7 +455,7 @@ token.i: token.c.i
 
 # target to preprocess a source file
 token.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/token.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/token.c.i
 .PHONY : token.c.i
 
 token.s: token.c.s
@@ -464,7 +463,7 @@ token.s: token.c.s
 
 # target to generate assembly for a file
 token.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/token.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/token.c.s
 .PHONY : token.c.s
 
 tol.o: tol.c.o
@@ -472,7 +471,7 @@ tol.o: tol.c.o
 
 # target to build an object file
 tol.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/tol.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/tol.c.o
 .PHONY : tol.c.o
 
 tol.i: tol.c.i
@@ -480,7 +479,7 @@ tol.i: tol.c.i
 
 # target to preprocess a source file
 tol.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/tol.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/tol.c.i
 .PHONY : tol.c.i
 
 tol.s: tol.c.s
@@ -488,7 +487,7 @@ tol.s: tol.c.s
 
 # target to generate assembly for a file
 tol.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/tol.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/tol.c.s
 .PHONY : tol.c.s
 
 visual.o: visual.c.o
@@ -496,7 +495,7 @@ visual.o: visual.c.o
 
 # target to build an object file
 visual.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/visual.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/visual.c.o
 .PHONY : visual.c.o
 
 visual.i: visual.c.i
@@ -504,7 +503,7 @@ visual.i: visual.c.i
 
 # target to preprocess a source file
 visual.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/visual.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/visual.c.i
 .PHONY : visual.c.i
 
 visual.s: visual.c.s
@@ -512,7 +511,7 @@ visual.s: visual.c.s
 
 # target to generate assembly for a file
 visual.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/visual.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/spiff/CMakeFiles/spiff.dir/build.make MultiSource/Applications/spiff/CMakeFiles/spiff.dir/visual.c.s
 .PHONY : visual.c.s
 
 # Help Target
@@ -583,7 +582,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

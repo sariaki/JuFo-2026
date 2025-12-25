@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ SimpleMOC: MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC
 
 # fast build rule for target.
 SimpleMOC/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build
 .PHONY : SimpleMOC/fast
 
 comms.o: comms.c.o
@@ -136,7 +135,7 @@ comms.o: comms.c.o
 
 # target to build an object file
 comms.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/comms.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/comms.c.o
 .PHONY : comms.c.o
 
 comms.i: comms.c.i
@@ -144,7 +143,7 @@ comms.i: comms.c.i
 
 # target to preprocess a source file
 comms.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/comms.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/comms.c.i
 .PHONY : comms.c.i
 
 comms.s: comms.c.s
@@ -152,7 +151,7 @@ comms.s: comms.c.s
 
 # target to generate assembly for a file
 comms.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/comms.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/comms.c.s
 .PHONY : comms.c.s
 
 glibc_compat_rand.o: glibc_compat_rand.c.o
@@ -160,7 +159,7 @@ glibc_compat_rand.o: glibc_compat_rand.c.o
 
 # target to build an object file
 glibc_compat_rand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/glibc_compat_rand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/glibc_compat_rand.c.o
 .PHONY : glibc_compat_rand.c.o
 
 glibc_compat_rand.i: glibc_compat_rand.c.i
@@ -168,7 +167,7 @@ glibc_compat_rand.i: glibc_compat_rand.c.i
 
 # target to preprocess a source file
 glibc_compat_rand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/glibc_compat_rand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/glibc_compat_rand.c.i
 .PHONY : glibc_compat_rand.c.i
 
 glibc_compat_rand.s: glibc_compat_rand.c.s
@@ -176,7 +175,7 @@ glibc_compat_rand.s: glibc_compat_rand.c.s
 
 # target to generate assembly for a file
 glibc_compat_rand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/glibc_compat_rand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/glibc_compat_rand.c.s
 .PHONY : glibc_compat_rand.c.s
 
 init.o: init.c.o
@@ -184,7 +183,7 @@ init.o: init.c.o
 
 # target to build an object file
 init.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/init.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/init.c.o
 .PHONY : init.c.o
 
 init.i: init.c.i
@@ -192,7 +191,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/init.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -200,7 +199,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/init.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/init.c.s
 .PHONY : init.c.s
 
 io.o: io.c.o
@@ -208,7 +207,7 @@ io.o: io.c.o
 
 # target to build an object file
 io.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/io.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/io.c.o
 .PHONY : io.c.o
 
 io.i: io.c.i
@@ -216,7 +215,7 @@ io.i: io.c.i
 
 # target to preprocess a source file
 io.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/io.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/io.c.i
 .PHONY : io.c.i
 
 io.s: io.c.s
@@ -224,7 +223,7 @@ io.s: io.c.s
 
 # target to generate assembly for a file
 io.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/io.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/io.c.s
 .PHONY : io.c.s
 
 main.o: main.c.o
@@ -232,7 +231,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -240,7 +239,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -248,7 +247,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/main.c.s
 .PHONY : main.c.s
 
 papi.o: papi.c.o
@@ -256,7 +255,7 @@ papi.o: papi.c.o
 
 # target to build an object file
 papi.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/papi.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/papi.c.o
 .PHONY : papi.c.o
 
 papi.i: papi.c.i
@@ -264,7 +263,7 @@ papi.i: papi.c.i
 
 # target to preprocess a source file
 papi.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/papi.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/papi.c.i
 .PHONY : papi.c.i
 
 papi.s: papi.c.s
@@ -272,7 +271,7 @@ papi.s: papi.c.s
 
 # target to generate assembly for a file
 papi.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/papi.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/papi.c.s
 .PHONY : papi.c.s
 
 solver.o: solver.c.o
@@ -280,7 +279,7 @@ solver.o: solver.c.o
 
 # target to build an object file
 solver.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/solver.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/solver.c.o
 .PHONY : solver.c.o
 
 solver.i: solver.c.i
@@ -288,7 +287,7 @@ solver.i: solver.c.i
 
 # target to preprocess a source file
 solver.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/solver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/solver.c.i
 .PHONY : solver.c.i
 
 solver.s: solver.c.s
@@ -296,7 +295,7 @@ solver.s: solver.c.s
 
 # target to generate assembly for a file
 solver.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/solver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/solver.c.s
 .PHONY : solver.c.s
 
 source.o: source.c.o
@@ -304,7 +303,7 @@ source.o: source.c.o
 
 # target to build an object file
 source.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/source.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/source.c.o
 .PHONY : source.c.o
 
 source.i: source.c.i
@@ -312,7 +311,7 @@ source.i: source.c.i
 
 # target to preprocess a source file
 source.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/source.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/source.c.i
 .PHONY : source.c.i
 
 source.s: source.c.s
@@ -320,7 +319,7 @@ source.s: source.c.s
 
 # target to generate assembly for a file
 source.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/source.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/source.c.s
 .PHONY : source.c.s
 
 test.o: test.c.o
@@ -328,7 +327,7 @@ test.o: test.c.o
 
 # target to build an object file
 test.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/test.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/test.c.o
 .PHONY : test.c.o
 
 test.i: test.c.i
@@ -336,7 +335,7 @@ test.i: test.c.i
 
 # target to preprocess a source file
 test.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/test.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/test.c.i
 .PHONY : test.c.i
 
 test.s: test.c.s
@@ -344,7 +343,7 @@ test.s: test.c.s
 
 # target to generate assembly for a file
 test.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/test.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/test.c.s
 .PHONY : test.c.s
 
 tracks.o: tracks.c.o
@@ -352,7 +351,7 @@ tracks.o: tracks.c.o
 
 # target to build an object file
 tracks.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/tracks.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/tracks.c.o
 .PHONY : tracks.c.o
 
 tracks.i: tracks.c.i
@@ -360,7 +359,7 @@ tracks.i: tracks.c.i
 
 # target to preprocess a source file
 tracks.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/tracks.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/tracks.c.i
 .PHONY : tracks.c.i
 
 tracks.s: tracks.c.s
@@ -368,7 +367,7 @@ tracks.s: tracks.c.s
 
 # target to generate assembly for a file
 tracks.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/tracks.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/tracks.c.s
 .PHONY : tracks.c.s
 
 utils.o: utils.c.o
@@ -376,7 +375,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/utils.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -384,7 +383,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/utils.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -392,7 +391,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/utils.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/CMakeFiles/SimpleMOC.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target
@@ -448,7 +447,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

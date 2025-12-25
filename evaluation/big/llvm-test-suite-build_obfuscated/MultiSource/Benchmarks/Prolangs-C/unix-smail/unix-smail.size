@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-smail/unix-smail  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-smail/unix-smail  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    8192
 .plt                     768    8224
 .plt.got                   8    8992
-.text                  37146    9008
-.fini                     13   46156
-.rodata                 7124   49152
-.eh_frame_hdr            404   56276
-.eh_frame               2668   56680
-.init_array                8   64944
-.fini_array                8   64952
-.dynamic                 480   64960
-.got                      72   65440
-.got.plt                 400   65512
-.data                    300   65920
-.bss                   18784   66224
+.text                  26567    9008
+.fini                     13   35576
+.rodata                 4684   36864
+.eh_frame_hdr            404   41548
+.eh_frame               2616   41952
+.init_array                8   48560
+.fini_array                8   48568
+.dynamic                 480   48576
+.got                      72   49056
+.got.plt                 400   49128
+.data                    300   49536
+.bss                   18784   49840
 .comment                  82       0
-Total                  72289
+Total                  59218
 
 

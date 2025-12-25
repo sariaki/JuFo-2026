@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/security-blowfish/security-blowfish  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/security-blowfish/security-blowfish  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     128    4128
 .plt.got                   8    4256
-.text                  17447    4272
-.fini                     13   21720
-.rodata                11160   24576
-.eh_frame_hdr            116   35736
-.eh_frame                704   35856
-.init_array                8   40384
-.fini_array                8   40392
-.dynamic                 496   40400
-.got                      40   40896
-.got.plt                  80   40936
-.data                   1341   41024
-.bss                       3   42365
+.text                  14103    4272
+.fini                     13   18376
+.rodata                10432   20480
+.eh_frame_hdr            116   30912
+.eh_frame                696   31032
+.init_array                8   36288
+.fini_array                8   36296
+.dynamic                 496   36304
+.got                      40   36800
+.got.plt                  80   36840
+.data                   1341   36928
+.bss                       3   38269
 .comment                  82       0
-Total                  32860
+Total                  28780
 
 

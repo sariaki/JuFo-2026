@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-lame/consumer-lame  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-lame/consumer-lame  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,20 +14,20 @@ section                  size     addr
 .init                      27    12288
 .plt                      864    12320
 .plt.got                    8    13184
-.text                  263925    13200
-.fini                      13   277128
-.rodata                 46464   278528
-.eh_frame_hdr            1588   324992
-.eh_frame               10036   326584
-.init_array                 8   342848
-.fini_array                 8   342856
-.data.rel.ro              608   342864
-.dynamic                  496   343472
-.got                       72   343968
-.got.plt                  448   344040
-.data                   69684   344496
-.bss                   507232   414192
+.text                  243701    13200
+.fini                      13   256904
+.rodata                 37856   258048
+.eh_frame_hdr            1580   295904
+.eh_frame                9776   297488
+.init_array                 8   314176
+.fini_array                 8   314184
+.data.rel.ro              608   314192
+.dynamic                  496   314800
+.got                       72   315296
+.got.plt                  448   315368
+.data                   69684   315824
+.bss                   507232   385520
 .comment                   82        0
-Total                  911713
+Total                  882613
 
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Applications/aha/CMakeFiles/aha.dir/depend.make
@@ -72,30 +72,30 @@ include MultiSource/Applications/aha/CMakeFiles/aha.dir/flags.make
 MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o: MultiSource/Applications/aha/CMakeFiles/aha.dir/flags.make
 MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c
 MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o: MultiSource/Applications/aha/CMakeFiles/aha.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/aha.dir/aha.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o -MF CMakeFiles/aha.dir/aha.c.o.d -o CMakeFiles/aha.dir/aha.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/aha.dir/aha.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.o -MF CMakeFiles/aha.dir/aha.c.o.d -o CMakeFiles/aha.dir/aha.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/aha.dir/aha.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c > CMakeFiles/aha.dir/aha.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c > CMakeFiles/aha.dir/aha.c.i
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/aha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/aha.dir/aha.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c -o CMakeFiles/aha.dir/aha.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.c -o CMakeFiles/aha.dir/aha.c.s
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o: MultiSource/Applications/aha/CMakeFiles/aha.dir/flags.make
 MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c
 MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o: MultiSource/Applications/aha/CMakeFiles/aha.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/aha.dir/userfun.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o -MF CMakeFiles/aha.dir/userfun.c.o.d -o CMakeFiles/aha.dir/userfun.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/aha.dir/userfun.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o -MF CMakeFiles/aha.dir/userfun.c.o.d -o CMakeFiles/aha.dir/userfun.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/aha.dir/userfun.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c > CMakeFiles/aha.dir/userfun.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c > CMakeFiles/aha.dir/userfun.c.i
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/aha.dir/userfun.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c -o CMakeFiles/aha.dir/userfun.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/userfun.c -o CMakeFiles/aha.dir/userfun.c.s
 
 # Object files for target aha
 aha_OBJECTS = \
@@ -109,20 +109,20 @@ MultiSource/Applications/aha/aha: MultiSource/Applications/aha/CMakeFiles/aha.di
 MultiSource/Applications/aha/aha: MultiSource/Applications/aha/CMakeFiles/aha.dir/userfun.c.o
 MultiSource/Applications/aha/aha: MultiSource/Applications/aha/CMakeFiles/aha.dir/build.make
 MultiSource/Applications/aha/aha: MultiSource/Applications/aha/CMakeFiles/aha.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable aha"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aha.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha/aha > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha/aha.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha/aha.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable aha"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aha.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha/aha > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha/aha.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha/aha.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha/aha.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Applications/aha/CMakeFiles/aha.dir/build: MultiSource/Applications/aha/aha
 .PHONY : MultiSource/Applications/aha/CMakeFiles/aha.dir/build
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha && $(CMAKE_COMMAND) -P CMakeFiles/aha.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha && $(CMAKE_COMMAND) -P CMakeFiles/aha.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/aha/CMakeFiles/aha.dir/clean
 
 MultiSource/Applications/aha/CMakeFiles/aha.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/aha/CMakeFiles/aha.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/aha /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/aha/CMakeFiles/aha.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/aha/CMakeFiles/aha.dir/depend
 

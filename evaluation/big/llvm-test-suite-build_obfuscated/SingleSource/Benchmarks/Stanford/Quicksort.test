@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Quicksort 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/Quicksort.reference_output

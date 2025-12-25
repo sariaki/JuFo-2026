@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/security-blowfish//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/security-blowfish//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/rule
 .PHONY : MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ security-blowfish: MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/s
 
 # fast build rule for target.
 security-blowfish/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build
 .PHONY : security-blowfish/fast
 
 bf_cbc.o: bf_cbc.c.o
@@ -136,7 +135,7 @@ bf_cbc.o: bf_cbc.c.o
 
 # target to build an object file
 bf_cbc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cbc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cbc.c.o
 .PHONY : bf_cbc.c.o
 
 bf_cbc.i: bf_cbc.c.i
@@ -144,7 +143,7 @@ bf_cbc.i: bf_cbc.c.i
 
 # target to preprocess a source file
 bf_cbc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cbc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cbc.c.i
 .PHONY : bf_cbc.c.i
 
 bf_cbc.s: bf_cbc.c.s
@@ -152,7 +151,7 @@ bf_cbc.s: bf_cbc.c.s
 
 # target to generate assembly for a file
 bf_cbc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cbc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cbc.c.s
 .PHONY : bf_cbc.c.s
 
 bf_cfb64.o: bf_cfb64.c.o
@@ -160,7 +159,7 @@ bf_cfb64.o: bf_cfb64.c.o
 
 # target to build an object file
 bf_cfb64.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cfb64.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cfb64.c.o
 .PHONY : bf_cfb64.c.o
 
 bf_cfb64.i: bf_cfb64.c.i
@@ -168,7 +167,7 @@ bf_cfb64.i: bf_cfb64.c.i
 
 # target to preprocess a source file
 bf_cfb64.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cfb64.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cfb64.c.i
 .PHONY : bf_cfb64.c.i
 
 bf_cfb64.s: bf_cfb64.c.s
@@ -176,7 +175,7 @@ bf_cfb64.s: bf_cfb64.c.s
 
 # target to generate assembly for a file
 bf_cfb64.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cfb64.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_cfb64.c.s
 .PHONY : bf_cfb64.c.s
 
 bf_ecb.o: bf_ecb.c.o
@@ -184,7 +183,7 @@ bf_ecb.o: bf_ecb.c.o
 
 # target to build an object file
 bf_ecb.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ecb.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ecb.c.o
 .PHONY : bf_ecb.c.o
 
 bf_ecb.i: bf_ecb.c.i
@@ -192,7 +191,7 @@ bf_ecb.i: bf_ecb.c.i
 
 # target to preprocess a source file
 bf_ecb.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ecb.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ecb.c.i
 .PHONY : bf_ecb.c.i
 
 bf_ecb.s: bf_ecb.c.s
@@ -200,7 +199,7 @@ bf_ecb.s: bf_ecb.c.s
 
 # target to generate assembly for a file
 bf_ecb.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ecb.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ecb.c.s
 .PHONY : bf_ecb.c.s
 
 bf_enc.o: bf_enc.c.o
@@ -208,7 +207,7 @@ bf_enc.o: bf_enc.c.o
 
 # target to build an object file
 bf_enc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_enc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_enc.c.o
 .PHONY : bf_enc.c.o
 
 bf_enc.i: bf_enc.c.i
@@ -216,7 +215,7 @@ bf_enc.i: bf_enc.c.i
 
 # target to preprocess a source file
 bf_enc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_enc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_enc.c.i
 .PHONY : bf_enc.c.i
 
 bf_enc.s: bf_enc.c.s
@@ -224,7 +223,7 @@ bf_enc.s: bf_enc.c.s
 
 # target to generate assembly for a file
 bf_enc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_enc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_enc.c.s
 .PHONY : bf_enc.c.s
 
 bf_ofb64.o: bf_ofb64.c.o
@@ -232,7 +231,7 @@ bf_ofb64.o: bf_ofb64.c.o
 
 # target to build an object file
 bf_ofb64.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ofb64.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ofb64.c.o
 .PHONY : bf_ofb64.c.o
 
 bf_ofb64.i: bf_ofb64.c.i
@@ -240,7 +239,7 @@ bf_ofb64.i: bf_ofb64.c.i
 
 # target to preprocess a source file
 bf_ofb64.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ofb64.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ofb64.c.i
 .PHONY : bf_ofb64.c.i
 
 bf_ofb64.s: bf_ofb64.c.s
@@ -248,7 +247,7 @@ bf_ofb64.s: bf_ofb64.c.s
 
 # target to generate assembly for a file
 bf_ofb64.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ofb64.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_ofb64.c.s
 .PHONY : bf_ofb64.c.s
 
 bf_skey.o: bf_skey.c.o
@@ -256,7 +255,7 @@ bf_skey.o: bf_skey.c.o
 
 # target to build an object file
 bf_skey.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_skey.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_skey.c.o
 .PHONY : bf_skey.c.o
 
 bf_skey.i: bf_skey.c.i
@@ -264,7 +263,7 @@ bf_skey.i: bf_skey.c.i
 
 # target to preprocess a source file
 bf_skey.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_skey.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_skey.c.i
 .PHONY : bf_skey.c.i
 
 bf_skey.s: bf_skey.c.s
@@ -272,7 +271,7 @@ bf_skey.s: bf_skey.c.s
 
 # target to generate assembly for a file
 bf_skey.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_skey.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bf_skey.c.s
 .PHONY : bf_skey.c.s
 
 bftest.o: bftest.c.o
@@ -280,7 +279,7 @@ bftest.o: bftest.c.o
 
 # target to build an object file
 bftest.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bftest.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bftest.c.o
 .PHONY : bftest.c.o
 
 bftest.i: bftest.c.i
@@ -288,7 +287,7 @@ bftest.i: bftest.c.i
 
 # target to preprocess a source file
 bftest.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bftest.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bftest.c.i
 .PHONY : bftest.c.i
 
 bftest.s: bftest.c.s
@@ -296,7 +295,7 @@ bftest.s: bftest.c.s
 
 # target to generate assembly for a file
 bftest.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bftest.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/build.make MultiSource/Benchmarks/MiBench/security-blowfish/CMakeFiles/security-blowfish.dir/bftest.c.s
 .PHONY : bftest.c.s
 
 # Help Target
@@ -340,7 +339,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

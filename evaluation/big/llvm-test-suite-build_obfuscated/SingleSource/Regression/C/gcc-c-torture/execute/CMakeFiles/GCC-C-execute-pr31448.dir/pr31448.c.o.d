@@ -1,2 +1,0 @@
-SingleSource/Regression/C/gcc-c-torture/execute/CMakeFiles/GCC-C-execute-pr31448.dir/pr31448.c.o: \
-  /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/SingleSource/Regression/C/gcc-c-torture/execute/pr31448.c

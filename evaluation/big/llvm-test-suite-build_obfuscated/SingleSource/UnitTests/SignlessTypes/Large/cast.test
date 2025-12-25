@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/cast 31415926
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/cast.reference_output

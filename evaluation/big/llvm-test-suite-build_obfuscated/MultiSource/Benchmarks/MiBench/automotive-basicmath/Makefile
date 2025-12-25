@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/automotive-basicmath//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/automotive-basicmath//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rule
 .PHONY : MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ automotive-basicmath: MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeF
 
 # fast build rule for target.
 automotive-basicmath/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build
 .PHONY : automotive-basicmath/fast
 
 basicmath.o: basicmath.c.o
@@ -136,7 +135,7 @@ basicmath.o: basicmath.c.o
 
 # target to build an object file
 basicmath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/basicmath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/basicmath.c.o
 .PHONY : basicmath.c.o
 
 basicmath.i: basicmath.c.i
@@ -144,7 +143,7 @@ basicmath.i: basicmath.c.i
 
 # target to preprocess a source file
 basicmath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/basicmath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/basicmath.c.i
 .PHONY : basicmath.c.i
 
 basicmath.s: basicmath.c.s
@@ -152,7 +151,7 @@ basicmath.s: basicmath.c.s
 
 # target to generate assembly for a file
 basicmath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/basicmath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/basicmath.c.s
 .PHONY : basicmath.c.s
 
 cubic.o: cubic.c.o
@@ -160,7 +159,7 @@ cubic.o: cubic.c.o
 
 # target to build an object file
 cubic.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/cubic.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/cubic.c.o
 .PHONY : cubic.c.o
 
 cubic.i: cubic.c.i
@@ -168,7 +167,7 @@ cubic.i: cubic.c.i
 
 # target to preprocess a source file
 cubic.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/cubic.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/cubic.c.i
 .PHONY : cubic.c.i
 
 cubic.s: cubic.c.s
@@ -176,7 +175,7 @@ cubic.s: cubic.c.s
 
 # target to generate assembly for a file
 cubic.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/cubic.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/cubic.c.s
 .PHONY : cubic.c.s
 
 isqrt.o: isqrt.c.o
@@ -184,7 +183,7 @@ isqrt.o: isqrt.c.o
 
 # target to build an object file
 isqrt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/isqrt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/isqrt.c.o
 .PHONY : isqrt.c.o
 
 isqrt.i: isqrt.c.i
@@ -192,7 +191,7 @@ isqrt.i: isqrt.c.i
 
 # target to preprocess a source file
 isqrt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/isqrt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/isqrt.c.i
 .PHONY : isqrt.c.i
 
 isqrt.s: isqrt.c.s
@@ -200,7 +199,7 @@ isqrt.s: isqrt.c.s
 
 # target to generate assembly for a file
 isqrt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/isqrt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/isqrt.c.s
 .PHONY : isqrt.c.s
 
 rad2deg.o: rad2deg.c.o
@@ -208,7 +207,7 @@ rad2deg.o: rad2deg.c.o
 
 # target to build an object file
 rad2deg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rad2deg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rad2deg.c.o
 .PHONY : rad2deg.c.o
 
 rad2deg.i: rad2deg.c.i
@@ -216,7 +215,7 @@ rad2deg.i: rad2deg.c.i
 
 # target to preprocess a source file
 rad2deg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rad2deg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rad2deg.c.i
 .PHONY : rad2deg.c.i
 
 rad2deg.s: rad2deg.c.s
@@ -224,7 +223,7 @@ rad2deg.s: rad2deg.c.s
 
 # target to generate assembly for a file
 rad2deg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rad2deg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/build.make MultiSource/Benchmarks/MiBench/automotive-basicmath/CMakeFiles/automotive-basicmath.dir/rad2deg.c.s
 .PHONY : rad2deg.c.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

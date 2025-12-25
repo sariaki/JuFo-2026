@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/depend.make
@@ -72,58 +72,58 @@ include MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/flags.make
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/flags.make
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtest.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o -MF CMakeFiles/iotest.dir/IOtest.c.o.d -o CMakeFiles/iotest.dir/IOtest.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtest.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o -MF CMakeFiles/iotest.dir/IOtest.c.o.d -o CMakeFiles/iotest.dir/IOtest.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iotest.dir/IOtest.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c > CMakeFiles/iotest.dir/IOtest.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c > CMakeFiles/iotest.dir/IOtest.c.i
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iotest.dir/IOtest.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c -o CMakeFiles/iotest.dir/IOtest.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtest.c -o CMakeFiles/iotest.dir/IOtest.c.s
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/flags.make
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtestA.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o -MF CMakeFiles/iotest.dir/IOtestA.c.o.d -o CMakeFiles/iotest.dir/IOtestA.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtestA.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o -MF CMakeFiles/iotest.dir/IOtestA.c.o.d -o CMakeFiles/iotest.dir/IOtestA.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iotest.dir/IOtestA.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c > CMakeFiles/iotest.dir/IOtestA.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c > CMakeFiles/iotest.dir/IOtestA.c.i
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iotest.dir/IOtestA.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c -o CMakeFiles/iotest.dir/IOtestA.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestA.c -o CMakeFiles/iotest.dir/IOtestA.c.s
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/flags.make
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtestB.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o -MF CMakeFiles/iotest.dir/IOtestB.c.o.d -o CMakeFiles/iotest.dir/IOtestB.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtestB.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o -MF CMakeFiles/iotest.dir/IOtestB.c.o.d -o CMakeFiles/iotest.dir/IOtestB.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iotest.dir/IOtestB.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c > CMakeFiles/iotest.dir/IOtestB.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c > CMakeFiles/iotest.dir/IOtestB.c.i
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iotest.dir/IOtestB.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c -o CMakeFiles/iotest.dir/IOtestB.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestB.c -o CMakeFiles/iotest.dir/IOtestB.c.s
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/flags.make
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtestC.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o -MF CMakeFiles/iotest.dir/IOtestC.c.o.d -o CMakeFiles/iotest.dir/IOtestC.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/iotest.dir/IOtestC.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o -MF CMakeFiles/iotest.dir/IOtestC.c.o.d -o CMakeFiles/iotest.dir/IOtestC.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/iotest.dir/IOtestC.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c > CMakeFiles/iotest.dir/IOtestC.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c > CMakeFiles/iotest.dir/IOtestC.c.i
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/iotest.dir/IOtestC.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c -o CMakeFiles/iotest.dir/IOtestC.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/IOtestC.c -o CMakeFiles/iotest.dir/IOtestC.c.s
 
 # Object files for target iotest
 iotest_OBJECTS = \
@@ -141,20 +141,20 @@ MultiSource/Benchmarks/McCat/12-IOtest/iotest: MultiSource/Benchmarks/McCat/12-I
 MultiSource/Benchmarks/McCat/12-IOtest/iotest: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o
 MultiSource/Benchmarks/McCat/12-IOtest/iotest: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make
 MultiSource/Benchmarks/McCat/12-IOtest/iotest: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable iotest"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iotest.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/iotest > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/iotest.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/iotest.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/iotest.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable iotest"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iotest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/iotest > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/iotest.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest/iotest.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/iotest.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build: MultiSource/Benchmarks/McCat/12-IOtest/iotest
 .PHONY : MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && $(CMAKE_COMMAND) -P CMakeFiles/iotest.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest && $(CMAKE_COMMAND) -P CMakeFiles/iotest.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/clean
 
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/12-IOtest /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/depend
 

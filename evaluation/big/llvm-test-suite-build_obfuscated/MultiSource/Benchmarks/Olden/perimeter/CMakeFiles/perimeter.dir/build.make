@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/depend.make
@@ -72,44 +72,44 @@ include MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/flags.ma
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/flags.make
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/perimeter.dir/args.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o -MF CMakeFiles/perimeter.dir/args.c.o.d -o CMakeFiles/perimeter.dir/args.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/perimeter.dir/args.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.o -MF CMakeFiles/perimeter.dir/args.c.o.d -o CMakeFiles/perimeter.dir/args.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/perimeter.dir/args.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c > CMakeFiles/perimeter.dir/args.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c > CMakeFiles/perimeter.dir/args.c.i
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/args.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/perimeter.dir/args.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c -o CMakeFiles/perimeter.dir/args.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/args.c -o CMakeFiles/perimeter.dir/args.c.s
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/flags.make
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/perimeter.dir/main.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o -MF CMakeFiles/perimeter.dir/main.c.o.d -o CMakeFiles/perimeter.dir/main.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/perimeter.dir/main.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.o -MF CMakeFiles/perimeter.dir/main.c.o.d -o CMakeFiles/perimeter.dir/main.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/perimeter.dir/main.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c > CMakeFiles/perimeter.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c > CMakeFiles/perimeter.dir/main.c.i
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/perimeter.dir/main.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c -o CMakeFiles/perimeter.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/main.c -o CMakeFiles/perimeter.dir/main.c.s
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/flags.make
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/perimeter.dir/maketree.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o -MF CMakeFiles/perimeter.dir/maketree.c.o.d -o CMakeFiles/perimeter.dir/maketree.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/perimeter.dir/maketree.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o -MF CMakeFiles/perimeter.dir/maketree.c.o.d -o CMakeFiles/perimeter.dir/maketree.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/perimeter.dir/maketree.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c > CMakeFiles/perimeter.dir/maketree.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c > CMakeFiles/perimeter.dir/maketree.c.i
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/perimeter.dir/maketree.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c -o CMakeFiles/perimeter.dir/maketree.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/maketree.c -o CMakeFiles/perimeter.dir/maketree.c.s
 
 # Object files for target perimeter
 perimeter_OBJECTS = \
@@ -125,20 +125,20 @@ MultiSource/Benchmarks/Olden/perimeter/perimeter: MultiSource/Benchmarks/Olden/p
 MultiSource/Benchmarks/Olden/perimeter/perimeter: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/maketree.c.o
 MultiSource/Benchmarks/Olden/perimeter/perimeter: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/build.make
 MultiSource/Benchmarks/Olden/perimeter/perimeter: MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable perimeter"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/perimeter.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/perimeter.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable perimeter"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/perimeter.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter/perimeter.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/build: MultiSource/Benchmarks/Olden/perimeter/perimeter
 .PHONY : MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/build
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && $(CMAKE_COMMAND) -P CMakeFiles/perimeter.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter && $(CMAKE_COMMAND) -P CMakeFiles/perimeter.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/clean
 
 MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Olden/perimeter /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Olden/perimeter/CMakeFiles/perimeter.dir/depend
 

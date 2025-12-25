@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/oggenc/oggenc  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/oggenc/oggenc  :
 section                   size      addr
 .interp                     28       792
 .note.gnu.property          32       824
@@ -14,20 +14,20 @@ section                   size      addr
 .init                       27     98304
 .plt                       880     98336
 .plt.got                     8     99216
-.text                   341051     99232
-.fini                       13    440284
-.rodata                  70192    442368
-.eh_frame_hdr             2724    512560
-.eh_frame                16112    515288
-.init_array                  8    535472
-.fini_array                  8    535480
-.data.rel.ro               504    535488
-.dynamic                   496    535992
-.got                        64    536488
-.got.plt                   456    536552
-.data                  1658032    537008
-.bss                     30120   2195040
+.text                   317755     99232
+.fini                       13    416988
+.rodata                  59664    417792
+.eh_frame_hdr             2756    477456
+.eh_frame                16108    480216
+.init_array                  8    502704
+.fini_array                  8    502712
+.data.rel.ro               504    502720
+.dynamic                   496    503224
+.got                        64    503720
+.got.plt                   456    503784
+.data                  1658032    504240
+.bss                     30120   2162272
 .comment                    82         0
-Total                  2218076
+Total                  2184280
 
 

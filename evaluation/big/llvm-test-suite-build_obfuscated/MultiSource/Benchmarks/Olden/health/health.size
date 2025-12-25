@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/health/health  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/health/health  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                     96    4128
 .plt.got                  8    4224
-.text                  8731    4240
-.fini                    13   12972
-.rodata                1772   16384
-.eh_frame_hdr           140   18156
-.eh_frame               768   18296
-.init_array               8   24000
-.fini_array               8   24008
-.dynamic                496   24016
-.got                     40   24512
-.got.plt                 64   24552
-.data                    16   24616
-.bss                     32   24632
+.text                  7305    4240
+.fini                    13   11548
+.rodata                1628   12288
+.eh_frame_hdr           140   13916
+.eh_frame               744   14056
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                496   19920
+.got                     40   20416
+.got.plt                 64   20456
+.data                    16   20520
+.bss                     32   20536
 .comment                 82       0
-Total                 13321
+Total                 11727
 
 

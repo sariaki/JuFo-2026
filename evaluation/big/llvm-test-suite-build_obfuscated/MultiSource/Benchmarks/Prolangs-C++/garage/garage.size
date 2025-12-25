@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/garage/garage  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/garage/garage  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,12 +14,12 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  4497    4256
-.fini                    13    8756
-.rodata                 364   12288
-.eh_frame_hdr           124   12652
-.eh_frame               488   12776
-.gcc_except_table        24   13264
+.text                  4592    4256
+.fini                    13    8848
+.rodata                 404   12288
+.eh_frame_hdr           124   12692
+.eh_frame               488   12816
+.gcc_except_table        24   13304
 .init_array              16   19728
 .fini_array               8   19744
 .data.rel.ro            136   19752
@@ -29,6 +29,6 @@ section                size    addr
 .data                    24   20528
 .bss                    168   20552
 .comment                 82       0
-Total                  8492
+Total                  8627
 
 

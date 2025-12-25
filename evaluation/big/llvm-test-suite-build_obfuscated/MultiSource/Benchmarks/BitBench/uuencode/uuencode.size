@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/uuencode/uuencode  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/uuencode/uuencode  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    176    4128
 .plt.got                  8    4304
-.text                  4033    4320
-.fini                    13    8356
-.rodata                 926   12288
-.eh_frame_hdr            84   13216
-.eh_frame               340   13304
-.init_array               8   19912
-.fini_array               8   19920
-.dynamic                480   19928
-.got                     48   20408
-.got.plt                104   20456
-.data                    16   20560
-.bss                      8   20576
+.text                  3567    4320
+.fini                    13    7888
+.rodata                 894    8192
+.eh_frame_hdr            76    9088
+.eh_frame               332    9168
+.init_array               8   15816
+.fini_array               8   15824
+.dynamic                480   15832
+.got                     48   16312
+.got.plt                104   16360
+.data                    16   16464
+.bss                      8   16480
 .comment                 82       0
-Total                  7683
+Total                  7169
 
 

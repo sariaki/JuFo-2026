@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ miniAMR: MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/r
 
 # fast build rule for target.
 miniAMR/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build
 .PHONY : miniAMR/fast
 
 block.o: block.c.o
@@ -136,7 +135,7 @@ block.o: block.c.o
 
 # target to build an object file
 block.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/block.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/block.c.o
 .PHONY : block.c.o
 
 block.i: block.c.i
@@ -144,7 +143,7 @@ block.i: block.c.i
 
 # target to preprocess a source file
 block.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/block.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/block.c.i
 .PHONY : block.c.i
 
 block.s: block.c.s
@@ -152,7 +151,7 @@ block.s: block.c.s
 
 # target to generate assembly for a file
 block.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/block.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/block.c.s
 .PHONY : block.c.s
 
 check_sum.o: check_sum.c.o
@@ -160,7 +159,7 @@ check_sum.o: check_sum.c.o
 
 # target to build an object file
 check_sum.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/check_sum.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/check_sum.c.o
 .PHONY : check_sum.c.o
 
 check_sum.i: check_sum.c.i
@@ -168,7 +167,7 @@ check_sum.i: check_sum.c.i
 
 # target to preprocess a source file
 check_sum.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/check_sum.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/check_sum.c.i
 .PHONY : check_sum.c.i
 
 check_sum.s: check_sum.c.s
@@ -176,7 +175,7 @@ check_sum.s: check_sum.c.s
 
 # target to generate assembly for a file
 check_sum.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/check_sum.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/check_sum.c.s
 .PHONY : check_sum.c.s
 
 comm.o: comm.c.o
@@ -184,7 +183,7 @@ comm.o: comm.c.o
 
 # target to build an object file
 comm.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/comm.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/comm.c.o
 .PHONY : comm.c.o
 
 comm.i: comm.c.i
@@ -192,7 +191,7 @@ comm.i: comm.c.i
 
 # target to preprocess a source file
 comm.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/comm.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/comm.c.i
 .PHONY : comm.c.i
 
 comm.s: comm.c.s
@@ -200,7 +199,7 @@ comm.s: comm.c.s
 
 # target to generate assembly for a file
 comm.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/comm.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/comm.c.s
 .PHONY : comm.c.s
 
 driver.o: driver.c.o
@@ -208,7 +207,7 @@ driver.o: driver.c.o
 
 # target to build an object file
 driver.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/driver.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/driver.c.o
 .PHONY : driver.c.o
 
 driver.i: driver.c.i
@@ -216,7 +215,7 @@ driver.i: driver.c.i
 
 # target to preprocess a source file
 driver.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/driver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/driver.c.i
 .PHONY : driver.c.i
 
 driver.s: driver.c.s
@@ -224,7 +223,7 @@ driver.s: driver.c.s
 
 # target to generate assembly for a file
 driver.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/driver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/driver.c.s
 .PHONY : driver.c.s
 
 glibc_compat_rand.o: glibc_compat_rand.c.o
@@ -232,7 +231,7 @@ glibc_compat_rand.o: glibc_compat_rand.c.o
 
 # target to build an object file
 glibc_compat_rand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/glibc_compat_rand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/glibc_compat_rand.c.o
 .PHONY : glibc_compat_rand.c.o
 
 glibc_compat_rand.i: glibc_compat_rand.c.i
@@ -240,7 +239,7 @@ glibc_compat_rand.i: glibc_compat_rand.c.i
 
 # target to preprocess a source file
 glibc_compat_rand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/glibc_compat_rand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/glibc_compat_rand.c.i
 .PHONY : glibc_compat_rand.c.i
 
 glibc_compat_rand.s: glibc_compat_rand.c.s
@@ -248,7 +247,7 @@ glibc_compat_rand.s: glibc_compat_rand.c.s
 
 # target to generate assembly for a file
 glibc_compat_rand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/glibc_compat_rand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/glibc_compat_rand.c.s
 .PHONY : glibc_compat_rand.c.s
 
 init.o: init.c.o
@@ -256,7 +255,7 @@ init.o: init.c.o
 
 # target to build an object file
 init.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/init.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/init.c.o
 .PHONY : init.c.o
 
 init.i: init.c.i
@@ -264,7 +263,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/init.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -272,7 +271,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/init.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/init.c.s
 .PHONY : init.c.s
 
 main.o: main.c.o
@@ -280,7 +279,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -288,7 +287,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -296,7 +295,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/main.c.s
 .PHONY : main.c.s
 
 move.o: move.c.o
@@ -304,7 +303,7 @@ move.o: move.c.o
 
 # target to build an object file
 move.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/move.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/move.c.o
 .PHONY : move.c.o
 
 move.i: move.c.i
@@ -312,7 +311,7 @@ move.i: move.c.i
 
 # target to preprocess a source file
 move.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/move.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/move.c.i
 .PHONY : move.c.i
 
 move.s: move.c.s
@@ -320,7 +319,7 @@ move.s: move.c.s
 
 # target to generate assembly for a file
 move.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/move.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/move.c.s
 .PHONY : move.c.s
 
 plot.o: plot.c.o
@@ -328,7 +327,7 @@ plot.o: plot.c.o
 
 # target to build an object file
 plot.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/plot.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/plot.c.o
 .PHONY : plot.c.o
 
 plot.i: plot.c.i
@@ -336,7 +335,7 @@ plot.i: plot.c.i
 
 # target to preprocess a source file
 plot.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/plot.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/plot.c.i
 .PHONY : plot.c.i
 
 plot.s: plot.c.s
@@ -344,7 +343,7 @@ plot.s: plot.c.s
 
 # target to generate assembly for a file
 plot.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/plot.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/plot.c.s
 .PHONY : plot.c.s
 
 profile.o: profile.c.o
@@ -352,7 +351,7 @@ profile.o: profile.c.o
 
 # target to build an object file
 profile.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/profile.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/profile.c.o
 .PHONY : profile.c.o
 
 profile.i: profile.c.i
@@ -360,7 +359,7 @@ profile.i: profile.c.i
 
 # target to preprocess a source file
 profile.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/profile.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/profile.c.i
 .PHONY : profile.c.i
 
 profile.s: profile.c.s
@@ -368,7 +367,7 @@ profile.s: profile.c.s
 
 # target to generate assembly for a file
 profile.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/profile.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/profile.c.s
 .PHONY : profile.c.s
 
 refine.o: refine.c.o
@@ -376,7 +375,7 @@ refine.o: refine.c.o
 
 # target to build an object file
 refine.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/refine.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/refine.c.o
 .PHONY : refine.c.o
 
 refine.i: refine.c.i
@@ -384,7 +383,7 @@ refine.i: refine.c.i
 
 # target to preprocess a source file
 refine.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/refine.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/refine.c.i
 .PHONY : refine.c.i
 
 refine.s: refine.c.s
@@ -392,7 +391,7 @@ refine.s: refine.c.s
 
 # target to generate assembly for a file
 refine.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/refine.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/refine.c.s
 .PHONY : refine.c.s
 
 stencil.o: stencil.c.o
@@ -400,7 +399,7 @@ stencil.o: stencil.c.o
 
 # target to build an object file
 stencil.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/stencil.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/stencil.c.o
 .PHONY : stencil.c.o
 
 stencil.i: stencil.c.i
@@ -408,7 +407,7 @@ stencil.i: stencil.c.i
 
 # target to preprocess a source file
 stencil.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/stencil.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/stencil.c.i
 .PHONY : stencil.c.i
 
 stencil.s: stencil.c.s
@@ -416,7 +415,7 @@ stencil.s: stencil.c.s
 
 # target to generate assembly for a file
 stencil.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/stencil.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/stencil.c.s
 .PHONY : stencil.c.s
 
 target.o: target.c.o
@@ -424,7 +423,7 @@ target.o: target.c.o
 
 # target to build an object file
 target.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/target.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/target.c.o
 .PHONY : target.c.o
 
 target.i: target.c.i
@@ -432,7 +431,7 @@ target.i: target.c.i
 
 # target to preprocess a source file
 target.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/target.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/target.c.i
 .PHONY : target.c.i
 
 target.s: target.c.s
@@ -440,7 +439,7 @@ target.s: target.c.s
 
 # target to generate assembly for a file
 target.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/target.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/target.c.s
 .PHONY : target.c.s
 
 util.o: util.c.o
@@ -448,7 +447,7 @@ util.o: util.c.o
 
 # target to build an object file
 util.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/util.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/util.c.o
 .PHONY : util.c.o
 
 util.i: util.c.i
@@ -456,7 +455,7 @@ util.i: util.c.i
 
 # target to preprocess a source file
 util.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/util.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/util.c.i
 .PHONY : util.c.i
 
 util.s: util.c.s
@@ -464,7 +463,7 @@ util.s: util.c.s
 
 # target to generate assembly for a file
 util.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/util.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/CMakeFiles/miniAMR.dir/util.c.s
 .PHONY : util.c.s
 
 # Help Target
@@ -529,7 +528,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ HACCKernels: MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HAC
 
 # fast build rule for target.
 HACCKernels/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build
 .PHONY : HACCKernels/fast
 
 GravityForceKernel.o: GravityForceKernel.cpp.o
@@ -136,7 +135,7 @@ GravityForceKernel.o: GravityForceKernel.cpp.o
 
 # target to build an object file
 GravityForceKernel.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/GravityForceKernel.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/GravityForceKernel.cpp.o
 .PHONY : GravityForceKernel.cpp.o
 
 GravityForceKernel.i: GravityForceKernel.cpp.i
@@ -144,7 +143,7 @@ GravityForceKernel.i: GravityForceKernel.cpp.i
 
 # target to preprocess a source file
 GravityForceKernel.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/GravityForceKernel.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/GravityForceKernel.cpp.i
 .PHONY : GravityForceKernel.cpp.i
 
 GravityForceKernel.s: GravityForceKernel.cpp.s
@@ -152,7 +151,7 @@ GravityForceKernel.s: GravityForceKernel.cpp.s
 
 # target to generate assembly for a file
 GravityForceKernel.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/GravityForceKernel.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/GravityForceKernel.cpp.s
 .PHONY : GravityForceKernel.cpp.s
 
 main.o: main.cpp.o
@@ -160,7 +159,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/main.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -168,7 +167,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/main.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -176,7 +175,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/main.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/CMakeFiles/HACCKernels.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -205,7 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

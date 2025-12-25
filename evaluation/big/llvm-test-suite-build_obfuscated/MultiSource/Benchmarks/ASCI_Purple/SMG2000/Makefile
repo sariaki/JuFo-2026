@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASCI_Purple/SMG2000//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/ASCI_Purple/SMG2000//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/rule
 .PHONY : MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ smg2000: MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/rule
 
 # fast build rule for target.
 smg2000/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build
 .PHONY : smg2000/fast
 
 HYPRE_pcg.o: HYPRE_pcg.c.o
@@ -136,7 +135,7 @@ HYPRE_pcg.o: HYPRE_pcg.c.o
 
 # target to build an object file
 HYPRE_pcg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_pcg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_pcg.c.o
 .PHONY : HYPRE_pcg.c.o
 
 HYPRE_pcg.i: HYPRE_pcg.c.i
@@ -144,7 +143,7 @@ HYPRE_pcg.i: HYPRE_pcg.c.i
 
 # target to preprocess a source file
 HYPRE_pcg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_pcg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_pcg.c.i
 .PHONY : HYPRE_pcg.c.i
 
 HYPRE_pcg.s: HYPRE_pcg.c.s
@@ -152,7 +151,7 @@ HYPRE_pcg.s: HYPRE_pcg.c.s
 
 # target to generate assembly for a file
 HYPRE_pcg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_pcg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_pcg.c.s
 .PHONY : HYPRE_pcg.c.s
 
 HYPRE_struct_grid.o: HYPRE_struct_grid.c.o
@@ -160,7 +159,7 @@ HYPRE_struct_grid.o: HYPRE_struct_grid.c.o
 
 # target to build an object file
 HYPRE_struct_grid.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_grid.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_grid.c.o
 .PHONY : HYPRE_struct_grid.c.o
 
 HYPRE_struct_grid.i: HYPRE_struct_grid.c.i
@@ -168,7 +167,7 @@ HYPRE_struct_grid.i: HYPRE_struct_grid.c.i
 
 # target to preprocess a source file
 HYPRE_struct_grid.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_grid.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_grid.c.i
 .PHONY : HYPRE_struct_grid.c.i
 
 HYPRE_struct_grid.s: HYPRE_struct_grid.c.s
@@ -176,7 +175,7 @@ HYPRE_struct_grid.s: HYPRE_struct_grid.c.s
 
 # target to generate assembly for a file
 HYPRE_struct_grid.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_grid.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_grid.c.s
 .PHONY : HYPRE_struct_grid.c.s
 
 HYPRE_struct_matrix.o: HYPRE_struct_matrix.c.o
@@ -184,7 +183,7 @@ HYPRE_struct_matrix.o: HYPRE_struct_matrix.c.o
 
 # target to build an object file
 HYPRE_struct_matrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_matrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_matrix.c.o
 .PHONY : HYPRE_struct_matrix.c.o
 
 HYPRE_struct_matrix.i: HYPRE_struct_matrix.c.i
@@ -192,7 +191,7 @@ HYPRE_struct_matrix.i: HYPRE_struct_matrix.c.i
 
 # target to preprocess a source file
 HYPRE_struct_matrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_matrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_matrix.c.i
 .PHONY : HYPRE_struct_matrix.c.i
 
 HYPRE_struct_matrix.s: HYPRE_struct_matrix.c.s
@@ -200,7 +199,7 @@ HYPRE_struct_matrix.s: HYPRE_struct_matrix.c.s
 
 # target to generate assembly for a file
 HYPRE_struct_matrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_matrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_matrix.c.s
 .PHONY : HYPRE_struct_matrix.c.s
 
 HYPRE_struct_pcg.o: HYPRE_struct_pcg.c.o
@@ -208,7 +207,7 @@ HYPRE_struct_pcg.o: HYPRE_struct_pcg.c.o
 
 # target to build an object file
 HYPRE_struct_pcg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_pcg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_pcg.c.o
 .PHONY : HYPRE_struct_pcg.c.o
 
 HYPRE_struct_pcg.i: HYPRE_struct_pcg.c.i
@@ -216,7 +215,7 @@ HYPRE_struct_pcg.i: HYPRE_struct_pcg.c.i
 
 # target to preprocess a source file
 HYPRE_struct_pcg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_pcg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_pcg.c.i
 .PHONY : HYPRE_struct_pcg.c.i
 
 HYPRE_struct_pcg.s: HYPRE_struct_pcg.c.s
@@ -224,7 +223,7 @@ HYPRE_struct_pcg.s: HYPRE_struct_pcg.c.s
 
 # target to generate assembly for a file
 HYPRE_struct_pcg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_pcg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_pcg.c.s
 .PHONY : HYPRE_struct_pcg.c.s
 
 HYPRE_struct_smg.o: HYPRE_struct_smg.c.o
@@ -232,7 +231,7 @@ HYPRE_struct_smg.o: HYPRE_struct_smg.c.o
 
 # target to build an object file
 HYPRE_struct_smg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_smg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_smg.c.o
 .PHONY : HYPRE_struct_smg.c.o
 
 HYPRE_struct_smg.i: HYPRE_struct_smg.c.i
@@ -240,7 +239,7 @@ HYPRE_struct_smg.i: HYPRE_struct_smg.c.i
 
 # target to preprocess a source file
 HYPRE_struct_smg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_smg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_smg.c.i
 .PHONY : HYPRE_struct_smg.c.i
 
 HYPRE_struct_smg.s: HYPRE_struct_smg.c.s
@@ -248,7 +247,7 @@ HYPRE_struct_smg.s: HYPRE_struct_smg.c.s
 
 # target to generate assembly for a file
 HYPRE_struct_smg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_smg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_smg.c.s
 .PHONY : HYPRE_struct_smg.c.s
 
 HYPRE_struct_stencil.o: HYPRE_struct_stencil.c.o
@@ -256,7 +255,7 @@ HYPRE_struct_stencil.o: HYPRE_struct_stencil.c.o
 
 # target to build an object file
 HYPRE_struct_stencil.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_stencil.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_stencil.c.o
 .PHONY : HYPRE_struct_stencil.c.o
 
 HYPRE_struct_stencil.i: HYPRE_struct_stencil.c.i
@@ -264,7 +263,7 @@ HYPRE_struct_stencil.i: HYPRE_struct_stencil.c.i
 
 # target to preprocess a source file
 HYPRE_struct_stencil.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_stencil.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_stencil.c.i
 .PHONY : HYPRE_struct_stencil.c.i
 
 HYPRE_struct_stencil.s: HYPRE_struct_stencil.c.s
@@ -272,7 +271,7 @@ HYPRE_struct_stencil.s: HYPRE_struct_stencil.c.s
 
 # target to generate assembly for a file
 HYPRE_struct_stencil.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_stencil.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_stencil.c.s
 .PHONY : HYPRE_struct_stencil.c.s
 
 HYPRE_struct_vector.o: HYPRE_struct_vector.c.o
@@ -280,7 +279,7 @@ HYPRE_struct_vector.o: HYPRE_struct_vector.c.o
 
 # target to build an object file
 HYPRE_struct_vector.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_vector.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_vector.c.o
 .PHONY : HYPRE_struct_vector.c.o
 
 HYPRE_struct_vector.i: HYPRE_struct_vector.c.i
@@ -288,7 +287,7 @@ HYPRE_struct_vector.i: HYPRE_struct_vector.c.i
 
 # target to preprocess a source file
 HYPRE_struct_vector.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_vector.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_vector.c.i
 .PHONY : HYPRE_struct_vector.c.i
 
 HYPRE_struct_vector.s: HYPRE_struct_vector.c.s
@@ -296,7 +295,7 @@ HYPRE_struct_vector.s: HYPRE_struct_vector.c.s
 
 # target to generate assembly for a file
 HYPRE_struct_vector.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_vector.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/HYPRE_struct_vector.c.s
 .PHONY : HYPRE_struct_vector.c.s
 
 box.o: box.c.o
@@ -304,7 +303,7 @@ box.o: box.c.o
 
 # target to build an object file
 box.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box.c.o
 .PHONY : box.c.o
 
 box.i: box.c.i
@@ -312,7 +311,7 @@ box.i: box.c.i
 
 # target to preprocess a source file
 box.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box.c.i
 .PHONY : box.c.i
 
 box.s: box.c.s
@@ -320,7 +319,7 @@ box.s: box.c.s
 
 # target to generate assembly for a file
 box.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box.c.s
 .PHONY : box.c.s
 
 box_algebra.o: box_algebra.c.o
@@ -328,7 +327,7 @@ box_algebra.o: box_algebra.c.o
 
 # target to build an object file
 box_algebra.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_algebra.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_algebra.c.o
 .PHONY : box_algebra.c.o
 
 box_algebra.i: box_algebra.c.i
@@ -336,7 +335,7 @@ box_algebra.i: box_algebra.c.i
 
 # target to preprocess a source file
 box_algebra.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_algebra.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_algebra.c.i
 .PHONY : box_algebra.c.i
 
 box_algebra.s: box_algebra.c.s
@@ -344,7 +343,7 @@ box_algebra.s: box_algebra.c.s
 
 # target to generate assembly for a file
 box_algebra.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_algebra.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_algebra.c.s
 .PHONY : box_algebra.c.s
 
 box_alloc.o: box_alloc.c.o
@@ -352,7 +351,7 @@ box_alloc.o: box_alloc.c.o
 
 # target to build an object file
 box_alloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_alloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_alloc.c.o
 .PHONY : box_alloc.c.o
 
 box_alloc.i: box_alloc.c.i
@@ -360,7 +359,7 @@ box_alloc.i: box_alloc.c.i
 
 # target to preprocess a source file
 box_alloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_alloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_alloc.c.i
 .PHONY : box_alloc.c.i
 
 box_alloc.s: box_alloc.c.s
@@ -368,7 +367,7 @@ box_alloc.s: box_alloc.c.s
 
 # target to generate assembly for a file
 box_alloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_alloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_alloc.c.s
 .PHONY : box_alloc.c.s
 
 box_neighbors.o: box_neighbors.c.o
@@ -376,7 +375,7 @@ box_neighbors.o: box_neighbors.c.o
 
 # target to build an object file
 box_neighbors.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_neighbors.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_neighbors.c.o
 .PHONY : box_neighbors.c.o
 
 box_neighbors.i: box_neighbors.c.i
@@ -384,7 +383,7 @@ box_neighbors.i: box_neighbors.c.i
 
 # target to preprocess a source file
 box_neighbors.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_neighbors.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_neighbors.c.i
 .PHONY : box_neighbors.c.i
 
 box_neighbors.s: box_neighbors.c.s
@@ -392,7 +391,7 @@ box_neighbors.s: box_neighbors.c.s
 
 # target to generate assembly for a file
 box_neighbors.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_neighbors.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/box_neighbors.c.s
 .PHONY : box_neighbors.c.s
 
 coarsen.o: coarsen.c.o
@@ -400,7 +399,7 @@ coarsen.o: coarsen.c.o
 
 # target to build an object file
 coarsen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/coarsen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/coarsen.c.o
 .PHONY : coarsen.c.o
 
 coarsen.i: coarsen.c.i
@@ -408,7 +407,7 @@ coarsen.i: coarsen.c.i
 
 # target to preprocess a source file
 coarsen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/coarsen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/coarsen.c.i
 .PHONY : coarsen.c.i
 
 coarsen.s: coarsen.c.s
@@ -416,7 +415,7 @@ coarsen.s: coarsen.c.s
 
 # target to generate assembly for a file
 coarsen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/coarsen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/coarsen.c.s
 .PHONY : coarsen.c.s
 
 communication.o: communication.c.o
@@ -424,7 +423,7 @@ communication.o: communication.c.o
 
 # target to build an object file
 communication.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication.c.o
 .PHONY : communication.c.o
 
 communication.i: communication.c.i
@@ -432,7 +431,7 @@ communication.i: communication.c.i
 
 # target to preprocess a source file
 communication.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication.c.i
 .PHONY : communication.c.i
 
 communication.s: communication.c.s
@@ -440,7 +439,7 @@ communication.s: communication.c.s
 
 # target to generate assembly for a file
 communication.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication.c.s
 .PHONY : communication.c.s
 
 communication_info.o: communication_info.c.o
@@ -448,7 +447,7 @@ communication_info.o: communication_info.c.o
 
 # target to build an object file
 communication_info.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication_info.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication_info.c.o
 .PHONY : communication_info.c.o
 
 communication_info.i: communication_info.c.i
@@ -456,7 +455,7 @@ communication_info.i: communication_info.c.i
 
 # target to preprocess a source file
 communication_info.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication_info.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication_info.c.i
 .PHONY : communication_info.c.i
 
 communication_info.s: communication_info.c.s
@@ -464,7 +463,7 @@ communication_info.s: communication_info.c.s
 
 # target to generate assembly for a file
 communication_info.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication_info.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/communication_info.c.s
 .PHONY : communication_info.c.s
 
 computation.o: computation.c.o
@@ -472,7 +471,7 @@ computation.o: computation.c.o
 
 # target to build an object file
 computation.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/computation.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/computation.c.o
 .PHONY : computation.c.o
 
 computation.i: computation.c.i
@@ -480,7 +479,7 @@ computation.i: computation.c.i
 
 # target to preprocess a source file
 computation.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/computation.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/computation.c.i
 .PHONY : computation.c.i
 
 computation.s: computation.c.s
@@ -488,7 +487,7 @@ computation.s: computation.c.s
 
 # target to generate assembly for a file
 computation.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/computation.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/computation.c.s
 .PHONY : computation.c.s
 
 cyclic_reduction.o: cyclic_reduction.c.o
@@ -496,7 +495,7 @@ cyclic_reduction.o: cyclic_reduction.c.o
 
 # target to build an object file
 cyclic_reduction.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/cyclic_reduction.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/cyclic_reduction.c.o
 .PHONY : cyclic_reduction.c.o
 
 cyclic_reduction.i: cyclic_reduction.c.i
@@ -504,7 +503,7 @@ cyclic_reduction.i: cyclic_reduction.c.i
 
 # target to preprocess a source file
 cyclic_reduction.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/cyclic_reduction.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/cyclic_reduction.c.i
 .PHONY : cyclic_reduction.c.i
 
 cyclic_reduction.s: cyclic_reduction.c.s
@@ -512,7 +511,7 @@ cyclic_reduction.s: cyclic_reduction.c.s
 
 # target to generate assembly for a file
 cyclic_reduction.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/cyclic_reduction.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/cyclic_reduction.c.s
 .PHONY : cyclic_reduction.c.s
 
 general.o: general.c.o
@@ -520,7 +519,7 @@ general.o: general.c.o
 
 # target to build an object file
 general.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/general.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/general.c.o
 .PHONY : general.c.o
 
 general.i: general.c.i
@@ -528,7 +527,7 @@ general.i: general.c.i
 
 # target to preprocess a source file
 general.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/general.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/general.c.i
 .PHONY : general.c.i
 
 general.s: general.c.s
@@ -536,7 +535,7 @@ general.s: general.c.s
 
 # target to generate assembly for a file
 general.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/general.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/general.c.s
 .PHONY : general.c.s
 
 grow.o: grow.c.o
@@ -544,7 +543,7 @@ grow.o: grow.c.o
 
 # target to build an object file
 grow.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/grow.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/grow.c.o
 .PHONY : grow.c.o
 
 grow.i: grow.c.i
@@ -552,7 +551,7 @@ grow.i: grow.c.i
 
 # target to preprocess a source file
 grow.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/grow.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/grow.c.i
 .PHONY : grow.c.i
 
 grow.s: grow.c.s
@@ -560,7 +559,7 @@ grow.s: grow.c.s
 
 # target to generate assembly for a file
 grow.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/grow.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/grow.c.s
 .PHONY : grow.c.s
 
 memory.o: memory.c.o
@@ -568,7 +567,7 @@ memory.o: memory.c.o
 
 # target to build an object file
 memory.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/memory.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/memory.c.o
 .PHONY : memory.c.o
 
 memory.i: memory.c.i
@@ -576,7 +575,7 @@ memory.i: memory.c.i
 
 # target to preprocess a source file
 memory.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/memory.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/memory.c.i
 .PHONY : memory.c.i
 
 memory.s: memory.c.s
@@ -584,7 +583,7 @@ memory.s: memory.c.s
 
 # target to generate assembly for a file
 memory.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/memory.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/memory.c.s
 .PHONY : memory.c.s
 
 mpistubs.o: mpistubs.c.o
@@ -592,7 +591,7 @@ mpistubs.o: mpistubs.c.o
 
 # target to build an object file
 mpistubs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/mpistubs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/mpistubs.c.o
 .PHONY : mpistubs.c.o
 
 mpistubs.i: mpistubs.c.i
@@ -600,7 +599,7 @@ mpistubs.i: mpistubs.c.i
 
 # target to preprocess a source file
 mpistubs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/mpistubs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/mpistubs.c.i
 .PHONY : mpistubs.c.i
 
 mpistubs.s: mpistubs.c.s
@@ -608,7 +607,7 @@ mpistubs.s: mpistubs.c.s
 
 # target to generate assembly for a file
 mpistubs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/mpistubs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/mpistubs.c.s
 .PHONY : mpistubs.c.s
 
 pcg.o: pcg.c.o
@@ -616,7 +615,7 @@ pcg.o: pcg.c.o
 
 # target to build an object file
 pcg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg.c.o
 .PHONY : pcg.c.o
 
 pcg.i: pcg.c.i
@@ -624,7 +623,7 @@ pcg.i: pcg.c.i
 
 # target to preprocess a source file
 pcg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg.c.i
 .PHONY : pcg.c.i
 
 pcg.s: pcg.c.s
@@ -632,7 +631,7 @@ pcg.s: pcg.c.s
 
 # target to generate assembly for a file
 pcg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg.c.s
 .PHONY : pcg.c.s
 
 pcg_struct.o: pcg_struct.c.o
@@ -640,7 +639,7 @@ pcg_struct.o: pcg_struct.c.o
 
 # target to build an object file
 pcg_struct.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg_struct.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg_struct.c.o
 .PHONY : pcg_struct.c.o
 
 pcg_struct.i: pcg_struct.c.i
@@ -648,7 +647,7 @@ pcg_struct.i: pcg_struct.c.i
 
 # target to preprocess a source file
 pcg_struct.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg_struct.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg_struct.c.i
 .PHONY : pcg_struct.c.i
 
 pcg_struct.s: pcg_struct.c.s
@@ -656,7 +655,7 @@ pcg_struct.s: pcg_struct.c.s
 
 # target to generate assembly for a file
 pcg_struct.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg_struct.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/pcg_struct.c.s
 .PHONY : pcg_struct.c.s
 
 point_relax.o: point_relax.c.o
@@ -664,7 +663,7 @@ point_relax.o: point_relax.c.o
 
 # target to build an object file
 point_relax.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/point_relax.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/point_relax.c.o
 .PHONY : point_relax.c.o
 
 point_relax.i: point_relax.c.i
@@ -672,7 +671,7 @@ point_relax.i: point_relax.c.i
 
 # target to preprocess a source file
 point_relax.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/point_relax.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/point_relax.c.i
 .PHONY : point_relax.c.i
 
 point_relax.s: point_relax.c.s
@@ -680,7 +679,7 @@ point_relax.s: point_relax.c.s
 
 # target to generate assembly for a file
 point_relax.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/point_relax.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/point_relax.c.s
 .PHONY : point_relax.c.s
 
 project.o: project.c.o
@@ -688,7 +687,7 @@ project.o: project.c.o
 
 # target to build an object file
 project.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/project.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/project.c.o
 .PHONY : project.c.o
 
 project.i: project.c.i
@@ -696,7 +695,7 @@ project.i: project.c.i
 
 # target to preprocess a source file
 project.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/project.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/project.c.i
 .PHONY : project.c.i
 
 project.s: project.c.s
@@ -704,7 +703,7 @@ project.s: project.c.s
 
 # target to generate assembly for a file
 project.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/project.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/project.c.s
 .PHONY : project.c.s
 
 random.o: random.c.o
@@ -712,7 +711,7 @@ random.o: random.c.o
 
 # target to build an object file
 random.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/random.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/random.c.o
 .PHONY : random.c.o
 
 random.i: random.c.i
@@ -720,7 +719,7 @@ random.i: random.c.i
 
 # target to preprocess a source file
 random.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/random.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/random.c.i
 .PHONY : random.c.i
 
 random.s: random.c.s
@@ -728,7 +727,7 @@ random.s: random.c.s
 
 # target to generate assembly for a file
 random.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/random.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/random.c.s
 .PHONY : random.c.s
 
 semi_interp.o: semi_interp.c.o
@@ -736,7 +735,7 @@ semi_interp.o: semi_interp.c.o
 
 # target to build an object file
 semi_interp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_interp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_interp.c.o
 .PHONY : semi_interp.c.o
 
 semi_interp.i: semi_interp.c.i
@@ -744,7 +743,7 @@ semi_interp.i: semi_interp.c.i
 
 # target to preprocess a source file
 semi_interp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_interp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_interp.c.i
 .PHONY : semi_interp.c.i
 
 semi_interp.s: semi_interp.c.s
@@ -752,7 +751,7 @@ semi_interp.s: semi_interp.c.s
 
 # target to generate assembly for a file
 semi_interp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_interp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_interp.c.s
 .PHONY : semi_interp.c.s
 
 semi_restrict.o: semi_restrict.c.o
@@ -760,7 +759,7 @@ semi_restrict.o: semi_restrict.c.o
 
 # target to build an object file
 semi_restrict.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_restrict.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_restrict.c.o
 .PHONY : semi_restrict.c.o
 
 semi_restrict.i: semi_restrict.c.i
@@ -768,7 +767,7 @@ semi_restrict.i: semi_restrict.c.i
 
 # target to preprocess a source file
 semi_restrict.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_restrict.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_restrict.c.i
 .PHONY : semi_restrict.c.i
 
 semi_restrict.s: semi_restrict.c.s
@@ -776,7 +775,7 @@ semi_restrict.s: semi_restrict.c.s
 
 # target to generate assembly for a file
 semi_restrict.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_restrict.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/semi_restrict.c.s
 .PHONY : semi_restrict.c.s
 
 smg.o: smg.c.o
@@ -784,7 +783,7 @@ smg.o: smg.c.o
 
 # target to build an object file
 smg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg.c.o
 .PHONY : smg.c.o
 
 smg.i: smg.c.i
@@ -792,7 +791,7 @@ smg.i: smg.c.i
 
 # target to preprocess a source file
 smg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg.c.i
 .PHONY : smg.c.i
 
 smg.s: smg.c.s
@@ -800,7 +799,7 @@ smg.s: smg.c.s
 
 # target to generate assembly for a file
 smg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg.c.s
 .PHONY : smg.c.s
 
 smg2000.o: smg2000.c.o
@@ -808,7 +807,7 @@ smg2000.o: smg2000.c.o
 
 # target to build an object file
 smg2000.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2000.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2000.c.o
 .PHONY : smg2000.c.o
 
 smg2000.i: smg2000.c.i
@@ -816,7 +815,7 @@ smg2000.i: smg2000.c.i
 
 # target to preprocess a source file
 smg2000.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2000.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2000.c.i
 .PHONY : smg2000.c.i
 
 smg2000.s: smg2000.c.s
@@ -824,7 +823,7 @@ smg2000.s: smg2000.c.s
 
 # target to generate assembly for a file
 smg2000.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2000.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2000.c.s
 .PHONY : smg2000.c.s
 
 smg2_setup_rap.o: smg2_setup_rap.c.o
@@ -832,7 +831,7 @@ smg2_setup_rap.o: smg2_setup_rap.c.o
 
 # target to build an object file
 smg2_setup_rap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2_setup_rap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2_setup_rap.c.o
 .PHONY : smg2_setup_rap.c.o
 
 smg2_setup_rap.i: smg2_setup_rap.c.i
@@ -840,7 +839,7 @@ smg2_setup_rap.i: smg2_setup_rap.c.i
 
 # target to preprocess a source file
 smg2_setup_rap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2_setup_rap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2_setup_rap.c.i
 .PHONY : smg2_setup_rap.c.i
 
 smg2_setup_rap.s: smg2_setup_rap.c.s
@@ -848,7 +847,7 @@ smg2_setup_rap.s: smg2_setup_rap.c.s
 
 # target to generate assembly for a file
 smg2_setup_rap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2_setup_rap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg2_setup_rap.c.s
 .PHONY : smg2_setup_rap.c.s
 
 smg3_setup_rap.o: smg3_setup_rap.c.o
@@ -856,7 +855,7 @@ smg3_setup_rap.o: smg3_setup_rap.c.o
 
 # target to build an object file
 smg3_setup_rap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg3_setup_rap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg3_setup_rap.c.o
 .PHONY : smg3_setup_rap.c.o
 
 smg3_setup_rap.i: smg3_setup_rap.c.i
@@ -864,7 +863,7 @@ smg3_setup_rap.i: smg3_setup_rap.c.i
 
 # target to preprocess a source file
 smg3_setup_rap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg3_setup_rap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg3_setup_rap.c.i
 .PHONY : smg3_setup_rap.c.i
 
 smg3_setup_rap.s: smg3_setup_rap.c.s
@@ -872,7 +871,7 @@ smg3_setup_rap.s: smg3_setup_rap.c.s
 
 # target to generate assembly for a file
 smg3_setup_rap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg3_setup_rap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg3_setup_rap.c.s
 .PHONY : smg3_setup_rap.c.s
 
 smg_axpy.o: smg_axpy.c.o
@@ -880,7 +879,7 @@ smg_axpy.o: smg_axpy.c.o
 
 # target to build an object file
 smg_axpy.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_axpy.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_axpy.c.o
 .PHONY : smg_axpy.c.o
 
 smg_axpy.i: smg_axpy.c.i
@@ -888,7 +887,7 @@ smg_axpy.i: smg_axpy.c.i
 
 # target to preprocess a source file
 smg_axpy.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_axpy.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_axpy.c.i
 .PHONY : smg_axpy.c.i
 
 smg_axpy.s: smg_axpy.c.s
@@ -896,7 +895,7 @@ smg_axpy.s: smg_axpy.c.s
 
 # target to generate assembly for a file
 smg_axpy.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_axpy.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_axpy.c.s
 .PHONY : smg_axpy.c.s
 
 smg_relax.o: smg_relax.c.o
@@ -904,7 +903,7 @@ smg_relax.o: smg_relax.c.o
 
 # target to build an object file
 smg_relax.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_relax.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_relax.c.o
 .PHONY : smg_relax.c.o
 
 smg_relax.i: smg_relax.c.i
@@ -912,7 +911,7 @@ smg_relax.i: smg_relax.c.i
 
 # target to preprocess a source file
 smg_relax.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_relax.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_relax.c.i
 .PHONY : smg_relax.c.i
 
 smg_relax.s: smg_relax.c.s
@@ -920,7 +919,7 @@ smg_relax.s: smg_relax.c.s
 
 # target to generate assembly for a file
 smg_relax.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_relax.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_relax.c.s
 .PHONY : smg_relax.c.s
 
 smg_residual.o: smg_residual.c.o
@@ -928,7 +927,7 @@ smg_residual.o: smg_residual.c.o
 
 # target to build an object file
 smg_residual.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_residual.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_residual.c.o
 .PHONY : smg_residual.c.o
 
 smg_residual.i: smg_residual.c.i
@@ -936,7 +935,7 @@ smg_residual.i: smg_residual.c.i
 
 # target to preprocess a source file
 smg_residual.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_residual.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_residual.c.i
 .PHONY : smg_residual.c.i
 
 smg_residual.s: smg_residual.c.s
@@ -944,7 +943,7 @@ smg_residual.s: smg_residual.c.s
 
 # target to generate assembly for a file
 smg_residual.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_residual.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_residual.c.s
 .PHONY : smg_residual.c.s
 
 smg_setup.o: smg_setup.c.o
@@ -952,7 +951,7 @@ smg_setup.o: smg_setup.c.o
 
 # target to build an object file
 smg_setup.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup.c.o
 .PHONY : smg_setup.c.o
 
 smg_setup.i: smg_setup.c.i
@@ -960,7 +959,7 @@ smg_setup.i: smg_setup.c.i
 
 # target to preprocess a source file
 smg_setup.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup.c.i
 .PHONY : smg_setup.c.i
 
 smg_setup.s: smg_setup.c.s
@@ -968,7 +967,7 @@ smg_setup.s: smg_setup.c.s
 
 # target to generate assembly for a file
 smg_setup.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup.c.s
 .PHONY : smg_setup.c.s
 
 smg_setup_interp.o: smg_setup_interp.c.o
@@ -976,7 +975,7 @@ smg_setup_interp.o: smg_setup_interp.c.o
 
 # target to build an object file
 smg_setup_interp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_interp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_interp.c.o
 .PHONY : smg_setup_interp.c.o
 
 smg_setup_interp.i: smg_setup_interp.c.i
@@ -984,7 +983,7 @@ smg_setup_interp.i: smg_setup_interp.c.i
 
 # target to preprocess a source file
 smg_setup_interp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_interp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_interp.c.i
 .PHONY : smg_setup_interp.c.i
 
 smg_setup_interp.s: smg_setup_interp.c.s
@@ -992,7 +991,7 @@ smg_setup_interp.s: smg_setup_interp.c.s
 
 # target to generate assembly for a file
 smg_setup_interp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_interp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_interp.c.s
 .PHONY : smg_setup_interp.c.s
 
 smg_setup_rap.o: smg_setup_rap.c.o
@@ -1000,7 +999,7 @@ smg_setup_rap.o: smg_setup_rap.c.o
 
 # target to build an object file
 smg_setup_rap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_rap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_rap.c.o
 .PHONY : smg_setup_rap.c.o
 
 smg_setup_rap.i: smg_setup_rap.c.i
@@ -1008,7 +1007,7 @@ smg_setup_rap.i: smg_setup_rap.c.i
 
 # target to preprocess a source file
 smg_setup_rap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_rap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_rap.c.i
 .PHONY : smg_setup_rap.c.i
 
 smg_setup_rap.s: smg_setup_rap.c.s
@@ -1016,7 +1015,7 @@ smg_setup_rap.s: smg_setup_rap.c.s
 
 # target to generate assembly for a file
 smg_setup_rap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_rap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_rap.c.s
 .PHONY : smg_setup_rap.c.s
 
 smg_setup_restrict.o: smg_setup_restrict.c.o
@@ -1024,7 +1023,7 @@ smg_setup_restrict.o: smg_setup_restrict.c.o
 
 # target to build an object file
 smg_setup_restrict.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_restrict.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_restrict.c.o
 .PHONY : smg_setup_restrict.c.o
 
 smg_setup_restrict.i: smg_setup_restrict.c.i
@@ -1032,7 +1031,7 @@ smg_setup_restrict.i: smg_setup_restrict.c.i
 
 # target to preprocess a source file
 smg_setup_restrict.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_restrict.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_restrict.c.i
 .PHONY : smg_setup_restrict.c.i
 
 smg_setup_restrict.s: smg_setup_restrict.c.s
@@ -1040,7 +1039,7 @@ smg_setup_restrict.s: smg_setup_restrict.c.s
 
 # target to generate assembly for a file
 smg_setup_restrict.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_restrict.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_setup_restrict.c.s
 .PHONY : smg_setup_restrict.c.s
 
 smg_solve.o: smg_solve.c.o
@@ -1048,7 +1047,7 @@ smg_solve.o: smg_solve.c.o
 
 # target to build an object file
 smg_solve.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_solve.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_solve.c.o
 .PHONY : smg_solve.c.o
 
 smg_solve.i: smg_solve.c.i
@@ -1056,7 +1055,7 @@ smg_solve.i: smg_solve.c.i
 
 # target to preprocess a source file
 smg_solve.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_solve.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_solve.c.i
 .PHONY : smg_solve.c.i
 
 smg_solve.s: smg_solve.c.s
@@ -1064,7 +1063,7 @@ smg_solve.s: smg_solve.c.s
 
 # target to generate assembly for a file
 smg_solve.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_solve.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/smg_solve.c.s
 .PHONY : smg_solve.c.s
 
 struct_axpy.o: struct_axpy.c.o
@@ -1072,7 +1071,7 @@ struct_axpy.o: struct_axpy.c.o
 
 # target to build an object file
 struct_axpy.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_axpy.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_axpy.c.o
 .PHONY : struct_axpy.c.o
 
 struct_axpy.i: struct_axpy.c.i
@@ -1080,7 +1079,7 @@ struct_axpy.i: struct_axpy.c.i
 
 # target to preprocess a source file
 struct_axpy.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_axpy.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_axpy.c.i
 .PHONY : struct_axpy.c.i
 
 struct_axpy.s: struct_axpy.c.s
@@ -1088,7 +1087,7 @@ struct_axpy.s: struct_axpy.c.s
 
 # target to generate assembly for a file
 struct_axpy.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_axpy.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_axpy.c.s
 .PHONY : struct_axpy.c.s
 
 struct_copy.o: struct_copy.c.o
@@ -1096,7 +1095,7 @@ struct_copy.o: struct_copy.c.o
 
 # target to build an object file
 struct_copy.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_copy.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_copy.c.o
 .PHONY : struct_copy.c.o
 
 struct_copy.i: struct_copy.c.i
@@ -1104,7 +1103,7 @@ struct_copy.i: struct_copy.c.i
 
 # target to preprocess a source file
 struct_copy.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_copy.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_copy.c.i
 .PHONY : struct_copy.c.i
 
 struct_copy.s: struct_copy.c.s
@@ -1112,7 +1111,7 @@ struct_copy.s: struct_copy.c.s
 
 # target to generate assembly for a file
 struct_copy.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_copy.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_copy.c.s
 .PHONY : struct_copy.c.s
 
 struct_grid.o: struct_grid.c.o
@@ -1120,7 +1119,7 @@ struct_grid.o: struct_grid.c.o
 
 # target to build an object file
 struct_grid.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_grid.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_grid.c.o
 .PHONY : struct_grid.c.o
 
 struct_grid.i: struct_grid.c.i
@@ -1128,7 +1127,7 @@ struct_grid.i: struct_grid.c.i
 
 # target to preprocess a source file
 struct_grid.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_grid.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_grid.c.i
 .PHONY : struct_grid.c.i
 
 struct_grid.s: struct_grid.c.s
@@ -1136,7 +1135,7 @@ struct_grid.s: struct_grid.c.s
 
 # target to generate assembly for a file
 struct_grid.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_grid.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_grid.c.s
 .PHONY : struct_grid.c.s
 
 struct_innerprod.o: struct_innerprod.c.o
@@ -1144,7 +1143,7 @@ struct_innerprod.o: struct_innerprod.c.o
 
 # target to build an object file
 struct_innerprod.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_innerprod.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_innerprod.c.o
 .PHONY : struct_innerprod.c.o
 
 struct_innerprod.i: struct_innerprod.c.i
@@ -1152,7 +1151,7 @@ struct_innerprod.i: struct_innerprod.c.i
 
 # target to preprocess a source file
 struct_innerprod.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_innerprod.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_innerprod.c.i
 .PHONY : struct_innerprod.c.i
 
 struct_innerprod.s: struct_innerprod.c.s
@@ -1160,7 +1159,7 @@ struct_innerprod.s: struct_innerprod.c.s
 
 # target to generate assembly for a file
 struct_innerprod.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_innerprod.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_innerprod.c.s
 .PHONY : struct_innerprod.c.s
 
 struct_io.o: struct_io.c.o
@@ -1168,7 +1167,7 @@ struct_io.o: struct_io.c.o
 
 # target to build an object file
 struct_io.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_io.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_io.c.o
 .PHONY : struct_io.c.o
 
 struct_io.i: struct_io.c.i
@@ -1176,7 +1175,7 @@ struct_io.i: struct_io.c.i
 
 # target to preprocess a source file
 struct_io.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_io.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_io.c.i
 .PHONY : struct_io.c.i
 
 struct_io.s: struct_io.c.s
@@ -1184,7 +1183,7 @@ struct_io.s: struct_io.c.s
 
 # target to generate assembly for a file
 struct_io.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_io.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_io.c.s
 .PHONY : struct_io.c.s
 
 struct_matrix.o: struct_matrix.c.o
@@ -1192,7 +1191,7 @@ struct_matrix.o: struct_matrix.c.o
 
 # target to build an object file
 struct_matrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix.c.o
 .PHONY : struct_matrix.c.o
 
 struct_matrix.i: struct_matrix.c.i
@@ -1200,7 +1199,7 @@ struct_matrix.i: struct_matrix.c.i
 
 # target to preprocess a source file
 struct_matrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix.c.i
 .PHONY : struct_matrix.c.i
 
 struct_matrix.s: struct_matrix.c.s
@@ -1208,7 +1207,7 @@ struct_matrix.s: struct_matrix.c.s
 
 # target to generate assembly for a file
 struct_matrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix.c.s
 .PHONY : struct_matrix.c.s
 
 struct_matrix_mask.o: struct_matrix_mask.c.o
@@ -1216,7 +1215,7 @@ struct_matrix_mask.o: struct_matrix_mask.c.o
 
 # target to build an object file
 struct_matrix_mask.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix_mask.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix_mask.c.o
 .PHONY : struct_matrix_mask.c.o
 
 struct_matrix_mask.i: struct_matrix_mask.c.i
@@ -1224,7 +1223,7 @@ struct_matrix_mask.i: struct_matrix_mask.c.i
 
 # target to preprocess a source file
 struct_matrix_mask.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix_mask.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix_mask.c.i
 .PHONY : struct_matrix_mask.c.i
 
 struct_matrix_mask.s: struct_matrix_mask.c.s
@@ -1232,7 +1231,7 @@ struct_matrix_mask.s: struct_matrix_mask.c.s
 
 # target to generate assembly for a file
 struct_matrix_mask.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix_mask.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matrix_mask.c.s
 .PHONY : struct_matrix_mask.c.s
 
 struct_matvec.o: struct_matvec.c.o
@@ -1240,7 +1239,7 @@ struct_matvec.o: struct_matvec.c.o
 
 # target to build an object file
 struct_matvec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matvec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matvec.c.o
 .PHONY : struct_matvec.c.o
 
 struct_matvec.i: struct_matvec.c.i
@@ -1248,7 +1247,7 @@ struct_matvec.i: struct_matvec.c.i
 
 # target to preprocess a source file
 struct_matvec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matvec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matvec.c.i
 .PHONY : struct_matvec.c.i
 
 struct_matvec.s: struct_matvec.c.s
@@ -1256,7 +1255,7 @@ struct_matvec.s: struct_matvec.c.s
 
 # target to generate assembly for a file
 struct_matvec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matvec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_matvec.c.s
 .PHONY : struct_matvec.c.s
 
 struct_scale.o: struct_scale.c.o
@@ -1264,7 +1263,7 @@ struct_scale.o: struct_scale.c.o
 
 # target to build an object file
 struct_scale.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_scale.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_scale.c.o
 .PHONY : struct_scale.c.o
 
 struct_scale.i: struct_scale.c.i
@@ -1272,7 +1271,7 @@ struct_scale.i: struct_scale.c.i
 
 # target to preprocess a source file
 struct_scale.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_scale.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_scale.c.i
 .PHONY : struct_scale.c.i
 
 struct_scale.s: struct_scale.c.s
@@ -1280,7 +1279,7 @@ struct_scale.s: struct_scale.c.s
 
 # target to generate assembly for a file
 struct_scale.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_scale.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_scale.c.s
 .PHONY : struct_scale.c.s
 
 struct_stencil.o: struct_stencil.c.o
@@ -1288,7 +1287,7 @@ struct_stencil.o: struct_stencil.c.o
 
 # target to build an object file
 struct_stencil.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_stencil.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_stencil.c.o
 .PHONY : struct_stencil.c.o
 
 struct_stencil.i: struct_stencil.c.i
@@ -1296,7 +1295,7 @@ struct_stencil.i: struct_stencil.c.i
 
 # target to preprocess a source file
 struct_stencil.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_stencil.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_stencil.c.i
 .PHONY : struct_stencil.c.i
 
 struct_stencil.s: struct_stencil.c.s
@@ -1304,7 +1303,7 @@ struct_stencil.s: struct_stencil.c.s
 
 # target to generate assembly for a file
 struct_stencil.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_stencil.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_stencil.c.s
 .PHONY : struct_stencil.c.s
 
 struct_vector.o: struct_vector.c.o
@@ -1312,7 +1311,7 @@ struct_vector.o: struct_vector.c.o
 
 # target to build an object file
 struct_vector.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_vector.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_vector.c.o
 .PHONY : struct_vector.c.o
 
 struct_vector.i: struct_vector.c.i
@@ -1320,7 +1319,7 @@ struct_vector.i: struct_vector.c.i
 
 # target to preprocess a source file
 struct_vector.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_vector.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_vector.c.i
 .PHONY : struct_vector.c.i
 
 struct_vector.s: struct_vector.c.s
@@ -1328,7 +1327,7 @@ struct_vector.s: struct_vector.c.s
 
 # target to generate assembly for a file
 struct_vector.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_vector.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/struct_vector.c.s
 .PHONY : struct_vector.c.s
 
 threading.o: threading.c.o
@@ -1336,7 +1335,7 @@ threading.o: threading.c.o
 
 # target to build an object file
 threading.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/threading.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/threading.c.o
 .PHONY : threading.c.o
 
 threading.i: threading.c.i
@@ -1344,7 +1343,7 @@ threading.i: threading.c.i
 
 # target to preprocess a source file
 threading.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/threading.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/threading.c.i
 .PHONY : threading.c.i
 
 threading.s: threading.c.s
@@ -1352,7 +1351,7 @@ threading.s: threading.c.s
 
 # target to generate assembly for a file
 threading.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/threading.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/threading.c.s
 .PHONY : threading.c.s
 
 timer.o: timer.c.o
@@ -1360,7 +1359,7 @@ timer.o: timer.c.o
 
 # target to build an object file
 timer.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timer.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timer.c.o
 .PHONY : timer.c.o
 
 timer.i: timer.c.i
@@ -1368,7 +1367,7 @@ timer.i: timer.c.i
 
 # target to preprocess a source file
 timer.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timer.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timer.c.i
 .PHONY : timer.c.i
 
 timer.s: timer.c.s
@@ -1376,7 +1375,7 @@ timer.s: timer.c.s
 
 # target to generate assembly for a file
 timer.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timer.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timer.c.s
 .PHONY : timer.c.s
 
 timing.o: timing.c.o
@@ -1384,7 +1383,7 @@ timing.o: timing.c.o
 
 # target to build an object file
 timing.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timing.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timing.c.o
 .PHONY : timing.c.o
 
 timing.i: timing.c.i
@@ -1392,7 +1391,7 @@ timing.i: timing.c.i
 
 # target to preprocess a source file
 timing.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timing.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timing.c.i
 .PHONY : timing.c.i
 
 timing.s: timing.c.s
@@ -1400,7 +1399,7 @@ timing.s: timing.c.s
 
 # target to generate assembly for a file
 timing.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timing.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/build.make MultiSource/Benchmarks/ASCI_Purple/SMG2000/CMakeFiles/smg2000.dir/timing.c.s
 .PHONY : timing.c.s
 
 # Help Target
@@ -1582,7 +1581,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

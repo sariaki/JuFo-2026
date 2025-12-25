@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/CrystalMk//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/CrystalMk//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/rule
 .PHONY : MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ CrystalMk: MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir
 
 # fast build rule for target.
 CrystalMk/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build
 .PHONY : CrystalMk/fast
 
 Crystal_Cholesky.o: Crystal_Cholesky.c.o
@@ -136,7 +135,7 @@ Crystal_Cholesky.o: Crystal_Cholesky.c.o
 
 # target to build an object file
 Crystal_Cholesky.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.o
 .PHONY : Crystal_Cholesky.c.o
 
 Crystal_Cholesky.i: Crystal_Cholesky.c.i
@@ -144,7 +143,7 @@ Crystal_Cholesky.i: Crystal_Cholesky.c.i
 
 # target to preprocess a source file
 Crystal_Cholesky.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.i
 .PHONY : Crystal_Cholesky.c.i
 
 Crystal_Cholesky.s: Crystal_Cholesky.c.s
@@ -152,7 +151,7 @@ Crystal_Cholesky.s: Crystal_Cholesky.c.s
 
 # target to generate assembly for a file
 Crystal_Cholesky.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.s
 .PHONY : Crystal_Cholesky.c.s
 
 Crystal_div.o: Crystal_div.c.o
@@ -160,7 +159,7 @@ Crystal_div.o: Crystal_div.c.o
 
 # target to build an object file
 Crystal_div.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_div.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_div.c.o
 .PHONY : Crystal_div.c.o
 
 Crystal_div.i: Crystal_div.c.i
@@ -168,7 +167,7 @@ Crystal_div.i: Crystal_div.c.i
 
 # target to preprocess a source file
 Crystal_div.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_div.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_div.c.i
 .PHONY : Crystal_div.c.i
 
 Crystal_div.s: Crystal_div.c.s
@@ -176,7 +175,7 @@ Crystal_div.s: Crystal_div.c.s
 
 # target to generate assembly for a file
 Crystal_div.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_div.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_div.c.s
 .PHONY : Crystal_div.c.s
 
 Crystal_pow.o: Crystal_pow.c.o
@@ -184,7 +183,7 @@ Crystal_pow.o: Crystal_pow.c.o
 
 # target to build an object file
 Crystal_pow.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_pow.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_pow.c.o
 .PHONY : Crystal_pow.c.o
 
 Crystal_pow.i: Crystal_pow.c.i
@@ -192,7 +191,7 @@ Crystal_pow.i: Crystal_pow.c.i
 
 # target to preprocess a source file
 Crystal_pow.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_pow.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_pow.c.i
 .PHONY : Crystal_pow.c.i
 
 Crystal_pow.s: Crystal_pow.c.s
@@ -200,7 +199,7 @@ Crystal_pow.s: Crystal_pow.c.s
 
 # target to generate assembly for a file
 Crystal_pow.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_pow.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/Crystal_pow.c.s
 .PHONY : Crystal_pow.c.s
 
 SPEdriver.o: SPEdriver.c.o
@@ -208,7 +207,7 @@ SPEdriver.o: SPEdriver.c.o
 
 # target to build an object file
 SPEdriver.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/SPEdriver.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/SPEdriver.c.o
 .PHONY : SPEdriver.c.o
 
 SPEdriver.i: SPEdriver.c.i
@@ -216,7 +215,7 @@ SPEdriver.i: SPEdriver.c.i
 
 # target to preprocess a source file
 SPEdriver.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/SPEdriver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/SPEdriver.c.i
 .PHONY : SPEdriver.c.i
 
 SPEdriver.s: SPEdriver.c.s
@@ -224,7 +223,7 @@ SPEdriver.s: SPEdriver.c.s
 
 # target to generate assembly for a file
 SPEdriver.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/SPEdriver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/SPEdriver.c.s
 .PHONY : SPEdriver.c.s
 
 init.o: init.c.o
@@ -232,7 +231,7 @@ init.o: init.c.o
 
 # target to build an object file
 init.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/init.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/init.c.o
 .PHONY : init.c.o
 
 init.i: init.c.i
@@ -240,7 +239,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/init.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -248,7 +247,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/init.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/init.c.s
 .PHONY : init.c.s
 
 main.o: main.c.o
@@ -256,7 +255,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -264,7 +263,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -272,7 +271,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CMakeFiles/CrystalMk.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -313,7 +312,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

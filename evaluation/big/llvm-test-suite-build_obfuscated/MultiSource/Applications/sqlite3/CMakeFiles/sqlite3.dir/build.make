@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/depend.make
@@ -72,30 +72,30 @@ include MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/flags.make
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/flags.make
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/sqlite3.dir/sqlite3.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o -MF CMakeFiles/sqlite3.dir/sqlite3.c.o.d -o CMakeFiles/sqlite3.dir/sqlite3.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/sqlite3.dir/sqlite3.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.o -MF CMakeFiles/sqlite3.dir/sqlite3.c.o.d -o CMakeFiles/sqlite3.dir/sqlite3.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sqlite3.dir/sqlite3.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c > CMakeFiles/sqlite3.dir/sqlite3.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c > CMakeFiles/sqlite3.dir/sqlite3.c.i
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sqlite3.dir/sqlite3.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c -o CMakeFiles/sqlite3.dir/sqlite3.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.c -o CMakeFiles/sqlite3.dir/sqlite3.c.s
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/flags.make
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/sqlite3.dir/shell.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o -MF CMakeFiles/sqlite3.dir/shell.c.o.d -o CMakeFiles/sqlite3.dir/shell.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/sqlite3.dir/shell.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o -MF CMakeFiles/sqlite3.dir/shell.c.o.d -o CMakeFiles/sqlite3.dir/shell.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sqlite3.dir/shell.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c > CMakeFiles/sqlite3.dir/shell.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c > CMakeFiles/sqlite3.dir/shell.c.i
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sqlite3.dir/shell.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c -o CMakeFiles/sqlite3.dir/shell.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/shell.c -o CMakeFiles/sqlite3.dir/shell.c.s
 
 # Object files for target sqlite3
 sqlite3_OBJECTS = \
@@ -109,22 +109,22 @@ MultiSource/Applications/sqlite3/sqlite3: MultiSource/Applications/sqlite3/CMake
 MultiSource/Applications/sqlite3/sqlite3: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/shell.c.o
 MultiSource/Applications/sqlite3/sqlite3: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/build.make
 MultiSource/Applications/sqlite3/sqlite3: MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sqlite3"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sqlite3.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/sqlite3 > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/sqlite3.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/sqlite3.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3rc /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/sqlite3rc
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/commands /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/commands
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sqlite3"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sqlite3.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/sqlite3 > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/sqlite3.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/sqlite3.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/sqlite3rc /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/sqlite3rc
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/commands /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/commands
 
 # Rule to build all files generated by this target.
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/build: MultiSource/Applications/sqlite3/sqlite3
 .PHONY : MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/build
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && $(CMAKE_COMMAND) -P CMakeFiles/sqlite3.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && $(CMAKE_COMMAND) -P CMakeFiles/sqlite3.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/clean
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/sqlite3/CMakeFiles/sqlite3.dir/depend
 

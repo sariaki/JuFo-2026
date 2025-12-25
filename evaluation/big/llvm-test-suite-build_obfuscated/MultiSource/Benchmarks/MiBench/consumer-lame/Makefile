@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-lame//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-lame//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rule
 .PHONY : MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ consumer-lame: MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-
 
 # fast build rule for target.
 consumer-lame/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build
 .PHONY : consumer-lame/fast
 
 VbrTag.o: VbrTag.c.o
@@ -136,7 +135,7 @@ VbrTag.o: VbrTag.c.o
 
 # target to build an object file
 VbrTag.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/VbrTag.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/VbrTag.c.o
 .PHONY : VbrTag.c.o
 
 VbrTag.i: VbrTag.c.i
@@ -144,7 +143,7 @@ VbrTag.i: VbrTag.c.i
 
 # target to preprocess a source file
 VbrTag.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/VbrTag.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/VbrTag.c.i
 .PHONY : VbrTag.c.i
 
 VbrTag.s: VbrTag.c.s
@@ -152,7 +151,7 @@ VbrTag.s: VbrTag.c.s
 
 # target to generate assembly for a file
 VbrTag.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/VbrTag.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/VbrTag.c.s
 .PHONY : VbrTag.c.s
 
 brhist.o: brhist.c.o
@@ -160,7 +159,7 @@ brhist.o: brhist.c.o
 
 # target to build an object file
 brhist.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/brhist.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/brhist.c.o
 .PHONY : brhist.c.o
 
 brhist.i: brhist.c.i
@@ -168,7 +167,7 @@ brhist.i: brhist.c.i
 
 # target to preprocess a source file
 brhist.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/brhist.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/brhist.c.i
 .PHONY : brhist.c.i
 
 brhist.s: brhist.c.s
@@ -176,7 +175,7 @@ brhist.s: brhist.c.s
 
 # target to generate assembly for a file
 brhist.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/brhist.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/brhist.c.s
 .PHONY : brhist.c.s
 
 common.o: common.c.o
@@ -184,7 +183,7 @@ common.o: common.c.o
 
 # target to build an object file
 common.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/common.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/common.c.o
 .PHONY : common.c.o
 
 common.i: common.c.i
@@ -192,7 +191,7 @@ common.i: common.c.i
 
 # target to preprocess a source file
 common.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/common.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/common.c.i
 .PHONY : common.c.i
 
 common.s: common.c.s
@@ -200,7 +199,7 @@ common.s: common.c.s
 
 # target to generate assembly for a file
 common.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/common.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/common.c.s
 .PHONY : common.c.s
 
 dct64_i386.o: dct64_i386.c.o
@@ -208,7 +207,7 @@ dct64_i386.o: dct64_i386.c.o
 
 # target to build an object file
 dct64_i386.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/dct64_i386.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/dct64_i386.c.o
 .PHONY : dct64_i386.c.o
 
 dct64_i386.i: dct64_i386.c.i
@@ -216,7 +215,7 @@ dct64_i386.i: dct64_i386.c.i
 
 # target to preprocess a source file
 dct64_i386.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/dct64_i386.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/dct64_i386.c.i
 .PHONY : dct64_i386.c.i
 
 dct64_i386.s: dct64_i386.c.s
@@ -224,7 +223,7 @@ dct64_i386.s: dct64_i386.c.s
 
 # target to generate assembly for a file
 dct64_i386.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/dct64_i386.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/dct64_i386.c.s
 .PHONY : dct64_i386.c.s
 
 decode_i386.o: decode_i386.c.o
@@ -232,7 +231,7 @@ decode_i386.o: decode_i386.c.o
 
 # target to build an object file
 decode_i386.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/decode_i386.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/decode_i386.c.o
 .PHONY : decode_i386.c.o
 
 decode_i386.i: decode_i386.c.i
@@ -240,7 +239,7 @@ decode_i386.i: decode_i386.c.i
 
 # target to preprocess a source file
 decode_i386.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/decode_i386.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/decode_i386.c.i
 .PHONY : decode_i386.c.i
 
 decode_i386.s: decode_i386.c.s
@@ -248,7 +247,7 @@ decode_i386.s: decode_i386.c.s
 
 # target to generate assembly for a file
 decode_i386.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/decode_i386.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/decode_i386.c.s
 .PHONY : decode_i386.c.s
 
 fft.o: fft.c.o
@@ -256,7 +255,7 @@ fft.o: fft.c.o
 
 # target to build an object file
 fft.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/fft.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/fft.c.o
 .PHONY : fft.c.o
 
 fft.i: fft.c.i
@@ -264,7 +263,7 @@ fft.i: fft.c.i
 
 # target to preprocess a source file
 fft.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/fft.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/fft.c.i
 .PHONY : fft.c.i
 
 fft.s: fft.c.s
@@ -272,7 +271,7 @@ fft.s: fft.c.s
 
 # target to generate assembly for a file
 fft.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/fft.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/fft.c.s
 .PHONY : fft.c.s
 
 formatBitstream.o: formatBitstream.c.o
@@ -280,7 +279,7 @@ formatBitstream.o: formatBitstream.c.o
 
 # target to build an object file
 formatBitstream.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/formatBitstream.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/formatBitstream.c.o
 .PHONY : formatBitstream.c.o
 
 formatBitstream.i: formatBitstream.c.i
@@ -288,7 +287,7 @@ formatBitstream.i: formatBitstream.c.i
 
 # target to preprocess a source file
 formatBitstream.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/formatBitstream.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/formatBitstream.c.i
 .PHONY : formatBitstream.c.i
 
 formatBitstream.s: formatBitstream.c.s
@@ -296,7 +295,7 @@ formatBitstream.s: formatBitstream.c.s
 
 # target to generate assembly for a file
 formatBitstream.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/formatBitstream.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/formatBitstream.c.s
 .PHONY : formatBitstream.c.s
 
 get_audio.o: get_audio.c.o
@@ -304,7 +303,7 @@ get_audio.o: get_audio.c.o
 
 # target to build an object file
 get_audio.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/get_audio.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/get_audio.c.o
 .PHONY : get_audio.c.o
 
 get_audio.i: get_audio.c.i
@@ -312,7 +311,7 @@ get_audio.i: get_audio.c.i
 
 # target to preprocess a source file
 get_audio.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/get_audio.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/get_audio.c.i
 .PHONY : get_audio.c.i
 
 get_audio.s: get_audio.c.s
@@ -320,7 +319,7 @@ get_audio.s: get_audio.c.s
 
 # target to generate assembly for a file
 get_audio.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/get_audio.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/get_audio.c.s
 .PHONY : get_audio.c.s
 
 gpkplotting.o: gpkplotting.c.o
@@ -328,7 +327,7 @@ gpkplotting.o: gpkplotting.c.o
 
 # target to build an object file
 gpkplotting.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gpkplotting.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gpkplotting.c.o
 .PHONY : gpkplotting.c.o
 
 gpkplotting.i: gpkplotting.c.i
@@ -336,7 +335,7 @@ gpkplotting.i: gpkplotting.c.i
 
 # target to preprocess a source file
 gpkplotting.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gpkplotting.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gpkplotting.c.i
 .PHONY : gpkplotting.c.i
 
 gpkplotting.s: gpkplotting.c.s
@@ -344,7 +343,7 @@ gpkplotting.s: gpkplotting.c.s
 
 # target to generate assembly for a file
 gpkplotting.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gpkplotting.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gpkplotting.c.s
 .PHONY : gpkplotting.c.s
 
 gtkanal.o: gtkanal.c.o
@@ -352,7 +351,7 @@ gtkanal.o: gtkanal.c.o
 
 # target to build an object file
 gtkanal.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gtkanal.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gtkanal.c.o
 .PHONY : gtkanal.c.o
 
 gtkanal.i: gtkanal.c.i
@@ -360,7 +359,7 @@ gtkanal.i: gtkanal.c.i
 
 # target to preprocess a source file
 gtkanal.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gtkanal.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gtkanal.c.i
 .PHONY : gtkanal.c.i
 
 gtkanal.s: gtkanal.c.s
@@ -368,7 +367,7 @@ gtkanal.s: gtkanal.c.s
 
 # target to generate assembly for a file
 gtkanal.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gtkanal.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/gtkanal.c.s
 .PHONY : gtkanal.c.s
 
 id3tag.o: id3tag.c.o
@@ -376,7 +375,7 @@ id3tag.o: id3tag.c.o
 
 # target to build an object file
 id3tag.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/id3tag.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/id3tag.c.o
 .PHONY : id3tag.c.o
 
 id3tag.i: id3tag.c.i
@@ -384,7 +383,7 @@ id3tag.i: id3tag.c.i
 
 # target to preprocess a source file
 id3tag.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/id3tag.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/id3tag.c.i
 .PHONY : id3tag.c.i
 
 id3tag.s: id3tag.c.s
@@ -392,7 +391,7 @@ id3tag.s: id3tag.c.s
 
 # target to generate assembly for a file
 id3tag.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/id3tag.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/id3tag.c.s
 .PHONY : id3tag.c.s
 
 ieeefloat.o: ieeefloat.c.o
@@ -400,7 +399,7 @@ ieeefloat.o: ieeefloat.c.o
 
 # target to build an object file
 ieeefloat.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/ieeefloat.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/ieeefloat.c.o
 .PHONY : ieeefloat.c.o
 
 ieeefloat.i: ieeefloat.c.i
@@ -408,7 +407,7 @@ ieeefloat.i: ieeefloat.c.i
 
 # target to preprocess a source file
 ieeefloat.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/ieeefloat.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/ieeefloat.c.i
 .PHONY : ieeefloat.c.i
 
 ieeefloat.s: ieeefloat.c.s
@@ -416,7 +415,7 @@ ieeefloat.s: ieeefloat.c.s
 
 # target to generate assembly for a file
 ieeefloat.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/ieeefloat.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/ieeefloat.c.s
 .PHONY : ieeefloat.c.s
 
 interface.o: interface.c.o
@@ -424,7 +423,7 @@ interface.o: interface.c.o
 
 # target to build an object file
 interface.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/interface.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/interface.c.o
 .PHONY : interface.c.o
 
 interface.i: interface.c.i
@@ -432,7 +431,7 @@ interface.i: interface.c.i
 
 # target to preprocess a source file
 interface.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/interface.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/interface.c.i
 .PHONY : interface.c.i
 
 interface.s: interface.c.s
@@ -440,7 +439,7 @@ interface.s: interface.c.s
 
 # target to generate assembly for a file
 interface.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/interface.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/interface.c.s
 .PHONY : interface.c.s
 
 l3bitstream.o: l3bitstream.c.o
@@ -448,7 +447,7 @@ l3bitstream.o: l3bitstream.c.o
 
 # target to build an object file
 l3bitstream.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/l3bitstream.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/l3bitstream.c.o
 .PHONY : l3bitstream.c.o
 
 l3bitstream.i: l3bitstream.c.i
@@ -456,7 +455,7 @@ l3bitstream.i: l3bitstream.c.i
 
 # target to preprocess a source file
 l3bitstream.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/l3bitstream.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/l3bitstream.c.i
 .PHONY : l3bitstream.c.i
 
 l3bitstream.s: l3bitstream.c.s
@@ -464,7 +463,7 @@ l3bitstream.s: l3bitstream.c.s
 
 # target to generate assembly for a file
 l3bitstream.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/l3bitstream.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/l3bitstream.c.s
 .PHONY : l3bitstream.c.s
 
 lame.o: lame.c.o
@@ -472,7 +471,7 @@ lame.o: lame.c.o
 
 # target to build an object file
 lame.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/lame.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/lame.c.o
 .PHONY : lame.c.o
 
 lame.i: lame.c.i
@@ -480,7 +479,7 @@ lame.i: lame.c.i
 
 # target to preprocess a source file
 lame.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/lame.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/lame.c.i
 .PHONY : lame.c.i
 
 lame.s: lame.c.s
@@ -488,7 +487,7 @@ lame.s: lame.c.s
 
 # target to generate assembly for a file
 lame.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/lame.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/lame.c.s
 .PHONY : lame.c.s
 
 layer3.o: layer3.c.o
@@ -496,7 +495,7 @@ layer3.o: layer3.c.o
 
 # target to build an object file
 layer3.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/layer3.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/layer3.c.o
 .PHONY : layer3.c.o
 
 layer3.i: layer3.c.i
@@ -504,7 +503,7 @@ layer3.i: layer3.c.i
 
 # target to preprocess a source file
 layer3.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/layer3.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/layer3.c.i
 .PHONY : layer3.c.i
 
 layer3.s: layer3.c.s
@@ -512,7 +511,7 @@ layer3.s: layer3.c.s
 
 # target to generate assembly for a file
 layer3.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/layer3.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/layer3.c.s
 .PHONY : layer3.c.s
 
 main.o: main.c.o
@@ -520,7 +519,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -528,7 +527,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -536,7 +535,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/main.c.s
 .PHONY : main.c.s
 
 mpglib_main.o: mpglib_main.c.o
@@ -544,7 +543,7 @@ mpglib_main.o: mpglib_main.c.o
 
 # target to build an object file
 mpglib_main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/mpglib_main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/mpglib_main.c.o
 .PHONY : mpglib_main.c.o
 
 mpglib_main.i: mpglib_main.c.i
@@ -552,7 +551,7 @@ mpglib_main.i: mpglib_main.c.i
 
 # target to preprocess a source file
 mpglib_main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/mpglib_main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/mpglib_main.c.i
 .PHONY : mpglib_main.c.i
 
 mpglib_main.s: mpglib_main.c.s
@@ -560,7 +559,7 @@ mpglib_main.s: mpglib_main.c.s
 
 # target to generate assembly for a file
 mpglib_main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/mpglib_main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/mpglib_main.c.s
 .PHONY : mpglib_main.c.s
 
 newmdct.o: newmdct.c.o
@@ -568,7 +567,7 @@ newmdct.o: newmdct.c.o
 
 # target to build an object file
 newmdct.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/newmdct.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/newmdct.c.o
 .PHONY : newmdct.c.o
 
 newmdct.i: newmdct.c.i
@@ -576,7 +575,7 @@ newmdct.i: newmdct.c.i
 
 # target to preprocess a source file
 newmdct.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/newmdct.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/newmdct.c.i
 .PHONY : newmdct.c.i
 
 newmdct.s: newmdct.c.s
@@ -584,7 +583,7 @@ newmdct.s: newmdct.c.s
 
 # target to generate assembly for a file
 newmdct.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/newmdct.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/newmdct.c.s
 .PHONY : newmdct.c.s
 
 parse.o: parse.c.o
@@ -592,7 +591,7 @@ parse.o: parse.c.o
 
 # target to build an object file
 parse.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/parse.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/parse.c.o
 .PHONY : parse.c.o
 
 parse.i: parse.c.i
@@ -600,7 +599,7 @@ parse.i: parse.c.i
 
 # target to preprocess a source file
 parse.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/parse.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/parse.c.i
 .PHONY : parse.c.i
 
 parse.s: parse.c.s
@@ -608,7 +607,7 @@ parse.s: parse.c.s
 
 # target to generate assembly for a file
 parse.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/parse.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/parse.c.s
 .PHONY : parse.c.s
 
 portableio.o: portableio.c.o
@@ -616,7 +615,7 @@ portableio.o: portableio.c.o
 
 # target to build an object file
 portableio.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/portableio.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/portableio.c.o
 .PHONY : portableio.c.o
 
 portableio.i: portableio.c.i
@@ -624,7 +623,7 @@ portableio.i: portableio.c.i
 
 # target to preprocess a source file
 portableio.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/portableio.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/portableio.c.i
 .PHONY : portableio.c.i
 
 portableio.s: portableio.c.s
@@ -632,7 +631,7 @@ portableio.s: portableio.c.s
 
 # target to generate assembly for a file
 portableio.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/portableio.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/portableio.c.s
 .PHONY : portableio.c.s
 
 psymodel.o: psymodel.c.o
@@ -640,7 +639,7 @@ psymodel.o: psymodel.c.o
 
 # target to build an object file
 psymodel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/psymodel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/psymodel.c.o
 .PHONY : psymodel.c.o
 
 psymodel.i: psymodel.c.i
@@ -648,7 +647,7 @@ psymodel.i: psymodel.c.i
 
 # target to preprocess a source file
 psymodel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/psymodel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/psymodel.c.i
 .PHONY : psymodel.c.i
 
 psymodel.s: psymodel.c.s
@@ -656,7 +655,7 @@ psymodel.s: psymodel.c.s
 
 # target to generate assembly for a file
 psymodel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/psymodel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/psymodel.c.s
 .PHONY : psymodel.c.s
 
 quantize-pvt.o: quantize-pvt.c.o
@@ -664,7 +663,7 @@ quantize-pvt.o: quantize-pvt.c.o
 
 # target to build an object file
 quantize-pvt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize-pvt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize-pvt.c.o
 .PHONY : quantize-pvt.c.o
 
 quantize-pvt.i: quantize-pvt.c.i
@@ -672,7 +671,7 @@ quantize-pvt.i: quantize-pvt.c.i
 
 # target to preprocess a source file
 quantize-pvt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize-pvt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize-pvt.c.i
 .PHONY : quantize-pvt.c.i
 
 quantize-pvt.s: quantize-pvt.c.s
@@ -680,7 +679,7 @@ quantize-pvt.s: quantize-pvt.c.s
 
 # target to generate assembly for a file
 quantize-pvt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize-pvt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize-pvt.c.s
 .PHONY : quantize-pvt.c.s
 
 quantize.o: quantize.c.o
@@ -688,7 +687,7 @@ quantize.o: quantize.c.o
 
 # target to build an object file
 quantize.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize.c.o
 .PHONY : quantize.c.o
 
 quantize.i: quantize.c.i
@@ -696,7 +695,7 @@ quantize.i: quantize.c.i
 
 # target to preprocess a source file
 quantize.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize.c.i
 .PHONY : quantize.c.i
 
 quantize.s: quantize.c.s
@@ -704,7 +703,7 @@ quantize.s: quantize.c.s
 
 # target to generate assembly for a file
 quantize.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/quantize.c.s
 .PHONY : quantize.c.s
 
 reservoir.o: reservoir.c.o
@@ -712,7 +711,7 @@ reservoir.o: reservoir.c.o
 
 # target to build an object file
 reservoir.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/reservoir.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/reservoir.c.o
 .PHONY : reservoir.c.o
 
 reservoir.i: reservoir.c.i
@@ -720,7 +719,7 @@ reservoir.i: reservoir.c.i
 
 # target to preprocess a source file
 reservoir.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/reservoir.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/reservoir.c.i
 .PHONY : reservoir.c.i
 
 reservoir.s: reservoir.c.s
@@ -728,7 +727,7 @@ reservoir.s: reservoir.c.s
 
 # target to generate assembly for a file
 reservoir.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/reservoir.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/reservoir.c.s
 .PHONY : reservoir.c.s
 
 rtp.o: rtp.c.o
@@ -736,7 +735,7 @@ rtp.o: rtp.c.o
 
 # target to build an object file
 rtp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rtp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rtp.c.o
 .PHONY : rtp.c.o
 
 rtp.i: rtp.c.i
@@ -744,7 +743,7 @@ rtp.i: rtp.c.i
 
 # target to preprocess a source file
 rtp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rtp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rtp.c.i
 .PHONY : rtp.c.i
 
 rtp.s: rtp.c.s
@@ -752,7 +751,7 @@ rtp.s: rtp.c.s
 
 # target to generate assembly for a file
 rtp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rtp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/rtp.c.s
 .PHONY : rtp.c.s
 
 tabinit.o: tabinit.c.o
@@ -760,7 +759,7 @@ tabinit.o: tabinit.c.o
 
 # target to build an object file
 tabinit.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tabinit.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tabinit.c.o
 .PHONY : tabinit.c.o
 
 tabinit.i: tabinit.c.i
@@ -768,7 +767,7 @@ tabinit.i: tabinit.c.i
 
 # target to preprocess a source file
 tabinit.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tabinit.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tabinit.c.i
 .PHONY : tabinit.c.i
 
 tabinit.s: tabinit.c.s
@@ -776,7 +775,7 @@ tabinit.s: tabinit.c.s
 
 # target to generate assembly for a file
 tabinit.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tabinit.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tabinit.c.s
 .PHONY : tabinit.c.s
 
 tables.o: tables.c.o
@@ -784,7 +783,7 @@ tables.o: tables.c.o
 
 # target to build an object file
 tables.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tables.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tables.c.o
 .PHONY : tables.c.o
 
 tables.i: tables.c.i
@@ -792,7 +791,7 @@ tables.i: tables.c.i
 
 # target to preprocess a source file
 tables.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tables.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tables.c.i
 .PHONY : tables.c.i
 
 tables.s: tables.c.s
@@ -800,7 +799,7 @@ tables.s: tables.c.s
 
 # target to generate assembly for a file
 tables.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tables.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/tables.c.s
 .PHONY : tables.c.s
 
 takehiro.o: takehiro.c.o
@@ -808,7 +807,7 @@ takehiro.o: takehiro.c.o
 
 # target to build an object file
 takehiro.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/takehiro.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/takehiro.c.o
 .PHONY : takehiro.c.o
 
 takehiro.i: takehiro.c.i
@@ -816,7 +815,7 @@ takehiro.i: takehiro.c.i
 
 # target to preprocess a source file
 takehiro.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/takehiro.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/takehiro.c.i
 .PHONY : takehiro.c.i
 
 takehiro.s: takehiro.c.s
@@ -824,7 +823,7 @@ takehiro.s: takehiro.c.s
 
 # target to generate assembly for a file
 takehiro.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/takehiro.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/takehiro.c.s
 .PHONY : takehiro.c.s
 
 timestatus.o: timestatus.c.o
@@ -832,7 +831,7 @@ timestatus.o: timestatus.c.o
 
 # target to build an object file
 timestatus.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/timestatus.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/timestatus.c.o
 .PHONY : timestatus.c.o
 
 timestatus.i: timestatus.c.i
@@ -840,7 +839,7 @@ timestatus.i: timestatus.c.i
 
 # target to preprocess a source file
 timestatus.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/timestatus.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/timestatus.c.i
 .PHONY : timestatus.c.i
 
 timestatus.s: timestatus.c.s
@@ -848,7 +847,7 @@ timestatus.s: timestatus.c.s
 
 # target to generate assembly for a file
 timestatus.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/timestatus.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/timestatus.c.s
 .PHONY : timestatus.c.s
 
 util.o: util.c.o
@@ -856,7 +855,7 @@ util.o: util.c.o
 
 # target to build an object file
 util.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/util.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/util.c.o
 .PHONY : util.c.o
 
 util.i: util.c.i
@@ -864,7 +863,7 @@ util.i: util.c.i
 
 # target to preprocess a source file
 util.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/util.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/util.c.i
 .PHONY : util.c.i
 
 util.s: util.c.s
@@ -872,7 +871,7 @@ util.s: util.c.s
 
 # target to generate assembly for a file
 util.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/util.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/util.c.s
 .PHONY : util.c.s
 
 vbrquantize.o: vbrquantize.c.o
@@ -880,7 +879,7 @@ vbrquantize.o: vbrquantize.c.o
 
 # target to build an object file
 vbrquantize.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/vbrquantize.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/vbrquantize.c.o
 .PHONY : vbrquantize.c.o
 
 vbrquantize.i: vbrquantize.c.i
@@ -888,7 +887,7 @@ vbrquantize.i: vbrquantize.c.i
 
 # target to preprocess a source file
 vbrquantize.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/vbrquantize.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/vbrquantize.c.i
 .PHONY : vbrquantize.c.i
 
 vbrquantize.s: vbrquantize.c.s
@@ -896,7 +895,7 @@ vbrquantize.s: vbrquantize.c.s
 
 # target to generate assembly for a file
 vbrquantize.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/vbrquantize.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/vbrquantize.c.s
 .PHONY : vbrquantize.c.s
 
 version.o: version.c.o
@@ -904,7 +903,7 @@ version.o: version.c.o
 
 # target to build an object file
 version.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/version.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/version.c.o
 .PHONY : version.c.o
 
 version.i: version.c.i
@@ -912,7 +911,7 @@ version.i: version.c.i
 
 # target to preprocess a source file
 version.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/version.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/version.c.i
 .PHONY : version.c.i
 
 version.s: version.c.s
@@ -920,7 +919,7 @@ version.s: version.c.s
 
 # target to generate assembly for a file
 version.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/version.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/build.make MultiSource/Benchmarks/MiBench/consumer-lame/CMakeFiles/consumer-lame.dir/version.c.s
 .PHONY : version.c.s
 
 # Help Target
@@ -1042,7 +1041,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

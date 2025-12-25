@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/flags.mak
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o: MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/flags.make
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o: MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/enc-rc4.dir/rc4.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o -MF CMakeFiles/enc-rc4.dir/rc4.c.o.d -o CMakeFiles/enc-rc4.dir/rc4.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/enc-rc4.dir/rc4.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o -MF CMakeFiles/enc-rc4.dir/rc4.c.o.d -o CMakeFiles/enc-rc4.dir/rc4.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c
 
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/enc-rc4.dir/rc4.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c > CMakeFiles/enc-rc4.dir/rc4.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c > CMakeFiles/enc-rc4.dir/rc4.c.i
 
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/enc-rc4.dir/rc4.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c -o CMakeFiles/enc-rc4.dir/rc4.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/rc4.c -o CMakeFiles/enc-rc4.dir/rc4.c.s
 
 # Object files for target enc-rc4
 enc__rc4_OBJECTS = \
@@ -93,20 +93,20 @@ enc__rc4_EXTERNAL_OBJECTS =
 MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4: MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/rc4.c.o
 MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4: MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/build.make
 MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4: MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable enc-rc4"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/enc-rc4.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4 > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable enc-rc4"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/enc-rc4.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4 > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/build: MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4
 .PHONY : MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/build
 
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && $(CMAKE_COMMAND) -P CMakeFiles/enc-rc4.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 && $(CMAKE_COMMAND) -P CMakeFiles/enc-rc4.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/clean
 
 MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/Trimaran/enc-rc4 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/Trimaran/enc-rc4/CMakeFiles/enc-rc4.dir/depend
 

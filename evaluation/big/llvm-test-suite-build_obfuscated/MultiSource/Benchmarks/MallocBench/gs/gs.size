@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MallocBench/gs/gs  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MallocBench/gs/gs  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,20 +14,20 @@ section                  size     addr
 .init                      27    20480
 .plt                      816    20512
 .plt.got                    8    21328
-.text                  568737    21344
-.fini                      13   590084
-.rodata                121860   593920
-.eh_frame_hdr            5940   715780
-.eh_frame               31248   721720
-.init_array                 8   756832
-.fini_array                 8   756840
-.data.rel.ro              304   756848
-.dynamic                  496   757152
-.got                       80   757648
-.got.plt                  424   757736
-.data                    6424   758160
-.bss                    15400   764592
+.text                  401633    21344
+.fini                      13   422980
+.rodata                 85492   425984
+.eh_frame_hdr            5940   511476
+.eh_frame               29768   517416
+.init_array                 8   552032
+.fini_array                 8   552040
+.data.rel.ro              304   552048
+.dynamic                  496   552352
+.got                       80   552848
+.got.plt                  424   552936
+.data                    6424   553360
+.bss                    15400   559792
 .comment                   82        0
-Total                  770608
+Total                  565656
 
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Utility rule file for build-HashProgramOutput.sh.
 
@@ -69,9 +69,9 @@ include tools/CMakeFiles/build-HashProgramOutput.sh.dir/progress.make
 tools/CMakeFiles/build-HashProgramOutput.sh: tools/HashProgramOutput.sh
 
 tools/HashProgramOutput.sh: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/HashProgramOutput.sh
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating HashProgramOutput.sh"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools/../HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/HashProgramOutput.sh
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools && chmod +x /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/HashProgramOutput.sh
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating HashProgramOutput.sh"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools/../HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/HashProgramOutput.sh
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools && chmod +x /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/HashProgramOutput.sh
 
 build-HashProgramOutput.sh: tools/CMakeFiles/build-HashProgramOutput.sh
 build-HashProgramOutput.sh: tools/HashProgramOutput.sh
@@ -83,10 +83,10 @@ tools/CMakeFiles/build-HashProgramOutput.sh.dir/build: build-HashProgramOutput.s
 .PHONY : tools/CMakeFiles/build-HashProgramOutput.sh.dir/build
 
 tools/CMakeFiles/build-HashProgramOutput.sh.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools && $(CMAKE_COMMAND) -P CMakeFiles/build-HashProgramOutput.sh.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools && $(CMAKE_COMMAND) -P CMakeFiles/build-HashProgramOutput.sh.dir/cmake_clean.cmake
 .PHONY : tools/CMakeFiles/build-HashProgramOutput.sh.dir/clean
 
 tools/CMakeFiles/build-HashProgramOutput.sh.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/CMakeFiles/build-HashProgramOutput.sh.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/CMakeFiles/build-HashProgramOutput.sh.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tools/CMakeFiles/build-HashProgramOutput.sh.dir/depend
 

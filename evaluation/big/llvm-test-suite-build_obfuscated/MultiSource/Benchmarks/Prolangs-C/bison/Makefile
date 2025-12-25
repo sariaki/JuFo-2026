@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/bison//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/bison//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ mybison: MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/rule
 
 # fast build rule for target.
 mybison/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build
 .PHONY : mybison/fast
 
 LR0.o: LR0.c.o
@@ -136,7 +135,7 @@ LR0.o: LR0.c.o
 
 # target to build an object file
 LR0.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/LR0.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/LR0.c.o
 .PHONY : LR0.c.o
 
 LR0.i: LR0.c.i
@@ -144,7 +143,7 @@ LR0.i: LR0.c.i
 
 # target to preprocess a source file
 LR0.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/LR0.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/LR0.c.i
 .PHONY : LR0.c.i
 
 LR0.s: LR0.c.s
@@ -152,7 +151,7 @@ LR0.s: LR0.c.s
 
 # target to generate assembly for a file
 LR0.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/LR0.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/LR0.c.s
 .PHONY : LR0.c.s
 
 allocate.o: allocate.c.o
@@ -160,7 +159,7 @@ allocate.o: allocate.c.o
 
 # target to build an object file
 allocate.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/allocate.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/allocate.c.o
 .PHONY : allocate.c.o
 
 allocate.i: allocate.c.i
@@ -168,7 +167,7 @@ allocate.i: allocate.c.i
 
 # target to preprocess a source file
 allocate.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/allocate.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/allocate.c.i
 .PHONY : allocate.c.i
 
 allocate.s: allocate.c.s
@@ -176,7 +175,7 @@ allocate.s: allocate.c.s
 
 # target to generate assembly for a file
 allocate.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/allocate.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/allocate.c.s
 .PHONY : allocate.c.s
 
 closure.o: closure.c.o
@@ -184,7 +183,7 @@ closure.o: closure.c.o
 
 # target to build an object file
 closure.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/closure.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/closure.c.o
 .PHONY : closure.c.o
 
 closure.i: closure.c.i
@@ -192,7 +191,7 @@ closure.i: closure.c.i
 
 # target to preprocess a source file
 closure.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/closure.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/closure.c.i
 .PHONY : closure.c.i
 
 closure.s: closure.c.s
@@ -200,7 +199,7 @@ closure.s: closure.c.s
 
 # target to generate assembly for a file
 closure.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/closure.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/closure.c.s
 .PHONY : closure.c.s
 
 conflicts.o: conflicts.c.o
@@ -208,7 +207,7 @@ conflicts.o: conflicts.c.o
 
 # target to build an object file
 conflicts.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/conflicts.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/conflicts.c.o
 .PHONY : conflicts.c.o
 
 conflicts.i: conflicts.c.i
@@ -216,7 +215,7 @@ conflicts.i: conflicts.c.i
 
 # target to preprocess a source file
 conflicts.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/conflicts.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/conflicts.c.i
 .PHONY : conflicts.c.i
 
 conflicts.s: conflicts.c.s
@@ -224,7 +223,7 @@ conflicts.s: conflicts.c.s
 
 # target to generate assembly for a file
 conflicts.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/conflicts.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/conflicts.c.s
 .PHONY : conflicts.c.s
 
 derives.o: derives.c.o
@@ -232,7 +231,7 @@ derives.o: derives.c.o
 
 # target to build an object file
 derives.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/derives.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/derives.c.o
 .PHONY : derives.c.o
 
 derives.i: derives.c.i
@@ -240,7 +239,7 @@ derives.i: derives.c.i
 
 # target to preprocess a source file
 derives.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/derives.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/derives.c.i
 .PHONY : derives.c.i
 
 derives.s: derives.c.s
@@ -248,7 +247,7 @@ derives.s: derives.c.s
 
 # target to generate assembly for a file
 derives.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/derives.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/derives.c.s
 .PHONY : derives.c.s
 
 files.o: files.c.o
@@ -256,7 +255,7 @@ files.o: files.c.o
 
 # target to build an object file
 files.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/files.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/files.c.o
 .PHONY : files.c.o
 
 files.i: files.c.i
@@ -264,7 +263,7 @@ files.i: files.c.i
 
 # target to preprocess a source file
 files.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/files.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/files.c.i
 .PHONY : files.c.i
 
 files.s: files.c.s
@@ -272,7 +271,7 @@ files.s: files.c.s
 
 # target to generate assembly for a file
 files.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/files.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/files.c.s
 .PHONY : files.c.s
 
 getargs.o: getargs.c.o
@@ -280,7 +279,7 @@ getargs.o: getargs.c.o
 
 # target to build an object file
 getargs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getargs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getargs.c.o
 .PHONY : getargs.c.o
 
 getargs.i: getargs.c.i
@@ -288,7 +287,7 @@ getargs.i: getargs.c.i
 
 # target to preprocess a source file
 getargs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getargs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getargs.c.i
 .PHONY : getargs.c.i
 
 getargs.s: getargs.c.s
@@ -296,7 +295,7 @@ getargs.s: getargs.c.s
 
 # target to generate assembly for a file
 getargs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getargs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getargs.c.s
 .PHONY : getargs.c.s
 
 getopt.o: getopt.c.o
@@ -304,7 +303,7 @@ getopt.o: getopt.c.o
 
 # target to build an object file
 getopt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getopt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getopt.c.o
 .PHONY : getopt.c.o
 
 getopt.i: getopt.c.i
@@ -312,7 +311,7 @@ getopt.i: getopt.c.i
 
 # target to preprocess a source file
 getopt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getopt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getopt.c.i
 .PHONY : getopt.c.i
 
 getopt.s: getopt.c.s
@@ -320,7 +319,7 @@ getopt.s: getopt.c.s
 
 # target to generate assembly for a file
 getopt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getopt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/getopt.c.s
 .PHONY : getopt.c.s
 
 gram.o: gram.c.o
@@ -328,7 +327,7 @@ gram.o: gram.c.o
 
 # target to build an object file
 gram.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/gram.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/gram.c.o
 .PHONY : gram.c.o
 
 gram.i: gram.c.i
@@ -336,7 +335,7 @@ gram.i: gram.c.i
 
 # target to preprocess a source file
 gram.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/gram.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/gram.c.i
 .PHONY : gram.c.i
 
 gram.s: gram.c.s
@@ -344,7 +343,7 @@ gram.s: gram.c.s
 
 # target to generate assembly for a file
 gram.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/gram.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/gram.c.s
 .PHONY : gram.c.s
 
 lalr.o: lalr.c.o
@@ -352,7 +351,7 @@ lalr.o: lalr.c.o
 
 # target to build an object file
 lalr.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lalr.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lalr.c.o
 .PHONY : lalr.c.o
 
 lalr.i: lalr.c.i
@@ -360,7 +359,7 @@ lalr.i: lalr.c.i
 
 # target to preprocess a source file
 lalr.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lalr.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lalr.c.i
 .PHONY : lalr.c.i
 
 lalr.s: lalr.c.s
@@ -368,7 +367,7 @@ lalr.s: lalr.c.s
 
 # target to generate assembly for a file
 lalr.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lalr.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lalr.c.s
 .PHONY : lalr.c.s
 
 lex.o: lex.c.o
@@ -376,7 +375,7 @@ lex.o: lex.c.o
 
 # target to build an object file
 lex.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lex.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lex.c.o
 .PHONY : lex.c.o
 
 lex.i: lex.c.i
@@ -384,7 +383,7 @@ lex.i: lex.c.i
 
 # target to preprocess a source file
 lex.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lex.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lex.c.i
 .PHONY : lex.c.i
 
 lex.s: lex.c.s
@@ -392,7 +391,7 @@ lex.s: lex.c.s
 
 # target to generate assembly for a file
 lex.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lex.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/lex.c.s
 .PHONY : lex.c.s
 
 main.o: main.c.o
@@ -400,7 +399,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -408,7 +407,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -416,7 +415,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/main.c.s
 .PHONY : main.c.s
 
 nullable.o: nullable.c.o
@@ -424,7 +423,7 @@ nullable.o: nullable.c.o
 
 # target to build an object file
 nullable.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/nullable.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/nullable.c.o
 .PHONY : nullable.c.o
 
 nullable.i: nullable.c.i
@@ -432,7 +431,7 @@ nullable.i: nullable.c.i
 
 # target to preprocess a source file
 nullable.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/nullable.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/nullable.c.i
 .PHONY : nullable.c.i
 
 nullable.s: nullable.c.s
@@ -440,7 +439,7 @@ nullable.s: nullable.c.s
 
 # target to generate assembly for a file
 nullable.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/nullable.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/nullable.c.s
 .PHONY : nullable.c.s
 
 output.o: output.c.o
@@ -448,7 +447,7 @@ output.o: output.c.o
 
 # target to build an object file
 output.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/output.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/output.c.o
 .PHONY : output.c.o
 
 output.i: output.c.i
@@ -456,7 +455,7 @@ output.i: output.c.i
 
 # target to preprocess a source file
 output.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/output.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/output.c.i
 .PHONY : output.c.i
 
 output.s: output.c.s
@@ -464,7 +463,7 @@ output.s: output.c.s
 
 # target to generate assembly for a file
 output.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/output.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/output.c.s
 .PHONY : output.c.s
 
 print.o: print.c.o
@@ -472,7 +471,7 @@ print.o: print.c.o
 
 # target to build an object file
 print.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/print.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/print.c.o
 .PHONY : print.c.o
 
 print.i: print.c.i
@@ -480,7 +479,7 @@ print.i: print.c.i
 
 # target to preprocess a source file
 print.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/print.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/print.c.i
 .PHONY : print.c.i
 
 print.s: print.c.s
@@ -488,7 +487,7 @@ print.s: print.c.s
 
 # target to generate assembly for a file
 print.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/print.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/print.c.s
 .PHONY : print.c.s
 
 reader.o: reader.c.o
@@ -496,7 +495,7 @@ reader.o: reader.c.o
 
 # target to build an object file
 reader.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/reader.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/reader.c.o
 .PHONY : reader.c.o
 
 reader.i: reader.c.i
@@ -504,7 +503,7 @@ reader.i: reader.c.i
 
 # target to preprocess a source file
 reader.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/reader.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/reader.c.i
 .PHONY : reader.c.i
 
 reader.s: reader.c.s
@@ -512,7 +511,7 @@ reader.s: reader.c.s
 
 # target to generate assembly for a file
 reader.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/reader.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/reader.c.s
 .PHONY : reader.c.s
 
 symtab.o: symtab.c.o
@@ -520,7 +519,7 @@ symtab.o: symtab.c.o
 
 # target to build an object file
 symtab.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/symtab.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/symtab.c.o
 .PHONY : symtab.c.o
 
 symtab.i: symtab.c.i
@@ -528,7 +527,7 @@ symtab.i: symtab.c.i
 
 # target to preprocess a source file
 symtab.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/symtab.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/symtab.c.i
 .PHONY : symtab.c.i
 
 symtab.s: symtab.c.s
@@ -536,7 +535,7 @@ symtab.s: symtab.c.s
 
 # target to generate assembly for a file
 symtab.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/symtab.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/symtab.c.s
 .PHONY : symtab.c.s
 
 warshall.o: warshall.c.o
@@ -544,7 +543,7 @@ warshall.o: warshall.c.o
 
 # target to build an object file
 warshall.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/warshall.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/warshall.c.o
 .PHONY : warshall.c.o
 
 warshall.i: warshall.c.i
@@ -552,7 +551,7 @@ warshall.i: warshall.c.i
 
 # target to preprocess a source file
 warshall.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/warshall.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/warshall.c.i
 .PHONY : warshall.c.i
 
 warshall.s: warshall.c.s
@@ -560,7 +559,7 @@ warshall.s: warshall.c.s
 
 # target to generate assembly for a file
 warshall.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/warshall.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/build.make MultiSource/Benchmarks/Prolangs-C/bison/CMakeFiles/mybison.dir/warshall.c.s
 .PHONY : warshall.c.s
 
 # Help Target
@@ -637,7 +636,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

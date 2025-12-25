@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/rule
 .PHONY : MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ pifft: MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/rule
 
 # fast build rule for target.
 pifft/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build
 .PHONY : pifft/fast
 
 fftsg.o: fftsg.c.o
@@ -136,7 +135,7 @@ fftsg.o: fftsg.c.o
 
 # target to build an object file
 fftsg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.o
 .PHONY : fftsg.c.o
 
 fftsg.i: fftsg.c.i
@@ -144,7 +143,7 @@ fftsg.i: fftsg.c.i
 
 # target to preprocess a source file
 fftsg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.i
 .PHONY : fftsg.c.i
 
 fftsg.s: fftsg.c.s
@@ -152,7 +151,7 @@ fftsg.s: fftsg.c.s
 
 # target to generate assembly for a file
 fftsg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/fftsg.c.s
 .PHONY : fftsg.c.s
 
 pifft.o: pifft.c.o
@@ -160,7 +159,7 @@ pifft.o: pifft.c.o
 
 # target to build an object file
 pifft.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.o
 .PHONY : pifft.c.o
 
 pifft.i: pifft.c.i
@@ -168,7 +167,7 @@ pifft.i: pifft.c.i
 
 # target to preprocess a source file
 pifft.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.i
 .PHONY : pifft.c.i
 
 pifft.s: pifft.c.s
@@ -176,7 +175,7 @@ pifft.s: pifft.c.s
 
 # target to generate assembly for a file
 pifft.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/build.make MultiSource/Benchmarks/FreeBench/pifft/CMakeFiles/pifft.dir/pifft.c.s
 .PHONY : pifft.c.s
 
 # Help Target
@@ -205,7 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/timberwolfmc  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/timberwolfmc  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,19 +14,19 @@ section                  size     addr
 .init                      27     4096
 .plt                      480     4128
 .plt.got                    8     4608
-.text                  295401     4624
-.fini                      13   300028
-.rodata                 28560   303104
-.eh_frame_hdr            1820   331664
-.eh_frame               13376   333488
-.init_array                 8   351664
-.fini_array                 8   351672
-.dynamic                  496   351680
-.got                       56   352176
-.got.plt                  256   352232
-.data                      16   352488
-.bss                     1680   352512
+.text                  274217     4624
+.fini                      13   278844
+.rodata                 23616   282624
+.eh_frame_hdr            1820   306240
+.eh_frame               13464   308064
+.init_array                 8   327088
+.fini_array                 8   327096
+.dynamic                  496   327104
+.got                       56   327600
+.got.plt                  256   327656
+.data                      16   327912
+.bss                     1680   327936
 .comment                   82        0
-Total                  344972
+Total                  318932
 
 

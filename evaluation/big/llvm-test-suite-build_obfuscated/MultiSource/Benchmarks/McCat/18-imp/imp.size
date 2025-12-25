@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/18-imp/imp  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/18-imp/imp  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,20 +14,20 @@ section                 size    addr
 .init                     27    4096
 .plt                     448    4128
 .plt.got                   8    4576
-.text                  30388    4592
-.fini                     13   34980
-.rodata                 5652   36864
-.eh_frame_hdr            276   42516
-.eh_frame               2016   42792
-.init_array                8   48048
-.fini_array                8   48056
-.data.rel.ro             520   48064
-.dynamic                 496   48584
-.got                      48   49080
-.got.plt                 240   49128
-.data                     64   49368
-.bss                     832   49440
+.text                  23652    4592
+.fini                     13   28244
+.rodata                 4028   28672
+.eh_frame_hdr            276   32700
+.eh_frame               1996   32976
+.init_array                8   39856
+.fini_array                8   39864
+.data.rel.ro             520   39872
+.dynamic                 496   40392
+.got                      48   40888
+.got.plt                 240   40936
+.data                     64   41176
+.bss                     832   41248
 .comment                  82       0
-Total                  43816
+Total                  35436
 
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/ClamAV/clamscan  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/ClamAV/clamscan  :
 section                  size      addr
 .interp                    28       792
 .note.gnu.property         32       824
@@ -14,20 +14,20 @@ section                  size      addr
 .init                      27     69632
 .plt                     2128     69664
 .plt.got                    8     71792
-.text                  935586     71808
-.fini                      13   1007396
-.rodata                235544   1007616
-.eh_frame_hdr            5428   1243160
-.eh_frame               39888   1248592
-.init_array                 8   1293520
-.fini_array                 8   1293528
-.data.rel.ro             8400   1293536
-.dynamic                  480   1301936
-.got                       80   1302416
-.got.plt                 1080   1302504
-.data                   56724   1303584
-.bss                     4688   1360320
+.text                  793442     71808
+.fini                      13    865252
+.rodata                200568    868352
+.eh_frame_hdr            5356   1068920
+.eh_frame               38720   1074280
+.init_array                 8   1117392
+.fini_array                 8   1117400
+.data.rel.ro             8400   1117408
+.dynamic                  480   1125808
+.got                       80   1126288
+.got.plt                 1080   1126376
+.data                   56724   1127456
+.bss                     4688   1184192
 .comment                   82         0
-Total                 1355722
+Total                 1177362
 
 

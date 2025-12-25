@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ PENNANT: MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir
 
 # fast build rule for target.
 PENNANT/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build
 .PHONY : PENNANT/fast
 
 Driver.o: Driver.cc.o
@@ -136,7 +135,7 @@ Driver.o: Driver.cc.o
 
 # target to build an object file
 Driver.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Driver.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Driver.cc.o
 .PHONY : Driver.cc.o
 
 Driver.i: Driver.cc.i
@@ -144,7 +143,7 @@ Driver.i: Driver.cc.i
 
 # target to preprocess a source file
 Driver.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Driver.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Driver.cc.i
 .PHONY : Driver.cc.i
 
 Driver.s: Driver.cc.s
@@ -152,7 +151,7 @@ Driver.s: Driver.cc.s
 
 # target to generate assembly for a file
 Driver.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Driver.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Driver.cc.s
 .PHONY : Driver.cc.s
 
 ExportGold.o: ExportGold.cc.o
@@ -160,7 +159,7 @@ ExportGold.o: ExportGold.cc.o
 
 # target to build an object file
 ExportGold.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/ExportGold.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/ExportGold.cc.o
 .PHONY : ExportGold.cc.o
 
 ExportGold.i: ExportGold.cc.i
@@ -168,7 +167,7 @@ ExportGold.i: ExportGold.cc.i
 
 # target to preprocess a source file
 ExportGold.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/ExportGold.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/ExportGold.cc.i
 .PHONY : ExportGold.cc.i
 
 ExportGold.s: ExportGold.cc.s
@@ -176,7 +175,7 @@ ExportGold.s: ExportGold.cc.s
 
 # target to generate assembly for a file
 ExportGold.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/ExportGold.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/ExportGold.cc.s
 .PHONY : ExportGold.cc.s
 
 GenMesh.o: GenMesh.cc.o
@@ -184,7 +183,7 @@ GenMesh.o: GenMesh.cc.o
 
 # target to build an object file
 GenMesh.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/GenMesh.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/GenMesh.cc.o
 .PHONY : GenMesh.cc.o
 
 GenMesh.i: GenMesh.cc.i
@@ -192,7 +191,7 @@ GenMesh.i: GenMesh.cc.i
 
 # target to preprocess a source file
 GenMesh.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/GenMesh.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/GenMesh.cc.i
 .PHONY : GenMesh.cc.i
 
 GenMesh.s: GenMesh.cc.s
@@ -200,7 +199,7 @@ GenMesh.s: GenMesh.cc.s
 
 # target to generate assembly for a file
 GenMesh.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/GenMesh.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/GenMesh.cc.s
 .PHONY : GenMesh.cc.s
 
 Hydro.o: Hydro.cc.o
@@ -208,7 +207,7 @@ Hydro.o: Hydro.cc.o
 
 # target to build an object file
 Hydro.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Hydro.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Hydro.cc.o
 .PHONY : Hydro.cc.o
 
 Hydro.i: Hydro.cc.i
@@ -216,7 +215,7 @@ Hydro.i: Hydro.cc.i
 
 # target to preprocess a source file
 Hydro.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Hydro.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Hydro.cc.i
 .PHONY : Hydro.cc.i
 
 Hydro.s: Hydro.cc.s
@@ -224,7 +223,7 @@ Hydro.s: Hydro.cc.s
 
 # target to generate assembly for a file
 Hydro.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Hydro.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Hydro.cc.s
 .PHONY : Hydro.cc.s
 
 HydroBC.o: HydroBC.cc.o
@@ -232,7 +231,7 @@ HydroBC.o: HydroBC.cc.o
 
 # target to build an object file
 HydroBC.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/HydroBC.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/HydroBC.cc.o
 .PHONY : HydroBC.cc.o
 
 HydroBC.i: HydroBC.cc.i
@@ -240,7 +239,7 @@ HydroBC.i: HydroBC.cc.i
 
 # target to preprocess a source file
 HydroBC.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/HydroBC.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/HydroBC.cc.i
 .PHONY : HydroBC.cc.i
 
 HydroBC.s: HydroBC.cc.s
@@ -248,7 +247,7 @@ HydroBC.s: HydroBC.cc.s
 
 # target to generate assembly for a file
 HydroBC.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/HydroBC.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/HydroBC.cc.s
 .PHONY : HydroBC.cc.s
 
 InputFile.o: InputFile.cc.o
@@ -256,7 +255,7 @@ InputFile.o: InputFile.cc.o
 
 # target to build an object file
 InputFile.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/InputFile.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/InputFile.cc.o
 .PHONY : InputFile.cc.o
 
 InputFile.i: InputFile.cc.i
@@ -264,7 +263,7 @@ InputFile.i: InputFile.cc.i
 
 # target to preprocess a source file
 InputFile.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/InputFile.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/InputFile.cc.i
 .PHONY : InputFile.cc.i
 
 InputFile.s: InputFile.cc.s
@@ -272,7 +271,7 @@ InputFile.s: InputFile.cc.s
 
 # target to generate assembly for a file
 InputFile.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/InputFile.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/InputFile.cc.s
 .PHONY : InputFile.cc.s
 
 Mesh.o: Mesh.cc.o
@@ -280,7 +279,7 @@ Mesh.o: Mesh.cc.o
 
 # target to build an object file
 Mesh.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Mesh.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Mesh.cc.o
 .PHONY : Mesh.cc.o
 
 Mesh.i: Mesh.cc.i
@@ -288,7 +287,7 @@ Mesh.i: Mesh.cc.i
 
 # target to preprocess a source file
 Mesh.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Mesh.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Mesh.cc.i
 .PHONY : Mesh.cc.i
 
 Mesh.s: Mesh.cc.s
@@ -296,7 +295,7 @@ Mesh.s: Mesh.cc.s
 
 # target to generate assembly for a file
 Mesh.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Mesh.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Mesh.cc.s
 .PHONY : Mesh.cc.s
 
 Parallel.o: Parallel.cc.o
@@ -304,7 +303,7 @@ Parallel.o: Parallel.cc.o
 
 # target to build an object file
 Parallel.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Parallel.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Parallel.cc.o
 .PHONY : Parallel.cc.o
 
 Parallel.i: Parallel.cc.i
@@ -312,7 +311,7 @@ Parallel.i: Parallel.cc.i
 
 # target to preprocess a source file
 Parallel.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Parallel.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Parallel.cc.i
 .PHONY : Parallel.cc.i
 
 Parallel.s: Parallel.cc.s
@@ -320,7 +319,7 @@ Parallel.s: Parallel.cc.s
 
 # target to generate assembly for a file
 Parallel.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Parallel.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/Parallel.cc.s
 .PHONY : Parallel.cc.s
 
 PolyGas.o: PolyGas.cc.o
@@ -328,7 +327,7 @@ PolyGas.o: PolyGas.cc.o
 
 # target to build an object file
 PolyGas.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/PolyGas.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/PolyGas.cc.o
 .PHONY : PolyGas.cc.o
 
 PolyGas.i: PolyGas.cc.i
@@ -336,7 +335,7 @@ PolyGas.i: PolyGas.cc.i
 
 # target to preprocess a source file
 PolyGas.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/PolyGas.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/PolyGas.cc.i
 .PHONY : PolyGas.cc.i
 
 PolyGas.s: PolyGas.cc.s
@@ -344,7 +343,7 @@ PolyGas.s: PolyGas.cc.s
 
 # target to generate assembly for a file
 PolyGas.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/PolyGas.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/PolyGas.cc.s
 .PHONY : PolyGas.cc.s
 
 QCS.o: QCS.cc.o
@@ -352,7 +351,7 @@ QCS.o: QCS.cc.o
 
 # target to build an object file
 QCS.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/QCS.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/QCS.cc.o
 .PHONY : QCS.cc.o
 
 QCS.i: QCS.cc.i
@@ -360,7 +359,7 @@ QCS.i: QCS.cc.i
 
 # target to preprocess a source file
 QCS.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/QCS.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/QCS.cc.i
 .PHONY : QCS.cc.i
 
 QCS.s: QCS.cc.s
@@ -368,7 +367,7 @@ QCS.s: QCS.cc.s
 
 # target to generate assembly for a file
 QCS.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/QCS.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/QCS.cc.s
 .PHONY : QCS.cc.s
 
 TTS.o: TTS.cc.o
@@ -376,7 +375,7 @@ TTS.o: TTS.cc.o
 
 # target to build an object file
 TTS.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/TTS.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/TTS.cc.o
 .PHONY : TTS.cc.o
 
 TTS.i: TTS.cc.i
@@ -384,7 +383,7 @@ TTS.i: TTS.cc.i
 
 # target to preprocess a source file
 TTS.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/TTS.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/TTS.cc.i
 .PHONY : TTS.cc.i
 
 TTS.s: TTS.cc.s
@@ -392,7 +391,7 @@ TTS.s: TTS.cc.s
 
 # target to generate assembly for a file
 TTS.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/TTS.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/TTS.cc.s
 .PHONY : TTS.cc.s
 
 WriteXY.o: WriteXY.cc.o
@@ -400,7 +399,7 @@ WriteXY.o: WriteXY.cc.o
 
 # target to build an object file
 WriteXY.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/WriteXY.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/WriteXY.cc.o
 .PHONY : WriteXY.cc.o
 
 WriteXY.i: WriteXY.cc.i
@@ -408,7 +407,7 @@ WriteXY.i: WriteXY.cc.i
 
 # target to preprocess a source file
 WriteXY.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/WriteXY.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/WriteXY.cc.i
 .PHONY : WriteXY.cc.i
 
 WriteXY.s: WriteXY.cc.s
@@ -416,7 +415,7 @@ WriteXY.s: WriteXY.cc.s
 
 # target to generate assembly for a file
 WriteXY.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/WriteXY.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/WriteXY.cc.s
 .PHONY : WriteXY.cc.s
 
 main.o: main.cc.o
@@ -424,7 +423,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/main.cc.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -432,7 +431,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/main.cc.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -440,7 +439,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/main.cc.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/CMakeFiles/PENNANT.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -502,7 +501,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

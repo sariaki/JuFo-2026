@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-C++-ary3 
-VERIFY: %b/fpcmp-target -r 0.00000001 %o %S/ary3.reference_output

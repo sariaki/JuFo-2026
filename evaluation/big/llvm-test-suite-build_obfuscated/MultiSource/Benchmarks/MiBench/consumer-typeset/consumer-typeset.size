@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-typeset/consumer-typeset  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-typeset/consumer-typeset  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,20 +14,20 @@ section                  size     addr
 .init                      27    24576
 .plt                      800    24608
 .plt.got                    8    25408
-.text                  637185    25424
-.fini                      13   662612
-.rodata                104592   663552
-.eh_frame_hdr            3060   768144
-.eh_frame               27792   771208
-.init_array                 8   803152
-.fini_array                 8   803160
-.data.rel.ro             3152   803168
-.dynamic                  496   806320
-.got                       72   806816
-.got.plt                  416   806888
-.data                    3144   807312
-.bss                    65208   810464
+.text                  553937    25424
+.fini                      13   579364
+.rodata                 87280   581632
+.eh_frame_hdr            3060   668912
+.eh_frame               27380   671976
+.init_array                 8   700752
+.fini_array                 8   700760
+.data.rel.ro             3152   700768
+.dynamic                  496   703920
+.got                       72   704416
+.got.plt                  416   704488
+.data                    3144   704912
+.bss                    65208   708064
 .comment                   82        0
-Total                  868177
+Total                  767205
 
 

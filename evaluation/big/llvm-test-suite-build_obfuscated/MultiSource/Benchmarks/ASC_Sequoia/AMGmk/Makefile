@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/AMGmk//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/AMGmk//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/rule
 .PHONY : MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ AMGmk: MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/rule
 
 # fast build rule for target.
 AMGmk/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build
 .PHONY : AMGmk/fast
 
 csr_matrix.o: csr_matrix.c.o
@@ -136,7 +135,7 @@ csr_matrix.o: csr_matrix.c.o
 
 # target to build an object file
 csr_matrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matrix.c.o
 .PHONY : csr_matrix.c.o
 
 csr_matrix.i: csr_matrix.c.i
@@ -144,7 +143,7 @@ csr_matrix.i: csr_matrix.c.i
 
 # target to preprocess a source file
 csr_matrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matrix.c.i
 .PHONY : csr_matrix.c.i
 
 csr_matrix.s: csr_matrix.c.s
@@ -152,7 +151,7 @@ csr_matrix.s: csr_matrix.c.s
 
 # target to generate assembly for a file
 csr_matrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matrix.c.s
 .PHONY : csr_matrix.c.s
 
 csr_matvec.o: csr_matvec.c.o
@@ -160,7 +159,7 @@ csr_matvec.o: csr_matvec.c.o
 
 # target to build an object file
 csr_matvec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matvec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matvec.c.o
 .PHONY : csr_matvec.c.o
 
 csr_matvec.i: csr_matvec.c.i
@@ -168,7 +167,7 @@ csr_matvec.i: csr_matvec.c.i
 
 # target to preprocess a source file
 csr_matvec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matvec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matvec.c.i
 .PHONY : csr_matvec.c.i
 
 csr_matvec.s: csr_matvec.c.s
@@ -176,7 +175,7 @@ csr_matvec.s: csr_matvec.c.s
 
 # target to generate assembly for a file
 csr_matvec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matvec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/csr_matvec.c.s
 .PHONY : csr_matvec.c.s
 
 hypre_error.o: hypre_error.c.o
@@ -184,7 +183,7 @@ hypre_error.o: hypre_error.c.o
 
 # target to build an object file
 hypre_error.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_error.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_error.c.o
 .PHONY : hypre_error.c.o
 
 hypre_error.i: hypre_error.c.i
@@ -192,7 +191,7 @@ hypre_error.i: hypre_error.c.i
 
 # target to preprocess a source file
 hypre_error.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_error.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_error.c.i
 .PHONY : hypre_error.c.i
 
 hypre_error.s: hypre_error.c.s
@@ -200,7 +199,7 @@ hypre_error.s: hypre_error.c.s
 
 # target to generate assembly for a file
 hypre_error.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_error.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_error.c.s
 .PHONY : hypre_error.c.s
 
 hypre_memory.o: hypre_memory.c.o
@@ -208,7 +207,7 @@ hypre_memory.o: hypre_memory.c.o
 
 # target to build an object file
 hypre_memory.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_memory.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_memory.c.o
 .PHONY : hypre_memory.c.o
 
 hypre_memory.i: hypre_memory.c.i
@@ -216,7 +215,7 @@ hypre_memory.i: hypre_memory.c.i
 
 # target to preprocess a source file
 hypre_memory.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_memory.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_memory.c.i
 .PHONY : hypre_memory.c.i
 
 hypre_memory.s: hypre_memory.c.s
@@ -224,7 +223,7 @@ hypre_memory.s: hypre_memory.c.s
 
 # target to generate assembly for a file
 hypre_memory.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_memory.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/hypre_memory.c.s
 .PHONY : hypre_memory.c.s
 
 laplace.o: laplace.c.o
@@ -232,7 +231,7 @@ laplace.o: laplace.c.o
 
 # target to build an object file
 laplace.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/laplace.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/laplace.c.o
 .PHONY : laplace.c.o
 
 laplace.i: laplace.c.i
@@ -240,7 +239,7 @@ laplace.i: laplace.c.i
 
 # target to preprocess a source file
 laplace.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/laplace.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/laplace.c.i
 .PHONY : laplace.c.i
 
 laplace.s: laplace.c.s
@@ -248,7 +247,7 @@ laplace.s: laplace.c.s
 
 # target to generate assembly for a file
 laplace.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/laplace.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/laplace.c.s
 .PHONY : laplace.c.s
 
 main.o: main.c.o
@@ -256,7 +255,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -264,7 +263,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -272,7 +271,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/main.c.s
 .PHONY : main.c.s
 
 relax.o: relax.c.o
@@ -280,7 +279,7 @@ relax.o: relax.c.o
 
 # target to build an object file
 relax.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/relax.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/relax.c.o
 .PHONY : relax.c.o
 
 relax.i: relax.c.i
@@ -288,7 +287,7 @@ relax.i: relax.c.i
 
 # target to preprocess a source file
 relax.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/relax.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/relax.c.i
 .PHONY : relax.c.i
 
 relax.s: relax.c.s
@@ -296,7 +295,7 @@ relax.s: relax.c.s
 
 # target to generate assembly for a file
 relax.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/relax.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/relax.c.s
 .PHONY : relax.c.s
 
 vector.o: vector.c.o
@@ -304,7 +303,7 @@ vector.o: vector.c.o
 
 # target to build an object file
 vector.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/vector.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/vector.c.o
 .PHONY : vector.c.o
 
 vector.i: vector.c.i
@@ -312,7 +311,7 @@ vector.i: vector.c.i
 
 # target to preprocess a source file
 vector.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/vector.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/vector.c.i
 .PHONY : vector.c.i
 
 vector.s: vector.c.s
@@ -320,7 +319,7 @@ vector.s: vector.c.s
 
 # target to generate assembly for a file
 vector.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/vector.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/build.make MultiSource/Benchmarks/ASC_Sequoia/AMGmk/CMakeFiles/AMGmk.dir/vector.c.s
 .PHONY : vector.c.s
 
 # Help Target
@@ -367,7 +366,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

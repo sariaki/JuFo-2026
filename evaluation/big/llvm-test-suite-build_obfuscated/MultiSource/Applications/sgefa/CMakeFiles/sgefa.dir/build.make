@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/depend.make
@@ -72,58 +72,58 @@ include MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/flags.make
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/flags.make
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/blas.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o -MF CMakeFiles/sgefa.dir/blas.c.o.d -o CMakeFiles/sgefa.dir/blas.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/blas.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o -MF CMakeFiles/sgefa.dir/blas.c.o.d -o CMakeFiles/sgefa.dir/blas.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sgefa.dir/blas.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c > CMakeFiles/sgefa.dir/blas.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c > CMakeFiles/sgefa.dir/blas.c.i
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sgefa.dir/blas.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c -o CMakeFiles/sgefa.dir/blas.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/blas.c -o CMakeFiles/sgefa.dir/blas.c.s
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/flags.make
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/driver.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o -MF CMakeFiles/sgefa.dir/driver.c.o.d -o CMakeFiles/sgefa.dir/driver.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/driver.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o -MF CMakeFiles/sgefa.dir/driver.c.o.d -o CMakeFiles/sgefa.dir/driver.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sgefa.dir/driver.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c > CMakeFiles/sgefa.dir/driver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c > CMakeFiles/sgefa.dir/driver.c.i
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sgefa.dir/driver.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c -o CMakeFiles/sgefa.dir/driver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/driver.c -o CMakeFiles/sgefa.dir/driver.c.s
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/flags.make
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/sgefa.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o -MF CMakeFiles/sgefa.dir/sgefa.c.o.d -o CMakeFiles/sgefa.dir/sgefa.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/sgefa.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o -MF CMakeFiles/sgefa.dir/sgefa.c.o.d -o CMakeFiles/sgefa.dir/sgefa.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sgefa.dir/sgefa.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c > CMakeFiles/sgefa.dir/sgefa.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c > CMakeFiles/sgefa.dir/sgefa.c.i
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sgefa.dir/sgefa.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c -o CMakeFiles/sgefa.dir/sgefa.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.c -o CMakeFiles/sgefa.dir/sgefa.c.s
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/flags.make
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/sgesl.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o -MF CMakeFiles/sgefa.dir/sgesl.c.o.d -o CMakeFiles/sgefa.dir/sgesl.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/sgefa.dir/sgesl.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o -MF CMakeFiles/sgefa.dir/sgesl.c.o.d -o CMakeFiles/sgefa.dir/sgesl.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sgefa.dir/sgesl.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c > CMakeFiles/sgefa.dir/sgesl.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c > CMakeFiles/sgefa.dir/sgesl.c.i
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sgefa.dir/sgesl.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c -o CMakeFiles/sgefa.dir/sgesl.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgesl.c -o CMakeFiles/sgefa.dir/sgesl.c.s
 
 # Object files for target sgefa
 sgefa_OBJECTS = \
@@ -141,20 +141,20 @@ MultiSource/Applications/sgefa/sgefa: MultiSource/Applications/sgefa/CMakeFiles/
 MultiSource/Applications/sgefa/sgefa: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o
 MultiSource/Applications/sgefa/sgefa: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make
 MultiSource/Applications/sgefa/sgefa: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable sgefa"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sgefa.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa/sgefa > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa/sgefa.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa/sgefa.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable sgefa"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sgefa.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa/sgefa > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa/sgefa.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa/sgefa.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa/sgefa.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build: MultiSource/Applications/sgefa/sgefa
 .PHONY : MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa && $(CMAKE_COMMAND) -P CMakeFiles/sgefa.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa && $(CMAKE_COMMAND) -P CMakeFiles/sgefa.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/clean
 
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sgefa /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/depend
 

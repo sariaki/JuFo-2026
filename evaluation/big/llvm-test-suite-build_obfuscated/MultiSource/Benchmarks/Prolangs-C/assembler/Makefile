@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/assembler//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/assembler//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ assembler: MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/
 
 # fast build rule for target.
 assembler/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build
 .PHONY : assembler/fast
 
 assem.o: assem.c.o
@@ -136,7 +135,7 @@ assem.o: assem.c.o
 
 # target to build an object file
 assem.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/assem.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/assem.c.o
 .PHONY : assem.c.o
 
 assem.i: assem.c.i
@@ -144,7 +143,7 @@ assem.i: assem.c.i
 
 # target to preprocess a source file
 assem.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/assem.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/assem.c.i
 .PHONY : assem.c.i
 
 assem.s: assem.c.s
@@ -152,7 +151,7 @@ assem.s: assem.c.s
 
 # target to generate assembly for a file
 assem.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/assem.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/assem.c.s
 .PHONY : assem.c.s
 
 buffer.o: buffer.c.o
@@ -160,7 +159,7 @@ buffer.o: buffer.c.o
 
 # target to build an object file
 buffer.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/buffer.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/buffer.c.o
 .PHONY : buffer.c.o
 
 buffer.i: buffer.c.i
@@ -168,7 +167,7 @@ buffer.i: buffer.c.i
 
 # target to preprocess a source file
 buffer.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/buffer.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/buffer.c.i
 .PHONY : buffer.c.i
 
 buffer.s: buffer.c.s
@@ -176,7 +175,7 @@ buffer.s: buffer.c.s
 
 # target to generate assembly for a file
 buffer.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/buffer.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/buffer.c.s
 .PHONY : buffer.c.s
 
 code.o: code.c.o
@@ -184,7 +183,7 @@ code.o: code.c.o
 
 # target to build an object file
 code.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/code.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/code.c.o
 .PHONY : code.c.o
 
 code.i: code.c.i
@@ -192,7 +191,7 @@ code.i: code.c.i
 
 # target to preprocess a source file
 code.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/code.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/code.c.i
 .PHONY : code.c.i
 
 code.s: code.c.s
@@ -200,7 +199,7 @@ code.s: code.c.s
 
 # target to generate assembly for a file
 code.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/code.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/code.c.s
 .PHONY : code.c.s
 
 convert.o: convert.c.o
@@ -208,7 +207,7 @@ convert.o: convert.c.o
 
 # target to build an object file
 convert.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/convert.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/convert.c.o
 .PHONY : convert.c.o
 
 convert.i: convert.c.i
@@ -216,7 +215,7 @@ convert.i: convert.c.i
 
 # target to preprocess a source file
 convert.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/convert.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/convert.c.i
 .PHONY : convert.c.i
 
 convert.s: convert.c.s
@@ -224,7 +223,7 @@ convert.s: convert.c.s
 
 # target to generate assembly for a file
 convert.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/convert.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/convert.c.s
 .PHONY : convert.c.s
 
 op_tab.o: op_tab.c.o
@@ -232,7 +231,7 @@ op_tab.o: op_tab.c.o
 
 # target to build an object file
 op_tab.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/op_tab.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/op_tab.c.o
 .PHONY : op_tab.c.o
 
 op_tab.i: op_tab.c.i
@@ -240,7 +239,7 @@ op_tab.i: op_tab.c.i
 
 # target to preprocess a source file
 op_tab.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/op_tab.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/op_tab.c.i
 .PHONY : op_tab.c.i
 
 op_tab.s: op_tab.c.s
@@ -248,7 +247,7 @@ op_tab.s: op_tab.c.s
 
 # target to generate assembly for a file
 op_tab.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/op_tab.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/op_tab.c.s
 .PHONY : op_tab.c.s
 
 pass1.o: pass1.c.o
@@ -256,7 +255,7 @@ pass1.o: pass1.c.o
 
 # target to build an object file
 pass1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass1.c.o
 .PHONY : pass1.c.o
 
 pass1.i: pass1.c.i
@@ -264,7 +263,7 @@ pass1.i: pass1.c.i
 
 # target to preprocess a source file
 pass1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass1.c.i
 .PHONY : pass1.c.i
 
 pass1.s: pass1.c.s
@@ -272,7 +271,7 @@ pass1.s: pass1.c.s
 
 # target to generate assembly for a file
 pass1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass1.c.s
 .PHONY : pass1.c.s
 
 pass2.o: pass2.c.o
@@ -280,7 +279,7 @@ pass2.o: pass2.c.o
 
 # target to build an object file
 pass2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass2.c.o
 .PHONY : pass2.c.o
 
 pass2.i: pass2.c.i
@@ -288,7 +287,7 @@ pass2.i: pass2.c.i
 
 # target to preprocess a source file
 pass2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass2.c.i
 .PHONY : pass2.c.i
 
 pass2.s: pass2.c.s
@@ -296,7 +295,7 @@ pass2.s: pass2.c.s
 
 # target to generate assembly for a file
 pass2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pass2.c.s
 .PHONY : pass2.c.s
 
 pseudo.o: pseudo.c.o
@@ -304,7 +303,7 @@ pseudo.o: pseudo.c.o
 
 # target to build an object file
 pseudo.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pseudo.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pseudo.c.o
 .PHONY : pseudo.c.o
 
 pseudo.i: pseudo.c.i
@@ -312,7 +311,7 @@ pseudo.i: pseudo.c.i
 
 # target to preprocess a source file
 pseudo.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pseudo.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pseudo.c.i
 .PHONY : pseudo.c.i
 
 pseudo.s: pseudo.c.s
@@ -320,7 +319,7 @@ pseudo.s: pseudo.c.s
 
 # target to generate assembly for a file
 pseudo.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pseudo.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/pseudo.c.s
 .PHONY : pseudo.c.s
 
 record.o: record.c.o
@@ -328,7 +327,7 @@ record.o: record.c.o
 
 # target to build an object file
 record.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/record.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/record.c.o
 .PHONY : record.c.o
 
 record.i: record.c.i
@@ -336,7 +335,7 @@ record.i: record.c.i
 
 # target to preprocess a source file
 record.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/record.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/record.c.i
 .PHONY : record.c.i
 
 record.s: record.c.s
@@ -344,7 +343,7 @@ record.s: record.c.s
 
 # target to generate assembly for a file
 record.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/record.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/record.c.s
 .PHONY : record.c.s
 
 scan_line.o: scan_line.c.o
@@ -352,7 +351,7 @@ scan_line.o: scan_line.c.o
 
 # target to build an object file
 scan_line.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/scan_line.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/scan_line.c.o
 .PHONY : scan_line.c.o
 
 scan_line.i: scan_line.c.i
@@ -360,7 +359,7 @@ scan_line.i: scan_line.c.i
 
 # target to preprocess a source file
 scan_line.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/scan_line.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/scan_line.c.i
 .PHONY : scan_line.c.i
 
 scan_line.s: scan_line.c.s
@@ -368,7 +367,7 @@ scan_line.s: scan_line.c.s
 
 # target to generate assembly for a file
 scan_line.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/scan_line.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/scan_line.c.s
 .PHONY : scan_line.c.s
 
 stringI.o: stringI.c.o
@@ -376,7 +375,7 @@ stringI.o: stringI.c.o
 
 # target to build an object file
 stringI.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/stringI.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/stringI.c.o
 .PHONY : stringI.c.o
 
 stringI.i: stringI.c.i
@@ -384,7 +383,7 @@ stringI.i: stringI.c.i
 
 # target to preprocess a source file
 stringI.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/stringI.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/stringI.c.i
 .PHONY : stringI.c.i
 
 stringI.s: stringI.c.s
@@ -392,7 +391,7 @@ stringI.s: stringI.c.s
 
 # target to generate assembly for a file
 stringI.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/stringI.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/stringI.c.s
 .PHONY : stringI.c.s
 
 sym_tab.o: sym_tab.c.o
@@ -400,7 +399,7 @@ sym_tab.o: sym_tab.c.o
 
 # target to build an object file
 sym_tab.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/sym_tab.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/sym_tab.c.o
 .PHONY : sym_tab.c.o
 
 sym_tab.i: sym_tab.c.i
@@ -408,7 +407,7 @@ sym_tab.i: sym_tab.c.i
 
 # target to preprocess a source file
 sym_tab.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/sym_tab.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/sym_tab.c.i
 .PHONY : sym_tab.c.i
 
 sym_tab.s: sym_tab.c.s
@@ -416,7 +415,7 @@ sym_tab.s: sym_tab.c.s
 
 # target to generate assembly for a file
 sym_tab.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/sym_tab.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/build.make MultiSource/Benchmarks/Prolangs-C/assembler/CMakeFiles/assembler.dir/sym_tab.c.s
 .PHONY : sym_tab.c.s
 
 # Help Target
@@ -475,7 +474,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

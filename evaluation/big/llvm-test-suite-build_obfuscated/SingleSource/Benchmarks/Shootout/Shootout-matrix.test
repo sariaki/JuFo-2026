@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-matrix 
-VERIFY: %b/fpcmp-target %o %S/matrix.reference_output

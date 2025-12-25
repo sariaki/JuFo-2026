@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-gsm/telecomm-gsm  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-gsm/telecomm-gsm  :
 section                 size     addr
 .interp                   28      792
 .note.gnu.property        32      824
@@ -14,19 +14,19 @@ section                 size     addr
 .init                     27     8192
 .plt                     720     8224
 .plt.got                   8     8944
-.text                  66384     8960
-.fini                     13    75344
-.rodata                23264    77824
-.eh_frame_hdr            500   101088
-.eh_frame               2836   101592
-.init_array                8   109984
-.fini_array                8   109992
-.dynamic                 496   110000
-.got                      72   110496
-.got.plt                 376   110568
-.data                    440   110944
-.bss                     368   111392
+.text                  59508     8960
+.fini                     13    68468
+.rodata                21552    69632
+.eh_frame_hdr            508    91184
+.eh_frame               2764    91696
+.init_array                8   101792
+.fini_array                8   101800
+.dynamic                 496   101808
+.got                      72   102304
+.got.plt                 376   102376
+.data                    440   102752
+.bss                     368   103200
 .comment                  82        0
-Total                  99824
+Total                  91172
 
 

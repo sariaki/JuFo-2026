@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/12-IOtest//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/rule
 .PHONY : MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ iotest: MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/rule
 
 # fast build rule for target.
 iotest/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build
 .PHONY : iotest/fast
 
 IOtest.o: IOtest.c.o
@@ -136,7 +135,7 @@ IOtest.o: IOtest.c.o
 
 # target to build an object file
 IOtest.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.o
 .PHONY : IOtest.c.o
 
 IOtest.i: IOtest.c.i
@@ -144,7 +143,7 @@ IOtest.i: IOtest.c.i
 
 # target to preprocess a source file
 IOtest.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.i
 .PHONY : IOtest.c.i
 
 IOtest.s: IOtest.c.s
@@ -152,7 +151,7 @@ IOtest.s: IOtest.c.s
 
 # target to generate assembly for a file
 IOtest.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtest.c.s
 .PHONY : IOtest.c.s
 
 IOtestA.o: IOtestA.c.o
@@ -160,7 +159,7 @@ IOtestA.o: IOtestA.c.o
 
 # target to build an object file
 IOtestA.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.o
 .PHONY : IOtestA.c.o
 
 IOtestA.i: IOtestA.c.i
@@ -168,7 +167,7 @@ IOtestA.i: IOtestA.c.i
 
 # target to preprocess a source file
 IOtestA.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.i
 .PHONY : IOtestA.c.i
 
 IOtestA.s: IOtestA.c.s
@@ -176,7 +175,7 @@ IOtestA.s: IOtestA.c.s
 
 # target to generate assembly for a file
 IOtestA.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestA.c.s
 .PHONY : IOtestA.c.s
 
 IOtestB.o: IOtestB.c.o
@@ -184,7 +183,7 @@ IOtestB.o: IOtestB.c.o
 
 # target to build an object file
 IOtestB.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.o
 .PHONY : IOtestB.c.o
 
 IOtestB.i: IOtestB.c.i
@@ -192,7 +191,7 @@ IOtestB.i: IOtestB.c.i
 
 # target to preprocess a source file
 IOtestB.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.i
 .PHONY : IOtestB.c.i
 
 IOtestB.s: IOtestB.c.s
@@ -200,7 +199,7 @@ IOtestB.s: IOtestB.c.s
 
 # target to generate assembly for a file
 IOtestB.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestB.c.s
 .PHONY : IOtestB.c.s
 
 IOtestC.o: IOtestC.c.o
@@ -208,7 +207,7 @@ IOtestC.o: IOtestC.c.o
 
 # target to build an object file
 IOtestC.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.o
 .PHONY : IOtestC.c.o
 
 IOtestC.i: IOtestC.c.i
@@ -216,7 +215,7 @@ IOtestC.i: IOtestC.c.i
 
 # target to preprocess a source file
 IOtestC.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.i
 .PHONY : IOtestC.c.i
 
 IOtestC.s: IOtestC.c.s
@@ -224,7 +223,7 @@ IOtestC.s: IOtestC.c.s
 
 # target to generate assembly for a file
 IOtestC.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/build.make MultiSource/Benchmarks/McCat/12-IOtest/CMakeFiles/iotest.dir/IOtestC.c.s
 .PHONY : IOtestC.c.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

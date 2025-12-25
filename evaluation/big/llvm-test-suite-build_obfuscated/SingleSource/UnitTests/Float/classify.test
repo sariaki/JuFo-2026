@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/classify 
-VERIFY: %b/fpcmp-target %o %S/classify.reference_output

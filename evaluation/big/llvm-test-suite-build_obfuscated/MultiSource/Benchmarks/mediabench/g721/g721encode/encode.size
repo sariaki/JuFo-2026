@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/g721/g721encode/encode  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/mediabench/g721/g721encode/encode  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                      96    4128
 .plt.got                   8    4224
-.text                  18311    4240
-.fini                     13   22552
-.rodata                 3680   24576
-.eh_frame_hdr            228   28256
-.eh_frame               1404   28488
-.init_array                8   36280
-.fini_array                8   36288
-.dynamic                 480   36296
-.got                      64   36776
-.got.plt                  64   36840
-.data                    334   36912
-.bss                      16   37248
+.text                  13832    4240
+.fini                     13   18072
+.rodata                 2736   20480
+.eh_frame_hdr            228   23216
+.eh_frame               1424   23448
+.init_array                8   32184
+.fini_array                8   32192
+.dynamic                 480   32200
+.got                      64   32680
+.got.plt                  64   32744
+.data                    334   32816
+.bss                      16   33152
 .comment                  82       0
-Total                  25970
+Total                  20567
 
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/JM/lencod/lencod  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/JM/lencod/lencod  :
 section                  size      addr
 .interp                    28       792
 .note.gnu.property         32       824
@@ -14,20 +14,20 @@ section                  size      addr
 .init                      27     16384
 .plt                      800     16416
 .plt.got                    8     17216
-.text                  965597     17232
-.fini                      13    982832
-.rodata                144224    983040
-.eh_frame_hdr            5116   1127264
-.eh_frame               36272   1132384
-.init_array                 8   1174656
-.fini_array                 8   1174664
-.data.rel.ro              280   1174672
-.dynamic                  496   1174952
-.got                       80   1175448
-.got.plt                  416   1175528
-.data                   13840   1175952
-.bss                   108544   1189792
+.text                  872493     17232
+.fini                      13    889728
+.rodata                126256    892928
+.eh_frame_hdr            5116   1019184
+.eh_frame               35808   1024304
+.init_array                 8   1064064
+.fini_array                 8   1064072
+.data.rel.ro              280   1064080
+.dynamic                  496   1064360
+.got                       80   1064856
+.got.plt                  416   1064936
+.data                   13840   1065360
+.bss                   108544   1079200
 .comment                   82         0
-Total                 1291316
+Total                 1179780
 
 

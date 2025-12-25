@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/ecbdes/ecbdes  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/ecbdes/ecbdes  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     112    4128
 .plt.got                   8    4240
-.text                  14140    4256
-.fini                     13   18396
-.rodata                10608   20480
-.eh_frame_hdr            132   31088
-.eh_frame                700   31224
-.init_array                8   36304
-.fini_array                8   36312
-.dynamic                 480   36320
-.got                      40   36800
-.got.plt                  72   36840
-.data                    976   36912
-.bss                      72   37888
+.text                  10630    4256
+.fini                     13   14888
+.rodata                 9920   16384
+.eh_frame_hdr            132   26304
+.eh_frame                668   26440
+.init_array                8   32208
+.fini_array                8   32216
+.dynamic                 480   32224
+.got                      40   32704
+.got.plt                  72   32744
+.data                    976   32816
+.bss                      72   33792
 .comment                  82       0
-Total                  28552
+Total                  24322
 
 

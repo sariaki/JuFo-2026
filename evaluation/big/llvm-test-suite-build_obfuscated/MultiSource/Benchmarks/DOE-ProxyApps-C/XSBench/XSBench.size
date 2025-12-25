@@ -1,32 +1,32 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/XSBench  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/XSBench  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
 .note.gnu.build-id        36     856
 .note.ABI-tag             32     892
 .gnu.hash                 36     928
-.dynsym                  720     968
-.dynstr                  299    1688
-.gnu.version              60    1988
-.gnu.version_r            96    2048
-.rela.dyn                240    2144
-.rela.plt                528    2384
+.dynsym                  696     968
+.dynstr                  292    1664
+.gnu.version              58    1956
+.gnu.version_r            96    2016
+.rela.dyn                216    2112
+.rela.plt                528    2328
 .init                     27    4096
 .plt                     368    4128
 .plt.got                   8    4496
-.text                  32476    4512
-.fini                     13   36988
-.rodata                10516   40960
-.eh_frame_hdr            292   51476
-.eh_frame               1808   51768
-.init_array                8   60848
-.fini_array                8   60856
-.dynamic                 496   60864
-.got                      56   61360
-.got.plt                 200   61416
-.data                     24   61616
-.bss                       8   61640
+.text                  21863    4512
+.fini                     13   26376
+.rodata                 7220   28672
+.eh_frame_hdr            292   35892
+.eh_frame               1832   36184
+.init_array                8   44472
+.fini_array                8   44480
+.dynamic                 496   44488
+.got                      48   44984
+.got.plt                 200   45032
+.data                     24   45232
+.bss                       8   45256
 .comment                  82       0
-Total                  48497
+Total                  34547
 
 

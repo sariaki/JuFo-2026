@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Trimaran/netbench-crc//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/rule
 .PHONY : MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ netbench-crc: MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-c
 
 # fast build rule for target.
 netbench-crc/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build
 .PHONY : netbench-crc/fast
 
 crc32.o: crc32.c.o
@@ -136,7 +135,7 @@ crc32.o: crc32.c.o
 
 # target to build an object file
 crc32.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.o
 .PHONY : crc32.c.o
 
 crc32.i: crc32.c.i
@@ -144,7 +143,7 @@ crc32.i: crc32.c.i
 
 # target to preprocess a source file
 crc32.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.i
 .PHONY : crc32.c.i
 
 crc32.s: crc32.c.s
@@ -152,7 +151,7 @@ crc32.s: crc32.c.s
 
 # target to generate assembly for a file
 crc32.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/crc32.c.s
 .PHONY : crc32.c.s
 
 packet.o: packet.c.o
@@ -160,7 +159,7 @@ packet.o: packet.c.o
 
 # target to build an object file
 packet.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.o
 .PHONY : packet.c.o
 
 packet.i: packet.c.i
@@ -168,7 +167,7 @@ packet.i: packet.c.i
 
 # target to preprocess a source file
 packet.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.i
 .PHONY : packet.c.i
 
 packet.s: packet.c.s
@@ -176,7 +175,7 @@ packet.s: packet.c.s
 
 # target to generate assembly for a file
 packet.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/build.make MultiSource/Benchmarks/Trimaran/netbench-crc/CMakeFiles/netbench-crc.dir/packet.c.s
 .PHONY : packet.c.s
 
 # Help Target
@@ -205,7 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

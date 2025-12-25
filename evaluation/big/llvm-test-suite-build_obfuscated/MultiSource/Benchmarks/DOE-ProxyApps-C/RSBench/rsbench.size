@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/RSBench/rsbench  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/RSBench/rsbench  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     352    4128
 .plt.got                   8    4480
-.text                  32214    4496
-.fini                     13   36712
-.rodata                 8624   36864
-.eh_frame_hdr            268   45488
-.eh_frame               1576   45760
-.init_array                8   52664
-.fini_array                8   52672
-.dynamic                 496   52680
-.got                      48   53176
-.got.plt                 192   53224
-.data                     16   53416
-.bss                    1408   53440
+.text                  27414    4496
+.fini                     13   31912
+.rodata                 7552   32768
+.eh_frame_hdr            268   40320
+.eh_frame               1576   40592
+.init_array                8   48568
+.fini_array                8   48576
+.dynamic                 496   48584
+.got                      48   49080
+.got.plt                 192   49128
+.data                     16   49320
+.bss                    1408   49344
 .comment                  82       0
-Total                  47324
+Total                  41452
 
 

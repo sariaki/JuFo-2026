@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/flags.make
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o: MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/flags.make
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o: MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bmm.dir/bmm.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o -MF CMakeFiles/bmm.dir/bmm.c.o.d -o CMakeFiles/bmm.dir/bmm.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bmm.dir/bmm.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o -MF CMakeFiles/bmm.dir/bmm.c.o.d -o CMakeFiles/bmm.dir/bmm.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c
 
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bmm.dir/bmm.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c > CMakeFiles/bmm.dir/bmm.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c > CMakeFiles/bmm.dir/bmm.c.i
 
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bmm.dir/bmm.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c -o CMakeFiles/bmm.dir/bmm.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.c -o CMakeFiles/bmm.dir/bmm.c.s
 
 # Object files for target bmm
 bmm_OBJECTS = \
@@ -93,20 +93,20 @@ bmm_EXTERNAL_OBJECTS =
 MultiSource/Benchmarks/VersaBench/bmm/bmm: MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/bmm.c.o
 MultiSource/Benchmarks/VersaBench/bmm/bmm: MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/build.make
 MultiSource/Benchmarks/VersaBench/bmm/bmm: MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable bmm"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bmm.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable bmm"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bmm.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm/bmm.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/build: MultiSource/Benchmarks/VersaBench/bmm/bmm
 .PHONY : MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/build
 
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && $(CMAKE_COMMAND) -P CMakeFiles/bmm.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm && $(CMAKE_COMMAND) -P CMakeFiles/bmm.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/clean
 
 MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/bmm /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/VersaBench/bmm/CMakeFiles/bmm.dir/depend
 

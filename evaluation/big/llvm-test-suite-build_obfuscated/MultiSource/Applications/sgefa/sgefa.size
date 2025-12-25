@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa/sgefa  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa/sgefa  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     160    4128
 .plt.got                   8    4288
-.text                  31917    4304
-.fini                     13   36224
-.rodata                 4152   36864
-.eh_frame_hdr            196   41016
-.eh_frame               1368   41216
-.init_array                8   48568
-.fini_array                8   48576
-.dynamic                 496   48584
-.got                      48   49080
-.got.plt                  96   49128
-.data                     16   49224
-.bss                       8   49240
+.text                  25446    4304
+.fini                     13   29752
+.rodata                 3048   32768
+.eh_frame_hdr            196   35816
+.eh_frame               1336   36016
+.init_array                8   44472
+.fini_array                8   44480
+.dynamic                 496   44488
+.got                      48   44984
+.got.plt                  96   45032
+.data                     16   45128
+.bss                       8   45144
 .comment                  82       0
-Total                  39922
+Total                  32315
 
 

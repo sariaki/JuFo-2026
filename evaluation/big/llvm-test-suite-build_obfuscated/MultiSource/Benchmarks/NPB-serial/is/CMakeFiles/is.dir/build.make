@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/flags.make
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o: MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/flags.make
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o: MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/is.dir/is.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o -MF CMakeFiles/is.dir/is.c.o.d -o CMakeFiles/is.dir/is.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/is.dir/is.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o -MF CMakeFiles/is.dir/is.c.o.d -o CMakeFiles/is.dir/is.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c
 
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/is.dir/is.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c > CMakeFiles/is.dir/is.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c > CMakeFiles/is.dir/is.c.i
 
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/is.dir/is.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c -o CMakeFiles/is.dir/is.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.c -o CMakeFiles/is.dir/is.c.s
 
 # Object files for target is
 is_OBJECTS = \
@@ -93,20 +93,20 @@ is_EXTERNAL_OBJECTS =
 MultiSource/Benchmarks/NPB-serial/is/is: MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/is.c.o
 MultiSource/Benchmarks/NPB-serial/is/is: MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/build.make
 MultiSource/Benchmarks/NPB-serial/is/is: MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable is"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/is.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is.reference_output
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable is"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/is.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is/is.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/is.reference_output
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/build: MultiSource/Benchmarks/NPB-serial/is/is
 .PHONY : MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/build
 
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && $(CMAKE_COMMAND) -P CMakeFiles/is.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is && $(CMAKE_COMMAND) -P CMakeFiles/is.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/clean
 
 MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/NPB-serial/is /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/NPB-serial/is/CMakeFiles/is.dir/depend
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Rodinia/hotspot//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Rodinia/hotspot//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/rule
 .PHONY : MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ hotspot: MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/rule
 
 # fast build rule for target.
 hotspot/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build
 .PHONY : hotspot/fast
 
 __/Common/glibc_compat_rand.o: __/Common/glibc_compat_rand.c.o
@@ -136,7 +135,7 @@ __/Common/glibc_compat_rand.o: __/Common/glibc_compat_rand.c.o
 
 # target to build an object file
 __/Common/glibc_compat_rand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/__/Common/glibc_compat_rand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/__/Common/glibc_compat_rand.c.o
 .PHONY : __/Common/glibc_compat_rand.c.o
 
 __/Common/glibc_compat_rand.i: __/Common/glibc_compat_rand.c.i
@@ -144,7 +143,7 @@ __/Common/glibc_compat_rand.i: __/Common/glibc_compat_rand.c.i
 
 # target to preprocess a source file
 __/Common/glibc_compat_rand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/__/Common/glibc_compat_rand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/__/Common/glibc_compat_rand.c.i
 .PHONY : __/Common/glibc_compat_rand.c.i
 
 __/Common/glibc_compat_rand.s: __/Common/glibc_compat_rand.c.s
@@ -152,7 +151,7 @@ __/Common/glibc_compat_rand.s: __/Common/glibc_compat_rand.c.s
 
 # target to generate assembly for a file
 __/Common/glibc_compat_rand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/__/Common/glibc_compat_rand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/__/Common/glibc_compat_rand.c.s
 .PHONY : __/Common/glibc_compat_rand.c.s
 
 hotspotKernel.o: hotspotKernel.c.o
@@ -160,7 +159,7 @@ hotspotKernel.o: hotspotKernel.c.o
 
 # target to build an object file
 hotspotKernel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/hotspotKernel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/hotspotKernel.c.o
 .PHONY : hotspotKernel.c.o
 
 hotspotKernel.i: hotspotKernel.c.i
@@ -168,7 +167,7 @@ hotspotKernel.i: hotspotKernel.c.i
 
 # target to preprocess a source file
 hotspotKernel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/hotspotKernel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/hotspotKernel.c.i
 .PHONY : hotspotKernel.c.i
 
 hotspotKernel.s: hotspotKernel.c.s
@@ -176,7 +175,7 @@ hotspotKernel.s: hotspotKernel.c.s
 
 # target to generate assembly for a file
 hotspotKernel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/hotspotKernel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/hotspotKernel.c.s
 .PHONY : hotspotKernel.c.s
 
 main.o: main.c.o
@@ -184,7 +183,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -192,7 +191,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -200,7 +199,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/build.make MultiSource/Benchmarks/Rodinia/hotspot/CMakeFiles/hotspot.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

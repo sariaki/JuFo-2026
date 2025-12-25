@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/office-stringsearch/office-stringsearch  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/office-stringsearch/office-stringsearch  :
 section                 size     addr
 .interp                   28      792
 .note.gnu.property        32      824
@@ -14,20 +14,20 @@ section                 size     addr
 .init                     27    69632
 .plt                     176    69664
 .plt.got                   8    69840
-.text                   9458    69856
-.fini                     13    79316
-.rodata                 5417    81920
-.eh_frame_hdr            124    87340
-.eh_frame                744    87464
-.init_array                8    92768
-.fini_array                8    92776
-.data.rel.ro           21328    92784
-.dynamic                 496   114112
-.got                      48   114608
-.got.plt                 104   114664
-.data                    272   114768
-.bss                    5256   115040
+.text                   6914    69856
+.fini                     13    76772
+.rodata                 4993    77824
+.eh_frame_hdr            124    82820
+.eh_frame                680    82944
+.init_array                8    88672
+.fini_array                8    88680
+.data.rel.ro           21328    88688
+.dynamic                 496   110016
+.got                      48   110512
+.got.plt                 104   110568
+.data                    272   110672
+.bss                    5256   110944
 .comment                  82        0
-Total                 108887
+Total                 105855
 
 

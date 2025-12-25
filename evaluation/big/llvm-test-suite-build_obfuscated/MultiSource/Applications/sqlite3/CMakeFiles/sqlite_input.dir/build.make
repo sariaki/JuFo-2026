@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Utility rule file for sqlite_input.
 
@@ -67,8 +67,8 @@ include MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/compiler_de
 include MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/progress.make
 
 MultiSource/Applications/sqlite3/test15.sql:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating sqlite test inputs"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && /bin/tclsh /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/speedtest.tcl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating sqlite test inputs"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && /bin/tclsh /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3/speedtest.tcl
 
 sqlite_input: MultiSource/Applications/sqlite3/test15.sql
 sqlite_input: MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/build.make
@@ -79,10 +79,10 @@ MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/build: sqlite_input
 .PHONY : MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/build
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 && $(CMAKE_COMMAND) -P CMakeFiles/sqlite_input.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 && $(CMAKE_COMMAND) -P CMakeFiles/sqlite_input.dir/cmake_clean.cmake
 .PHONY : MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/clean
 
 MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Applications/sqlite3/CMakeFiles/sqlite_input.dir/depend
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/fsm/fsm  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/fsm/fsm  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     96    4128
 .plt.got                  8    4224
-.text                  3900    4240
-.fini                    13    8140
-.rodata                 867    8192
-.eh_frame_hdr           124    9060
-.eh_frame               524    9184
+.text                  2337    4240
+.fini                    13    6580
+.rodata                 475    8192
+.eh_frame_hdr           124    8668
+.eh_frame               492    8792
 .init_array               8   15672
 .fini_array               8   15680
 .data.rel.ro            104   15688
@@ -28,6 +28,6 @@ section                size    addr
 .data                    52   16432
 .bss                      4   16484
 .comment                 82       0
-Total                  7969
+Total                  5982
 
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/depend.make
@@ -72,30 +72,30 @@ include MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/flags.make
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/flags.make
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bintr.dir/bintree.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o -MF CMakeFiles/bintr.dir/bintree.c.o.d -o CMakeFiles/bintr.dir/bintree.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bintr.dir/bintree.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.o -MF CMakeFiles/bintr.dir/bintree.c.o.d -o CMakeFiles/bintr.dir/bintree.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bintr.dir/bintree.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c > CMakeFiles/bintr.dir/bintree.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c > CMakeFiles/bintr.dir/bintree.c.i
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bintree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bintr.dir/bintree.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c -o CMakeFiles/bintr.dir/bintree.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintree.c -o CMakeFiles/bintr.dir/bintree.c.s
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/flags.make
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/bintr.dir/bnchmrk.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o -MF CMakeFiles/bintr.dir/bnchmrk.c.o.d -o CMakeFiles/bintr.dir/bnchmrk.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/bintr.dir/bnchmrk.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o -MF CMakeFiles/bintr.dir/bnchmrk.c.o.d -o CMakeFiles/bintr.dir/bnchmrk.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bintr.dir/bnchmrk.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c > CMakeFiles/bintr.dir/bnchmrk.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c > CMakeFiles/bintr.dir/bnchmrk.c.i
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bintr.dir/bnchmrk.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c -o CMakeFiles/bintr.dir/bnchmrk.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.c -o CMakeFiles/bintr.dir/bnchmrk.c.s
 
 # Object files for target bintr
 bintr_OBJECTS = \
@@ -109,21 +109,21 @@ MultiSource/Benchmarks/McCat/17-bintr/bintr: MultiSource/Benchmarks/McCat/17-bin
 MultiSource/Benchmarks/McCat/17-bintr/bintr: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/bnchmrk.c.o
 MultiSource/Benchmarks/McCat/17-bintr/bintr: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build.make
 MultiSource/Benchmarks/McCat/17-bintr/bintr: MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bintr"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bintr.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bintr > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bintr.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintr.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bintr.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.in1 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.in1
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bintr"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bintr.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bintr > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bintr.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bintr.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bintr.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.in1 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/bnchmrk.in1
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build: MultiSource/Benchmarks/McCat/17-bintr/bintr
 .PHONY : MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/build
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && $(CMAKE_COMMAND) -P CMakeFiles/bintr.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr && $(CMAKE_COMMAND) -P CMakeFiles/bintr.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/clean
 
 MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/17-bintr /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/McCat/17-bintr/CMakeFiles/bintr.dir/depend
 

@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/adi 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/adi.reference_output

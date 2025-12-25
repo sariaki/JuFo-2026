@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/archie-client//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/archie-client//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ archie: MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ru
 
 # fast build rule for target.
 archie/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build
 .PHONY : archie/fast
 
 aquery.o: aquery.c.o
@@ -136,7 +135,7 @@ aquery.o: aquery.c.o
 
 # target to build an object file
 aquery.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/aquery.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/aquery.c.o
 .PHONY : aquery.c.o
 
 aquery.i: aquery.c.i
@@ -144,7 +143,7 @@ aquery.i: aquery.c.i
 
 # target to preprocess a source file
 aquery.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/aquery.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/aquery.c.i
 .PHONY : aquery.c.i
 
 aquery.s: aquery.c.s
@@ -152,7 +151,7 @@ aquery.s: aquery.c.s
 
 # target to generate assembly for a file
 aquery.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/aquery.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/aquery.c.s
 .PHONY : aquery.c.s
 
 archie.o: archie.c.o
@@ -160,7 +159,7 @@ archie.o: archie.c.o
 
 # target to build an object file
 archie.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/archie.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/archie.c.o
 .PHONY : archie.c.o
 
 archie.i: archie.c.i
@@ -168,7 +167,7 @@ archie.i: archie.c.i
 
 # target to preprocess a source file
 archie.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/archie.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/archie.c.i
 .PHONY : archie.c.i
 
 archie.s: archie.c.s
@@ -176,7 +175,7 @@ archie.s: archie.c.s
 
 # target to generate assembly for a file
 archie.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/archie.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/archie.c.s
 .PHONY : archie.c.s
 
 atalloc.o: atalloc.c.o
@@ -184,7 +183,7 @@ atalloc.o: atalloc.c.o
 
 # target to build an object file
 atalloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/atalloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/atalloc.c.o
 .PHONY : atalloc.c.o
 
 atalloc.i: atalloc.c.i
@@ -192,7 +191,7 @@ atalloc.i: atalloc.c.i
 
 # target to preprocess a source file
 atalloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/atalloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/atalloc.c.i
 .PHONY : atalloc.c.i
 
 atalloc.s: atalloc.c.s
@@ -200,7 +199,7 @@ atalloc.s: atalloc.c.s
 
 # target to generate assembly for a file
 atalloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/atalloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/atalloc.c.s
 .PHONY : atalloc.c.s
 
 dirsend.o: dirsend.c.o
@@ -208,7 +207,7 @@ dirsend.o: dirsend.c.o
 
 # target to build an object file
 dirsend.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/dirsend.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/dirsend.c.o
 .PHONY : dirsend.c.o
 
 dirsend.i: dirsend.c.i
@@ -216,7 +215,7 @@ dirsend.i: dirsend.c.i
 
 # target to preprocess a source file
 dirsend.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/dirsend.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/dirsend.c.i
 .PHONY : dirsend.c.i
 
 dirsend.s: dirsend.c.s
@@ -224,7 +223,7 @@ dirsend.s: dirsend.c.s
 
 # target to generate assembly for a file
 dirsend.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/dirsend.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/dirsend.c.s
 .PHONY : dirsend.c.s
 
 get_pauth.o: get_pauth.c.o
@@ -232,7 +231,7 @@ get_pauth.o: get_pauth.c.o
 
 # target to build an object file
 get_pauth.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_pauth.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_pauth.c.o
 .PHONY : get_pauth.c.o
 
 get_pauth.i: get_pauth.c.i
@@ -240,7 +239,7 @@ get_pauth.i: get_pauth.c.i
 
 # target to preprocess a source file
 get_pauth.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_pauth.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_pauth.c.i
 .PHONY : get_pauth.c.i
 
 get_pauth.s: get_pauth.c.s
@@ -248,7 +247,7 @@ get_pauth.s: get_pauth.c.s
 
 # target to generate assembly for a file
 get_pauth.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_pauth.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_pauth.c.s
 .PHONY : get_pauth.c.s
 
 get_vdir.o: get_vdir.c.o
@@ -256,7 +255,7 @@ get_vdir.o: get_vdir.c.o
 
 # target to build an object file
 get_vdir.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_vdir.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_vdir.c.o
 .PHONY : get_vdir.c.o
 
 get_vdir.i: get_vdir.c.i
@@ -264,7 +263,7 @@ get_vdir.i: get_vdir.c.i
 
 # target to preprocess a source file
 get_vdir.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_vdir.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_vdir.c.i
 .PHONY : get_vdir.c.i
 
 get_vdir.s: get_vdir.c.s
@@ -272,7 +271,7 @@ get_vdir.s: get_vdir.c.s
 
 # target to generate assembly for a file
 get_vdir.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_vdir.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/get_vdir.c.s
 .PHONY : get_vdir.c.s
 
 perrmesg.o: perrmesg.c.o
@@ -280,7 +279,7 @@ perrmesg.o: perrmesg.c.o
 
 # target to build an object file
 perrmesg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/perrmesg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/perrmesg.c.o
 .PHONY : perrmesg.c.o
 
 perrmesg.i: perrmesg.c.i
@@ -288,7 +287,7 @@ perrmesg.i: perrmesg.c.i
 
 # target to preprocess a source file
 perrmesg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/perrmesg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/perrmesg.c.i
 .PHONY : perrmesg.c.i
 
 perrmesg.s: perrmesg.c.s
@@ -296,7 +295,7 @@ perrmesg.s: perrmesg.c.s
 
 # target to generate assembly for a file
 perrmesg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/perrmesg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/perrmesg.c.s
 .PHONY : perrmesg.c.s
 
 procquery.o: procquery.c.o
@@ -304,7 +303,7 @@ procquery.o: procquery.c.o
 
 # target to build an object file
 procquery.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/procquery.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/procquery.c.o
 .PHONY : procquery.c.o
 
 procquery.i: procquery.c.i
@@ -312,7 +311,7 @@ procquery.i: procquery.c.i
 
 # target to preprocess a source file
 procquery.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/procquery.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/procquery.c.i
 .PHONY : procquery.c.i
 
 procquery.s: procquery.c.s
@@ -320,7 +319,7 @@ procquery.s: procquery.c.s
 
 # target to generate assembly for a file
 procquery.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/procquery.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/procquery.c.s
 .PHONY : procquery.c.s
 
 ptalloc.o: ptalloc.c.o
@@ -328,7 +327,7 @@ ptalloc.o: ptalloc.c.o
 
 # target to build an object file
 ptalloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ptalloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ptalloc.c.o
 .PHONY : ptalloc.c.o
 
 ptalloc.i: ptalloc.c.i
@@ -336,7 +335,7 @@ ptalloc.i: ptalloc.c.i
 
 # target to preprocess a source file
 ptalloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ptalloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ptalloc.c.i
 .PHONY : ptalloc.c.i
 
 ptalloc.s: ptalloc.c.s
@@ -344,7 +343,7 @@ ptalloc.s: ptalloc.c.s
 
 # target to generate assembly for a file
 ptalloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ptalloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/ptalloc.c.s
 .PHONY : ptalloc.c.s
 
 regex.o: regex.c.o
@@ -352,7 +351,7 @@ regex.o: regex.c.o
 
 # target to build an object file
 regex.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/regex.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/regex.c.o
 .PHONY : regex.c.o
 
 regex.i: regex.c.i
@@ -360,7 +359,7 @@ regex.i: regex.c.i
 
 # target to preprocess a source file
 regex.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/regex.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/regex.c.i
 .PHONY : regex.c.i
 
 regex.s: regex.c.s
@@ -368,7 +367,7 @@ regex.s: regex.c.s
 
 # target to generate assembly for a file
 regex.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/regex.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/regex.c.s
 .PHONY : regex.c.s
 
 stcopy.o: stcopy.c.o
@@ -376,7 +375,7 @@ stcopy.o: stcopy.c.o
 
 # target to build an object file
 stcopy.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/stcopy.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/stcopy.c.o
 .PHONY : stcopy.c.o
 
 stcopy.i: stcopy.c.i
@@ -384,7 +383,7 @@ stcopy.i: stcopy.c.i
 
 # target to preprocess a source file
 stcopy.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/stcopy.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/stcopy.c.i
 .PHONY : stcopy.c.i
 
 stcopy.s: stcopy.c.s
@@ -392,7 +391,7 @@ stcopy.s: stcopy.c.s
 
 # target to generate assembly for a file
 stcopy.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/stcopy.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/stcopy.c.s
 .PHONY : stcopy.c.s
 
 support.o: support.c.o
@@ -400,7 +399,7 @@ support.o: support.c.o
 
 # target to build an object file
 support.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/support.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/support.c.o
 .PHONY : support.c.o
 
 support.i: support.c.i
@@ -408,7 +407,7 @@ support.i: support.c.i
 
 # target to preprocess a source file
 support.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/support.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/support.c.i
 .PHONY : support.c.i
 
 support.s: support.c.s
@@ -416,7 +415,7 @@ support.s: support.c.s
 
 # target to generate assembly for a file
 support.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/support.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/support.c.s
 .PHONY : support.c.s
 
 vl_comp.o: vl_comp.c.o
@@ -424,7 +423,7 @@ vl_comp.o: vl_comp.c.o
 
 # target to build an object file
 vl_comp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vl_comp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vl_comp.c.o
 .PHONY : vl_comp.c.o
 
 vl_comp.i: vl_comp.c.i
@@ -432,7 +431,7 @@ vl_comp.i: vl_comp.c.i
 
 # target to preprocess a source file
 vl_comp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vl_comp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vl_comp.c.i
 .PHONY : vl_comp.c.i
 
 vl_comp.s: vl_comp.c.s
@@ -440,7 +439,7 @@ vl_comp.s: vl_comp.c.s
 
 # target to generate assembly for a file
 vl_comp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vl_comp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vl_comp.c.s
 .PHONY : vl_comp.c.s
 
 vlalloc.o: vlalloc.c.o
@@ -448,7 +447,7 @@ vlalloc.o: vlalloc.c.o
 
 # target to build an object file
 vlalloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vlalloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vlalloc.c.o
 .PHONY : vlalloc.c.o
 
 vlalloc.i: vlalloc.c.i
@@ -456,7 +455,7 @@ vlalloc.i: vlalloc.c.i
 
 # target to preprocess a source file
 vlalloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vlalloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vlalloc.c.i
 .PHONY : vlalloc.c.i
 
 vlalloc.s: vlalloc.c.s
@@ -464,7 +463,7 @@ vlalloc.s: vlalloc.c.s
 
 # target to generate assembly for a file
 vlalloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vlalloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/build.make MultiSource/Benchmarks/Prolangs-C/archie-client/CMakeFiles/archie.dir/vlalloc.c.s
 .PHONY : vlalloc.c.s
 
 # Help Target
@@ -529,7 +528,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

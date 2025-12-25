@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/network-patricia/network-patricia  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/network-patricia/network-patricia  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    192    4128
 .plt.got                  8    4320
-.text                  5129    4336
-.fini                    13    9468
-.rodata                1044   12288
-.eh_frame_hdr            76   13332
-.eh_frame               340   13408
-.init_array               8   19896
-.fini_array               8   19904
-.dynamic                496   19912
-.got                     48   20408
-.got.plt                112   20456
-.data                    16   20568
-.bss                      8   20584
+.text                  3613    4336
+.fini                    13    7952
+.rodata                 692    8192
+.eh_frame_hdr            76    8884
+.eh_frame               356    8960
+.init_array               8   15800
+.fini_array               8   15808
+.dynamic                496   15816
+.got                     48   16312
+.got.plt                112   16360
+.data                    16   16472
+.bss                      8   16488
 .comment                 82       0
-Total                  9024
+Total                  7172
 
 

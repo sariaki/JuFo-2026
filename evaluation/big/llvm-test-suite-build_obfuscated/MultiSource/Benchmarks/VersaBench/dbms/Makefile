@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/dbms//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/dbms//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/rule
 .PHONY : MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ dbms: MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/rule
 
 # fast build rule for target.
 dbms/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build
 .PHONY : dbms/fast
 
 calcMetricsData.o: calcMetricsData.c.o
@@ -136,7 +135,7 @@ calcMetricsData.o: calcMetricsData.c.o
 
 # target to build an object file
 calcMetricsData.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/calcMetricsData.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/calcMetricsData.c.o
 .PHONY : calcMetricsData.c.o
 
 calcMetricsData.i: calcMetricsData.c.i
@@ -144,7 +143,7 @@ calcMetricsData.i: calcMetricsData.c.i
 
 # target to preprocess a source file
 calcMetricsData.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/calcMetricsData.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/calcMetricsData.c.i
 .PHONY : calcMetricsData.c.i
 
 calcMetricsData.s: calcMetricsData.c.s
@@ -152,7 +151,7 @@ calcMetricsData.s: calcMetricsData.c.s
 
 # target to generate assembly for a file
 calcMetricsData.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/calcMetricsData.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/calcMetricsData.c.s
 .PHONY : calcMetricsData.c.s
 
 chooseEntry.o: chooseEntry.c.o
@@ -160,7 +159,7 @@ chooseEntry.o: chooseEntry.c.o
 
 # target to build an object file
 chooseEntry.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/chooseEntry.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/chooseEntry.c.o
 .PHONY : chooseEntry.c.o
 
 chooseEntry.i: chooseEntry.c.i
@@ -168,7 +167,7 @@ chooseEntry.i: chooseEntry.c.i
 
 # target to preprocess a source file
 chooseEntry.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/chooseEntry.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/chooseEntry.c.i
 .PHONY : chooseEntry.c.i
 
 chooseEntry.s: chooseEntry.c.s
@@ -176,7 +175,7 @@ chooseEntry.s: chooseEntry.c.s
 
 # target to generate assembly for a file
 chooseEntry.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/chooseEntry.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/chooseEntry.c.s
 .PHONY : chooseEntry.c.s
 
 clearLine.o: clearLine.c.o
@@ -184,7 +183,7 @@ clearLine.o: clearLine.c.o
 
 # target to build an object file
 clearLine.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/clearLine.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/clearLine.c.o
 .PHONY : clearLine.c.o
 
 clearLine.i: clearLine.c.i
@@ -192,7 +191,7 @@ clearLine.i: clearLine.c.i
 
 # target to preprocess a source file
 clearLine.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/clearLine.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/clearLine.c.i
 .PHONY : clearLine.c.i
 
 clearLine.s: clearLine.c.s
@@ -200,7 +199,7 @@ clearLine.s: clearLine.c.s
 
 # target to generate assembly for a file
 clearLine.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/clearLine.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/clearLine.c.s
 .PHONY : clearLine.c.s
 
 closeFiles.o: closeFiles.c.o
@@ -208,7 +207,7 @@ closeFiles.o: closeFiles.c.o
 
 # target to build an object file
 closeFiles.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/closeFiles.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/closeFiles.c.o
 .PHONY : closeFiles.c.o
 
 closeFiles.i: closeFiles.c.i
@@ -216,7 +215,7 @@ closeFiles.i: closeFiles.c.i
 
 # target to preprocess a source file
 closeFiles.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/closeFiles.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/closeFiles.c.i
 .PHONY : closeFiles.c.i
 
 closeFiles.s: closeFiles.c.s
@@ -224,7 +223,7 @@ closeFiles.s: closeFiles.c.s
 
 # target to generate assembly for a file
 closeFiles.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/closeFiles.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/closeFiles.c.s
 .PHONY : closeFiles.c.s
 
 consistent.o: consistent.c.o
@@ -232,7 +231,7 @@ consistent.o: consistent.c.o
 
 # target to build an object file
 consistent.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/consistent.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/consistent.c.o
 .PHONY : consistent.c.o
 
 consistent.i: consistent.c.i
@@ -240,7 +239,7 @@ consistent.i: consistent.c.i
 
 # target to preprocess a source file
 consistent.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/consistent.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/consistent.c.i
 .PHONY : consistent.c.i
 
 consistent.s: consistent.c.s
@@ -248,7 +247,7 @@ consistent.s: consistent.c.s
 
 # target to generate assembly for a file
 consistent.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/consistent.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/consistent.c.s
 .PHONY : consistent.c.s
 
 createDataObject.o: createDataObject.c.o
@@ -256,7 +255,7 @@ createDataObject.o: createDataObject.c.o
 
 # target to build an object file
 createDataObject.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createDataObject.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createDataObject.c.o
 .PHONY : createDataObject.c.o
 
 createDataObject.i: createDataObject.c.i
@@ -264,7 +263,7 @@ createDataObject.i: createDataObject.c.i
 
 # target to preprocess a source file
 createDataObject.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createDataObject.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createDataObject.c.i
 .PHONY : createDataObject.c.i
 
 createDataObject.s: createDataObject.c.s
@@ -272,7 +271,7 @@ createDataObject.s: createDataObject.c.s
 
 # target to generate assembly for a file
 createDataObject.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createDataObject.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createDataObject.c.s
 .PHONY : createDataObject.c.s
 
 createIndexEntry.o: createIndexEntry.c.o
@@ -280,7 +279,7 @@ createIndexEntry.o: createIndexEntry.c.o
 
 # target to build an object file
 createIndexEntry.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexEntry.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexEntry.c.o
 .PHONY : createIndexEntry.c.o
 
 createIndexEntry.i: createIndexEntry.c.i
@@ -288,7 +287,7 @@ createIndexEntry.i: createIndexEntry.c.i
 
 # target to preprocess a source file
 createIndexEntry.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexEntry.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexEntry.c.i
 .PHONY : createIndexEntry.c.i
 
 createIndexEntry.s: createIndexEntry.c.s
@@ -296,7 +295,7 @@ createIndexEntry.s: createIndexEntry.c.s
 
 # target to generate assembly for a file
 createIndexEntry.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexEntry.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexEntry.c.s
 .PHONY : createIndexEntry.c.s
 
 createIndexNode.o: createIndexNode.c.o
@@ -304,7 +303,7 @@ createIndexNode.o: createIndexNode.c.o
 
 # target to build an object file
 createIndexNode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexNode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexNode.c.o
 .PHONY : createIndexNode.c.o
 
 createIndexNode.i: createIndexNode.c.i
@@ -312,7 +311,7 @@ createIndexNode.i: createIndexNode.c.i
 
 # target to preprocess a source file
 createIndexNode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexNode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexNode.c.i
 .PHONY : createIndexNode.c.i
 
 createIndexNode.s: createIndexNode.c.s
@@ -320,7 +319,7 @@ createIndexNode.s: createIndexNode.c.s
 
 # target to generate assembly for a file
 createIndexNode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexNode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/createIndexNode.c.s
 .PHONY : createIndexNode.c.s
 
 delete.o: delete.c.o
@@ -328,7 +327,7 @@ delete.o: delete.c.o
 
 # target to build an object file
 delete.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/delete.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/delete.c.o
 .PHONY : delete.c.o
 
 delete.i: delete.c.i
@@ -336,7 +335,7 @@ delete.i: delete.c.i
 
 # target to preprocess a source file
 delete.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/delete.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/delete.c.i
 .PHONY : delete.c.i
 
 delete.s: delete.c.s
@@ -344,7 +343,7 @@ delete.s: delete.c.s
 
 # target to generate assembly for a file
 delete.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/delete.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/delete.c.s
 .PHONY : delete.c.s
 
 deleteDataObject.o: deleteDataObject.c.o
@@ -352,7 +351,7 @@ deleteDataObject.o: deleteDataObject.c.o
 
 # target to build an object file
 deleteDataObject.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteDataObject.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteDataObject.c.o
 .PHONY : deleteDataObject.c.o
 
 deleteDataObject.i: deleteDataObject.c.i
@@ -360,7 +359,7 @@ deleteDataObject.i: deleteDataObject.c.i
 
 # target to preprocess a source file
 deleteDataObject.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteDataObject.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteDataObject.c.i
 .PHONY : deleteDataObject.c.i
 
 deleteDataObject.s: deleteDataObject.c.s
@@ -368,7 +367,7 @@ deleteDataObject.s: deleteDataObject.c.s
 
 # target to generate assembly for a file
 deleteDataObject.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteDataObject.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteDataObject.c.s
 .PHONY : deleteDataObject.c.s
 
 deleteEntry.o: deleteEntry.c.o
@@ -376,7 +375,7 @@ deleteEntry.o: deleteEntry.c.o
 
 # target to build an object file
 deleteEntry.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteEntry.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteEntry.c.o
 .PHONY : deleteEntry.c.o
 
 deleteEntry.i: deleteEntry.c.i
@@ -384,7 +383,7 @@ deleteEntry.i: deleteEntry.c.i
 
 # target to preprocess a source file
 deleteEntry.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteEntry.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteEntry.c.i
 .PHONY : deleteEntry.c.i
 
 deleteEntry.s: deleteEntry.c.s
@@ -392,7 +391,7 @@ deleteEntry.s: deleteEntry.c.s
 
 # target to generate assembly for a file
 deleteEntry.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteEntry.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteEntry.c.s
 .PHONY : deleteEntry.c.s
 
 deleteIndexEntry.o: deleteIndexEntry.c.o
@@ -400,7 +399,7 @@ deleteIndexEntry.o: deleteIndexEntry.c.o
 
 # target to build an object file
 deleteIndexEntry.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexEntry.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexEntry.c.o
 .PHONY : deleteIndexEntry.c.o
 
 deleteIndexEntry.i: deleteIndexEntry.c.i
@@ -408,7 +407,7 @@ deleteIndexEntry.i: deleteIndexEntry.c.i
 
 # target to preprocess a source file
 deleteIndexEntry.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexEntry.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexEntry.c.i
 .PHONY : deleteIndexEntry.c.i
 
 deleteIndexEntry.s: deleteIndexEntry.c.s
@@ -416,7 +415,7 @@ deleteIndexEntry.s: deleteIndexEntry.c.s
 
 # target to generate assembly for a file
 deleteIndexEntry.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexEntry.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexEntry.c.s
 .PHONY : deleteIndexEntry.c.s
 
 deleteIndexNode.o: deleteIndexNode.c.o
@@ -424,7 +423,7 @@ deleteIndexNode.o: deleteIndexNode.c.o
 
 # target to build an object file
 deleteIndexNode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexNode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexNode.c.o
 .PHONY : deleteIndexNode.c.o
 
 deleteIndexNode.i: deleteIndexNode.c.i
@@ -432,7 +431,7 @@ deleteIndexNode.i: deleteIndexNode.c.i
 
 # target to preprocess a source file
 deleteIndexNode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexNode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexNode.c.i
 .PHONY : deleteIndexNode.c.i
 
 deleteIndexNode.s: deleteIndexNode.c.s
@@ -440,7 +439,7 @@ deleteIndexNode.s: deleteIndexNode.c.s
 
 # target to generate assembly for a file
 deleteIndexNode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexNode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/deleteIndexNode.c.s
 .PHONY : deleteIndexNode.c.s
 
 errorMessage.o: errorMessage.c.o
@@ -448,7 +447,7 @@ errorMessage.o: errorMessage.c.o
 
 # target to build an object file
 errorMessage.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/errorMessage.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/errorMessage.c.o
 .PHONY : errorMessage.c.o
 
 errorMessage.i: errorMessage.c.i
@@ -456,7 +455,7 @@ errorMessage.i: errorMessage.c.i
 
 # target to preprocess a source file
 errorMessage.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/errorMessage.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/errorMessage.c.i
 .PHONY : errorMessage.c.i
 
 errorMessage.s: errorMessage.c.s
@@ -464,7 +463,7 @@ errorMessage.s: errorMessage.c.s
 
 # target to generate assembly for a file
 errorMessage.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/errorMessage.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/errorMessage.c.s
 .PHONY : errorMessage.c.s
 
 getDeleteCommand.o: getDeleteCommand.c.o
@@ -472,7 +471,7 @@ getDeleteCommand.o: getDeleteCommand.c.o
 
 # target to build an object file
 getDeleteCommand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getDeleteCommand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getDeleteCommand.c.o
 .PHONY : getDeleteCommand.c.o
 
 getDeleteCommand.i: getDeleteCommand.c.i
@@ -480,7 +479,7 @@ getDeleteCommand.i: getDeleteCommand.c.i
 
 # target to preprocess a source file
 getDeleteCommand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getDeleteCommand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getDeleteCommand.c.i
 .PHONY : getDeleteCommand.c.i
 
 getDeleteCommand.s: getDeleteCommand.c.s
@@ -488,7 +487,7 @@ getDeleteCommand.s: getDeleteCommand.c.s
 
 # target to generate assembly for a file
 getDeleteCommand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getDeleteCommand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getDeleteCommand.c.s
 .PHONY : getDeleteCommand.c.s
 
 getFloat.o: getFloat.c.o
@@ -496,7 +495,7 @@ getFloat.o: getFloat.c.o
 
 # target to build an object file
 getFloat.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getFloat.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getFloat.c.o
 .PHONY : getFloat.c.o
 
 getFloat.i: getFloat.c.i
@@ -504,7 +503,7 @@ getFloat.i: getFloat.c.i
 
 # target to preprocess a source file
 getFloat.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getFloat.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getFloat.c.i
 .PHONY : getFloat.c.i
 
 getFloat.s: getFloat.c.s
@@ -512,7 +511,7 @@ getFloat.s: getFloat.c.s
 
 # target to generate assembly for a file
 getFloat.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getFloat.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getFloat.c.s
 .PHONY : getFloat.c.s
 
 getInitCommand.o: getInitCommand.c.o
@@ -520,7 +519,7 @@ getInitCommand.o: getInitCommand.c.o
 
 # target to build an object file
 getInitCommand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInitCommand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInitCommand.c.o
 .PHONY : getInitCommand.c.o
 
 getInitCommand.i: getInitCommand.c.i
@@ -528,7 +527,7 @@ getInitCommand.i: getInitCommand.c.i
 
 # target to preprocess a source file
 getInitCommand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInitCommand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInitCommand.c.i
 .PHONY : getInitCommand.c.i
 
 getInitCommand.s: getInitCommand.c.s
@@ -536,7 +535,7 @@ getInitCommand.s: getInitCommand.c.s
 
 # target to generate assembly for a file
 getInitCommand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInitCommand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInitCommand.c.s
 .PHONY : getInitCommand.c.s
 
 getInsertCommand.o: getInsertCommand.c.o
@@ -544,7 +543,7 @@ getInsertCommand.o: getInsertCommand.c.o
 
 # target to build an object file
 getInsertCommand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInsertCommand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInsertCommand.c.o
 .PHONY : getInsertCommand.c.o
 
 getInsertCommand.i: getInsertCommand.c.i
@@ -552,7 +551,7 @@ getInsertCommand.i: getInsertCommand.c.i
 
 # target to preprocess a source file
 getInsertCommand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInsertCommand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInsertCommand.c.i
 .PHONY : getInsertCommand.c.i
 
 getInsertCommand.s: getInsertCommand.c.s
@@ -560,7 +559,7 @@ getInsertCommand.s: getInsertCommand.c.s
 
 # target to generate assembly for a file
 getInsertCommand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInsertCommand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInsertCommand.c.s
 .PHONY : getInsertCommand.c.s
 
 getInt.o: getInt.c.o
@@ -568,7 +567,7 @@ getInt.o: getInt.c.o
 
 # target to build an object file
 getInt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInt.c.o
 .PHONY : getInt.c.o
 
 getInt.i: getInt.c.i
@@ -576,7 +575,7 @@ getInt.i: getInt.c.i
 
 # target to preprocess a source file
 getInt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInt.c.i
 .PHONY : getInt.c.i
 
 getInt.s: getInt.c.s
@@ -584,7 +583,7 @@ getInt.s: getInt.c.s
 
 # target to generate assembly for a file
 getInt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getInt.c.s
 .PHONY : getInt.c.s
 
 getKeyAttribute.o: getKeyAttribute.c.o
@@ -592,7 +591,7 @@ getKeyAttribute.o: getKeyAttribute.c.o
 
 # target to build an object file
 getKeyAttribute.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getKeyAttribute.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getKeyAttribute.c.o
 .PHONY : getKeyAttribute.c.o
 
 getKeyAttribute.i: getKeyAttribute.c.i
@@ -600,7 +599,7 @@ getKeyAttribute.i: getKeyAttribute.c.i
 
 # target to preprocess a source file
 getKeyAttribute.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getKeyAttribute.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getKeyAttribute.c.i
 .PHONY : getKeyAttribute.c.i
 
 getKeyAttribute.s: getKeyAttribute.c.s
@@ -608,7 +607,7 @@ getKeyAttribute.s: getKeyAttribute.c.s
 
 # target to generate assembly for a file
 getKeyAttribute.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getKeyAttribute.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getKeyAttribute.c.s
 .PHONY : getKeyAttribute.c.s
 
 getNextCommandCode.o: getNextCommandCode.c.o
@@ -616,7 +615,7 @@ getNextCommandCode.o: getNextCommandCode.c.o
 
 # target to build an object file
 getNextCommandCode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNextCommandCode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNextCommandCode.c.o
 .PHONY : getNextCommandCode.c.o
 
 getNextCommandCode.i: getNextCommandCode.c.i
@@ -624,7 +623,7 @@ getNextCommandCode.i: getNextCommandCode.c.i
 
 # target to preprocess a source file
 getNextCommandCode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNextCommandCode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNextCommandCode.c.i
 .PHONY : getNextCommandCode.c.i
 
 getNextCommandCode.s: getNextCommandCode.c.s
@@ -632,7 +631,7 @@ getNextCommandCode.s: getNextCommandCode.c.s
 
 # target to generate assembly for a file
 getNextCommandCode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNextCommandCode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNextCommandCode.c.s
 .PHONY : getNextCommandCode.c.s
 
 getNonKeyAttribute.o: getNonKeyAttribute.c.o
@@ -640,7 +639,7 @@ getNonKeyAttribute.o: getNonKeyAttribute.c.o
 
 # target to build an object file
 getNonKeyAttribute.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNonKeyAttribute.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNonKeyAttribute.c.o
 .PHONY : getNonKeyAttribute.c.o
 
 getNonKeyAttribute.i: getNonKeyAttribute.c.i
@@ -648,7 +647,7 @@ getNonKeyAttribute.i: getNonKeyAttribute.c.i
 
 # target to preprocess a source file
 getNonKeyAttribute.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNonKeyAttribute.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNonKeyAttribute.c.i
 .PHONY : getNonKeyAttribute.c.i
 
 getNonKeyAttribute.s: getNonKeyAttribute.c.s
@@ -656,7 +655,7 @@ getNonKeyAttribute.s: getNonKeyAttribute.c.s
 
 # target to generate assembly for a file
 getNonKeyAttribute.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNonKeyAttribute.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getNonKeyAttribute.c.s
 .PHONY : getNonKeyAttribute.c.s
 
 getQueryCommand.o: getQueryCommand.c.o
@@ -664,7 +663,7 @@ getQueryCommand.o: getQueryCommand.c.o
 
 # target to build an object file
 getQueryCommand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getQueryCommand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getQueryCommand.c.o
 .PHONY : getQueryCommand.c.o
 
 getQueryCommand.i: getQueryCommand.c.i
@@ -672,7 +671,7 @@ getQueryCommand.i: getQueryCommand.c.i
 
 # target to preprocess a source file
 getQueryCommand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getQueryCommand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getQueryCommand.c.i
 .PHONY : getQueryCommand.c.i
 
 getQueryCommand.s: getQueryCommand.c.s
@@ -680,7 +679,7 @@ getQueryCommand.s: getQueryCommand.c.s
 
 # target to generate assembly for a file
 getQueryCommand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getQueryCommand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getQueryCommand.c.s
 .PHONY : getQueryCommand.c.s
 
 getString.o: getString.c.o
@@ -688,7 +687,7 @@ getString.o: getString.c.o
 
 # target to build an object file
 getString.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getString.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getString.c.o
 .PHONY : getString.c.o
 
 getString.i: getString.c.i
@@ -696,7 +695,7 @@ getString.i: getString.c.i
 
 # target to preprocess a source file
 getString.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getString.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getString.c.i
 .PHONY : getString.c.i
 
 getString.s: getString.c.s
@@ -704,7 +703,7 @@ getString.s: getString.c.s
 
 # target to generate assembly for a file
 getString.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getString.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/getString.c.s
 .PHONY : getString.c.s
 
 initMetricsData.o: initMetricsData.c.o
@@ -712,7 +711,7 @@ initMetricsData.o: initMetricsData.c.o
 
 # target to build an object file
 initMetricsData.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/initMetricsData.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/initMetricsData.c.o
 .PHONY : initMetricsData.c.o
 
 initMetricsData.i: initMetricsData.c.i
@@ -720,7 +719,7 @@ initMetricsData.i: initMetricsData.c.i
 
 # target to preprocess a source file
 initMetricsData.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/initMetricsData.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/initMetricsData.c.i
 .PHONY : initMetricsData.c.i
 
 initMetricsData.s: initMetricsData.c.s
@@ -728,7 +727,7 @@ initMetricsData.s: initMetricsData.c.s
 
 # target to generate assembly for a file
 initMetricsData.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/initMetricsData.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/initMetricsData.c.s
 .PHONY : initMetricsData.c.s
 
 insert.o: insert.c.o
@@ -736,7 +735,7 @@ insert.o: insert.c.o
 
 # target to build an object file
 insert.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insert.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insert.c.o
 .PHONY : insert.c.o
 
 insert.i: insert.c.i
@@ -744,7 +743,7 @@ insert.i: insert.c.i
 
 # target to preprocess a source file
 insert.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insert.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insert.c.i
 .PHONY : insert.c.i
 
 insert.s: insert.c.s
@@ -752,7 +751,7 @@ insert.s: insert.c.s
 
 # target to generate assembly for a file
 insert.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insert.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insert.c.s
 .PHONY : insert.c.s
 
 insertEntry.o: insertEntry.c.o
@@ -760,7 +759,7 @@ insertEntry.o: insertEntry.c.o
 
 # target to build an object file
 insertEntry.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insertEntry.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insertEntry.c.o
 .PHONY : insertEntry.c.o
 
 insertEntry.i: insertEntry.c.i
@@ -768,7 +767,7 @@ insertEntry.i: insertEntry.c.i
 
 # target to preprocess a source file
 insertEntry.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insertEntry.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insertEntry.c.i
 .PHONY : insertEntry.c.i
 
 insertEntry.s: insertEntry.c.s
@@ -776,7 +775,7 @@ insertEntry.s: insertEntry.c.s
 
 # target to generate assembly for a file
 insertEntry.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insertEntry.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/insertEntry.c.s
 .PHONY : insertEntry.c.s
 
 keyUnion.o: keyUnion.c.o
@@ -784,7 +783,7 @@ keyUnion.o: keyUnion.c.o
 
 # target to build an object file
 keyUnion.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/keyUnion.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/keyUnion.c.o
 .PHONY : keyUnion.c.o
 
 keyUnion.i: keyUnion.c.i
@@ -792,7 +791,7 @@ keyUnion.i: keyUnion.c.i
 
 # target to preprocess a source file
 keyUnion.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/keyUnion.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/keyUnion.c.i
 .PHONY : keyUnion.c.i
 
 keyUnion.s: keyUnion.c.s
@@ -800,7 +799,7 @@ keyUnion.s: keyUnion.c.s
 
 # target to generate assembly for a file
 keyUnion.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/keyUnion.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/keyUnion.c.s
 .PHONY : keyUnion.c.s
 
 main.o: main.c.o
@@ -808,7 +807,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -816,7 +815,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -824,7 +823,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/main.c.s
 .PHONY : main.c.s
 
 openFiles.o: openFiles.c.o
@@ -832,7 +831,7 @@ openFiles.o: openFiles.c.o
 
 # target to build an object file
 openFiles.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/openFiles.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/openFiles.c.o
 .PHONY : openFiles.c.o
 
 openFiles.i: openFiles.c.i
@@ -840,7 +839,7 @@ openFiles.i: openFiles.c.i
 
 # target to preprocess a source file
 openFiles.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/openFiles.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/openFiles.c.i
 .PHONY : openFiles.c.i
 
 openFiles.s: openFiles.c.s
@@ -848,7 +847,7 @@ openFiles.s: openFiles.c.s
 
 # target to generate assembly for a file
 openFiles.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/openFiles.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/openFiles.c.s
 .PHONY : openFiles.c.s
 
 outputMetricsData.o: outputMetricsData.c.o
@@ -856,7 +855,7 @@ outputMetricsData.o: outputMetricsData.c.o
 
 # target to build an object file
 outputMetricsData.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputMetricsData.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputMetricsData.c.o
 .PHONY : outputMetricsData.c.o
 
 outputMetricsData.i: outputMetricsData.c.i
@@ -864,7 +863,7 @@ outputMetricsData.i: outputMetricsData.c.i
 
 # target to preprocess a source file
 outputMetricsData.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputMetricsData.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputMetricsData.c.i
 .PHONY : outputMetricsData.c.i
 
 outputMetricsData.s: outputMetricsData.c.s
@@ -872,7 +871,7 @@ outputMetricsData.s: outputMetricsData.c.s
 
 # target to generate assembly for a file
 outputMetricsData.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputMetricsData.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputMetricsData.c.s
 .PHONY : outputMetricsData.c.s
 
 outputQuery.o: outputQuery.c.o
@@ -880,7 +879,7 @@ outputQuery.o: outputQuery.c.o
 
 # target to build an object file
 outputQuery.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputQuery.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputQuery.c.o
 .PHONY : outputQuery.c.o
 
 outputQuery.i: outputQuery.c.i
@@ -888,7 +887,7 @@ outputQuery.i: outputQuery.c.i
 
 # target to preprocess a source file
 outputQuery.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputQuery.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputQuery.c.i
 .PHONY : outputQuery.c.i
 
 outputQuery.s: outputQuery.c.s
@@ -896,7 +895,7 @@ outputQuery.s: outputQuery.c.s
 
 # target to generate assembly for a file
 outputQuery.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputQuery.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/outputQuery.c.s
 .PHONY : outputQuery.c.s
 
 partitionEntries.o: partitionEntries.c.o
@@ -904,7 +903,7 @@ partitionEntries.o: partitionEntries.c.o
 
 # target to build an object file
 partitionEntries.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/partitionEntries.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/partitionEntries.c.o
 .PHONY : partitionEntries.c.o
 
 partitionEntries.i: partitionEntries.c.i
@@ -912,7 +911,7 @@ partitionEntries.i: partitionEntries.c.i
 
 # target to preprocess a source file
 partitionEntries.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/partitionEntries.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/partitionEntries.c.i
 .PHONY : partitionEntries.c.i
 
 partitionEntries.s: partitionEntries.c.s
@@ -920,7 +919,7 @@ partitionEntries.s: partitionEntries.c.s
 
 # target to generate assembly for a file
 partitionEntries.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/partitionEntries.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/partitionEntries.c.s
 .PHONY : partitionEntries.c.s
 
 penalty.o: penalty.c.o
@@ -928,7 +927,7 @@ penalty.o: penalty.c.o
 
 # target to build an object file
 penalty.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/penalty.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/penalty.c.o
 .PHONY : penalty.c.o
 
 penalty.i: penalty.c.i
@@ -936,7 +935,7 @@ penalty.i: penalty.c.i
 
 # target to preprocess a source file
 penalty.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/penalty.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/penalty.c.i
 .PHONY : penalty.c.i
 
 penalty.s: penalty.c.s
@@ -944,7 +943,7 @@ penalty.s: penalty.c.s
 
 # target to generate assembly for a file
 penalty.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/penalty.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/penalty.c.s
 .PHONY : penalty.c.s
 
 query.o: query.c.o
@@ -952,7 +951,7 @@ query.o: query.c.o
 
 # target to build an object file
 query.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/query.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/query.c.o
 .PHONY : query.c.o
 
 query.i: query.c.i
@@ -960,7 +959,7 @@ query.i: query.c.i
 
 # target to preprocess a source file
 query.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/query.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/query.c.i
 .PHONY : query.c.i
 
 query.s: query.c.s
@@ -968,7 +967,7 @@ query.s: query.c.s
 
 # target to generate assembly for a file
 query.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/query.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/query.c.s
 .PHONY : query.c.s
 
 setMetricsData.o: setMetricsData.c.o
@@ -976,7 +975,7 @@ setMetricsData.o: setMetricsData.c.o
 
 # target to build an object file
 setMetricsData.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/setMetricsData.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/setMetricsData.c.o
 .PHONY : setMetricsData.c.o
 
 setMetricsData.i: setMetricsData.c.i
@@ -984,7 +983,7 @@ setMetricsData.i: setMetricsData.c.i
 
 # target to preprocess a source file
 setMetricsData.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/setMetricsData.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/setMetricsData.c.i
 .PHONY : setMetricsData.c.i
 
 setMetricsData.s: setMetricsData.c.s
@@ -992,7 +991,7 @@ setMetricsData.s: setMetricsData.c.s
 
 # target to generate assembly for a file
 setMetricsData.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/setMetricsData.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/setMetricsData.c.s
 .PHONY : setMetricsData.c.s
 
 splitNode.o: splitNode.c.o
@@ -1000,7 +999,7 @@ splitNode.o: splitNode.c.o
 
 # target to build an object file
 splitNode.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/splitNode.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/splitNode.c.o
 .PHONY : splitNode.c.o
 
 splitNode.i: splitNode.c.i
@@ -1008,7 +1007,7 @@ splitNode.i: splitNode.c.i
 
 # target to preprocess a source file
 splitNode.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/splitNode.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/splitNode.c.i
 .PHONY : splitNode.c.i
 
 splitNode.s: splitNode.c.s
@@ -1016,7 +1015,7 @@ splitNode.s: splitNode.c.s
 
 # target to generate assembly for a file
 splitNode.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/splitNode.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/splitNode.c.s
 .PHONY : splitNode.c.s
 
 timer.o: timer.c.o
@@ -1024,7 +1023,7 @@ timer.o: timer.c.o
 
 # target to build an object file
 timer.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/timer.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/timer.c.o
 .PHONY : timer.c.o
 
 timer.i: timer.c.i
@@ -1032,7 +1031,7 @@ timer.i: timer.c.i
 
 # target to preprocess a source file
 timer.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/timer.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/timer.c.i
 .PHONY : timer.c.i
 
 timer.s: timer.c.s
@@ -1040,7 +1039,7 @@ timer.s: timer.c.s
 
 # target to generate assembly for a file
 timer.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/timer.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/timer.c.s
 .PHONY : timer.c.s
 
 updateMetricsData.o: updateMetricsData.c.o
@@ -1048,7 +1047,7 @@ updateMetricsData.o: updateMetricsData.c.o
 
 # target to build an object file
 updateMetricsData.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/updateMetricsData.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/updateMetricsData.c.o
 .PHONY : updateMetricsData.c.o
 
 updateMetricsData.i: updateMetricsData.c.i
@@ -1056,7 +1055,7 @@ updateMetricsData.i: updateMetricsData.c.i
 
 # target to preprocess a source file
 updateMetricsData.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/updateMetricsData.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/updateMetricsData.c.i
 .PHONY : updateMetricsData.c.i
 
 updateMetricsData.s: updateMetricsData.c.s
@@ -1064,7 +1063,7 @@ updateMetricsData.s: updateMetricsData.c.s
 
 # target to generate assembly for a file
 updateMetricsData.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/updateMetricsData.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/updateMetricsData.c.s
 .PHONY : updateMetricsData.c.s
 
 valid.o: valid.c.o
@@ -1072,7 +1071,7 @@ valid.o: valid.c.o
 
 # target to build an object file
 valid.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/valid.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/valid.c.o
 .PHONY : valid.c.o
 
 valid.i: valid.c.i
@@ -1080,7 +1079,7 @@ valid.i: valid.c.i
 
 # target to preprocess a source file
 valid.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/valid.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/valid.c.i
 .PHONY : valid.c.i
 
 valid.s: valid.c.s
@@ -1088,7 +1087,7 @@ valid.s: valid.c.s
 
 # target to generate assembly for a file
 valid.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/valid.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/valid.c.s
 .PHONY : valid.c.s
 
 volume.o: volume.c.o
@@ -1096,7 +1095,7 @@ volume.o: volume.c.o
 
 # target to build an object file
 volume.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/volume.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/volume.c.o
 .PHONY : volume.c.o
 
 volume.i: volume.c.i
@@ -1104,7 +1103,7 @@ volume.i: volume.c.i
 
 # target to preprocess a source file
 volume.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/volume.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/volume.c.i
 .PHONY : volume.c.i
 
 volume.s: volume.c.s
@@ -1112,7 +1111,7 @@ volume.s: volume.c.s
 
 # target to generate assembly for a file
 volume.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/volume.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/build.make MultiSource/Benchmarks/VersaBench/dbms/CMakeFiles/dbms.dir/volume.c.s
 .PHONY : volume.c.s
 
 # Help Target
@@ -1258,7 +1257,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

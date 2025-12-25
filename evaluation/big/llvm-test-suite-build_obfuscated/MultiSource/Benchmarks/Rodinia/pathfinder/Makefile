@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Rodinia/pathfinder//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Rodinia/pathfinder//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/rule
 .PHONY : MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ pathfinder: MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/
 
 # fast build rule for target.
 pathfinder/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build
 .PHONY : pathfinder/fast
 
 __/Common/glibc_compat_rand.o: __/Common/glibc_compat_rand.c.o
@@ -136,7 +135,7 @@ __/Common/glibc_compat_rand.o: __/Common/glibc_compat_rand.c.o
 
 # target to build an object file
 __/Common/glibc_compat_rand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.o
 .PHONY : __/Common/glibc_compat_rand.c.o
 
 __/Common/glibc_compat_rand.i: __/Common/glibc_compat_rand.c.i
@@ -144,7 +143,7 @@ __/Common/glibc_compat_rand.i: __/Common/glibc_compat_rand.c.i
 
 # target to preprocess a source file
 __/Common/glibc_compat_rand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.i
 .PHONY : __/Common/glibc_compat_rand.c.i
 
 __/Common/glibc_compat_rand.s: __/Common/glibc_compat_rand.c.s
@@ -152,7 +151,7 @@ __/Common/glibc_compat_rand.s: __/Common/glibc_compat_rand.c.s
 
 # target to generate assembly for a file
 __/Common/glibc_compat_rand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.s
 .PHONY : __/Common/glibc_compat_rand.c.s
 
 main.o: main.c.o
@@ -160,7 +159,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -168,7 +167,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -176,7 +175,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/main.c.s
 .PHONY : main.c.s
 
 pathfinderKernel.o: pathfinderKernel.c.o
@@ -184,7 +183,7 @@ pathfinderKernel.o: pathfinderKernel.c.o
 
 # target to build an object file
 pathfinderKernel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/pathfinderKernel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/pathfinderKernel.c.o
 .PHONY : pathfinderKernel.c.o
 
 pathfinderKernel.i: pathfinderKernel.c.i
@@ -192,7 +191,7 @@ pathfinderKernel.i: pathfinderKernel.c.i
 
 # target to preprocess a source file
 pathfinderKernel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/pathfinderKernel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/pathfinderKernel.c.i
 .PHONY : pathfinderKernel.c.i
 
 pathfinderKernel.s: pathfinderKernel.c.s
@@ -200,7 +199,7 @@ pathfinderKernel.s: pathfinderKernel.c.s
 
 # target to generate assembly for a file
 pathfinderKernel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/pathfinderKernel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/build.make MultiSource/Benchmarks/Rodinia/pathfinder/CMakeFiles/pathfinder.dir/pathfinderKernel.c.s
 .PHONY : pathfinderKernel.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

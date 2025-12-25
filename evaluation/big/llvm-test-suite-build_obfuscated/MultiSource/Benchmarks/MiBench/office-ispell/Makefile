@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/office-ispell//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/office-ispell//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/rule
 .PHONY : MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ office-ispell: MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-is
 
 # fast build rule for target.
 office-ispell/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build
 .PHONY : office-ispell/fast
 
 correct.o: correct.c.o
@@ -136,7 +135,7 @@ correct.o: correct.c.o
 
 # target to build an object file
 correct.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/correct.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/correct.c.o
 .PHONY : correct.c.o
 
 correct.i: correct.c.i
@@ -144,7 +143,7 @@ correct.i: correct.c.i
 
 # target to preprocess a source file
 correct.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/correct.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/correct.c.i
 .PHONY : correct.c.i
 
 correct.s: correct.c.s
@@ -152,7 +151,7 @@ correct.s: correct.c.s
 
 # target to generate assembly for a file
 correct.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/correct.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/correct.c.s
 .PHONY : correct.c.s
 
 defmt.o: defmt.c.o
@@ -160,7 +159,7 @@ defmt.o: defmt.c.o
 
 # target to build an object file
 defmt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/defmt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/defmt.c.o
 .PHONY : defmt.c.o
 
 defmt.i: defmt.c.i
@@ -168,7 +167,7 @@ defmt.i: defmt.c.i
 
 # target to preprocess a source file
 defmt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/defmt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/defmt.c.i
 .PHONY : defmt.c.i
 
 defmt.s: defmt.c.s
@@ -176,7 +175,7 @@ defmt.s: defmt.c.s
 
 # target to generate assembly for a file
 defmt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/defmt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/defmt.c.s
 .PHONY : defmt.c.s
 
 dump.o: dump.c.o
@@ -184,7 +183,7 @@ dump.o: dump.c.o
 
 # target to build an object file
 dump.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/dump.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/dump.c.o
 .PHONY : dump.c.o
 
 dump.i: dump.c.i
@@ -192,7 +191,7 @@ dump.i: dump.c.i
 
 # target to preprocess a source file
 dump.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/dump.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/dump.c.i
 .PHONY : dump.c.i
 
 dump.s: dump.c.s
@@ -200,7 +199,7 @@ dump.s: dump.c.s
 
 # target to generate assembly for a file
 dump.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/dump.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/dump.c.s
 .PHONY : dump.c.s
 
 good.o: good.c.o
@@ -208,7 +207,7 @@ good.o: good.c.o
 
 # target to build an object file
 good.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/good.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/good.c.o
 .PHONY : good.c.o
 
 good.i: good.c.i
@@ -216,7 +215,7 @@ good.i: good.c.i
 
 # target to preprocess a source file
 good.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/good.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/good.c.i
 .PHONY : good.c.i
 
 good.s: good.c.s
@@ -224,7 +223,7 @@ good.s: good.c.s
 
 # target to generate assembly for a file
 good.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/good.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/good.c.s
 .PHONY : good.c.s
 
 hash.o: hash.c.o
@@ -232,7 +231,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/hash.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -240,7 +239,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/hash.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -248,7 +247,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/hash.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/hash.c.s
 .PHONY : hash.c.s
 
 ispell.o: ispell.c.o
@@ -256,7 +255,7 @@ ispell.o: ispell.c.o
 
 # target to build an object file
 ispell.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/ispell.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/ispell.c.o
 .PHONY : ispell.c.o
 
 ispell.i: ispell.c.i
@@ -264,7 +263,7 @@ ispell.i: ispell.c.i
 
 # target to preprocess a source file
 ispell.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/ispell.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/ispell.c.i
 .PHONY : ispell.c.i
 
 ispell.s: ispell.c.s
@@ -272,7 +271,7 @@ ispell.s: ispell.c.s
 
 # target to generate assembly for a file
 ispell.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/ispell.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/ispell.c.s
 .PHONY : ispell.c.s
 
 lookup.o: lookup.c.o
@@ -280,7 +279,7 @@ lookup.o: lookup.c.o
 
 # target to build an object file
 lookup.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/lookup.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/lookup.c.o
 .PHONY : lookup.c.o
 
 lookup.i: lookup.c.i
@@ -288,7 +287,7 @@ lookup.i: lookup.c.i
 
 # target to preprocess a source file
 lookup.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/lookup.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/lookup.c.i
 .PHONY : lookup.c.i
 
 lookup.s: lookup.c.s
@@ -296,7 +295,7 @@ lookup.s: lookup.c.s
 
 # target to generate assembly for a file
 lookup.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/lookup.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/lookup.c.s
 .PHONY : lookup.c.s
 
 makedent.o: makedent.c.o
@@ -304,7 +303,7 @@ makedent.o: makedent.c.o
 
 # target to build an object file
 makedent.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/makedent.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/makedent.c.o
 .PHONY : makedent.c.o
 
 makedent.i: makedent.c.i
@@ -312,7 +311,7 @@ makedent.i: makedent.c.i
 
 # target to preprocess a source file
 makedent.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/makedent.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/makedent.c.i
 .PHONY : makedent.c.i
 
 makedent.s: makedent.c.s
@@ -320,7 +319,7 @@ makedent.s: makedent.c.s
 
 # target to generate assembly for a file
 makedent.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/makedent.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/makedent.c.s
 .PHONY : makedent.c.s
 
 term.o: term.c.o
@@ -328,7 +327,7 @@ term.o: term.c.o
 
 # target to build an object file
 term.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/term.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/term.c.o
 .PHONY : term.c.o
 
 term.i: term.c.i
@@ -336,7 +335,7 @@ term.i: term.c.i
 
 # target to preprocess a source file
 term.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/term.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/term.c.i
 .PHONY : term.c.i
 
 term.s: term.c.s
@@ -344,7 +343,7 @@ term.s: term.c.s
 
 # target to generate assembly for a file
 term.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/term.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/term.c.s
 .PHONY : term.c.s
 
 tgood.o: tgood.c.o
@@ -352,7 +351,7 @@ tgood.o: tgood.c.o
 
 # target to build an object file
 tgood.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tgood.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tgood.c.o
 .PHONY : tgood.c.o
 
 tgood.i: tgood.c.i
@@ -360,7 +359,7 @@ tgood.i: tgood.c.i
 
 # target to preprocess a source file
 tgood.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tgood.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tgood.c.i
 .PHONY : tgood.c.i
 
 tgood.s: tgood.c.s
@@ -368,7 +367,7 @@ tgood.s: tgood.c.s
 
 # target to generate assembly for a file
 tgood.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tgood.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tgood.c.s
 .PHONY : tgood.c.s
 
 tree.o: tree.c.o
@@ -376,7 +375,7 @@ tree.o: tree.c.o
 
 # target to build an object file
 tree.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tree.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tree.c.o
 .PHONY : tree.c.o
 
 tree.i: tree.c.i
@@ -384,7 +383,7 @@ tree.i: tree.c.i
 
 # target to preprocess a source file
 tree.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tree.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tree.c.i
 .PHONY : tree.c.i
 
 tree.s: tree.c.s
@@ -392,7 +391,7 @@ tree.s: tree.c.s
 
 # target to generate assembly for a file
 tree.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tree.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/tree.c.s
 .PHONY : tree.c.s
 
 xgets.o: xgets.c.o
@@ -400,7 +399,7 @@ xgets.o: xgets.c.o
 
 # target to build an object file
 xgets.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/xgets.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/xgets.c.o
 .PHONY : xgets.c.o
 
 xgets.i: xgets.c.i
@@ -408,7 +407,7 @@ xgets.i: xgets.c.i
 
 # target to preprocess a source file
 xgets.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/xgets.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/xgets.c.i
 .PHONY : xgets.c.i
 
 xgets.s: xgets.c.s
@@ -416,7 +415,7 @@ xgets.s: xgets.c.s
 
 # target to generate assembly for a file
 xgets.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/xgets.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/build.make MultiSource/Benchmarks/MiBench/office-ispell/CMakeFiles/office-ispell.dir/xgets.c.s
 .PHONY : xgets.c.s
 
 # Help Target
@@ -475,7 +474,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/ALAC/encode//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/ALAC/encode//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/rule
 .PHONY : MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ alacconvert-encode: MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-
 
 # fast build rule for target.
 alacconvert-encode/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build
 .PHONY : alacconvert-encode/fast
 
 ALACBitUtilities.o: ALACBitUtilities.c.o
@@ -136,7 +135,7 @@ ALACBitUtilities.o: ALACBitUtilities.c.o
 
 # target to build an object file
 ALACBitUtilities.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACBitUtilities.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACBitUtilities.c.o
 .PHONY : ALACBitUtilities.c.o
 
 ALACBitUtilities.i: ALACBitUtilities.c.i
@@ -144,7 +143,7 @@ ALACBitUtilities.i: ALACBitUtilities.c.i
 
 # target to preprocess a source file
 ALACBitUtilities.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACBitUtilities.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACBitUtilities.c.i
 .PHONY : ALACBitUtilities.c.i
 
 ALACBitUtilities.s: ALACBitUtilities.c.s
@@ -152,7 +151,7 @@ ALACBitUtilities.s: ALACBitUtilities.c.s
 
 # target to generate assembly for a file
 ALACBitUtilities.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACBitUtilities.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACBitUtilities.c.s
 .PHONY : ALACBitUtilities.c.s
 
 ALACDecoder.o: ALACDecoder.cpp.o
@@ -160,7 +159,7 @@ ALACDecoder.o: ALACDecoder.cpp.o
 
 # target to build an object file
 ALACDecoder.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACDecoder.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACDecoder.cpp.o
 .PHONY : ALACDecoder.cpp.o
 
 ALACDecoder.i: ALACDecoder.cpp.i
@@ -168,7 +167,7 @@ ALACDecoder.i: ALACDecoder.cpp.i
 
 # target to preprocess a source file
 ALACDecoder.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACDecoder.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACDecoder.cpp.i
 .PHONY : ALACDecoder.cpp.i
 
 ALACDecoder.s: ALACDecoder.cpp.s
@@ -176,7 +175,7 @@ ALACDecoder.s: ALACDecoder.cpp.s
 
 # target to generate assembly for a file
 ALACDecoder.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACDecoder.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACDecoder.cpp.s
 .PHONY : ALACDecoder.cpp.s
 
 ALACEncoder.o: ALACEncoder.cpp.o
@@ -184,7 +183,7 @@ ALACEncoder.o: ALACEncoder.cpp.o
 
 # target to build an object file
 ALACEncoder.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACEncoder.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACEncoder.cpp.o
 .PHONY : ALACEncoder.cpp.o
 
 ALACEncoder.i: ALACEncoder.cpp.i
@@ -192,7 +191,7 @@ ALACEncoder.i: ALACEncoder.cpp.i
 
 # target to preprocess a source file
 ALACEncoder.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACEncoder.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACEncoder.cpp.i
 .PHONY : ALACEncoder.cpp.i
 
 ALACEncoder.s: ALACEncoder.cpp.s
@@ -200,7 +199,7 @@ ALACEncoder.s: ALACEncoder.cpp.s
 
 # target to generate assembly for a file
 ALACEncoder.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACEncoder.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ALACEncoder.cpp.s
 .PHONY : ALACEncoder.cpp.s
 
 CAFFileALAC.o: CAFFileALAC.cpp.o
@@ -208,7 +207,7 @@ CAFFileALAC.o: CAFFileALAC.cpp.o
 
 # target to build an object file
 CAFFileALAC.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/CAFFileALAC.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/CAFFileALAC.cpp.o
 .PHONY : CAFFileALAC.cpp.o
 
 CAFFileALAC.i: CAFFileALAC.cpp.i
@@ -216,7 +215,7 @@ CAFFileALAC.i: CAFFileALAC.cpp.i
 
 # target to preprocess a source file
 CAFFileALAC.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/CAFFileALAC.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/CAFFileALAC.cpp.i
 .PHONY : CAFFileALAC.cpp.i
 
 CAFFileALAC.s: CAFFileALAC.cpp.s
@@ -224,7 +223,7 @@ CAFFileALAC.s: CAFFileALAC.cpp.s
 
 # target to generate assembly for a file
 CAFFileALAC.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/CAFFileALAC.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/CAFFileALAC.cpp.s
 .PHONY : CAFFileALAC.cpp.s
 
 EndianPortable.o: EndianPortable.c.o
@@ -232,7 +231,7 @@ EndianPortable.o: EndianPortable.c.o
 
 # target to build an object file
 EndianPortable.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/EndianPortable.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/EndianPortable.c.o
 .PHONY : EndianPortable.c.o
 
 EndianPortable.i: EndianPortable.c.i
@@ -240,7 +239,7 @@ EndianPortable.i: EndianPortable.c.i
 
 # target to preprocess a source file
 EndianPortable.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/EndianPortable.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/EndianPortable.c.i
 .PHONY : EndianPortable.c.i
 
 EndianPortable.s: EndianPortable.c.s
@@ -248,7 +247,7 @@ EndianPortable.s: EndianPortable.c.s
 
 # target to generate assembly for a file
 EndianPortable.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/EndianPortable.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/EndianPortable.c.s
 .PHONY : EndianPortable.c.s
 
 ag_dec.o: ag_dec.c.o
@@ -256,7 +255,7 @@ ag_dec.o: ag_dec.c.o
 
 # target to build an object file
 ag_dec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_dec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_dec.c.o
 .PHONY : ag_dec.c.o
 
 ag_dec.i: ag_dec.c.i
@@ -264,7 +263,7 @@ ag_dec.i: ag_dec.c.i
 
 # target to preprocess a source file
 ag_dec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_dec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_dec.c.i
 .PHONY : ag_dec.c.i
 
 ag_dec.s: ag_dec.c.s
@@ -272,7 +271,7 @@ ag_dec.s: ag_dec.c.s
 
 # target to generate assembly for a file
 ag_dec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_dec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_dec.c.s
 .PHONY : ag_dec.c.s
 
 ag_enc.o: ag_enc.c.o
@@ -280,7 +279,7 @@ ag_enc.o: ag_enc.c.o
 
 # target to build an object file
 ag_enc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_enc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_enc.c.o
 .PHONY : ag_enc.c.o
 
 ag_enc.i: ag_enc.c.i
@@ -288,7 +287,7 @@ ag_enc.i: ag_enc.c.i
 
 # target to preprocess a source file
 ag_enc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_enc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_enc.c.i
 .PHONY : ag_enc.c.i
 
 ag_enc.s: ag_enc.c.s
@@ -296,7 +295,7 @@ ag_enc.s: ag_enc.c.s
 
 # target to generate assembly for a file
 ag_enc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_enc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/ag_enc.c.s
 .PHONY : ag_enc.c.s
 
 dp_dec.o: dp_dec.c.o
@@ -304,7 +303,7 @@ dp_dec.o: dp_dec.c.o
 
 # target to build an object file
 dp_dec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_dec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_dec.c.o
 .PHONY : dp_dec.c.o
 
 dp_dec.i: dp_dec.c.i
@@ -312,7 +311,7 @@ dp_dec.i: dp_dec.c.i
 
 # target to preprocess a source file
 dp_dec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_dec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_dec.c.i
 .PHONY : dp_dec.c.i
 
 dp_dec.s: dp_dec.c.s
@@ -320,7 +319,7 @@ dp_dec.s: dp_dec.c.s
 
 # target to generate assembly for a file
 dp_dec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_dec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_dec.c.s
 .PHONY : dp_dec.c.s
 
 dp_enc.o: dp_enc.c.o
@@ -328,7 +327,7 @@ dp_enc.o: dp_enc.c.o
 
 # target to build an object file
 dp_enc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_enc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_enc.c.o
 .PHONY : dp_enc.c.o
 
 dp_enc.i: dp_enc.c.i
@@ -336,7 +335,7 @@ dp_enc.i: dp_enc.c.i
 
 # target to preprocess a source file
 dp_enc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_enc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_enc.c.i
 .PHONY : dp_enc.c.i
 
 dp_enc.s: dp_enc.c.s
@@ -344,7 +343,7 @@ dp_enc.s: dp_enc.c.s
 
 # target to generate assembly for a file
 dp_enc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_enc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/dp_enc.c.s
 .PHONY : dp_enc.c.s
 
 main.o: main.cpp.o
@@ -352,7 +351,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/main.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -360,7 +359,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/main.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -368,7 +367,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/main.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 matrix_dec.o: matrix_dec.c.o
@@ -376,7 +375,7 @@ matrix_dec.o: matrix_dec.c.o
 
 # target to build an object file
 matrix_dec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_dec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_dec.c.o
 .PHONY : matrix_dec.c.o
 
 matrix_dec.i: matrix_dec.c.i
@@ -384,7 +383,7 @@ matrix_dec.i: matrix_dec.c.i
 
 # target to preprocess a source file
 matrix_dec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_dec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_dec.c.i
 .PHONY : matrix_dec.c.i
 
 matrix_dec.s: matrix_dec.c.s
@@ -392,7 +391,7 @@ matrix_dec.s: matrix_dec.c.s
 
 # target to generate assembly for a file
 matrix_dec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_dec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_dec.c.s
 .PHONY : matrix_dec.c.s
 
 matrix_enc.o: matrix_enc.c.o
@@ -400,7 +399,7 @@ matrix_enc.o: matrix_enc.c.o
 
 # target to build an object file
 matrix_enc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_enc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_enc.c.o
 .PHONY : matrix_enc.c.o
 
 matrix_enc.i: matrix_enc.c.i
@@ -408,7 +407,7 @@ matrix_enc.i: matrix_enc.c.i
 
 # target to preprocess a source file
 matrix_enc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_enc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_enc.c.i
 .PHONY : matrix_enc.c.i
 
 matrix_enc.s: matrix_enc.c.s
@@ -416,7 +415,7 @@ matrix_enc.s: matrix_enc.c.s
 
 # target to generate assembly for a file
 matrix_enc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_enc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/build.make MultiSource/Applications/ALAC/encode/CMakeFiles/alacconvert-encode.dir/matrix_enc.c.s
 .PHONY : matrix_enc.c.s
 
 # Help Target
@@ -475,7 +474,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

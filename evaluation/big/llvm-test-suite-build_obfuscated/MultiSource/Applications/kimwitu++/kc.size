@@ -1,34 +1,34 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/kimwitu++/kc  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/kimwitu++/kc  :
 section                   size      addr
 .interp                     28       792
 .note.gnu.property          32       824
 .note.gnu.build-id          36       856
 .note.ABI-tag               32       892
-.gnu.hash                   52       928
-.dynsym                   2640       984
-.dynstr                   2834      3624
-.gnu.version               220      6458
-.gnu.version_r             256      6680
-.rela.dyn               145080      6936
-.rela.plt                 2112    152016
+.gnu.hash                   56       928
+.dynsym                   2712       984
+.dynstr                   3004      3696
+.gnu.version               226      6700
+.gnu.version_r             256      6928
+.rela.dyn               144792      7184
+.rela.plt                 2160    151976
 .init                       27    155648
-.plt                      1424    155680
-.plt.got                    16    157104
-.text                  2521188    157120
-.fini                       13   2678308
-.rodata                 759593   2678784
-.eh_frame_hdr            26396   3438380
-.eh_frame               136684   3464776
-.gcc_except_table         2452   3601460
-.init_array                 56   3606512
-.fini_array                  8   3606568
-.data.rel.ro             42288   3606576
-.dynamic                   528   3648864
-.got                       120   3649392
-.got.plt                   728   3649512
-.data                    29664   3650240
-.bss                     12256   3679904
+.plt                      1456    155680
+.plt.got                    16    157136
+.text                  2049280    157152
+.fini                       13   2206432
+.rodata                 572397   2207744
+.eh_frame_hdr            26220   2780144
+.eh_frame               127916   2806368
+.gcc_except_table         2512   2934284
+.init_array                 56   2938960
+.fini_array                  8   2939016
+.data.rel.ro             42192   2939024
+.dynamic                   528   2981216
+.got                       120   2981744
+.got.plt                   744   2981864
+.data                    29664   2982608
+.bss                     12256   3012272
 .comment                    82         0
-Total                  3686845
+Total                  3018821
 
 

@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/depend.make
@@ -72,44 +72,44 @@ include MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/flags.m
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/flags.make
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/testtrie.dir/charsequence.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o -MF CMakeFiles/testtrie.dir/charsequence.c.o.d -o CMakeFiles/testtrie.dir/charsequence.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/testtrie.dir/charsequence.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.o -MF CMakeFiles/testtrie.dir/charsequence.c.o.d -o CMakeFiles/testtrie.dir/charsequence.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/testtrie.dir/charsequence.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c > CMakeFiles/testtrie.dir/charsequence.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c > CMakeFiles/testtrie.dir/charsequence.c.i
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/charsequence.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testtrie.dir/charsequence.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c -o CMakeFiles/testtrie.dir/charsequence.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/charsequence.c -o CMakeFiles/testtrie.dir/charsequence.c.s
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/flags.make
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/testtrie.dir/main.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o -MF CMakeFiles/testtrie.dir/main.c.o.d -o CMakeFiles/testtrie.dir/main.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/testtrie.dir/main.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.o -MF CMakeFiles/testtrie.dir/main.c.o.d -o CMakeFiles/testtrie.dir/main.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/testtrie.dir/main.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c > CMakeFiles/testtrie.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c > CMakeFiles/testtrie.dir/main.c.i
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testtrie.dir/main.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c -o CMakeFiles/testtrie.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/main.c -o CMakeFiles/testtrie.dir/main.c.s
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/flags.make
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/testtrie.dir/trie.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o -MF CMakeFiles/testtrie.dir/trie.c.o.d -o CMakeFiles/testtrie.dir/trie.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/testtrie.dir/trie.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o -MF CMakeFiles/testtrie.dir/trie.c.o.d -o CMakeFiles/testtrie.dir/trie.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/testtrie.dir/trie.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c > CMakeFiles/testtrie.dir/trie.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c > CMakeFiles/testtrie.dir/trie.c.i
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testtrie.dir/trie.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c -o CMakeFiles/testtrie.dir/trie.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/trie.c -o CMakeFiles/testtrie.dir/trie.c.s
 
 # Object files for target testtrie
 testtrie_OBJECTS = \
@@ -125,21 +125,21 @@ MultiSource/Benchmarks/McCat/03-testtrie/testtrie: MultiSource/Benchmarks/McCat/
 MultiSource/Benchmarks/McCat/03-testtrie/testtrie: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/trie.c.o
 MultiSource/Benchmarks/McCat/03-testtrie/testtrie: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/build.make
 MultiSource/Benchmarks/McCat/03-testtrie/testtrie: MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable testtrie"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testtrie.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.in2 /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.in2
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable testtrie"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testtrie.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.in2 /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/testtrie.in2
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/build: MultiSource/Benchmarks/McCat/03-testtrie/testtrie
 .PHONY : MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/build
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && $(CMAKE_COMMAND) -P CMakeFiles/testtrie.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie && $(CMAKE_COMMAND) -P CMakeFiles/testtrie.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/clean
 
 MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/McCat/03-testtrie /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/McCat/03-testtrie/CMakeFiles/testtrie.dir/depend
 

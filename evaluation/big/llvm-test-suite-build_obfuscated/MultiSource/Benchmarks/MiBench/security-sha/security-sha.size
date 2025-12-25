@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/security-sha/security-sha  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/security-sha/security-sha  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  7933    4256
-.fini                    13   12192
-.rodata                 851   12288
-.eh_frame_hdr           100   13140
-.eh_frame               528   13240
+.text                  6642    4256
+.fini                    13   10900
+.rodata                 507   12288
+.eh_frame_hdr           100   12796
+.eh_frame               520   12896
 .init_array               8   19896
 .fini_array               8   19904
 .dynamic                496   19912
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   20528
 .bss                      8   20544
 .comment                 82       0
-Total                 11439
+Total                  9796
 
 

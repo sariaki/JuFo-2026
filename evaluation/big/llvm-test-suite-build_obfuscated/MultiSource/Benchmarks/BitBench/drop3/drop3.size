@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                    144    4128
 .plt.got                  8    4272
-.text                  2992    4288
-.fini                    13    7280
-.rodata                 583    8192
-.eh_frame_hdr            60    8776
-.eh_frame               212    8840
+.text                  2833    4288
+.fini                    13    7124
+.rodata                 519    8192
+.eh_frame_hdr            60    8712
+.eh_frame               224    8776
 .init_array               8   15816
 .fini_array               8   15824
 .dynamic                480   15832
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   16448
 .bss                      8   16464
 .comment                 82       0
-Total                  5985
+Total                  5774
 
 

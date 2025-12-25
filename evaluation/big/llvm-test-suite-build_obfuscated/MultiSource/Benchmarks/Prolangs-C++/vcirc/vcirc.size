@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/vcirc/vcirc  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/vcirc/vcirc  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -13,20 +13,20 @@ section                size    addr
 .init                    27    4096
 .plt                     16    4128
 .plt.got                  8    4144
-.text                  6677    4160
-.fini                    13   10840
-.rodata                1721   12288
-.eh_frame_hdr           124   14012
-.eh_frame               436   14136
-.init_array               8   19776
-.fini_array               8   19784
-.data.rel.ro            144   19792
-.dynamic                480   19936
-.got                     40   20416
-.got.plt                 24   20456
-.data                    16   20480
-.bss                      8   20496
+.text                  3669    4160
+.fini                    13    7832
+.rodata                1041    8192
+.eh_frame_hdr           124    9236
+.eh_frame               404    9360
+.init_array               8   15680
+.fini_array               8   15688
+.data.rel.ro            144   15696
+.dynamic                480   15840
+.got                     40   16320
+.got.plt                 24   16360
+.data                    16   16384
+.bss                      8   16400
 .comment                 82       0
-Total                 11145
+Total                  7425
 
 

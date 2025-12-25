@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MallocBench/gs//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MallocBench/gs//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/rule
 .PHONY : MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ gs: MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/rule
 
 # fast build rule for target.
 gs/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build
 .PHONY : gs/fast
 
 gdevmem.o: gdevmem.c.o
@@ -136,7 +135,7 @@ gdevmem.o: gdevmem.c.o
 
 # target to build an object file
 gdevmem.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevmem.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevmem.c.o
 .PHONY : gdevmem.c.o
 
 gdevmem.i: gdevmem.c.i
@@ -144,7 +143,7 @@ gdevmem.i: gdevmem.c.i
 
 # target to preprocess a source file
 gdevmem.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevmem.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevmem.c.i
 .PHONY : gdevmem.c.i
 
 gdevmem.s: gdevmem.c.s
@@ -152,7 +151,7 @@ gdevmem.s: gdevmem.c.s
 
 # target to generate assembly for a file
 gdevmem.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevmem.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevmem.c.s
 .PHONY : gdevmem.c.s
 
 gdevs.o: gdevs.c.o
@@ -160,7 +159,7 @@ gdevs.o: gdevs.c.o
 
 # target to build an object file
 gdevs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevs.c.o
 .PHONY : gdevs.c.o
 
 gdevs.i: gdevs.c.i
@@ -168,7 +167,7 @@ gdevs.i: gdevs.c.i
 
 # target to preprocess a source file
 gdevs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevs.c.i
 .PHONY : gdevs.c.i
 
 gdevs.s: gdevs.c.s
@@ -176,7 +175,7 @@ gdevs.s: gdevs.c.s
 
 # target to generate assembly for a file
 gdevs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gdevs.c.s
 .PHONY : gdevs.c.s
 
 gp_unix.o: gp_unix.c.o
@@ -184,7 +183,7 @@ gp_unix.o: gp_unix.c.o
 
 # target to build an object file
 gp_unix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gp_unix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gp_unix.c.o
 .PHONY : gp_unix.c.o
 
 gp_unix.i: gp_unix.c.i
@@ -192,7 +191,7 @@ gp_unix.i: gp_unix.c.i
 
 # target to preprocess a source file
 gp_unix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gp_unix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gp_unix.c.i
 .PHONY : gp_unix.c.i
 
 gp_unix.s: gp_unix.c.s
@@ -200,7 +199,7 @@ gp_unix.s: gp_unix.c.s
 
 # target to generate assembly for a file
 gp_unix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gp_unix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gp_unix.c.s
 .PHONY : gp_unix.c.s
 
 gs.o: gs.c.o
@@ -208,7 +207,7 @@ gs.o: gs.c.o
 
 # target to build an object file
 gs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gs.c.o
 .PHONY : gs.c.o
 
 gs.i: gs.c.i
@@ -216,7 +215,7 @@ gs.i: gs.c.i
 
 # target to preprocess a source file
 gs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gs.c.i
 .PHONY : gs.c.i
 
 gs.s: gs.c.s
@@ -224,7 +223,7 @@ gs.s: gs.c.s
 
 # target to generate assembly for a file
 gs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gs.c.s
 .PHONY : gs.c.s
 
 gschar.o: gschar.c.o
@@ -232,7 +231,7 @@ gschar.o: gschar.c.o
 
 # target to build an object file
 gschar.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gschar.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gschar.c.o
 .PHONY : gschar.c.o
 
 gschar.i: gschar.c.i
@@ -240,7 +239,7 @@ gschar.i: gschar.c.i
 
 # target to preprocess a source file
 gschar.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gschar.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gschar.c.i
 .PHONY : gschar.c.i
 
 gschar.s: gschar.c.s
@@ -248,7 +247,7 @@ gschar.s: gschar.c.s
 
 # target to generate assembly for a file
 gschar.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gschar.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gschar.c.s
 .PHONY : gschar.c.s
 
 gscolor.o: gscolor.c.o
@@ -256,7 +255,7 @@ gscolor.o: gscolor.c.o
 
 # target to build an object file
 gscolor.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscolor.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscolor.c.o
 .PHONY : gscolor.c.o
 
 gscolor.i: gscolor.c.i
@@ -264,7 +263,7 @@ gscolor.i: gscolor.c.i
 
 # target to preprocess a source file
 gscolor.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscolor.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscolor.c.i
 .PHONY : gscolor.c.i
 
 gscolor.s: gscolor.c.s
@@ -272,7 +271,7 @@ gscolor.s: gscolor.c.s
 
 # target to generate assembly for a file
 gscolor.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscolor.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscolor.c.s
 .PHONY : gscolor.c.s
 
 gscoord.o: gscoord.c.o
@@ -280,7 +279,7 @@ gscoord.o: gscoord.c.o
 
 # target to build an object file
 gscoord.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscoord.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscoord.c.o
 .PHONY : gscoord.c.o
 
 gscoord.i: gscoord.c.i
@@ -288,7 +287,7 @@ gscoord.i: gscoord.c.i
 
 # target to preprocess a source file
 gscoord.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscoord.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscoord.c.i
 .PHONY : gscoord.c.i
 
 gscoord.s: gscoord.c.s
@@ -296,7 +295,7 @@ gscoord.s: gscoord.c.s
 
 # target to generate assembly for a file
 gscoord.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscoord.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gscoord.c.s
 .PHONY : gscoord.c.s
 
 gsdevice.o: gsdevice.c.o
@@ -304,7 +303,7 @@ gsdevice.o: gsdevice.c.o
 
 # target to build an object file
 gsdevice.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsdevice.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsdevice.c.o
 .PHONY : gsdevice.c.o
 
 gsdevice.i: gsdevice.c.i
@@ -312,7 +311,7 @@ gsdevice.i: gsdevice.c.i
 
 # target to preprocess a source file
 gsdevice.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsdevice.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsdevice.c.i
 .PHONY : gsdevice.c.i
 
 gsdevice.s: gsdevice.c.s
@@ -320,7 +319,7 @@ gsdevice.s: gsdevice.c.s
 
 # target to generate assembly for a file
 gsdevice.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsdevice.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsdevice.c.s
 .PHONY : gsdevice.c.s
 
 gsfile.o: gsfile.c.o
@@ -328,7 +327,7 @@ gsfile.o: gsfile.c.o
 
 # target to build an object file
 gsfile.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfile.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfile.c.o
 .PHONY : gsfile.c.o
 
 gsfile.i: gsfile.c.i
@@ -336,7 +335,7 @@ gsfile.i: gsfile.c.i
 
 # target to preprocess a source file
 gsfile.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfile.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfile.c.i
 .PHONY : gsfile.c.i
 
 gsfile.s: gsfile.c.s
@@ -344,7 +343,7 @@ gsfile.s: gsfile.c.s
 
 # target to generate assembly for a file
 gsfile.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfile.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfile.c.s
 .PHONY : gsfile.c.s
 
 gsfont.o: gsfont.c.o
@@ -352,7 +351,7 @@ gsfont.o: gsfont.c.o
 
 # target to build an object file
 gsfont.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfont.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfont.c.o
 .PHONY : gsfont.c.o
 
 gsfont.i: gsfont.c.i
@@ -360,7 +359,7 @@ gsfont.i: gsfont.c.i
 
 # target to preprocess a source file
 gsfont.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfont.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfont.c.i
 .PHONY : gsfont.c.i
 
 gsfont.s: gsfont.c.s
@@ -368,7 +367,7 @@ gsfont.s: gsfont.c.s
 
 # target to generate assembly for a file
 gsfont.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfont.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsfont.c.s
 .PHONY : gsfont.c.s
 
 gsim2out.o: gsim2out.c.o
@@ -376,7 +375,7 @@ gsim2out.o: gsim2out.c.o
 
 # target to build an object file
 gsim2out.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsim2out.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsim2out.c.o
 .PHONY : gsim2out.c.o
 
 gsim2out.i: gsim2out.c.i
@@ -384,7 +383,7 @@ gsim2out.i: gsim2out.c.i
 
 # target to preprocess a source file
 gsim2out.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsim2out.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsim2out.c.i
 .PHONY : gsim2out.c.i
 
 gsim2out.s: gsim2out.c.s
@@ -392,7 +391,7 @@ gsim2out.s: gsim2out.c.s
 
 # target to generate assembly for a file
 gsim2out.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsim2out.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsim2out.c.s
 .PHONY : gsim2out.c.s
 
 gsimage.o: gsimage.c.o
@@ -400,7 +399,7 @@ gsimage.o: gsimage.c.o
 
 # target to build an object file
 gsimage.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsimage.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsimage.c.o
 .PHONY : gsimage.c.o
 
 gsimage.i: gsimage.c.i
@@ -408,7 +407,7 @@ gsimage.i: gsimage.c.i
 
 # target to preprocess a source file
 gsimage.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsimage.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsimage.c.i
 .PHONY : gsimage.c.i
 
 gsimage.s: gsimage.c.s
@@ -416,7 +415,7 @@ gsimage.s: gsimage.c.s
 
 # target to generate assembly for a file
 gsimage.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsimage.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsimage.c.s
 .PHONY : gsimage.c.s
 
 gsline.o: gsline.c.o
@@ -424,7 +423,7 @@ gsline.o: gsline.c.o
 
 # target to build an object file
 gsline.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsline.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsline.c.o
 .PHONY : gsline.c.o
 
 gsline.i: gsline.c.i
@@ -432,7 +431,7 @@ gsline.i: gsline.c.i
 
 # target to preprocess a source file
 gsline.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsline.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsline.c.i
 .PHONY : gsline.c.i
 
 gsline.s: gsline.c.s
@@ -440,7 +439,7 @@ gsline.s: gsline.c.s
 
 # target to generate assembly for a file
 gsline.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsline.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsline.c.s
 .PHONY : gsline.c.s
 
 gsmain.o: gsmain.c.o
@@ -448,7 +447,7 @@ gsmain.o: gsmain.c.o
 
 # target to build an object file
 gsmain.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmain.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmain.c.o
 .PHONY : gsmain.c.o
 
 gsmain.i: gsmain.c.i
@@ -456,7 +455,7 @@ gsmain.i: gsmain.c.i
 
 # target to preprocess a source file
 gsmain.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmain.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmain.c.i
 .PHONY : gsmain.c.i
 
 gsmain.s: gsmain.c.s
@@ -464,7 +463,7 @@ gsmain.s: gsmain.c.s
 
 # target to generate assembly for a file
 gsmain.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmain.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmain.c.s
 .PHONY : gsmain.c.s
 
 gsmatrix.o: gsmatrix.c.o
@@ -472,7 +471,7 @@ gsmatrix.o: gsmatrix.c.o
 
 # target to build an object file
 gsmatrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmatrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmatrix.c.o
 .PHONY : gsmatrix.c.o
 
 gsmatrix.i: gsmatrix.c.i
@@ -480,7 +479,7 @@ gsmatrix.i: gsmatrix.c.i
 
 # target to preprocess a source file
 gsmatrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmatrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmatrix.c.i
 .PHONY : gsmatrix.c.i
 
 gsmatrix.s: gsmatrix.c.s
@@ -488,7 +487,7 @@ gsmatrix.s: gsmatrix.c.s
 
 # target to generate assembly for a file
 gsmatrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmatrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmatrix.c.s
 .PHONY : gsmatrix.c.s
 
 gsmisc.o: gsmisc.c.o
@@ -496,7 +495,7 @@ gsmisc.o: gsmisc.c.o
 
 # target to build an object file
 gsmisc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmisc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmisc.c.o
 .PHONY : gsmisc.c.o
 
 gsmisc.i: gsmisc.c.i
@@ -504,7 +503,7 @@ gsmisc.i: gsmisc.c.i
 
 # target to preprocess a source file
 gsmisc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmisc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmisc.c.i
 .PHONY : gsmisc.c.i
 
 gsmisc.s: gsmisc.c.s
@@ -512,7 +511,7 @@ gsmisc.s: gsmisc.c.s
 
 # target to generate assembly for a file
 gsmisc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmisc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsmisc.c.s
 .PHONY : gsmisc.c.s
 
 gspaint.o: gspaint.c.o
@@ -520,7 +519,7 @@ gspaint.o: gspaint.c.o
 
 # target to build an object file
 gspaint.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspaint.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspaint.c.o
 .PHONY : gspaint.c.o
 
 gspaint.i: gspaint.c.i
@@ -528,7 +527,7 @@ gspaint.i: gspaint.c.i
 
 # target to preprocess a source file
 gspaint.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspaint.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspaint.c.i
 .PHONY : gspaint.c.i
 
 gspaint.s: gspaint.c.s
@@ -536,7 +535,7 @@ gspaint.s: gspaint.c.s
 
 # target to generate assembly for a file
 gspaint.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspaint.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspaint.c.s
 .PHONY : gspaint.c.s
 
 gspath.o: gspath.c.o
@@ -544,7 +543,7 @@ gspath.o: gspath.c.o
 
 # target to build an object file
 gspath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath.c.o
 .PHONY : gspath.c.o
 
 gspath.i: gspath.c.i
@@ -552,7 +551,7 @@ gspath.i: gspath.c.i
 
 # target to preprocess a source file
 gspath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath.c.i
 .PHONY : gspath.c.i
 
 gspath.s: gspath.c.s
@@ -560,7 +559,7 @@ gspath.s: gspath.c.s
 
 # target to generate assembly for a file
 gspath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath.c.s
 .PHONY : gspath.c.s
 
 gspath2.o: gspath2.c.o
@@ -568,7 +567,7 @@ gspath2.o: gspath2.c.o
 
 # target to build an object file
 gspath2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath2.c.o
 .PHONY : gspath2.c.o
 
 gspath2.i: gspath2.c.i
@@ -576,7 +575,7 @@ gspath2.i: gspath2.c.i
 
 # target to preprocess a source file
 gspath2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath2.c.i
 .PHONY : gspath2.c.i
 
 gspath2.s: gspath2.c.s
@@ -584,7 +583,7 @@ gspath2.s: gspath2.c.s
 
 # target to generate assembly for a file
 gspath2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gspath2.c.s
 .PHONY : gspath2.c.s
 
 gsstate.o: gsstate.c.o
@@ -592,7 +591,7 @@ gsstate.o: gsstate.c.o
 
 # target to build an object file
 gsstate.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsstate.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsstate.c.o
 .PHONY : gsstate.c.o
 
 gsstate.i: gsstate.c.i
@@ -600,7 +599,7 @@ gsstate.i: gsstate.c.i
 
 # target to preprocess a source file
 gsstate.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsstate.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsstate.c.i
 .PHONY : gsstate.c.i
 
 gsstate.s: gsstate.c.s
@@ -608,7 +607,7 @@ gsstate.s: gsstate.c.s
 
 # target to generate assembly for a file
 gsstate.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsstate.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gsstate.c.s
 .PHONY : gsstate.c.s
 
 gstype1.o: gstype1.c.o
@@ -616,7 +615,7 @@ gstype1.o: gstype1.c.o
 
 # target to build an object file
 gstype1.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gstype1.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gstype1.c.o
 .PHONY : gstype1.c.o
 
 gstype1.i: gstype1.c.i
@@ -624,7 +623,7 @@ gstype1.i: gstype1.c.i
 
 # target to preprocess a source file
 gstype1.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gstype1.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gstype1.c.i
 .PHONY : gstype1.c.i
 
 gstype1.s: gstype1.c.s
@@ -632,7 +631,7 @@ gstype1.s: gstype1.c.s
 
 # target to generate assembly for a file
 gstype1.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gstype1.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gstype1.c.s
 .PHONY : gstype1.c.s
 
 gxcache.o: gxcache.c.o
@@ -640,7 +639,7 @@ gxcache.o: gxcache.c.o
 
 # target to build an object file
 gxcache.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcache.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcache.c.o
 .PHONY : gxcache.c.o
 
 gxcache.i: gxcache.c.i
@@ -648,7 +647,7 @@ gxcache.i: gxcache.c.i
 
 # target to preprocess a source file
 gxcache.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcache.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcache.c.i
 .PHONY : gxcache.c.i
 
 gxcache.s: gxcache.c.s
@@ -656,7 +655,7 @@ gxcache.s: gxcache.c.s
 
 # target to generate assembly for a file
 gxcache.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcache.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcache.c.s
 .PHONY : gxcache.c.s
 
 gxcolor.o: gxcolor.c.o
@@ -664,7 +663,7 @@ gxcolor.o: gxcolor.c.o
 
 # target to build an object file
 gxcolor.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcolor.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcolor.c.o
 .PHONY : gxcolor.c.o
 
 gxcolor.i: gxcolor.c.i
@@ -672,7 +671,7 @@ gxcolor.i: gxcolor.c.i
 
 # target to preprocess a source file
 gxcolor.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcolor.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcolor.c.i
 .PHONY : gxcolor.c.i
 
 gxcolor.s: gxcolor.c.s
@@ -680,7 +679,7 @@ gxcolor.s: gxcolor.c.s
 
 # target to generate assembly for a file
 gxcolor.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcolor.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxcolor.c.s
 .PHONY : gxcolor.c.s
 
 gxdither.o: gxdither.c.o
@@ -688,7 +687,7 @@ gxdither.o: gxdither.c.o
 
 # target to build an object file
 gxdither.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdither.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdither.c.o
 .PHONY : gxdither.c.o
 
 gxdither.i: gxdither.c.i
@@ -696,7 +695,7 @@ gxdither.i: gxdither.c.i
 
 # target to preprocess a source file
 gxdither.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdither.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdither.c.i
 .PHONY : gxdither.c.i
 
 gxdither.s: gxdither.c.s
@@ -704,7 +703,7 @@ gxdither.s: gxdither.c.s
 
 # target to generate assembly for a file
 gxdither.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdither.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdither.c.s
 .PHONY : gxdither.c.s
 
 gxdraw.o: gxdraw.c.o
@@ -712,7 +711,7 @@ gxdraw.o: gxdraw.c.o
 
 # target to build an object file
 gxdraw.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdraw.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdraw.c.o
 .PHONY : gxdraw.c.o
 
 gxdraw.i: gxdraw.c.i
@@ -720,7 +719,7 @@ gxdraw.i: gxdraw.c.i
 
 # target to preprocess a source file
 gxdraw.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdraw.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdraw.c.i
 .PHONY : gxdraw.c.i
 
 gxdraw.s: gxdraw.c.s
@@ -728,7 +727,7 @@ gxdraw.s: gxdraw.c.s
 
 # target to generate assembly for a file
 gxdraw.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdraw.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxdraw.c.s
 .PHONY : gxdraw.c.s
 
 gxfill.o: gxfill.c.o
@@ -736,7 +735,7 @@ gxfill.o: gxfill.c.o
 
 # target to build an object file
 gxfill.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxfill.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxfill.c.o
 .PHONY : gxfill.c.o
 
 gxfill.i: gxfill.c.i
@@ -744,7 +743,7 @@ gxfill.i: gxfill.c.i
 
 # target to preprocess a source file
 gxfill.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxfill.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxfill.c.i
 .PHONY : gxfill.c.i
 
 gxfill.s: gxfill.c.s
@@ -752,7 +751,7 @@ gxfill.s: gxfill.c.s
 
 # target to generate assembly for a file
 gxfill.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxfill.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxfill.c.s
 .PHONY : gxfill.c.s
 
 gxht.o: gxht.c.o
@@ -760,7 +759,7 @@ gxht.o: gxht.c.o
 
 # target to build an object file
 gxht.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxht.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxht.c.o
 .PHONY : gxht.c.o
 
 gxht.i: gxht.c.i
@@ -768,7 +767,7 @@ gxht.i: gxht.c.i
 
 # target to preprocess a source file
 gxht.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxht.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxht.c.i
 .PHONY : gxht.c.i
 
 gxht.s: gxht.c.s
@@ -776,7 +775,7 @@ gxht.s: gxht.c.s
 
 # target to generate assembly for a file
 gxht.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxht.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxht.c.s
 .PHONY : gxht.c.s
 
 gxpath.o: gxpath.c.o
@@ -784,7 +783,7 @@ gxpath.o: gxpath.c.o
 
 # target to build an object file
 gxpath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath.c.o
 .PHONY : gxpath.c.o
 
 gxpath.i: gxpath.c.i
@@ -792,7 +791,7 @@ gxpath.i: gxpath.c.i
 
 # target to preprocess a source file
 gxpath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath.c.i
 .PHONY : gxpath.c.i
 
 gxpath.s: gxpath.c.s
@@ -800,7 +799,7 @@ gxpath.s: gxpath.c.s
 
 # target to generate assembly for a file
 gxpath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath.c.s
 .PHONY : gxpath.c.s
 
 gxpath2.o: gxpath2.c.o
@@ -808,7 +807,7 @@ gxpath2.o: gxpath2.c.o
 
 # target to build an object file
 gxpath2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath2.c.o
 .PHONY : gxpath2.c.o
 
 gxpath2.i: gxpath2.c.i
@@ -816,7 +815,7 @@ gxpath2.i: gxpath2.c.i
 
 # target to preprocess a source file
 gxpath2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath2.c.i
 .PHONY : gxpath2.c.i
 
 gxpath2.s: gxpath2.c.s
@@ -824,7 +823,7 @@ gxpath2.s: gxpath2.c.s
 
 # target to generate assembly for a file
 gxpath2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxpath2.c.s
 .PHONY : gxpath2.c.s
 
 gxstroke.o: gxstroke.c.o
@@ -832,7 +831,7 @@ gxstroke.o: gxstroke.c.o
 
 # target to build an object file
 gxstroke.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxstroke.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxstroke.c.o
 .PHONY : gxstroke.c.o
 
 gxstroke.i: gxstroke.c.i
@@ -840,7 +839,7 @@ gxstroke.i: gxstroke.c.i
 
 # target to preprocess a source file
 gxstroke.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxstroke.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxstroke.c.i
 .PHONY : gxstroke.c.i
 
 gxstroke.s: gxstroke.c.s
@@ -848,7 +847,7 @@ gxstroke.s: gxstroke.c.s
 
 # target to generate assembly for a file
 gxstroke.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxstroke.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/gxstroke.c.s
 .PHONY : gxstroke.c.s
 
 ialloc.o: ialloc.c.o
@@ -856,7 +855,7 @@ ialloc.o: ialloc.c.o
 
 # target to build an object file
 ialloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ialloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ialloc.c.o
 .PHONY : ialloc.c.o
 
 ialloc.i: ialloc.c.i
@@ -864,7 +863,7 @@ ialloc.i: ialloc.c.i
 
 # target to preprocess a source file
 ialloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ialloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ialloc.c.i
 .PHONY : ialloc.c.i
 
 ialloc.s: ialloc.c.s
@@ -872,7 +871,7 @@ ialloc.s: ialloc.c.s
 
 # target to generate assembly for a file
 ialloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ialloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ialloc.c.s
 .PHONY : ialloc.c.s
 
 idebug.o: idebug.c.o
@@ -880,7 +879,7 @@ idebug.o: idebug.c.o
 
 # target to build an object file
 idebug.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idebug.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idebug.c.o
 .PHONY : idebug.c.o
 
 idebug.i: idebug.c.i
@@ -888,7 +887,7 @@ idebug.i: idebug.c.i
 
 # target to preprocess a source file
 idebug.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idebug.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idebug.c.i
 .PHONY : idebug.c.i
 
 idebug.s: idebug.c.s
@@ -896,7 +895,7 @@ idebug.s: idebug.c.s
 
 # target to generate assembly for a file
 idebug.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idebug.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idebug.c.s
 .PHONY : idebug.c.s
 
 idict.o: idict.c.o
@@ -904,7 +903,7 @@ idict.o: idict.c.o
 
 # target to build an object file
 idict.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idict.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idict.c.o
 .PHONY : idict.c.o
 
 idict.i: idict.c.i
@@ -912,7 +911,7 @@ idict.i: idict.c.i
 
 # target to preprocess a source file
 idict.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idict.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idict.c.i
 .PHONY : idict.c.i
 
 idict.s: idict.c.s
@@ -920,7 +919,7 @@ idict.s: idict.c.s
 
 # target to generate assembly for a file
 idict.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idict.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/idict.c.s
 .PHONY : idict.c.s
 
 iinit.o: iinit.c.o
@@ -928,7 +927,7 @@ iinit.o: iinit.c.o
 
 # target to build an object file
 iinit.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iinit.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iinit.c.o
 .PHONY : iinit.c.o
 
 iinit.i: iinit.c.i
@@ -936,7 +935,7 @@ iinit.i: iinit.c.i
 
 # target to preprocess a source file
 iinit.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iinit.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iinit.c.i
 .PHONY : iinit.c.i
 
 iinit.s: iinit.c.s
@@ -944,7 +943,7 @@ iinit.s: iinit.c.s
 
 # target to generate assembly for a file
 iinit.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iinit.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iinit.c.s
 .PHONY : iinit.c.s
 
 iname.o: iname.c.o
@@ -952,7 +951,7 @@ iname.o: iname.c.o
 
 # target to build an object file
 iname.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iname.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iname.c.o
 .PHONY : iname.c.o
 
 iname.i: iname.c.i
@@ -960,7 +959,7 @@ iname.i: iname.c.i
 
 # target to preprocess a source file
 iname.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iname.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iname.c.i
 .PHONY : iname.c.i
 
 iname.s: iname.c.s
@@ -968,7 +967,7 @@ iname.s: iname.c.s
 
 # target to generate assembly for a file
 iname.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iname.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iname.c.s
 .PHONY : iname.c.s
 
 interp.o: interp.c.o
@@ -976,7 +975,7 @@ interp.o: interp.c.o
 
 # target to build an object file
 interp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/interp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/interp.c.o
 .PHONY : interp.c.o
 
 interp.i: interp.c.i
@@ -984,7 +983,7 @@ interp.i: interp.c.i
 
 # target to preprocess a source file
 interp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/interp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/interp.c.i
 .PHONY : interp.c.i
 
 interp.s: interp.c.s
@@ -992,7 +991,7 @@ interp.s: interp.c.s
 
 # target to generate assembly for a file
 interp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/interp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/interp.c.s
 .PHONY : interp.c.s
 
 iscan.o: iscan.c.o
@@ -1000,7 +999,7 @@ iscan.o: iscan.c.o
 
 # target to build an object file
 iscan.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iscan.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iscan.c.o
 .PHONY : iscan.c.o
 
 iscan.i: iscan.c.i
@@ -1008,7 +1007,7 @@ iscan.i: iscan.c.i
 
 # target to preprocess a source file
 iscan.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iscan.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iscan.c.i
 .PHONY : iscan.c.i
 
 iscan.s: iscan.c.s
@@ -1016,7 +1015,7 @@ iscan.s: iscan.c.s
 
 # target to generate assembly for a file
 iscan.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iscan.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iscan.c.s
 .PHONY : iscan.c.s
 
 iutil.o: iutil.c.o
@@ -1024,7 +1023,7 @@ iutil.o: iutil.c.o
 
 # target to build an object file
 iutil.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iutil.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iutil.c.o
 .PHONY : iutil.c.o
 
 iutil.i: iutil.c.i
@@ -1032,7 +1031,7 @@ iutil.i: iutil.c.i
 
 # target to preprocess a source file
 iutil.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iutil.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iutil.c.i
 .PHONY : iutil.c.i
 
 iutil.s: iutil.c.s
@@ -1040,7 +1039,7 @@ iutil.s: iutil.c.s
 
 # target to generate assembly for a file
 iutil.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iutil.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/iutil.c.s
 .PHONY : iutil.c.s
 
 stream.o: stream.c.o
@@ -1048,7 +1047,7 @@ stream.o: stream.c.o
 
 # target to build an object file
 stream.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/stream.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/stream.c.o
 .PHONY : stream.c.o
 
 stream.i: stream.c.i
@@ -1056,7 +1055,7 @@ stream.i: stream.c.i
 
 # target to preprocess a source file
 stream.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/stream.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/stream.c.i
 .PHONY : stream.c.i
 
 stream.s: stream.c.s
@@ -1064,7 +1063,7 @@ stream.s: stream.c.s
 
 # target to generate assembly for a file
 stream.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/stream.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/stream.c.s
 .PHONY : stream.c.s
 
 utrace.o: utrace.c.o
@@ -1072,7 +1071,7 @@ utrace.o: utrace.c.o
 
 # target to build an object file
 utrace.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/utrace.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/utrace.c.o
 .PHONY : utrace.c.o
 
 utrace.i: utrace.c.i
@@ -1080,7 +1079,7 @@ utrace.i: utrace.c.i
 
 # target to preprocess a source file
 utrace.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/utrace.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/utrace.c.i
 .PHONY : utrace.c.i
 
 utrace.s: utrace.c.s
@@ -1088,7 +1087,7 @@ utrace.s: utrace.c.s
 
 # target to generate assembly for a file
 utrace.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/utrace.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/utrace.c.s
 .PHONY : utrace.c.s
 
 zarith.o: zarith.c.o
@@ -1096,7 +1095,7 @@ zarith.o: zarith.c.o
 
 # target to build an object file
 zarith.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarith.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarith.c.o
 .PHONY : zarith.c.o
 
 zarith.i: zarith.c.i
@@ -1104,7 +1103,7 @@ zarith.i: zarith.c.i
 
 # target to preprocess a source file
 zarith.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarith.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarith.c.i
 .PHONY : zarith.c.i
 
 zarith.s: zarith.c.s
@@ -1112,7 +1111,7 @@ zarith.s: zarith.c.s
 
 # target to generate assembly for a file
 zarith.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarith.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarith.c.s
 .PHONY : zarith.c.s
 
 zarray.o: zarray.c.o
@@ -1120,7 +1119,7 @@ zarray.o: zarray.c.o
 
 # target to build an object file
 zarray.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarray.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarray.c.o
 .PHONY : zarray.c.o
 
 zarray.i: zarray.c.i
@@ -1128,7 +1127,7 @@ zarray.i: zarray.c.i
 
 # target to preprocess a source file
 zarray.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarray.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarray.c.i
 .PHONY : zarray.c.i
 
 zarray.s: zarray.c.s
@@ -1136,7 +1135,7 @@ zarray.s: zarray.c.s
 
 # target to generate assembly for a file
 zarray.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarray.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zarray.c.s
 .PHONY : zarray.c.s
 
 zchar.o: zchar.c.o
@@ -1144,7 +1143,7 @@ zchar.o: zchar.c.o
 
 # target to build an object file
 zchar.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zchar.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zchar.c.o
 .PHONY : zchar.c.o
 
 zchar.i: zchar.c.i
@@ -1152,7 +1151,7 @@ zchar.i: zchar.c.i
 
 # target to preprocess a source file
 zchar.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zchar.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zchar.c.i
 .PHONY : zchar.c.i
 
 zchar.s: zchar.c.s
@@ -1160,7 +1159,7 @@ zchar.s: zchar.c.s
 
 # target to generate assembly for a file
 zchar.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zchar.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zchar.c.s
 .PHONY : zchar.c.s
 
 zcolor.o: zcolor.c.o
@@ -1168,7 +1167,7 @@ zcolor.o: zcolor.c.o
 
 # target to build an object file
 zcolor.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcolor.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcolor.c.o
 .PHONY : zcolor.c.o
 
 zcolor.i: zcolor.c.i
@@ -1176,7 +1175,7 @@ zcolor.i: zcolor.c.i
 
 # target to preprocess a source file
 zcolor.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcolor.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcolor.c.i
 .PHONY : zcolor.c.i
 
 zcolor.s: zcolor.c.s
@@ -1184,7 +1183,7 @@ zcolor.s: zcolor.c.s
 
 # target to generate assembly for a file
 zcolor.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcolor.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcolor.c.s
 .PHONY : zcolor.c.s
 
 zcontrol.o: zcontrol.c.o
@@ -1192,7 +1191,7 @@ zcontrol.o: zcontrol.c.o
 
 # target to build an object file
 zcontrol.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcontrol.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcontrol.c.o
 .PHONY : zcontrol.c.o
 
 zcontrol.i: zcontrol.c.i
@@ -1200,7 +1199,7 @@ zcontrol.i: zcontrol.c.i
 
 # target to preprocess a source file
 zcontrol.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcontrol.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcontrol.c.i
 .PHONY : zcontrol.c.i
 
 zcontrol.s: zcontrol.c.s
@@ -1208,7 +1207,7 @@ zcontrol.s: zcontrol.c.s
 
 # target to generate assembly for a file
 zcontrol.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcontrol.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zcontrol.c.s
 .PHONY : zcontrol.c.s
 
 zdevice.o: zdevice.c.o
@@ -1216,7 +1215,7 @@ zdevice.o: zdevice.c.o
 
 # target to build an object file
 zdevice.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdevice.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdevice.c.o
 .PHONY : zdevice.c.o
 
 zdevice.i: zdevice.c.i
@@ -1224,7 +1223,7 @@ zdevice.i: zdevice.c.i
 
 # target to preprocess a source file
 zdevice.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdevice.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdevice.c.i
 .PHONY : zdevice.c.i
 
 zdevice.s: zdevice.c.s
@@ -1232,7 +1231,7 @@ zdevice.s: zdevice.c.s
 
 # target to generate assembly for a file
 zdevice.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdevice.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdevice.c.s
 .PHONY : zdevice.c.s
 
 zdict.o: zdict.c.o
@@ -1240,7 +1239,7 @@ zdict.o: zdict.c.o
 
 # target to build an object file
 zdict.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdict.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdict.c.o
 .PHONY : zdict.c.o
 
 zdict.i: zdict.c.i
@@ -1248,7 +1247,7 @@ zdict.i: zdict.c.i
 
 # target to preprocess a source file
 zdict.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdict.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdict.c.i
 .PHONY : zdict.c.i
 
 zdict.s: zdict.c.s
@@ -1256,7 +1255,7 @@ zdict.s: zdict.c.s
 
 # target to generate assembly for a file
 zdict.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdict.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zdict.c.s
 .PHONY : zdict.c.s
 
 zfile.o: zfile.c.o
@@ -1264,7 +1263,7 @@ zfile.o: zfile.c.o
 
 # target to build an object file
 zfile.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfile.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfile.c.o
 .PHONY : zfile.c.o
 
 zfile.i: zfile.c.i
@@ -1272,7 +1271,7 @@ zfile.i: zfile.c.i
 
 # target to preprocess a source file
 zfile.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfile.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfile.c.i
 .PHONY : zfile.c.i
 
 zfile.s: zfile.c.s
@@ -1280,7 +1279,7 @@ zfile.s: zfile.c.s
 
 # target to generate assembly for a file
 zfile.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfile.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfile.c.s
 .PHONY : zfile.c.s
 
 zfont.o: zfont.c.o
@@ -1288,7 +1287,7 @@ zfont.o: zfont.c.o
 
 # target to build an object file
 zfont.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfont.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfont.c.o
 .PHONY : zfont.c.o
 
 zfont.i: zfont.c.i
@@ -1296,7 +1295,7 @@ zfont.i: zfont.c.i
 
 # target to preprocess a source file
 zfont.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfont.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfont.c.i
 .PHONY : zfont.c.i
 
 zfont.s: zfont.c.s
@@ -1304,7 +1303,7 @@ zfont.s: zfont.c.s
 
 # target to generate assembly for a file
 zfont.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfont.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zfont.c.s
 .PHONY : zfont.c.s
 
 zgeneric.o: zgeneric.c.o
@@ -1312,7 +1311,7 @@ zgeneric.o: zgeneric.c.o
 
 # target to build an object file
 zgeneric.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgeneric.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgeneric.c.o
 .PHONY : zgeneric.c.o
 
 zgeneric.i: zgeneric.c.i
@@ -1320,7 +1319,7 @@ zgeneric.i: zgeneric.c.i
 
 # target to preprocess a source file
 zgeneric.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgeneric.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgeneric.c.i
 .PHONY : zgeneric.c.i
 
 zgeneric.s: zgeneric.c.s
@@ -1328,7 +1327,7 @@ zgeneric.s: zgeneric.c.s
 
 # target to generate assembly for a file
 zgeneric.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgeneric.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgeneric.c.s
 .PHONY : zgeneric.c.s
 
 zgstate.o: zgstate.c.o
@@ -1336,7 +1335,7 @@ zgstate.o: zgstate.c.o
 
 # target to build an object file
 zgstate.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgstate.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgstate.c.o
 .PHONY : zgstate.c.o
 
 zgstate.i: zgstate.c.i
@@ -1344,7 +1343,7 @@ zgstate.i: zgstate.c.i
 
 # target to preprocess a source file
 zgstate.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgstate.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgstate.c.i
 .PHONY : zgstate.c.i
 
 zgstate.s: zgstate.c.s
@@ -1352,7 +1351,7 @@ zgstate.s: zgstate.c.s
 
 # target to generate assembly for a file
 zgstate.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgstate.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zgstate.c.s
 .PHONY : zgstate.c.s
 
 zht.o: zht.c.o
@@ -1360,7 +1359,7 @@ zht.o: zht.c.o
 
 # target to build an object file
 zht.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zht.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zht.c.o
 .PHONY : zht.c.o
 
 zht.i: zht.c.i
@@ -1368,7 +1367,7 @@ zht.i: zht.c.i
 
 # target to preprocess a source file
 zht.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zht.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zht.c.i
 .PHONY : zht.c.i
 
 zht.s: zht.c.s
@@ -1376,7 +1375,7 @@ zht.s: zht.c.s
 
 # target to generate assembly for a file
 zht.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zht.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zht.c.s
 .PHONY : zht.c.s
 
 zmath.o: zmath.c.o
@@ -1384,7 +1383,7 @@ zmath.o: zmath.c.o
 
 # target to build an object file
 zmath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmath.c.o
 .PHONY : zmath.c.o
 
 zmath.i: zmath.c.i
@@ -1392,7 +1391,7 @@ zmath.i: zmath.c.i
 
 # target to preprocess a source file
 zmath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmath.c.i
 .PHONY : zmath.c.i
 
 zmath.s: zmath.c.s
@@ -1400,7 +1399,7 @@ zmath.s: zmath.c.s
 
 # target to generate assembly for a file
 zmath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmath.c.s
 .PHONY : zmath.c.s
 
 zmatrix.o: zmatrix.c.o
@@ -1408,7 +1407,7 @@ zmatrix.o: zmatrix.c.o
 
 # target to build an object file
 zmatrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmatrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmatrix.c.o
 .PHONY : zmatrix.c.o
 
 zmatrix.i: zmatrix.c.i
@@ -1416,7 +1415,7 @@ zmatrix.i: zmatrix.c.i
 
 # target to preprocess a source file
 zmatrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmatrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmatrix.c.i
 .PHONY : zmatrix.c.i
 
 zmatrix.s: zmatrix.c.s
@@ -1424,7 +1423,7 @@ zmatrix.s: zmatrix.c.s
 
 # target to generate assembly for a file
 zmatrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmatrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmatrix.c.s
 .PHONY : zmatrix.c.s
 
 zmisc.o: zmisc.c.o
@@ -1432,7 +1431,7 @@ zmisc.o: zmisc.c.o
 
 # target to build an object file
 zmisc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmisc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmisc.c.o
 .PHONY : zmisc.c.o
 
 zmisc.i: zmisc.c.i
@@ -1440,7 +1439,7 @@ zmisc.i: zmisc.c.i
 
 # target to preprocess a source file
 zmisc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmisc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmisc.c.i
 .PHONY : zmisc.c.i
 
 zmisc.s: zmisc.c.s
@@ -1448,7 +1447,7 @@ zmisc.s: zmisc.c.s
 
 # target to generate assembly for a file
 zmisc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmisc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zmisc.c.s
 .PHONY : zmisc.c.s
 
 zpacked.o: zpacked.c.o
@@ -1456,7 +1455,7 @@ zpacked.o: zpacked.c.o
 
 # target to build an object file
 zpacked.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpacked.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpacked.c.o
 .PHONY : zpacked.c.o
 
 zpacked.i: zpacked.c.i
@@ -1464,7 +1463,7 @@ zpacked.i: zpacked.c.i
 
 # target to preprocess a source file
 zpacked.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpacked.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpacked.c.i
 .PHONY : zpacked.c.i
 
 zpacked.s: zpacked.c.s
@@ -1472,7 +1471,7 @@ zpacked.s: zpacked.c.s
 
 # target to generate assembly for a file
 zpacked.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpacked.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpacked.c.s
 .PHONY : zpacked.c.s
 
 zpaint.o: zpaint.c.o
@@ -1480,7 +1479,7 @@ zpaint.o: zpaint.c.o
 
 # target to build an object file
 zpaint.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpaint.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpaint.c.o
 .PHONY : zpaint.c.o
 
 zpaint.i: zpaint.c.i
@@ -1488,7 +1487,7 @@ zpaint.i: zpaint.c.i
 
 # target to preprocess a source file
 zpaint.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpaint.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpaint.c.i
 .PHONY : zpaint.c.i
 
 zpaint.s: zpaint.c.s
@@ -1496,7 +1495,7 @@ zpaint.s: zpaint.c.s
 
 # target to generate assembly for a file
 zpaint.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpaint.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpaint.c.s
 .PHONY : zpaint.c.s
 
 zpath.o: zpath.c.o
@@ -1504,7 +1503,7 @@ zpath.o: zpath.c.o
 
 # target to build an object file
 zpath.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath.c.o
 .PHONY : zpath.c.o
 
 zpath.i: zpath.c.i
@@ -1512,7 +1511,7 @@ zpath.i: zpath.c.i
 
 # target to preprocess a source file
 zpath.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath.c.i
 .PHONY : zpath.c.i
 
 zpath.s: zpath.c.s
@@ -1520,7 +1519,7 @@ zpath.s: zpath.c.s
 
 # target to generate assembly for a file
 zpath.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath.c.s
 .PHONY : zpath.c.s
 
 zpath2.o: zpath2.c.o
@@ -1528,7 +1527,7 @@ zpath2.o: zpath2.c.o
 
 # target to build an object file
 zpath2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath2.c.o
 .PHONY : zpath2.c.o
 
 zpath2.i: zpath2.c.i
@@ -1536,7 +1535,7 @@ zpath2.i: zpath2.c.i
 
 # target to preprocess a source file
 zpath2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath2.c.i
 .PHONY : zpath2.c.i
 
 zpath2.s: zpath2.c.s
@@ -1544,7 +1543,7 @@ zpath2.s: zpath2.c.s
 
 # target to generate assembly for a file
 zpath2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zpath2.c.s
 .PHONY : zpath2.c.s
 
 zrelbit.o: zrelbit.c.o
@@ -1552,7 +1551,7 @@ zrelbit.o: zrelbit.c.o
 
 # target to build an object file
 zrelbit.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zrelbit.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zrelbit.c.o
 .PHONY : zrelbit.c.o
 
 zrelbit.i: zrelbit.c.i
@@ -1560,7 +1559,7 @@ zrelbit.i: zrelbit.c.i
 
 # target to preprocess a source file
 zrelbit.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zrelbit.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zrelbit.c.i
 .PHONY : zrelbit.c.i
 
 zrelbit.s: zrelbit.c.s
@@ -1568,7 +1567,7 @@ zrelbit.s: zrelbit.c.s
 
 # target to generate assembly for a file
 zrelbit.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zrelbit.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zrelbit.c.s
 .PHONY : zrelbit.c.s
 
 zstack.o: zstack.c.o
@@ -1576,7 +1575,7 @@ zstack.o: zstack.c.o
 
 # target to build an object file
 zstack.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstack.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstack.c.o
 .PHONY : zstack.c.o
 
 zstack.i: zstack.c.i
@@ -1584,7 +1583,7 @@ zstack.i: zstack.c.i
 
 # target to preprocess a source file
 zstack.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstack.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstack.c.i
 .PHONY : zstack.c.i
 
 zstack.s: zstack.c.s
@@ -1592,7 +1591,7 @@ zstack.s: zstack.c.s
 
 # target to generate assembly for a file
 zstack.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstack.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstack.c.s
 .PHONY : zstack.c.s
 
 zstring.o: zstring.c.o
@@ -1600,7 +1599,7 @@ zstring.o: zstring.c.o
 
 # target to build an object file
 zstring.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstring.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstring.c.o
 .PHONY : zstring.c.o
 
 zstring.i: zstring.c.i
@@ -1608,7 +1607,7 @@ zstring.i: zstring.c.i
 
 # target to preprocess a source file
 zstring.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstring.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstring.c.i
 .PHONY : zstring.c.i
 
 zstring.s: zstring.c.s
@@ -1616,7 +1615,7 @@ zstring.s: zstring.c.s
 
 # target to generate assembly for a file
 zstring.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstring.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zstring.c.s
 .PHONY : zstring.c.s
 
 ztype.o: ztype.c.o
@@ -1624,7 +1623,7 @@ ztype.o: ztype.c.o
 
 # target to build an object file
 ztype.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ztype.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ztype.c.o
 .PHONY : ztype.c.o
 
 ztype.i: ztype.c.i
@@ -1632,7 +1631,7 @@ ztype.i: ztype.c.i
 
 # target to preprocess a source file
 ztype.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ztype.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ztype.c.i
 .PHONY : ztype.c.i
 
 ztype.s: ztype.c.s
@@ -1640,7 +1639,7 @@ ztype.s: ztype.c.s
 
 # target to generate assembly for a file
 ztype.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ztype.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/ztype.c.s
 .PHONY : ztype.c.s
 
 zvmem.o: zvmem.c.o
@@ -1648,7 +1647,7 @@ zvmem.o: zvmem.c.o
 
 # target to build an object file
 zvmem.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zvmem.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zvmem.c.o
 .PHONY : zvmem.c.o
 
 zvmem.i: zvmem.c.i
@@ -1656,7 +1655,7 @@ zvmem.i: zvmem.c.i
 
 # target to preprocess a source file
 zvmem.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zvmem.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zvmem.c.i
 .PHONY : zvmem.c.i
 
 zvmem.s: zvmem.c.s
@@ -1664,7 +1663,7 @@ zvmem.s: zvmem.c.s
 
 # target to generate assembly for a file
 zvmem.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zvmem.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/build.make MultiSource/Benchmarks/MallocBench/gs/CMakeFiles/gs.dir/zvmem.c.s
 .PHONY : zvmem.c.s
 
 # Help Target
@@ -1879,7 +1878,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

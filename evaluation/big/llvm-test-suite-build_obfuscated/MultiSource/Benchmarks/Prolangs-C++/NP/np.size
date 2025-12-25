@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/NP/np  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     32    4128
 .plt.got                  8    4160
-.text                  2983    4176
-.fini                    13    7160
-.rodata                 793    8192
-.eh_frame_hdr            60    8988
-.eh_frame               224    9048
+.text                  1670    4176
+.fini                    13    5848
+.rodata                 457    8192
+.eh_frame_hdr            60    8652
+.eh_frame               220    8712
 .init_array               8   15688
 .fini_array               8   15696
 .data.rel.ro             88   15704
@@ -28,6 +28,6 @@ section                size    addr
 .data                    32   16392
 .bss                     64   16424
 .comment                 82       0
-Total                  6250
+Total                  4597
 
 

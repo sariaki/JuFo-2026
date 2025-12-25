@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/depend.make
@@ -72,16 +72,16 @@ include MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fl
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o: MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/flags.make
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o: MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/fourinarow.dir/fourinarow.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o -MF CMakeFiles/fourinarow.dir/fourinarow.c.o.d -o CMakeFiles/fourinarow.dir/fourinarow.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/fourinarow.dir/fourinarow.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o -MF CMakeFiles/fourinarow.dir/fourinarow.c.o.d -o CMakeFiles/fourinarow.dir/fourinarow.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c
 
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fourinarow.dir/fourinarow.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c > CMakeFiles/fourinarow.dir/fourinarow.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c > CMakeFiles/fourinarow.dir/fourinarow.c.i
 
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fourinarow.dir/fourinarow.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c -o CMakeFiles/fourinarow.dir/fourinarow.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.c -o CMakeFiles/fourinarow.dir/fourinarow.c.s
 
 # Object files for target fourinarow
 fourinarow_OBJECTS = \
@@ -93,21 +93,21 @@ fourinarow_EXTERNAL_OBJECTS =
 MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow: MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/fourinarow.c.o
 MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow: MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/build.make
 MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow: MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable fourinarow"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fourinarow.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/test.in /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/test.in
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable fourinarow"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fourinarow.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow/test.in /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/test.in
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/build: MultiSource/Benchmarks/FreeBench/fourinarow/fourinarow
 .PHONY : MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/build
 
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && $(CMAKE_COMMAND) -P CMakeFiles/fourinarow.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow && $(CMAKE_COMMAND) -P CMakeFiles/fourinarow.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/clean
 
 MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/FreeBench/fourinarow /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/FreeBench/fourinarow/CMakeFiles/fourinarow.dir/depend
 

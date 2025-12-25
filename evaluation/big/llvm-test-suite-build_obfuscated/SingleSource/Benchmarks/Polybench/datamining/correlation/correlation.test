@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/correlation 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/correlation.reference_output

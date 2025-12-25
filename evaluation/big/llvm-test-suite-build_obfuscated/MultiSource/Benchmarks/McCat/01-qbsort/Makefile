@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/01-qbsort//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/01-qbsort//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/rule
 .PHONY : MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ qbsort: MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/rule
 
 # fast build rule for target.
 qbsort/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build
 .PHONY : qbsort/fast
 
 benchmark.o: benchmark.c.o
@@ -136,7 +135,7 @@ benchmark.o: benchmark.c.o
 
 # target to build an object file
 benchmark.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/benchmark.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/benchmark.c.o
 .PHONY : benchmark.c.o
 
 benchmark.i: benchmark.c.i
@@ -144,7 +143,7 @@ benchmark.i: benchmark.c.i
 
 # target to preprocess a source file
 benchmark.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/benchmark.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/benchmark.c.i
 .PHONY : benchmark.c.i
 
 benchmark.s: benchmark.c.s
@@ -152,7 +151,7 @@ benchmark.s: benchmark.c.s
 
 # target to generate assembly for a file
 benchmark.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/benchmark.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/benchmark.c.s
 .PHONY : benchmark.c.s
 
 readlist.o: readlist.c.o
@@ -160,7 +159,7 @@ readlist.o: readlist.c.o
 
 # target to build an object file
 readlist.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/readlist.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/readlist.c.o
 .PHONY : readlist.c.o
 
 readlist.i: readlist.c.i
@@ -168,7 +167,7 @@ readlist.i: readlist.c.i
 
 # target to preprocess a source file
 readlist.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/readlist.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/readlist.c.i
 .PHONY : readlist.c.i
 
 readlist.s: readlist.c.s
@@ -176,7 +175,7 @@ readlist.s: readlist.c.s
 
 # target to generate assembly for a file
 readlist.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/readlist.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/readlist.c.s
 .PHONY : readlist.c.s
 
 sort.o: sort.c.o
@@ -184,7 +183,7 @@ sort.o: sort.c.o
 
 # target to build an object file
 sort.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/sort.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/sort.c.o
 .PHONY : sort.c.o
 
 sort.i: sort.c.i
@@ -192,7 +191,7 @@ sort.i: sort.c.i
 
 # target to preprocess a source file
 sort.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/sort.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/sort.c.i
 .PHONY : sort.c.i
 
 sort.s: sort.c.s
@@ -200,7 +199,7 @@ sort.s: sort.c.s
 
 # target to generate assembly for a file
 sort.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/sort.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/build.make MultiSource/Benchmarks/McCat/01-qbsort/CMakeFiles/qbsort.dir/sort.c.s
 .PHONY : sort.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

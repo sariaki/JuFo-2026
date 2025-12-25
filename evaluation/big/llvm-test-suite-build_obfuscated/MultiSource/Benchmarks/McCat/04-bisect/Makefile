@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/04-bisect//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/rule
 .PHONY : MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ bisect: MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/rule
 
 # fast build rule for target.
 bisect/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build
 .PHONY : bisect/fast
 
 allocvector.o: allocvector.c.o
@@ -136,7 +135,7 @@ allocvector.o: allocvector.c.o
 
 # target to build an object file
 allocvector.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.o
 .PHONY : allocvector.c.o
 
 allocvector.i: allocvector.c.i
@@ -144,7 +143,7 @@ allocvector.i: allocvector.c.i
 
 # target to preprocess a source file
 allocvector.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.i
 .PHONY : allocvector.c.i
 
 allocvector.s: allocvector.c.s
@@ -152,7 +151,7 @@ allocvector.s: allocvector.c.s
 
 # target to generate assembly for a file
 allocvector.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/allocvector.c.s
 .PHONY : allocvector.c.s
 
 bisect_test.o: bisect_test.c.o
@@ -160,7 +159,7 @@ bisect_test.o: bisect_test.c.o
 
 # target to build an object file
 bisect_test.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.o
 .PHONY : bisect_test.c.o
 
 bisect_test.i: bisect_test.c.i
@@ -168,7 +167,7 @@ bisect_test.i: bisect_test.c.i
 
 # target to preprocess a source file
 bisect_test.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.i
 .PHONY : bisect_test.c.i
 
 bisect_test.s: bisect_test.c.s
@@ -176,7 +175,7 @@ bisect_test.s: bisect_test.c.s
 
 # target to generate assembly for a file
 bisect_test.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/bisect_test.c.s
 .PHONY : bisect_test.c.s
 
 dbisect.o: dbisect.c.o
@@ -184,7 +183,7 @@ dbisect.o: dbisect.c.o
 
 # target to build an object file
 dbisect.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.o
 .PHONY : dbisect.c.o
 
 dbisect.i: dbisect.c.i
@@ -192,7 +191,7 @@ dbisect.i: dbisect.c.i
 
 # target to preprocess a source file
 dbisect.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.i
 .PHONY : dbisect.c.i
 
 dbisect.s: dbisect.c.s
@@ -200,7 +199,7 @@ dbisect.s: dbisect.c.s
 
 # target to generate assembly for a file
 dbisect.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/build.make MultiSource/Benchmarks/McCat/04-bisect/CMakeFiles/bisect.dir/dbisect.c.s
 .PHONY : dbisect.c.s
 
 # Help Target
@@ -232,7 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

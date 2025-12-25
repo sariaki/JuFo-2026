@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-jpeg/consumer-jpeg  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-jpeg/consumer-jpeg  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
@@ -14,20 +14,20 @@ section                  size     addr
 .init                      27     8192
 .plt                      336     8224
 .plt.got                    8     8560
-.text                  362620     8576
-.fini                      13   371196
-.rodata                 64544   372736
-.eh_frame_hdr            2364   437280
-.eh_frame               16684   439648
-.init_array                 8   460880
-.fini_array                 8   460888
-.data.rel.ro             1352   460896
-.dynamic                  496   462248
-.got                       72   462744
-.got.plt                  184   462824
-.data                      16   463008
-.bss                       32   463024
+.text                  279630     8576
+.fini                      13   288208
+.rodata                 47216   290816
+.eh_frame_hdr            2364   338032
+.eh_frame               16244   340400
+.init_array                 8   362576
+.fini_array                 8   362584
+.data.rel.ro             1352   362592
+.dynamic                  496   363944
+.got                       72   364440
+.got.plt                  184   364520
+.data                      16   364704
+.bss                       32   364720
 .comment                   82        0
-Total                  454940
+Total                  354182
 
 

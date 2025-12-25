@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/SimpleMOC  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/SimpleMOC  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     560    4128
 .plt.got                   8    4688
-.text                  62330    4704
-.fini                     13   67036
-.rodata                 9590   69632
-.eh_frame_hdr            412   79224
-.eh_frame               2356   79640
-.init_array                8   89528
-.fini_array                8   89536
-.dynamic                 496   89544
-.got                      48   90040
-.got.plt                 296   90088
-.data                     16   90384
-.bss                    1408   90400
+.text                  50625    4704
+.fini                     13   55332
+.rodata                 6886   57344
+.eh_frame_hdr            412   64232
+.eh_frame               2292   64648
+.init_array                8   73144
+.fini_array                8   73152
+.dynamic                 496   73160
+.got                      48   73656
+.got.plt                 296   73704
+.data                     16   74000
+.bss                    1408   74016
 .comment                  82       0
-Total                  80444
+Total                  65971
 
 

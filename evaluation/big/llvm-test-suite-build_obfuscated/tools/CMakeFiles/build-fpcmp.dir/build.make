@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Utility rule file for build-fpcmp.
 
@@ -69,12 +69,12 @@ include tools/CMakeFiles/build-fpcmp.dir/progress.make
 tools/CMakeFiles/build-fpcmp: tools/fpcmp
 
 tools/fpcmp: tools/fpcmp.c.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[TEST_SUITE_HOST_CC] Linking host executable fpcmp"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools && cc /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/fpcmp.c.o -o /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/fpcmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[TEST_SUITE_HOST_CC] Linking host executable fpcmp"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools && cc /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/fpcmp.c.o -o /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/fpcmp
 
 tools/fpcmp.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools/fpcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[TEST_SUITE_HOST_CC] Compiling host source fpcmp.c"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools && cc -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools/fpcmp.c -o /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/fpcmp.c.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[TEST_SUITE_HOST_CC] Compiling host source fpcmp.c"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools && cc -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools/fpcmp.c -o /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/fpcmp.c.o
 
 build-fpcmp: tools/CMakeFiles/build-fpcmp
 build-fpcmp: tools/fpcmp
@@ -87,10 +87,10 @@ tools/CMakeFiles/build-fpcmp.dir/build: build-fpcmp
 .PHONY : tools/CMakeFiles/build-fpcmp.dir/build
 
 tools/CMakeFiles/build-fpcmp.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools && $(CMAKE_COMMAND) -P CMakeFiles/build-fpcmp.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools && $(CMAKE_COMMAND) -P CMakeFiles/build-fpcmp.dir/cmake_clean.cmake
 .PHONY : tools/CMakeFiles/build-fpcmp.dir/clean
 
 tools/CMakeFiles/build-fpcmp.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/CMakeFiles/build-fpcmp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/tools /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/CMakeFiles/build-fpcmp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tools/CMakeFiles/build-fpcmp.dir/depend
 

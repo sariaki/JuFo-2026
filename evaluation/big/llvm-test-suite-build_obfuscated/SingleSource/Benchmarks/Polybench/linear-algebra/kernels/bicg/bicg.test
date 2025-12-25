@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/bicg 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/bicg.reference_output

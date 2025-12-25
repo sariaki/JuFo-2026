@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/09-vor//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/09-vor//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/rule
 .PHONY : MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ vor: MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/rule
 
 # fast build rule for target.
 vor/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build
 .PHONY : vor/fast
 
 ch.o: ch.c.o
@@ -136,7 +135,7 @@ ch.o: ch.c.o
 
 # target to build an object file
 ch.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/ch.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/ch.c.o
 .PHONY : ch.c.o
 
 ch.i: ch.c.i
@@ -144,7 +143,7 @@ ch.i: ch.c.i
 
 # target to preprocess a source file
 ch.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/ch.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/ch.c.i
 .PHONY : ch.c.i
 
 ch.s: ch.c.s
@@ -152,7 +151,7 @@ ch.s: ch.c.s
 
 # target to generate assembly for a file
 ch.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/ch.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/ch.c.s
 .PHONY : ch.c.s
 
 intersec.o: intersec.c.o
@@ -160,7 +159,7 @@ intersec.o: intersec.c.o
 
 # target to build an object file
 intersec.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/intersec.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/intersec.c.o
 .PHONY : intersec.c.o
 
 intersec.i: intersec.c.i
@@ -168,7 +167,7 @@ intersec.i: intersec.c.i
 
 # target to preprocess a source file
 intersec.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/intersec.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/intersec.c.i
 .PHONY : intersec.c.i
 
 intersec.s: intersec.c.s
@@ -176,7 +175,7 @@ intersec.s: intersec.c.s
 
 # target to generate assembly for a file
 intersec.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/intersec.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/intersec.c.s
 .PHONY : intersec.c.s
 
 pointlis.o: pointlis.c.o
@@ -184,7 +183,7 @@ pointlis.o: pointlis.c.o
 
 # target to build an object file
 pointlis.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/pointlis.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/pointlis.c.o
 .PHONY : pointlis.c.o
 
 pointlis.i: pointlis.c.i
@@ -192,7 +191,7 @@ pointlis.i: pointlis.c.i
 
 # target to preprocess a source file
 pointlis.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/pointlis.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/pointlis.c.i
 .PHONY : pointlis.c.i
 
 pointlis.s: pointlis.c.s
@@ -200,7 +199,7 @@ pointlis.s: pointlis.c.s
 
 # target to generate assembly for a file
 pointlis.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/pointlis.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/pointlis.c.s
 .PHONY : pointlis.c.s
 
 splay.o: splay.c.o
@@ -208,7 +207,7 @@ splay.o: splay.c.o
 
 # target to build an object file
 splay.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay.c.o
 .PHONY : splay.c.o
 
 splay.i: splay.c.i
@@ -216,7 +215,7 @@ splay.i: splay.c.i
 
 # target to preprocess a source file
 splay.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay.c.i
 .PHONY : splay.c.i
 
 splay.s: splay.c.s
@@ -224,7 +223,7 @@ splay.s: splay.c.s
 
 # target to generate assembly for a file
 splay.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay.c.s
 .PHONY : splay.c.s
 
 splay2.o: splay2.c.o
@@ -232,7 +231,7 @@ splay2.o: splay2.c.o
 
 # target to build an object file
 splay2.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay2.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay2.c.o
 .PHONY : splay2.c.o
 
 splay2.i: splay2.c.i
@@ -240,7 +239,7 @@ splay2.i: splay2.c.i
 
 # target to preprocess a source file
 splay2.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay2.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay2.c.i
 .PHONY : splay2.c.i
 
 splay2.s: splay2.c.s
@@ -248,7 +247,7 @@ splay2.s: splay2.c.s
 
 # target to generate assembly for a file
 splay2.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay2.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/splay2.c.s
 .PHONY : splay2.c.s
 
 vor.o: vor.c.o
@@ -256,7 +255,7 @@ vor.o: vor.c.o
 
 # target to build an object file
 vor.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/vor.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/vor.c.o
 .PHONY : vor.c.o
 
 vor.i: vor.c.i
@@ -264,7 +263,7 @@ vor.i: vor.c.i
 
 # target to preprocess a source file
 vor.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/vor.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/vor.c.i
 .PHONY : vor.c.i
 
 vor.s: vor.c.s
@@ -272,7 +271,7 @@ vor.s: vor.c.s
 
 # target to generate assembly for a file
 vor.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/vor.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/build.make MultiSource/Benchmarks/McCat/09-vor/CMakeFiles/vor.dir/vor.c.s
 .PHONY : vor.c.s
 
 # Help Target
@@ -313,7 +312,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

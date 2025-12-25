@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C++-ConditionalExpr 
-VERIFY: %b/fpcmp-target %o %S/ConditionalExpr.reference_output

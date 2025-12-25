@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-globalrefs 
-VERIFY: %b/fpcmp-target %o %S/globalrefs.reference_output

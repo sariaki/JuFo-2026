@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/bmm/bmm  :
 section                    size    addr
 .interp                      28     792
 .note.gnu.property           32     824
@@ -14,11 +14,11 @@ section                    size    addr
 .init                        27    4096
 .plt                         80    4128
 .plt.got                      8    4208
-.text                      2402    4224
-.fini                        13    6628
-.rodata                     376    8192
-.eh_frame_hdr                92    8568
-.eh_frame                   428    8664
+.text                      2248    4224
+.fini                        13    6472
+.rodata                     360    8192
+.eh_frame_hdr                92    8552
+.eh_frame                   424    8648
 .init_array                   8   15824
 .fini_array                   8   15832
 .dynamic                    480   15840
@@ -27,6 +27,6 @@ section                    size    addr
 .data                        16   16416
 .bss                   12582936   16432
 .comment                     82       0
-Total                  12587972
+Total                  12587798
 
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/ecbdes//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/ecbdes//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/rule
 .PHONY : MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ ecbdes: MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/rule
 
 # fast build rule for target.
 ecbdes/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build
 .PHONY : ecbdes/fast
 
 des_enc.o: des_enc.c.o
@@ -136,7 +135,7 @@ des_enc.o: des_enc.c.o
 
 # target to build an object file
 des_enc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/des_enc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/des_enc.c.o
 .PHONY : des_enc.c.o
 
 des_enc.i: des_enc.c.i
@@ -144,7 +143,7 @@ des_enc.i: des_enc.c.i
 
 # target to preprocess a source file
 des_enc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/des_enc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/des_enc.c.i
 .PHONY : des_enc.c.i
 
 des_enc.s: des_enc.c.s
@@ -152,7 +151,7 @@ des_enc.s: des_enc.c.s
 
 # target to generate assembly for a file
 des_enc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/des_enc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/des_enc.c.s
 .PHONY : des_enc.c.s
 
 driver.o: driver.c.o
@@ -160,7 +159,7 @@ driver.o: driver.c.o
 
 # target to build an object file
 driver.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/driver.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/driver.c.o
 .PHONY : driver.c.o
 
 driver.i: driver.c.i
@@ -168,7 +167,7 @@ driver.i: driver.c.i
 
 # target to preprocess a source file
 driver.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/driver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/driver.c.i
 .PHONY : driver.c.i
 
 driver.s: driver.c.s
@@ -176,7 +175,7 @@ driver.s: driver.c.s
 
 # target to generate assembly for a file
 driver.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/driver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/driver.c.s
 .PHONY : driver.c.s
 
 ecb_enc.o: ecb_enc.c.o
@@ -184,7 +183,7 @@ ecb_enc.o: ecb_enc.c.o
 
 # target to build an object file
 ecb_enc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/ecb_enc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/ecb_enc.c.o
 .PHONY : ecb_enc.c.o
 
 ecb_enc.i: ecb_enc.c.i
@@ -192,7 +191,7 @@ ecb_enc.i: ecb_enc.c.i
 
 # target to preprocess a source file
 ecb_enc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/ecb_enc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/ecb_enc.c.i
 .PHONY : ecb_enc.c.i
 
 ecb_enc.s: ecb_enc.c.s
@@ -200,7 +199,7 @@ ecb_enc.s: ecb_enc.c.s
 
 # target to generate assembly for a file
 ecb_enc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/ecb_enc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/ecb_enc.c.s
 .PHONY : ecb_enc.c.s
 
 set_key.o: set_key.c.o
@@ -208,7 +207,7 @@ set_key.o: set_key.c.o
 
 # target to build an object file
 set_key.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/set_key.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/set_key.c.o
 .PHONY : set_key.c.o
 
 set_key.i: set_key.c.i
@@ -216,7 +215,7 @@ set_key.i: set_key.c.i
 
 # target to preprocess a source file
 set_key.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/set_key.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/set_key.c.i
 .PHONY : set_key.c.i
 
 set_key.s: set_key.c.s
@@ -224,7 +223,7 @@ set_key.s: set_key.c.s
 
 # target to generate assembly for a file
 set_key.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/set_key.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/build.make MultiSource/Benchmarks/VersaBench/ecbdes/CMakeFiles/ecbdes.dir/set_key.c.s
 .PHONY : set_key.c.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

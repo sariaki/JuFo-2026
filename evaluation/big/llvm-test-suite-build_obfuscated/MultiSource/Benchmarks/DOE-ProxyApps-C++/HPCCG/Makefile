@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ HPCCG: MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/rule
 
 # fast build rule for target.
 HPCCG/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build
 .PHONY : HPCCG/fast
 
 HPCCG.o: HPCCG.cpp.o
@@ -136,7 +135,7 @@ HPCCG.o: HPCCG.cpp.o
 
 # target to build an object file
 HPCCG.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPCCG.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPCCG.cpp.o
 .PHONY : HPCCG.cpp.o
 
 HPCCG.i: HPCCG.cpp.i
@@ -144,7 +143,7 @@ HPCCG.i: HPCCG.cpp.i
 
 # target to preprocess a source file
 HPCCG.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPCCG.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPCCG.cpp.i
 .PHONY : HPCCG.cpp.i
 
 HPCCG.s: HPCCG.cpp.s
@@ -152,7 +151,7 @@ HPCCG.s: HPCCG.cpp.s
 
 # target to generate assembly for a file
 HPCCG.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPCCG.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPCCG.cpp.s
 .PHONY : HPCCG.cpp.s
 
 HPC_Sparse_Matrix.o: HPC_Sparse_Matrix.cpp.o
@@ -160,7 +159,7 @@ HPC_Sparse_Matrix.o: HPC_Sparse_Matrix.cpp.o
 
 # target to build an object file
 HPC_Sparse_Matrix.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_Sparse_Matrix.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_Sparse_Matrix.cpp.o
 .PHONY : HPC_Sparse_Matrix.cpp.o
 
 HPC_Sparse_Matrix.i: HPC_Sparse_Matrix.cpp.i
@@ -168,7 +167,7 @@ HPC_Sparse_Matrix.i: HPC_Sparse_Matrix.cpp.i
 
 # target to preprocess a source file
 HPC_Sparse_Matrix.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_Sparse_Matrix.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_Sparse_Matrix.cpp.i
 .PHONY : HPC_Sparse_Matrix.cpp.i
 
 HPC_Sparse_Matrix.s: HPC_Sparse_Matrix.cpp.s
@@ -176,7 +175,7 @@ HPC_Sparse_Matrix.s: HPC_Sparse_Matrix.cpp.s
 
 # target to generate assembly for a file
 HPC_Sparse_Matrix.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_Sparse_Matrix.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_Sparse_Matrix.cpp.s
 .PHONY : HPC_Sparse_Matrix.cpp.s
 
 HPC_sparsemv.o: HPC_sparsemv.cpp.o
@@ -184,7 +183,7 @@ HPC_sparsemv.o: HPC_sparsemv.cpp.o
 
 # target to build an object file
 HPC_sparsemv.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_sparsemv.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_sparsemv.cpp.o
 .PHONY : HPC_sparsemv.cpp.o
 
 HPC_sparsemv.i: HPC_sparsemv.cpp.i
@@ -192,7 +191,7 @@ HPC_sparsemv.i: HPC_sparsemv.cpp.i
 
 # target to preprocess a source file
 HPC_sparsemv.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_sparsemv.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_sparsemv.cpp.i
 .PHONY : HPC_sparsemv.cpp.i
 
 HPC_sparsemv.s: HPC_sparsemv.cpp.s
@@ -200,7 +199,7 @@ HPC_sparsemv.s: HPC_sparsemv.cpp.s
 
 # target to generate assembly for a file
 HPC_sparsemv.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_sparsemv.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/HPC_sparsemv.cpp.s
 .PHONY : HPC_sparsemv.cpp.s
 
 YAML_Doc.o: YAML_Doc.cpp.o
@@ -208,7 +207,7 @@ YAML_Doc.o: YAML_Doc.cpp.o
 
 # target to build an object file
 YAML_Doc.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Doc.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Doc.cpp.o
 .PHONY : YAML_Doc.cpp.o
 
 YAML_Doc.i: YAML_Doc.cpp.i
@@ -216,7 +215,7 @@ YAML_Doc.i: YAML_Doc.cpp.i
 
 # target to preprocess a source file
 YAML_Doc.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Doc.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Doc.cpp.i
 .PHONY : YAML_Doc.cpp.i
 
 YAML_Doc.s: YAML_Doc.cpp.s
@@ -224,7 +223,7 @@ YAML_Doc.s: YAML_Doc.cpp.s
 
 # target to generate assembly for a file
 YAML_Doc.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Doc.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Doc.cpp.s
 .PHONY : YAML_Doc.cpp.s
 
 YAML_Element.o: YAML_Element.cpp.o
@@ -232,7 +231,7 @@ YAML_Element.o: YAML_Element.cpp.o
 
 # target to build an object file
 YAML_Element.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Element.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Element.cpp.o
 .PHONY : YAML_Element.cpp.o
 
 YAML_Element.i: YAML_Element.cpp.i
@@ -240,7 +239,7 @@ YAML_Element.i: YAML_Element.cpp.i
 
 # target to preprocess a source file
 YAML_Element.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Element.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Element.cpp.i
 .PHONY : YAML_Element.cpp.i
 
 YAML_Element.s: YAML_Element.cpp.s
@@ -248,7 +247,7 @@ YAML_Element.s: YAML_Element.cpp.s
 
 # target to generate assembly for a file
 YAML_Element.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Element.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/YAML_Element.cpp.s
 .PHONY : YAML_Element.cpp.s
 
 compute_residual.o: compute_residual.cpp.o
@@ -256,7 +255,7 @@ compute_residual.o: compute_residual.cpp.o
 
 # target to build an object file
 compute_residual.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/compute_residual.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/compute_residual.cpp.o
 .PHONY : compute_residual.cpp.o
 
 compute_residual.i: compute_residual.cpp.i
@@ -264,7 +263,7 @@ compute_residual.i: compute_residual.cpp.i
 
 # target to preprocess a source file
 compute_residual.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/compute_residual.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/compute_residual.cpp.i
 .PHONY : compute_residual.cpp.i
 
 compute_residual.s: compute_residual.cpp.s
@@ -272,7 +271,7 @@ compute_residual.s: compute_residual.cpp.s
 
 # target to generate assembly for a file
 compute_residual.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/compute_residual.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/compute_residual.cpp.s
 .PHONY : compute_residual.cpp.s
 
 ddot.o: ddot.cpp.o
@@ -280,7 +279,7 @@ ddot.o: ddot.cpp.o
 
 # target to build an object file
 ddot.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/ddot.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/ddot.cpp.o
 .PHONY : ddot.cpp.o
 
 ddot.i: ddot.cpp.i
@@ -288,7 +287,7 @@ ddot.i: ddot.cpp.i
 
 # target to preprocess a source file
 ddot.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/ddot.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/ddot.cpp.i
 .PHONY : ddot.cpp.i
 
 ddot.s: ddot.cpp.s
@@ -296,7 +295,7 @@ ddot.s: ddot.cpp.s
 
 # target to generate assembly for a file
 ddot.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/ddot.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/ddot.cpp.s
 .PHONY : ddot.cpp.s
 
 dump_matlab_matrix.o: dump_matlab_matrix.cpp.o
@@ -304,7 +303,7 @@ dump_matlab_matrix.o: dump_matlab_matrix.cpp.o
 
 # target to build an object file
 dump_matlab_matrix.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/dump_matlab_matrix.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/dump_matlab_matrix.cpp.o
 .PHONY : dump_matlab_matrix.cpp.o
 
 dump_matlab_matrix.i: dump_matlab_matrix.cpp.i
@@ -312,7 +311,7 @@ dump_matlab_matrix.i: dump_matlab_matrix.cpp.i
 
 # target to preprocess a source file
 dump_matlab_matrix.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/dump_matlab_matrix.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/dump_matlab_matrix.cpp.i
 .PHONY : dump_matlab_matrix.cpp.i
 
 dump_matlab_matrix.s: dump_matlab_matrix.cpp.s
@@ -320,7 +319,7 @@ dump_matlab_matrix.s: dump_matlab_matrix.cpp.s
 
 # target to generate assembly for a file
 dump_matlab_matrix.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/dump_matlab_matrix.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/dump_matlab_matrix.cpp.s
 .PHONY : dump_matlab_matrix.cpp.s
 
 exchange_externals.o: exchange_externals.cpp.o
@@ -328,7 +327,7 @@ exchange_externals.o: exchange_externals.cpp.o
 
 # target to build an object file
 exchange_externals.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/exchange_externals.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/exchange_externals.cpp.o
 .PHONY : exchange_externals.cpp.o
 
 exchange_externals.i: exchange_externals.cpp.i
@@ -336,7 +335,7 @@ exchange_externals.i: exchange_externals.cpp.i
 
 # target to preprocess a source file
 exchange_externals.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/exchange_externals.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/exchange_externals.cpp.i
 .PHONY : exchange_externals.cpp.i
 
 exchange_externals.s: exchange_externals.cpp.s
@@ -344,7 +343,7 @@ exchange_externals.s: exchange_externals.cpp.s
 
 # target to generate assembly for a file
 exchange_externals.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/exchange_externals.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/exchange_externals.cpp.s
 .PHONY : exchange_externals.cpp.s
 
 generate_matrix.o: generate_matrix.cpp.o
@@ -352,7 +351,7 @@ generate_matrix.o: generate_matrix.cpp.o
 
 # target to build an object file
 generate_matrix.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/generate_matrix.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/generate_matrix.cpp.o
 .PHONY : generate_matrix.cpp.o
 
 generate_matrix.i: generate_matrix.cpp.i
@@ -360,7 +359,7 @@ generate_matrix.i: generate_matrix.cpp.i
 
 # target to preprocess a source file
 generate_matrix.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/generate_matrix.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/generate_matrix.cpp.i
 .PHONY : generate_matrix.cpp.i
 
 generate_matrix.s: generate_matrix.cpp.s
@@ -368,7 +367,7 @@ generate_matrix.s: generate_matrix.cpp.s
 
 # target to generate assembly for a file
 generate_matrix.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/generate_matrix.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/generate_matrix.cpp.s
 .PHONY : generate_matrix.cpp.s
 
 main.o: main.cpp.o
@@ -376,7 +375,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/main.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -384,7 +383,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/main.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -392,7 +391,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/main.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 make_local_matrix.o: make_local_matrix.cpp.o
@@ -400,7 +399,7 @@ make_local_matrix.o: make_local_matrix.cpp.o
 
 # target to build an object file
 make_local_matrix.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/make_local_matrix.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/make_local_matrix.cpp.o
 .PHONY : make_local_matrix.cpp.o
 
 make_local_matrix.i: make_local_matrix.cpp.i
@@ -408,7 +407,7 @@ make_local_matrix.i: make_local_matrix.cpp.i
 
 # target to preprocess a source file
 make_local_matrix.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/make_local_matrix.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/make_local_matrix.cpp.i
 .PHONY : make_local_matrix.cpp.i
 
 make_local_matrix.s: make_local_matrix.cpp.s
@@ -416,7 +415,7 @@ make_local_matrix.s: make_local_matrix.cpp.s
 
 # target to generate assembly for a file
 make_local_matrix.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/make_local_matrix.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/make_local_matrix.cpp.s
 .PHONY : make_local_matrix.cpp.s
 
 mytimer.o: mytimer.cpp.o
@@ -424,7 +423,7 @@ mytimer.o: mytimer.cpp.o
 
 # target to build an object file
 mytimer.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/mytimer.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/mytimer.cpp.o
 .PHONY : mytimer.cpp.o
 
 mytimer.i: mytimer.cpp.i
@@ -432,7 +431,7 @@ mytimer.i: mytimer.cpp.i
 
 # target to preprocess a source file
 mytimer.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/mytimer.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/mytimer.cpp.i
 .PHONY : mytimer.cpp.i
 
 mytimer.s: mytimer.cpp.s
@@ -440,7 +439,7 @@ mytimer.s: mytimer.cpp.s
 
 # target to generate assembly for a file
 mytimer.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/mytimer.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/mytimer.cpp.s
 .PHONY : mytimer.cpp.s
 
 read_HPC_row.o: read_HPC_row.cpp.o
@@ -448,7 +447,7 @@ read_HPC_row.o: read_HPC_row.cpp.o
 
 # target to build an object file
 read_HPC_row.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/read_HPC_row.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/read_HPC_row.cpp.o
 .PHONY : read_HPC_row.cpp.o
 
 read_HPC_row.i: read_HPC_row.cpp.i
@@ -456,7 +455,7 @@ read_HPC_row.i: read_HPC_row.cpp.i
 
 # target to preprocess a source file
 read_HPC_row.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/read_HPC_row.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/read_HPC_row.cpp.i
 .PHONY : read_HPC_row.cpp.i
 
 read_HPC_row.s: read_HPC_row.cpp.s
@@ -464,7 +463,7 @@ read_HPC_row.s: read_HPC_row.cpp.s
 
 # target to generate assembly for a file
 read_HPC_row.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/read_HPC_row.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/read_HPC_row.cpp.s
 .PHONY : read_HPC_row.cpp.s
 
 waxpby.o: waxpby.cpp.o
@@ -472,7 +471,7 @@ waxpby.o: waxpby.cpp.o
 
 # target to build an object file
 waxpby.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/waxpby.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/waxpby.cpp.o
 .PHONY : waxpby.cpp.o
 
 waxpby.i: waxpby.cpp.i
@@ -480,7 +479,7 @@ waxpby.i: waxpby.cpp.i
 
 # target to preprocess a source file
 waxpby.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/waxpby.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/waxpby.cpp.i
 .PHONY : waxpby.cpp.i
 
 waxpby.s: waxpby.cpp.s
@@ -488,7 +487,7 @@ waxpby.s: waxpby.cpp.s
 
 # target to generate assembly for a file
 waxpby.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/waxpby.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/CMakeFiles/HPCCG.dir/waxpby.cpp.s
 .PHONY : waxpby.cpp.s
 
 # Help Target
@@ -556,7 +555,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

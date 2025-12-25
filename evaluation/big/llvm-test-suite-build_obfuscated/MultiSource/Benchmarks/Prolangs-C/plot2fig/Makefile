@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/plot2fig//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/plot2fig//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ plot2fig: MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rul
 
 # fast build rule for target.
 plot2fig/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build
 .PHONY : plot2fig/fast
 
 alabel.o: alabel.c.o
@@ -136,7 +135,7 @@ alabel.o: alabel.c.o
 
 # target to build an object file
 alabel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/alabel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/alabel.c.o
 .PHONY : alabel.c.o
 
 alabel.i: alabel.c.i
@@ -144,7 +143,7 @@ alabel.i: alabel.c.i
 
 # target to preprocess a source file
 alabel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/alabel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/alabel.c.i
 .PHONY : alabel.c.i
 
 alabel.s: alabel.c.s
@@ -152,7 +151,7 @@ alabel.s: alabel.c.s
 
 # target to generate assembly for a file
 alabel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/alabel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/alabel.c.s
 .PHONY : alabel.c.s
 
 arc.o: arc.c.o
@@ -160,7 +159,7 @@ arc.o: arc.c.o
 
 # target to build an object file
 arc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/arc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/arc.c.o
 .PHONY : arc.c.o
 
 arc.i: arc.c.i
@@ -168,7 +167,7 @@ arc.i: arc.c.i
 
 # target to preprocess a source file
 arc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/arc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/arc.c.i
 .PHONY : arc.c.i
 
 arc.s: arc.c.s
@@ -176,7 +175,7 @@ arc.s: arc.c.s
 
 # target to generate assembly for a file
 arc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/arc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/arc.c.s
 .PHONY : arc.c.s
 
 circle.o: circle.c.o
@@ -184,7 +183,7 @@ circle.o: circle.c.o
 
 # target to build an object file
 circle.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/circle.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/circle.c.o
 .PHONY : circle.c.o
 
 circle.i: circle.c.i
@@ -192,7 +191,7 @@ circle.i: circle.c.i
 
 # target to preprocess a source file
 circle.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/circle.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/circle.c.i
 .PHONY : circle.c.i
 
 circle.s: circle.c.s
@@ -200,7 +199,7 @@ circle.s: circle.c.s
 
 # target to generate assembly for a file
 circle.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/circle.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/circle.c.s
 .PHONY : circle.c.s
 
 closepl.o: closepl.c.o
@@ -208,7 +207,7 @@ closepl.o: closepl.c.o
 
 # target to build an object file
 closepl.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/closepl.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/closepl.c.o
 .PHONY : closepl.c.o
 
 closepl.i: closepl.c.i
@@ -216,7 +215,7 @@ closepl.i: closepl.c.i
 
 # target to preprocess a source file
 closepl.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/closepl.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/closepl.c.i
 .PHONY : closepl.c.i
 
 closepl.s: closepl.c.s
@@ -224,7 +223,7 @@ closepl.s: closepl.c.s
 
 # target to generate assembly for a file
 closepl.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/closepl.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/closepl.c.s
 .PHONY : closepl.c.s
 
 color.o: color.c.o
@@ -232,7 +231,7 @@ color.o: color.c.o
 
 # target to build an object file
 color.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/color.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/color.c.o
 .PHONY : color.c.o
 
 color.i: color.c.i
@@ -240,7 +239,7 @@ color.i: color.c.i
 
 # target to preprocess a source file
 color.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/color.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/color.c.i
 .PHONY : color.c.i
 
 color.s: color.c.s
@@ -248,7 +247,7 @@ color.s: color.c.s
 
 # target to generate assembly for a file
 color.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/color.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/color.c.s
 .PHONY : color.c.s
 
 cont.o: cont.c.o
@@ -256,7 +255,7 @@ cont.o: cont.c.o
 
 # target to build an object file
 cont.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/cont.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/cont.c.o
 .PHONY : cont.c.o
 
 cont.i: cont.c.i
@@ -264,7 +263,7 @@ cont.i: cont.c.i
 
 # target to preprocess a source file
 cont.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/cont.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/cont.c.i
 .PHONY : cont.c.i
 
 cont.s: cont.c.s
@@ -272,7 +271,7 @@ cont.s: cont.c.s
 
 # target to generate assembly for a file
 cont.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/cont.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/cont.c.s
 .PHONY : cont.c.s
 
 dot.o: dot.c.o
@@ -280,7 +279,7 @@ dot.o: dot.c.o
 
 # target to build an object file
 dot.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/dot.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/dot.c.o
 .PHONY : dot.c.o
 
 dot.i: dot.c.i
@@ -288,7 +287,7 @@ dot.i: dot.c.i
 
 # target to preprocess a source file
 dot.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/dot.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/dot.c.i
 .PHONY : dot.c.i
 
 dot.s: dot.c.s
@@ -296,7 +295,7 @@ dot.s: dot.c.s
 
 # target to generate assembly for a file
 dot.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/dot.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/dot.c.s
 .PHONY : dot.c.s
 
 draw_line.o: draw_line.c.o
@@ -304,7 +303,7 @@ draw_line.o: draw_line.c.o
 
 # target to build an object file
 draw_line.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/draw_line.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/draw_line.c.o
 .PHONY : draw_line.c.o
 
 draw_line.i: draw_line.c.i
@@ -312,7 +311,7 @@ draw_line.i: draw_line.c.i
 
 # target to preprocess a source file
 draw_line.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/draw_line.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/draw_line.c.i
 .PHONY : draw_line.c.i
 
 draw_line.s: draw_line.c.s
@@ -320,7 +319,7 @@ draw_line.s: draw_line.c.s
 
 # target to generate assembly for a file
 draw_line.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/draw_line.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/draw_line.c.s
 .PHONY : draw_line.c.s
 
 erase.o: erase.c.o
@@ -328,7 +327,7 @@ erase.o: erase.c.o
 
 # target to build an object file
 erase.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/erase.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/erase.c.o
 .PHONY : erase.c.o
 
 erase.i: erase.c.i
@@ -336,7 +335,7 @@ erase.i: erase.c.i
 
 # target to preprocess a source file
 erase.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/erase.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/erase.c.i
 .PHONY : erase.c.i
 
 erase.s: erase.c.s
@@ -344,7 +343,7 @@ erase.s: erase.c.s
 
 # target to generate assembly for a file
 erase.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/erase.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/erase.c.s
 .PHONY : erase.c.s
 
 fill.o: fill.c.o
@@ -352,7 +351,7 @@ fill.o: fill.c.o
 
 # target to build an object file
 fill.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fill.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fill.c.o
 .PHONY : fill.c.o
 
 fill.i: fill.c.i
@@ -360,7 +359,7 @@ fill.i: fill.c.i
 
 # target to preprocess a source file
 fill.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fill.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fill.c.i
 .PHONY : fill.c.i
 
 fill.s: fill.c.s
@@ -368,7 +367,7 @@ fill.s: fill.c.s
 
 # target to generate assembly for a file
 fill.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fill.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fill.c.s
 .PHONY : fill.c.s
 
 fontname.o: fontname.c.o
@@ -376,7 +375,7 @@ fontname.o: fontname.c.o
 
 # target to build an object file
 fontname.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontname.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontname.c.o
 .PHONY : fontname.c.o
 
 fontname.i: fontname.c.i
@@ -384,7 +383,7 @@ fontname.i: fontname.c.i
 
 # target to preprocess a source file
 fontname.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontname.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontname.c.i
 .PHONY : fontname.c.i
 
 fontname.s: fontname.c.s
@@ -392,7 +391,7 @@ fontname.s: fontname.c.s
 
 # target to generate assembly for a file
 fontname.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontname.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontname.c.s
 .PHONY : fontname.c.s
 
 fontsize.o: fontsize.c.o
@@ -400,7 +399,7 @@ fontsize.o: fontsize.c.o
 
 # target to build an object file
 fontsize.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontsize.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontsize.c.o
 .PHONY : fontsize.c.o
 
 fontsize.i: fontsize.c.i
@@ -408,7 +407,7 @@ fontsize.i: fontsize.c.i
 
 # target to preprocess a source file
 fontsize.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontsize.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontsize.c.i
 .PHONY : fontsize.c.i
 
 fontsize.s: fontsize.c.s
@@ -416,7 +415,7 @@ fontsize.s: fontsize.c.s
 
 # target to generate assembly for a file
 fontsize.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontsize.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/fontsize.c.s
 .PHONY : fontsize.c.s
 
 label.o: label.c.o
@@ -424,7 +423,7 @@ label.o: label.c.o
 
 # target to build an object file
 label.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/label.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/label.c.o
 .PHONY : label.c.o
 
 label.i: label.c.i
@@ -432,7 +431,7 @@ label.i: label.c.i
 
 # target to preprocess a source file
 label.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/label.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/label.c.i
 .PHONY : label.c.i
 
 label.s: label.c.s
@@ -440,7 +439,7 @@ label.s: label.c.s
 
 # target to generate assembly for a file
 label.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/label.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/label.c.s
 .PHONY : label.c.s
 
 line.o: line.c.o
@@ -448,7 +447,7 @@ line.o: line.c.o
 
 # target to build an object file
 line.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/line.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/line.c.o
 .PHONY : line.c.o
 
 line.i: line.c.i
@@ -456,7 +455,7 @@ line.i: line.c.i
 
 # target to preprocess a source file
 line.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/line.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/line.c.i
 .PHONY : line.c.i
 
 line.s: line.c.s
@@ -464,7 +463,7 @@ line.s: line.c.s
 
 # target to generate assembly for a file
 line.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/line.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/line.c.s
 .PHONY : line.c.s
 
 linemod.o: linemod.c.o
@@ -472,7 +471,7 @@ linemod.o: linemod.c.o
 
 # target to build an object file
 linemod.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/linemod.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/linemod.c.o
 .PHONY : linemod.c.o
 
 linemod.i: linemod.c.i
@@ -480,7 +479,7 @@ linemod.i: linemod.c.i
 
 # target to preprocess a source file
 linemod.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/linemod.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/linemod.c.i
 .PHONY : linemod.c.i
 
 linemod.s: linemod.c.s
@@ -488,7 +487,7 @@ linemod.s: linemod.c.s
 
 # target to generate assembly for a file
 linemod.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/linemod.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/linemod.c.s
 .PHONY : linemod.c.s
 
 move.o: move.c.o
@@ -496,7 +495,7 @@ move.o: move.c.o
 
 # target to build an object file
 move.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/move.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/move.c.o
 .PHONY : move.c.o
 
 move.i: move.c.i
@@ -504,7 +503,7 @@ move.i: move.c.i
 
 # target to preprocess a source file
 move.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/move.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/move.c.i
 .PHONY : move.c.i
 
 move.s: move.c.s
@@ -512,7 +511,7 @@ move.s: move.c.s
 
 # target to generate assembly for a file
 move.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/move.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/move.c.s
 .PHONY : move.c.s
 
 openpl.o: openpl.c.o
@@ -520,7 +519,7 @@ openpl.o: openpl.c.o
 
 # target to build an object file
 openpl.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/openpl.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/openpl.c.o
 .PHONY : openpl.c.o
 
 openpl.i: openpl.c.i
@@ -528,7 +527,7 @@ openpl.i: openpl.c.i
 
 # target to preprocess a source file
 openpl.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/openpl.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/openpl.c.i
 .PHONY : openpl.c.i
 
 openpl.s: openpl.c.s
@@ -536,7 +535,7 @@ openpl.s: openpl.c.s
 
 # target to generate assembly for a file
 openpl.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/openpl.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/openpl.c.s
 .PHONY : openpl.c.s
 
 plot.o: plot.c.o
@@ -544,7 +543,7 @@ plot.o: plot.c.o
 
 # target to build an object file
 plot.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/plot.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/plot.c.o
 .PHONY : plot.c.o
 
 plot.i: plot.c.i
@@ -552,7 +551,7 @@ plot.i: plot.c.i
 
 # target to preprocess a source file
 plot.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/plot.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/plot.c.i
 .PHONY : plot.c.i
 
 plot.s: plot.c.s
@@ -560,7 +559,7 @@ plot.s: plot.c.s
 
 # target to generate assembly for a file
 plot.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/plot.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/plot.c.s
 .PHONY : plot.c.s
 
 point.o: point.c.o
@@ -568,7 +567,7 @@ point.o: point.c.o
 
 # target to build an object file
 point.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/point.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/point.c.o
 .PHONY : point.c.o
 
 point.i: point.c.i
@@ -576,7 +575,7 @@ point.i: point.c.i
 
 # target to preprocess a source file
 point.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/point.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/point.c.i
 .PHONY : point.c.i
 
 point.s: point.c.s
@@ -584,7 +583,7 @@ point.s: point.c.s
 
 # target to generate assembly for a file
 point.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/point.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/point.c.s
 .PHONY : point.c.s
 
 rotate.o: rotate.c.o
@@ -592,7 +591,7 @@ rotate.o: rotate.c.o
 
 # target to build an object file
 rotate.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rotate.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rotate.c.o
 .PHONY : rotate.c.o
 
 rotate.i: rotate.c.i
@@ -600,7 +599,7 @@ rotate.i: rotate.c.i
 
 # target to preprocess a source file
 rotate.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rotate.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rotate.c.i
 .PHONY : rotate.c.i
 
 rotate.s: rotate.c.s
@@ -608,7 +607,7 @@ rotate.s: rotate.c.s
 
 # target to generate assembly for a file
 rotate.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rotate.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/rotate.c.s
 .PHONY : rotate.c.s
 
 space.o: space.c.o
@@ -616,7 +615,7 @@ space.o: space.c.o
 
 # target to build an object file
 space.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/space.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/space.c.o
 .PHONY : space.c.o
 
 space.i: space.c.i
@@ -624,7 +623,7 @@ space.i: space.c.i
 
 # target to preprocess a source file
 space.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/space.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/space.c.i
 .PHONY : space.c.i
 
 space.s: space.c.s
@@ -632,7 +631,7 @@ space.s: space.c.s
 
 # target to generate assembly for a file
 space.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/space.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/build.make MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeFiles/plot2fig.dir/space.c.s
 .PHONY : space.c.s
 
 # Help Target
@@ -718,7 +717,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

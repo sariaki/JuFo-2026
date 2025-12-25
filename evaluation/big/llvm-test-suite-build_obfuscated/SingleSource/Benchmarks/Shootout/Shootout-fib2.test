@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-fib2 
-VERIFY: %b/fpcmp-target %o %S/fib2.reference_output

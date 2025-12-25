@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/sgefa//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/sgefa//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/rule
 .PHONY : MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ sgefa: MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/rule
 
 # fast build rule for target.
 sgefa/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build
 .PHONY : sgefa/fast
 
 blas.o: blas.c.o
@@ -136,7 +135,7 @@ blas.o: blas.c.o
 
 # target to build an object file
 blas.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.o
 .PHONY : blas.c.o
 
 blas.i: blas.c.i
@@ -144,7 +143,7 @@ blas.i: blas.c.i
 
 # target to preprocess a source file
 blas.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.i
 .PHONY : blas.c.i
 
 blas.s: blas.c.s
@@ -152,7 +151,7 @@ blas.s: blas.c.s
 
 # target to generate assembly for a file
 blas.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/blas.c.s
 .PHONY : blas.c.s
 
 driver.o: driver.c.o
@@ -160,7 +159,7 @@ driver.o: driver.c.o
 
 # target to build an object file
 driver.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.o
 .PHONY : driver.c.o
 
 driver.i: driver.c.i
@@ -168,7 +167,7 @@ driver.i: driver.c.i
 
 # target to preprocess a source file
 driver.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.i
 .PHONY : driver.c.i
 
 driver.s: driver.c.s
@@ -176,7 +175,7 @@ driver.s: driver.c.s
 
 # target to generate assembly for a file
 driver.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/driver.c.s
 .PHONY : driver.c.s
 
 sgefa.o: sgefa.c.o
@@ -184,7 +183,7 @@ sgefa.o: sgefa.c.o
 
 # target to build an object file
 sgefa.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.o
 .PHONY : sgefa.c.o
 
 sgefa.i: sgefa.c.i
@@ -192,7 +191,7 @@ sgefa.i: sgefa.c.i
 
 # target to preprocess a source file
 sgefa.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.i
 .PHONY : sgefa.c.i
 
 sgefa.s: sgefa.c.s
@@ -200,7 +199,7 @@ sgefa.s: sgefa.c.s
 
 # target to generate assembly for a file
 sgefa.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgefa.c.s
 .PHONY : sgefa.c.s
 
 sgesl.o: sgesl.c.o
@@ -208,7 +207,7 @@ sgesl.o: sgesl.c.o
 
 # target to build an object file
 sgesl.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.o
 .PHONY : sgesl.c.o
 
 sgesl.i: sgesl.c.i
@@ -216,7 +215,7 @@ sgesl.i: sgesl.c.i
 
 # target to preprocess a source file
 sgesl.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.i
 .PHONY : sgesl.c.i
 
 sgesl.s: sgesl.c.s
@@ -224,7 +223,7 @@ sgesl.s: sgesl.c.s
 
 # target to generate assembly for a file
 sgesl.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/build.make MultiSource/Applications/sgefa/CMakeFiles/sgefa.dir/sgesl.c.s
 .PHONY : sgesl.c.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

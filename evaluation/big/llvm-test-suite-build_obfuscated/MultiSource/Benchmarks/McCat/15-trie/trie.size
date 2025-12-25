@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/15-trie/trie  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/McCat/15-trie/trie  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    224    4128
 .plt.got                  8    4352
-.text                  5115    4368
-.fini                    13    9484
-.rodata                1013   12288
-.eh_frame_hdr           132   13304
-.eh_frame               660   13440
-.init_array               8   19896
-.fini_array               8   19904
-.dynamic                496   19912
-.got                     48   20408
-.got.plt                128   20456
-.data                    16   20584
-.bss                      8   20600
+.text                  3371    4368
+.fini                    13    7740
+.rodata                 701    8192
+.eh_frame_hdr           132    8896
+.eh_frame               616    9032
+.init_array               8   15800
+.fini_array               8   15808
+.dynamic                496   15816
+.got                     48   16312
+.got.plt                128   16360
+.data                    16   16488
+.bss                      8   16504
 .comment                 82       0
-Total                  9517
+Total                  7417
 
 

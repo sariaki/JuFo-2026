@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/obsequi//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/obsequi//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/rule
 .PHONY : MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ Obsequi: MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/rule
 
 # fast build rule for target.
 Obsequi/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build
 .PHONY : Obsequi/fast
 
 display.o: display.c.o
@@ -136,7 +135,7 @@ display.o: display.c.o
 
 # target to build an object file
 display.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/display.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/display.c.o
 .PHONY : display.c.o
 
 display.i: display.c.i
@@ -144,7 +143,7 @@ display.i: display.c.i
 
 # target to preprocess a source file
 display.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/display.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/display.c.i
 .PHONY : display.c.i
 
 display.s: display.c.s
@@ -152,7 +151,7 @@ display.s: display.c.s
 
 # target to generate assembly for a file
 display.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/display.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/display.c.s
 .PHONY : display.c.s
 
 does_x_win.o: does_x_win.c.o
@@ -160,7 +159,7 @@ does_x_win.o: does_x_win.c.o
 
 # target to build an object file
 does_x_win.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/does_x_win.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/does_x_win.c.o
 .PHONY : does_x_win.c.o
 
 does_x_win.i: does_x_win.c.i
@@ -168,7 +167,7 @@ does_x_win.i: does_x_win.c.i
 
 # target to preprocess a source file
 does_x_win.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/does_x_win.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/does_x_win.c.i
 .PHONY : does_x_win.c.i
 
 does_x_win.s: does_x_win.c.s
@@ -176,7 +175,7 @@ does_x_win.s: does_x_win.c.s
 
 # target to generate assembly for a file
 does_x_win.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/does_x_win.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/does_x_win.c.s
 .PHONY : does_x_win.c.s
 
 hash.o: hash.c.o
@@ -184,7 +183,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/hash.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -192,7 +191,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/hash.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -200,7 +199,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/hash.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/hash.c.s
 .PHONY : hash.c.s
 
 init.o: init.c.o
@@ -208,7 +207,7 @@ init.o: init.c.o
 
 # target to build an object file
 init.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/init.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/init.c.o
 .PHONY : init.c.o
 
 init.i: init.c.i
@@ -216,7 +215,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/init.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -224,7 +223,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/init.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/init.c.s
 .PHONY : init.c.s
 
 move_gen.o: move_gen.c.o
@@ -232,7 +231,7 @@ move_gen.o: move_gen.c.o
 
 # target to build an object file
 move_gen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_gen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_gen.c.o
 .PHONY : move_gen.c.o
 
 move_gen.i: move_gen.c.i
@@ -240,7 +239,7 @@ move_gen.i: move_gen.c.i
 
 # target to preprocess a source file
 move_gen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_gen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_gen.c.i
 .PHONY : move_gen.c.i
 
 move_gen.s: move_gen.c.s
@@ -248,7 +247,7 @@ move_gen.s: move_gen.c.s
 
 # target to generate assembly for a file
 move_gen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_gen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_gen.c.s
 .PHONY : move_gen.c.s
 
 move_sort.o: move_sort.c.o
@@ -256,7 +255,7 @@ move_sort.o: move_sort.c.o
 
 # target to build an object file
 move_sort.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_sort.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_sort.c.o
 .PHONY : move_sort.c.o
 
 move_sort.i: move_sort.c.i
@@ -264,7 +263,7 @@ move_sort.i: move_sort.c.i
 
 # target to preprocess a source file
 move_sort.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_sort.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_sort.c.i
 .PHONY : move_sort.c.i
 
 move_sort.s: move_sort.c.s
@@ -272,7 +271,7 @@ move_sort.s: move_sort.c.s
 
 # target to generate assembly for a file
 move_sort.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_sort.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/move_sort.c.s
 .PHONY : move_sort.c.s
 
 negamax.o: negamax.c.o
@@ -280,7 +279,7 @@ negamax.o: negamax.c.o
 
 # target to build an object file
 negamax.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/negamax.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/negamax.c.o
 .PHONY : negamax.c.o
 
 negamax.i: negamax.c.i
@@ -288,7 +287,7 @@ negamax.i: negamax.c.i
 
 # target to preprocess a source file
 negamax.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/negamax.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/negamax.c.i
 .PHONY : negamax.c.i
 
 negamax.s: negamax.c.s
@@ -296,7 +295,7 @@ negamax.s: negamax.c.s
 
 # target to generate assembly for a file
 negamax.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/negamax.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/negamax.c.s
 .PHONY : negamax.c.s
 
 obsequi.o: obsequi.c.o
@@ -304,7 +303,7 @@ obsequi.o: obsequi.c.o
 
 # target to build an object file
 obsequi.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/obsequi.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/obsequi.c.o
 .PHONY : obsequi.c.o
 
 obsequi.i: obsequi.c.i
@@ -312,7 +311,7 @@ obsequi.i: obsequi.c.i
 
 # target to preprocess a source file
 obsequi.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/obsequi.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/obsequi.c.i
 .PHONY : obsequi.c.i
 
 obsequi.s: obsequi.c.s
@@ -320,7 +319,7 @@ obsequi.s: obsequi.c.s
 
 # target to generate assembly for a file
 obsequi.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/obsequi.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/obsequi.c.s
 .PHONY : obsequi.c.s
 
 position_values.o: position_values.c.o
@@ -328,7 +327,7 @@ position_values.o: position_values.c.o
 
 # target to build an object file
 position_values.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/position_values.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/position_values.c.o
 .PHONY : position_values.c.o
 
 position_values.i: position_values.c.i
@@ -336,7 +335,7 @@ position_values.i: position_values.c.i
 
 # target to preprocess a source file
 position_values.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/position_values.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/position_values.c.i
 .PHONY : position_values.c.i
 
 position_values.s: position_values.c.s
@@ -344,7 +343,7 @@ position_values.s: position_values.c.s
 
 # target to generate assembly for a file
 position_values.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/position_values.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/position_values.c.s
 .PHONY : position_values.c.s
 
 tables.o: tables.c.o
@@ -352,7 +351,7 @@ tables.o: tables.c.o
 
 # target to build an object file
 tables.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/tables.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/tables.c.o
 .PHONY : tables.c.o
 
 tables.i: tables.c.i
@@ -360,7 +359,7 @@ tables.i: tables.c.i
 
 # target to preprocess a source file
 tables.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/tables.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/tables.c.i
 .PHONY : tables.c.i
 
 tables.s: tables.c.s
@@ -368,7 +367,7 @@ tables.s: tables.c.s
 
 # target to generate assembly for a file
 tables.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/tables.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/tables.c.s
 .PHONY : tables.c.s
 
 toggle_move.o: toggle_move.c.o
@@ -376,7 +375,7 @@ toggle_move.o: toggle_move.c.o
 
 # target to build an object file
 toggle_move.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/toggle_move.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/toggle_move.c.o
 .PHONY : toggle_move.c.o
 
 toggle_move.i: toggle_move.c.i
@@ -384,7 +383,7 @@ toggle_move.i: toggle_move.c.i
 
 # target to preprocess a source file
 toggle_move.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/toggle_move.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/toggle_move.c.i
 .PHONY : toggle_move.c.i
 
 toggle_move.s: toggle_move.c.s
@@ -392,7 +391,7 @@ toggle_move.s: toggle_move.c.s
 
 # target to generate assembly for a file
 toggle_move.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/toggle_move.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/toggle_move.c.s
 .PHONY : toggle_move.c.s
 
 traits.o: traits.c.o
@@ -400,7 +399,7 @@ traits.o: traits.c.o
 
 # target to build an object file
 traits.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/traits.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/traits.c.o
 .PHONY : traits.c.o
 
 traits.i: traits.c.i
@@ -408,7 +407,7 @@ traits.i: traits.c.i
 
 # target to preprocess a source file
 traits.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/traits.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/traits.c.i
 .PHONY : traits.c.i
 
 traits.s: traits.c.s
@@ -416,7 +415,7 @@ traits.s: traits.c.s
 
 # target to generate assembly for a file
 traits.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/traits.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/traits.c.s
 .PHONY : traits.c.s
 
 utils.o: utils.c.o
@@ -424,7 +423,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/utils.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -432,7 +431,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/utils.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -440,7 +439,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/utils.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/build.make MultiSource/Applications/obsequi/CMakeFiles/Obsequi.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target
@@ -502,7 +501,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

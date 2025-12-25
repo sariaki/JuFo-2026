@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Utility rule file for build-litsupport.
 
@@ -87,80 +87,80 @@ litsupport/CMakeFiles/build-litsupport: litsupport/modules/timeit.py
 litsupport/CMakeFiles/build-litsupport: lit.cfg
 
 lit.cfg: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/lit.cfg
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../lit.cfg"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/../lit.cfg /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/../lit.cfg
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../lit.cfg"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/../lit.cfg /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/../lit.cfg
 
 litsupport/__init__.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/__init__.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating __init__.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/__init__.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/__init__.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating __init__.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/__init__.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/__init__.py
 
 litsupport/modules/__init__.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/__init__.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating modules/__init__.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/__init__.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/__init__.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating modules/__init__.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/__init__.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/__init__.py
 
 litsupport/modules/codesize.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/codesize.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating modules/codesize.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/codesize.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/codesize.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating modules/codesize.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/codesize.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/codesize.py
 
 litsupport/modules/compiletime.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/compiletime.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating modules/compiletime.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/compiletime.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/compiletime.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating modules/compiletime.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/compiletime.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/compiletime.py
 
 litsupport/modules/hash.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/hash.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating modules/hash.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/hash.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/hash.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating modules/hash.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/hash.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/hash.py
 
 litsupport/modules/hpmcount.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/hpmcount.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating modules/hpmcount.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/hpmcount.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/hpmcount.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating modules/hpmcount.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/hpmcount.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/hpmcount.py
 
 litsupport/modules/microbenchmark.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/microbenchmark.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating modules/microbenchmark.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/microbenchmark.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/microbenchmark.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating modules/microbenchmark.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/microbenchmark.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/microbenchmark.py
 
 litsupport/modules/perf.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/perf.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating modules/perf.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/perf.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/perf.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating modules/perf.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/perf.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/perf.py
 
 litsupport/modules/profilegen.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/profilegen.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating modules/profilegen.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/profilegen.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/profilegen.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating modules/profilegen.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/profilegen.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/profilegen.py
 
 litsupport/modules/remote.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/remote.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating modules/remote.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/remote.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/remote.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating modules/remote.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/remote.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/remote.py
 
 litsupport/modules/run.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/run.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating modules/run.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/run.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/run.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating modules/run.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/run.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/run.py
 
 litsupport/modules/run_under.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/run_under.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating modules/run_under.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/run_under.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/run_under.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating modules/run_under.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/run_under.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/run_under.py
 
 litsupport/modules/stats.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/stats.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating modules/stats.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/stats.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/stats.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating modules/stats.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/stats.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/stats.py
 
 litsupport/modules/timeit.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/timeit.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating modules/timeit.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/timeit.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/modules/timeit.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating modules/timeit.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/modules/timeit.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/modules/timeit.py
 
 litsupport/shellcommand.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/shellcommand.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating shellcommand.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/shellcommand.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/shellcommand.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating shellcommand.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/shellcommand.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/shellcommand.py
 
 litsupport/test.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/test.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating test.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/test.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/test.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating test.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/test.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/test.py
 
 litsupport/testfile.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/testfile.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating testfile.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/testfile.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/testfile.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating testfile.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/testfile.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/testfile.py
 
 litsupport/testplan.py: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/testplan.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating testplan.py"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/testplan.py /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/testplan.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating testplan.py"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && /usr/bin/cmake -E copy /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport/testplan.py /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/testplan.py
 
 build-litsupport: lit.cfg
 build-litsupport: litsupport/CMakeFiles/build-litsupport
@@ -190,10 +190,10 @@ litsupport/CMakeFiles/build-litsupport.dir/build: build-litsupport
 .PHONY : litsupport/CMakeFiles/build-litsupport.dir/build
 
 litsupport/CMakeFiles/build-litsupport.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport && $(CMAKE_COMMAND) -P CMakeFiles/build-litsupport.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport && $(CMAKE_COMMAND) -P CMakeFiles/build-litsupport.dir/cmake_clean.cmake
 .PHONY : litsupport/CMakeFiles/build-litsupport.dir/clean
 
 litsupport/CMakeFiles/build-litsupport.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/litsupport/CMakeFiles/build-litsupport.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/litsupport /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/litsupport/CMakeFiles/build-litsupport.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : litsupport/CMakeFiles/build-litsupport.dir/depend
 

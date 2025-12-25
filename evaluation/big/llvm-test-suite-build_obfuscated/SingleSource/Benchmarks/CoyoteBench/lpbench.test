@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/lpbench 
-VERIFY: %b/fpcmp-target %o %S/lpbench.reference_output

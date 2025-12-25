@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/gemver 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/gemver.reference_output

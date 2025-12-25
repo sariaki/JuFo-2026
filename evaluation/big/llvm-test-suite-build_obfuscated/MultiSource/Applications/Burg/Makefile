@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/Burg//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/Burg//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule
 .PHONY : MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ burg: MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule
 
 # fast build rule for target.
 burg/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/build
 .PHONY : burg/fast
 
 be.o: be.c.o
@@ -136,7 +135,7 @@ be.o: be.c.o
 
 # target to build an object file
 be.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/be.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/be.c.o
 .PHONY : be.c.o
 
 be.i: be.c.i
@@ -144,7 +143,7 @@ be.i: be.c.i
 
 # target to preprocess a source file
 be.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/be.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/be.c.i
 .PHONY : be.c.i
 
 be.s: be.c.s
@@ -152,7 +151,7 @@ be.s: be.c.s
 
 # target to generate assembly for a file
 be.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/be.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/be.c.s
 .PHONY : be.c.s
 
 burs.o: burs.c.o
@@ -160,7 +159,7 @@ burs.o: burs.c.o
 
 # target to build an object file
 burs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/burs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/burs.c.o
 .PHONY : burs.c.o
 
 burs.i: burs.c.i
@@ -168,7 +167,7 @@ burs.i: burs.c.i
 
 # target to preprocess a source file
 burs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/burs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/burs.c.i
 .PHONY : burs.c.i
 
 burs.s: burs.c.s
@@ -176,7 +175,7 @@ burs.s: burs.c.s
 
 # target to generate assembly for a file
 burs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/burs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/burs.c.s
 .PHONY : burs.c.s
 
 closure.o: closure.c.o
@@ -184,7 +183,7 @@ closure.o: closure.c.o
 
 # target to build an object file
 closure.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/closure.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/closure.c.o
 .PHONY : closure.c.o
 
 closure.i: closure.c.i
@@ -192,7 +191,7 @@ closure.i: closure.c.i
 
 # target to preprocess a source file
 closure.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/closure.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/closure.c.i
 .PHONY : closure.c.i
 
 closure.s: closure.c.s
@@ -200,7 +199,7 @@ closure.s: closure.c.s
 
 # target to generate assembly for a file
 closure.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/closure.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/closure.c.s
 .PHONY : closure.c.s
 
 delta.o: delta.c.o
@@ -208,7 +207,7 @@ delta.o: delta.c.o
 
 # target to build an object file
 delta.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/delta.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/delta.c.o
 .PHONY : delta.c.o
 
 delta.i: delta.c.i
@@ -216,7 +215,7 @@ delta.i: delta.c.i
 
 # target to preprocess a source file
 delta.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/delta.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/delta.c.i
 .PHONY : delta.c.i
 
 delta.s: delta.c.s
@@ -224,7 +223,7 @@ delta.s: delta.c.s
 
 # target to generate assembly for a file
 delta.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/delta.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/delta.c.s
 .PHONY : delta.c.s
 
 fe.o: fe.c.o
@@ -232,7 +231,7 @@ fe.o: fe.c.o
 
 # target to build an object file
 fe.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/fe.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/fe.c.o
 .PHONY : fe.c.o
 
 fe.i: fe.c.i
@@ -240,7 +239,7 @@ fe.i: fe.c.i
 
 # target to preprocess a source file
 fe.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/fe.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/fe.c.i
 .PHONY : fe.c.i
 
 fe.s: fe.c.s
@@ -248,7 +247,7 @@ fe.s: fe.c.s
 
 # target to generate assembly for a file
 fe.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/fe.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/fe.c.s
 .PHONY : fe.c.s
 
 item.o: item.c.o
@@ -256,7 +255,7 @@ item.o: item.c.o
 
 # target to build an object file
 item.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/item.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/item.c.o
 .PHONY : item.c.o
 
 item.i: item.c.i
@@ -264,7 +263,7 @@ item.i: item.c.i
 
 # target to preprocess a source file
 item.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/item.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/item.c.i
 .PHONY : item.c.i
 
 item.s: item.c.s
@@ -272,7 +271,7 @@ item.s: item.c.s
 
 # target to generate assembly for a file
 item.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/item.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/item.c.s
 .PHONY : item.c.s
 
 lex.o: lex.c.o
@@ -280,7 +279,7 @@ lex.o: lex.c.o
 
 # target to build an object file
 lex.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/lex.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/lex.c.o
 .PHONY : lex.c.o
 
 lex.i: lex.c.i
@@ -288,7 +287,7 @@ lex.i: lex.c.i
 
 # target to preprocess a source file
 lex.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/lex.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/lex.c.i
 .PHONY : lex.c.i
 
 lex.s: lex.c.s
@@ -296,7 +295,7 @@ lex.s: lex.c.s
 
 # target to generate assembly for a file
 lex.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/lex.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/lex.c.s
 .PHONY : lex.c.s
 
 list.o: list.c.o
@@ -304,7 +303,7 @@ list.o: list.c.o
 
 # target to build an object file
 list.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/list.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/list.c.o
 .PHONY : list.c.o
 
 list.i: list.c.i
@@ -312,7 +311,7 @@ list.i: list.c.i
 
 # target to preprocess a source file
 list.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/list.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/list.c.i
 .PHONY : list.c.i
 
 list.s: list.c.s
@@ -320,7 +319,7 @@ list.s: list.c.s
 
 # target to generate assembly for a file
 list.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/list.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/list.c.s
 .PHONY : list.c.s
 
 main.o: main.c.o
@@ -328,7 +327,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -336,7 +335,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -344,7 +343,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/main.c.s
 .PHONY : main.c.s
 
 map.o: map.c.o
@@ -352,7 +351,7 @@ map.o: map.c.o
 
 # target to build an object file
 map.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/map.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/map.c.o
 .PHONY : map.c.o
 
 map.i: map.c.i
@@ -360,7 +359,7 @@ map.i: map.c.i
 
 # target to preprocess a source file
 map.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/map.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/map.c.i
 .PHONY : map.c.i
 
 map.s: map.c.s
@@ -368,7 +367,7 @@ map.s: map.c.s
 
 # target to generate assembly for a file
 map.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/map.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/map.c.s
 .PHONY : map.c.s
 
 nonterminal.o: nonterminal.c.o
@@ -376,7 +375,7 @@ nonterminal.o: nonterminal.c.o
 
 # target to build an object file
 nonterminal.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/nonterminal.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/nonterminal.c.o
 .PHONY : nonterminal.c.o
 
 nonterminal.i: nonterminal.c.i
@@ -384,7 +383,7 @@ nonterminal.i: nonterminal.c.i
 
 # target to preprocess a source file
 nonterminal.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/nonterminal.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/nonterminal.c.i
 .PHONY : nonterminal.c.i
 
 nonterminal.s: nonterminal.c.s
@@ -392,7 +391,7 @@ nonterminal.s: nonterminal.c.s
 
 # target to generate assembly for a file
 nonterminal.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/nonterminal.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/nonterminal.c.s
 .PHONY : nonterminal.c.s
 
 operator.o: operator.c.o
@@ -400,7 +399,7 @@ operator.o: operator.c.o
 
 # target to build an object file
 operator.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/operator.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/operator.c.o
 .PHONY : operator.c.o
 
 operator.i: operator.c.i
@@ -408,7 +407,7 @@ operator.i: operator.c.i
 
 # target to preprocess a source file
 operator.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/operator.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/operator.c.i
 .PHONY : operator.c.i
 
 operator.s: operator.c.s
@@ -416,7 +415,7 @@ operator.s: operator.c.s
 
 # target to generate assembly for a file
 operator.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/operator.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/operator.c.s
 .PHONY : operator.c.s
 
 pattern.o: pattern.c.o
@@ -424,7 +423,7 @@ pattern.o: pattern.c.o
 
 # target to build an object file
 pattern.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/pattern.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/pattern.c.o
 .PHONY : pattern.c.o
 
 pattern.i: pattern.c.i
@@ -432,7 +431,7 @@ pattern.i: pattern.c.i
 
 # target to preprocess a source file
 pattern.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/pattern.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/pattern.c.i
 .PHONY : pattern.c.i
 
 pattern.s: pattern.c.s
@@ -440,7 +439,7 @@ pattern.s: pattern.c.s
 
 # target to generate assembly for a file
 pattern.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/pattern.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/pattern.c.s
 .PHONY : pattern.c.s
 
 plank.o: plank.c.o
@@ -448,7 +447,7 @@ plank.o: plank.c.o
 
 # target to build an object file
 plank.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/plank.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/plank.c.o
 .PHONY : plank.c.o
 
 plank.i: plank.c.i
@@ -456,7 +455,7 @@ plank.i: plank.c.i
 
 # target to preprocess a source file
 plank.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/plank.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/plank.c.i
 .PHONY : plank.c.i
 
 plank.s: plank.c.s
@@ -464,7 +463,7 @@ plank.s: plank.c.s
 
 # target to generate assembly for a file
 plank.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/plank.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/plank.c.s
 .PHONY : plank.c.s
 
 queue.o: queue.c.o
@@ -472,7 +471,7 @@ queue.o: queue.c.o
 
 # target to build an object file
 queue.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/queue.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/queue.c.o
 .PHONY : queue.c.o
 
 queue.i: queue.c.i
@@ -480,7 +479,7 @@ queue.i: queue.c.i
 
 # target to preprocess a source file
 queue.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/queue.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/queue.c.i
 .PHONY : queue.c.i
 
 queue.s: queue.c.s
@@ -488,7 +487,7 @@ queue.s: queue.c.s
 
 # target to generate assembly for a file
 queue.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/queue.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/queue.c.s
 .PHONY : queue.c.s
 
 rule.o: rule.c.o
@@ -496,7 +495,7 @@ rule.o: rule.c.o
 
 # target to build an object file
 rule.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule.c.o
 .PHONY : rule.c.o
 
 rule.i: rule.c.i
@@ -504,7 +503,7 @@ rule.i: rule.c.i
 
 # target to preprocess a source file
 rule.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule.c.i
 .PHONY : rule.c.i
 
 rule.s: rule.c.s
@@ -512,7 +511,7 @@ rule.s: rule.c.s
 
 # target to generate assembly for a file
 rule.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/rule.c.s
 .PHONY : rule.c.s
 
 string.o: string.c.o
@@ -520,7 +519,7 @@ string.o: string.c.o
 
 # target to build an object file
 string.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/string.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/string.c.o
 .PHONY : string.c.o
 
 string.i: string.c.i
@@ -528,7 +527,7 @@ string.i: string.c.i
 
 # target to preprocess a source file
 string.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/string.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/string.c.i
 .PHONY : string.c.i
 
 string.s: string.c.s
@@ -536,7 +535,7 @@ string.s: string.c.s
 
 # target to generate assembly for a file
 string.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/string.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/string.c.s
 .PHONY : string.c.s
 
 symtab.o: symtab.c.o
@@ -544,7 +543,7 @@ symtab.o: symtab.c.o
 
 # target to build an object file
 symtab.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/symtab.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/symtab.c.o
 .PHONY : symtab.c.o
 
 symtab.i: symtab.c.i
@@ -552,7 +551,7 @@ symtab.i: symtab.c.i
 
 # target to preprocess a source file
 symtab.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/symtab.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/symtab.c.i
 .PHONY : symtab.c.i
 
 symtab.s: symtab.c.s
@@ -560,7 +559,7 @@ symtab.s: symtab.c.s
 
 # target to generate assembly for a file
 symtab.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/symtab.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/symtab.c.s
 .PHONY : symtab.c.s
 
 table.o: table.c.o
@@ -568,7 +567,7 @@ table.o: table.c.o
 
 # target to build an object file
 table.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/table.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/table.c.o
 .PHONY : table.c.o
 
 table.i: table.c.i
@@ -576,7 +575,7 @@ table.i: table.c.i
 
 # target to preprocess a source file
 table.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/table.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/table.c.i
 .PHONY : table.c.i
 
 table.s: table.c.s
@@ -584,7 +583,7 @@ table.s: table.c.s
 
 # target to generate assembly for a file
 table.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/table.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/table.c.s
 .PHONY : table.c.s
 
 trim.o: trim.c.o
@@ -592,7 +591,7 @@ trim.o: trim.c.o
 
 # target to build an object file
 trim.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/trim.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/trim.c.o
 .PHONY : trim.c.o
 
 trim.i: trim.c.i
@@ -600,7 +599,7 @@ trim.i: trim.c.i
 
 # target to preprocess a source file
 trim.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/trim.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/trim.c.i
 .PHONY : trim.c.i
 
 trim.s: trim.c.s
@@ -608,7 +607,7 @@ trim.s: trim.c.s
 
 # target to generate assembly for a file
 trim.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/trim.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/trim.c.s
 .PHONY : trim.c.s
 
 y.tab.o: y.tab.c.o
@@ -616,7 +615,7 @@ y.tab.o: y.tab.c.o
 
 # target to build an object file
 y.tab.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/y.tab.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/y.tab.c.o
 .PHONY : y.tab.c.o
 
 y.tab.i: y.tab.c.i
@@ -624,7 +623,7 @@ y.tab.i: y.tab.c.i
 
 # target to preprocess a source file
 y.tab.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/y.tab.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/y.tab.c.i
 .PHONY : y.tab.c.i
 
 y.tab.s: y.tab.c.s
@@ -632,7 +631,7 @@ y.tab.s: y.tab.c.s
 
 # target to generate assembly for a file
 y.tab.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/y.tab.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/y.tab.c.s
 .PHONY : y.tab.c.s
 
 zalloc.o: zalloc.c.o
@@ -640,7 +639,7 @@ zalloc.o: zalloc.c.o
 
 # target to build an object file
 zalloc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/zalloc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/zalloc.c.o
 .PHONY : zalloc.c.o
 
 zalloc.i: zalloc.c.i
@@ -648,7 +647,7 @@ zalloc.i: zalloc.c.i
 
 # target to preprocess a source file
 zalloc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/zalloc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/zalloc.c.i
 .PHONY : zalloc.c.i
 
 zalloc.s: zalloc.c.s
@@ -656,7 +655,7 @@ zalloc.s: zalloc.c.s
 
 # target to generate assembly for a file
 zalloc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/zalloc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/Burg/CMakeFiles/burg.dir/build.make MultiSource/Applications/Burg/CMakeFiles/burg.dir/zalloc.c.s
 .PHONY : zalloc.c.s
 
 # Help Target
@@ -745,7 +744,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

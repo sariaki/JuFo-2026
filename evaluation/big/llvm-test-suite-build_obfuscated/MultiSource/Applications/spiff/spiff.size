@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/spiff/spiff  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/spiff/spiff  :
 section                   size    addr
 .interp                     28     792
 .note.gnu.property          32     824
@@ -14,19 +14,19 @@ section                   size    addr
 .init                       27    4096
 .plt                       400    4128
 .plt.got                     8    4528
-.text                    49121    4544
-.fini                       13   53668
-.rodata                  10180   57344
-.eh_frame_hdr              564   67524
-.eh_frame                 3372   68088
-.init_array                  8   77184
-.fini_array                  8   77192
-.dynamic                   480   77200
-.got                       120   77680
-.got.plt                   216   77800
-.data                       18   78016
-.bss                   1292016   78048
+.text                    38785    4544
+.fini                       13   43332
+.rodata                   8188   45056
+.eh_frame_hdr              564   53244
+.eh_frame                 3372   53808
+.init_array                  8   60800
+.fini_array                  8   60808
+.dynamic                   480   60816
+.got                       120   61296
+.got.plt                   216   61416
+.data                       18   61632
+.bss                   1292016   61664
 .comment                    82       0
-Total                  1359031
+Total                  1346703
 
 

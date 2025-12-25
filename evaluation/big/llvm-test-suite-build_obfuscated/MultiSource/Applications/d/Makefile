@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/d//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/d//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Applications/d/CMakeFiles/make_dparser.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/CMakeFiles/make_dparser.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Applications/d/CMakeFiles/make_dparser.dir/rule
 .PHONY : MultiSource/Applications/d/CMakeFiles/make_dparser.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ make_dparser: MultiSource/Applications/d/CMakeFiles/make_dparser.dir/rule
 
 # fast build rule for target.
 make_dparser/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build
 .PHONY : make_dparser/fast
 
 arg.o: arg.c.o
@@ -136,7 +135,7 @@ arg.o: arg.c.o
 
 # target to build an object file
 arg.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/arg.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/arg.c.o
 .PHONY : arg.c.o
 
 arg.i: arg.c.i
@@ -144,7 +143,7 @@ arg.i: arg.c.i
 
 # target to preprocess a source file
 arg.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/arg.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/arg.c.i
 .PHONY : arg.c.i
 
 arg.s: arg.c.s
@@ -152,7 +151,7 @@ arg.s: arg.c.s
 
 # target to generate assembly for a file
 arg.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/arg.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/arg.c.s
 .PHONY : arg.c.s
 
 gram.o: gram.c.o
@@ -160,7 +159,7 @@ gram.o: gram.c.o
 
 # target to build an object file
 gram.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/gram.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/gram.c.o
 .PHONY : gram.c.o
 
 gram.i: gram.c.i
@@ -168,7 +167,7 @@ gram.i: gram.c.i
 
 # target to preprocess a source file
 gram.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/gram.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/gram.c.i
 .PHONY : gram.c.i
 
 gram.s: gram.c.s
@@ -176,7 +175,7 @@ gram.s: gram.c.s
 
 # target to generate assembly for a file
 gram.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/gram.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/gram.c.s
 .PHONY : gram.c.s
 
 grammar.g.o: grammar.g.c.o
@@ -184,7 +183,7 @@ grammar.g.o: grammar.g.c.o
 
 # target to build an object file
 grammar.g.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/grammar.g.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/grammar.g.c.o
 .PHONY : grammar.g.c.o
 
 grammar.g.i: grammar.g.c.i
@@ -192,7 +191,7 @@ grammar.g.i: grammar.g.c.i
 
 # target to preprocess a source file
 grammar.g.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/grammar.g.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/grammar.g.c.i
 .PHONY : grammar.g.c.i
 
 grammar.g.s: grammar.g.c.s
@@ -200,7 +199,7 @@ grammar.g.s: grammar.g.c.s
 
 # target to generate assembly for a file
 grammar.g.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/grammar.g.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/grammar.g.c.s
 .PHONY : grammar.g.c.s
 
 lex.o: lex.c.o
@@ -208,7 +207,7 @@ lex.o: lex.c.o
 
 # target to build an object file
 lex.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lex.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lex.c.o
 .PHONY : lex.c.o
 
 lex.i: lex.c.i
@@ -216,7 +215,7 @@ lex.i: lex.c.i
 
 # target to preprocess a source file
 lex.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lex.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lex.c.i
 .PHONY : lex.c.i
 
 lex.s: lex.c.s
@@ -224,7 +223,7 @@ lex.s: lex.c.s
 
 # target to generate assembly for a file
 lex.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lex.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lex.c.s
 .PHONY : lex.c.s
 
 lr.o: lr.c.o
@@ -232,7 +231,7 @@ lr.o: lr.c.o
 
 # target to build an object file
 lr.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lr.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lr.c.o
 .PHONY : lr.c.o
 
 lr.i: lr.c.i
@@ -240,7 +239,7 @@ lr.i: lr.c.i
 
 # target to preprocess a source file
 lr.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lr.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lr.c.i
 .PHONY : lr.c.i
 
 lr.s: lr.c.s
@@ -248,7 +247,7 @@ lr.s: lr.c.s
 
 # target to generate assembly for a file
 lr.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lr.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/lr.c.s
 .PHONY : lr.c.s
 
 make_dparser.o: make_dparser.c.o
@@ -256,7 +255,7 @@ make_dparser.o: make_dparser.c.o
 
 # target to build an object file
 make_dparser.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/make_dparser.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/make_dparser.c.o
 .PHONY : make_dparser.c.o
 
 make_dparser.i: make_dparser.c.i
@@ -264,7 +263,7 @@ make_dparser.i: make_dparser.c.i
 
 # target to preprocess a source file
 make_dparser.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/make_dparser.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/make_dparser.c.i
 .PHONY : make_dparser.c.i
 
 make_dparser.s: make_dparser.c.s
@@ -272,7 +271,7 @@ make_dparser.s: make_dparser.c.s
 
 # target to generate assembly for a file
 make_dparser.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/make_dparser.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/make_dparser.c.s
 .PHONY : make_dparser.c.s
 
 parse.o: parse.c.o
@@ -280,7 +279,7 @@ parse.o: parse.c.o
 
 # target to build an object file
 parse.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/parse.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/parse.c.o
 .PHONY : parse.c.o
 
 parse.i: parse.c.i
@@ -288,7 +287,7 @@ parse.i: parse.c.i
 
 # target to preprocess a source file
 parse.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/parse.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/parse.c.i
 .PHONY : parse.c.i
 
 parse.s: parse.c.s
@@ -296,7 +295,7 @@ parse.s: parse.c.s
 
 # target to generate assembly for a file
 parse.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/parse.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/parse.c.s
 .PHONY : parse.c.s
 
 scan.o: scan.c.o
@@ -304,7 +303,7 @@ scan.o: scan.c.o
 
 # target to build an object file
 scan.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/scan.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/scan.c.o
 .PHONY : scan.c.o
 
 scan.i: scan.c.i
@@ -312,7 +311,7 @@ scan.i: scan.c.i
 
 # target to preprocess a source file
 scan.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/scan.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/scan.c.i
 .PHONY : scan.c.i
 
 scan.s: scan.c.s
@@ -320,7 +319,7 @@ scan.s: scan.c.s
 
 # target to generate assembly for a file
 scan.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/scan.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/scan.c.s
 .PHONY : scan.c.s
 
 symtab.o: symtab.c.o
@@ -328,7 +327,7 @@ symtab.o: symtab.c.o
 
 # target to build an object file
 symtab.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/symtab.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/symtab.c.o
 .PHONY : symtab.c.o
 
 symtab.i: symtab.c.i
@@ -336,7 +335,7 @@ symtab.i: symtab.c.i
 
 # target to preprocess a source file
 symtab.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/symtab.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/symtab.c.i
 .PHONY : symtab.c.i
 
 symtab.s: symtab.c.s
@@ -344,7 +343,7 @@ symtab.s: symtab.c.s
 
 # target to generate assembly for a file
 symtab.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/symtab.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/symtab.c.s
 .PHONY : symtab.c.s
 
 util.o: util.c.o
@@ -352,7 +351,7 @@ util.o: util.c.o
 
 # target to build an object file
 util.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/util.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/util.c.o
 .PHONY : util.c.o
 
 util.i: util.c.i
@@ -360,7 +359,7 @@ util.i: util.c.i
 
 # target to preprocess a source file
 util.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/util.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/util.c.i
 .PHONY : util.c.i
 
 util.s: util.c.s
@@ -368,7 +367,7 @@ util.s: util.c.s
 
 # target to generate assembly for a file
 util.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/util.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/util.c.s
 .PHONY : util.c.s
 
 version.o: version.c.o
@@ -376,7 +375,7 @@ version.o: version.c.o
 
 # target to build an object file
 version.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/version.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/version.c.o
 .PHONY : version.c.o
 
 version.i: version.c.i
@@ -384,7 +383,7 @@ version.i: version.c.i
 
 # target to preprocess a source file
 version.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/version.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/version.c.i
 .PHONY : version.c.i
 
 version.s: version.c.s
@@ -392,7 +391,7 @@ version.s: version.c.s
 
 # target to generate assembly for a file
 version.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/version.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/version.c.s
 .PHONY : version.c.s
 
 write_ctables.o: write_ctables.c.o
@@ -400,7 +399,7 @@ write_ctables.o: write_ctables.c.o
 
 # target to build an object file
 write_ctables.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/write_ctables.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/write_ctables.c.o
 .PHONY : write_ctables.c.o
 
 write_ctables.i: write_ctables.c.i
@@ -408,7 +407,7 @@ write_ctables.i: write_ctables.c.i
 
 # target to preprocess a source file
 write_ctables.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/write_ctables.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/write_ctables.c.i
 .PHONY : write_ctables.c.i
 
 write_ctables.s: write_ctables.c.s
@@ -416,7 +415,7 @@ write_ctables.s: write_ctables.c.s
 
 # target to generate assembly for a file
 write_ctables.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/write_ctables.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Applications/d/CMakeFiles/make_dparser.dir/build.make MultiSource/Applications/d/CMakeFiles/make_dparser.dir/write_ctables.c.s
 .PHONY : write_ctables.c.s
 
 # Help Target
@@ -475,7 +474,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

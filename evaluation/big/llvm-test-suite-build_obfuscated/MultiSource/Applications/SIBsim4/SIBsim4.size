@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Applications/SIBsim4/SIBsim4  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,11 +14,11 @@ section                 size    addr
 .init                     27    4096
 .plt                     560    4128
 .plt.got                  16    4688
-.text                  55793    4704
-.fini                     13   60500
-.rodata                 7696   61440
-.eh_frame_hdr            340   69136
-.eh_frame               2840   69480
+.text                  53458    4704
+.fini                     13   58164
+.rodata                 7056   61440
+.eh_frame_hdr            340   68496
+.eh_frame               2804   68840
 .init_array                8   77224
 .fini_array                8   77232
 .dynamic                 480   77240
@@ -27,6 +27,6 @@ section                 size    addr
 .data                     16   78096
 .bss                    1328   78112
 .comment                  82       0
-Total                  72579
+Total                  69568
 
 

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/network-dijkstra/network-dijkstra  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/network-dijkstra/network-dijkstra  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,11 +14,11 @@ section                 size    addr
 .init                     27    4096
 .plt                     176    4128
 .plt.got                   8    4304
-.text                   2210    4320
-.fini                     13    6532
-.rodata                  368    8192
-.eh_frame_hdr             84    8560
-.eh_frame                388    8648
+.text                   2655    4320
+.fini                     13    6976
+.rodata                  464    8192
+.eh_frame_hdr             84    8656
+.eh_frame                392    8744
 .init_array                8   15792
 .fini_array                8   15800
 .dynamic                 496   15808
@@ -27,6 +27,6 @@ section                 size    addr
 .data                     16   16464
 .bss                   40856   16480
 .comment                  82       0
-Total                  46319
+Total                  46864
 
 

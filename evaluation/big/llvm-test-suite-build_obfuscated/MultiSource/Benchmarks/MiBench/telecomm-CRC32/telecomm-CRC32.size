@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-CRC32/telecomm-CRC32  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-CRC32/telecomm-CRC32  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                    128    4128
 .plt.got                  8    4256
-.text                  2806    4272
-.fini                    13    7080
-.rodata                2640    8192
-.eh_frame_hdr            68   10832
-.eh_frame               308   10904
+.text                  2128    4272
+.fini                    13    6400
+.rodata                2544    8192
+.eh_frame_hdr            68   10736
+.eh_frame               308   10808
 .init_array               8   15808
 .fini_array               8   15816
 .dynamic                496   15824
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   16440
 .bss                      8   16456
 .comment                 82       0
-Total                  7839
+Total                  7065
 
 

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/ms_struct-bitfield 
-VERIFY: %b/fpcmp-target %o %S/ms_struct-bitfield.reference_output

@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/football/football  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/football/football  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     320    4128
 .plt.got                   8    4448
-.text                  45719    4464
-.fini                     13   50184
-.rodata                 6020   53248
-.eh_frame_hdr            492   59268
-.eh_frame               3412   59760
-.init_array                8   69016
-.fini_array                8   69024
-.dynamic                 480   69032
-.got                      96   69512
-.got.plt                 176   69608
-.data                   1160   69792
-.bss                   99784   70960
+.text                  43617    4464
+.fini                     13   48084
+.rodata                 5516   49152
+.eh_frame_hdr            492   54668
+.eh_frame               3320   55160
+.init_array                8   64920
+.fini_array                8   64928
+.dynamic                 480   64936
+.got                      96   65416
+.got.plt                 176   65512
+.data                   1160   65696
+.bss                   99784   66864
 .comment                  82       0
-Total                 159905
+Total                 157207
 
 

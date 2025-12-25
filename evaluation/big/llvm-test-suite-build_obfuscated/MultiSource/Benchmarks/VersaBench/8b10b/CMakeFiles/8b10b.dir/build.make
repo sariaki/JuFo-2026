@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 # Include any dependencies generated for this target.
 include MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/depend.make
@@ -72,44 +72,44 @@ include MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/flags.make
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/flags.make
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/8b10b.dir/calc.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o -MF CMakeFiles/8b10b.dir/calc.c.o.d -o CMakeFiles/8b10b.dir/calc.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/8b10b.dir/calc.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.o -MF CMakeFiles/8b10b.dir/calc.c.o.d -o CMakeFiles/8b10b.dir/calc.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/8b10b.dir/calc.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c > CMakeFiles/8b10b.dir/calc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c > CMakeFiles/8b10b.dir/calc.c.i
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/calc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/8b10b.dir/calc.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c -o CMakeFiles/8b10b.dir/calc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/calc.c -o CMakeFiles/8b10b.dir/calc.c.s
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/flags.make
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/8b10b.dir/main.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o -MF CMakeFiles/8b10b.dir/main.c.o.d -o CMakeFiles/8b10b.dir/main.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/8b10b.dir/main.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.o -MF CMakeFiles/8b10b.dir/main.c.o.d -o CMakeFiles/8b10b.dir/main.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/8b10b.dir/main.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c > CMakeFiles/8b10b.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c > CMakeFiles/8b10b.dir/main.c.i
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/8b10b.dir/main.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c -o CMakeFiles/8b10b.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/main.c -o CMakeFiles/8b10b.dir/main.c.s
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/flags.make
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o: /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/timeit --summary CMakeFiles/8b10b.dir/testbench.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o -MF CMakeFiles/8b10b.dir/testbench.c.o.d -o CMakeFiles/8b10b.dir/testbench.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/tools/timeit --summary CMakeFiles/8b10b.dir/testbench.c.o.time /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o -MF CMakeFiles/8b10b.dir/testbench.c.o.d -o CMakeFiles/8b10b.dir/testbench.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/8b10b.dir/testbench.c.i"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c > CMakeFiles/8b10b.dir/testbench.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c > CMakeFiles/8b10b.dir/testbench.c.i
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/8b10b.dir/testbench.c.s"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c -o CMakeFiles/8b10b.dir/testbench.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/clang-18 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/testbench.c -o CMakeFiles/8b10b.dir/testbench.c.s
 
 # Object files for target 8b10b
 8b10b_OBJECTS = \
@@ -125,21 +125,21 @@ MultiSource/Benchmarks/VersaBench/8b10b/8b10b: MultiSource/Benchmarks/VersaBench
 MultiSource/Benchmarks/VersaBench/8b10b/8b10b: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/testbench.c.o
 MultiSource/Benchmarks/VersaBench/8b10b/8b10b: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build.make
 MultiSource/Benchmarks/VersaBench/8b10b/8b10b: MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable 8b10b"
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/8b10b.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/8b10b > /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/8b10b.size
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/8b10b.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/8b10b.reference_output
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/input.txt /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/input.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable 8b10b"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/8b10b.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/llvm-size --format=sysv /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/8b10b > /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/8b10b.size
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/8b10b.reference_output /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/8b10b.reference_output
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && /usr/bin/cmake -E create_symlink /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b/input.txt /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/input.txt
 
 # Rule to build all files generated by this target.
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build: MultiSource/Benchmarks/VersaBench/8b10b/8b10b
 .PHONY : MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/build
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && $(CMAKE_COMMAND) -P CMakeFiles/8b10b.dir/cmake_clean.cmake
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b && $(CMAKE_COMMAND) -P CMakeFiles/8b10b.dir/cmake_clean.cmake
 .PHONY : MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/clean
 
 MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MultiSource/Benchmarks/VersaBench/8b10b /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : MultiSource/Benchmarks/VersaBench/8b10b/CMakeFiles/8b10b.dir/depend
 

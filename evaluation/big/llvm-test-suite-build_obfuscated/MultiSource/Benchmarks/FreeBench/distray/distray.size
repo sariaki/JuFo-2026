@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/distray/distray  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/distray/distray  :
 section                  size    addr
 .interp                    28     792
 .note.gnu.property         32     824
@@ -14,11 +14,11 @@ section                  size    addr
 .init                      27    4096
 .plt                      176    4128
 .plt.got                    8    4304
-.text                    9139    4320
-.fini                      13   13460
-.rodata                  1152   16384
-.eh_frame_hdr              76   17536
-.eh_frame                 432   17616
+.text                    8627    4320
+.fini                      13   12948
+.rodata                   800   16384
+.eh_frame_hdr              68   17184
+.eh_frame                 388   17256
 .init_array                 8   23984
 .fini_array                 8   23992
 .dynamic                  496   24000
@@ -27,6 +27,6 @@ section                  size    addr
 .data                     648   24656
 .bss                   921632   25312
 .comment                   82       0
-Total                  935505
+Total                  934589
 
 

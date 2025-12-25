@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bisort/bisort  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/bisort/bisort  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                     80    4128
 .plt.got                  8    4208
-.text                  6856    4224
-.fini                    13   11080
-.rodata                1452   12288
-.eh_frame_hdr           140   13740
-.eh_frame               616   13880
+.text                  4037    4224
+.fini                    13    8264
+.rodata                 804   12288
+.eh_frame_hdr           140   13092
+.eh_frame               620   13232
 .init_array               8   19904
 .fini_array               8   19912
 .dynamic                496   19920
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   20512
 .bss                     24   20528
 .comment                 82       0
-Total                 10891
+Total                  7428
 
 

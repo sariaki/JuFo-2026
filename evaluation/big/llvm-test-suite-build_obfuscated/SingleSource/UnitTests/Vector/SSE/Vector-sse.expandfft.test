@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Vector-sse.expandfft 
-VERIFY: %b/fpcmp-target -r 0.016 %o %S/sse.expandfft.reference_output

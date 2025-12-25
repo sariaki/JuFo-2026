@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/football//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/football//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ football: MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/rul
 
 # fast build rule for target.
 football/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build
 .PHONY : football/fast
 
 common.o: common.c.o
@@ -136,7 +135,7 @@ common.o: common.c.o
 
 # target to build an object file
 common.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/common.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/common.c.o
 .PHONY : common.c.o
 
 common.i: common.c.i
@@ -144,7 +143,7 @@ common.i: common.c.i
 
 # target to preprocess a source file
 common.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/common.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/common.c.i
 .PHONY : common.c.i
 
 common.s: common.c.s
@@ -152,7 +151,7 @@ common.s: common.c.s
 
 # target to generate assembly for a file
 common.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/common.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/common.c.s
 .PHONY : common.c.s
 
 io.o: io.c.o
@@ -160,7 +159,7 @@ io.o: io.c.o
 
 # target to build an object file
 io.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/io.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/io.c.o
 .PHONY : io.c.o
 
 io.i: io.c.i
@@ -168,7 +167,7 @@ io.i: io.c.i
 
 # target to preprocess a source file
 io.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/io.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/io.c.i
 .PHONY : io.c.i
 
 io.s: io.c.s
@@ -176,7 +175,7 @@ io.s: io.c.s
 
 # target to generate assembly for a file
 io.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/io.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/io.c.s
 .PHONY : io.c.s
 
 sort.o: sort.c.o
@@ -184,7 +183,7 @@ sort.o: sort.c.o
 
 # target to build an object file
 sort.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/sort.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/sort.c.o
 .PHONY : sort.c.o
 
 sort.i: sort.c.i
@@ -192,7 +191,7 @@ sort.i: sort.c.i
 
 # target to preprocess a source file
 sort.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/sort.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/sort.c.i
 .PHONY : sort.c.i
 
 sort.s: sort.c.s
@@ -200,7 +199,7 @@ sort.s: sort.c.s
 
 # target to generate assembly for a file
 sort.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/sort.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/sort.c.s
 .PHONY : sort.c.s
 
 stats.o: stats.c.o
@@ -208,7 +207,7 @@ stats.o: stats.c.o
 
 # target to build an object file
 stats.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/stats.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/stats.c.o
 .PHONY : stats.c.o
 
 stats.i: stats.c.i
@@ -216,7 +215,7 @@ stats.i: stats.c.i
 
 # target to preprocess a source file
 stats.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/stats.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/stats.c.i
 .PHONY : stats.c.i
 
 stats.s: stats.c.s
@@ -224,7 +223,7 @@ stats.s: stats.c.s
 
 # target to generate assembly for a file
 stats.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/stats.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/build.make MultiSource/Benchmarks/Prolangs-C/football/CMakeFiles/football.dir/stats.c.s
 .PHONY : stats.c.s
 
 # Help Target
@@ -259,7 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

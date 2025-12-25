@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/rule
 .PHONY : MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ PathFinder: MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFin
 
 # fast build rule for target.
 PathFinder/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build
 .PHONY : PathFinder/fast
 
 bitfield.o: bitfield.c.o
@@ -136,7 +135,7 @@ bitfield.o: bitfield.c.o
 
 # target to build an object file
 bitfield.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/bitfield.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/bitfield.c.o
 .PHONY : bitfield.c.o
 
 bitfield.i: bitfield.c.i
@@ -144,7 +143,7 @@ bitfield.i: bitfield.c.i
 
 # target to preprocess a source file
 bitfield.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/bitfield.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/bitfield.c.i
 .PHONY : bitfield.c.i
 
 bitfield.s: bitfield.c.s
@@ -152,7 +151,7 @@ bitfield.s: bitfield.c.s
 
 # target to generate assembly for a file
 bitfield.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/bitfield.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/bitfield.c.s
 .PHONY : bitfield.c.s
 
 configuration.o: configuration.c.o
@@ -160,7 +159,7 @@ configuration.o: configuration.c.o
 
 # target to build an object file
 configuration.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/configuration.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/configuration.c.o
 .PHONY : configuration.c.o
 
 configuration.i: configuration.c.i
@@ -168,7 +167,7 @@ configuration.i: configuration.c.i
 
 # target to preprocess a source file
 configuration.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/configuration.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/configuration.c.i
 .PHONY : configuration.c.i
 
 configuration.s: configuration.c.s
@@ -176,7 +175,7 @@ configuration.s: configuration.c.s
 
 # target to generate assembly for a file
 configuration.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/configuration.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/configuration.c.s
 .PHONY : configuration.c.s
 
 gettime.o: gettime.c.o
@@ -184,7 +183,7 @@ gettime.o: gettime.c.o
 
 # target to build an object file
 gettime.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/gettime.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/gettime.c.o
 .PHONY : gettime.c.o
 
 gettime.i: gettime.c.i
@@ -192,7 +191,7 @@ gettime.i: gettime.c.i
 
 # target to preprocess a source file
 gettime.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/gettime.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/gettime.c.i
 .PHONY : gettime.c.i
 
 gettime.s: gettime.c.s
@@ -200,7 +199,7 @@ gettime.s: gettime.c.s
 
 # target to generate assembly for a file
 gettime.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/gettime.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/gettime.c.s
 .PHONY : gettime.c.s
 
 graph.o: graph.c.o
@@ -208,7 +207,7 @@ graph.o: graph.c.o
 
 # target to build an object file
 graph.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graph.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graph.c.o
 .PHONY : graph.c.o
 
 graph.i: graph.c.i
@@ -216,7 +215,7 @@ graph.i: graph.c.i
 
 # target to preprocess a source file
 graph.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graph.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graph.c.i
 .PHONY : graph.c.i
 
 graph.s: graph.c.s
@@ -224,7 +223,7 @@ graph.s: graph.c.s
 
 # target to generate assembly for a file
 graph.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graph.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graph.c.s
 .PHONY : graph.c.s
 
 graphGen.o: graphGen.c.o
@@ -232,7 +231,7 @@ graphGen.o: graphGen.c.o
 
 # target to build an object file
 graphGen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graphGen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graphGen.c.o
 .PHONY : graphGen.c.o
 
 graphGen.i: graphGen.c.i
@@ -240,7 +239,7 @@ graphGen.i: graphGen.c.i
 
 # target to preprocess a source file
 graphGen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graphGen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graphGen.c.i
 .PHONY : graphGen.c.i
 
 graphGen.s: graphGen.c.s
@@ -248,7 +247,7 @@ graphGen.s: graphGen.c.s
 
 # target to generate assembly for a file
 graphGen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graphGen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/graphGen.c.s
 .PHONY : graphGen.c.s
 
 main.o: main.c.o
@@ -256,7 +255,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -264,7 +263,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -272,7 +271,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/main.c.s
 .PHONY : main.c.s
 
 node.o: node.c.o
@@ -280,7 +279,7 @@ node.o: node.c.o
 
 # target to build an object file
 node.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/node.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/node.c.o
 .PHONY : node.c.o
 
 node.i: node.c.i
@@ -288,7 +287,7 @@ node.i: node.c.i
 
 # target to preprocess a source file
 node.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/node.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/node.c.i
 .PHONY : node.c.i
 
 node.s: node.c.s
@@ -296,7 +295,7 @@ node.s: node.c.s
 
 # target to generate assembly for a file
 node.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/node.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/node.c.s
 .PHONY : node.c.s
 
 parsing.o: parsing.c.o
@@ -304,7 +303,7 @@ parsing.o: parsing.c.o
 
 # target to build an object file
 parsing.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/parsing.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/parsing.c.o
 .PHONY : parsing.c.o
 
 parsing.i: parsing.c.i
@@ -312,7 +311,7 @@ parsing.i: parsing.c.i
 
 # target to preprocess a source file
 parsing.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/parsing.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/parsing.c.i
 .PHONY : parsing.c.i
 
 parsing.s: parsing.c.s
@@ -320,7 +319,7 @@ parsing.s: parsing.c.s
 
 # target to generate assembly for a file
 parsing.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/parsing.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/parsing.c.s
 .PHONY : parsing.c.s
 
 searchAlgorithms.o: searchAlgorithms.c.o
@@ -328,7 +327,7 @@ searchAlgorithms.o: searchAlgorithms.c.o
 
 # target to build an object file
 searchAlgorithms.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchAlgorithms.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchAlgorithms.c.o
 .PHONY : searchAlgorithms.c.o
 
 searchAlgorithms.i: searchAlgorithms.c.i
@@ -336,7 +335,7 @@ searchAlgorithms.i: searchAlgorithms.c.i
 
 # target to preprocess a source file
 searchAlgorithms.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchAlgorithms.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchAlgorithms.c.i
 .PHONY : searchAlgorithms.c.i
 
 searchAlgorithms.s: searchAlgorithms.c.s
@@ -344,7 +343,7 @@ searchAlgorithms.s: searchAlgorithms.c.s
 
 # target to generate assembly for a file
 searchAlgorithms.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchAlgorithms.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchAlgorithms.c.s
 .PHONY : searchAlgorithms.c.s
 
 searchDiagram.o: searchDiagram.c.o
@@ -352,7 +351,7 @@ searchDiagram.o: searchDiagram.c.o
 
 # target to build an object file
 searchDiagram.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchDiagram.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchDiagram.c.o
 .PHONY : searchDiagram.c.o
 
 searchDiagram.i: searchDiagram.c.i
@@ -360,7 +359,7 @@ searchDiagram.i: searchDiagram.c.i
 
 # target to preprocess a source file
 searchDiagram.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchDiagram.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchDiagram.c.i
 .PHONY : searchDiagram.c.i
 
 searchDiagram.s: searchDiagram.c.s
@@ -368,7 +367,7 @@ searchDiagram.s: searchDiagram.c.s
 
 # target to generate assembly for a file
 searchDiagram.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchDiagram.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/searchDiagram.c.s
 .PHONY : searchDiagram.c.s
 
 statistics.o: statistics.c.o
@@ -376,7 +375,7 @@ statistics.o: statistics.c.o
 
 # target to build an object file
 statistics.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/statistics.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/statistics.c.o
 .PHONY : statistics.c.o
 
 statistics.i: statistics.c.i
@@ -384,7 +383,7 @@ statistics.i: statistics.c.i
 
 # target to preprocess a source file
 statistics.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/statistics.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/statistics.c.i
 .PHONY : statistics.c.i
 
 statistics.s: statistics.c.s
@@ -392,7 +391,7 @@ statistics.s: statistics.c.s
 
 # target to generate assembly for a file
 statistics.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/statistics.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/statistics.c.s
 .PHONY : statistics.c.s
 
 systemCallMap.o: systemCallMap.c.o
@@ -400,7 +399,7 @@ systemCallMap.o: systemCallMap.c.o
 
 # target to build an object file
 systemCallMap.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/systemCallMap.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/systemCallMap.c.o
 .PHONY : systemCallMap.c.o
 
 systemCallMap.i: systemCallMap.c.i
@@ -408,7 +407,7 @@ systemCallMap.i: systemCallMap.c.i
 
 # target to preprocess a source file
 systemCallMap.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/systemCallMap.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/systemCallMap.c.i
 .PHONY : systemCallMap.c.i
 
 systemCallMap.s: systemCallMap.c.s
@@ -416,7 +415,7 @@ systemCallMap.s: systemCallMap.c.s
 
 # target to generate assembly for a file
 systemCallMap.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/systemCallMap.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/systemCallMap.c.s
 .PHONY : systemCallMap.c.s
 
 utils.o: utils.c.o
@@ -424,7 +423,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/utils.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -432,7 +431,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/utils.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -440,7 +439,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/utils.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/utils.c.s
 .PHONY : utils.c.s
 
 vectorUtils.o: vectorUtils.c.o
@@ -448,7 +447,7 @@ vectorUtils.o: vectorUtils.c.o
 
 # target to build an object file
 vectorUtils.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/vectorUtils.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/vectorUtils.c.o
 .PHONY : vectorUtils.c.o
 
 vectorUtils.i: vectorUtils.c.i
@@ -456,7 +455,7 @@ vectorUtils.i: vectorUtils.c.i
 
 # target to preprocess a source file
 vectorUtils.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/vectorUtils.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/vectorUtils.c.i
 .PHONY : vectorUtils.c.i
 
 vectorUtils.s: vectorUtils.c.s
@@ -464,7 +463,7 @@ vectorUtils.s: vectorUtils.c.s
 
 # target to generate assembly for a file
 vectorUtils.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/vectorUtils.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/vectorUtils.c.s
 .PHONY : vectorUtils.c.s
 
 yaml.o: yaml.c.o
@@ -472,7 +471,7 @@ yaml.o: yaml.c.o
 
 # target to build an object file
 yaml.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/yaml.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/yaml.c.o
 .PHONY : yaml.c.o
 
 yaml.i: yaml.c.i
@@ -480,7 +479,7 @@ yaml.i: yaml.c.i
 
 # target to preprocess a source file
 yaml.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/yaml.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/yaml.c.i
 .PHONY : yaml.c.i
 
 yaml.s: yaml.c.s
@@ -488,7 +487,7 @@ yaml.s: yaml.c.s
 
 # target to generate assembly for a file
 yaml.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/yaml.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/build.make MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/CMakeFiles/PathFinder.dir/yaml.c.s
 .PHONY : yaml.c.s
 
 # Help Target
@@ -556,7 +555,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

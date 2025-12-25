@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/city//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/city//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/rule
 .PHONY : MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ city: MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/rule
 
 # fast build rule for target.
 city/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build
 .PHONY : city/fast
 
 check_functions.o: check_functions.cpp.o
@@ -136,7 +135,7 @@ check_functions.o: check_functions.cpp.o
 
 # target to build an object file
 check_functions.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/check_functions.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/check_functions.cpp.o
 .PHONY : check_functions.cpp.o
 
 check_functions.i: check_functions.cpp.i
@@ -144,7 +143,7 @@ check_functions.i: check_functions.cpp.i
 
 # target to preprocess a source file
 check_functions.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/check_functions.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/check_functions.cpp.i
 .PHONY : check_functions.cpp.i
 
 check_functions.s: check_functions.cpp.s
@@ -152,7 +151,7 @@ check_functions.s: check_functions.cpp.s
 
 # target to generate assembly for a file
 check_functions.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/check_functions.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/check_functions.cpp.s
 .PHONY : check_functions.cpp.s
 
 direction.o: direction.cpp.o
@@ -160,7 +159,7 @@ direction.o: direction.cpp.o
 
 # target to build an object file
 direction.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/direction.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/direction.cpp.o
 .PHONY : direction.cpp.o
 
 direction.i: direction.cpp.i
@@ -168,7 +167,7 @@ direction.i: direction.cpp.i
 
 # target to preprocess a source file
 direction.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/direction.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/direction.cpp.i
 .PHONY : direction.cpp.i
 
 direction.s: direction.cpp.s
@@ -176,7 +175,7 @@ direction.s: direction.cpp.s
 
 # target to generate assembly for a file
 direction.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/direction.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/direction.cpp.s
 .PHONY : direction.cpp.s
 
 intersection.o: intersection.cpp.o
@@ -184,7 +183,7 @@ intersection.o: intersection.cpp.o
 
 # target to build an object file
 intersection.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/intersection.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/intersection.cpp.o
 .PHONY : intersection.cpp.o
 
 intersection.i: intersection.cpp.i
@@ -192,7 +191,7 @@ intersection.i: intersection.cpp.i
 
 # target to preprocess a source file
 intersection.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/intersection.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/intersection.cpp.i
 .PHONY : intersection.cpp.i
 
 intersection.s: intersection.cpp.s
@@ -200,7 +199,7 @@ intersection.s: intersection.cpp.s
 
 # target to generate assembly for a file
 intersection.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/intersection.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/intersection.cpp.s
 .PHONY : intersection.cpp.s
 
 light.o: light.cpp.o
@@ -208,7 +207,7 @@ light.o: light.cpp.o
 
 # target to build an object file
 light.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/light.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/light.cpp.o
 .PHONY : light.cpp.o
 
 light.i: light.cpp.i
@@ -216,7 +215,7 @@ light.i: light.cpp.i
 
 # target to preprocess a source file
 light.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/light.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/light.cpp.i
 .PHONY : light.cpp.i
 
 light.s: light.cpp.s
@@ -224,7 +223,7 @@ light.s: light.cpp.s
 
 # target to generate assembly for a file
 light.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/light.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/light.cpp.s
 .PHONY : light.cpp.s
 
 main.o: main.cpp.o
@@ -232,7 +231,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/main.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -240,7 +239,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/main.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -248,7 +247,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/main.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 roadlet.o: roadlet.cpp.o
@@ -256,7 +255,7 @@ roadlet.o: roadlet.cpp.o
 
 # target to build an object file
 roadlet.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/roadlet.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/roadlet.cpp.o
 .PHONY : roadlet.cpp.o
 
 roadlet.i: roadlet.cpp.i
@@ -264,7 +263,7 @@ roadlet.i: roadlet.cpp.i
 
 # target to preprocess a source file
 roadlet.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/roadlet.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/roadlet.cpp.i
 .PHONY : roadlet.cpp.i
 
 roadlet.s: roadlet.cpp.s
@@ -272,7 +271,7 @@ roadlet.s: roadlet.cpp.s
 
 # target to generate assembly for a file
 roadlet.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/roadlet.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/roadlet.cpp.s
 .PHONY : roadlet.cpp.s
 
 vehicle.o: vehicle.cpp.o
@@ -280,7 +279,7 @@ vehicle.o: vehicle.cpp.o
 
 # target to build an object file
 vehicle.cpp.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/vehicle.cpp.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/vehicle.cpp.o
 .PHONY : vehicle.cpp.o
 
 vehicle.i: vehicle.cpp.i
@@ -288,7 +287,7 @@ vehicle.i: vehicle.cpp.i
 
 # target to preprocess a source file
 vehicle.cpp.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/vehicle.cpp.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/vehicle.cpp.i
 .PHONY : vehicle.cpp.i
 
 vehicle.s: vehicle.cpp.s
@@ -296,7 +295,7 @@ vehicle.s: vehicle.cpp.s
 
 # target to generate assembly for a file
 vehicle.cpp.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/vehicle.cpp.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/build.make MultiSource/Benchmarks/Prolangs-C++/city/CMakeFiles/city.dir/vehicle.cpp.s
 .PHONY : vehicle.cpp.s
 
 # Help Target
@@ -340,7 +339,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

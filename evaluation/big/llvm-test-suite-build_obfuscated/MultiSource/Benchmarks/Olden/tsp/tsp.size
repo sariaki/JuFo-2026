@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/tsp/tsp  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Olden/tsp/tsp  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,11 +14,11 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  7876    4256
-.fini                    13   12132
-.rodata                1396   12288
-.eh_frame_hdr           100   13684
-.eh_frame               540   13784
+.text                  5396    4256
+.fini                    13    9652
+.rodata                 884   12288
+.eh_frame_hdr           100   13172
+.eh_frame               524   13272
 .init_array               8   19904
 .fini_array               8   19912
 .dynamic                496   19920
@@ -27,6 +27,6 @@ section                size    addr
 .data                    16   20528
 .bss                     16   20544
 .comment                 82       0
-Total                 11895
+Total                  8887
 
 

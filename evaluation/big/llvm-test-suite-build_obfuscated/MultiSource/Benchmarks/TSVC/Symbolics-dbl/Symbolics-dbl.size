@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/TSVC/Symbolics-dbl/Symbolics-dbl  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/TSVC/Symbolics-dbl/Symbolics-dbl  :
 section                   size    addr
 .interp                     28     792
 .note.gnu.property          32     824
@@ -14,11 +14,11 @@ section                   size    addr
 .init                       27    4096
 .plt                       128    4128
 .plt.got                     8    4256
-.text                    48261    4272
-.fini                       13   52536
-.rodata                   2405   53248
-.eh_frame_hdr              164   55656
-.eh_frame                  932   55824
+.text                    47194    4272
+.fini                       13   51468
+.rodata                   2165   53248
+.eh_frame_hdr              164   55416
+.eh_frame                  916   55584
 .init_array                  8   60592
 .fini_array                  8   60600
 .data.rel.ro               264   60608
@@ -28,6 +28,6 @@ section                   size    addr
 .data                       24   61496
 .bss                   5566064   61536
 .comment                    82       0
-Total                  5620332
+Total                  5619009
 
 

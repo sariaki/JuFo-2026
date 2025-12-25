@@ -1,33 +1,33 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/miniFE  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/miniFE  :
 section                  size     addr
 .interp                    28      792
 .note.gnu.property         32      824
 .note.gnu.build-id         36      856
 .note.ABI-tag              32      892
-.gnu.hash                  40      928
-.dynsym                  2352      968
-.dynstr                  3635     3320
-.gnu.version              196     6956
-.gnu.version_r            256     7152
-.rela.dyn                 480     7408
-.rela.plt                1872     7888
+.gnu.hash                  48      928
+.dynsym                  2376      976
+.dynstr                  3738     3352
+.gnu.version              198     7090
+.gnu.version_r            256     7288
+.rela.dyn                 480     7544
+.rela.plt                1872     8024
 .init                      27    12288
 .plt                     1264    12320
 .plt.got                    8    13584
-.text                  114065    13600
-.fini                      13   127668
-.rodata                 12974   131072
-.eh_frame_hdr             844   144048
-.eh_frame                7376   144896
-.gcc_except_table        4000   152272
-.init_array                 8   163152
-.fini_array                 8   163160
-.dynamic                  528   163168
-.got                      120   163696
-.got.plt                  648   163816
-.data                      32   164464
-.bss                        8   164496
+.text                  104386    13600
+.fini                      13   117988
+.rodata                  9526   118784
+.eh_frame_hdr             804   128312
+.eh_frame                7140   129120
+.gcc_except_table        3844   136260
+.init_array                 8   146768
+.fini_array                 8   146776
+.dynamic                  528   146784
+.got                      120   147312
+.got.plt                  648   147432
+.data                      32   148080
+.bss                        8   148112
 .comment                   82        0
-Total                  150964
+Total                  137542
 
 

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-float16-smoke 
-VERIFY: %b/fpcmp-target %o %S/float16-smoke.reference_output

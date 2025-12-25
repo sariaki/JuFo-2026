@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/trmm 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/trmm.reference_output

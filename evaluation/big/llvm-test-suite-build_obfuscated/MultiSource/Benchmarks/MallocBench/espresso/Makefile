@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MallocBench/espresso//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/MallocBench/espresso//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rule
 .PHONY : MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ espresso: MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/ru
 
 # fast build rule for target.
 espresso/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build
 .PHONY : espresso/fast
 
 cofactor.o: cofactor.c.o
@@ -136,7 +135,7 @@ cofactor.o: cofactor.c.o
 
 # target to build an object file
 cofactor.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cofactor.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cofactor.c.o
 .PHONY : cofactor.c.o
 
 cofactor.i: cofactor.c.i
@@ -144,7 +143,7 @@ cofactor.i: cofactor.c.i
 
 # target to preprocess a source file
 cofactor.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cofactor.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cofactor.c.i
 .PHONY : cofactor.c.i
 
 cofactor.s: cofactor.c.s
@@ -152,7 +151,7 @@ cofactor.s: cofactor.c.s
 
 # target to generate assembly for a file
 cofactor.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cofactor.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cofactor.c.s
 .PHONY : cofactor.c.s
 
 cols.o: cols.c.o
@@ -160,7 +159,7 @@ cols.o: cols.c.o
 
 # target to build an object file
 cols.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cols.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cols.c.o
 .PHONY : cols.c.o
 
 cols.i: cols.c.i
@@ -168,7 +167,7 @@ cols.i: cols.c.i
 
 # target to preprocess a source file
 cols.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cols.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cols.c.i
 .PHONY : cols.c.i
 
 cols.s: cols.c.s
@@ -176,7 +175,7 @@ cols.s: cols.c.s
 
 # target to generate assembly for a file
 cols.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cols.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cols.c.s
 .PHONY : cols.c.s
 
 compl.o: compl.c.o
@@ -184,7 +183,7 @@ compl.o: compl.c.o
 
 # target to build an object file
 compl.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/compl.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/compl.c.o
 .PHONY : compl.c.o
 
 compl.i: compl.c.i
@@ -192,7 +191,7 @@ compl.i: compl.c.i
 
 # target to preprocess a source file
 compl.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/compl.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/compl.c.i
 .PHONY : compl.c.i
 
 compl.s: compl.c.s
@@ -200,7 +199,7 @@ compl.s: compl.c.s
 
 # target to generate assembly for a file
 compl.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/compl.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/compl.c.s
 .PHONY : compl.c.s
 
 contain.o: contain.c.o
@@ -208,7 +207,7 @@ contain.o: contain.c.o
 
 # target to build an object file
 contain.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/contain.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/contain.c.o
 .PHONY : contain.c.o
 
 contain.i: contain.c.i
@@ -216,7 +215,7 @@ contain.i: contain.c.i
 
 # target to preprocess a source file
 contain.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/contain.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/contain.c.i
 .PHONY : contain.c.i
 
 contain.s: contain.c.s
@@ -224,7 +223,7 @@ contain.s: contain.c.s
 
 # target to generate assembly for a file
 contain.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/contain.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/contain.c.s
 .PHONY : contain.c.s
 
 cubestr.o: cubestr.c.o
@@ -232,7 +231,7 @@ cubestr.o: cubestr.c.o
 
 # target to build an object file
 cubestr.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cubestr.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cubestr.c.o
 .PHONY : cubestr.c.o
 
 cubestr.i: cubestr.c.i
@@ -240,7 +239,7 @@ cubestr.i: cubestr.c.i
 
 # target to preprocess a source file
 cubestr.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cubestr.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cubestr.c.i
 .PHONY : cubestr.c.i
 
 cubestr.s: cubestr.c.s
@@ -248,7 +247,7 @@ cubestr.s: cubestr.c.s
 
 # target to generate assembly for a file
 cubestr.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cubestr.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cubestr.c.s
 .PHONY : cubestr.c.s
 
 cvrin.o: cvrin.c.o
@@ -256,7 +255,7 @@ cvrin.o: cvrin.c.o
 
 # target to build an object file
 cvrin.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrin.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrin.c.o
 .PHONY : cvrin.c.o
 
 cvrin.i: cvrin.c.i
@@ -264,7 +263,7 @@ cvrin.i: cvrin.c.i
 
 # target to preprocess a source file
 cvrin.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrin.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrin.c.i
 .PHONY : cvrin.c.i
 
 cvrin.s: cvrin.c.s
@@ -272,7 +271,7 @@ cvrin.s: cvrin.c.s
 
 # target to generate assembly for a file
 cvrin.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrin.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrin.c.s
 .PHONY : cvrin.c.s
 
 cvrm.o: cvrm.c.o
@@ -280,7 +279,7 @@ cvrm.o: cvrm.c.o
 
 # target to build an object file
 cvrm.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrm.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrm.c.o
 .PHONY : cvrm.c.o
 
 cvrm.i: cvrm.c.i
@@ -288,7 +287,7 @@ cvrm.i: cvrm.c.i
 
 # target to preprocess a source file
 cvrm.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrm.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrm.c.i
 .PHONY : cvrm.c.i
 
 cvrm.s: cvrm.c.s
@@ -296,7 +295,7 @@ cvrm.s: cvrm.c.s
 
 # target to generate assembly for a file
 cvrm.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrm.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrm.c.s
 .PHONY : cvrm.c.s
 
 cvrmisc.o: cvrmisc.c.o
@@ -304,7 +303,7 @@ cvrmisc.o: cvrmisc.c.o
 
 # target to build an object file
 cvrmisc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrmisc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrmisc.c.o
 .PHONY : cvrmisc.c.o
 
 cvrmisc.i: cvrmisc.c.i
@@ -312,7 +311,7 @@ cvrmisc.i: cvrmisc.c.i
 
 # target to preprocess a source file
 cvrmisc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrmisc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrmisc.c.i
 .PHONY : cvrmisc.c.i
 
 cvrmisc.s: cvrmisc.c.s
@@ -320,7 +319,7 @@ cvrmisc.s: cvrmisc.c.s
 
 # target to generate assembly for a file
 cvrmisc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrmisc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrmisc.c.s
 .PHONY : cvrmisc.c.s
 
 cvrout.o: cvrout.c.o
@@ -328,7 +327,7 @@ cvrout.o: cvrout.c.o
 
 # target to build an object file
 cvrout.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrout.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrout.c.o
 .PHONY : cvrout.c.o
 
 cvrout.i: cvrout.c.i
@@ -336,7 +335,7 @@ cvrout.i: cvrout.c.i
 
 # target to preprocess a source file
 cvrout.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrout.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrout.c.i
 .PHONY : cvrout.c.i
 
 cvrout.s: cvrout.c.s
@@ -344,7 +343,7 @@ cvrout.s: cvrout.c.s
 
 # target to generate assembly for a file
 cvrout.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrout.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/cvrout.c.s
 .PHONY : cvrout.c.s
 
 dominate.o: dominate.c.o
@@ -352,7 +351,7 @@ dominate.o: dominate.c.o
 
 # target to build an object file
 dominate.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/dominate.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/dominate.c.o
 .PHONY : dominate.c.o
 
 dominate.i: dominate.c.i
@@ -360,7 +359,7 @@ dominate.i: dominate.c.i
 
 # target to preprocess a source file
 dominate.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/dominate.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/dominate.c.i
 .PHONY : dominate.c.i
 
 dominate.s: dominate.c.s
@@ -368,7 +367,7 @@ dominate.s: dominate.c.s
 
 # target to generate assembly for a file
 dominate.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/dominate.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/dominate.c.s
 .PHONY : dominate.c.s
 
 equiv.o: equiv.c.o
@@ -376,7 +375,7 @@ equiv.o: equiv.c.o
 
 # target to build an object file
 equiv.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/equiv.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/equiv.c.o
 .PHONY : equiv.c.o
 
 equiv.i: equiv.c.i
@@ -384,7 +383,7 @@ equiv.i: equiv.c.i
 
 # target to preprocess a source file
 equiv.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/equiv.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/equiv.c.i
 .PHONY : equiv.c.i
 
 equiv.s: equiv.c.s
@@ -392,7 +391,7 @@ equiv.s: equiv.c.s
 
 # target to generate assembly for a file
 equiv.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/equiv.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/equiv.c.s
 .PHONY : equiv.c.s
 
 espresso.o: espresso.c.o
@@ -400,7 +399,7 @@ espresso.o: espresso.c.o
 
 # target to build an object file
 espresso.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/espresso.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/espresso.c.o
 .PHONY : espresso.c.o
 
 espresso.i: espresso.c.i
@@ -408,7 +407,7 @@ espresso.i: espresso.c.i
 
 # target to preprocess a source file
 espresso.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/espresso.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/espresso.c.i
 .PHONY : espresso.c.i
 
 espresso.s: espresso.c.s
@@ -416,7 +415,7 @@ espresso.s: espresso.c.s
 
 # target to generate assembly for a file
 espresso.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/espresso.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/espresso.c.s
 .PHONY : espresso.c.s
 
 essen.o: essen.c.o
@@ -424,7 +423,7 @@ essen.o: essen.c.o
 
 # target to build an object file
 essen.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/essen.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/essen.c.o
 .PHONY : essen.c.o
 
 essen.i: essen.c.i
@@ -432,7 +431,7 @@ essen.i: essen.c.i
 
 # target to preprocess a source file
 essen.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/essen.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/essen.c.i
 .PHONY : essen.c.i
 
 essen.s: essen.c.s
@@ -440,7 +439,7 @@ essen.s: essen.c.s
 
 # target to generate assembly for a file
 essen.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/essen.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/essen.c.s
 .PHONY : essen.c.s
 
 exact.o: exact.c.o
@@ -448,7 +447,7 @@ exact.o: exact.c.o
 
 # target to build an object file
 exact.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/exact.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/exact.c.o
 .PHONY : exact.c.o
 
 exact.i: exact.c.i
@@ -456,7 +455,7 @@ exact.i: exact.c.i
 
 # target to preprocess a source file
 exact.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/exact.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/exact.c.i
 .PHONY : exact.c.i
 
 exact.s: exact.c.s
@@ -464,7 +463,7 @@ exact.s: exact.c.s
 
 # target to generate assembly for a file
 exact.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/exact.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/exact.c.s
 .PHONY : exact.c.s
 
 expand.o: expand.c.o
@@ -472,7 +471,7 @@ expand.o: expand.c.o
 
 # target to build an object file
 expand.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/expand.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/expand.c.o
 .PHONY : expand.c.o
 
 expand.i: expand.c.i
@@ -480,7 +479,7 @@ expand.i: expand.c.i
 
 # target to preprocess a source file
 expand.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/expand.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/expand.c.i
 .PHONY : expand.c.i
 
 expand.s: expand.c.s
@@ -488,7 +487,7 @@ expand.s: expand.c.s
 
 # target to generate assembly for a file
 expand.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/expand.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/expand.c.s
 .PHONY : expand.c.s
 
 gasp.o: gasp.c.o
@@ -496,7 +495,7 @@ gasp.o: gasp.c.o
 
 # target to build an object file
 gasp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gasp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gasp.c.o
 .PHONY : gasp.c.o
 
 gasp.i: gasp.c.i
@@ -504,7 +503,7 @@ gasp.i: gasp.c.i
 
 # target to preprocess a source file
 gasp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gasp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gasp.c.i
 .PHONY : gasp.c.i
 
 gasp.s: gasp.c.s
@@ -512,7 +511,7 @@ gasp.s: gasp.c.s
 
 # target to generate assembly for a file
 gasp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gasp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gasp.c.s
 .PHONY : gasp.c.s
 
 getopt.o: getopt.c.o
@@ -520,7 +519,7 @@ getopt.o: getopt.c.o
 
 # target to build an object file
 getopt.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/getopt.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/getopt.c.o
 .PHONY : getopt.c.o
 
 getopt.i: getopt.c.i
@@ -528,7 +527,7 @@ getopt.i: getopt.c.i
 
 # target to preprocess a source file
 getopt.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/getopt.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/getopt.c.i
 .PHONY : getopt.c.i
 
 getopt.s: getopt.c.s
@@ -536,7 +535,7 @@ getopt.s: getopt.c.s
 
 # target to generate assembly for a file
 getopt.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/getopt.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/getopt.c.s
 .PHONY : getopt.c.s
 
 gimpel.o: gimpel.c.o
@@ -544,7 +543,7 @@ gimpel.o: gimpel.c.o
 
 # target to build an object file
 gimpel.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gimpel.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gimpel.c.o
 .PHONY : gimpel.c.o
 
 gimpel.i: gimpel.c.i
@@ -552,7 +551,7 @@ gimpel.i: gimpel.c.i
 
 # target to preprocess a source file
 gimpel.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gimpel.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gimpel.c.i
 .PHONY : gimpel.c.i
 
 gimpel.s: gimpel.c.s
@@ -560,7 +559,7 @@ gimpel.s: gimpel.c.s
 
 # target to generate assembly for a file
 gimpel.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gimpel.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/gimpel.c.s
 .PHONY : gimpel.c.s
 
 globals.o: globals.c.o
@@ -568,7 +567,7 @@ globals.o: globals.c.o
 
 # target to build an object file
 globals.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/globals.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/globals.c.o
 .PHONY : globals.c.o
 
 globals.i: globals.c.i
@@ -576,7 +575,7 @@ globals.i: globals.c.i
 
 # target to preprocess a source file
 globals.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/globals.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/globals.c.i
 .PHONY : globals.c.i
 
 globals.s: globals.c.s
@@ -584,7 +583,7 @@ globals.s: globals.c.s
 
 # target to generate assembly for a file
 globals.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/globals.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/globals.c.s
 .PHONY : globals.c.s
 
 hack.o: hack.c.o
@@ -592,7 +591,7 @@ hack.o: hack.c.o
 
 # target to build an object file
 hack.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/hack.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/hack.c.o
 .PHONY : hack.c.o
 
 hack.i: hack.c.i
@@ -600,7 +599,7 @@ hack.i: hack.c.i
 
 # target to preprocess a source file
 hack.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/hack.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/hack.c.i
 .PHONY : hack.c.i
 
 hack.s: hack.c.s
@@ -608,7 +607,7 @@ hack.s: hack.c.s
 
 # target to generate assembly for a file
 hack.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/hack.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/hack.c.s
 .PHONY : hack.c.s
 
 indep.o: indep.c.o
@@ -616,7 +615,7 @@ indep.o: indep.c.o
 
 # target to build an object file
 indep.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/indep.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/indep.c.o
 .PHONY : indep.c.o
 
 indep.i: indep.c.i
@@ -624,7 +623,7 @@ indep.i: indep.c.i
 
 # target to preprocess a source file
 indep.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/indep.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/indep.c.i
 .PHONY : indep.c.i
 
 indep.s: indep.c.s
@@ -632,7 +631,7 @@ indep.s: indep.c.s
 
 # target to generate assembly for a file
 indep.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/indep.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/indep.c.s
 .PHONY : indep.c.s
 
 irred.o: irred.c.o
@@ -640,7 +639,7 @@ irred.o: irred.c.o
 
 # target to build an object file
 irred.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/irred.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/irred.c.o
 .PHONY : irred.c.o
 
 irred.i: irred.c.i
@@ -648,7 +647,7 @@ irred.i: irred.c.i
 
 # target to preprocess a source file
 irred.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/irred.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/irred.c.i
 .PHONY : irred.c.i
 
 irred.s: irred.c.s
@@ -656,7 +655,7 @@ irred.s: irred.c.s
 
 # target to generate assembly for a file
 irred.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/irred.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/irred.c.s
 .PHONY : irred.c.s
 
 main.o: main.c.o
@@ -664,7 +663,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/main.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -672,7 +671,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/main.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -680,7 +679,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/main.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/main.c.s
 .PHONY : main.c.s
 
 map.o: map.c.o
@@ -688,7 +687,7 @@ map.o: map.c.o
 
 # target to build an object file
 map.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/map.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/map.c.o
 .PHONY : map.c.o
 
 map.i: map.c.i
@@ -696,7 +695,7 @@ map.i: map.c.i
 
 # target to preprocess a source file
 map.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/map.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/map.c.i
 .PHONY : map.c.i
 
 map.s: map.c.s
@@ -704,7 +703,7 @@ map.s: map.c.s
 
 # target to generate assembly for a file
 map.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/map.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/map.c.s
 .PHONY : map.c.s
 
 matrix.o: matrix.c.o
@@ -712,7 +711,7 @@ matrix.o: matrix.c.o
 
 # target to build an object file
 matrix.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/matrix.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/matrix.c.o
 .PHONY : matrix.c.o
 
 matrix.i: matrix.c.i
@@ -720,7 +719,7 @@ matrix.i: matrix.c.i
 
 # target to preprocess a source file
 matrix.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/matrix.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/matrix.c.i
 .PHONY : matrix.c.i
 
 matrix.s: matrix.c.s
@@ -728,7 +727,7 @@ matrix.s: matrix.c.s
 
 # target to generate assembly for a file
 matrix.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/matrix.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/matrix.c.s
 .PHONY : matrix.c.s
 
 mincov.o: mincov.c.o
@@ -736,7 +735,7 @@ mincov.o: mincov.c.o
 
 # target to build an object file
 mincov.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/mincov.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/mincov.c.o
 .PHONY : mincov.c.o
 
 mincov.i: mincov.c.i
@@ -744,7 +743,7 @@ mincov.i: mincov.c.i
 
 # target to preprocess a source file
 mincov.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/mincov.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/mincov.c.i
 .PHONY : mincov.c.i
 
 mincov.s: mincov.c.s
@@ -752,7 +751,7 @@ mincov.s: mincov.c.s
 
 # target to generate assembly for a file
 mincov.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/mincov.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/mincov.c.s
 .PHONY : mincov.c.s
 
 opo.o: opo.c.o
@@ -760,7 +759,7 @@ opo.o: opo.c.o
 
 # target to build an object file
 opo.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/opo.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/opo.c.o
 .PHONY : opo.c.o
 
 opo.i: opo.c.i
@@ -768,7 +767,7 @@ opo.i: opo.c.i
 
 # target to preprocess a source file
 opo.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/opo.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/opo.c.i
 .PHONY : opo.c.i
 
 opo.s: opo.c.s
@@ -776,7 +775,7 @@ opo.s: opo.c.s
 
 # target to generate assembly for a file
 opo.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/opo.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/opo.c.s
 .PHONY : opo.c.s
 
 pair.o: pair.c.o
@@ -784,7 +783,7 @@ pair.o: pair.c.o
 
 # target to build an object file
 pair.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/pair.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/pair.c.o
 .PHONY : pair.c.o
 
 pair.i: pair.c.i
@@ -792,7 +791,7 @@ pair.i: pair.c.i
 
 # target to preprocess a source file
 pair.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/pair.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/pair.c.i
 .PHONY : pair.c.i
 
 pair.s: pair.c.s
@@ -800,7 +799,7 @@ pair.s: pair.c.s
 
 # target to generate assembly for a file
 pair.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/pair.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/pair.c.s
 .PHONY : pair.c.s
 
 part.o: part.c.o
@@ -808,7 +807,7 @@ part.o: part.c.o
 
 # target to build an object file
 part.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/part.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/part.c.o
 .PHONY : part.c.o
 
 part.i: part.c.i
@@ -816,7 +815,7 @@ part.i: part.c.i
 
 # target to preprocess a source file
 part.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/part.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/part.c.i
 .PHONY : part.c.i
 
 part.s: part.c.s
@@ -824,7 +823,7 @@ part.s: part.c.s
 
 # target to generate assembly for a file
 part.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/part.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/part.c.s
 .PHONY : part.c.s
 
 primes.o: primes.c.o
@@ -832,7 +831,7 @@ primes.o: primes.c.o
 
 # target to build an object file
 primes.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/primes.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/primes.c.o
 .PHONY : primes.c.o
 
 primes.i: primes.c.i
@@ -840,7 +839,7 @@ primes.i: primes.c.i
 
 # target to preprocess a source file
 primes.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/primes.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/primes.c.i
 .PHONY : primes.c.i
 
 primes.s: primes.c.s
@@ -848,7 +847,7 @@ primes.s: primes.c.s
 
 # target to generate assembly for a file
 primes.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/primes.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/primes.c.s
 .PHONY : primes.c.s
 
 reduce.o: reduce.c.o
@@ -856,7 +855,7 @@ reduce.o: reduce.c.o
 
 # target to build an object file
 reduce.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/reduce.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/reduce.c.o
 .PHONY : reduce.c.o
 
 reduce.i: reduce.c.i
@@ -864,7 +863,7 @@ reduce.i: reduce.c.i
 
 # target to preprocess a source file
 reduce.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/reduce.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/reduce.c.i
 .PHONY : reduce.c.i
 
 reduce.s: reduce.c.s
@@ -872,7 +871,7 @@ reduce.s: reduce.c.s
 
 # target to generate assembly for a file
 reduce.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/reduce.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/reduce.c.s
 .PHONY : reduce.c.s
 
 rows.o: rows.c.o
@@ -880,7 +879,7 @@ rows.o: rows.c.o
 
 # target to build an object file
 rows.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rows.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rows.c.o
 .PHONY : rows.c.o
 
 rows.i: rows.c.i
@@ -888,7 +887,7 @@ rows.i: rows.c.i
 
 # target to preprocess a source file
 rows.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rows.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rows.c.i
 .PHONY : rows.c.i
 
 rows.s: rows.c.s
@@ -896,7 +895,7 @@ rows.s: rows.c.s
 
 # target to generate assembly for a file
 rows.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rows.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/rows.c.s
 .PHONY : rows.c.s
 
 set.o: set.c.o
@@ -904,7 +903,7 @@ set.o: set.c.o
 
 # target to build an object file
 set.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/set.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/set.c.o
 .PHONY : set.c.o
 
 set.i: set.c.i
@@ -912,7 +911,7 @@ set.i: set.c.i
 
 # target to preprocess a source file
 set.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/set.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/set.c.i
 .PHONY : set.c.i
 
 set.s: set.c.s
@@ -920,7 +919,7 @@ set.s: set.c.s
 
 # target to generate assembly for a file
 set.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/set.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/set.c.s
 .PHONY : set.c.s
 
 setc.o: setc.c.o
@@ -928,7 +927,7 @@ setc.o: setc.c.o
 
 # target to build an object file
 setc.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/setc.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/setc.c.o
 .PHONY : setc.c.o
 
 setc.i: setc.c.i
@@ -936,7 +935,7 @@ setc.i: setc.c.i
 
 # target to preprocess a source file
 setc.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/setc.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/setc.c.i
 .PHONY : setc.c.i
 
 setc.s: setc.c.s
@@ -944,7 +943,7 @@ setc.s: setc.c.s
 
 # target to generate assembly for a file
 setc.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/setc.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/setc.c.s
 .PHONY : setc.c.s
 
 sharp.o: sharp.c.o
@@ -952,7 +951,7 @@ sharp.o: sharp.c.o
 
 # target to build an object file
 sharp.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sharp.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sharp.c.o
 .PHONY : sharp.c.o
 
 sharp.i: sharp.c.i
@@ -960,7 +959,7 @@ sharp.i: sharp.c.i
 
 # target to preprocess a source file
 sharp.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sharp.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sharp.c.i
 .PHONY : sharp.c.i
 
 sharp.s: sharp.c.s
@@ -968,7 +967,7 @@ sharp.s: sharp.c.s
 
 # target to generate assembly for a file
 sharp.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sharp.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sharp.c.s
 .PHONY : sharp.c.s
 
 sminterf.o: sminterf.c.o
@@ -976,7 +975,7 @@ sminterf.o: sminterf.c.o
 
 # target to build an object file
 sminterf.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sminterf.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sminterf.c.o
 .PHONY : sminterf.c.o
 
 sminterf.i: sminterf.c.i
@@ -984,7 +983,7 @@ sminterf.i: sminterf.c.i
 
 # target to preprocess a source file
 sminterf.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sminterf.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sminterf.c.i
 .PHONY : sminterf.c.i
 
 sminterf.s: sminterf.c.s
@@ -992,7 +991,7 @@ sminterf.s: sminterf.c.s
 
 # target to generate assembly for a file
 sminterf.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sminterf.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sminterf.c.s
 .PHONY : sminterf.c.s
 
 solution.o: solution.c.o
@@ -1000,7 +999,7 @@ solution.o: solution.c.o
 
 # target to build an object file
 solution.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/solution.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/solution.c.o
 .PHONY : solution.c.o
 
 solution.i: solution.c.i
@@ -1008,7 +1007,7 @@ solution.i: solution.c.i
 
 # target to preprocess a source file
 solution.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/solution.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/solution.c.i
 .PHONY : solution.c.i
 
 solution.s: solution.c.s
@@ -1016,7 +1015,7 @@ solution.s: solution.c.s
 
 # target to generate assembly for a file
 solution.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/solution.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/solution.c.s
 .PHONY : solution.c.s
 
 sparse.o: sparse.c.o
@@ -1024,7 +1023,7 @@ sparse.o: sparse.c.o
 
 # target to build an object file
 sparse.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sparse.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sparse.c.o
 .PHONY : sparse.c.o
 
 sparse.i: sparse.c.i
@@ -1032,7 +1031,7 @@ sparse.i: sparse.c.i
 
 # target to preprocess a source file
 sparse.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sparse.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sparse.c.i
 .PHONY : sparse.c.i
 
 sparse.s: sparse.c.s
@@ -1040,7 +1039,7 @@ sparse.s: sparse.c.s
 
 # target to generate assembly for a file
 sparse.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sparse.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/sparse.c.s
 .PHONY : sparse.c.s
 
 unate.o: unate.c.o
@@ -1048,7 +1047,7 @@ unate.o: unate.c.o
 
 # target to build an object file
 unate.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/unate.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/unate.c.o
 .PHONY : unate.c.o
 
 unate.i: unate.c.i
@@ -1056,7 +1055,7 @@ unate.i: unate.c.i
 
 # target to preprocess a source file
 unate.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/unate.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/unate.c.i
 .PHONY : unate.c.i
 
 unate.s: unate.c.s
@@ -1064,7 +1063,7 @@ unate.s: unate.c.s
 
 # target to generate assembly for a file
 unate.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/unate.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/unate.c.s
 .PHONY : unate.c.s
 
 utility.o: utility.c.o
@@ -1072,7 +1071,7 @@ utility.o: utility.c.o
 
 # target to build an object file
 utility.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/utility.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/utility.c.o
 .PHONY : utility.c.o
 
 utility.i: utility.c.i
@@ -1080,7 +1079,7 @@ utility.i: utility.c.i
 
 # target to preprocess a source file
 utility.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/utility.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/utility.c.i
 .PHONY : utility.c.i
 
 utility.s: utility.c.s
@@ -1088,7 +1087,7 @@ utility.s: utility.c.s
 
 # target to generate assembly for a file
 utility.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/utility.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/utility.c.s
 .PHONY : utility.c.s
 
 verify.o: verify.c.o
@@ -1096,7 +1095,7 @@ verify.o: verify.c.o
 
 # target to build an object file
 verify.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/verify.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/verify.c.o
 .PHONY : verify.c.o
 
 verify.i: verify.c.i
@@ -1104,7 +1103,7 @@ verify.i: verify.c.i
 
 # target to preprocess a source file
 verify.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/verify.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/verify.c.i
 .PHONY : verify.c.i
 
 verify.s: verify.c.s
@@ -1112,7 +1111,7 @@ verify.s: verify.c.s
 
 # target to generate assembly for a file
 verify.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/verify.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/build.make MultiSource/Benchmarks/MallocBench/espresso/CMakeFiles/espresso.dir/verify.c.s
 .PHONY : verify.c.s
 
 # Help Target
@@ -1258,7 +1257,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

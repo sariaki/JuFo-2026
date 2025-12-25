@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-tbl/unix-tbl  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-tbl/unix-tbl  :
 section                 size    addr
 .interp                   28     792
 .note.gnu.property        32     824
@@ -14,19 +14,19 @@ section                 size    addr
 .init                     27    4096
 .plt                     320    4128
 .plt.got                   8    4448
-.text                  44461    4464
-.fini                     13   48928
-.rodata                 7664   49152
-.eh_frame_hdr            708   56816
-.eh_frame               4332   57528
-.init_array                8   68976
-.fini_array                8   68984
-.dynamic                 480   68992
-.got                     136   69472
-.got.plt                 176   69608
-.data                    128   69792
-.bss                   51960   69920
+.text                  39933    4464
+.fini                     13   44400
+.rodata                 6648   45056
+.eh_frame_hdr            708   51704
+.eh_frame               4260   52416
+.init_array                8   60784
+.fini_array                8   60792
+.dynamic                 480   60800
+.got                     136   61280
+.got.plt                 176   61416
+.data                    128   61600
+.bss                   51960   61728
 .comment                  82       0
-Total                 112814
+Total                 107198
 
 

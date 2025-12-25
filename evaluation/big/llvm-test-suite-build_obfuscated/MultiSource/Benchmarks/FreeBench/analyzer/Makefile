@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated
+CMAKE_BINARY_DIR = /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/analyzer//CMakeFiles/progress.marks
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/analyzer//CMakeFiles/progress.marks
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/clean
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/preinstall
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/rule:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/rule
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/rule
 .PHONY : MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/rule
 
 # Convenience name for target.
@@ -128,7 +127,7 @@ analyzer: MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/rule
 
 # fast build rule for target.
 analyzer/fast:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build
 .PHONY : analyzer/fast
 
 analyzer.o: analyzer.c.o
@@ -136,7 +135,7 @@ analyzer.o: analyzer.c.o
 
 # target to build an object file
 analyzer.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/analyzer.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/analyzer.c.o
 .PHONY : analyzer.c.o
 
 analyzer.i: analyzer.c.i
@@ -144,7 +143,7 @@ analyzer.i: analyzer.c.i
 
 # target to preprocess a source file
 analyzer.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/analyzer.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/analyzer.c.i
 .PHONY : analyzer.c.i
 
 analyzer.s: analyzer.c.s
@@ -152,7 +151,7 @@ analyzer.s: analyzer.c.s
 
 # target to generate assembly for a file
 analyzer.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/analyzer.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/analyzer.c.s
 .PHONY : analyzer.c.s
 
 functs.o: functs.c.o
@@ -160,7 +159,7 @@ functs.o: functs.c.o
 
 # target to build an object file
 functs.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/functs.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/functs.c.o
 .PHONY : functs.c.o
 
 functs.i: functs.c.i
@@ -168,7 +167,7 @@ functs.i: functs.c.i
 
 # target to preprocess a source file
 functs.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/functs.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/functs.c.i
 .PHONY : functs.c.i
 
 functs.s: functs.c.s
@@ -176,7 +175,7 @@ functs.s: functs.c.s
 
 # target to generate assembly for a file
 functs.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/functs.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/functs.c.s
 .PHONY : functs.c.s
 
 help.o: help.c.o
@@ -184,7 +183,7 @@ help.o: help.c.o
 
 # target to build an object file
 help.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/help.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/help.c.o
 .PHONY : help.c.o
 
 help.i: help.c.i
@@ -192,7 +191,7 @@ help.i: help.c.i
 
 # target to preprocess a source file
 help.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/help.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/help.c.i
 .PHONY : help.c.i
 
 help.s: help.c.s
@@ -200,7 +199,7 @@ help.s: help.c.s
 
 # target to generate assembly for a file
 help.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/help.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/help.c.s
 .PHONY : help.c.s
 
 parse_settings.o: parse_settings.c.o
@@ -208,7 +207,7 @@ parse_settings.o: parse_settings.c.o
 
 # target to build an object file
 parse_settings.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/parse_settings.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/parse_settings.c.o
 .PHONY : parse_settings.c.o
 
 parse_settings.i: parse_settings.c.i
@@ -216,7 +215,7 @@ parse_settings.i: parse_settings.c.i
 
 # target to preprocess a source file
 parse_settings.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/parse_settings.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/parse_settings.c.i
 .PHONY : parse_settings.c.i
 
 parse_settings.s: parse_settings.c.s
@@ -224,7 +223,7 @@ parse_settings.s: parse_settings.c.s
 
 # target to generate assembly for a file
 parse_settings.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/parse_settings.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/parse_settings.c.s
 .PHONY : parse_settings.c.s
 
 types.o: types.c.o
@@ -232,7 +231,7 @@ types.o: types.c.o
 
 # target to build an object file
 types.c.o:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/types.c.o
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/types.c.o
 .PHONY : types.c.o
 
 types.i: types.c.i
@@ -240,7 +239,7 @@ types.i: types.c.i
 
 # target to preprocess a source file
 types.c.i:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/types.c.i
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/types.c.i
 .PHONY : types.c.i
 
 types.s: types.c.s
@@ -248,7 +247,7 @@ types.s: types.c.s
 
 # target to generate assembly for a file
 types.c.s:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/types.c.s
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(MAKE) $(MAKESILENT) -f MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/build.make MultiSource/Benchmarks/FreeBench/analyzer/CMakeFiles/analyzer.dir/types.c.s
 .PHONY : types.c.s
 
 # Help Target
@@ -286,7 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -P /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/VerifyGlobs.cmake
-	cd /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

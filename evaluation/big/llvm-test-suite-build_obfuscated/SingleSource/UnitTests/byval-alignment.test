@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/byval-alignment 
-VERIFY: %b/fpcmp-target %o %S/byval-alignment.reference_output

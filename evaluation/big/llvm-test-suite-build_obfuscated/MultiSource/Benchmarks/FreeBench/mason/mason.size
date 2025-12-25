@@ -1,4 +1,4 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/mason/mason  :
+/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/MultiSource/Benchmarks/FreeBench/mason/mason  :
 section                size    addr
 .interp                  28     792
 .note.gnu.property       32     824
@@ -14,19 +14,19 @@ section                size    addr
 .init                    27    4096
 .plt                    112    4128
 .plt.got                  8    4240
-.text                  4045    4256
-.fini                    13    8304
-.rodata                 888   12288
-.eh_frame_hdr            60   13176
-.eh_frame               320   13240
-.init_array               8   19904
-.fini_array               8   19912
-.dynamic                480   19920
-.got                     56   20400
-.got.plt                 72   20456
-.data                    16   20528
-.bss                      8   20544
+.text                  2829    4256
+.fini                    13    7088
+.rodata                 696    8192
+.eh_frame_hdr            60    8888
+.eh_frame               356    8952
+.init_array               8   15808
+.fini_array               8   15816
+.dynamic                480   15824
+.got                     56   16304
+.got.plt                 72   16360
+.data                    16   16432
+.bss                      8   16448
 .comment                 82       0
-Total                  7379
+Total                  6007
 
 

@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is Clang, found in:
-        /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/3.28.3/CompilerIdC/a.out
+        /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/3.28.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is Clang, found in:
-        /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100"
@@ -72,13 +72,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba557/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ba557.dir/build.make CMakeFiles/cmTC_ba557.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV'
-        Building C object CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f36ca/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f36ca.dir/build.make CMakeFiles/cmTC_f36ca.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ'
+        Building C object CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -88,7 +88,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -99,9 +99,9 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        Linking C executable cmTC_ba557
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba557.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -o cmTC_ba557 
+        Linking C executable cmTC_f36ca
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f36ca.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -o cmTC_f36ca 
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -111,8 +111,8 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ba557 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV'
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f36ca /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ'
         
       exitCode: 0
   -
@@ -146,13 +146,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV']
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba557/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ba557.dir/build.make CMakeFiles/cmTC_ba557.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV']
-        ignore line: [Building C object CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f36ca/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f36ca.dir/build.make CMakeFiles/cmTC_f36ca.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ']
+        ignore line: [Building C object CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -164,7 +164,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-AISqwV -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-z2P8WJ -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -175,9 +175,9 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_ba557]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba557.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -o cmTC_ba557 ]
+        ignore line: [Linking C executable cmTC_f36ca]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f36ca.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -o cmTC_f36ca ]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -189,7 +189,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]]
-        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ba557 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f36ca /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -201,7 +201,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ba557] ==> ignore
+          arg [cmTC_f36ca] ==> ignore
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -214,7 +214,7 @@ events:
           arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_ba557.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_f36ca.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--as-needed] ==> ignore
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -252,8 +252,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_CXX_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100"
@@ -263,13 +263,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a08f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9a08f.dir/build.make CMakeFiles/cmTC_9a08f.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr'
-        Building CXX object CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_142d5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_142d5.dir/build.make CMakeFiles/cmTC_142d5.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal'
+        Building CXX object CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -279,7 +279,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -293,9 +293,9 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_9a08f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a08f.dir/link.txt --verbose=1
-        /usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9a08f 
+        Linking CXX executable cmTC_142d5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_142d5.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_142d5 
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -305,8 +305,8 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
         clang++-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9a08f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr'
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_142d5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal'
         
       exitCode: 0
   -
@@ -346,13 +346,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr']
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a08f/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_9a08f.dir/build.make CMakeFiles/cmTC_9a08f.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr']
-        ignore line: [Building CXX object CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_142d5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_142d5.dir/build.make CMakeFiles/cmTC_142d5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal']
+        ignore line: [Building CXX object CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -v -MD -MT CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -364,7 +364,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-no5vXr -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-p3cRal -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -378,9 +378,9 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_9a08f]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a08f.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9a08f ]
+        ignore line: [Linking CXX executable cmTC_142d5]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_142d5.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   -v CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_142d5 ]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -392,7 +392,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [clang++-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]]
-        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9a08f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_142d5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -404,7 +404,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_9a08f] ==> ignore
+          arg [cmTC_142d5] ==> ignore
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -417,7 +417,7 @@ events:
           arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_9a08f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_142d5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -452,8 +452,8 @@ events:
       - "CMakeLists.txt:249 (find_package)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -464,13 +464,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7bde6/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7bde6.dir/build.make CMakeFiles/cmTC_7bde6.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC'
-        Building C object CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC/OpenMPTryFlag.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_18360/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_18360.dir/build.make CMakeFiles/cmTC_18360.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U'
+        Building C object CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o
+        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U/OpenMPTryFlag.c
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -480,7 +480,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -x c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC/OpenMPTryFlag.c
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -x c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U/OpenMPTryFlag.c
         clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -491,9 +491,9 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        Linking C executable cmTC_7bde6
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bde6.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -o cmTC_7bde6  -v 
+        Linking C executable cmTC_18360
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18360.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -o cmTC_18360  -v 
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -503,8 +503,8 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7bde6 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib/llvm-18/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC'
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_18360 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib/llvm-18/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U'
         
       exitCode: 0
   -
@@ -516,13 +516,13 @@ events:
     message: |
       Parsed C OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC']
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7bde6/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7bde6.dir/build.make CMakeFiles/cmTC_7bde6.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC']
-        ignore line: [Building C object CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o]
-        ignore line: [/usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC/OpenMPTryFlag.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_18360/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_18360.dir/build.make CMakeFiles/cmTC_18360.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U']
+        ignore line: [Building C object CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U/OpenMPTryFlag.c]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -534,7 +534,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -x c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-8fx1LC/OpenMPTryFlag.c]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -x c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-V0ZY5U/OpenMPTryFlag.c]
         ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -545,9 +545,9 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_7bde6]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bde6.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -o cmTC_7bde6  -v ]
+        ignore line: [Linking C executable cmTC_18360]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18360.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -o cmTC_18360  -v ]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -559,7 +559,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]]
-        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7bde6 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib/llvm-18/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_18360 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib/llvm-18/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -571,7 +571,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_7bde6] ==> ignore
+          arg [cmTC_18360] ==> ignore
           arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
           arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
           arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
@@ -581,7 +581,7 @@ events:
           arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_7bde6.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_18360.dir/OpenMPTryFlag.c.o] ==> ignore
           arg [-lomp] ==> lib [omp]
           arg [-L/usr/lib/llvm-18/lib] ==> dir [/usr/lib/llvm-18/lib]
           arg [-lgcc] ==> lib [gcc]
@@ -618,8 +618,8 @@ events:
       - "CMakeLists.txt:249 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_CXX_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -630,13 +630,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c22b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5c22b.dir/build.make CMakeFiles/cmTC_5c22b.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N'
-        Building CXX object CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o
-        /usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N/OpenMPTryFlag.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2d50/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2d50.dir/build.make CMakeFiles/cmTC_f2d50.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc'
+        Building CXX object CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc/OpenMPTryFlag.cpp
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -646,7 +646,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -x c++ /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N/OpenMPTryFlag.cpp
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -x c++ /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc/OpenMPTryFlag.cpp
         clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -660,9 +660,9 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_5c22b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c22b.dir/link.txt --verbose=1
-        /usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -o cmTC_5c22b  -v 
+        Linking CXX executable cmTC_f2d50
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2d50.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -o cmTC_f2d50  -v 
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -672,8 +672,8 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
         clang++-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5c22b /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/usr/lib/llvm-18/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N'
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f2d50 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/usr/lib/llvm-18/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc'
         
       exitCode: 0
   -
@@ -685,13 +685,13 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N']
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c22b/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5c22b.dir/build.make CMakeFiles/cmTC_5c22b.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N']
-        ignore line: [Building CXX object CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2d50/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f2d50.dir/build.make CMakeFiles/cmTC_f2d50.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc/OpenMPTryFlag.cpp]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -703,7 +703,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -x c++ /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-uuL11N/OpenMPTryFlag.cpp]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -load /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -x c++ /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-6otXEc/OpenMPTryFlag.cpp]
         ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -717,9 +717,9 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_5c22b]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c22b.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -o cmTC_5c22b  -v ]
+        ignore line: [Linking CXX executable cmTC_f2d50]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2d50.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -v CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -o cmTC_f2d50  -v ]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -731,7 +731,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [clang++-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]]
-        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5c22b /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/usr/lib/llvm-18/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f2d50 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/usr/lib/llvm-18/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -743,7 +743,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5c22b] ==> ignore
+          arg [cmTC_f2d50] ==> ignore
           arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
           arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
           arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
@@ -753,7 +753,7 @@ events:
           arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_5c22b.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_f2d50.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lomp] ==> lib [omp]
@@ -788,8 +788,8 @@ events:
       - "CMakeLists.txt:249 (find_package)"
     description: "Detecting C OpenMP version"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-GuzuMj"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-GuzuMj"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-5I0yJw"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-5I0yJw"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -800,18 +800,18 @@ events:
       variable: "OpenMP_SPECTEST_C_"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-GuzuMj'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-5I0yJw'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7e643/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7e643.dir/build.make CMakeFiles/cmTC_7e643.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-GuzuMj'
-        Building C object CMakeFiles/cmTC_7e643.dir/OpenMPCheckVersion.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -MD -MT CMakeFiles/cmTC_7e643.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_7e643.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_7e643.dir/OpenMPCheckVersion.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-GuzuMj/OpenMPCheckVersion.c
-        Linking C executable cmTC_7e643
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e643.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp CMakeFiles/cmTC_7e643.dir/OpenMPCheckVersion.c.o -o cmTC_7e643 
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2c539/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2c539.dir/build.make CMakeFiles/cmTC_2c539.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-5I0yJw'
+        Building C object CMakeFiles/cmTC_2c539.dir/OpenMPCheckVersion.c.o
+        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -MD -MT CMakeFiles/cmTC_2c539.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_2c539.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_2c539.dir/OpenMPCheckVersion.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-5I0yJw/OpenMPCheckVersion.c
+        Linking C executable cmTC_2c539
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c539.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp CMakeFiles/cmTC_2c539.dir/OpenMPCheckVersion.c.o -o cmTC_2c539 
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-GuzuMj'
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-5I0yJw'
         
       exitCode: 0
   -
@@ -822,8 +822,8 @@ events:
       - "CMakeLists.txt:249 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-3x2ZYC"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-3x2ZYC"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-lLoMsE"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-lLoMsE"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_CXX_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -834,18 +834,18 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-3x2ZYC'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-lLoMsE'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80273/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_80273.dir/build.make CMakeFiles/cmTC_80273.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-3x2ZYC'
-        Building CXX object CMakeFiles/cmTC_80273.dir/OpenMPCheckVersion.cpp.o
-        /usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -MD -MT CMakeFiles/cmTC_80273.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_80273.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_80273.dir/OpenMPCheckVersion.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-3x2ZYC/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_80273
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80273.dir/link.txt --verbose=1
-        /usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp CMakeFiles/cmTC_80273.dir/OpenMPCheckVersion.cpp.o -o cmTC_80273 
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4d6ea/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4d6ea.dir/build.make CMakeFiles/cmTC_4d6ea.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-lLoMsE'
+        Building CXX object CMakeFiles/cmTC_4d6ea.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/clang++-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp -MD -MT CMakeFiles/cmTC_4d6ea.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_4d6ea.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_4d6ea.dir/OpenMPCheckVersion.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-lLoMsE/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_4d6ea
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d6ea.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -fopenmp=libomp CMakeFiles/cmTC_4d6ea.dir/OpenMPCheckVersion.cpp.o -o cmTC_4d6ea 
         clang++-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-3x2ZYC'
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-lLoMsE'
         
       exitCode: 0
   -
@@ -854,8 +854,8 @@ events:
       - "cmake/modules/DetectArchitecture.cmake:8 (try_compile)"
       - "CMakeLists.txt:261 (detect_architecture)"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -866,18 +866,18 @@ events:
       variable: "HAVE_ARCH"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3de3/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c3de3.dir/build.make CMakeFiles/cmTC_c3de3.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp'
-        Building C object CMakeFiles/cmTC_c3de3.dir/DetectArchitecture.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_c3de3.dir/DetectArchitecture.c.o -MF CMakeFiles/cmTC_c3de3.dir/DetectArchitecture.c.o.d -o CMakeFiles/cmTC_c3de3.dir/DetectArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectArchitecture.c
-        Linking C executable cmTC_c3de3
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3de3.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_c3de3.dir/DetectArchitecture.c.o -o cmTC_c3de3 
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_272e5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_272e5.dir/build.make CMakeFiles/cmTC_272e5.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_272e5.dir/DetectArchitecture.c.o
+        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_272e5.dir/DetectArchitecture.c.o -MF CMakeFiles/cmTC_272e5.dir/DetectArchitecture.c.o.d -o CMakeFiles/cmTC_272e5.dir/DetectArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectArchitecture.c
+        Linking C executable cmTC_272e5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_272e5.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_272e5.dir/DetectArchitecture.c.o -o cmTC_272e5 
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp'
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp'
         
       exitCode: 0
   -
@@ -886,8 +886,8 @@ events:
       - "cmake/modules/DetectArchitecture.cmake:42 (try_run)"
       - "CMakeLists.txt:265 (detect_x86_cpu_architecture)"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -898,18 +898,18 @@ events:
       variable: "HAVE_COMPILE_X86CPU_ARCH"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_214c8/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_214c8.dir/build.make CMakeFiles/cmTC_214c8.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp'
-        Building C object CMakeFiles/cmTC_214c8.dir/DetectX86CPUArchitecture.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_214c8.dir/DetectX86CPUArchitecture.c.o -MF CMakeFiles/cmTC_214c8.dir/DetectX86CPUArchitecture.c.o.d -o CMakeFiles/cmTC_214c8.dir/DetectX86CPUArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectX86CPUArchitecture.c
-        Linking C executable cmTC_214c8
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_214c8.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_214c8.dir/DetectX86CPUArchitecture.c.o -o cmTC_214c8 
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12b49/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_12b49.dir/build.make CMakeFiles/cmTC_12b49.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_12b49.dir/DetectX86CPUArchitecture.c.o
+        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_12b49.dir/DetectX86CPUArchitecture.c.o -MF CMakeFiles/cmTC_12b49.dir/DetectX86CPUArchitecture.c.o.d -o CMakeFiles/cmTC_12b49.dir/DetectX86CPUArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectX86CPUArchitecture.c
+        Linking C executable cmTC_12b49
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12b49.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_12b49.dir/DetectX86CPUArchitecture.c.o -o cmTC_12b49 
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeTmp'
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeTmp'
         
       exitCode: 0
     runResult:
@@ -921,121 +921,13 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
-      - "SingleSource/UnitTests/Vector/CMakeLists.txt:8 (CHECK_SYMBOL_EXISTS)"
-    checks:
-      - "Looking for __ARM_NEON"
-    directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
-      CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: "   "
-      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
-    buildResult:
-      variable: "NEON_AVAILABLE"
-      cached: true
-      stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4913a/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4913a.dir/build.make CMakeFiles/cmTC_4913a.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp'
-        Building C object CMakeFiles/cmTC_4913a.dir/CheckSymbolExists.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_4913a.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_4913a.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_4913a.dir/CheckSymbolExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp/CheckSymbolExists.c
-        /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp/CheckSymbolExists.c:7:19: error: use of undeclared identifier '__ARM_NEON'
-            7 |   return ((int*)(&__ARM_NEON))[argc];
-              |                   ^
-        1 error generated.
-        gmake[1]: *** [CMakeFiles/cmTC_4913a.dir/build.make:79: CMakeFiles/cmTC_4913a.dir/CheckSymbolExists.c.o] Error 1
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-ADj4rp'
-        gmake: *** [Makefile:127: cmTC_4913a/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
-      - "SingleSource/UnitTests/CMakeLists.txt:60 (check_c_compiler_flag)"
-    checks:
-      - "Performing Test COMPILER_HAS_MATRIX_FLAG"
-    directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-SHMmbt"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-SHMmbt"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
-      CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: "   "
-      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
-    buildResult:
-      variable: "COMPILER_HAS_MATRIX_FLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-SHMmbt'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4160c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4160c.dir/build.make CMakeFiles/cmTC_4160c.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-SHMmbt'
-        Building C object CMakeFiles/cmTC_4160c.dir/src.c.o
-        /usr/bin/clang-18 -DCOMPILER_HAS_MATRIX_FLAG  -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100       -fenable-matrix -MD -MT CMakeFiles/cmTC_4160c.dir/src.c.o -MF CMakeFiles/cmTC_4160c.dir/src.c.o.d -o CMakeFiles/cmTC_4160c.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-SHMmbt/src.c
-        Linking C executable cmTC_4160c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4160c.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_4160c.dir/src.c.o -o cmTC_4160c 
-        clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-SHMmbt'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
-      - "SingleSource/Regression/C/gcc-c-torture/execute/CMakeLists.txt:209 (CHECK_SYMBOL_EXISTS)"
-    checks:
-      - "Looking for mmap"
-    directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-FeIAuT"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-FeIAuT"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
-      CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: "   "
-      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
-    buildResult:
-      variable: "HAVE_MMAP"
-      cached: true
-      stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-FeIAuT'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dca8b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_dca8b.dir/build.make CMakeFiles/cmTC_dca8b.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-FeIAuT'
-        Building C object CMakeFiles/cmTC_dca8b.dir/CheckSymbolExists.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_dca8b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_dca8b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_dca8b.dir/CheckSymbolExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-FeIAuT/CheckSymbolExists.c
-        Linking C executable cmTC_dca8b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dca8b.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_dca8b.dir/CheckSymbolExists.c.o -o cmTC_dca8b 
-        clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-FeIAuT'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
       - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
       - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "/usr/share/cmake-3.28/Modules/FindIntl.cmake:110 (check_c_source_compiles)"
       - "MultiSource/Applications/ClamAV/CMakeLists.txt:178 (find_package)"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Lij04k"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Lij04k"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Hg4KvK"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Hg4KvK"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -1046,18 +938,18 @@ events:
       variable: "Intl_IS_BUILT_IN"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Lij04k'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Hg4KvK'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b846/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1b846.dir/build.make CMakeFiles/cmTC_1b846.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Lij04k'
-        Building C object CMakeFiles/cmTC_1b846.dir/src.c.o
-        /usr/bin/clang-18 -DIntl_IS_BUILT_IN  -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_1b846.dir/src.c.o -MF CMakeFiles/cmTC_1b846.dir/src.c.o.d -o CMakeFiles/cmTC_1b846.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Lij04k/src.c
-        Linking C executable cmTC_1b846
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b846.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_1b846.dir/src.c.o -o cmTC_1b846 
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0eb18/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0eb18.dir/build.make CMakeFiles/cmTC_0eb18.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Hg4KvK'
+        Building C object CMakeFiles/cmTC_0eb18.dir/src.c.o
+        /usr/bin/clang-18 -DIntl_IS_BUILT_IN  -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -MD -MT CMakeFiles/cmTC_0eb18.dir/src.c.o -MF CMakeFiles/cmTC_0eb18.dir/src.c.o.d -o CMakeFiles/cmTC_0eb18.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Hg4KvK/src.c
+        Linking C executable cmTC_0eb18
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0eb18.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     CMakeFiles/cmTC_0eb18.dir/src.c.o -o cmTC_0eb18 
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Lij04k'
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-Hg4KvK'
         
       exitCode: 0
   -
@@ -1068,8 +960,8 @@ events:
     checks:
       - "Looking for re_comp"
     directories:
-      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-jdlK6u"
-      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-jdlK6u"
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-PxRSoR"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-PxRSoR"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_C_FLAGS: "-fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100   "
@@ -1080,18 +972,18 @@ events:
       variable: "HAVE_RE_COMP"
       cached: true
       stdout: |
-        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-jdlK6u'
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-PxRSoR'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a180/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4a180.dir/build.make CMakeFiles/cmTC_4a180.dir/build
-        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-jdlK6u'
-        Building C object CMakeFiles/cmTC_4a180.dir/CheckFunctionExists.c.o
-        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -DCHECK_FUNCTION_EXISTS=re_comp -MD -MT CMakeFiles/cmTC_4a180.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4a180.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4a180.dir/CheckFunctionExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-jdlK6u/CheckFunctionExists.c
-        Linking C executable cmTC_4a180
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a180.dir/link.txt --verbose=1
-        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -DCHECK_FUNCTION_EXISTS=re_comp CMakeFiles/cmTC_4a180.dir/CheckFunctionExists.c.o -o cmTC_4a180 
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a40ac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a40ac.dir/build.make CMakeFiles/cmTC_a40ac.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-PxRSoR'
+        Building C object CMakeFiles/cmTC_a40ac.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-18   -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -DCHECK_FUNCTION_EXISTS=re_comp -MD -MT CMakeFiles/cmTC_a40ac.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a40ac.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a40ac.dir/CheckFunctionExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-PxRSoR/CheckFunctionExists.c
+        Linking C executable cmTC_a40ac
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a40ac.dir/link.txt --verbose=1
+        /usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100    -DCHECK_FUNCTION_EXISTS=re_comp CMakeFiles/cmTC_a40ac.dir/CheckFunctionExists.c.o -o cmTC_a40ac 
         clang-18: warning: argument unused during compilation: '-mllvm -pop-probability=100' [-Wunused-command-line-argument]
-        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-jdlK6u'
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite-build_obfuscated/CMakeFiles/CMakeScratch/TryCompile-PxRSoR'
         
       exitCode: 0
 ...
