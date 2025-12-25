@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Packing-dbl.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Packing-dbl.dir/dummy.c.o" "CMakeFiles/Packing-dbl.dir/tsc.c.o" -o Packing-dbl  -lm 

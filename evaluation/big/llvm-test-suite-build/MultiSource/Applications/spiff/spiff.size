@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/spiff/spiff  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    768     968
+.dynstr                    330    1736
+.gnu.version                64    2066
+.gnu.version_r              64    2136
+.rela.dyn                  432    2200
+.rela.plt                  576    2632
+.init                       27    4096
+.plt                       400    4128
+.plt.got                     8    4528
+.text                    20545    4544
+.fini                       13   25092
+.rodata                   2584   28672
+.eh_frame_hdr              564   31256
+.eh_frame                 3196   31824
+.init_array                  8   40320
+.fini_array                  8   40328
+.dynamic                   480   40336
+.got                       120   40816
+.got.plt                   216   40936
+.data                       18   41152
+.bss                   1292016   41184
+.comment                    82       0
+Total                  1322683
+
+

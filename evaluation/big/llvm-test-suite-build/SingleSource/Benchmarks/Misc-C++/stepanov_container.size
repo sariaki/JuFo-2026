@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc-C++/stepanov_container  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  792     968
+.dynstr                  908    1760
+.gnu.version              66    2668
+.gnu.version_r           224    2736
+.rela.dyn                240    2960
+.rela.plt                600    3200
+.init                     27    4096
+.plt                     416    4128
+.plt.got                   8    4544
+.text                  17112    4560
+.fini                     13   21672
+.rodata                  129   24576
+.eh_frame_hdr            356   24708
+.eh_frame               2404   25064
+.gcc_except_table        316   27468
+.init_array               16   32152
+.fini_array                8   32168
+.dynamic                 528   32176
+.got                      40   32704
+.got.plt                 224   32744
+.data                     24   32968
+.bss                      32   32992
+.comment                  82       0
+Total                  24729
+
+

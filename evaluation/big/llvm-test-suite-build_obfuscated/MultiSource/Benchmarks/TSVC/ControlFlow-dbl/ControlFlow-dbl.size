@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/TSVC/ControlFlow-dbl/ControlFlow-dbl  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    336     968
+.dynstr                    207    1304
+.gnu.version                28    1512
+.gnu.version_r              48    1544
+.rela.dyn                  408    1592
+.rela.plt                  192    2000
+.init                       27    4096
+.plt                       144    4128
+.plt.got                     8    4272
+.text                    54530    4288
+.fini                       13   58820
+.rodata                   2491   61440
+.eh_frame_hdr              292   63932
+.eh_frame                 2268   64224
+.init_array                  8   72880
+.fini_array                  8   72888
+.data.rel.ro               264   72896
+.dynamic                   496   73160
+.got                        40   73656
+.got.plt                    88   73704
+.data                       24   73792
+.bss                   5566064   73824
+.comment                    82       0
+Total                  5628230
+
+

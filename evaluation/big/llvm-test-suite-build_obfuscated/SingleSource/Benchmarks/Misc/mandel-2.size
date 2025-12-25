@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Misc/mandel-2  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 192     968
+.dynstr                 161    1160
+.gnu.version             16    1322
+.gnu.version_r           48    1344
+.rela.dyn               192    1392
+.rela.plt                48    1584
+.init                    27    4096
+.plt                     48    4128
+.plt.got                  8    4176
+.text                  1645    4192
+.fini                    13    5840
+.rodata                 112    8192
+.eh_frame_hdr            76    8304
+.eh_frame               280    8384
+.init_array               8   15808
+.fini_array               8   15816
+.dynamic                496   15824
+.got                     40   16320
+.got.plt                 40   16360
+.data                    20   16400
+.bss                      4   16420
+.comment                 82       0
+Total                  3728
+
+

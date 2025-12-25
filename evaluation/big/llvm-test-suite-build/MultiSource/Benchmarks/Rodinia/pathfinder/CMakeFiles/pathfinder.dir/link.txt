@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary pathfinder.link.time /usr/bin/clang-18  -O3 CMakeFiles/pathfinder.dir/main.c.o CMakeFiles/pathfinder.dir/pathfinderKernel.c.o CMakeFiles/pathfinder.dir/__/Common/glibc_compat_rand.c.o -o pathfinder 

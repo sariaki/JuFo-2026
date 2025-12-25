@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/VersaBench/dbms/dbms  :
+section                  size    addr
+.interp                    28     792
+.note.gnu.property         32     824
+.note.gnu.build-id         36     856
+.note.ABI-tag              32     892
+.gnu.hash                  36     928
+.dynsym                   792     968
+.dynstr                   349    1760
+.gnu.version               66    2110
+.gnu.version_r             96    2176
+.rela.dyn                 264    2272
+.rela.plt                 576    2536
+.init                      27    4096
+.plt                      400    4128
+.plt.got                    8    4528
+.text                   40627    4544
+.fini                      13   45172
+.rodata                  9984   49152
+.eh_frame_hdr             420   59136
+.eh_frame                2712   59560
+.init_array                 8   69032
+.fini_array                 8   69040
+.dynamic                  496   69048
+.got                       64   69544
+.got.plt                  216   69608
+.data                     480   69824
+.bss                   135624   70304
+.comment                   82       0
+Total                  193476
+
+

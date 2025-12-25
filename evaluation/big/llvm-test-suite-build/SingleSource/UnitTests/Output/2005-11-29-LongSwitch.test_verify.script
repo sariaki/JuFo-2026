@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Output/2005-11-29-LongSwitch.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/2005-11-29-LongSwitch.reference_output; }

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/perimeter/perimeter  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 160    1208
+.gnu.version             20    1368
+.gnu.version_r           48    1392
+.rela.dyn               192    1440
+.rela.plt                96    1632
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  7700    4224
+.fini                    13   11924
+.rodata                1583   12288
+.eh_frame_hdr            92   13872
+.eh_frame               628   13968
+.init_array               8   19920
+.fini_array               8   19928
+.dynamic                480   19936
+.got                     40   20416
+.got.plt                 56   20456
+.data                    16   20512
+.bss                      8   20528
+.comment                 82       0
+Total                 11749
+
+

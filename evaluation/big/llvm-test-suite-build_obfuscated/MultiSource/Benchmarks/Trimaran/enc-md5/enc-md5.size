@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-md5/enc-md5  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 176    1208
+.gnu.version             20    1384
+.gnu.version_r           64    1408
+.rela.dyn               192    1472
+.rela.plt                96    1664
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  7008    4224
+.fini                    13   11232
+.rodata                 653   12288
+.eh_frame_hdr            84   12944
+.eh_frame               452   13032
+.init_array               8   19920
+.fini_array               8   19928
+.dynamic                480   19936
+.got                     40   20416
+.got.plt                 56   20456
+.data                    80   20512
+.bss                      8   20592
+.comment                 82       0
+Total                 10039
+
+

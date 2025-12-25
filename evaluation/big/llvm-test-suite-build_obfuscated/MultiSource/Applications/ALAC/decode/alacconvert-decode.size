@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/ALAC/decode/alacconvert-decode  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                   744      968
+.dynstr                   427     1712
+.gnu.version               62     2140
+.gnu.version_r            144     2208
+.rela.dyn                 504     2352
+.rela.plt                 480     2856
+.init                      27     4096
+.plt                      336     4128
+.plt.got                    8     4464
+.text                  101711     4480
+.fini                      13   106192
+.rodata                 17416   106496
+.eh_frame_hdr             812   123912
+.eh_frame                4332   124728
+.gcc_except_table          48   129060
+.init_array                 8   134456
+.fini_array                 8   134464
+.data.rel.ro               80   134472
+.dynamic                  528   134552
+.got                       64   135080
+.got.plt                  184   135144
+.data                      24   135328
+.bss                        8   135352
+.comment                   82        0
+Total                  128214
+
+

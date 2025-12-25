@@ -1,0 +1,4 @@
+RUN: %S/halide_bilateral_grid %S/images/rgb.bytes 0.1 10 %S/rgb_out.bytes
+VERIFY: %b/fpcmp-target %S/output/rgb_out.bytes %S/rgb_out.bytes
+RUN: %S/halide_bilateral_grid %S/images/rgba.bytes 0.1 10 %S/rgba_out.bytes
+VERIFY: %b/fpcmp-target %S/output/rgba_out.bytes %S/rgba_out.bytes

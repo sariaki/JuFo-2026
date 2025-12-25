@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/Bitcode/Benchmarks/Halide/blur/halide_blur  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                 1128     968
+.dynstr                  711    2096
+.gnu.version              94    2808
+.gnu.version_r           208    2904
+.rela.dyn                648    3112
+.rela.plt                936    3760
+.init                     27    8192
+.plt                     640    8224
+.plt.got                   8    8864
+.text                  34488    8880
+.fini                     13   43368
+.rodata                 4780   45056
+.eh_frame_hdr             92   49836
+.eh_frame                860   49928
+.gcc_except_table         84   50788
+.init_array                8   56560
+.fini_array               40   56568
+.data.rel.ro             128   56608
+.dynamic                 528   56736
+.got                      48   57264
+.got.plt                 336   57320
+.data                    224   57656
+.bss                    3160   57880
+.comment                 158       0
+Total                  49511
+
+

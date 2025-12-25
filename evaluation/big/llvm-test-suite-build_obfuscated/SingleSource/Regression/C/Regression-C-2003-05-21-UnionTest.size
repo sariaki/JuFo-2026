@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Regression/C/Regression-C-2003-05-21-UnionTest  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                40     928
+.dynsym                 192     968
+.dynstr                 163    1160
+.gnu.version             16    1324
+.gnu.version_r           48    1344
+.rela.dyn               192    1392
+.rela.plt                24    1584
+.init                    27    4096
+.plt                     32    4128
+.plt.got                  8    4160
+.text                   282    4176
+.fini                    13    4460
+.rodata                  11    8192
+.eh_frame_hdr            52    8204
+.eh_frame               160    8256
+.init_array               8   15808
+.fini_array               8   15816
+.dynamic                496   15824
+.got                     40   16320
+.got.plt                 32   16360
+.data                    16   16392
+.bss                      8   16408
+.comment                 82       0
+Total                  2078
+
+

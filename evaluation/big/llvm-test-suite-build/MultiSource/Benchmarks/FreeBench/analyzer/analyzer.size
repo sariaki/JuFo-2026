@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/FreeBench/analyzer/analyzer  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                40     928
+.dynsym                 672     968
+.dynstr                 301    1640
+.gnu.version             56    1942
+.gnu.version_r           64    2000
+.rela.dyn               624    2064
+.rela.plt               480    2688
+.init                    27    4096
+.plt                    336    4128
+.plt.got                  8    4464
+.text                  8079    4480
+.fini                    13   12560
+.rodata                2984   16384
+.eh_frame_hdr           164   19368
+.eh_frame               972   19536
+.init_array               8   28104
+.fini_array               8   28112
+.dynamic                480   28120
+.got                     48   28600
+.got.plt                184   28648
+.data                   168   28832
+.bss                    160   29008
+.comment                 82       0
+Total                 16086
+
+

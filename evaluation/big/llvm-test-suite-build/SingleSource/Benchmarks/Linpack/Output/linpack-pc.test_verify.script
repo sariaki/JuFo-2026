@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -r 0.0001 /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Linpack/Output/linpack-pc.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Linpack/linpack-pc.reference_output; }

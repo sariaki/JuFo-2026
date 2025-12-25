@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/15-trie/trie  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 480     968
+.dynstr                 255    1448
+.gnu.version             40    1704
+.gnu.version_r           64    1744
+.rela.dyn               216    1808
+.rela.plt               312    2024
+.init                    27    4096
+.plt                    224    4128
+.plt.got                  8    4352
+.text                  5115    4368
+.fini                    13    9484
+.rodata                1013   12288
+.eh_frame_hdr           132   13304
+.eh_frame               660   13440
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                128   20456
+.data                    16   20584
+.bss                      8   20600
+.comment                 82       0
+Total                  9517
+
+

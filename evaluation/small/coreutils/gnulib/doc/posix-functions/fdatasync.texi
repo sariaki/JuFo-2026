@@ -1,0 +1,27 @@
+@node fdatasync
+@subsection @code{fdatasync}
+@findex fdatasync
+
+POSIX specification:@* @url{https://pubs.opengroup.org/onlinepubs/9799919799/functions/fdatasync.html}
+
+Gnulib module: fdatasync
+@mindex fdatasync
+
+Portability problems fixed by Gnulib:
+@itemize
+@item
+This function is present but not declared on some platforms:
+Mac OS X 10.7.
+@item
+This function is missing on some platforms:
+Mac OS X 10.5, FreeBSD 11.0, OpenBSD 3.8, Minix 3.1.8, mingw, MSVC 14, Android 2.2.
+@end itemize
+
+Portability problems not fixed by Gnulib:
+@itemize
+@item
+If the argument is a file descriptor that lacks write access,
+such as a directory file descriptor, this function fails
+with @code{EBADF} on some platforms:
+AIX 7.3, Cygwin 3.6.x.
+@end itemize

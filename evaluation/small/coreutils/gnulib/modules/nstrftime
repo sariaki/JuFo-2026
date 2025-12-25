@@ -1,0 +1,47 @@
+Description:
+nstrftime() function: convert date and time to string, with GNU extensions.
+
+Files:
+lib/strftime.h
+lib/nstrftime.c
+lib/strftime.c
+lib/calendars.h
+lib/calendar-thai.h
+lib/calendar-persian.h
+lib/calendar-ethiopian.h
+m4/nstrftime.m4
+m4/tm_gmtoff.m4
+
+Depends-on:
+nstrftime-limited
+attribute
+c-ctype
+c99
+errno-h
+extensions
+intprops
+libc-config
+localcharset
+localename-unsafe [case "$host_os" in darwin*) false ;; *) true ;; esac]
+bool
+stdckdint-h
+stdint-h
+time_rz
+
+configure.ac:
+gl_FUNC_GNU_STRFTIME
+gl_MODULE_INDICATOR([nstrftime])
+
+Makefile.am:
+
+Include:
+"strftime.h"
+
+Link:
+$(LIBTHREAD)
+
+License:
+LGPL
+
+Maintainer:
+Jim Meyering, glibc

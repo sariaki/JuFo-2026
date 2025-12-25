@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/automotive-bitcount/automotive-bitcount  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                48     928
+.dynsym                 528     976
+.dynstr                 241    1504
+.gnu.version             44    1746
+.gnu.version_r           48    1792
+.rela.dyn               216    1840
+.rela.plt               312    2056
+.init                    27    4096
+.plt                    224    4128
+.plt.got                  8    4352
+.text                  3094    4368
+.fini                    13    7464
+.rodata                 826    8192
+.eh_frame_hdr           196    9020
+.eh_frame               704    9216
+.init_array               8   15800
+.fini_array               8   15808
+.dynamic                496   15816
+.got                     48   16312
+.got.plt                128   16360
+.data                    24   16488
+.bss                      8   16512
+.comment                 82       0
+Total                  7459
+
+

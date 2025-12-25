@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary jacobi-1d.link.time /usr/bin/clang-18  -O3 "CMakeFiles/jacobi-1d.dir/jacobi-1d.c.o" -o jacobi-1d  -lm 

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lemon/lemon  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                 1152      968
+.dynstr                  420     2120
+.gnu.version              96     2540
+.gnu.version_r            64     2640
+.rela.dyn                816     2704
+.rela.plt                960     3520
+.init                     27     8192
+.plt                     656     8224
+.plt.got                   8     8880
+.text                  73969     8896
+.fini                     13    82868
+.rodata                12889    86016
+.eh_frame_hdr            836    98908
+.eh_frame               5272    99744
+.init_array                8   110016
+.fini_array                8   110024
+.dynamic                 480   110032
+.got                      56   110512
+.got.plt                 344   110568
+.data                    348   110912
+.bss                     192   111264
+.comment                  82        0
+Total                  98860
+
+

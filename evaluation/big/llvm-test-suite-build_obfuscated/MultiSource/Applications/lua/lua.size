@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lua/lua  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                  2376      968
+.dynstr                   830     3344
+.gnu.version              198     4174
+.gnu.version_r            160     4376
+.rela.dyn                9840     4536
+.rela.plt                2160    14376
+.init                      27    20480
+.plt                     1456    20512
+.plt.got                    8    21968
+.text                  441169    21984
+.fini                      13   463156
+.rodata                 92328   466944
+.eh_frame_hdr            4012   559272
+.eh_frame               24956   563288
+.init_array                 8   589856
+.fini_array                 8   589864
+.data.rel.ro             3456   589872
+.dynamic                  496   593328
+.got                       64   593824
+.got.plt                  744   593896
+.data                      24   594640
+.bss                       16   594664
+.comment                   82        0
+Total                  584595
+
+

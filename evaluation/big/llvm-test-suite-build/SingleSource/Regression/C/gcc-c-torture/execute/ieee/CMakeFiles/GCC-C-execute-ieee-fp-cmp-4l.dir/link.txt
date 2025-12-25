@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-ieee-fp-cmp-4l.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-ieee-fp-cmp-4l.dir/fp-cmp-4l.c.o" -o GCC-C-execute-ieee-fp-cmp-4l 

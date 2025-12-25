@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Vectorizer/gcc-loops  :
+section                  size    addr
+.interp                    28     792
+.note.gnu.property         32     824
+.note.gnu.build-id         36     856
+.note.ABI-tag              32     892
+.gnu.hash                  36     928
+.dynsym                   576     968
+.dynstr                   631    1544
+.gnu.version               48    2176
+.gnu.version_r            176    2224
+.rela.dyn                 240    2400
+.rela.plt                 360    2640
+.init                      27    4096
+.plt                      256    4128
+.plt.got                    8    4384
+.text                   14027    4400
+.fini                      13   18428
+.rodata                   354   20480
+.eh_frame_hdr             252   20836
+.eh_frame                 792   21088
+.gcc_except_table         196   21880
+.init_array                 8   28056
+.fini_array                 8   28064
+.dynamic                  528   28072
+.got                       48   28600
+.got.plt                  144   28648
+.data                      24   28792
+.bss                   229392   28816
+.comment                   82       0
+Total                  248354
+
+

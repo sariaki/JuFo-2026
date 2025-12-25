@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/football/football  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  672     968
+.dynstr                  312    1640
+.gnu.version              56    1952
+.gnu.version_r            80    2008
+.rela.dyn                360    2088
+.rela.plt                456    2448
+.init                     27    4096
+.plt                     320    4128
+.plt.got                   8    4448
+.text                  41505    4464
+.fini                     13   45972
+.rodata                 4772   49152
+.eh_frame_hdr            492   53924
+.eh_frame               3392   54416
+.init_array                8   64920
+.fini_array                8   64928
+.dynamic                 480   64936
+.got                      96   65416
+.got.plt                 176   65512
+.data                   1160   65696
+.bss                   99784   66864
+.comment                  82       0
+Total                 154423
+
+

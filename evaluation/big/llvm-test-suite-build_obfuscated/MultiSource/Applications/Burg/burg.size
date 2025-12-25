@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/Burg/burg  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                  840      968
+.dynstr                  340     1808
+.gnu.version              70     2148
+.gnu.version_r            80     2224
+.rela.dyn                288     2304
+.rela.plt                624     2592
+.init                     27     4096
+.plt                     432     4128
+.plt.got                   8     4560
+.text                  92085     4576
+.fini                     13    96664
+.rodata                22776    98304
+.eh_frame_hdr           1212   121080
+.eh_frame               7528   122296
+.init_array                8   134584
+.fini_array                8   134592
+.dynamic                 480   134600
+.got                      64   135080
+.got.plt                 232   135144
+.data                    194   135376
+.bss                   16704   135584
+.comment                  82        0
+Total                 144259
+
+

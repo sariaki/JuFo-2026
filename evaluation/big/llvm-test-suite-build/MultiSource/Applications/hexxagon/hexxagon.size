@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/hexxagon/hexxagon  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  768     968
+.dynstr                  592    1736
+.gnu.version              64    2328
+.gnu.version_r           192    2392
+.rela.dyn                240    2584
+.rela.plt                552    2824
+.init                     27    4096
+.plt                     384    4128
+.plt.got                   8    4512
+.text                  14506    4528
+.fini                     13   19036
+.rodata                 3792   20480
+.eh_frame_hdr            492   24272
+.eh_frame               2548   24768
+.gcc_except_table         68   27316
+.init_array                8   32152
+.fini_array                8   32160
+.dynamic                 528   32168
+.got                      48   32696
+.got.plt                 208   32744
+.data                     24   32952
+.bss                      32   32976
+.comment                  82       0
+Total                  25348
+
+

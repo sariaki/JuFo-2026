@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Trimaran/netbench-crc/netbench-crc  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  336     968
+.dynstr                  191    1304
+.gnu.version              28    1496
+.gnu.version_r            48    1528
+.rela.dyn                240    1576
+.rela.plt                144    1816
+.init                     27    4096
+.plt                     112    4128
+.plt.got                   8    4240
+.text                   1661    4256
+.fini                     13    5920
+.rodata                  222    8192
+.eh_frame_hdr             76    8416
+.eh_frame                288    8496
+.init_array                8   15808
+.fini_array                8   15816
+.dynamic                 480   15824
+.got                      56   16304
+.got.plt                  72   16360
+.data                  43616   16432
+.bss                    2064   60048
+.comment                  82       0
+Total                  49944
+
+

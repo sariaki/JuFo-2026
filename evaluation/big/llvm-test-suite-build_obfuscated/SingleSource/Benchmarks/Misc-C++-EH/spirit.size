@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Misc-C++-EH/spirit  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  40      928
+.dynsym                  1056      968
+.dynstr                   958     2024
+.gnu.version               88     2982
+.gnu.version_r            192     3072
+.rela.dyn               14376     3264
+.rela.plt                 696    17640
+.init                      27    20480
+.plt                      480    20512
+.plt.got                   16    20992
+.text                  283271    21008
+.fini                      13   304280
+.rodata                168484   307200
+.eh_frame_hdr            3148   475684
+.eh_frame               17324   478832
+.gcc_except_table        2276   496156
+.init_array                 8   501976
+.fini_array                 8   501984
+.data.rel.ro             5304   501992
+.dynamic                  528   507296
+.got                       56   507824
+.got.plt                  256   507880
+.data                      40   508136
+.bss                       80   508176
+.comment                   82        0
+Total                  498935
+
+

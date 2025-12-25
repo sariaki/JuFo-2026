@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bh/bh  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 40     928
+.dynsym                  552     968
+.dynstr                  259    1520
+.gnu.version              46    1780
+.gnu.version_r            96    1832
+.rela.dyn                216    1928
+.rela.plt                360    2144
+.init                     27    4096
+.plt                     256    4128
+.plt.got                   8    4384
+.text                  25594    4400
+.fini                     13   29996
+.rodata                 3898   32768
+.eh_frame_hdr            316   36668
+.eh_frame               1736   36984
+.init_array                8   44472
+.fini_array                8   44480
+.dynamic                 496   44488
+.got                      48   44984
+.got.plt                 144   45032
+.data                     16   45176
+.bss                      88   45200
+.comment                  82       0
+Total                  34435
+
+

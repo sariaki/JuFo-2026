@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Olden/power/power  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 170    1208
+.gnu.version             20    1378
+.gnu.version_r           80    1400
+.rela.dyn               192    1480
+.rela.plt                96    1672
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  7020    4224
+.fini                    13   11244
+.rodata                 435   12288
+.eh_frame_hdr           172   12724
+.eh_frame               728   12896
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                496   19920
+.got                     40   20416
+.got.plt                 56   20456
+.data                   608   20512
+.bss                      8   21120
+.comment                 82       0
+Total                 10751
+
+

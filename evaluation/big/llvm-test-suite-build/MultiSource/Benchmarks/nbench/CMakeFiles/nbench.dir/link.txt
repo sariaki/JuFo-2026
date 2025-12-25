@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary nbench.link.time /usr/bin/clang-18  -O3 CMakeFiles/nbench.dir/emfloat.c.o CMakeFiles/nbench.dir/misc.c.o CMakeFiles/nbench.dir/nbench0.c.o CMakeFiles/nbench.dir/nbench1.c.o CMakeFiles/nbench.dir/sysspec.c.o -o nbench  -lm 

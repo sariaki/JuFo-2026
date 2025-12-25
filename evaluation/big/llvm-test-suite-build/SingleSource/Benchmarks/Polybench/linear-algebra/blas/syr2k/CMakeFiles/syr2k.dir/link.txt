@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary syr2k.link.time /usr/bin/clang-18  -O3 CMakeFiles/syr2k.dir/syr2k.c.o -o syr2k  -lm 

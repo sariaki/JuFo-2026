@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/sqlite3/sqlite3  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                  1536      968
+.dynstr                   579     2504
+.gnu.version              128     3084
+.gnu.version_r            112     3216
+.rela.dyn                6528     3328
+.rela.plt                1320     9856
+.init                      27    12288
+.plt                      896    12320
+.plt.got                    8    13216
+.text                  473951    13232
+.fini                      13   487184
+.rodata                 35248   487424
+.eh_frame_hdr            5196   522672
+.eh_frame               38280   527872
+.init_array                 8   570336
+.fini_array                 8   570344
+.data.rel.ro             2512   570352
+.dynamic                  480   572864
+.got                       64   573344
+.got.plt                  464   573416
+.data                    2143   573888
+.bss                      664   576032
+.comment                   82        0
+Total                  570411
+
+

@@ -1,0 +1,2295 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.14.0-37-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-18 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++-18 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ad35/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ad35.dir/build.make CMakeFiles/cmTC_8ad35.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle'
+        Building C object CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang-18   -v -MD -MT CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_8ad35
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ad35.dir/link.txt --verbose=1
+        /usr/bin/clang-18  -v CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -o cmTC_8ad35 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8ad35 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ad35/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8ad35.dir/build.make CMakeFiles/cmTC_8ad35.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle']
+        ignore line: [Building C object CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang-18   -v -MD -MT CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XEkAle -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_8ad35]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ad35.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-18  -v CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -o cmTC_8ad35 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8ad35 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8ad35] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_8ad35.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-18/bin/../lib] ==> [/usr/lib/llvm-18/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-18/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_98082/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_98082.dir/build.make CMakeFiles/cmTC_98082.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5'
+        Building CXX object CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++-18   -v -MD -MT CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5 -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_98082
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98082.dir/link.txt --verbose=1
+        /usr/bin/clang++-18  -v CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_98082 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_98082 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_98082/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_98082.dir/build.make CMakeFiles/cmTC_98082.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5']
+        ignore line: [Building CXX object CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++-18   -v -MD -MT CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5 -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jJvvj5 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_98082]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98082.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-18  -v CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_98082 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_98082 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_98082] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_98082.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-18/bin/../lib] ==> [/usr/lib/llvm-18/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-18/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:251 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a537/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2a537.dir/build.make CMakeFiles/cmTC_2a537.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL'
+        Building C object CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o
+        /usr/bin/clang-18   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL/OpenMPTryFlag.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -x c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL/OpenMPTryFlag.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_2a537
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a537.dir/link.txt --verbose=1
+        /usr/bin/clang-18     -fopenmp=libomp -v CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -o cmTC_2a537  -v 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a537 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib/llvm-18/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:251 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a537/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2a537.dir/build.make CMakeFiles/cmTC_2a537.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL']
+        ignore line: [Building C object CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/clang-18   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL/OpenMPTryFlag.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -x c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-l0yIIL/OpenMPTryFlag.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_2a537]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a537.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-18     -fopenmp=libomp -v CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -o cmTC_2a537  -v ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a537 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o -lomp -L/usr/lib/llvm-18/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2a537] ==> ignore
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_2a537.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lomp] ==> lib [omp]
+          arg [-L/usr/lib/llvm-18/lib] ==> dir [/usr/lib/llvm-18/lib]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-18/bin/../lib] ==> [/usr/lib/llvm-18/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/llvm-18/lib] ==> [/usr/lib/llvm-18/lib]
+        implicit libs: [omp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-18/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:251 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_619d1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_619d1.dir/build.make CMakeFiles/cmTC_619d1.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2'
+        Building CXX object CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/clang++-18   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2/OpenMPTryFlag.cpp
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2 -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -x c++ /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2/OpenMPTryFlag.cpp
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_619d1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_619d1.dir/link.txt --verbose=1
+        /usr/bin/clang++-18     -fopenmp=libomp -v CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -o cmTC_619d1  -v 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_619d1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/usr/lib/llvm-18/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:251 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_619d1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_619d1.dir/build.make CMakeFiles/cmTC_619d1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2']
+        ignore line: [Building CXX object CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/clang++-18   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2/OpenMPTryFlag.cpp]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2 -v -fcoverage-compilation-dir=/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -x c++ /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-8eTQr2/OpenMPTryFlag.cpp]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_619d1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_619d1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-18     -fopenmp=libomp -v CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -o cmTC_619d1  -v ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_619d1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/usr/lib/llvm-18/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_619d1] ==> ignore
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_619d1.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lomp] ==> lib [omp]
+          arg [-L/usr/lib/llvm-18/lib] ==> dir [/usr/lib/llvm-18/lib]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-18/bin/../lib] ==> [/usr/lib/llvm-18/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/llvm-18/lib] ==> [/usr/lib/llvm-18/lib]
+        implicit libs: [stdc++;m;omp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-18/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:251 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eJfTe8"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eJfTe8"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eJfTe8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3fbfe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3fbfe.dir/build.make CMakeFiles/cmTC_3fbfe.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eJfTe8'
+        Building C object CMakeFiles/cmTC_3fbfe.dir/OpenMPCheckVersion.c.o
+        /usr/bin/clang-18   -fopenmp=libomp -MD -MT CMakeFiles/cmTC_3fbfe.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_3fbfe.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_3fbfe.dir/OpenMPCheckVersion.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eJfTe8/OpenMPCheckVersion.c
+        Linking C executable cmTC_3fbfe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fbfe.dir/link.txt --verbose=1
+        /usr/bin/clang-18     -fopenmp=libomp CMakeFiles/cmTC_3fbfe.dir/OpenMPCheckVersion.c.o -o cmTC_3fbfe 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eJfTe8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:251 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-lnnrHy"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-lnnrHy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-lnnrHy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_784d4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_784d4.dir/build.make CMakeFiles/cmTC_784d4.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-lnnrHy'
+        Building CXX object CMakeFiles/cmTC_784d4.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/clang++-18   -fopenmp=libomp -MD -MT CMakeFiles/cmTC_784d4.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_784d4.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_784d4.dir/OpenMPCheckVersion.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-lnnrHy/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_784d4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_784d4.dir/link.txt --verbose=1
+        /usr/bin/clang++-18     -fopenmp=libomp CMakeFiles/cmTC_784d4.dir/OpenMPCheckVersion.cpp.o -o cmTC_784d4 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-lnnrHy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake/modules/DetectArchitecture.cmake:8 (try_compile)"
+      - "CMakeLists.txt:263 (detect_architecture)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_ARCH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c876d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c876d.dir/build.make CMakeFiles/cmTC_c876d.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_c876d.dir/DetectArchitecture.c.o
+        /usr/bin/clang-18    -MD -MT CMakeFiles/cmTC_c876d.dir/DetectArchitecture.c.o -MF CMakeFiles/cmTC_c876d.dir/DetectArchitecture.c.o.d -o CMakeFiles/cmTC_c876d.dir/DetectArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectArchitecture.c
+        Linking C executable cmTC_c876d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c876d.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_c876d.dir/DetectArchitecture.c.o -o cmTC_c876d 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/modules/DetectArchitecture.cmake:42 (try_run)"
+      - "CMakeLists.txt:267 (detect_x86_cpu_architecture)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_COMPILE_X86CPU_ARCH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1599b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1599b.dir/build.make CMakeFiles/cmTC_1599b.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_1599b.dir/DetectX86CPUArchitecture.c.o
+        /usr/bin/clang-18    -MD -MT CMakeFiles/cmTC_1599b.dir/DetectX86CPUArchitecture.c.o -MF CMakeFiles/cmTC_1599b.dir/DetectX86CPUArchitecture.c.o.d -o CMakeFiles/cmTC_1599b.dir/DetectX86CPUArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectX86CPUArchitecture.c
+        Linking C executable cmTC_1599b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1599b.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_1599b.dir/DetectX86CPUArchitecture.c.o -o cmTC_1599b 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "HAVE_RUN_X86CPU_ARCH"
+      cached: true
+      stdout: |
+        unknown
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "Bitcode/Benchmarks/Halide/CMakeLists.txt:2 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-rQiJ6N"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-rQiJ6N"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-rQiJ6N'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_29db0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_29db0.dir/build.make CMakeFiles/cmTC_29db0.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-rQiJ6N'
+        Building C object CMakeFiles/cmTC_29db0.dir/src.c.o
+        /usr/bin/clang-18 -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_29db0.dir/src.c.o -MF CMakeFiles/cmTC_29db0.dir/src.c.o.d -o CMakeFiles/cmTC_29db0.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-rQiJ6N/src.c
+        Linking C executable cmTC_29db0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29db0.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_29db0.dir/src.c.o -o cmTC_29db0 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-rQiJ6N'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:135 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-re1hKM"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-re1hKM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-re1hKM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_888d0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_888d0.dir/build.make CMakeFiles/cmTC_888d0.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-re1hKM'
+        Building C object CMakeFiles/cmTC_888d0.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-18   -DCHECK_FUNCTION_EXISTS=shm_open -MD -MT CMakeFiles/cmTC_888d0.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_888d0.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_888d0.dir/CheckFunctionExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-re1hKM/CheckFunctionExists.c
+        Linking C executable cmTC_888d0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_888d0.dir/link.txt --verbose=1
+        /usr/bin/clang-18     -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_888d0.dir/CheckFunctionExists.c.o -o cmTC_888d0  -lrt 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-re1hKM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:188 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XgaDAc"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XgaDAc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XgaDAc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_23694/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_23694.dir/build.make CMakeFiles/cmTC_23694.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XgaDAc'
+        Building CXX object CMakeFiles/cmTC_23694.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WALL  -Wall -std=c++17   -Wall -MD -MT CMakeFiles/cmTC_23694.dir/src.cxx.o -MF CMakeFiles/cmTC_23694.dir/src.cxx.o.d -o CMakeFiles/cmTC_23694.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XgaDAc/src.cxx
+        Linking CXX executable cmTC_23694
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23694.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall CMakeFiles/cmTC_23694.dir/src.cxx.o -o cmTC_23694 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XgaDAc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:189 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vWqY68"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vWqY68"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vWqY68'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_69ed9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_69ed9.dir/build.make CMakeFiles/cmTC_69ed9.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vWqY68'
+        Building CXX object CMakeFiles/cmTC_69ed9.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++17   -Wextra -MD -MT CMakeFiles/cmTC_69ed9.dir/src.cxx.o -MF CMakeFiles/cmTC_69ed9.dir/src.cxx.o.d -o CMakeFiles/cmTC_69ed9.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vWqY68/src.cxx
+        Linking CXX executable cmTC_69ed9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69ed9.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra CMakeFiles/cmTC_69ed9.dir/src.cxx.o -o cmTC_69ed9 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vWqY68'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:190 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-BJ1o7N"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-BJ1o7N"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-BJ1o7N'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04981/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04981.dir/build.make CMakeFiles/cmTC_04981.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-BJ1o7N'
+        Building CXX object CMakeFiles/cmTC_04981.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++17   -Wshadow -MD -MT CMakeFiles/cmTC_04981.dir/src.cxx.o -MF CMakeFiles/cmTC_04981.dir/src.cxx.o.d -o CMakeFiles/cmTC_04981.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-BJ1o7N/src.cxx
+        Linking CXX executable cmTC_04981
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04981.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow CMakeFiles/cmTC_04981.dir/src.cxx.o -o cmTC_04981 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-BJ1o7N'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:191 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-fpbjtu"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-fpbjtu"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-fpbjtu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32aee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_32aee.dir/build.make CMakeFiles/cmTC_32aee.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-fpbjtu'
+        Building CXX object CMakeFiles/cmTC_32aee.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++17   -Wfloat-equal -MD -MT CMakeFiles/cmTC_32aee.dir/src.cxx.o -MF CMakeFiles/cmTC_32aee.dir/src.cxx.o.d -o CMakeFiles/cmTC_32aee.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-fpbjtu/src.cxx
+        Linking CXX executable cmTC_32aee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32aee.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal CMakeFiles/cmTC_32aee.dir/src.cxx.o -o cmTC_32aee 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-fpbjtu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:192 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-zPWfbI"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-zPWfbI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-zPWfbI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d9d6a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d9d6a.dir/build.make CMakeFiles/cmTC_d9d6a.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-zPWfbI'
+        Building CXX object CMakeFiles/cmTC_d9d6a.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++17   -Wold-style-cast -MD -MT CMakeFiles/cmTC_d9d6a.dir/src.cxx.o -MF CMakeFiles/cmTC_d9d6a.dir/src.cxx.o.d -o CMakeFiles/cmTC_d9d6a.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-zPWfbI/src.cxx
+        Linking CXX executable cmTC_d9d6a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9d6a.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast CMakeFiles/cmTC_d9d6a.dir/src.cxx.o -o cmTC_d9d6a 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-zPWfbI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:193 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-duaiVz"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-duaiVz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-duaiVz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8cdc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8cdc.dir/build.make CMakeFiles/cmTC_b8cdc.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-duaiVz'
+        Building CXX object CMakeFiles/cmTC_b8cdc.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++17   -Wconversion -MD -MT CMakeFiles/cmTC_b8cdc.dir/src.cxx.o -MF CMakeFiles/cmTC_b8cdc.dir/src.cxx.o.d -o CMakeFiles/cmTC_b8cdc.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-duaiVz/src.cxx
+        Linking CXX executable cmTC_b8cdc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8cdc.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion CMakeFiles/cmTC_b8cdc.dir/src.cxx.o -o cmTC_b8cdc 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-duaiVz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:195 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Ff9TiC"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Ff9TiC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Ff9TiC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c9b4f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c9b4f.dir/build.make CMakeFiles/cmTC_c9b4f.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Ff9TiC'
+        Building CXX object CMakeFiles/cmTC_c9b4f.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -std=c++17   -Werror -MD -MT CMakeFiles/cmTC_c9b4f.dir/src.cxx.o -MF CMakeFiles/cmTC_c9b4f.dir/src.cxx.o.d -o CMakeFiles/cmTC_c9b4f.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Ff9TiC/src.cxx
+        Linking CXX executable cmTC_c9b4f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9b4f.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror CMakeFiles/cmTC_c9b4f.dir/src.cxx.o -o cmTC_c9b4f 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Ff9TiC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:201 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-3lSB4q"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-3lSB4q"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-3lSB4q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_43878/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_43878.dir/build.make CMakeFiles/cmTC_43878.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-3lSB4q'
+        Building CXX object CMakeFiles/cmTC_43878.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic -std=c++17   -pedantic -MD -MT CMakeFiles/cmTC_43878.dir/src.cxx.o -MF CMakeFiles/cmTC_43878.dir/src.cxx.o.d -o CMakeFiles/cmTC_43878.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-3lSB4q/src.cxx
+        Linking CXX executable cmTC_43878
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43878.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic CMakeFiles/cmTC_43878.dir/src.cxx.o -o cmTC_43878 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-3lSB4q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:205 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DQtY8b"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DQtY8b"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DQtY8b'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37019/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_37019.dir/build.make CMakeFiles/cmTC_37019.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DQtY8b'
+        Building CXX object CMakeFiles/cmTC_37019.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32 -std=c++17   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_37019.dir/src.cxx.o -MF CMakeFiles/cmTC_37019.dir/src.cxx.o.d -o CMakeFiles/cmTC_37019.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DQtY8b/src.cxx
+        Linking CXX executable cmTC_37019
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37019.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32 CMakeFiles/cmTC_37019.dir/src.cxx.o -o cmTC_37019 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DQtY8b'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:206 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-UBkb0V"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-UBkb0V"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-UBkb0V'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b2f1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9b2f1.dir/build.make CMakeFiles/cmTC_9b2f1.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-UBkb0V'
+        Building CXX object CMakeFiles/cmTC_9b2f1.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing -std=c++17   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_9b2f1.dir/src.cxx.o -MF CMakeFiles/cmTC_9b2f1.dir/src.cxx.o.d -o CMakeFiles/cmTC_9b2f1.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-UBkb0V/src.cxx
+        Linking CXX executable cmTC_9b2f1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b2f1.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing CMakeFiles/cmTC_9b2f1.dir/src.cxx.o -o cmTC_9b2f1 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-UBkb0V'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:209 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-oiRnj5"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-oiRnj5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-oiRnj5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a2ea6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a2ea6.dir/build.make CMakeFiles/cmTC_a2ea6.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-oiRnj5'
+        Building CXX object CMakeFiles/cmTC_a2ea6.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++17   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_a2ea6.dir/src.cxx.o -MF CMakeFiles/cmTC_a2ea6.dir/src.cxx.o.d -o CMakeFiles/cmTC_a2ea6.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-oiRnj5/src.cxx
+        Linking CXX executable cmTC_a2ea6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2ea6.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations CMakeFiles/cmTC_a2ea6.dir/src.cxx.o -o cmTC_a2ea6 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-oiRnj5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:219 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eeAtIs"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eeAtIs"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eeAtIs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_174af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_174af.dir/build.make CMakeFiles/cmTC_174af.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eeAtIs'
+        Building CXX object CMakeFiles/cmTC_174af.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++17   -Wno-deprecated -MD -MT CMakeFiles/cmTC_174af.dir/src.cxx.o -MF CMakeFiles/cmTC_174af.dir/src.cxx.o.d -o CMakeFiles/cmTC_174af.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eeAtIs/src.cxx
+        Linking CXX executable cmTC_174af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_174af.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated CMakeFiles/cmTC_174af.dir/src.cxx.o -o cmTC_174af 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-eeAtIs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:227 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-LTBoMN"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-LTBoMN"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-LTBoMN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92092/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_92092.dir/build.make CMakeFiles/cmTC_92092.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-LTBoMN'
+        Building CXX object CMakeFiles/cmTC_92092.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++17   -Wstrict-aliasing -MD -MT CMakeFiles/cmTC_92092.dir/src.cxx.o -MF CMakeFiles/cmTC_92092.dir/src.cxx.o.d -o CMakeFiles/cmTC_92092.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-LTBoMN/src.cxx
+        Linking CXX executable cmTC_92092
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92092.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing CMakeFiles/cmTC_92092.dir/src.cxx.o -o cmTC_92092 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-LTBoMN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:232 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-wbcDOI"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-wbcDOI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-wbcDOI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9048a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9048a.dir/build.make CMakeFiles/cmTC_9048a.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-wbcDOI'
+        Building CXX object CMakeFiles/cmTC_9048a.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++17   -wd654 -MD -MT CMakeFiles/cmTC_9048a.dir/src.cxx.o -MF CMakeFiles/cmTC_9048a.dir/src.cxx.o.d -o CMakeFiles/cmTC_9048a.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-wbcDOI/src.cxx
+        clang++-18: error: unknown argument: '-wd654'
+        clang++-18: error: unknown argument: '-wd654'
+        gmake[1]: *** [CMakeFiles/cmTC_9048a.dir/build.make:79: CMakeFiles/cmTC_9048a.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-wbcDOI'
+        gmake: *** [Makefile:127: cmTC_9048a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:233 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-OoUmat"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-OoUmat"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-OoUmat'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c226b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c226b.dir/build.make CMakeFiles/cmTC_c226b.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-OoUmat'
+        Building CXX object CMakeFiles/cmTC_c226b.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++17   -Wthread-safety -MD -MT CMakeFiles/cmTC_c226b.dir/src.cxx.o -MF CMakeFiles/cmTC_c226b.dir/src.cxx.o.d -o CMakeFiles/cmTC_c226b.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-OoUmat/src.cxx
+        Linking CXX executable cmTC_c226b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c226b.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety CMakeFiles/cmTC_c226b.dir/src.cxx.o -o cmTC_c226b 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-OoUmat'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "MicroBenchmarks/libs/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:235 (cxx_feature_check)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d269/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1d269.dir/build.make CMakeFiles/cmTC_1d269.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_1d269.dir/thread_safety_attributes.cpp.o
+        /usr/bin/clang++-18  -I/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/include -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -MD -MT CMakeFiles/cmTC_1d269.dir/thread_safety_attributes.cpp.o -MF CMakeFiles/cmTC_1d269.dir/thread_safety_attributes.cpp.o.d -o CMakeFiles/cmTC_1d269.dir/thread_safety_attributes.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/thread_safety_attributes.cpp
+        Linking CXX executable cmTC_1d269
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d269.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_1d269.dir/thread_safety_attributes.cpp.o -o cmTC_1d269 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:284 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DoWB1I"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DoWB1I"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DoWB1I'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_69a65/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_69a65.dir/build.make CMakeFiles/cmTC_69a65.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DoWB1I'
+        Building CXX object CMakeFiles/cmTC_69a65.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -std=c++17   --coverage -MD -MT CMakeFiles/cmTC_69a65.dir/src.cxx.o -MF CMakeFiles/cmTC_69a65.dir/src.cxx.o.d -o CMakeFiles/cmTC_69a65.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DoWB1I/src.cxx
+        Linking CXX executable cmTC_69a65
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69a65.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage CMakeFiles/cmTC_69a65.dir/src.cxx.o -o cmTC_69a65 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-DoWB1I'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "MicroBenchmarks/libs/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:315 (cxx_feature_check)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c69a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c69a.dir/build.make CMakeFiles/cmTC_8c69a.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_8c69a.dir/gnu_posix_regex.cpp.o
+        /usr/bin/clang++-18   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -MD -MT CMakeFiles/cmTC_8c69a.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_8c69a.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_8c69a.dir/gnu_posix_regex.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/gnu_posix_regex.cpp
+        /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/gnu_posix_regex.cpp:1:10: fatal error: 'gnuregex.h' file not found
+            1 | #include <gnuregex.h>
+              |          ^~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_8c69a.dir/build.make:79: CMakeFiles/cmTC_8c69a.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_8c69a/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "MicroBenchmarks/libs/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:316 (cxx_feature_check)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cd19e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cd19e.dir/build.make CMakeFiles/cmTC_cd19e.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_cd19e.dir/posix_regex.cpp.o
+        /usr/bin/clang++-18   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -MD -MT CMakeFiles/cmTC_cd19e.dir/posix_regex.cpp.o -MF CMakeFiles/cmTC_cd19e.dir/posix_regex.cpp.o.d -o CMakeFiles/cmTC_cd19e.dir/posix_regex.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_cd19e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd19e.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_cd19e.dir/posix_regex.cpp.o -o cmTC_cd19e 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "MicroBenchmarks/libs/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:325 (cxx_feature_check)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a7162/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a7162.dir/build.make CMakeFiles/cmTC_a7162.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_a7162.dir/steady_clock.cpp.o
+        /usr/bin/clang++-18   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -MD -MT CMakeFiles/cmTC_a7162.dir/steady_clock.cpp.o -MF CMakeFiles/cmTC_a7162.dir/steady_clock.cpp.o.d -o CMakeFiles/cmTC_a7162.dir/steady_clock.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_a7162
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7162.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_a7162.dir/steady_clock.cpp.o -o cmTC_a7162 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "MicroBenchmarks/libs/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "MicroBenchmarks/libs/benchmark/CMakeLists.txt:329 (cxx_feature_check)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3fad7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3fad7.dir/build.make CMakeFiles/cmTC_3fad7.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_3fad7.dir/pthread_affinity.cpp.o
+        /usr/bin/clang++-18   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -MD -MT CMakeFiles/cmTC_3fad7.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_3fad7.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_3fad7.dir/pthread_affinity.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_3fad7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fad7.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_3fad7.dir/pthread_affinity.cpp.o -o cmTC_3fad7 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/test/CMakeLists.txt:8 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_UNUSED_VARIABLE"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jdjGrr"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jdjGrr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_UNUSED_VARIABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jdjGrr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d3ff8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d3ff8.dir/build.make CMakeFiles/cmTC_d3ff8.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jdjGrr'
+        Building CXX object CMakeFiles/cmTC_d3ff8.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_WNO_UNUSED_VARIABLE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable -std=c++17   -Wno-unused-variable -MD -MT CMakeFiles/cmTC_d3ff8.dir/src.cxx.o -MF CMakeFiles/cmTC_d3ff8.dir/src.cxx.o.d -o CMakeFiles/cmTC_d3ff8.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jdjGrr/src.cxx
+        Linking CXX executable cmTC_d3ff8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3ff8.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable CMakeFiles/cmTC_d3ff8.dir/src.cxx.o -o cmTC_d3ff8 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-jdjGrr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/test/CMakeLists.txt:33 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_O3_FLAG"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-cJZqD1"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-cJZqD1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_O3_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-cJZqD1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70e06/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70e06.dir/build.make CMakeFiles/cmTC_70e06.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-cJZqD1'
+        Building CXX object CMakeFiles/cmTC_70e06.dir/src.cxx.o
+        /usr/bin/clang++-18 -DBENCHMARK_HAS_O3_FLAG  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  -std=c++17   -O3 -MD -MT CMakeFiles/cmTC_70e06.dir/src.cxx.o -MF CMakeFiles/cmTC_70e06.dir/src.cxx.o.d -o CMakeFiles/cmTC_70e06.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-cJZqD1/src.cxx
+        Linking CXX executable cmTC_70e06
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70e06.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  CMakeFiles/cmTC_70e06.dir/src.cxx.o -o cmTC_70e06 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-cJZqD1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/test/CMakeLists.txt:136 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vD06EP"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vD06EP"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vD06EP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3a140/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3a140.dir/build.make CMakeFiles/cmTC_3a140.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vD06EP'
+        Building CXX object CMakeFiles/cmTC_3a140.dir/src.cxx.o
+        /usr/bin/clang++-18 -DBENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  -std=c++17   -Werror=deprecated-declarations -MD -MT CMakeFiles/cmTC_3a140.dir/src.cxx.o -MF CMakeFiles/cmTC_3a140.dir/src.cxx.o.d -o CMakeFiles/cmTC_3a140.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vD06EP/src.cxx
+        Linking CXX executable cmTC_3a140
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a140.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  CMakeFiles/cmTC_3a140.dir/src.cxx.o -o cmTC_3a140 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-vD06EP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/test/CMakeLists.txt:209 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_WNO_ODR"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-s7mNxL"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-s7mNxL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_WNO_ODR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-s7mNxL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1fe5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1fe5.dir/build.make CMakeFiles/cmTC_a1fe5.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-s7mNxL'
+        Building CXX object CMakeFiles/cmTC_a1fe5.dir/src.cxx.o
+        /usr/bin/clang++-18 -DBENCHMARK_HAS_WNO_ODR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  -std=c++17   -Wno-odr -MD -MT CMakeFiles/cmTC_a1fe5.dir/src.cxx.o -MF CMakeFiles/cmTC_a1fe5.dir/src.cxx.o.d -o CMakeFiles/cmTC_a1fe5.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-s7mNxL/src.cxx
+        Linking CXX executable cmTC_a1fe5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1fe5.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  CMakeFiles/cmTC_a1fe5.dir/src.cxx.o -o cmTC_a1fe5 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-s7mNxL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/test/CMakeLists.txt:210 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-1G6BfO"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-1G6BfO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "     -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake/Modules;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/MicroBenchmarks/libs/benchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-1G6BfO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_74445/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_74445.dir/build.make CMakeFiles/cmTC_74445.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-1G6BfO'
+        Building CXX object CMakeFiles/cmTC_74445.dir/src.cxx.o
+        /usr/bin/clang++-18 -DBENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  -std=c++17   -Wno-lto-type-mismatch -MD -MT CMakeFiles/cmTC_74445.dir/src.cxx.o -MF CMakeFiles/cmTC_74445.dir/src.cxx.o.d -o CMakeFiles/cmTC_74445.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-1G6BfO/src.cxx
+        error: unknown warning option '-Wno-lto-type-mismatch'; did you mean '-Wno-selector-type-mismatch'? [-Werror,-Wunknown-warning-option]
+        gmake[1]: *** [CMakeFiles/cmTC_74445.dir/build.make:79: CMakeFiles/cmTC_74445.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-1G6BfO'
+        gmake: *** [Makefile:127: cmTC_74445/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/XRay/CMakeLists.txt:3 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_HAS_FXRAY_INSTRUMENT"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-AUgZfy"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-AUgZfy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "COMPILER_HAS_FXRAY_INSTRUMENT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-AUgZfy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2aa2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2aa2.dir/build.make CMakeFiles/cmTC_f2aa2.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-AUgZfy'
+        Building CXX object CMakeFiles/cmTC_f2aa2.dir/src.cxx.o
+        /usr/bin/clang++-18 -DCOMPILER_HAS_FXRAY_INSTRUMENT  -fxray-instrument -MD -MT CMakeFiles/cmTC_f2aa2.dir/src.cxx.o -MF CMakeFiles/cmTC_f2aa2.dir/src.cxx.o.d -o CMakeFiles/cmTC_f2aa2.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-AUgZfy/src.cxx
+        Linking CXX executable cmTC_f2aa2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2aa2.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 CMakeFiles/cmTC_f2aa2.dir/src.cxx.o -o cmTC_f2aa2 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-AUgZfy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "MicroBenchmarks/XRay/CMakeLists.txt:4 (check_include_files)"
+    checks:
+      - "Looking for include file xray/xray_interface.h"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-CRNgnB"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-CRNgnB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_XRAY_INTERFACE_INCLUDE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-CRNgnB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_86383/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_86383.dir/build.make CMakeFiles/cmTC_86383.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-CRNgnB'
+        Building CXX object CMakeFiles/cmTC_86383.dir/HAVE_XRAY_INTERFACE_INCLUDE.cpp.o
+        /usr/bin/clang++-18    -MD -MT CMakeFiles/cmTC_86383.dir/HAVE_XRAY_INTERFACE_INCLUDE.cpp.o -MF CMakeFiles/cmTC_86383.dir/HAVE_XRAY_INTERFACE_INCLUDE.cpp.o.d -o CMakeFiles/cmTC_86383.dir/HAVE_XRAY_INTERFACE_INCLUDE.cpp.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-CRNgnB/HAVE_XRAY_INTERFACE_INCLUDE.cpp
+        Linking CXX executable cmTC_86383
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86383.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 CMakeFiles/cmTC_86383.dir/HAVE_XRAY_INTERFACE_INCLUDE.cpp.o -o cmTC_86383 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-CRNgnB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "MicroBenchmarks/libs/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "MicroBenchmarks/SLPVectorization/CMakeLists.txt:3 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_STD_CXX11"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XZNIc9"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XZNIc9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: "   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_STD_CXX11"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XZNIc9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f47e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f47e6.dir/build.make CMakeFiles/cmTC_f47e6.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XZNIc9'
+        Building CXX object CMakeFiles/cmTC_f47e6.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_CXX_FLAG_STD_CXX11  -std=c++11   -std=c++11 -MD -MT CMakeFiles/cmTC_f47e6.dir/src.cxx.o -MF CMakeFiles/cmTC_f47e6.dir/src.cxx.o.d -o CMakeFiles/cmTC_f47e6.dir/src.cxx.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XZNIc9/src.cxx
+        Linking CXX executable cmTC_f47e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f47e6.dir/link.txt --verbose=1
+        /usr/bin/clang++-18      -std=c++11 CMakeFiles/cmTC_f47e6.dir/src.cxx.o -o cmTC_f47e6 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XZNIc9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindIntl.cmake:110 (check_c_source_compiles)"
+      - "MultiSource/Applications/ClamAV/CMakeLists.txt:179 (find_package)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-pBpX7R"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-pBpX7R"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "Intl_IS_BUILT_IN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-pBpX7R'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e353/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e353.dir/build.make CMakeFiles/cmTC_9e353.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-pBpX7R'
+        Building C object CMakeFiles/cmTC_9e353.dir/src.c.o
+        /usr/bin/clang-18 -DIntl_IS_BUILT_IN   -MD -MT CMakeFiles/cmTC_9e353.dir/src.c.o -MF CMakeFiles/cmTC_9e353.dir/src.c.o.d -o CMakeFiles/cmTC_9e353.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-pBpX7R/src.c
+        Linking C executable cmTC_9e353
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e353.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_9e353.dir/src.c.o -o cmTC_9e353 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-pBpX7R'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "MultiSource/Applications/ClamAV/CMakeLists.txt:184 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XHACR3"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XHACR3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XHACR3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2bfd3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2bfd3.dir/build.make CMakeFiles/cmTC_2bfd3.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XHACR3'
+        Building C object CMakeFiles/cmTC_2bfd3.dir/src.c.o
+        /usr/bin/clang-18 -DCOMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS  -fno-define-target-os-macros -MD -MT CMakeFiles/cmTC_2bfd3.dir/src.c.o -MF CMakeFiles/cmTC_2bfd3.dir/src.c.o.d -o CMakeFiles/cmTC_2bfd3.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XHACR3/src.c
+        Linking C executable cmTC_2bfd3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bfd3.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_2bfd3.dir/src.c.o -o cmTC_2bfd3 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-XHACR3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "MultiSource/Benchmarks/Prolangs-C/plot2fig/CMakeLists.txt:2 (check_function_exists)"
+    checks:
+      - "Looking for re_comp"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-J1G807"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-J1G807"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_RE_COMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-J1G807'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3b60/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a3b60.dir/build.make CMakeFiles/cmTC_a3b60.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-J1G807'
+        Building C object CMakeFiles/cmTC_a3b60.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-18   -DCHECK_FUNCTION_EXISTS=re_comp -MD -MT CMakeFiles/cmTC_a3b60.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a3b60.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a3b60.dir/CheckFunctionExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-J1G807/CheckFunctionExists.c
+        Linking C executable cmTC_a3b60
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3b60.dir/link.txt --verbose=1
+        /usr/bin/clang-18     -DCHECK_FUNCTION_EXISTS=re_comp CMakeFiles/cmTC_a3b60.dir/CheckFunctionExists.c.o -o cmTC_a3b60 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-J1G807'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "SingleSource/UnitTests/Vector/CMakeLists.txt:9 (CHECK_SYMBOL_EXISTS)"
+    checks:
+      - "Looking for __ARM_NEON"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "NEON_AVAILABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ee6b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7ee6b.dir/build.make CMakeFiles/cmTC_7ee6b.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri'
+        Building C object CMakeFiles/cmTC_7ee6b.dir/CheckSymbolExists.c.o
+        /usr/bin/clang-18    -MD -MT CMakeFiles/cmTC_7ee6b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_7ee6b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_7ee6b.dir/CheckSymbolExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri/CheckSymbolExists.c
+        /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri/CheckSymbolExists.c:7:19: error: use of undeclared identifier '__ARM_NEON'
+            7 |   return ((int*)(&__ARM_NEON))[argc];
+              |                   ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_7ee6b.dir/build.make:79: CMakeFiles/cmTC_7ee6b.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-GY38Ri'
+        gmake: *** [Makefile:127: cmTC_7ee6b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "SingleSource/UnitTests/CMakeLists.txt:62 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_HAS_MATRIX_FLAG"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Pp7NcT"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Pp7NcT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "COMPILER_HAS_MATRIX_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Pp7NcT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b4a0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9b4a0.dir/build.make CMakeFiles/cmTC_9b4a0.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Pp7NcT'
+        Building C object CMakeFiles/cmTC_9b4a0.dir/src.c.o
+        /usr/bin/clang-18 -DCOMPILER_HAS_MATRIX_FLAG  -fenable-matrix -MD -MT CMakeFiles/cmTC_9b4a0.dir/src.c.o -MF CMakeFiles/cmTC_9b4a0.dir/src.c.o.d -o CMakeFiles/cmTC_9b4a0.dir/src.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Pp7NcT/src.c
+        Linking C executable cmTC_9b4a0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b4a0.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_9b4a0.dir/src.c.o -o cmTC_9b4a0 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-Pp7NcT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "SingleSource/Regression/C/gcc-c-torture/execute/CMakeLists.txt:209 (CHECK_SYMBOL_EXISTS)"
+    checks:
+      - "Looking for mmap"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-v0z6aO"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-v0z6aO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_MMAP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-v0z6aO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9ee98/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9ee98.dir/build.make CMakeFiles/cmTC_9ee98.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-v0z6aO'
+        Building C object CMakeFiles/cmTC_9ee98.dir/CheckSymbolExists.c.o
+        /usr/bin/clang-18    -MD -MT CMakeFiles/cmTC_9ee98.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_9ee98.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_9ee98.dir/CheckSymbolExists.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-v0z6aO/CheckSymbolExists.c
+        Linking C executable cmTC_9ee98
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ee98.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_9ee98.dir/CheckSymbolExists.c.o -o cmTC_9ee98 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeScratch/TryCompile-v0z6aO'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake/modules/DetectArchitecture.cmake:8 (try_compile)"
+      - "CMakeLists.txt:261 (detect_architecture)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_ARCH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19ab9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_19ab9.dir/build.make CMakeFiles/cmTC_19ab9.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_19ab9.dir/DetectArchitecture.c.o
+        /usr/bin/clang-18    -MD -MT CMakeFiles/cmTC_19ab9.dir/DetectArchitecture.c.o -MF CMakeFiles/cmTC_19ab9.dir/DetectArchitecture.c.o.d -o CMakeFiles/cmTC_19ab9.dir/DetectArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectArchitecture.c
+        Linking C executable cmTC_19ab9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19ab9.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_19ab9.dir/DetectArchitecture.c.o -o cmTC_19ab9 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/modules/DetectArchitecture.cmake:42 (try_run)"
+      - "CMakeLists.txt:265 (detect_x86_cpu_architecture)"
+    directories:
+      source: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+      binary: "/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "   "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "   "
+      CMAKE_MODULE_PATH: "/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake;/home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules"
+    buildResult:
+      variable: "HAVE_COMPILE_X86CPU_ARCH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_088af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_088af.dir/build.make CMakeFiles/cmTC_088af.dir/build
+        gmake[1]: Entering directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_088af.dir/DetectX86CPUArchitecture.c.o
+        /usr/bin/clang-18    -MD -MT CMakeFiles/cmTC_088af.dir/DetectX86CPUArchitecture.c.o -MF CMakeFiles/cmTC_088af.dir/DetectX86CPUArchitecture.c.o.d -o CMakeFiles/cmTC_088af.dir/DetectX86CPUArchitecture.c.o -c /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/cmake/modules/DetectX86CPUArchitecture.c
+        Linking C executable cmTC_088af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_088af.dir/link.txt --verbose=1
+        /usr/bin/clang-18 CMakeFiles/cmTC_088af.dir/DetectX86CPUArchitecture.c.o -o cmTC_088af 
+        gmake[1]: Leaving directory '/home/paul/Documents/JuFo-2026/evaluation/big/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "HAVE_RUN_X86CPU_ARCH"
+      cached: true
+      stdout: |
+        unknown
+      exitCode: 1
+...

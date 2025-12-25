@@ -1,0 +1,2 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Ptrdist/bc/Output/bc.test.out; } &&
+{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Ptrdist/bc/Output/bc.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Ptrdist/bc/bc.reference_output; }

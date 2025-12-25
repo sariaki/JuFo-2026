@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc/whetstone  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 456     968
+.dynstr                 232    1424
+.gnu.version             38    1656
+.gnu.version_r           96    1696
+.rela.dyn               216    1792
+.rela.plt               288    2008
+.init                    27    4096
+.plt                    208    4128
+.plt.got                  8    4336
+.text                  4203    4352
+.fini                    13    8556
+.rodata                 251   12288
+.eh_frame_hdr            76   12540
+.eh_frame               276   12616
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                120   20456
+.data                    16   20576
+.bss                    104   20592
+.comment                 82       0
+Total                  7434
+
+

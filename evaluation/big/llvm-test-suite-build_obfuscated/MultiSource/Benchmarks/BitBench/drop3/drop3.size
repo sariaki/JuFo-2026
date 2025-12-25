@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/BitBench/drop3/drop3  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 360     968
+.dynstr                 198    1328
+.gnu.version             30    1526
+.gnu.version_r           48    1560
+.rela.dyn               216    1608
+.rela.plt               192    1824
+.init                    27    4096
+.plt                    144    4128
+.plt.got                  8    4272
+.text                  2992    4288
+.fini                    13    7280
+.rodata                 583    8192
+.eh_frame_hdr            60    8776
+.eh_frame               212    8840
+.init_array               8   15816
+.fini_array               8   15824
+.dynamic                480   15832
+.got                     48   16312
+.got.plt                 88   16360
+.data                    16   16448
+.bss                      8   16464
+.comment                 82       0
+Total                  5985
+
+

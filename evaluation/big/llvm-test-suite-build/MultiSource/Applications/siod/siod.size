@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/siod/siod  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  48      928
+.dynsym                  3312      976
+.dynstr                  1081     4288
+.gnu.version              276     5370
+.gnu.version_r            176     5648
+.rela.dyn                 984     5824
+.rela.plt                3024     6808
+.init                      27    12288
+.plt                     2032    12320
+.plt.got                   16    14352
+.text                  127536    14368
+.fini                      13   141904
+.rodata                 10224   143360
+.eh_frame_hdr            3876   153584
+.eh_frame               22696   157464
+.init_array                 8   183560
+.fini_array                 8   183568
+.data.rel.ro              144   183576
+.dynamic                  496   183720
+.got                       80   184216
+.got.plt                 1032   184296
+.data                     168   185328
+.bss                     1784   185504
+.comment                   82        0
+Total                  179251
+
+

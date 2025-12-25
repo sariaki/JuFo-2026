@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C/RSBench/rsbench  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  672     968
+.dynstr                  276    1640
+.gnu.version              56    1916
+.gnu.version_r            96    1976
+.rela.dyn                216    2072
+.rela.plt                504    2288
+.init                     27    4096
+.plt                     352    4128
+.plt.got                   8    4480
+.text                  21478    4496
+.fini                     13   25976
+.rodata                 5664   28672
+.eh_frame_hdr            268   34336
+.eh_frame               1528   34608
+.init_array                8   40376
+.fini_array                8   40384
+.dynamic                 496   40392
+.got                      48   40888
+.got.plt                 192   40936
+.data                     16   41128
+.bss                    1408   41152
+.comment                  82       0
+Total                  33580
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/09-vor/vor  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  360     968
+.dynstr                  219    1328
+.gnu.version              30    1548
+.gnu.version_r            96    1584
+.rela.dyn                216    1680
+.rela.plt                192    1896
+.init                     27    4096
+.plt                     144    4128
+.plt.got                   8    4272
+.text                  29102    4288
+.fini                     13   33392
+.rodata                 5642   36864
+.eh_frame_hdr            444   42508
+.eh_frame               2060   42952
+.init_array                8   48568
+.fini_array                8   48576
+.dynamic                 496   48584
+.got                      48   49080
+.got.plt                  88   49128
+.data                     24   49216
+.bss                      64   49240
+.comment                  82       0
+Total                  39535
+
+

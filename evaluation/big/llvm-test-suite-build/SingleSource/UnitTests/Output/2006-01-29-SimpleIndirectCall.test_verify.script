@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Output/2006-01-29-SimpleIndirectCall.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/2006-01-29-SimpleIndirectCall.reference_output; }

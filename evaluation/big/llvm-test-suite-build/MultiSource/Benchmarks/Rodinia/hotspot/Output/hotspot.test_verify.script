@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -a 0.00001 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Rodinia/hotspot/Output/hotspot.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Rodinia/hotspot/hotspot.reference_output; }

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/unix-smail/unix-smail  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 40     928
+.dynsym                 1416     968
+.dynstr                  487    2384
+.gnu.version             118    2872
+.gnu.version_r            80    2992
+.rela.dyn                600    3072
+.rela.plt               1128    3672
+.init                     27    8192
+.plt                     768    8224
+.plt.got                   8    8992
+.text                  37146    9008
+.fini                     13   46156
+.rodata                 7124   49152
+.eh_frame_hdr            404   56276
+.eh_frame               2668   56680
+.init_array                8   64944
+.fini_array                8   64952
+.dynamic                 480   64960
+.got                      72   65440
+.got.plt                 400   65512
+.data                    300   65920
+.bss                   18784   66224
+.comment                  82       0
+Total                  72289
+
+

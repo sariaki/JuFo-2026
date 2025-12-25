@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary MemFunctions.link.time /usr/bin/clang++-18  -O3 CMakeFiles/MemFunctions.dir/main.cpp.o -o MemFunctions  ../libs/benchmark/src/libbenchmark.a -lrt 

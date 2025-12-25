@@ -1,5 +1,9 @@
 - Meta:
-	- [x] Echte Programme kompilieren (--> GNU coreutils!)
+	- Echte Programme kompilieren 
+		- LLVM Test Suite (ClamAV, sqlite3, lua)
+		- PostgreSQL
+		- Redis
+		- OpenSSL
 	- [ ] Mehrere realistische Tools verwenden --> Triton, Angr, Miasm, Syntia; Dynamische Attacken
 	- [ ] mehrere Male durchführen -->`yerrs`
 
@@ -18,7 +22,7 @@
 	- [x] Size
 	- [ ] Performance overhead
 	- [ ] Memory usage
-	- [ ] Applicability (code coverage)
+	- [ ] **Applicability (code coverage)**
 	- [x] Compilation time
 
 - Discussion

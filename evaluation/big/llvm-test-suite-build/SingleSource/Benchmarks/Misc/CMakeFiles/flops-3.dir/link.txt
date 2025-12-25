@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary flops-3.link.time /usr/bin/clang-18  -O3 "CMakeFiles/flops-3.dir/flops-3.c.o" -o flops-3  -lm 

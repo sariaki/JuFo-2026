@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc/oourafft  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  360     968
+.dynstr                  219    1328
+.gnu.version              30    1548
+.gnu.version_r            96    1584
+.rela.dyn                192    1680
+.rela.plt                216    1872
+.init                     27    4096
+.plt                     160    4128
+.plt.got                   8    4288
+.text                  15083    4304
+.fini                     13   19388
+.rodata                  196   20480
+.eh_frame_hdr            116   20676
+.eh_frame                680   20792
+.init_array                8   28096
+.fini_array                8   28104
+.dynamic                 496   28112
+.got                      40   28608
+.got.plt                  96   28648
+.data                     16   28744
+.bss                       8   28760
+.comment                  82       0
+Total                  18314
+
+

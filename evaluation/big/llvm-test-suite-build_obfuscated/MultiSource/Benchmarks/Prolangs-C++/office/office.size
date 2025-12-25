@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/office/office  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 336     968
+.dynstr                 495    1304
+.gnu.version             28    1800
+.gnu.version_r          128    1832
+.rela.dyn               744    1960
+.rela.plt                96    2704
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  7727    4224
+.fini                    13   11952
+.rodata                2070   12288
+.eh_frame_hdr           108   14360
+.eh_frame               492   14472
+.init_array               8   19656
+.fini_array               8   19664
+.data.rel.ro            208   19672
+.dynamic                528   19880
+.got                     48   20408
+.got.plt                 56   20456
+.data                    16   20512
+.bss                     40   20528
+.comment                 82       0
+Total                 13510
+
+

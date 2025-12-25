@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE/miniFE  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  40      928
+.dynsym                  2352      968
+.dynstr                  3635     3320
+.gnu.version              196     6956
+.gnu.version_r            256     7152
+.rela.dyn                 480     7408
+.rela.plt                1872     7888
+.init                      27    12288
+.plt                     1264    12320
+.plt.got                    8    13584
+.text                  114065    13600
+.fini                      13   127668
+.rodata                 12974   131072
+.eh_frame_hdr             844   144048
+.eh_frame                7376   144896
+.gcc_except_table        4000   152272
+.init_array                 8   163152
+.fini_array                 8   163160
+.dynamic                  528   163168
+.got                      120   163696
+.got.plt                  648   163816
+.data                      32   164464
+.bss                        8   164496
+.comment                   82        0
+Total                  150964
+
+

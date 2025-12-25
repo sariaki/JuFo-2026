@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary heat-3d.link.time /usr/bin/clang-18  -O3 "CMakeFiles/heat-3d.dir/heat-3d.c.o" -o heat-3d  -lm 

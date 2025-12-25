@@ -1,0 +1,26 @@
+Description:
+Spin locks for communication between threads and signal handlers.
+
+Files:
+lib/asyncsafe-spin.h
+lib/asyncsafe-spin.c
+
+Depends-on:
+signal-h
+bool
+sigprocmask
+spin
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += asyncsafe-spin.c
+
+Include:
+"asyncsafe-spin.h"
+
+License:
+LGPLv2+
+
+Maintainer:
+all

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/security-blowfish/security-blowfish  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  312     968
+.dynstr                  201    1280
+.gnu.version              26    1482
+.gnu.version_r            64    1512
+.rela.dyn                264    1576
+.rela.plt                168    1840
+.init                     27    4096
+.plt                     128    4128
+.plt.got                   8    4256
+.text                  10487    4272
+.fini                     13   14760
+.rodata                 9320   16384
+.eh_frame_hdr            116   25704
+.eh_frame                680   25824
+.init_array                8   32192
+.fini_array                8   32200
+.dynamic                 496   32208
+.got                      40   32704
+.got.plt                  80   32744
+.data                   1341   32832
+.bss                       3   34173
+.comment                  82       0
+Total                  24036
+
+

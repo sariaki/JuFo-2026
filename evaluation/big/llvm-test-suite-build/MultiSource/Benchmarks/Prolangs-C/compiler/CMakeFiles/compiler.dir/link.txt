@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary compiler.link.time /usr/bin/clang-18  -O3 CMakeFiles/compiler.dir/emitter.c.o CMakeFiles/compiler.dir/error.c.o CMakeFiles/compiler.dir/init.c.o CMakeFiles/compiler.dir/lexer.c.o CMakeFiles/compiler.dir/main.c.o CMakeFiles/compiler.dir/parser.c.o CMakeFiles/compiler.dir/symbol.c.o -o compiler 

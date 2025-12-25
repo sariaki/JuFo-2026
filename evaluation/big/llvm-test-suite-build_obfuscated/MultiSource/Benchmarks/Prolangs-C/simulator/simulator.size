@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/simulator/simulator  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  672     968
+.dynstr                  282    1640
+.gnu.version              56    1922
+.gnu.version_r            96    1984
+.rela.dyn               2304    2080
+.rela.plt                480    4384
+.init                     27    8192
+.plt                     336    8224
+.plt.got                   8    8560
+.text                  46150    8576
+.fini                     13   54728
+.rodata                 9268   57344
+.eh_frame_hdr            916   66612
+.eh_frame               6344   67528
+.init_array                8   81328
+.fini_array                8   81336
+.dynamic                 496   81344
+.got                      56   81840
+.got.plt                 184   81896
+.data                   1368   82080
+.bss                    4536   83456
+.comment                  82       0
+Total                  73854
+
+

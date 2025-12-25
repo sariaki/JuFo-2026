@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG/HPCCG  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 48     928
+.dynsym                 1416     976
+.dynstr                 1902    2392
+.gnu.version             118    4294
+.gnu.version_r           256    4416
+.rela.dyn                360    4672
+.rela.plt               1056    5032
+.init                     27    8192
+.plt                     720    8224
+.plt.got                  16    8944
+.text                  41668    8960
+.fini                     13   50628
+.rodata                 6748   53248
+.eh_frame_hdr            300   59996
+.eh_frame               2824   60296
+.gcc_except_table        780   63120
+.init_array                8   68976
+.fini_array                8   68984
+.dynamic                 528   68992
+.got                      88   69520
+.got.plt                 376   69608
+.data                     24   69984
+.bss                       8   70008
+.comment                  82       0
+Total                  59502
+
+

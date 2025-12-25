@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Rodinia/hotspot/hotspot  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 288     968
+.dynstr                 177    1256
+.gnu.version             24    1434
+.gnu.version_r           48    1464
+.rela.dyn               240    1512
+.rela.plt                96    1752
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  5118    4224
+.fini                    13    9344
+.rodata                 134   12288
+.eh_frame_hdr            76   12424
+.eh_frame               324   12504
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                480   19920
+.got                     56   20400
+.got.plt                 56   20456
+.data                    48   20512
+.bss                   1408   20560
+.comment                 82       0
+Total                  8963
+
+

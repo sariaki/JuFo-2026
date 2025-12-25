@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/automotive-basicmath/automotive-basicmath  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 312     968
+.dynstr                 191    1280
+.gnu.version             26    1472
+.gnu.version_r           96    1504
+.rela.dyn               192    1600
+.rela.plt               168    1792
+.init                    27    4096
+.plt                    128    4128
+.plt.got                  8    4256
+.text                  3729    4272
+.fini                    13    8004
+.rodata                 704    8192
+.eh_frame_hdr            76    8896
+.eh_frame               308    8976
+.init_array               8   15808
+.fini_array               8   15816
+.dynamic                496   15824
+.got                     40   16320
+.got.plt                 80   16360
+.data                    16   16440
+.bss                      8   16456
+.comment                 82       0
+Total                  6880
+
+

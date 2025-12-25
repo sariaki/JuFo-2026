@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C-test_indvars.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Regression-C-test_indvars.dir/test_indvars.c.o" -o Regression-C-test_indvars  -lm 

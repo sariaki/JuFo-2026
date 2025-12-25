@@ -1,0 +1,28 @@
+Description:
+Hash functions for file-related triples: name, device, inode.
+
+Status:
+deprecated
+
+Notice:
+This module is deprecated. Use the module 'hashcode-file-inode' instead.
+
+Files:
+
+Depends-on:
+hashcode-file-inode
+
+configure.ac:
+
+Makefile.am:
+
+Include:
+"hashcode-file.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:

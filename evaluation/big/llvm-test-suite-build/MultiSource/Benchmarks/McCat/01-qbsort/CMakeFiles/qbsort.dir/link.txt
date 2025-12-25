@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary qbsort.link.time /usr/bin/clang-18  -O3 CMakeFiles/qbsort.dir/benchmark.c.o CMakeFiles/qbsort.dir/readlist.c.o CMakeFiles/qbsort.dir/sort.c.o -o qbsort  -lm 

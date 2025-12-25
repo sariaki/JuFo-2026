@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary yacr2.link.time /usr/bin/clang-18  -O3 CMakeFiles/yacr2.dir/assign.c.o CMakeFiles/yacr2.dir/channel.c.o CMakeFiles/yacr2.dir/hcg.c.o CMakeFiles/yacr2.dir/main.c.o CMakeFiles/yacr2.dir/maze.c.o CMakeFiles/yacr2.dir/option.c.o CMakeFiles/yacr2.dir/vcg.c.o -o yacr2 

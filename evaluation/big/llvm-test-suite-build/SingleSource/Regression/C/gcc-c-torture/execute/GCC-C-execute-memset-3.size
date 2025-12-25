@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C/gcc-c-torture/execute/GCC-C-execute-memset-3  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 216     968
+.dynstr                 154    1184
+.gnu.version             18    1338
+.gnu.version_r           48    1360
+.rela.dyn               192    1408
+.rela.plt                72    1600
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                  4091    4208
+.fini                    13    8300
+.rodata                  32   12288
+.eh_frame_hdr            60   12320
+.eh_frame               208   12384
+.init_array               8   19920
+.fini_array               8   19928
+.dynamic                480   19936
+.got                     40   20416
+.got.plt                 48   20456
+.data                    17   20504
+.bss                     48   20528
+.comment                 82       0
+Total                  6098
+
+

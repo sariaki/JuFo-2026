@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary find-last.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/find-last.dir/find-last.cpp.o" -o find-last 

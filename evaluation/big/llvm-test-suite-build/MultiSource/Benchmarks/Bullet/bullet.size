@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Bullet/bullet  :
+section                  size      addr
+.interp                    28       792
+.note.gnu.property         32       824
+.note.gnu.build-id         36       856
+.note.ABI-tag              32       892
+.gnu.hash                  36       928
+.dynsym                  1032       968
+.dynstr                   662      2000
+.gnu.version               86      2662
+.gnu.version_r            208      2752
+.rela.dyn               66888      2960
+.rela.plt                 768     69848
+.init                      27     73728
+.plt                      528     73760
+.plt.got                    8     74288
+.text                  718462     74304
+.fini                      13    792768
+.rodata                 14751    794624
+.eh_frame_hdr           15388    809376
+.eh_frame               75528    824768
+.gcc_except_table       12916    900296
+.init_array                56    913768
+.fini_array                 8    913824
+.data.rel.ro            23560    913832
+.dynamic                  528    937392
+.got                       40    937920
+.got.plt                  280    937960
+.data                  748208    938240
+.bss                    43440   1686448
+.comment                   82         0
+Total                 1723631
+
+

@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR/miniAMR  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  528     968
+.dynstr                  264    1496
+.gnu.version              44    1760
+.gnu.version_r            96    1808
+.rela.dyn                816    1904
+.rela.plt                384    2720
+.init                     27    4096
+.plt                     272    4128
+.plt.got                   8    4400
+.text                  65281    4416
+.fini                     13   69700
+.rodata                11192   73728
+.eh_frame_hdr            316   84920
+.eh_frame               2084   85240
+.init_array                8   93424
+.fini_array                8   93432
+.data.rel.ro             208   93440
+.dynamic                 496   93648
+.got                      40   94144
+.got.plt                 152   94184
+.data                     16   94336
+.bss                    6304   94352
+.comment                  82       0
+Total                  88803
+
+

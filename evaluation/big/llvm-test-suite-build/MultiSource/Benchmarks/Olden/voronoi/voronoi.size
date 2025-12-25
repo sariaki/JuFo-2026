@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Olden/voronoi/voronoi  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 40     928
+.dynsym                  384     968
+.dynstr                  217    1352
+.gnu.version              32    1570
+.gnu.version_r            80    1608
+.rela.dyn                192    1688
+.rela.plt                216    1880
+.init                     27    4096
+.plt                     160    4128
+.plt.got                   8    4288
+.text                  12687    4304
+.fini                     13   16992
+.rodata                  432   20480
+.eh_frame_hdr            396   20912
+.eh_frame               1712   21312
+.init_array                8   28096
+.fini_array                8   28104
+.dynamic                 496   28112
+.got                      40   28608
+.got.plt                  96   28648
+.data                     24   28744
+.bss                     152   28768
+.comment                  82       0
+Total                  17630
+
+

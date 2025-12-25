@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary bc.link.time /usr/bin/clang-18  -O3 CMakeFiles/bc.dir/bc.c.o CMakeFiles/bc.dir/execute.c.o CMakeFiles/bc.dir/global.c.o CMakeFiles/bc.dir/load.c.o CMakeFiles/bc.dir/main.c.o CMakeFiles/bc.dir/number.c.o CMakeFiles/bc.dir/scan.c.o CMakeFiles/bc.dir/storage.c.o CMakeFiles/bc.dir/util.c.o -o bc 

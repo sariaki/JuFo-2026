@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Shootout-C++/Shootout-C++-ackermann  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 312     968
+.dynstr                 446    1280
+.gnu.version             26    1726
+.gnu.version_r          128    1752
+.rela.dyn               240    1880
+.rela.plt                96    2120
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  2473    4224
+.fini                    13    6700
+.rodata                 515    8192
+.eh_frame_hdr            52    8708
+.eh_frame               188    8760
+.init_array               8   15760
+.fini_array               8   15768
+.dynamic                528   15776
+.got                     56   16304
+.got.plt                 56   16360
+.data                    16   16416
+.bss                      8   16432
+.comment                 82       0
+Total                  5530
+
+

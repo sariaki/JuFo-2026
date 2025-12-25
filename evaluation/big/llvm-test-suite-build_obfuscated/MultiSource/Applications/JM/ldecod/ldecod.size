@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/JM/ldecod/ldecod  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  40      928
+.dynsym                  1104      968
+.dynstr                   413     2072
+.gnu.version               92     2486
+.gnu.version_r            112     2584
+.rela.dyn                1200     2696
+.rela.plt                 888     3896
+.init                      27     8192
+.plt                      608     8224
+.plt.got                    8     8832
+.text                  430497     8848
+.fini                      13   439348
+.rodata                105056   442368
+.eh_frame_hdr            2908   547424
+.eh_frame               18512   550336
+.init_array                 8   572528
+.fini_array                 8   572536
+.data.rel.ro              248   572544
+.dynamic                  496   572792
+.got                      128   573288
+.got.plt                  320   573416
+.data                    1360   573744
+.bss                   405400   575104
+.comment                   82        0
+Total                  969656
+
+

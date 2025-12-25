@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Regression/C/Regression-C-sumarraymalloc  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 172    1208
+.gnu.version             20    1380
+.gnu.version_r           48    1400
+.rela.dyn               192    1448
+.rela.plt                96    1640
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  4619    4224
+.fini                    13    8844
+.rodata                1054   12288
+.eh_frame_hdr            44   13344
+.eh_frame               176   13392
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                496   19920
+.got                     40   20416
+.got.plt                 56   20456
+.data                    16   20512
+.bss                      8   20528
+.comment                 82       0
+Total                  7667
+
+

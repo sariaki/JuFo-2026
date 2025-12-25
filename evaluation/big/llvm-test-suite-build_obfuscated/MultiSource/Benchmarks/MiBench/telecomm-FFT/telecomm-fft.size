@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-FFT/telecomm-fft  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                48     928
+.dynsym                 480     976
+.dynstr                 220    1456
+.gnu.version             40    1676
+.gnu.version_r           80    1720
+.rela.dyn               216    1800
+.rela.plt               264    2016
+.init                    27    4096
+.plt                    192    4128
+.plt.got                  8    4320
+.text                  8381    4336
+.fini                    13   12720
+.rodata                1552   16384
+.eh_frame_hdr           108   17936
+.eh_frame               476   18048
+.init_array               8   23992
+.fini_array               8   24000
+.dynamic                496   24008
+.got                     48   24504
+.got.plt                112   24552
+.data                    24   24664
+.bss                      8   24688
+.comment                 82       0
+Total                 13019
+
+

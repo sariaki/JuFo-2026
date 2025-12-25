@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/Regression-C++-ctor_dtor_count-2  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 409    1376
+.gnu.version             34    1786
+.gnu.version_r          128    1824
+.rela.dyn               288    1952
+.rela.plt               216    2240
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                   601    4304
+.fini                    13    4908
+.rodata                  72    8192
+.eh_frame_hdr            68    8264
+.eh_frame               272    8336
+.gcc_except_table        40    8608
+.init_array               8   15760
+.fini_array               8   15768
+.data.rel.ro             16   15776
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 96   16360
+.data                    32   16456
+.bss                     16   16488
+.comment                 82       0
+Total                  3734
+
+

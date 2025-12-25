@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Polybench/stencils/heat-3d/heat-3d  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 336     968
+.dynstr                 205    1304
+.gnu.version             28    1510
+.gnu.version_r           48    1544
+.rela.dyn               216    1592
+.rela.plt               168    1808
+.init                    27    4096
+.plt                    128    4128
+.plt.got                  8    4256
+.text                  5203    4272
+.fini                    13    9476
+.rodata                 946   12288
+.eh_frame_hdr           100   13236
+.eh_frame               344   13336
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                 80   20456
+.data                    16   20536
+.bss                     56   20552
+.comment                 82       0
+Total                  8728
+
+

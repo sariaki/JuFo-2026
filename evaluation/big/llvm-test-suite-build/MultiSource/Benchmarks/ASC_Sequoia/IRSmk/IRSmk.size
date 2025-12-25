@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/ASC_Sequoia/IRSmk/IRSmk  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 312     968
+.dynstr                 209    1280
+.gnu.version             26    1490
+.gnu.version_r           64    1520
+.rela.dyn               192    1584
+.rela.plt               168    1776
+.init                    27    4096
+.plt                    128    4128
+.plt.got                  8    4256
+.text                  8776    4272
+.fini                    13   13048
+.rodata                 496   16384
+.eh_frame_hdr            76   16880
+.eh_frame               480   16960
+.init_array               8   24000
+.fini_array               8   24008
+.dynamic                496   24016
+.got                     40   24512
+.got.plt                 80   24552
+.data                    16   24632
+.bss                     48   24648
+.comment                 82       0
+Total                 11917
+
+

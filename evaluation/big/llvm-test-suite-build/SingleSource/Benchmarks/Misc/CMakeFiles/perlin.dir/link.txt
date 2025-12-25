@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary perlin.link.time /usr/bin/clang-18  -O3 CMakeFiles/perlin.dir/perlin.c.o -o perlin  -lm 

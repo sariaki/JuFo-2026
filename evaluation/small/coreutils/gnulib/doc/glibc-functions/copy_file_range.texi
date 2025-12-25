@@ -1,0 +1,53 @@
+@node copy_file_range
+@subsection @code{copy_file_range}
+@findex copy_file_range
+
+Documentation:
+@itemize
+@item
+@ifinfo
+@ref{Copying File Data,,Copying data between two files,libc},
+@end ifinfo
+@ifnotinfo
+@url{https://www.gnu.org/software/libc/manual/html_node/Copying-File-Data.html},
+@end ifnotinfo
+@item
+@uref{https://www.kernel.org/doc/man-pages/online/pages/man2/copy_file_range.2.html,,man copy_file_range}.
+@end itemize
+
+Gnulib module: copy-file-range
+@mindex copy-file-range
+
+Portability problems fixed by Gnulib:
+@itemize
+@item
+This function exists only on Linux and FreeBSD and is therefore
+missing on many platforms:
+glibc 2.26, macOS 14, FreeBSD 12.0, NetBSD 10.0, OpenBSD 7.5, Minix 3.1.8, AIX 7.1, HP-UX 11.31, Solaris 11.4, Cygwin 2.9, mingw, MSVC 14, Android API level 33.
+But the replacement function is only a stub: It always fails with error @code{ENOSYS}.
+
+@item
+This function has many problems on Linux kernel versions before 5.3.
+See @url{``Fixes for major copy_file_range() issues'',
+https://lwn.net/Articles/789527/}.
+On these kernel versions, the replacement function always fails with
+error @code{ENOSYS}.
+
+@item
+This function returns an incorrect value when the number of bytes copied
+exceeds @code{INT_MAX} on systems using glibc version 2.41 or 2.42.
+See @url{glibc bug 33245, https://sourceware.org/PR33245}.
+
+@item
+This function is provided on GNU/Hurd but it is only a stub: It always
+fails with error @code{ENOSYS}.
+@end itemize
+
+Portability problems not fixed by Gnulib:
+@itemize
+@item
+If built with include files for Linux kernel 5.3 or later,
+the Gnulib substitute may misbehave when run on Linux kernel 5.2 or earlier.
+A similar problem exists if built with include files for glibc 2.43 or later,
+and run on glibc 2.41 or 2.42.
+@end itemize

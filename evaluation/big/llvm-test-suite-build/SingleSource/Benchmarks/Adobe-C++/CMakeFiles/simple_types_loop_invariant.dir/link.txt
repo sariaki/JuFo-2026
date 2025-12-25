@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary simple_types_loop_invariant.link.time /usr/bin/clang++-18  -O3 CMakeFiles/simple_types_loop_invariant.dir/simple_types_loop_invariant.cpp.o -o simple_types_loop_invariant  -lm 

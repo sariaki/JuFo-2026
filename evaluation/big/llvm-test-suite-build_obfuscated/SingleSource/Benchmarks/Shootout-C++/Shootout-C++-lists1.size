@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Shootout-C++/Shootout-C++-lists1  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 528     968
+.dynstr                 742    1496
+.gnu.version             44    2238
+.gnu.version_r          192    2288
+.rela.dyn               264    2480
+.rela.plt               288    2744
+.init                    27    4096
+.plt                    208    4128
+.plt.got                  8    4336
+.text                  7474    4352
+.fini                    13   11828
+.rodata                1357   12288
+.eh_frame_hdr            92   13648
+.eh_frame               528   13744
+.gcc_except_table        88   14272
+.init_array               8   19856
+.fini_array               8   19864
+.dynamic                528   19872
+.got                     56   20400
+.got.plt                120   20456
+.data                    24   20576
+.bss                      8   20600
+.comment                 82       0
+Total                 12851
+
+

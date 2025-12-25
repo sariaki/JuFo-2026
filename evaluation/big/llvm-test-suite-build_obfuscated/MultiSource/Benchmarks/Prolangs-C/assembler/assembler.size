@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/assembler/assembler  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  768     968
+.dynstr                  328    1736
+.gnu.version              64    2064
+.gnu.version_r           112    2128
+.rela.dyn               3072    2240
+.rela.plt                624    5312
+.init                     27    8192
+.plt                     432    8224
+.plt.got                   8    8656
+.text                  42404    8672
+.fini                     13   51076
+.rodata                 9348   53248
+.eh_frame_hdr            444   62596
+.eh_frame               3432   63040
+.init_array                8   73152
+.fini_array                8   73160
+.dynamic                 496   73168
+.got                      40   73664
+.got.plt                 232   73704
+.data                   1996   73936
+.bss                     424   75936
+.comment                  82       0
+Total                  64526
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/pifft/pifft  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                  528      968
+.dynstr                  266     1496
+.gnu.version              44     1762
+.gnu.version_r            96     1808
+.rela.dyn                216     1904
+.rela.plt                360     2120
+.init                     27     4096
+.plt                     256     4128
+.plt.got                   8     4384
+.text                  99944     4400
+.fini                     13   104344
+.rodata                 5524   106496
+.eh_frame_hdr            644   112020
+.eh_frame               4808   112664
+.init_array                8   122296
+.fini_array                8   122304
+.dynamic                 496   122312
+.got                      48   122808
+.got.plt                 144   122856
+.data                     16   123000
+.bss                       8   123016
+.comment                  82        0
+Total                 113708
+
+

@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/GlobalDataFlow-dbl/GlobalDataFlow-dbl  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    360     968
+.dynstr                    210    1328
+.gnu.version                30    1538
+.gnu.version_r              80    1568
+.rela.dyn                  408    1648
+.rela.plt                  216    2056
+.init                       27    4096
+.plt                       160    4128
+.plt.got                     8    4288
+.text                    47891    4304
+.fini                       13   52196
+.rodata                   1862   53248
+.eh_frame_hdr              212   55112
+.eh_frame                 1276   55328
+.init_array                  8   60592
+.fini_array                  8   60600
+.data.rel.ro               264   60608
+.dynamic                   496   60872
+.got                        40   61368
+.got.plt                    96   61416
+.data                       24   61512
+.bss                   5566064   61536
+.comment                    82       0
+Total                  5619999
+
+

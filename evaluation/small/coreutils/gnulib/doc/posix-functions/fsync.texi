@@ -1,0 +1,24 @@
+@node fsync
+@subsection @code{fsync}
+@findex fsync
+
+POSIX specification:@* @url{https://pubs.opengroup.org/onlinepubs/9799919799/functions/fsync.html}
+
+Gnulib module: fsync
+@mindex fsync
+
+Portability problems fixed by Gnulib:
+@itemize
+@item
+This function is missing on some platforms:
+mingw, MSVC 14.
+@end itemize
+
+Portability problems not fixed by Gnulib:
+@itemize
+@item
+If the argument is a file descriptor that lacks write access,
+such as a directory file descriptor, this function fails
+with @code{EBADF} on some platforms:
+AIX 7.3, Cygwin 3.6.x.
+@end itemize

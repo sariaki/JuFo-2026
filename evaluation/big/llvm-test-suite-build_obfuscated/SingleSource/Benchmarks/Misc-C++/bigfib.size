@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Misc-C++/bigfib  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 40     928
+.dynsym                 1080     968
+.dynstr                 1628    2048
+.gnu.version              90    3676
+.gnu.version_r           240    3768
+.rela.dyn                336    4008
+.rela.plt                744    4344
+.init                     27    8192
+.plt                     512    8224
+.plt.got                   8    8736
+.text                  23423    8752
+.fini                     13   32176
+.rodata                 3055   32768
+.eh_frame_hdr            228   35824
+.eh_frame               1520   36056
+.gcc_except_table        528   37576
+.init_array                8   44408
+.fini_array                8   44416
+.dynamic                 528   44424
+.got                      80   44952
+.got.plt                 272   45032
+.data                     24   45304
+.bss                      16   45328
+.comment                  82       0
+Total                  34618
+
+

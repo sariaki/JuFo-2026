@@ -1,0 +1,31 @@
+Description:
+Handle --help and --version options.
+
+Files:
+lib/long-options.h
+lib/long-options.c
+
+Depends-on:
+c99
+exitfail
+getopt-gnu
+bool
+stdlib-h
+version-etc
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += long-options.c
+
+Include:
+"long-options.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+Jim Meyering

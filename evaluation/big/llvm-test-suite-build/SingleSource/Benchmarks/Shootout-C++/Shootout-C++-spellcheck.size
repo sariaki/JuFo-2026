@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Shootout-C++/Shootout-C++-spellcheck  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 672     968
+.dynstr                 853    1640
+.gnu.version             56    2494
+.gnu.version_r          192    2552
+.rela.dyn               264    2744
+.rela.plt               432    3008
+.init                    27    4096
+.plt                    304    4128
+.plt.got                  8    4432
+.text                  2470    4448
+.fini                    13    6920
+.rodata                  20    8192
+.eh_frame_hdr           108    8212
+.eh_frame               624    8320
+.gcc_except_table       124    8944
+.init_array               8   15760
+.fini_array               8   15768
+.dynamic                528   15776
+.got                     56   16304
+.got.plt                168   16360
+.data                    24   16528
+.bss                      8   16552
+.comment                 82       0
+Total                  7213
+
+

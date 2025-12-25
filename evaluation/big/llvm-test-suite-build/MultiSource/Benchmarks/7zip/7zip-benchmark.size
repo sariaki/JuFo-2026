@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/7zip/7zip-benchmark  :
+section                  size      addr
+.interp                    28       792
+.note.gnu.property         32       824
+.note.gnu.build-id         36       856
+.note.ABI-tag              32       892
+.gnu.hash                  36       928
+.dynsym                  3072       968
+.dynstr                  1509      4040
+.gnu.version              256      5550
+.gnu.version_r            176      5808
+.rela.dyn               90000      5984
+.rela.plt                2664     95984
+.init                      27    102400
+.plt                     1792    102432
+.plt.got                    8    104224
+.text                  909121    104240
+.fini                      13   1013364
+.rodata                 31136   1015808
+.eh_frame_hdr           26292   1046944
+.eh_frame              139580   1073240
+.gcc_except_table       42204   1212820
+.init_array               304   1258536
+.fini_array                 8   1258840
+.data.rel.ro            34848   1258848
+.dynamic                  528   1293696
+.got                       80   1294224
+.got.plt                  912   1294312
+.data                    3456   1295232
+.bss                    29344   1298688
+.comment                   82         0
+Total                 1317576
+
+

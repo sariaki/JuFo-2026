@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C++/trees/trees  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 288     968
+.dynstr                 334    1256
+.gnu.version             24    1590
+.gnu.version_r          128    1616
+.rela.dyn               768    1744
+.rela.plt                72    2512
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                  3388    4208
+.fini                    13    7596
+.rodata                  78    8192
+.eh_frame_hdr           228    8272
+.eh_frame              1144    8504
+.gcc_except_table       136    9648
+.init_array               8   15568
+.fini_array               8   15576
+.data.rel.ro            208   15584
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 48   16360
+.data                    24   16408
+.bss                     16   16432
+.comment                 82       0
+Total                  7826
+
+

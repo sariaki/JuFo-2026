@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/SPASS/SPASS  :
+section                   size      addr
+.interp                     28       792
+.note.gnu.property          32       824
+.note.gnu.build-id          36       856
+.note.ABI-tag               32       892
+.gnu.hash                   36       928
+.dynsym                   1200       968
+.dynstr                    458      2168
+.gnu.version               100      2626
+.gnu.version_r             112      2728
+.rela.dyn                 5616      2840
+.rela.plt                  984      8456
+.init                       27     12288
+.plt                       672     12320
+.plt.got                     8     12992
+.text                  2896626     13008
+.fini                       13   2909636
+.rodata                 425824   2912256
+.eh_frame_hdr            13364   3338080
+.eh_frame                87920   3351448
+.init_array                  8   3442336
+.fini_array                  8   3442344
+.data.rel.ro              1776   3442352
+.dynamic                   496   3444128
+.got                        80   3444624
+.got.plt                   352   3444712
+.data                       32   3445064
+.bss                    358632   3445104
+.comment                    82         0
+Total                  3794554
+
+

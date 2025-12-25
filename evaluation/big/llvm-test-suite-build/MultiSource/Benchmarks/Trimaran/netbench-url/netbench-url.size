@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Trimaran/netbench-url/netbench-url  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  480     968
+.dynstr                  246    1448
+.gnu.version              40    1694
+.gnu.version_r            64    1736
+.rela.dyn                240    1800
+.rela.plt                288    2040
+.init                     27    4096
+.plt                     208    4128
+.plt.got                   8    4336
+.text                   6351    4352
+.fini                     13   10704
+.rodata                  693   12288
+.eh_frame_hdr            140   12984
+.eh_frame                884   13128
+.init_array                8   19904
+.fini_array                8   19912
+.dynamic                 480   19920
+.got                      56   20400
+.got.plt                 120   20456
+.data                  43616   20576
+.bss                      16   64192
+.comment                  82       0
+Total                  54232
+
+

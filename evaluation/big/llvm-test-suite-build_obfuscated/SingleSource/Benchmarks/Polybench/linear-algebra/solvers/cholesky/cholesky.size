@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Polybench/linear-algebra/solvers/cholesky/cholesky  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 218    1376
+.gnu.version             34    1594
+.gnu.version_r           80    1632
+.rela.dyn               216    1712
+.rela.plt               240    1928
+.init                    27    4096
+.plt                    176    4128
+.plt.got                  8    4304
+.text                  6650    4320
+.fini                    13   10972
+.rodata                1102   12288
+.eh_frame_hdr           100   13392
+.eh_frame               356   13496
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                104   20456
+.data                    16   20560
+.bss                     56   20576
+.comment                 82       0
+Total                 10610
+
+

@@ -376,7 +376,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
 
     // Construct random Bernsteinpolynomial B(Degree, a * (x - k)) s.t. it is
     // monotonically increasing and goes through (k | 0) && (k + 1/a | 1)
-    const int Degree = std::uniform_int_distribution(3, 20)(Rng);
+    const int Degree = std::uniform_int_distribution(POPMinDegree.getValue(), POPMaxDegree.getValue())(Rng);
     const int n = Degree + 1;
     auto Bernsteinpolynomial = MonotonicBernstein(Degree, Rng, VerticalStretch, HorizontalShift);
     
@@ -516,8 +516,8 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     CurrentX->addIncoming(ClampedFinal, LoopBB);
     IterCounter->addIncoming(NextIter, LoopBB);
 
-    // Exit after 16 iterations
-    Value* Done = IRB.CreateICmpEQ(NextIter, IRB.getInt32(16));
+    // Exit after fixed amount of iterations
+    Value* Done = IRB.CreateICmpEQ(NextIter, IRB.getInt32(POPNewtonRaphsonIterations));
     IRB.CreateCondBr(Done, ExitBB, LoopBB);
 
     IRB.SetInsertPoint(ExitBB);

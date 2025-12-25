@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C++/fsm/fsm  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 336     968
+.dynstr                 337    1304
+.gnu.version             28    1642
+.gnu.version_r          112    1672
+.rela.dyn               456    1784
+.rela.plt               144    2240
+.init                    27    4096
+.plt                    112    4128
+.plt.got                  8    4240
+.text                  1164    4256
+.fini                    13    5420
+.rodata                  95    8192
+.eh_frame_hdr           124    8288
+.eh_frame               460    8416
+.init_array               8   15672
+.fini_array               8   15680
+.data.rel.ro            104   15688
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 72   16360
+.data                    52   16432
+.bss                      4   16484
+.comment                 82       0
+Total                  4478
+
+

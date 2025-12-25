@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/oggenc/oggenc  :
+section                   size      addr
+.interp                     28       792
+.note.gnu.property          32       824
+.note.gnu.build-id          36       856
+.note.ABI-tag               32       892
+.gnu.hash                   68       928
+.dynsym                   1680      1000
+.dynstr                    637      2680
+.gnu.version               140      3318
+.gnu.version_r             160      3464
+.rela.dyn                93192      3624
+.rela.plt                 1296     96816
+.init                       27     98304
+.plt                       880     98336
+.plt.got                     8     99216
+.text                   263755     99232
+.fini                       13    362988
+.rodata                  41776    364544
+.eh_frame_hdr             2732    406320
+.eh_frame                15692    409056
+.init_array                  8    428976
+.fini_array                  8    428984
+.data.rel.ro               504    428992
+.dynamic                   496    429496
+.got                        64    429992
+.got.plt                   456    430056
+.data                  1658032    430512
+.bss                     30120   2088544
+.comment                    82         0
+Total                  2111954
+
+

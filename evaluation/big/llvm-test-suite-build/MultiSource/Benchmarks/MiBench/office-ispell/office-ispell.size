@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/office-ispell/office-ispell  :
+section                  size    addr
+.interp                    28     792
+.note.gnu.property         32     824
+.note.gnu.build-id         36     856
+.note.ABI-tag              32     892
+.gnu.hash                  36     928
+.dynsym                  1608     968
+.dynstr                   553    2576
+.gnu.version              134    3130
+.gnu.version_r             96    3264
+.rela.dyn                1296    3360
+.rela.plt                1392    4656
+.init                      27    8192
+.plt                      944    8224
+.plt.got                    8    9168
+.text                   50435    9184
+.fini                      13   59620
+.rodata                  9380   61440
+.eh_frame_hdr             628   70820
+.eh_frame                4608   71448
+.init_array                 8   80976
+.fini_array                 8   80984
+.data.rel.ro              320   80992
+.dynamic                  496   81312
+.got                       80   81808
+.got.plt                  488   81896
+.data                      64   82384
+.bss                   131536   82448
+.comment                   82       0
+Total                  204368
+
+

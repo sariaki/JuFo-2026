@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/JM/lencod/lencod  :
+section                  size      addr
+.interp                    28       792
+.note.gnu.property         32       824
+.note.gnu.build-id         36       856
+.note.ABI-tag              32       892
+.gnu.hash                  40       928
+.dynsym                  1392       968
+.dynstr                   509      2360
+.gnu.version              116      2870
+.gnu.version_r            144      2992
+.rela.dyn               12000      3136
+.rela.plt                1176     15136
+.init                      27     16384
+.plt                      800     16416
+.plt.got                    8     17216
+.text                  965597     17232
+.fini                      13    982832
+.rodata                144224    983040
+.eh_frame_hdr            5116   1127264
+.eh_frame               36272   1132384
+.init_array                 8   1174656
+.fini_array                 8   1174664
+.data.rel.ro              280   1174672
+.dynamic                  496   1174952
+.got                       80   1175448
+.got.plt                  416   1175528
+.data                   13840   1175952
+.bss                   108544   1189792
+.comment                   82         0
+Total                 1291316
+
+

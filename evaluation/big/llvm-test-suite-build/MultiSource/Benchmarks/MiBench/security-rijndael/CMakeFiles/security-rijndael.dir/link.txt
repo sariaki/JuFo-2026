@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary security-rijndael.link.time /usr/bin/clang-18  -O3 "CMakeFiles/security-rijndael.dir/aes.c.o" "CMakeFiles/security-rijndael.dir/aesxam.c.o" -o security-rijndael  -lm 

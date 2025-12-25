@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/jpeg/jpeg-6a/cjpeg  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                   672      968
+.dynstr                   338     1640
+.gnu.version               56     1978
+.gnu.version_r             96     2040
+.rela.dyn                4224     2136
+.rela.plt                 456     6360
+.init                      27     8192
+.plt                      320     8224
+.plt.got                    8     8544
+.text                  382683     8560
+.fini                      13   391244
+.rodata                 70480   393216
+.eh_frame_hdr            2476   463696
+.eh_frame               17608   466176
+.init_array                 8   489568
+.fini_array                 8   489576
+.data.rel.ro             1360   489584
+.dynamic                  480   490944
+.got                       64   491424
+.got.plt                  176   491496
+.data                      16   491672
+.bss                       32   491688
+.comment                   82        0
+Total                  481847
+
+

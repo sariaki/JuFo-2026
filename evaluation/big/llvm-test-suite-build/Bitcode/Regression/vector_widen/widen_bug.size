@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/Bitcode/Regression/vector_widen/widen_bug  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  984     968
+.dynstr                  537    1952
+.gnu.version              82    2490
+.gnu.version_r           112    2576
+.rela.dyn                672    2688
+.rela.plt                840    3360
+.init                     27    8192
+.plt                     576    8224
+.plt.got                   8    8800
+.text                  25733    8816
+.fini                     13   34552
+.rodata                 4132   36864
+.eh_frame_hdr             52   40996
+.eh_frame                240   41048
+.init_array               16   48360
+.fini_array               40   48376
+.data.rel.ro             128   48416
+.dynamic                 528   48544
+.got                      48   49072
+.got.plt                 304   49128
+.data                    224   49440
+.bss                    3120   49664
+.comment                 192       0
+Total                  38772
+
+

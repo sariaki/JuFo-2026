@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/CrossingThresholds-dbl/CrossingThresholds-dbl  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    312     968
+.dynstr                    202    1280
+.gnu.version                26    1482
+.gnu.version_r              48    1512
+.rela.dyn                  408    1560
+.rela.plt                  168    1968
+.init                       27    4096
+.plt                       128    4128
+.plt.got                     8    4256
+.text                    46601    4272
+.fini                       13   50876
+.rodata                   1869   53248
+.eh_frame_hdr              180   55120
+.eh_frame                 1060   55304
+.init_array                  8   60592
+.fini_array                  8   60600
+.data.rel.ro               264   60608
+.dynamic                   496   60872
+.got                        40   61368
+.got.plt                    80   61416
+.data                       24   61496
+.bss                   5566064   61536
+.comment                    82       0
+Total                  5618280
+
+

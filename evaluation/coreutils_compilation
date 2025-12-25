@@ -1,6 +1,0 @@
-./configure CC=clang-18 \
-            CFLAGS="-O3 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so \
-            -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so \
-            -mllvm -pop-probability=75"
-
-make -j$(nproc)

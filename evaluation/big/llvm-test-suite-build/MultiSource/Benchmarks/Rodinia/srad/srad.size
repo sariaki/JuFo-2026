@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Rodinia/srad/srad  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 180    1208
+.gnu.version             20    1388
+.gnu.version_r           80    1408
+.rela.dyn               192    1488
+.rela.plt                96    1680
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  6942    4224
+.fini                    13   11168
+.rodata                 216   12288
+.eh_frame_hdr            76   12504
+.eh_frame               356   12584
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                496   19920
+.got                     40   20416
+.got.plt                 56   20456
+.data                    16   20512
+.bss                   1408   20528
+.comment                 82       0
+Total                 10804
+
+

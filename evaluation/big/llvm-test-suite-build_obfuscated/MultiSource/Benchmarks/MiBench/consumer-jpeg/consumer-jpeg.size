@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/consumer-jpeg/consumer-jpeg  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                   696      968
+.dynstr                   352     1664
+.gnu.version               58     2016
+.gnu.version_r             96     2080
+.rela.dyn                4248     2176
+.rela.plt                 480     6424
+.init                      27     8192
+.plt                      336     8224
+.plt.got                    8     8560
+.text                  362620     8576
+.fini                      13   371196
+.rodata                 64544   372736
+.eh_frame_hdr            2364   437280
+.eh_frame               16684   439648
+.init_array                 8   460880
+.fini_array                 8   460888
+.data.rel.ro             1352   460896
+.dynamic                  496   462248
+.got                       72   462744
+.got.plt                  184   462824
+.data                      16   463008
+.bss                       32   463024
+.comment                   82        0
+Total                  454940
+
+

@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C++/life/life  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 290    1208
+.gnu.version             20    1498
+.gnu.version_r           96    1520
+.rela.dyn               816    1616
+.rela.plt                48    2432
+.init                    27    4096
+.plt                     48    4128
+.plt.got                  8    4176
+.text                  2467    4192
+.fini                    13    6660
+.rodata                  39    8192
+.eh_frame_hdr           148    8232
+.eh_frame               744    8384
+.init_array               8   15536
+.fini_array               8   15544
+.data.rel.ro            240   15552
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 40   16360
+.data                    16   16400
+.bss                      8   16416
+.comment                 82       0
+Total                  6138
+
+

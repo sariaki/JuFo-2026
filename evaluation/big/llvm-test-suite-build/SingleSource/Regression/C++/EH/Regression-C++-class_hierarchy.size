@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/Regression-C++-class_hierarchy  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                40     928
+.dynsym                 600     968
+.dynstr                 507    1568
+.gnu.version             50    2076
+.gnu.version_r          128    2128
+.rela.dyn              1080    2256
+.rela.plt               264    3336
+.init                    27    4096
+.plt                    192    4128
+.plt.got                 16    4320
+.text                  1138    4336
+.fini                    13    5476
+.rodata                 114    8192
+.eh_frame_hdr           108    8308
+.eh_frame               500    8416
+.gcc_except_table       116    8916
+.init_array               8   15480
+.fini_array               8   15488
+.data.rel.ro            256   15496
+.dynamic                528   15752
+.got                     80   16280
+.got.plt                112   16360
+.data                    48   16472
+.bss                      8   16520
+.comment                 82       0
+Total                  6151
+
+

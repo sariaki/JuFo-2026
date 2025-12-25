@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary srad.link.time /usr/bin/clang-18  -O3 CMakeFiles/srad.dir/main.c.o CMakeFiles/srad.dir/sradKernel.c.o CMakeFiles/srad.dir/__/Common/glibc_compat_rand.c.o -o srad  -lm 

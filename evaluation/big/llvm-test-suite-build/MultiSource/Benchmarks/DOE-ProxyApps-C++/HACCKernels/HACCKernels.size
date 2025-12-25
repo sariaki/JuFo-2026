@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C++/HACCKernels/HACCKernels  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 480     968
+.dynstr                 567    1448
+.gnu.version             40    2016
+.gnu.version_r          176    2056
+.rela.dyn               240    2232
+.rela.plt               264    2472
+.init                    27    4096
+.plt                    192    4128
+.plt.got                  8    4320
+.text                  3574    4336
+.fini                    13    7912
+.rodata                 333    8192
+.eh_frame_hdr            76    8528
+.eh_frame               476    8608
+.gcc_except_table       104    9084
+.init_array               8   15768
+.fini_array               8   15776
+.dynamic                528   15784
+.got                     48   16312
+.got.plt                112   16360
+.data                    56   16472
+.bss                      8   16528
+.comment                 82       0
+Total                  7584
+
+

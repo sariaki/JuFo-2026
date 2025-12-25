@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/BenchmarkGame/puzzle  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                48     928
+.dynsym                 264     976
+.dynstr                 171    1240
+.gnu.version             22    1412
+.gnu.version_r           48    1440
+.rela.dyn               192    1488
+.rela.plt                72    1680
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                  2221    4208
+.fini                    13    6432
+.rodata                 341    8192
+.eh_frame_hdr            92    8536
+.eh_frame               304    8632
+.init_array               8   15808
+.fini_array               8   15816
+.dynamic                496   15824
+.got                     40   16320
+.got.plt                 48   16360
+.data                    24   16408
+.bss                      8   16432
+.comment                 82       0
+Total                  4729
+
+

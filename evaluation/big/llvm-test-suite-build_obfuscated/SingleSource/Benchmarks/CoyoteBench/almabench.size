@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/CoyoteBench/almabench  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  360     968
+.dynstr                  203    1328
+.gnu.version              30    1532
+.gnu.version_r            96    1568
+.rela.dyn                216    1664
+.rela.plt                192    1880
+.init                     27    4096
+.plt                     144    4128
+.plt.got                   8    4272
+.text                  11049    4288
+.fini                     13   15340
+.rodata                 5866   16384
+.eh_frame_hdr             68   22252
+.eh_frame                328   22320
+.init_array                8   28088
+.fini_array                8   28096
+.dynamic                 496   28104
+.got                      48   28600
+.got.plt                  88   28648
+.data                     16   28736
+.bss                       8   28752
+.comment                  82       0
+Total                  19518
+
+

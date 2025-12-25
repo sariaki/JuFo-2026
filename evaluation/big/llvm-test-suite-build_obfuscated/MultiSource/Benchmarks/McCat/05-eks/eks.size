@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/McCat/05-eks/eks  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  432     968
+.dynstr                  227    1400
+.gnu.version              36    1628
+.gnu.version_r            96    1664
+.rela.dyn                216    1760
+.rela.plt                264    1976
+.init                     27    4096
+.plt                     192    4128
+.plt.got                   8    4320
+.text                  35076    4336
+.fini                     13   39412
+.rodata                 4654   40960
+.eh_frame_hdr            268   45616
+.eh_frame               1520   45888
+.init_array                8   52664
+.fini_array                8   52672
+.dynamic                 496   52680
+.got                      48   53176
+.got.plt                 112   53224
+.data                     16   53336
+.bss                      32   53352
+.comment                  82       0
+Total                  43995
+
+

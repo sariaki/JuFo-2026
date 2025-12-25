@@ -1,0 +1,48 @@
+Description:
+Compile a C# program.
+
+Files:
+lib/csharpcomp.h
+lib/csharpcomp.c
+
+Depends-on:
+bool
+error
+xconcat-filename
+cygpath
+execute
+spawn-pipe
+wait-process
+getline
+scandir
+alphasort
+sh-quote
+safe-read
+stringeq
+xmalloca
+xvasprintf
+gettext-h
+gnulib-i18n
+memcmp
+csharpcomp-script
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += csharpcomp.h csharpcomp.c
+
+Include:
+"csharpcomp.h"
+
+Link:
+$(LTLIBUNISTRING) when linking with libtool, $(LIBUNISTRING) otherwise
+$(MBRTOWC_LIB)
+$(LTLIBC32CONV) when linking with libtool, $(LIBC32CONV) otherwise
+$(LIBTHREAD)
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+all

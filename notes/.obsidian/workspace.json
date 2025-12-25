@@ -35,8 +35,7 @@
               "title": "UMFRAGE"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,10 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "c60d498f19e879f3",
+  "active": "8c739b13d4ffca7f",
   "lastOpenFiles": [
-    "EVALUIERUNG.md",
     "UMFRAGE.md",
+    "EVALUIERUNG.md",
     "Gleichung.png",
     "TODO Implementierung.md",
     "TODO Schreiben.md",

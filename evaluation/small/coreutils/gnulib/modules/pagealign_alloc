@@ -1,0 +1,38 @@
+Description:
+Memory allocation aligned on page boundaries.
+
+Files:
+lib/pagealign_alloc.h
+lib/pagealign_alloc.c
+m4/mmap-anon.m4
+m4/pagealign_alloc.m4
+
+Depends-on:
+error
+extensions
+getpagesize
+gettext-h
+gnulib-i18n
+stdlib-h
+unistd-h
+stdint-h
+xmap
+hash-map
+
+configure.ac:
+gl_PAGEALIGN_ALLOC
+
+Makefile.am:
+lib_SOURCES += pagealign_alloc.c
+
+Include:
+"pagealign_alloc.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+bug-gnulib@gnu.org

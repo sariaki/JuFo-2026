@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/kimwitu++/kc  :
+section                   size      addr
+.interp                     28       792
+.note.gnu.property          32       824
+.note.gnu.build-id          36       856
+.note.ABI-tag               32       892
+.gnu.hash                   52       928
+.dynsym                   2640       984
+.dynstr                   2834      3624
+.gnu.version               220      6458
+.gnu.version_r             256      6680
+.rela.dyn               145080      6936
+.rela.plt                 2112    152016
+.init                       27    155648
+.plt                      1424    155680
+.plt.got                    16    157104
+.text                  2521188    157120
+.fini                       13   2678308
+.rodata                 759593   2678784
+.eh_frame_hdr            26396   3438380
+.eh_frame               136684   3464776
+.gcc_except_table         2452   3601460
+.init_array                 56   3606512
+.fini_array                  8   3606568
+.data.rel.ro             42288   3606576
+.dynamic                   528   3648864
+.got                       120   3649392
+.got.plt                   728   3649512
+.data                    29664   3650240
+.bss                     12256   3679904
+.comment                    82         0
+Total                  3686845
+
+

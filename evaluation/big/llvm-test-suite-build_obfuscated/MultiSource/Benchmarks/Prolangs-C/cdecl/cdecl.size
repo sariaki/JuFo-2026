@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/cdecl/cdecl  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  912     968
+.dynstr                  368    1880
+.gnu.version              76    2248
+.gnu.version_r            64    2328
+.rela.dyn              16224    2392
+.rela.plt                672   18616
+.init                     27   20480
+.plt                     464   20512
+.plt.got                   8   20976
+.text                  15998   20992
+.fini                     13   36992
+.rodata                 4864   40960
+.eh_frame_hdr            292   45824
+.eh_frame               2132   46120
+.init_array                8   52656
+.fini_array                8   52664
+.dynamic                 480   52672
+.got                      72   53152
+.got.plt                 248   53224
+.data                  11200   53472
+.bss                   85816   64672
+.comment                  82       0
+Total                 140192
+
+

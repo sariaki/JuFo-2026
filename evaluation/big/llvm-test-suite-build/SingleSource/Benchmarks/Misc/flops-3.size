@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc/flops-3  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 216     968
+.dynstr                 166    1184
+.gnu.version             18    1350
+.gnu.version_r           48    1368
+.rela.dyn               192    1416
+.rela.plt                72    1608
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                   815    4208
+.fini                    13    5024
+.rodata                 223    8192
+.eh_frame_hdr            44    8416
+.eh_frame               144    8464
+.init_array               8   15808
+.fini_array               8   15816
+.dynamic                496   15824
+.got                     40   16320
+.got.plt                 48   16360
+.data                   240   16408
+.bss                    456   16656
+.comment                 82       0
+Total                  3592
+
+

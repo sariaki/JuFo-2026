@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary adi.link.time /usr/bin/clang-18  -O3 CMakeFiles/adi.dir/adi.c.o -o adi  -lm 

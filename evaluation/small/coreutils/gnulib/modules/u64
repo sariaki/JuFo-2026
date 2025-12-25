@@ -1,0 +1,26 @@
+Description:
+Unsigned integers with arithmetic modulo 2**64
+
+Files:
+lib/u64.h
+lib/u64.c
+
+Depends-on:
+byteswap
+extern-inline
+bool
+stdint-h
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += u64.c
+
+Include:
+"u64.h"
+
+License:
+LGPLv2+
+
+Maintainer:
+Paul Eggert

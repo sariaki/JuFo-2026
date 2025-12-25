@@ -1,0 +1,1 @@
+/usr/bin/clang++-18  -O3 CMakeFiles/not.dir/not.cpp.o -o not 

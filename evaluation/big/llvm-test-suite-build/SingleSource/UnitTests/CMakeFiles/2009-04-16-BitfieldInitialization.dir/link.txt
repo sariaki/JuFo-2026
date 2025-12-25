@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2009-04-16-BitfieldInitialization.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2009-04-16-BitfieldInitialization.dir/2009-04-16-BitfieldInitialization.c.o" -o 2009-04-16-BitfieldInitialization 

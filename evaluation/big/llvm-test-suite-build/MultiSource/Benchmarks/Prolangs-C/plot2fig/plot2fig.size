@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/plot2fig/plot2fig  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 600     968
+.dynstr                 283    1568
+.gnu.version             50    1852
+.gnu.version_r           64    1904
+.rela.dyn               240    1968
+.rela.plt               408    2208
+.init                    27    4096
+.plt                    288    4128
+.plt.got                  8    4416
+.text                  7167    4432
+.fini                    13   11600
+.rodata                1476   12288
+.eh_frame_hdr           252   13764
+.eh_frame              1240   14016
+.init_array               8   19888
+.fini_array               8   19896
+.dynamic                496   19904
+.got                     56   20400
+.got.plt                160   20456
+.data                   232   20624
+.bss                     80   20856
+.comment                 82       0
+Total                 13402
+
+

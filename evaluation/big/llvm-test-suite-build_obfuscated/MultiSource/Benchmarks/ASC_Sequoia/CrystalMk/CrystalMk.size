@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/CrystalMk/CrystalMk  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 264     968
+.dynstr                 192    1232
+.gnu.version             22    1424
+.gnu.version_r           80    1448
+.rela.dyn               192    1528
+.rela.plt               120    1720
+.init                    27    4096
+.plt                     96    4128
+.plt.got                  8    4224
+.text                  8182    4240
+.fini                    13   12424
+.rodata                1257   16384
+.eh_frame_hdr            84   17644
+.eh_frame               608   17728
+.init_array               8   24000
+.fini_array               8   24008
+.dynamic                496   24016
+.got                     40   24512
+.got.plt                 64   24552
+.data                    16   24616
+.bss                      8   24632
+.comment                 82       0
+Total                 12031
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/loader/loader  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  528     968
+.dynstr                  238    1496
+.gnu.version              44    1734
+.gnu.version_r            80    1784
+.rela.dyn                192    1864
+.rela.plt                384    2056
+.init                     27    4096
+.plt                     272    4128
+.plt.got                   8    4400
+.text                  24879    4416
+.fini                     13   29296
+.rodata                 5828   32768
+.eh_frame_hdr            268   38596
+.eh_frame               1504   38864
+.init_array                8   44480
+.fini_array                8   44488
+.dynamic                 496   44496
+.got                      40   44992
+.got.plt                 152   45032
+.data                     28   45184
+.bss                     200   45216
+.comment                  82       0
+Total                  35443
+
+

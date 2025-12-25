@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C/archie-client/archie  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                 1128     968
+.dynstr                  455    2096
+.gnu.version              94    2552
+.gnu.version_r            64    2648
+.rela.dyn              12504    2712
+.rela.plt                960   15216
+.init                     27   16384
+.plt                     656   16416
+.plt.got                   8   17072
+.text                  41147   17088
+.fini                     13   58236
+.rodata                10404   61440
+.eh_frame_hdr            348   71844
+.eh_frame               2332   72192
+.init_array                8   81352
+.fini_array                8   81360
+.dynamic                 480   81368
+.got                      48   81848
+.got.plt                 344   81896
+.data                   6180   82240
+.bss                    2328   88432
+.comment                  82       0
+Total                  79782
+
+

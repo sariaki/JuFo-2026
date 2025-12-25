@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/UnitTests/matrix-types-spec  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                   336      968
+.dynstr                   338     1304
+.gnu.version               28     1642
+.gnu.version_r            128     1672
+.rela.dyn                 216     1800
+.rela.plt                 144     2016
+.init                      27     4096
+.plt                      112     4128
+.plt.got                    8     4240
+.text                  763854     4256
+.fini                      13   768112
+.rodata                   161   770048
+.eh_frame_hdr             164   770212
+.eh_frame                 924   770376
+.init_array                 8   777624
+.fini_array                 8   777632
+.dynamic                  528   777640
+.got                       48   778168
+.got.plt                   72   778216
+.data                      16   778288
+.bss                        8   778304
+.comment                   82        0
+Total                  767387
+
+

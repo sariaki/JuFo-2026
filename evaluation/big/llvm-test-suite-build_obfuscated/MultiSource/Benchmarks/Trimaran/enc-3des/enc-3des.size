@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-3des/enc-3des  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  288     968
+.dynstr                  177    1256
+.gnu.version              24    1434
+.gnu.version_r            48    1464
+.rela.dyn                216    1512
+.rela.plt                120    1728
+.init                     27    4096
+.plt                      96    4128
+.plt.got                   8    4224
+.text                  16252    4240
+.fini                     13   20492
+.rodata                 4388   24576
+.eh_frame_hdr            124   28964
+.eh_frame                592   29088
+.init_array                8   36296
+.fini_array                8   36304
+.dynamic                 480   36312
+.got                      48   36792
+.got.plt                  64   36840
+.data                    616   36912
+.bss                       8   37528
+.comment                  82       0
+Total                  23851
+
+

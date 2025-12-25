@@ -1,0 +1,32 @@
+Description:
+Fuzzy string comparison.
+
+Files:
+lib/fstrcmp.h
+lib/fstrcmp.c
+
+Depends-on:
+c99
+diffseq
+once
+tls
+minmax
+stdint-h
+xalloc
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += fstrcmp.h fstrcmp.c
+
+Include:
+"fstrcmp.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+all

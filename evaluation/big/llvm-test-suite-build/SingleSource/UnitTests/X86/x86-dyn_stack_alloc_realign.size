@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/X86/x86-dyn_stack_alloc_realign  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 387    1376
+.gnu.version             34    1764
+.gnu.version_r           80    1800
+.rela.dyn               384    1880
+.rela.plt               192    2264
+.init                    27    4096
+.plt                    144    4128
+.plt.got                  8    4272
+.text                   508    4288
+.fini                    13    4796
+.rodata                  66    8192
+.eh_frame_hdr            68    8260
+.eh_frame               272    8328
+.gcc_except_table        20    8600
+.init_array               8   15696
+.fini_array               8   15704
+.data.rel.ro             80   15712
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 88   16360
+.data                    32   16448
+.bss                      8   16480
+.comment                 82       0
+Total                  3649
+
+

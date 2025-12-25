@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder/PathFinder  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  984     968
+.dynstr                  396    1952
+.gnu.version              82    2348
+.gnu.version_r           112    2432
+.rela.dyn                312    2544
+.rela.plt                720    2856
+.init                     27    4096
+.plt                     496    4128
+.plt.got                   8    4624
+.text                  22914    4640
+.fini                     13   27556
+.rodata                 5132   28672
+.eh_frame_hdr            804   33804
+.eh_frame               5028   34608
+.init_array                8   44440
+.fini_array                8   44448
+.dynamic                 496   44456
+.got                      80   44952
+.got.plt                 264   45032
+.data                     16   45296
+.bss                      24   45312
+.comment                  82       0
+Total                  38170
+
+

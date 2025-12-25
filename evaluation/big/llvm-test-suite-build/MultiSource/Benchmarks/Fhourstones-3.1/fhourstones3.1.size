@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Fhourstones-3.1/fhourstones3.1  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 264     968
+.dynstr                 166    1232
+.gnu.version             22    1398
+.gnu.version_r           48    1424
+.rela.dyn               216    1472
+.rela.plt                96    1688
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  6773    4224
+.fini                    13   11000
+.rodata                 302   12288
+.eh_frame_hdr           212   12592
+.eh_frame               708   12808
+.init_array               8   19912
+.fini_array               8   19920
+.dynamic                480   19928
+.got                     48   20408
+.got.plt                 56   20456
+.data                    16   20512
+.bss                    680   20528
+.comment                 82       0
+Total                 10477
+
+

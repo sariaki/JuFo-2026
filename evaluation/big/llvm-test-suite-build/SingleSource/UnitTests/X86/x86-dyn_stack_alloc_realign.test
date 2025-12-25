@@ -1,0 +1,2 @@
+RUN: cd %S ; %S/x86-dyn_stack_alloc_realign 
+VERIFY: %b/fpcmp-target %o %S/dyn_stack_alloc_realign.reference_output

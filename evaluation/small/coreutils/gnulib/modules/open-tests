@@ -1,0 +1,18 @@
+Files:
+tests/test-open.h
+tests/test-open.c
+tests/signature.h
+tests/macros.h
+
+Depends-on:
+bool
+fcntl
+mkfifo
+symlink
+
+configure.ac:
+AC_CHECK_DECLS_ONCE([alarm])
+
+Makefile.am:
+TESTS += test-open
+check_PROGRAMS += test-open

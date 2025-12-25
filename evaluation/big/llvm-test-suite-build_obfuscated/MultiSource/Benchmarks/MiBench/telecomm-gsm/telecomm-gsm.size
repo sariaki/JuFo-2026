@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/telecomm-gsm/telecomm-gsm  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                 1296      968
+.dynstr                  462     2264
+.gnu.version             108     2726
+.gnu.version_r            80     2840
+.rela.dyn               1056     2920
+.rela.plt               1056     3976
+.init                     27     8192
+.plt                     720     8224
+.plt.got                   8     8944
+.text                  66384     8960
+.fini                     13    75344
+.rodata                23264    77824
+.eh_frame_hdr            500   101088
+.eh_frame               2836   101592
+.init_array                8   109984
+.fini_array                8   109992
+.dynamic                 496   110000
+.got                      72   110496
+.got.plt                 376   110568
+.data                    440   110944
+.bss                     368   111392
+.comment                  82        0
+Total                  99824
+
+

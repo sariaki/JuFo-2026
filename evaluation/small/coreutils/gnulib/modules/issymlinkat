@@ -1,0 +1,30 @@
+Description:
+Test whether a file is a symbolic link.
+
+Files:
+lib/issymlinkat.h
+lib/issymlinkat.c
+
+Depends-on:
+extern-inline
+sys_stat-h
+fcntl-h
+readlinkat
+
+configure.ac:
+gl_MODULE_INDICATOR([issymlinkat])
+
+Makefile.am:
+lib_SOURCES += issymlinkat.c
+
+Include:
+"issymlinkat.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+all

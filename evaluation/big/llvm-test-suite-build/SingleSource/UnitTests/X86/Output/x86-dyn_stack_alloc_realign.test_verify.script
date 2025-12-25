@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/X86/Output/x86-dyn_stack_alloc_realign.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/X86/dyn_stack_alloc_realign.reference_output; }

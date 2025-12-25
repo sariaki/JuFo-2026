@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary index-select.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/index-select.dir/index-select.cpp.o" -o index-select 

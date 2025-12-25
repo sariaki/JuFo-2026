@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASCI_Purple/SMG2000/smg2000  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                   696      968
+.dynstr                   323     1664
+.gnu.version               58     1988
+.gnu.version_r            112     2048
+.rela.dyn                 216     2160
+.rela.plt                 528     2376
+.init                      27     4096
+.plt                      368     4128
+.plt.got                    8     4496
+.text                  441794     4512
+.fini                      13   446308
+.rodata                 62276   446464
+.eh_frame_hdr            3180   508740
+.eh_frame               17096   511920
+.init_array                 8   535992
+.fini_array                 8   536000
+.dynamic                  496   536008
+.got                       48   536504
+.got.plt                  200   536552
+.data                      24   536752
+.bss                       48   536776
+.comment                   82        0
+Total                  527773
+
+

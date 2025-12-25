@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/network-patricia/network-patricia  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 432     968
+.dynstr                 241    1400
+.gnu.version             36    1642
+.gnu.version_r           64    1680
+.rela.dyn               216    1744
+.rela.plt               264    1960
+.init                    27    4096
+.plt                    192    4128
+.plt.got                  8    4320
+.text                  5129    4336
+.fini                    13    9468
+.rodata                1044   12288
+.eh_frame_hdr            76   13332
+.eh_frame               340   13408
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                112   20456
+.data                    16   20568
+.bss                      8   20584
+.comment                 82       0
+Total                  9024
+
+

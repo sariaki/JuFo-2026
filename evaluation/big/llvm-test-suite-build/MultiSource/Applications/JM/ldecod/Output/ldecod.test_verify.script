@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/JM/ldecod/Output/ldecod.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/JM/ldecod/ldecod.reference_output; }

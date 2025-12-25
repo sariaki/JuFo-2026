@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/BitBench/uudecode/uudecode  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 231    1376
+.gnu.version             34    1608
+.gnu.version_r           64    1648
+.rela.dyn               216    1712
+.rela.plt               240    1928
+.init                    27    4096
+.plt                    176    4128
+.plt.got                  8    4304
+.text                  1329    4320
+.fini                    13    5652
+.rodata                  49    8192
+.eh_frame_hdr            76    8244
+.eh_frame               292    8320
+.init_array               8   15816
+.fini_array               8   15824
+.dynamic                480   15832
+.got                     48   16312
+.got.plt                104   16360
+.data                    16   16464
+.bss                      8   16480
+.comment                 82       0
+Total                  4081
+
+

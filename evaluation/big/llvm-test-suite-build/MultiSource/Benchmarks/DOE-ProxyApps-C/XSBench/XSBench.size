@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench/XSBench  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  720     968
+.dynstr                  299    1688
+.gnu.version              60    1988
+.gnu.version_r            96    2048
+.rela.dyn                240    2144
+.rela.plt                528    2384
+.init                     27    4096
+.plt                     368    4128
+.plt.got                   8    4496
+.text                  13232    4512
+.fini                     13   17744
+.rodata                 4884   20480
+.eh_frame_hdr            292   25364
+.eh_frame               1688   25656
+.init_array                8   32176
+.fini_array                8   32184
+.dynamic                 496   32192
+.got                      56   32688
+.got.plt                 200   32744
+.data                     24   32944
+.bss                       8   32968
+.comment                  82       0
+Total                  23501
+
+

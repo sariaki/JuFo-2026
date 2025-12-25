@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/gnugo/gnugo  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  528     968
+.dynstr                  259    1496
+.gnu.version              44    1756
+.gnu.version_r            64    1800
+.rela.dyn                336    1864
+.rela.plt                360    2200
+.init                     27    4096
+.plt                     256    4128
+.plt.got                   8    4384
+.text                  21438    4400
+.fini                     13   25840
+.rodata                 3884   28672
+.eh_frame_hdr            252   32556
+.eh_frame               1576   32808
+.init_array                8   40352
+.fini_array                8   40360
+.dynamic                 480   40368
+.got                      88   40848
+.got.plt                 144   40936
+.data                     16   41080
+.bss                    1584   41104
+.comment                  82       0
+Total                  31619
+
+

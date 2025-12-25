@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/McGill/exptree  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 231    1376
+.gnu.version             34    1608
+.gnu.version_r           64    1648
+.rela.dyn               240    1712
+.rela.plt               216    1952
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                  7855    4304
+.fini                    13   12160
+.rodata                1734   12288
+.eh_frame_hdr           140   14024
+.eh_frame               712   14168
+.init_array               8   19888
+.fini_array               8   19896
+.dynamic                496   19904
+.got                     56   20400
+.got.plt                 96   20456
+.data                    16   20552
+.bss                     64   20568
+.comment                 82       0
+Total                 12832
+
+

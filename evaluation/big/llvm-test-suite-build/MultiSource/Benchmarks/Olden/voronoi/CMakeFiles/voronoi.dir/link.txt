@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary voronoi.link.time /usr/bin/clang-18  -O3 CMakeFiles/voronoi.dir/args.c.o CMakeFiles/voronoi.dir/newvor.c.o CMakeFiles/voronoi.dir/output.c.o CMakeFiles/voronoi.dir/vector.c.o -o voronoi  -lm 

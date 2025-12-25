@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc/himenobmtxpa  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 336     968
+.dynstr                 202    1304
+.gnu.version             28    1506
+.gnu.version_r           48    1536
+.rela.dyn               192    1584
+.rela.plt               192    1776
+.init                    27    4096
+.plt                    144    4128
+.plt.got                  8    4272
+.text                  7767    4288
+.fini                    13   12056
+.rodata                 269   12288
+.eh_frame_hdr           116   12560
+.eh_frame               608   12680
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                496   19920
+.got                     40   20416
+.got.plt                 88   20456
+.data                    20   20544
+.bss                    184   20568
+.comment                 82       0
+Total                 11040
+
+

@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/viterbi/Output/viterbi.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/viterbi/viterbi.reference_output; }

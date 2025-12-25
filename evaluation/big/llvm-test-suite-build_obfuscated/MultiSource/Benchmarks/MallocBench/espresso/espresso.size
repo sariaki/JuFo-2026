@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MallocBench/espresso/espresso  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  48      928
+.dynsym                  1080      976
+.dynstr                   434     2056
+.gnu.version               90     2490
+.gnu.version_r             96     2584
+.rela.dyn                2688     2680
+.rela.plt                 816     5368
+.init                      27     8192
+.plt                      560     8224
+.plt.got                    8     8784
+.text                  374734     8800
+.fini                      13   383536
+.rodata                 67760   385024
+.eh_frame_hdr            2732   452784
+.eh_frame               20624   455520
+.init_array                 8   482744
+.fini_array                 8   482752
+.dynamic                  480   482760
+.got                       64   483240
+.got.plt                  296   483304
+.data                    3000   483600
+.bss                     1840   486608
+.comment                   82        0
+Total                  477616
+
+

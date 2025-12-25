@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/Output/Regression-C++-simple_rethrow.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/simple_rethrow.reference_output; }

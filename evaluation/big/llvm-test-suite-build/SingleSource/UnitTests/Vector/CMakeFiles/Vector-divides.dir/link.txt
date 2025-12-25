@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Vector-divides.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Vector-divides.dir/divides.c.o" -o Vector-divides 

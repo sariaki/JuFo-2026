@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/DOE-ProxyApps-C++/PENNANT/PENNANT  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  48      928
+.dynsym                  1968      976
+.dynstr                  3053     2944
+.gnu.version              164     5998
+.gnu.version_r            272     6168
+.rela.dyn                 360     6440
+.rela.plt                1608     6800
+.init                      27    12288
+.plt                     1088    12320
+.plt.got                   16    13408
+.text                  163703    13424
+.fini                      13   177128
+.rodata                 22501   180224
+.eh_frame_hdr            1244   202728
+.eh_frame                9048   203976
+.gcc_except_table        2496   213024
+.init_array                 8   220528
+.fini_array                 8   220536
+.dynamic                  528   220544
+.got                       88   221072
+.got.plt                  560   221160
+.data                      28   221720
+.bss                       12   221748
+.comment                   82        0
+Total                  209051
+
+

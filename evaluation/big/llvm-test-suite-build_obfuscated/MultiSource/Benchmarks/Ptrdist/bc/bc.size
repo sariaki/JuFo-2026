@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Ptrdist/bc/bc  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 40      928
+.dynsym                 1008      968
+.dynstr                  388     1976
+.gnu.version              84     2364
+.gnu.version_r            80     2448
+.rela.dyn                288     2528
+.rela.plt                744     2816
+.init                     27     4096
+.plt                     512     4128
+.plt.got                   8     4640
+.text                  75905     4656
+.fini                     13    80564
+.rodata                17726    81920
+.eh_frame_hdr            820    99648
+.eh_frame               5240   100472
+.init_array                8   110000
+.fini_array                8   110008
+.dynamic                 480   110016
+.got                      72   110496
+.got.plt                 272   110568
+.data                   2993   110848
+.bss                    4112   113856
+.comment                  82        0
+Total                 111038
+
+

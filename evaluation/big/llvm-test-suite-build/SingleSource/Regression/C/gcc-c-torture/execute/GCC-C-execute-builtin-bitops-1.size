@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C/gcc-c-torture/execute/GCC-C-execute-builtin-bitops-1  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 192     968
+.dynstr                 147    1160
+.gnu.version             16    1308
+.gnu.version_r           48    1328
+.rela.dyn               192    1376
+.rela.plt                48    1568
+.init                    27    4096
+.plt                     48    4128
+.plt.got                  8    4176
+.text                  6952    4192
+.fini                    13   11144
+.rodata                  80   12288
+.eh_frame_hdr           188   12368
+.eh_frame               520   12560
+.init_array               8   19920
+.fini_array               8   19928
+.dynamic                480   19936
+.got                     40   20416
+.got.plt                 40   20456
+.data                   296   20496
+.bss                      8   20792
+.comment                 82       0
+Total                  9605
+
+

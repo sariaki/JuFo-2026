@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Ptrdist/yacr2/yacr2  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  480     968
+.dynstr                  247    1448
+.gnu.version              40    1696
+.gnu.version_r            64    1736
+.rela.dyn                240    1800
+.rela.plt                288    2040
+.init                     27    4096
+.plt                     208    4128
+.plt.got                   8    4336
+.text                  29279    4352
+.fini                     13   33632
+.rodata                  684   36864
+.eh_frame_hdr            484   37548
+.eh_frame               3316   38032
+.init_array                8   48576
+.fini_array                8   48584
+.dynamic                 480   48592
+.got                      56   49072
+.got.plt                 120   49128
+.data                     16   49248
+.bss                     336   49264
+.comment                  82       0
+Total                  36648
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Polybench/linear-algebra/solvers/gramschmidt/gramschmidt  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 384     968
+.dynstr                 211    1352
+.gnu.version             32    1564
+.gnu.version_r           80    1600
+.rela.dyn               216    1680
+.rela.plt               216    1896
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                  3405    4304
+.fini                    13    7712
+.rodata                 708    8192
+.eh_frame_hdr           100    8900
+.eh_frame               340    9000
+.init_array               8   15800
+.fini_array               8   15808
+.dynamic                496   15816
+.got                     48   16312
+.got.plt                 96   16360
+.data                    16   16456
+.bss                     56   16472
+.comment                 82       0
+Total                  6874
+
+

@@ -1,0 +1,28 @@
+Description:
+Translate messages to user's native language if GNU gettext is also used.
+
+Files:
+lib/gettext.h
+m4/gettext_h.m4
+
+Depends-on:
+locale-h
+vararrays
+
+configure.ac:
+gl_GETTEXT_H
+
+Makefile.am:
+lib_SOURCES += gettext.h
+
+Include:
+"gettext.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+LGPLv2+
+
+Maintainer:
+all

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/ASC_Sequoia/AMGmk/AMGmk  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  576     968
+.dynstr                  288    1544
+.gnu.version              48    1832
+.gnu.version_r            64    1880
+.rela.dyn                216    1944
+.rela.plt                408    2160
+.init                     27    4096
+.plt                     288    4128
+.plt.got                   8    4416
+.text                  42483    4432
+.fini                     13   46916
+.rodata                 7436   49152
+.eh_frame_hdr            388   56588
+.eh_frame               2188   56976
+.init_array                8   64952
+.fini_array                8   64960
+.dynamic                 496   64968
+.got                      48   65464
+.got.plt                 160   65512
+.data                     16   65672
+.bss                      24   65688
+.comment                  82       0
+Total                  55437
+
+

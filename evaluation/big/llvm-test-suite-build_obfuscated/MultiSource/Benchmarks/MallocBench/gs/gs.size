@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MallocBench/gs/gs  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                  1416      968
+.dynstr                   523     2384
+.gnu.version              118     2908
+.gnu.version_r            144     3032
+.rela.dyn               15168     3176
+.rela.plt                1200    18344
+.init                      27    20480
+.plt                      816    20512
+.plt.got                    8    21328
+.text                  568737    21344
+.fini                      13   590084
+.rodata                121860   593920
+.eh_frame_hdr            5940   715780
+.eh_frame               31248   721720
+.init_array                 8   756832
+.fini_array                 8   756840
+.data.rel.ro              304   756848
+.dynamic                  496   757152
+.got                       80   757648
+.got.plt                  424   757736
+.data                    6424   758160
+.bss                    15400   764592
+.comment                   82        0
+Total                  770608
+
+

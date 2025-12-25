@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary pi.link.time /usr/bin/clang-18  -O3 CMakeFiles/pi.dir/pi.c.o -o pi  -lm 

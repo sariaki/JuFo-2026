@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/hbd/hbd  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                  960      968
+.dynstr                  462     1928
+.gnu.version              80     2390
+.gnu.version_r           144     2472
+.rela.dyn               3024     2616
+.rela.plt                720     5640
+.init                     27     8192
+.plt                     496     8224
+.plt.got                   8     8720
+.text                  91558     8736
+.fini                     13   100296
+.rodata                26696   102400
+.eh_frame_hdr            612   129096
+.eh_frame               5452   129712
+.gcc_except_table       1016   135164
+.init_array               16   142704
+.fini_array                8   142720
+.dynamic                 528   142728
+.got                      80   143256
+.got.plt                 264   143336
+.data                   2104   143600
+.bss                    2720   145712
+.comment                  82        0
+Total                 137234
+
+

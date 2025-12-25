@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/mafft/pairlocalalign  :
+section                     size     addr
+.interp                       28      792
+.note.gnu.property            32      824
+.note.gnu.build-id            36      856
+.note.ABI-tag                 32      892
+.gnu.hash                     36      928
+.dynsym                     1248      968
+.dynstr                      530     2216
+.gnu.version                 104     2746
+.gnu.version_r               144     2856
+.rela.dyn                    360     3000
+.rela.plt                   1032     3360
+.init                         27     8192
+.plt                         704     8224
+.plt.got                       8     8928
+.text                     450645     8944
+.fini                         13   459592
+.rodata                    25332   462848
+.eh_frame_hdr               2676   488180
+.eh_frame                  22292   490856
+.init_array                    8   519560
+.fini_array                    8   519568
+.dynamic                     496   519576
+.got                          96   520072
+.got.plt                     368   520168
+.data                       8101   520544
+.bss                   132716752   528656
+.comment                      82        0
+Total                  133231190
+
+

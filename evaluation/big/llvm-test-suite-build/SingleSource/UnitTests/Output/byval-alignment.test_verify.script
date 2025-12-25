@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Output/byval-alignment.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/byval-alignment.reference_output; }

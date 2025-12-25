@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Adobe-C++/functionobjects  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  504     968
+.dynstr                  300    1472
+.gnu.version              42    1772
+.gnu.version_r           128    1816
+.rela.dyn                192    1944
+.rela.plt                360    2136
+.init                     27    4096
+.plt                     256    4128
+.plt.got                   8    4384
+.text                  32082    4400
+.fini                     13   36484
+.rodata                 5434   36864
+.eh_frame_hdr            340   42300
+.eh_frame               2228   42640
+.init_array                8   48544
+.fini_array                8   48552
+.dynamic                 528   48560
+.got                      40   49088
+.got.plt                 144   49128
+.data                     16   49272
+.bss                      40   49288
+.comment                  82       0
+Total                  42944
+
+

@@ -1,0 +1,2 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lemon/Output/lemon.test.out; } &&
+{ /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lemon/Output/lemon.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lemon/lemon.reference_output; }

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Polybench/medley/nussinov/nussinov  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 384     968
+.dynstr                 213    1352
+.gnu.version             32    1566
+.gnu.version_r           48    1600
+.rela.dyn               216    1648
+.rela.plt               216    1864
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                  4990    4304
+.fini                    13    9296
+.rodata                1014   12288
+.eh_frame_hdr           100   13304
+.eh_frame               344   13408
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                 96   20456
+.data                    16   20552
+.bss                     56   20568
+.comment                 82       0
+Total                  8739
+
+

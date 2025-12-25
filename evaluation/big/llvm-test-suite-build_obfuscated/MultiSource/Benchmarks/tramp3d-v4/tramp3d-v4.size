@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/tramp3d-v4/tramp3d-v4  :
+section                   size      addr
+.interp                     28       792
+.note.gnu.property          32       824
+.note.gnu.build-id          36       856
+.note.ABI-tag               32       892
+.gnu.hash                   40       928
+.dynsym                   1704       968
+.dynstr                   2320      2672
+.gnu.version               142      4992
+.gnu.version_r             256      5136
+.rela.dyn                17064      5392
+.rela.plt                 1320     22456
+.init                       27     24576
+.plt                       896     24608
+.plt.got                     8     25504
+.text                  1272434     25520
+.fini                       13   1297956
+.rodata                 115507   1298432
+.eh_frame_hdr            11452   1413940
+.eh_frame                79072   1425392
+.init_array                 56   1508616
+.fini_array                  8   1508672
+.data.rel.ro              6216   1508680
+.dynamic                   528   1514896
+.got                        72   1515424
+.got.plt                   464   1515496
+.data                       80   1515960
+.bss                      1440   1516048
+.comment                    82         0
+Total                  1511329
+
+

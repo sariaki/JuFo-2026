@@ -1,0 +1,29 @@
+Description:
+Simple hash table (no removals) where the keys are memory blocks.
+
+Files:
+lib/mem-hash-map.h
+lib/mem-hash-map.c
+
+Depends-on:
+next-prime
+obstack
+stringeq
+xalloc
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += mem-hash-map.h mem-hash-map.c
+
+Include:
+"mem-hash-map.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+Bruno Haible

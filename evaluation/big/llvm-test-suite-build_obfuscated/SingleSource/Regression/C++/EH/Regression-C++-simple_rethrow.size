@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Regression/C++/EH/Regression-C++-simple_rethrow  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 361    1376
+.gnu.version             34    1738
+.gnu.version_r          128    1776
+.rela.dyn               264    1904
+.rela.plt               216    2168
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                   443    4304
+.fini                    13    4748
+.rodata                  65    8192
+.eh_frame_hdr            68    8260
+.eh_frame               248    8328
+.gcc_except_table        56    8576
+.init_array               8   15768
+.fini_array               8   15776
+.dynamic                528   15784
+.got                     48   16312
+.got.plt                 96   16360
+.data                    32   16456
+.bss                      8   16488
+.comment                 82       0
+Total                  3473
+
+

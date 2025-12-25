@@ -1,0 +1,31 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C/gcc-c-torture/execute/GCC-C-execute-20040629-1  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 144     968
+.dynstr                 136    1112
+.gnu.version             12    1248
+.gnu.version_r           48    1264
+.rela.dyn               192    1312
+.init                    27    4096
+.plt                     16    4128
+.plt.got                  8    4144
+.text                  4577    4160
+.fini                    13    8740
+.rodata                   4   12288
+.eh_frame_hdr          1412   12292
+.eh_frame              3556   13704
+.init_array               8   24064
+.fini_array               8   24072
+.dynamic                432   24080
+.got                     40   24512
+.got.plt                 24   24552
+.data                    16   24576
+.bss                     16   24592
+.comment                 82       0
+Total                 10935
+
+

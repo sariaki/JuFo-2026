@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Threads/Output/2010-12-08-tls.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Threads/2010-12-08-tls.reference_output; }

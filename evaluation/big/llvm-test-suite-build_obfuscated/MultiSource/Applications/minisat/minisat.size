@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/minisat/minisat  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  936     968
+.dynstr                  493    1904
+.gnu.version              78    2398
+.gnu.version_r           176    2480
+.rela.dyn                288    2656
+.rela.plt                696    2944
+.init                     27    4096
+.plt                     480    4128
+.plt.got                   8    4608
+.text                  37117    4624
+.fini                     13   41744
+.rodata                 5778   45056
+.eh_frame_hdr            324   50836
+.eh_frame               2244   51160
+.gcc_except_table        148   53404
+.init_array                8   60808
+.fini_array                8   60816
+.dynamic                 528   60824
+.got                      64   61352
+.got.plt                 256   61416
+.data                     24   61672
+.bss                      16   61696
+.comment                  82       0
+Total                  49956
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C/gcc-c-torture/execute/GCC-C-execute-memchr-1  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 216     968
+.dynstr                 156    1184
+.gnu.version             18    1340
+.gnu.version_r           48    1360
+.rela.dyn               192    1408
+.rela.plt                72    1600
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                  1290    4208
+.fini                    13    5500
+.rodata                 610    8192
+.eh_frame_hdr            60    8804
+.eh_frame               204    8864
+.init_array               8   15824
+.fini_array               8   15832
+.dynamic                480   15840
+.got                     40   16320
+.got.plt                 48   16360
+.data                    32   16408
+.bss                      8   16440
+.comment                 82       0
+Total                  3848
+
+

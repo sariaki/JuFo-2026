@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C-PR1386.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Regression-C-PR1386.dir/PR1386.c.o" -o Regression-C-PR1386  -lm 

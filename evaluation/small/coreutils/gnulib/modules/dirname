@@ -1,0 +1,29 @@
+Description:
+Extract specific portions of filenames.
+
+Files:
+lib/dirname.c
+lib/basename.c
+lib/stripslash.c
+
+Depends-on:
+dirname-lgpl
+xalloc
+
+configure.ac:
+gl_MODULE_INDICATOR([dirname])
+
+Makefile.am:
+lib_SOURCES += dirname.c basename.c
+
+Include:
+"dirname.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+Jim Meyering, Eric Blake

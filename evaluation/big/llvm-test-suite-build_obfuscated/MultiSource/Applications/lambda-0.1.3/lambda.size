@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/lambda-0.1.3/lambda  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                  1056      968
+.dynstr                   588     2024
+.gnu.version               88     2612
+.gnu.version_r            144     2704
+.rela.dyn                5352     2848
+.rela.plt                 744     8200
+.init                      27    12288
+.plt                      512    12320
+.plt.got                    8    12832
+.text                  104092    12848
+.fini                      13   116940
+.rodata                 22868   118784
+.eh_frame_hdr            1236   141652
+.eh_frame                6888   142888
+.gcc_except_table         928   149776
+.init_array                 8   153264
+.fini_array                 8   153272
+.data.rel.ro             1752   153280
+.dynamic                  528   155032
+.got                       64   155560
+.got.plt                  272   155624
+.data                      44   155896
+.bss                       56   155944
+.comment                   82        0
+Total                  147522
+
+

@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary rounding.link.time /usr/bin/clang-18  -O3 "CMakeFiles/rounding.dir/rounding-dynamic.c.o" CMakeFiles/rounding.dir/rounding.c.o -o rounding 

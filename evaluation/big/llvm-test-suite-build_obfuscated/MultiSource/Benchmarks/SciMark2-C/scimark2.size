@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/SciMark2-C/scimark2  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  384     968
+.dynstr                  207    1352
+.gnu.version              32    1560
+.gnu.version_r            80    1592
+.rela.dyn                216    1672
+.rela.plt                216    1888
+.init                     27    4096
+.plt                     160    4128
+.plt.got                   8    4288
+.text                  32913    4304
+.fini                     13   37220
+.rodata                 6812   40960
+.eh_frame_hdr            348   47772
+.eh_frame               1800   48120
+.init_array                8   56760
+.fini_array                8   56768
+.dynamic                 496   56776
+.got                      48   57272
+.got.plt                  96   57320
+.data                     16   57416
+.bss                      24   57432
+.comment                  82       0
+Total                  44158
+
+

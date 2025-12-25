@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary fhourstones.link.time /usr/bin/clang-18  -O3 CMakeFiles/fhourstones.dir/c4.c.o CMakeFiles/fhourstones.dir/play.c.o CMakeFiles/fhourstones.dir/time.c.o CMakeFiles/fhourstones.dir/trans.c.o -o fhourstones 

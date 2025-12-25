@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/Bitcode/Benchmarks/Halide/bilateral_grid/halide_bilateral_grid  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                 1536     968
+.dynstr                 1067    2504
+.gnu.version             128    3572
+.gnu.version_r           256    3704
+.rela.dyn                720    3960
+.rela.plt               1320    4680
+.init                     27    8192
+.plt                     896    8224
+.plt.got                   8    9120
+.text                  59016    9136
+.fini                     13   68152
+.rodata                 6064   69632
+.eh_frame_hdr            180   75696
+.eh_frame               1360   75880
+.gcc_except_table        336   77240
+.init_array                8   81088
+.fini_array               40   81096
+.data.rel.ro             176   81136
+.dynamic                 528   81312
+.got                      56   81840
+.got.plt                 464   81896
+.data                    224   82360
+.bss                    3152   82584
+.comment                 158       0
+Total                  77897
+
+

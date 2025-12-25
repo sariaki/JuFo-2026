@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/Regression-C++-ofstream_ctor  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 192     968
+.dynstr                 281    1160
+.gnu.version             16    1442
+.gnu.version_r           80    1464
+.rela.dyn               192    1544
+.rela.plt                48    1736
+.init                    27    4096
+.plt                     48    4128
+.plt.got                  8    4176
+.text                   278    4192
+.fini                    13    4472
+.rodata                   4    8192
+.eh_frame_hdr            44    8196
+.eh_frame               148    8240
+.init_array               8   15776
+.fini_array               8   15784
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 40   16360
+.data                    16   16400
+.bss                      8   16416
+.comment                 82       0
+Total                  2273
+
+

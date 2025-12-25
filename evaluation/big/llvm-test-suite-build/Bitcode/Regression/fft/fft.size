@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/Bitcode/Regression/fft/fft  :
+section                   size      addr
+.interp                     28       792
+.note.gnu.property          32       824
+.note.gnu.build-id          36       856
+.note.ABI-tag               32       892
+.gnu.hash                   36       928
+.dynsym                   1008       968
+.dynstr                    553      1976
+.gnu.version                84      2530
+.gnu.version_r             128      2616
+.rela.dyn                19032      2744
+.rela.plt                  864     21776
+.init                       27     24576
+.plt                       592     24608
+.plt.got                     8     25200
+.text                  7178810     25216
+.fini                       13   7204028
+.rodata                  73348   7204864
+.eh_frame_hdr             1652   7278212
+.eh_frame                10904   7279864
+.init_array                 16   7293672
+.fini_array                 40   7293688
+.data.rel.ro             21120   7293728
+.dynamic                   528   7314848
+.got                        48   7315376
+.got.plt                   312   7315432
+.data                      640   7315744
+.bss                      3312   7316384
+.comment                   159         0
+Total                  7313362
+
+

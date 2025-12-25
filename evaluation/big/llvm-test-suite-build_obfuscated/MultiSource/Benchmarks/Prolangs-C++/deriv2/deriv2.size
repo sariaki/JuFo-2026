@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/deriv2/deriv2  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  480     968
+.dynstr                  599    1448
+.gnu.version              40    2048
+.gnu.version_r           160    2088
+.rela.dyn               1560    2248
+.rela.plt                192    3808
+.init                     27    4096
+.plt                     144    4128
+.plt.got                   8    4272
+.text                  12179    4288
+.fini                     13   16468
+.rodata                 2479   20480
+.eh_frame_hdr            204   22960
+.eh_frame                932   23168
+.gcc_except_table        392   24100
+.init_array                8   27560
+.fini_array                8   27568
+.data.rel.ro             496   27576
+.dynamic                 528   28072
+.got                      48   28600
+.got.plt                  88   28648
+.data                     24   28736
+.bss                       8   28760
+.comment                  82       0
+Total                  20863
+
+

@@ -1,0 +1,1 @@
+RUN: %S/halide_blur 

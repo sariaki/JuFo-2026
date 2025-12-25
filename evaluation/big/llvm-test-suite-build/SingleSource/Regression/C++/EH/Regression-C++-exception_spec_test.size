@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/Regression-C++-exception_spec_test  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 432     968
+.dynstr                 385    1400
+.gnu.version             36    1786
+.gnu.version_r           96    1824
+.rela.dyn               288    1920
+.rela.plt               216    2208
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                   814    4304
+.fini                    13    5120
+.rodata                 313    8192
+.eh_frame_hdr            84    8508
+.eh_frame               276    8592
+.gcc_except_table        92    8868
+.init_array               8   15760
+.fini_array               8   15768
+.dynamic                528   15776
+.got                     56   16304
+.got.plt                 96   16360
+.data                    32   16456
+.bss                      8   16488
+.comment                 82       0
+Total                  4222
+
+

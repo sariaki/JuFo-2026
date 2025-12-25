@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/mediabench/adpcm/rawcaudio/rawcaudio  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 288     968
+.dynstr                 174    1256
+.gnu.version             24    1430
+.gnu.version_r           48    1456
+.rela.dyn               216    1504
+.rela.plt               120    1720
+.init                    27    4096
+.plt                     96    4128
+.plt.got                  8    4224
+.text                  3330    4240
+.fini                    13    7572
+.rodata                1088    8192
+.eh_frame_hdr            60    9280
+.eh_frame               308    9344
+.init_array               8   15816
+.fini_array               8   15824
+.dynamic                480   15832
+.got                     48   16312
+.got.plt                 64   16360
+.data                    16   16424
+.bss                   2520   16448
+.comment                 82       0
+Total                  9190
+
+

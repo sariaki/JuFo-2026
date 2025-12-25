@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C/CoMD/CoMD  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  960     968
+.dynstr                  431    1928
+.gnu.version              80    2360
+.gnu.version_r           128    2440
+.rela.dyn                504    2568
+.rela.plt                768    3072
+.init                     27    4096
+.plt                     528    4128
+.plt.got                   8    4656
+.text                  39449    4672
+.fini                     13   44124
+.rodata                 5592   45056
+.eh_frame_hdr            652   50648
+.eh_frame               3724   51304
+.init_array                8   60848
+.fini_array                8   60856
+.dynamic                 496   60864
+.got                      56   61360
+.got.plt                 280   61416
+.data                    120   61696
+.bss                     840   61824
+.comment                  82       0
+Total                  54918
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/VersaBench/ecbdes/ecbdes  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 288     968
+.dynstr                 166    1256
+.gnu.version             24    1422
+.gnu.version_r           48    1448
+.rela.dyn               240    1496
+.rela.plt               144    1736
+.init                    27    4096
+.plt                    112    4128
+.plt.got                  8    4240
+.text                  7077    4256
+.fini                    13   11336
+.rodata                8768   12288
+.eh_frame_hdr           132   21056
+.eh_frame               636   21192
+.init_array               8   28112
+.fini_array               8   28120
+.dynamic                480   28128
+.got                     40   28608
+.got.plt                 72   28648
+.data                   976   28720
+.bss                     72   29696
+.comment                 82       0
+Total                 19585
+
+

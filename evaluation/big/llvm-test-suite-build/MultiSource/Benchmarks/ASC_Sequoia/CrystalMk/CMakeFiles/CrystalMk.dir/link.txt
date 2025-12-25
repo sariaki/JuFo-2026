@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary CrystalMk.link.time /usr/bin/clang-18  -O3 CMakeFiles/CrystalMk.dir/Crystal_Cholesky.c.o CMakeFiles/CrystalMk.dir/Crystal_div.c.o CMakeFiles/CrystalMk.dir/Crystal_pow.c.o CMakeFiles/CrystalMk.dir/SPEdriver.c.o CMakeFiles/CrystalMk.dir/init.c.o CMakeFiles/CrystalMk.dir/main.c.o -o CrystalMk  -lm 

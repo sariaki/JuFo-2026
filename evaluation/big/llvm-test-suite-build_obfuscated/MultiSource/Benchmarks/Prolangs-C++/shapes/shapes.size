@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Prolangs-C++/shapes/shapes  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  408     968
+.dynstr                  499    1376
+.gnu.version              34    1876
+.gnu.version_r           160    1912
+.rela.dyn               1296    2072
+.rela.plt                144    3368
+.init                     27    4096
+.plt                     112    4128
+.plt.got                   8    4240
+.text                  22611    4256
+.fini                     13   26868
+.rodata                 4953   28672
+.eh_frame_hdr            316   33628
+.eh_frame               1524   33944
+.gcc_except_table        120   35468
+.init_array                8   39968
+.fini_array                8   39976
+.data.rel.ro             376   39984
+.dynamic                 528   40360
+.got                      48   40888
+.got.plt                  72   40936
+.data                     24   41008
+.bss                     984   41040
+.comment                  82       0
+Total                  34519
+
+

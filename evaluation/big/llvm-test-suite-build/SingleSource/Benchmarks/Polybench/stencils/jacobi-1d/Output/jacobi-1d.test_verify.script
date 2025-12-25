@@ -1,0 +1,2 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Polybench/stencils/jacobi-1d/Output/jacobi-1d.test.out; } &&
+{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Polybench/stencils/jacobi-1d/Output/jacobi-1d.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Polybench/stencils/jacobi-1d/jacobi-1d.reference_output; }

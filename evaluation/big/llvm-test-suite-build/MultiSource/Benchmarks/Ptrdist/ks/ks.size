@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Ptrdist/ks/ks  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  456     968
+.dynstr                  242    1424
+.gnu.version              38    1666
+.gnu.version_r            64    1704
+.rela.dyn                264    1768
+.rela.plt                264    2032
+.init                     27    4096
+.plt                     192    4128
+.plt.got                   8    4320
+.text                   5845    4336
+.fini                     13   10184
+.rodata                  668   12288
+.eh_frame_hdr            140   12956
+.eh_frame                716   13096
+.init_array                8   19896
+.fini_array                8   19904
+.dynamic                 480   19912
+.got                      64   20392
+.got.plt                 112   20456
+.data                     16   20568
+.bss                   39024   20592
+.comment                  82       0
+Total                  48895
+
+

@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary encode.link.time /usr/bin/clang-18  -O3 CMakeFiles/encode.dir/encode.c.o CMakeFiles/encode.dir/g711.c.o CMakeFiles/encode.dir/g721.c.o CMakeFiles/encode.dir/g723_24.c.o CMakeFiles/encode.dir/g723_40.c.o CMakeFiles/encode.dir/g72x.c.o -o encode 

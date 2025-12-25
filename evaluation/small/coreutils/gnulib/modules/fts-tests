@@ -1,0 +1,19 @@
+Status:
+longrunning-test
+
+Files:
+tests/test-fts.c
+tests/macros.h
+
+Depends-on:
+c99
+errno-h
+remove
+unlinkat
+
+configure.ac:
+
+Makefile.am:
+TESTS += test-fts
+check_PROGRAMS += test-fts
+test_fts_LDADD = $(LDADD) @LIBINTL@

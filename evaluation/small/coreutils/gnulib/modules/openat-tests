@@ -1,0 +1,18 @@
+Files:
+tests/test-openat.c
+tests/test-open.h
+tests/signature.h
+tests/macros.h
+
+Depends-on:
+fcntl
+mkfifo
+symlink
+
+configure.ac:
+AC_CHECK_DECLS_ONCE([alarm])
+
+Makefile.am:
+TESTS += test-openat
+check_PROGRAMS += test-openat
+test_openat_LDADD = $(LDADD) @LIBINTL@

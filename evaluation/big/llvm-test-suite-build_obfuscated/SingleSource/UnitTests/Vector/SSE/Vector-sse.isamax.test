@@ -1,0 +1,2 @@
+RUN: cd %S ; %S/Vector-sse.isamax 
+VERIFY: %b/fpcmp-target -r 0.016 %o %S/sse.isamax.reference_output

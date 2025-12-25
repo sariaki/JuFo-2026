@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/TimberWolfMC/timberwolfmc  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  52      928
+.dynsym                   960      984
+.dynstr                   401     1944
+.gnu.version               80     2346
+.gnu.version_r            128     2432
+.rela.dyn                 240     2560
+.rela.plt                 696     2800
+.init                      27     4096
+.plt                      480     4128
+.plt.got                    8     4608
+.text                  248329     4624
+.fini                      13   252956
+.rodata                 13536   253952
+.eh_frame_hdr            1820   267488
+.eh_frame               13176   269312
+.init_array                 8   286128
+.fini_array                 8   286136
+.dynamic                  496   286144
+.got                       56   286640
+.got.plt                  256   286696
+.data                      16   286952
+.bss                     1680   286976
+.comment                   82        0
+Total                  282676
+
+

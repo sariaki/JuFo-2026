@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/agrep/agrep  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    840     968
+.dynstr                    393    1808
+.gnu.version                70    2202
+.gnu.version_r             112    2272
+.rela.dyn                  240    2384
+.rela.plt                  648    2624
+.init                       27    4096
+.plt                       448    4128
+.plt.got                     8    4576
+.text                    55965    4592
+.fini                       13   60560
+.rodata                   7412   61440
+.eh_frame_hdr              556   68852
+.eh_frame                 4004   69408
+.init_array                  8   77248
+.fini_array                  8   77256
+.dynamic                   480   77264
+.got                        56   77744
+.got.plt                   240   77800
+.data                       48   78048
+.bss                   1592304   78096
+.comment                    82       0
+Total                  1664126
+
+

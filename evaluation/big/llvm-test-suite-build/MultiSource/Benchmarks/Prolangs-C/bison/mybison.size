@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/bison/mybison  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 56     928
+.dynsym                 1032     984
+.dynstr                  405    2016
+.gnu.version              86    2422
+.gnu.version_r            80    2512
+.rela.dyn                240    2592
+.rela.plt                744    2832
+.init                     27    4096
+.plt                     512    4128
+.plt.got                   8    4640
+.text                  64680    4656
+.fini                     13   69336
+.rodata                 6500   69632
+.eh_frame_hdr           1076   76132
+.eh_frame               7956   77208
+.init_array                8   89536
+.fini_array                8   89544
+.dynamic                 480   89552
+.got                      56   90032
+.got.plt                 272   90088
+.data                     20   90360
+.bss                    2056   90384
+.comment                  82       0
+Total                  86525
+
+

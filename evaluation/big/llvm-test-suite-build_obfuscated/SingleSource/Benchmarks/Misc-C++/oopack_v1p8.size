@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Misc-C++/oopack_v1p8  :
+section                  size    addr
+.interp                    28     792
+.note.gnu.property         32     824
+.note.gnu.build-id         36     856
+.note.ABI-tag              32     892
+.gnu.hash                  36     928
+.dynsym                   408     968
+.dynstr                   359    1376
+.gnu.version               34    1736
+.gnu.version_r            112    1776
+.rela.dyn                1320    1888
+.rela.plt                 216    3208
+.init                      27    4096
+.plt                      160    4128
+.plt.got                    8    4288
+.text                   23550    4304
+.fini                      13   27856
+.rodata                  6192   28672
+.eh_frame_hdr             236   34864
+.eh_frame                 892   35104
+.init_array                 8   40016
+.fini_array                 8   40024
+.data.rel.ro              336   40032
+.dynamic                  528   40368
+.got                       40   40896
+.got.plt                   96   40936
+.data                     112   41040
+.bss                   116048   41152
+.comment                   82       0
+Total                  150949
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Trimaran/enc-rc4/enc-rc4  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 288     968
+.dynstr                 186    1256
+.gnu.version             24    1442
+.gnu.version_r           64    1472
+.rela.dyn               192    1536
+.rela.plt               144    1728
+.init                    27    4096
+.plt                    112    4128
+.plt.got                  8    4240
+.text                  4027    4256
+.fini                    13    8284
+.rodata                1826   12288
+.eh_frame_hdr            60   14116
+.eh_frame               236   14176
+.init_array               8   19920
+.fini_array               8   19928
+.dynamic                480   19936
+.got                     40   20416
+.got.plt                 72   20456
+.data                   226   20528
+.bss                      6   20754
+.comment                 82       0
+Total                  8293
+
+

@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/office-stringsearch/office-stringsearch  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 36      928
+.dynsym                  408      968
+.dynstr                  256     1376
+.gnu.version              34     1632
+.gnu.version_r            64     1672
+.rela.dyn              64152     1736
+.rela.plt                240    65888
+.init                     27    69632
+.plt                     176    69664
+.plt.got                   8    69840
+.text                   4738    69856
+.fini                     13    74596
+.rodata                 4013    77824
+.eh_frame_hdr            124    81840
+.eh_frame                728    81968
+.init_array                8    88672
+.fini_array                8    88680
+.data.rel.ro           21328    88688
+.dynamic                 496   110016
+.got                      48   110512
+.got.plt                 104   110568
+.data                    272   110672
+.bss                    5256   110944
+.comment                  82        0
+Total                 102747
+
+

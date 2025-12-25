@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/TSVC/ControlFlow-flt/ControlFlow-flt  :
+section                   size     addr
+.interp                     28      792
+.note.gnu.property          32      824
+.note.gnu.build-id          36      856
+.note.ABI-tag               32      892
+.gnu.hash                   36      928
+.dynsym                    336      968
+.dynstr                    207     1304
+.gnu.version                28     1512
+.gnu.version_r              48     1544
+.rela.dyn                  408     1592
+.rela.plt                  192     2000
+.init                       27     4096
+.plt                       144     4128
+.plt.got                     8     4272
+.text                    88974     4288
+.fini                       13    93264
+.rodata                   2555    94208
+.eh_frame_hdr              292    96764
+.eh_frame                 2276    97056
+.init_array                  8   105776
+.fini_array                  8   105784
+.data.rel.ro               136   105792
+.dynamic                   496   105928
+.got                        40   106424
+.got.plt                    88   106472
+.data                       24   106560
+.bss                   2847232   106592
+.comment                    82        0
+Total                  2943786
+
+

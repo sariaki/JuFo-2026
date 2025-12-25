@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Regression/C++/Regression-C++-pointer_method2  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 216     968
+.dynstr                 273    1184
+.gnu.version             18    1458
+.gnu.version_r           80    1480
+.rela.dyn               480    1560
+.rela.plt                24    2040
+.init                    27    4096
+.plt                     32    4128
+.plt.got                  8    4160
+.text                  3290    4176
+.fini                    13    7468
+.rodata                 881    8192
+.eh_frame_hdr            76    9076
+.eh_frame               264    9152
+.init_array               8   15640
+.fini_array               8   15648
+.data.rel.ro            136   15656
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 32   16360
+.data                    16   16392
+.bss                      8   16408
+.comment                 82       0
+Total                  6704
+
+

@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary gramschmidt.link.time /usr/bin/clang-18  -O3 CMakeFiles/gramschmidt.dir/gramschmidt.c.o -o gramschmidt  -lm 

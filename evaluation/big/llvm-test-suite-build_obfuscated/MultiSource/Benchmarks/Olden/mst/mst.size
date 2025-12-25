@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/mst/mst  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  288     968
+.dynstr                  172    1256
+.gnu.version              24    1428
+.gnu.version_r            48    1456
+.rela.dyn                192    1504
+.rela.plt                144    1696
+.init                     27    4096
+.plt                     112    4128
+.plt.got                   8    4240
+.text                  10496    4256
+.fini                     13   14752
+.rodata                 2345   16384
+.eh_frame_hdr            116   18732
+.eh_frame                688   18848
+.init_array                8   24016
+.fini_array                8   24024
+.dynamic                 480   24032
+.got                      40   24512
+.got.plt                  72   24552
+.data                     20   24624
+.bss                      40   24648
+.comment                  82       0
+Total                  15587
+
+

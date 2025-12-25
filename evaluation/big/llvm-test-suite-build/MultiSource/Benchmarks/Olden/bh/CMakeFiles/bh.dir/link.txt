@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary bh.link.time /usr/bin/clang-18  -O3 CMakeFiles/bh.dir/args.c.o CMakeFiles/bh.dir/newbh.c.o CMakeFiles/bh.dir/util.c.o CMakeFiles/bh.dir/walksub.c.o -o bh  -lm 

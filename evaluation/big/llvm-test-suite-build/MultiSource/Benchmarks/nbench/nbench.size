@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/nbench/nbench  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  864     968
+.dynstr                  376    1832
+.gnu.version              72    2208
+.gnu.version_r           128    2280
+.rela.dyn               3216    2408
+.rela.plt                720    5624
+.init                     27    8192
+.plt                     496    8224
+.plt.got                   8    8720
+.text                  45780    8736
+.fini                     13   54516
+.rodata                 4576   57344
+.eh_frame_hdr            380   61920
+.eh_frame               2392   62304
+.init_array                8   69056
+.fini_array                8   69064
+.dynamic                 496   69072
+.got                      40   69568
+.got.plt                 264   69608
+.data                   1216   69872
+.bss                   15024   71088
+.comment                  82       0
+Total                  76350
+
+

@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/Olden/bisort/bisort  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                40     928
+.dynsym                 264     968
+.dynstr                 179    1232
+.gnu.version             22    1412
+.gnu.version_r           48    1440
+.rela.dyn               192    1488
+.rela.plt                96    1680
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                  6856    4224
+.fini                    13   11080
+.rodata                1452   12288
+.eh_frame_hdr           140   13740
+.eh_frame               616   13880
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                496   19920
+.got                     40   20416
+.got.plt                 56   20456
+.data                    16   20512
+.bss                     24   20528
+.comment                 82       0
+Total                 10891
+
+

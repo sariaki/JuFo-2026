@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/MiBench/automotive-susan/automotive-susan  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  624     968
+.dynstr                  281    1592
+.gnu.version              52    1874
+.gnu.version_r           112    1928
+.rela.dyn                216    2040
+.rela.plt                456    2256
+.init                     27    4096
+.plt                     320    4128
+.plt.got                   8    4448
+.text                  37733    4464
+.fini                     13   42200
+.rodata                 4825   45056
+.eh_frame_hdr            188   49884
+.eh_frame               1268   50072
+.init_array                8   56760
+.fini_array                8   56768
+.dynamic                 496   56776
+.got                      48   57272
+.got.plt                 176   57320
+.data                     16   57496
+.bss                       8   57512
+.comment                  82       0
+Total                  47129
+
+

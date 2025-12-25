@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/SmallPT/smallpt  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  336     968
+.dynstr                  256    1304
+.gnu.version              28    1560
+.gnu.version_r           128    1592
+.rela.dyn                240    1720
+.rela.plt                168    1960
+.init                     27    4096
+.plt                     128    4128
+.plt.got                   8    4256
+.text                  18392    4272
+.fini                     13   22664
+.rodata                 1220   24576
+.eh_frame_hdr             84   25796
+.eh_frame                424   25880
+.init_array               16   32144
+.fini_array                8   32160
+.dynamic                 528   32168
+.got                      48   32696
+.got.plt                  80   32744
+.data                     16   32824
+.bss                     808   32848
+.comment                  82       0
+Total                  23202
+
+

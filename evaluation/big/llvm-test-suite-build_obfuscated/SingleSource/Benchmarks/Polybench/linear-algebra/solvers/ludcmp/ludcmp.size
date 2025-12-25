@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Polybench/linear-algebra/solvers/ludcmp/ludcmp  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 360     968
+.dynstr                 206    1328
+.gnu.version             30    1534
+.gnu.version_r           48    1568
+.rela.dyn               216    1616
+.rela.plt               192    1832
+.init                    27    4096
+.plt                    144    4128
+.plt.got                  8    4272
+.text                  5333    4288
+.fini                    13    9624
+.rodata                 758   12288
+.eh_frame_hdr           108   13048
+.eh_frame               416   13160
+.init_array               8   19896
+.fini_array               8   19904
+.dynamic                496   19912
+.got                     48   20408
+.got.plt                 88   20456
+.data                    16   20544
+.bss                     56   20560
+.comment                 82       0
+Total                  8825
+
+

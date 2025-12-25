@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MallocBench/cfrac/cfrac  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  888     968
+.dynstr                  373    1856
+.gnu.version              74    2230
+.gnu.version_r           144    2304
+.rela.dyn                384    2448
+.rela.plt                648    2832
+.init                     27    4096
+.plt                     448    4128
+.plt.got                   8    4576
+.text                  20725    4592
+.fini                     13   25320
+.rodata                 1088   28672
+.eh_frame_hdr            508   29760
+.eh_frame               3256   30272
+.init_array                8   40352
+.fini_array                8   40360
+.dynamic                 496   40368
+.got                      72   40864
+.got.plt                 240   40936
+.data                  13256   41184
+.bss                     568   54448
+.comment                  82       0
+Total                  43478
+
+

@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Regression/C++/EH/Regression-C++-recursive-throw  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 312     968
+.dynstr                 322    1280
+.gnu.version             26    1602
+.gnu.version_r           80    1632
+.rela.dyn               288    1712
+.rela.plt               120    2000
+.init                    27    4096
+.plt                     96    4128
+.plt.got                  8    4224
+.text                  2007    4240
+.fini                    13    6248
+.rodata                 456    8192
+.eh_frame_hdr            60    8648
+.eh_frame               240    8712
+.gcc_except_table        44    8952
+.init_array               8   15760
+.fini_array               8   15768
+.data.rel.ro             16   15776
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 64   16360
+.data                    32   16424
+.bss                      8   16456
+.comment                 82       0
+Total                  5049
+
+

@@ -1,0 +1,58 @@
+#! /bin/bash
+# Convert this package for use with valgrind.
+
+# Copyright (C) 2002-2025 Free Software Foundation, Inc.
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+# Step 1:
+# Run this file to create src/vg:
+coreutils=$(echo 'spy:;@echo $(all_programs) $(noinst_PROGRAMS)' |
+            (make -f Makefile -f - spy | sed 's,src/,,g'| tr -s '\n ' '  '))
+mkdir -p src/vg
+pwd=`pwd`
+srcdir=$pwd/src
+_path='export PATH='$srcdir':${PATH#*:}'
+pre='#!/bin/sh\n'"$_path"'\n'
+n=15 # stack trace depth
+log_fd=3 # One can redirect this to file like 3>vg.log
+test -e /tmp/cu-vg && suppressions='--suppressions=/tmp/cu-vg'
+vg="exec /usr/bin/valgrind $suppressions --log-fd=$log_fd \
+--leak-check=yes --track-fds=yes --leak-check=full --num-callers=$n"
+cat <<EOF > src/vg/gen
+for i in $coreutils; do
+  printf "$pre$vg -- \$i"' "\$@"\n' > \$i
+  chmod a+x \$i
+done
+EOF
+cd src/vg
+. ./gen
+
+
+# Step 2
+# Convert make file to point to src/vg wrappers
+#   sed -i 's,src\(\$(PATH_SEPARATOR)\),src/vg\1,' tests/local.mk
+# To restore:
+#   sed -i 's,src/vg,src,' tests/local.mk
+
+# Step 2.5  Usually not needed
+# Create this symlink for suppressions (this is no longer necessary,
+# with Linux kernel 2.6.9 and valgrind-2.2.0):
+#   ln -s $PWD/.vg-suppressions /tmp/cu-vg
+
+
+# Step 3:
+# Run (probably a subset of tests due to speed) with fd 3 redirected:
+#   make TESTS=... SUBDIRS=. check 3>vg.log

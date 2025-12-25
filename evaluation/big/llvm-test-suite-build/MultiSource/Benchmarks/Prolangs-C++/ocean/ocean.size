@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C++/ocean/ocean  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    312     968
+.dynstr                    341    1280
+.gnu.version                26    1622
+.gnu.version_r             128    1648
+.rela.dyn                  960    1776
+.rela.plt                   96    2736
+.init                       27    4096
+.plt                        80    4128
+.plt.got                     8    4208
+.text                     4236    4224
+.fini                       13    8460
+.rodata                     64   12288
+.eh_frame_hdr              324   12352
+.eh_frame                 1620   12680
+.gcc_except_table          192   14300
+.init_array                  8   19592
+.fini_array                  8   19600
+.data.rel.ro               280   19608
+.dynamic                   528   19888
+.got                        40   20416
+.got.plt                    56   20456
+.data                       24   20512
+.bss                   4000024   20544
+.comment                    82       0
+Total                  4009641
+
+

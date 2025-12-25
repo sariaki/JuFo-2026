@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Benchmarks/Adobe-C++/stepanov_vector  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  696     968
+.dynstr                  457    1664
+.gnu.version              58    2122
+.gnu.version_r           176    2184
+.rela.dyn                504    2360
+.rela.plt                528    2864
+.init                     27    4096
+.plt                     368    4128
+.plt.got                   8    4496
+.text                  27646    4512
+.fini                     13   32160
+.rodata                 2601   32768
+.eh_frame_hdr            284   35372
+.eh_frame               1712   35656
+.gcc_except_table        188   37368
+.init_array                8   44448
+.fini_array                8   44456
+.dynamic                 528   44464
+.got                      40   44992
+.got.plt                 200   45032
+.data                    168   45232
+.bss                   32048   45408
+.comment                  82       0
+Total                  68512
+
+

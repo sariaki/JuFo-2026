@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary seidel-2d.link.time /usr/bin/clang-18  -O3 "CMakeFiles/seidel-2d.dir/seidel-2d.c.o" -o seidel-2d  -lm 

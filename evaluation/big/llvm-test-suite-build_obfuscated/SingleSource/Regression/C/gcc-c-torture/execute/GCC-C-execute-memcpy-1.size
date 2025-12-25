@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/Regression/C/gcc-c-torture/execute/GCC-C-execute-memcpy-1  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 240     968
+.dynstr                 172    1208
+.gnu.version             20    1380
+.gnu.version_r           64    1400
+.rela.dyn               192    1464
+.rela.plt                96    1656
+.init                    27    4096
+.plt                     80    4128
+.plt.got                  8    4208
+.text                   940    4224
+.fini                    13    5164
+.rodata                  96    8192
+.eh_frame_hdr            52    8288
+.eh_frame               160    8344
+.init_array               8   15824
+.fini_array               8   15832
+.dynamic                480   15840
+.got                     40   16320
+.got.plt                 56   16360
+.data                    16   16416
+.bss                      8   16432
+.comment                 82       0
+Total                  3022
+
+

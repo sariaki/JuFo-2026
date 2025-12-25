@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/consumer-lame/consumer-lame  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                  1464      968
+.dynstr                   515     2432
+.gnu.version              122     2948
+.gnu.version_r            128     3072
+.rela.dyn                6456     3200
+.rela.plt                1248     9656
+.init                      27    12288
+.plt                      848    12320
+.plt.got                    8    13168
+.text                  173109    13184
+.fini                      13   186296
+.rodata                 20304   188416
+.eh_frame_hdr            1556   208720
+.eh_frame                9260   210280
+.init_array                 8   224064
+.fini_array                 8   224072
+.data.rel.ro              608   224080
+.dynamic                  496   224688
+.got                       72   225184
+.got.plt                  440   225256
+.data                   69684   225696
+.bss                   507232   295392
+.comment                   82        0
+Total                  793852
+
+

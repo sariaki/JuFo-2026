@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/UnitTests/C++11/frame_layout/frame_layout  :
+section                 size     addr
+.interp                   28      792
+.note.gnu.property        32      824
+.note.gnu.build-id        36      856
+.note.ABI-tag             32      892
+.gnu.hash                 40      928
+.dynsym                  816      968
+.dynstr                 1152     1784
+.gnu.version              68     2936
+.gnu.version_r           208     3008
+.rela.dyn                696     3216
+.rela.plt                552     3912
+.init                     27     8192
+.plt                     384     8224
+.plt.got                   8     8608
+.text                  82082     8624
+.fini                     13    90708
+.rodata                  507    94208
+.eh_frame_hdr            628    94716
+.eh_frame               5776    95344
+.gcc_except_table        940   101120
+.init_array               16   105736
+.fini_array                8   105752
+.data.rel.ro             128   105760
+.dynamic                 528   105888
+.got                      56   106416
+.got.plt                 208   106472
+.data                     32   106680
+.bss                      32   106712
+.comment                  82        0
+Total                  95115
+
+

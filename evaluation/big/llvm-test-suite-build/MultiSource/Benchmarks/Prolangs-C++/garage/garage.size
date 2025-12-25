@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C++/garage/garage  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 360     968
+.dynstr                 359    1328
+.gnu.version             30    1688
+.gnu.version_r          128    1720
+.rela.dyn               576    1848
+.rela.plt               144    2424
+.init                    27    4096
+.plt                    112    4128
+.plt.got                  8    4240
+.text                  3810    4256
+.fini                    13    8068
+.rodata                 104    8192
+.eh_frame_hdr           124    8296
+.eh_frame               488    8424
+.gcc_except_table        24    8912
+.init_array              16   15632
+.fini_array               8   15648
+.data.rel.ro            136   15656
+.dynamic                528   15792
+.got                     40   16320
+.got.plt                 72   16360
+.data                    24   16432
+.bss                    168   16456
+.comment                 82       0
+Total                  7545
+
+

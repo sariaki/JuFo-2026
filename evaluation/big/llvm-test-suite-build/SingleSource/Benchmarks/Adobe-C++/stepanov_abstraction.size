@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Adobe-C++/stepanov_abstraction  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  432     968
+.dynstr                  268    1400
+.gnu.version              36    1668
+.gnu.version_r            96    1704
+.rela.dyn                768    1800
+.rela.plt                288    2568
+.init                     27    4096
+.plt                     208    4128
+.plt.got                   8    4336
+.text                  20078    4352
+.fini                     13   24432
+.rodata                 1057   24576
+.eh_frame_hdr            324   25636
+.eh_frame               2332   25960
+.init_array                8   32160
+.fini_array                8   32168
+.dynamic                 528   32176
+.got                      40   32704
+.got.plt                 120   32744
+.data                    224   32864
+.bss                   96048   33088
+.comment                  82       0
+Total                 123157
+
+

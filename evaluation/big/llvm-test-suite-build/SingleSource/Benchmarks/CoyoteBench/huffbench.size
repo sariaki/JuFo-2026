@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/CoyoteBench/huffbench  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 408     968
+.dynstr                 220    1376
+.gnu.version             34    1596
+.gnu.version_r           48    1632
+.rela.dyn               240    1680
+.rela.plt               216    1920
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                  3213    4304
+.fini                    13    7520
+.rodata                 161    8192
+.eh_frame_hdr            60    8356
+.eh_frame               268    8416
+.init_array               8   15792
+.fini_array               8   15800
+.dynamic                496   15808
+.got                     56   16304
+.got.plt                 96   16360
+.data                    24   16456
+.bss                      8   16480
+.comment                 82       0
+Total                  6018
+
+

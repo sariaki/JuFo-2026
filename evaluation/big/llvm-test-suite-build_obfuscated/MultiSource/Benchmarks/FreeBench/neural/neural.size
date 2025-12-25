@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Benchmarks/FreeBench/neural/neural  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  504     968
+.dynstr                  277    1472
+.gnu.version              42    1750
+.gnu.version_r           112    1792
+.rela.dyn                216    1904
+.rela.plt                336    2120
+.init                     27    4096
+.plt                     240    4128
+.plt.got                   8    4368
+.text                  13878    4384
+.fini                     13   18264
+.rodata                 2266   20480
+.eh_frame_hdr             68   22748
+.eh_frame                416   22816
+.init_array                8   28088
+.fini_array                8   28096
+.dynamic                 496   28104
+.got                      48   28600
+.got.plt                 136   28648
+.data                     20   28784
+.bss                      80   28808
+.comment                  82       0
+Total                  19445
+
+

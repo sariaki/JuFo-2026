@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/UnitTests/Vector/SSE/Vector-sse.stepfft  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 36     928
+.dynsym                  336     968
+.dynstr                  213    1304
+.gnu.version              28    1518
+.gnu.version_r           112    1552
+.rela.dyn                192    1664
+.rela.plt                192    1856
+.init                     27    4096
+.plt                     144    4128
+.plt.got                   8    4272
+.text                   5637    4288
+.fini                     13    9928
+.rodata                  189   12288
+.eh_frame_hdr             84   12480
+.eh_frame                448   12568
+.init_array                8   19904
+.fini_array                8   19912
+.dynamic                 496   19920
+.got                      40   20416
+.got.plt                  88   20456
+.data                     16   20544
+.bss                   28688   20560
+.comment                  82       0
+Total                  37213
+
+

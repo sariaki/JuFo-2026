@@ -13,6 +13,7 @@
 #include <limits>
 #include "../Utils/Utils.hpp"
 #include "Bernsteinpolynomial.hpp"
+#include "../Parameters.hpp"
 
 using namespace llvm;
 

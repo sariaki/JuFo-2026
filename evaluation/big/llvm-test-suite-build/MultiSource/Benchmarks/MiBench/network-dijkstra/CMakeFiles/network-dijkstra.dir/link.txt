@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary network-dijkstra.link.time /usr/bin/clang-18  -O3 "CMakeFiles/network-dijkstra.dir/dijkstra.c.o" -o network-dijkstra  -lm 

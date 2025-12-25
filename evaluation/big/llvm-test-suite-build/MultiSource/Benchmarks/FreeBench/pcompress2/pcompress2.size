@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/FreeBench/pcompress2/pcompress2  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 600     968
+.dynstr                 281    1568
+.gnu.version             50    1850
+.gnu.version_r           80    1904
+.rela.dyn               240    1984
+.rela.plt               408    2224
+.init                    27    4096
+.plt                    288    4128
+.plt.got                  8    4416
+.text                  6746    4432
+.fini                    13   11180
+.rodata                 632   12288
+.eh_frame_hdr            92   12920
+.eh_frame               532   13016
+.init_array               8   19904
+.fini_array               8   19912
+.dynamic                480   19920
+.got                     56   20400
+.got.plt                160   20456
+.data                    16   20616
+.bss                   6944   20640
+.comment                 82       0
+Total                 17915
+
+

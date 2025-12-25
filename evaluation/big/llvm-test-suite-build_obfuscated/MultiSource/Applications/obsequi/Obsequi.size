@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/MultiSource/Applications/obsequi/Obsequi  :
+section                  size    addr
+.interp                    28     792
+.note.gnu.property         32     824
+.note.gnu.build-id         36     856
+.note.ABI-tag              32     892
+.gnu.hash                  36     928
+.dynsym                  1248     968
+.dynstr                   504    2216
+.gnu.version              104    2720
+.gnu.version_r             96    2824
+.rela.dyn                 432    2920
+.rela.plt                 984    3352
+.init                      27    8192
+.plt                      672    8224
+.plt.got                    8    8896
+.text                   49921    8912
+.fini                      13   58836
+.rodata                  6468   61440
+.eh_frame_hdr             420   67908
+.eh_frame                3256   68328
+.init_array                 8   77184
+.fini_array                 8   77192
+.dynamic                  480   77200
+.got                      120   77680
+.got.plt                  352   77800
+.data                     129   78160
+.bss                   900896   78304
+.comment                   82       0
+Total                  966392
+
+

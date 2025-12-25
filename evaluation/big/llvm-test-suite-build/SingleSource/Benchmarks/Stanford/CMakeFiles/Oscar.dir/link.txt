@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Oscar.link.time /usr/bin/clang-18  -O3 CMakeFiles/Oscar.dir/Oscar.c.o -o Oscar  -lm 

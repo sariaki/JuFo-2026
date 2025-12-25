@@ -1,0 +1,19 @@
+Files:
+tests/test-math-h-c++.cc
+tests/test-math-h-c++2.cc
+tests/signature.h
+
+Status:
+c++-test
+
+Depends-on:
+ansi-c++-opt
+
+configure.ac:
+
+Makefile.am:
+if ANSICXX
+TESTS += test-math-h-c++
+check_PROGRAMS += test-math-h-c++
+test_math_h_c___SOURCES = test-math-h-c++.cc test-math-h-c++2.cc
+endif

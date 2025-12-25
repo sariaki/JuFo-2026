@@ -1,0 +1,1 @@
+/usr/bin/clang-18 -fpass-plugin=/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -Xclang -load -Xclang /home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so -mllvm -pop-probability=100     -O3 "CMakeFiles/timeit-target.dir/timeit.c.o" -o timeit-target 

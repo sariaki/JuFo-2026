@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/CoyoteBench/fftbench  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 672     968
+.dynstr                 682    1640
+.gnu.version             56    2322
+.gnu.version_r          224    2384
+.rela.dyn               528    2608
+.rela.plt               384    3136
+.init                    27    4096
+.plt                    272    4128
+.plt.got                  8    4400
+.text                  8716    4416
+.fini                    13   13132
+.rodata                 198   16384
+.eh_frame_hdr           116   16584
+.eh_frame               648   16704
+.gcc_except_table       144   17352
+.init_array               8   23848
+.fini_array               8   23856
+.data.rel.ro             96   23864
+.dynamic                528   23960
+.got                     64   24488
+.got.plt                152   24552
+.data                    32   24704
+.bss                      8   24736
+.comment                 82       0
+Total                 13830
+
+

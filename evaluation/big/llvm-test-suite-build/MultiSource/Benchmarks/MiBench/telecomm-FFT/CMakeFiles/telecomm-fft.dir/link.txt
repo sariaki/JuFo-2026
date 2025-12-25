@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary telecomm-fft.link.time /usr/bin/clang-18  -O3 "CMakeFiles/telecomm-fft.dir/fftmisc.c.o" "CMakeFiles/telecomm-fft.dir/fourierf.c.o" "CMakeFiles/telecomm-fft.dir/main.c.o" -o telecomm-fft  -lm 

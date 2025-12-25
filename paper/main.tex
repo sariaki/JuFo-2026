@@ -450,8 +450,33 @@ Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das 
 	\end{algorithmic}
 \end{algorithm}
 
+\subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
+\textcolor{red}{TODO: kürzen!!! und Pseudocode hierfür einfügen}
+%Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
+Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. Folgende Methoden existieren hierfür:
+%Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
+%Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
+%Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
+
+\paragraph{Explizite Quellen (Betriebssystem-APIs, Hardware)}
+CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc}, \texttt{rand() oder \texttt{time()}}). 
+In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
+
+\paragraph{Parameter-Sampling}
+In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom symbolischen Ausführungsengine als symbolische Variablen behandelt.
+
+Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Problematisch ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate durch einen Angreifer erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
+
+\paragraph{Race Conditions}
+Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{TODO...} \\
+
+Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
+
+\subsection{Füllcode}
+\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
+
 \section{Implementierung}
-\subsection{Entscheidungen}
+%\subsection{Entscheidungen}
 Zur Implementierung wurden drei Ansätze erwogen: die Entwicklung eines Bin2Bin-Obfuskators\footnote{Direkte Manipulation von Assembler-Anweisungen existierender Programme.}, die Implementierung in Form eines LLVM-Passes \cite{LLVM, LLVMProject}\footnote{Nutzung des LLVM-Projekts, um einen sog. \emph{Compiler-Pass} zu schreiben.} sowie die Quellcodemanipulation\footnote{durch z.B. C-Makros und das Einfügen von inline Assembler-Ausschnitten}
 Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vorteile:
 
@@ -473,35 +498,9 @@ Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \em
 Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
 
-%\subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
-%\textcolor{red}{TODO: Das hier kürzen/verschieben/löschen}
-%%Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
-%Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. Folgende Methoden existieren hierfür:
-%%Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
-%%Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
-%%Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
-%
-%\paragraph{Explizite Quellen (Betriebssystem-APIs, Hardware)}
-%CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc}, \texttt{rand() oder \texttt{time()}}). 
-%In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
-%
-%\paragraph{Parameter-Sampling}
-%In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom symbolischen Ausführungsengine als symbolische Variablen behandelt.
-%
-%Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Problematisch ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate durch einen Angreifer erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
-%
-%\paragraph{Race Conditions}
-%Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{TODO...} \\
-%
-%Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
-%
-%\subsection{Füllcode}
-%\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
-
-\subsection{Fallbeispiel} \label{fallbsp}
 \begin{figure}[!h]
 	\centering 
-	
+	\label{fallbsp}
 	\begin{minipage}[c]{0.36\textwidth}
 		\begin{subfigure}[b]{\linewidth}
 			\begin{lstlisting}[style=customc_compact, captionpos=b, language=bash]	
@@ -616,13 +615,10 @@ Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer In
 \end{minipage}
 Um die Obfuskationskosten zu messen wurde die Programmgröße, -laufzeit sowie die Kompilationszeit mit und ohne Obfuskation gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf die Kompilationszeit.
 Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden.
-Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate alle GNU Core Utilities fehlerfrei funktionierten. Hierfür wurde die Erfolgswahrscheinlichkeit $P(\Var{TrueBB})=0.99$ verwendet.
+Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die GNU Core Utilities sowie SQLite fehlerfrei kompilieren und funktionierten. Hierfür wurde die Erfolgswahrscheinlichkeit $P(\Var{TrueBB})=0.99$ verwendet.
 
-\textcolor{red}{TODO: Programmgröße}
-%\paragraph{Programmgröße}
-%\paragraph{Geschwindigkeit}
-%\paragraph{Arbeitsspeicheraufwand}
-%\paragraph{Kompilationszeit}
+\textcolor{red}{TODO: Programmgröße} \\
+\textcolor{red}{TODO: Wie viel \% Anwendbarkeit?}
 
 \subsubsection{Stärke} \label{sec:stärke}
 Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus der Softwareentwicklung verwendet. Konkret betrachtet wurden die zyklomatische Komplexität (McCabe-Metrik) sowie die Anzahl an Anweisungen vor und nach der Obfuskation.
@@ -678,6 +674,7 @@ Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen
 
 \section{Ergebnisdiskussion}
 \textcolor{red}{Verbesserung durch Anwendung anderer Obfuscationsmethoden (z.B. MBAs)} \\
+\textcolor{red}{Schlechtes Laufzeitverhalten relativieren} 
 
 \section{Fazit und Ausblick} \label{sec:fazit}
 \textcolor{red}{später: Anwendung auf Ausdrücke}

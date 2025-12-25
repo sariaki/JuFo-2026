@@ -16,14 +16,54 @@
 #include <random>
 #include "Distribution-Generation/GenerateDistribution.hpp"
 #include "Utils/Utils.hpp"
+#include "Parameters.hpp"
 
 using namespace llvm;
 
+cl::OptionCategory PassCategory("Probabilistic Opaque Predicates (POP) Pass Options");
+
+// TODO: Add limits and checks for parameters
+
+// Insertion probability
 constexpr const char* PASS_NAME = "POP";
-static cl::opt<int> POPProbability(
+cl::opt<unsigned int> POPInsertProbability(
     "pop-probability",
     cl::desc("Probability of applying the obfuscation (0-100)"), 
-    cl::init(0)
+    cl::init(50),
+    cl::cat(PassCategory)
+);
+
+// Predicate probability
+// TODO: Make this fluctuate to throw off heuristics
+cl::opt<unsigned int> POPPredicateProbability(
+    "pop-predicate-probability",
+    cl::desc("Probability that the opaque predicate evaluates to true (0-100)"),
+    cl::init(99),
+    cl::cat(PassCategory)
+);
+
+// Minimum and maximum degrees of bernstein polynomials
+cl::opt<unsigned int> POPMinDegree(
+    "pop-min-degree",
+    cl::desc("Minimum degree of the bernstein polynomials used"),
+    cl::init(3),
+    cl::cat(PassCategory)
+);
+
+cl::opt<unsigned int> POPMaxDegree(
+    "pop-max-degree",
+    cl::desc("Maximum degree of the bernstein polynomials used"),
+    cl::init(10),
+    cl::cat(PassCategory)
+);
+
+// Iteration limit for Newton-Raphson method
+constexpr unsigned int MIN_ITERATIONS = 7;
+cl::opt<unsigned int> POPNewtonRaphsonIterations(
+    "pop-iterations",
+    cl::desc("Number of iterations for the Newton-Raphson method (minimum: 7)"),
+    cl::init(12),
+    cl::cat(PassCategory)
 );
 
 namespace
@@ -44,10 +84,13 @@ namespace
                 if (F.isDeclaration()) continue;
 
                 // Check if function was inserted by us
-                if (F.getName().contains("sample_bernstein_")) continue; 
+                if (F.getName().contains("sample_bernstein_")) continue;
+
+                // Check if function uses setjmp
+                if (F.hasFnAttribute(Attribute::ReturnsTwice)) continue;
 
                 // Randomly decide if we should apply the obfuscation
-                if (std::uniform_int_distribution(0, 99)(Rng) > POPProbability)
+                if (std::uniform_int_distribution(0, 99)(Rng) > POPInsertProbability)
                 {
                     // If the function is annotated, we have to apply the obfuscation anyway
                     if (!Utils::HasAnnotation(&F, PASS_NAME)) continue;
@@ -201,7 +244,7 @@ namespace
                     double CurrentSlope = Bernsteinpolynomial.EvaluateDerivativeAt(Threshold);
 
                     // f(x) = B(x) - Target
-                    double OffsetY = CurrentY - 0.999;
+                    double OffsetY = CurrentY - static_cast<double>(POPPredicateProbability) / 100.0;
                     
                     // Newton Step: x = x - f(x) / f'(x)
                     Threshold -= OffsetY / CurrentSlope;

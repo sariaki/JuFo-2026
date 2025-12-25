@@ -1,0 +1,32 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Prolangs-C/unix-tbl/unix-tbl  :
+section                 size    addr
+.interp                   28     792
+.note.gnu.property        32     824
+.note.gnu.build-id        36     856
+.note.ABI-tag             32     892
+.gnu.hash                 48     928
+.dynsym                  720     976
+.dynstr                  299    1696
+.gnu.version              60    1996
+.gnu.version_r            64    2056
+.rela.dyn                528    2120
+.rela.plt                456    2648
+.init                     27    4096
+.plt                     320    4128
+.plt.got                   8    4448
+.text                  34189    4464
+.fini                     13   38656
+.rodata                 4920   40960
+.eh_frame_hdr            708   45880
+.eh_frame               4220   46592
+.init_array                8   56688
+.fini_array                8   56696
+.dynamic                 480   56704
+.got                     136   57184
+.got.plt                 176   57320
+.data                    128   57504
+.bss                   51960   57632
+.comment                  82       0
+Total                  99686
+
+

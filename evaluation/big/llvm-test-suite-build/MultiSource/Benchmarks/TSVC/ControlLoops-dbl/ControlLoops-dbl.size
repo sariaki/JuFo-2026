@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/ControlLoops-dbl/ControlLoops-dbl  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    336     968
+.dynstr                    220    1304
+.gnu.version                28    1524
+.gnu.version_r              64    1552
+.rela.dyn                  408    1616
+.rela.plt                  192    2024
+.init                       27    4096
+.plt                       144    4128
+.plt.got                     8    4272
+.text                    48488    4288
+.fini                       13   52776
+.rodata                   1876   53248
+.eh_frame_hdr              220   55124
+.eh_frame                 1524   55344
+.init_array                  8   60592
+.fini_array                  8   60600
+.data.rel.ro               264   60608
+.dynamic                   496   60872
+.got                        40   61368
+.got.plt                    88   61416
+.data                       24   61504
+.bss                   5566064   61536
+.comment                    82       0
+Total                  5620786
+
+

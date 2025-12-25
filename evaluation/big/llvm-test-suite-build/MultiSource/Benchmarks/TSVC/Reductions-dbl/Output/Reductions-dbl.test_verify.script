@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -a 0.0 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/Reductions-dbl/Output/Reductions-dbl.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/Reductions-dbl/Reductions-dbl.reference_output; }

@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Threads/tls  :
+section                size    addr
+.interp                  28     848
+.note.gnu.property       32     880
+.note.gnu.build-id       36     912
+.note.ABI-tag            32     948
+.gnu.hash                36     984
+.dynsym                 216    1024
+.dynstr                 171    1240
+.gnu.version             18    1412
+.gnu.version_r           48    1432
+.rela.dyn               192    1480
+.rela.plt                72    1672
+.init                    27    4096
+.plt                     64    4128
+.plt.got                  8    4192
+.text                   398    4208
+.fini                    13    4608
+.rodata                  32    8192
+.eh_frame_hdr            52    8224
+.eh_frame               184    8280
+.tdata                    8   15816
+.init_array               8   15824
+.fini_array               8   15832
+.dynamic                480   15840
+.got                     40   16320
+.got.plt                 48   16360
+.data                    16   16408
+.bss                      8   16424
+.comment                 82       0
+Total                  2357
+
+

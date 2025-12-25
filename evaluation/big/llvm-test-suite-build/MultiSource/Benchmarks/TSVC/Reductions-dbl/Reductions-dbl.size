@@ -1,0 +1,33 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/Reductions-dbl/Reductions-dbl  :
+section                   size    addr
+.interp                     28     792
+.note.gnu.property          32     824
+.note.gnu.build-id          36     856
+.note.ABI-tag               32     892
+.gnu.hash                   36     928
+.dynsym                    312     968
+.dynstr                    202    1280
+.gnu.version                26    1482
+.gnu.version_r              48    1512
+.rela.dyn                  408    1560
+.rela.plt                  168    1968
+.init                       27    4096
+.plt                       128    4128
+.plt.got                     8    4256
+.text                    49532    4272
+.fini                       13   53804
+.rodata                   1987   57344
+.eh_frame_hdr              244   59332
+.eh_frame                 1724   59576
+.init_array                  8   64688
+.fini_array                  8   64696
+.data.rel.ro               264   64704
+.dynamic                   496   64968
+.got                        40   65464
+.got.plt                    80   65512
+.data                       24   65592
+.bss                   5566064   65632
+.comment                    82       0
+Total                  5622057
+
+

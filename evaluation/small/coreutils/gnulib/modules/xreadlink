@@ -1,0 +1,27 @@
+Description:
+Reading symbolic links without size limitation.
+
+Files:
+lib/xreadlink.h
+lib/xreadlink.c
+
+Depends-on:
+areadlink
+xalloc
+
+configure.ac:
+
+Makefile.am:
+lib_SOURCES += xreadlink.c
+
+Include:
+"xreadlink.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+Jim Meyering

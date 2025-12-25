@@ -1,0 +1,1 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary ks.link.time /usr/bin/clang-18  -O3 "CMakeFiles/ks.dir/KS-1.c.o" "CMakeFiles/ks.dir/KS-2.c.o" -o ks 

@@ -1,0 +1,1 @@
+set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -r 0.1 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/minisat/Output/minisat.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/minisat/minisat.reference_output; }

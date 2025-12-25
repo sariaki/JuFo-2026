@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc-C++/Large/ray  :
+section                size    addr
+.interp                  28     792
+.note.gnu.property       32     824
+.note.gnu.build-id       36     856
+.note.ABI-tag            32     892
+.gnu.hash                36     928
+.dynsym                 480     968
+.dynstr                 594    1448
+.gnu.version             40    2042
+.gnu.version_r          224    2088
+.rela.dyn               624    2312
+.rela.plt               216    2936
+.init                    27    4096
+.plt                    160    4128
+.plt.got                  8    4288
+.text                  4369    4304
+.fini                    13    8676
+.rodata                 210   12288
+.eh_frame_hdr           156   12500
+.eh_frame               752   12656
+.gcc_except_table        44   13408
+.init_array               8   19720
+.fini_array               8   19728
+.data.rel.ro            144   19736
+.dynamic                528   19880
+.got                     48   20408
+.got.plt                 96   20456
+.data                    40   20552
+.bss                      8   20592
+.comment                 82       0
+Total                  9043
+
+

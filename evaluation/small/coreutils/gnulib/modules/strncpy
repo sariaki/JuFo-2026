@@ -1,0 +1,32 @@
+Description:
+Copy the initial part of a string.
+
+Files:
+lib/strncpy.c
+m4/strncpy.m4
+m4/mmap-anon.m4
+
+Depends-on:
+string-h
+
+configure.ac:
+gl_FUNC_STRNCPY
+gl_CONDITIONAL([GL_COND_OBJ_STRNCPY], [test $REPLACE_STRNCPY = 1])
+AM_COND_IF([GL_COND_OBJ_STRNCPY], [
+  gl_PREREQ_STRNCPY
+])
+gl_STRING_MODULE_INDICATOR([strncpy])
+
+Makefile.am:
+if GL_COND_OBJ_STRNCPY
+lib_SOURCES += strncpy.c
+endif
+
+Include:
+<string.h>
+
+License:
+LGPLv2+
+
+Maintainer:
+all

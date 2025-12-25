@@ -1,0 +1,34 @@
+/home/paul/Documents/JuFo-2026/evaluation/big/build_obfuscated/SingleSource/UnitTests/Vectorizer/runtime-checks  :
+section                  size     addr
+.interp                    28      792
+.note.gnu.property         32      824
+.note.gnu.build-id         36      856
+.note.ABI-tag              32      892
+.gnu.hash                  36      928
+.dynsym                   528      968
+.dynstr                   533     1496
+.gnu.version               44     2030
+.gnu.version_r            176     2080
+.rela.dyn                1632     2256
+.rela.plt                 264     3888
+.init                      27     8192
+.plt                      192     8224
+.plt.got                    8     8416
+.text                  178860     8432
+.fini                      13   187292
+.rodata                 39291   188416
+.eh_frame_hdr            1652   227708
+.eh_frame                6892   229360
+.gcc_except_table        1928   236252
+.init_array                16   244680
+.fini_array                 8   244696
+.data.rel.ro              448   244704
+.dynamic                  528   245152
+.got                       56   245680
+.got.plt                  112   245736
+.data                      24   245848
+.bss                     5008   245872
+.comment                   82        0
+Total                  238486
+
+
