@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/consumer-typeset/Output/consumer-typeset.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/consumer-typeset/consumer-typeset.reference_output; }

@@ -1,2 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/McCat/08-main/Output/main.test.out; } &&
-{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/McCat/08-main/Output/main.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/McCat/08-main/main.reference_output; }

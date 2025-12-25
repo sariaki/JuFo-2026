@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-callargs 
-VERIFY: %b/fpcmp-target %o %S/callargs.reference_output

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/imp ./sg01.imp
-VERIFY: %b/fpcmp-target %o %S/imp.reference_output

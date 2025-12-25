@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary enc-md5.link.time /usr/bin/clang-18  -O3 "CMakeFiles/enc-md5.dir/md5.c.o" -o enc-md5 

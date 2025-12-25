@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/Output/SimpleMOC.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/DOE-ProxyApps-C/SimpleMOC/SimpleMOC.reference_output; }

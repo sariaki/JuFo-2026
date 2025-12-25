@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/lua alltests.lua
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/lua.reference_output

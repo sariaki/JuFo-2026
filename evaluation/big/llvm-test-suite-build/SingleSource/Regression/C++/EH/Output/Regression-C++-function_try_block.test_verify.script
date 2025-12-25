@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/Output/Regression-C++-function_try_block.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/EH/function_try_block.reference_output; }

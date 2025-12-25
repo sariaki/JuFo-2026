@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/unix-smail -v ALL < main.c
-VERIFY: %b/fpcmp-target %o %S/unix-smail.reference_output

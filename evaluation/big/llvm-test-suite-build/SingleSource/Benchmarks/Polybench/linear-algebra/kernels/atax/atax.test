@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/atax 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/atax.reference_output

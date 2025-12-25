@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2003-08-20-FoldBug.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2003-08-20-FoldBug.dir/2003-08-20-FoldBug.c.o" -o 2003-08-20-FoldBug 

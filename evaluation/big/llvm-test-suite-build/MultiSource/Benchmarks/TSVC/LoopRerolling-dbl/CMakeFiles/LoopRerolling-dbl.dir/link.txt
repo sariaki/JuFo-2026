@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary LoopRerolling-dbl.link.time /usr/bin/clang-18  -O3 "CMakeFiles/LoopRerolling-dbl.dir/dummy.c.o" "CMakeFiles/LoopRerolling-dbl.dir/tsc.c.o" -o LoopRerolling-dbl  -lm 

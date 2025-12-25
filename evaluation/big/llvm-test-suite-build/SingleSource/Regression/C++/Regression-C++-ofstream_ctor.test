@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C++-ofstream_ctor 
-VERIFY: %b/fpcmp-target %o %S/ofstream_ctor.reference_output

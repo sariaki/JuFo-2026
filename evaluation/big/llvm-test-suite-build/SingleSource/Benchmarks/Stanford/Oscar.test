@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Oscar 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/Oscar.reference_output

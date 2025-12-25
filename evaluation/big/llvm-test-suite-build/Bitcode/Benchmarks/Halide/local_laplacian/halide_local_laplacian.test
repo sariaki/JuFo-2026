@@ -1,4 +1,0 @@
-RUN: %S/halide_local_laplacian %S/images/rgb.bytes 8 1 1 10 %S/rgb_out.bytes
-VERIFY: %b/fpcmp-target %S/output/rgb_out.bytes %S/rgb_out.bytes
-RUN: %S/halide_local_laplacian %S/images/rgba.bytes 8 1 1 10 %S/rgba_out.bytes
-VERIFY: %b/fpcmp-target %S/output/rgba_out.bytes %S/rgba_out.bytes

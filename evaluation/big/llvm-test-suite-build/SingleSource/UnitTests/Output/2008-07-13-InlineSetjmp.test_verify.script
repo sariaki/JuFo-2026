@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Output/2008-07-13-InlineSetjmp.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/2008-07-13-InlineSetjmp.reference_output; }

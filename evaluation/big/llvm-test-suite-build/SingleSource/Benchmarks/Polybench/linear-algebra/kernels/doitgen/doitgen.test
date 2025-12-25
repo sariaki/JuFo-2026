@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/doitgen 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/doitgen.reference_output

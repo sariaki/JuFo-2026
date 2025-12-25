@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/lu 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/lu.reference_output

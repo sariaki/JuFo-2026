@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C++-fixups 
-VERIFY: %b/fpcmp-target %o %S/fixups.reference_output

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/garage 
-VERIFY: %b/fpcmp-target %o %S/garage.reference_output

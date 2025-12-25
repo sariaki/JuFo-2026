@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-nestedloop 
-VERIFY: %b/fpcmp-target %o %S/nestedloop.reference_output

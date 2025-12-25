@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/alacconvert-decode - - < tune.caf
-VERIFY: %b/fpcmp-target %o %S/alacconvert-decode.reference_output.little-endian

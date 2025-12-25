@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/whetstone 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/whetstone.reference_output

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-pointer_arithmetic 
-VERIFY: %b/fpcmp-target %o %S/pointer_arithmetic.reference_output

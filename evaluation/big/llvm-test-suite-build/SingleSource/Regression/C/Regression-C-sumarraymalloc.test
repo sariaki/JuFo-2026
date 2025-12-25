@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-sumarraymalloc 
-VERIFY: %b/fpcmp-target %o %S/sumarraymalloc.reference_output

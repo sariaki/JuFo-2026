@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Shootout/Output/Shootout-ackermann.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Shootout/ackermann.reference_output; }

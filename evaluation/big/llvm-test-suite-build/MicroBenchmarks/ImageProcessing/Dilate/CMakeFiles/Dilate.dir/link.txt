@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Dilate.link.time /usr/bin/clang++-18  -O3 CMakeFiles/Dilate.dir/__/utils/ImageHelper.cpp.o CMakeFiles/Dilate.dir/__/utils/glibc_compat_rand.c.o CMakeFiles/Dilate.dir/main.cpp.o CMakeFiles/Dilate.dir/dilateKernel.c.o -o Dilate  ../../libs/benchmark/src/libbenchmark.a -lrt 

@@ -1,2 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc-C++/Large/Output/sphereflake.test.out; } &&
-{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -a 0.01 /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc-C++/Large/Output/sphereflake.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Misc-C++/Large/sphereflake.reference_output; }

@@ -1,2 +1,0 @@
-SingleSource/Regression/C/gcc-c-torture/execute/CMakeFiles/GCC-C-execute-pr40022.dir/pr40022.c.o: \
-  /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/SingleSource/Regression/C/gcc-c-torture/execute/pr40022.c

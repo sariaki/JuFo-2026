@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/llu -i 3000
-VERIFY: %b/fpcmp-target %o %S/llu.reference_output

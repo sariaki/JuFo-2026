@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/bisort 700000
-VERIFY: %b/fpcmp-target %o %S/bisort.reference_output

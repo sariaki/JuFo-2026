@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Vector-sse.shift.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Vector-sse.shift.dir/sse.shift.c.o" -o Vector-sse.shift  -lm 

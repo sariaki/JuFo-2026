@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/ccc 31415926
-VERIFY: %b/fpcmp-target %o %S/ccc.reference_output

@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary vor.link.time /usr/bin/clang-18  -O3 CMakeFiles/vor.dir/ch.c.o CMakeFiles/vor.dir/intersec.c.o CMakeFiles/vor.dir/pointlis.c.o CMakeFiles/vor.dir/splay.c.o CMakeFiles/vor.dir/splay2.c.o CMakeFiles/vor.dir/vor.c.o -o vor  -lm 

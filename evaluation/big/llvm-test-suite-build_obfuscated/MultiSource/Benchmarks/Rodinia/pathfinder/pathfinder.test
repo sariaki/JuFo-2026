@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/pathfinder 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/pathfinder.reference_output

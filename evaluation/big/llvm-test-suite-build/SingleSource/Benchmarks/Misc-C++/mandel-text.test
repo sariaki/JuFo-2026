@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/mandel-text 
-VERIFY: %b/fpcmp-target -a 0.01 %o %S/mandel-text.reference_output

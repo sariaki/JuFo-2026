@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary analyzer.link.time /usr/bin/clang-18  -O3 CMakeFiles/analyzer.dir/analyzer.c.o CMakeFiles/analyzer.dir/functs.c.o CMakeFiles/analyzer.dir/help.c.o CMakeFiles/analyzer.dir/parse_settings.c.o CMakeFiles/analyzer.dir/types.c.o -o analyzer 

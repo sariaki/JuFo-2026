@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-PR1386 
-VERIFY: %b/fpcmp-target %o %S/PR1386.reference_output

@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -r 1.0e-9 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/sqlite3/Output/sqlite3.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Applications/sqlite3/sqlite3.reference_output; }

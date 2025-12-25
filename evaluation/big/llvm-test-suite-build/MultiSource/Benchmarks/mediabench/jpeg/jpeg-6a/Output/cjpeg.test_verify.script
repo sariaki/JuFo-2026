@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/mediabench/jpeg/jpeg-6a/Output/cjpeg.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/mediabench/jpeg/jpeg-6a/cjpeg.reference_output; }

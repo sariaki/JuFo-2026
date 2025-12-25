@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary crc8.be.data16.link.time /usr/bin/clang-18  -O3 CMakeFiles/crc8.be.data16.dir/crc8.be.data16.c.o -o crc8.be.data16 

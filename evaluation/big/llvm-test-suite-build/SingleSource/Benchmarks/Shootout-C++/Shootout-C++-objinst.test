@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-C++-objinst 
-VERIFY: %b/fpcmp-target -r 0.00000001 %o %S/objinst.reference_output

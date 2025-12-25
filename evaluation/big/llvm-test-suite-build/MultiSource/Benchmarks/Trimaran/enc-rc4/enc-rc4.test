@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/enc-rc4 200000
-VERIFY: %b/fpcmp-target %o %S/enc-rc4.reference_output

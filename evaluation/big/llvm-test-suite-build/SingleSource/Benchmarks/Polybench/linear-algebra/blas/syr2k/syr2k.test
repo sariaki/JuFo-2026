@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/syr2k 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/syr2k.reference_output

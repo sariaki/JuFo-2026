@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary simple_types_constant_folding.link.time /usr/bin/clang++-18  -O3 CMakeFiles/simple_types_constant_folding.dir/simple_types_constant_folding.cpp.o -o simple_types_constant_folding  -lm 

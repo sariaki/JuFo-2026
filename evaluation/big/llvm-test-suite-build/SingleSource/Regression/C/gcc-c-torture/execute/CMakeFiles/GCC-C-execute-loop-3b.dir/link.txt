@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-loop-3b.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-loop-3b.dir/loop-3b.c.o" -o GCC-C-execute-loop-3b 

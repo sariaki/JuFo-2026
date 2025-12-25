@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary city.link.time /usr/bin/clang++-18  -O3 CMakeFiles/city.dir/check_functions.cpp.o CMakeFiles/city.dir/direction.cpp.o CMakeFiles/city.dir/intersection.cpp.o CMakeFiles/city.dir/light.cpp.o CMakeFiles/city.dir/main.cpp.o CMakeFiles/city.dir/roadlet.cpp.o CMakeFiles/city.dir/vehicle.cpp.o -o city 

@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary minisat.link.time /usr/bin/clang++-18  -O3 CMakeFiles/minisat.dir/Main.cpp.o CMakeFiles/minisat.dir/Solver.cpp.o -o minisat  -lm 

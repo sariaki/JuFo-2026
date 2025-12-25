@@ -1,1 +1,0 @@
-RUN: %S/GCC-C-execute-ieee-fp-cmp-5 

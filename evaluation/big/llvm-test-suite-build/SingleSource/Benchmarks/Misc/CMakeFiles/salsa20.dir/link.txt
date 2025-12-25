@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary salsa20.link.time /usr/bin/clang-18  -O3 CMakeFiles/salsa20.dir/salsa20.c.o -o salsa20  -lm 

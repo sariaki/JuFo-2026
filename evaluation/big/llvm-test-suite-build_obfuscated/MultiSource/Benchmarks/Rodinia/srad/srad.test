@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/srad 
-VERIFY: %b/fpcmp-target -a 0.00001 %o %S/srad.reference_output

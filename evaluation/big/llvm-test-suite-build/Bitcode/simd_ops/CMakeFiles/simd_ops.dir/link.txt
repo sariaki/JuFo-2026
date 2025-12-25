@@ -1,2 +1,0 @@
-/usr/bin/llvm-ar-18 qc libsimd_ops.a CMakeFiles/simd_ops.dir/simd_ops.cpp.o CMakeFiles/simd_ops.dir/x86_halide_runtime.bc.o
-/usr/bin/llvm-ranlib-18 libsimd_ops.a

@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Output/2010-05-24-BitfieldTest.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/2010-05-24-BitfieldTest.reference_output; }

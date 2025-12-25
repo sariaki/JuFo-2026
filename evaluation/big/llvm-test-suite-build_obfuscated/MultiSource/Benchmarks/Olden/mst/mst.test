@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/mst 1000
-VERIFY: %b/fpcmp-target %o %S/mst.reference_output

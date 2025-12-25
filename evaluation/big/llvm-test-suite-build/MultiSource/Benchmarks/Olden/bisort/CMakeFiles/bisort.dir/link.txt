@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary bisort.link.time /usr/bin/clang-18  -O3 CMakeFiles/bisort.dir/args.c.o CMakeFiles/bisort.dir/bitonic.c.o -o bisort  -lm 

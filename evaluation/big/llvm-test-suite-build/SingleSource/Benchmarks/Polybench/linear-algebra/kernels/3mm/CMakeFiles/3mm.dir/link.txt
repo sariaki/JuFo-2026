@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 3mm.link.time /usr/bin/clang-18  -O3 CMakeFiles/3mm.dir/3mm.c.o -o 3mm  -lm 

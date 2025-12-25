@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/treeadd 22
-VERIFY: %b/fpcmp-target %o %S/treeadd.reference_output

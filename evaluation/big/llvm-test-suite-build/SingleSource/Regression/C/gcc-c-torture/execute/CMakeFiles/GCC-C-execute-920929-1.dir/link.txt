@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-920929-1.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-920929-1.dir/920929-1.c.o" -o GCC-C-execute-920929-1 

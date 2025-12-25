@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/toast -cpl clinton.pcm
-VERIFY: %b/fpcmp-target %o %S/toast.reference_output.little-endian

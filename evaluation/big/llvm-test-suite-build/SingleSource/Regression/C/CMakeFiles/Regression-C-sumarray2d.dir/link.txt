@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C-sumarray2d.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Regression-C-sumarray2d.dir/sumarray2d.c.o" -o Regression-C-sumarray2d  -lm 

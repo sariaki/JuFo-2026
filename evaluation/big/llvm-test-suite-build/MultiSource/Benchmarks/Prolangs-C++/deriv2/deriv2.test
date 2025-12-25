@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/deriv2 
-VERIFY: %b/fpcmp-target %o %S/deriv2.reference_output

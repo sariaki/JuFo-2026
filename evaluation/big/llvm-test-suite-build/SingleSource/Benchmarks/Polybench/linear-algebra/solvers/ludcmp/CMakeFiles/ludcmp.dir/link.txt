@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary ludcmp.link.time /usr/bin/clang-18  -O3 CMakeFiles/ludcmp.dir/ludcmp.c.o -o ludcmp  -lm 

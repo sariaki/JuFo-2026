@@ -1,2 +1,0 @@
-SingleSource/Regression/C/gcc-c-torture/execute/CMakeFiles/GCC-C-execute-built-in-setjmp.dir/built-in-setjmp.c.o: \
-  /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/SingleSource/Regression/C/gcc-c-torture/execute/built-in-setjmp.c

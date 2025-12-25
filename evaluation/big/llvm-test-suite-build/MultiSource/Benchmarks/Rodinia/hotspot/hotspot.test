@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/hotspot 
-VERIFY: %b/fpcmp-target -a 0.00001 %o %S/hotspot.reference_output

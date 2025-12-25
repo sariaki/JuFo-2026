@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/enc-3des 100
-VERIFY: %b/fpcmp-target %o %S/enc-3des.reference_output

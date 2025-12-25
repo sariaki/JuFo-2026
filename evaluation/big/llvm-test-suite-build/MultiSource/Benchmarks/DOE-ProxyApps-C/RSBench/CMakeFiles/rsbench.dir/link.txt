@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary rsbench.link.time /usr/bin/clang-18  -O3 CMakeFiles/rsbench.dir/glibc_compat_rand.c.o CMakeFiles/rsbench.dir/init.c.o CMakeFiles/rsbench.dir/io.c.o CMakeFiles/rsbench.dir/main.c.o CMakeFiles/rsbench.dir/material.c.o CMakeFiles/rsbench.dir/utils.c.o CMakeFiles/rsbench.dir/xs_kernel.c.o -o rsbench  -lm 

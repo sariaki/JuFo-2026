@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/spirit 
-VERIFY: %b/fpcmp-target %o %S/spirit.reference_output

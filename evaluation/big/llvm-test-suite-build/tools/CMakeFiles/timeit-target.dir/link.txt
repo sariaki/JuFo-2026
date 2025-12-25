@@ -1,1 +1,0 @@
-/usr/bin/clang-18  -O3 "CMakeFiles/timeit-target.dir/timeit.c.o" -o timeit-target 

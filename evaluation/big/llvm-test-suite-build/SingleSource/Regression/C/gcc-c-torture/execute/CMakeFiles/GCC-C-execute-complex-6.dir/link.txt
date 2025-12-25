@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-complex-6.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-complex-6.dir/complex-6.c.o" -o GCC-C-execute-complex-6 

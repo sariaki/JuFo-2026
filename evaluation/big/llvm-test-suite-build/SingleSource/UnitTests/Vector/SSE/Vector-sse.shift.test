@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Vector-sse.shift 
-VERIFY: %b/fpcmp-target -r 0.016 %o %S/sse.shift.reference_output

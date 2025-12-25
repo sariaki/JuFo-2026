@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/SimpleMOC -i default.in
-VERIFY: %b/fpcmp-target %o %S/SimpleMOC.reference_output

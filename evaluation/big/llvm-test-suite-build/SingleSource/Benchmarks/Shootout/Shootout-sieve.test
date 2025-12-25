@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-sieve 
-VERIFY: %b/fpcmp-target %o %S/sieve.reference_output

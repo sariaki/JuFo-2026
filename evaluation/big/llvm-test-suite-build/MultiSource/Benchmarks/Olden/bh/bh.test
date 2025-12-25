@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/bh 20000 20
-VERIFY: %b/fpcmp-target %o %S/bh.reference_output

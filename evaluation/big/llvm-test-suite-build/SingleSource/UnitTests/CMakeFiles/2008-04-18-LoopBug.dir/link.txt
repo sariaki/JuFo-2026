@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2008-04-18-LoopBug.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2008-04-18-LoopBug.dir/2008-04-18-LoopBug.c.o" -o 2008-04-18-LoopBug 

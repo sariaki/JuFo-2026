@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary mandel-text.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/mandel-text.dir/mandel-text.cpp.o" -o mandel-text  -lm 

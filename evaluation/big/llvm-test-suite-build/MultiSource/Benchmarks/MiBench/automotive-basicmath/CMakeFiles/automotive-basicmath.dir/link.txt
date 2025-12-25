@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary automotive-basicmath.link.time /usr/bin/clang-18  -O3 "CMakeFiles/automotive-basicmath.dir/basicmath.c.o" "CMakeFiles/automotive-basicmath.dir/cubic.c.o" "CMakeFiles/automotive-basicmath.dir/isqrt.c.o" "CMakeFiles/automotive-basicmath.dir/rad2deg.c.o" -o automotive-basicmath  -lm 

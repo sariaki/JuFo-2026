@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/PathFinder -x medsmall1.adj_list
-VERIFY: %b/fpcmp-target %o %S/PathFinder.reference_output

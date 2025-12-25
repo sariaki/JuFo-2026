@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C++-2003-08-20-EnumSizeProblem.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/Regression-C++-2003-08-20-EnumSizeProblem.dir/2003-08-20-EnumSizeProblem.cpp.o" -o Regression-C++-2003-08-20-EnumSizeProblem 

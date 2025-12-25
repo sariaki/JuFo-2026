@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/fmax-reduction 
-VERIFY: %b/fpcmp-target %o %S/fmax-reduction.reference_output

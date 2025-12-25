@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary check_env.link.time /usr/bin/clang-18  -O3 CMakeFiles/check_env.dir/check_env.c.o -o check_env 

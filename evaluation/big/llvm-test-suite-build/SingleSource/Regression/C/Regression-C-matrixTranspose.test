@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-matrixTranspose 
-VERIFY: %b/fpcmp-target %o %S/matrixTranspose.reference_output

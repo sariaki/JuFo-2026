@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/family 
-VERIFY: %b/fpcmp-target %o %S/family.reference_output

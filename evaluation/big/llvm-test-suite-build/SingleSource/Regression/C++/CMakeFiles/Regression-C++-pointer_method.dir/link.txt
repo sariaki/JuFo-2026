@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C++-pointer_method.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/Regression-C++-pointer_method.dir/pointer_method.cpp.o" -o Regression-C++-pointer_method 

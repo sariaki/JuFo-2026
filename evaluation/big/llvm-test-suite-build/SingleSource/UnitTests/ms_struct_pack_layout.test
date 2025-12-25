@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/ms_struct_pack_layout 
-VERIFY: %b/fpcmp-target %o %S/ms_struct_pack_layout.reference_output

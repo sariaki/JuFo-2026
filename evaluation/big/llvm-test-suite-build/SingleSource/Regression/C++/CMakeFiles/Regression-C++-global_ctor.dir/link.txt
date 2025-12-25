@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C++-global_ctor.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/Regression-C++-global_ctor.dir/global_ctor.cpp.o" -o Regression-C++-global_ctor 

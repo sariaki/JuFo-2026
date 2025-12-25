@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C/Output/Regression-C-2004-03-15-IndirectGoto.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C/2004-03-15-IndirectGoto.reference_output; }

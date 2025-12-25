@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/telecomm-CRC32 large.pcm
-VERIFY: %b/fpcmp-target %o %S/telecomm-CRC32.reference_output

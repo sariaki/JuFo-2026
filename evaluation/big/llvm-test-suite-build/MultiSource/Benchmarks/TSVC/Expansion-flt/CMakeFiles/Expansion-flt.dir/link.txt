@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Expansion-flt.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Expansion-flt.dir/dummy.c.o" "CMakeFiles/Expansion-flt.dir/tsc.c.o" -o Expansion-flt  -lm 

@@ -1,1 +1,0 @@
-RUN: cd %S ; %S/simd_ops_test_op_vminpd_332 

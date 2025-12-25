@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/stmtexpr 
-VERIFY: %b/fpcmp-target %o %S/stmtexpr.reference_output

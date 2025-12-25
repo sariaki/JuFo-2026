@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/cjpeg -dct int -progressive -opt testimg.ppm
-VERIFY: %b/fpcmp-target %o %S/cjpeg.reference_output

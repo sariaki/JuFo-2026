@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/timberwolfmc 
-VERIFY: %b/fpcmp-target %o %S/timberwolfmc.reference_output

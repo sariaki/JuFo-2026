@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/trie trie.in1
-VERIFY: %b/fpcmp-target %o %S/trie.reference_output

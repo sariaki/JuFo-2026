@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/burg < sample.gr
-VERIFY: %b/fpcmp-target %o %S/burg.reference_output

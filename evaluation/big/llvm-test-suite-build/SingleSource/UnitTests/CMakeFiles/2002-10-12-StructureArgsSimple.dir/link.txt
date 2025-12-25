@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2002-10-12-StructureArgsSimple.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2002-10-12-StructureArgsSimple.dir/2002-10-12-StructureArgsSimple.c.o" -o 2002-10-12-StructureArgsSimple 

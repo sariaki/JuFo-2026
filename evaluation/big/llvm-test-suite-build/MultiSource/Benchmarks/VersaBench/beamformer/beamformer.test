@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/beamformer -i 140
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/beamformer.reference_output

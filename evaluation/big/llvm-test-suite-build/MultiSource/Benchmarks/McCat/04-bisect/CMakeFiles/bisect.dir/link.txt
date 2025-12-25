@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary bisect.link.time /usr/bin/clang-18  -O3 CMakeFiles/bisect.dir/allocvector.c.o CMakeFiles/bisect.dir/bisect_test.c.o CMakeFiles/bisect.dir/dbisect.c.o -o bisect  -lm 

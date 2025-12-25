@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary halide_bilateral_grid.link.time /usr/bin/clang++-18  -O3 CMakeFiles/halide_bilateral_grid.dir/driver.cpp.o CMakeFiles/halide_bilateral_grid.dir/__/common/x86_halide_runtime.bc.o CMakeFiles/halide_bilateral_grid.dir/bilateral_grid.bc.o -o halide_bilateral_grid  -ldl 

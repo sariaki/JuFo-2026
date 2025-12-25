@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/misr 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/misr.reference_output

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/block-byref-cxxobj-test 
-VERIFY: %b/fpcmp-target %o %S/block-byref-cxxobj-test.reference_output

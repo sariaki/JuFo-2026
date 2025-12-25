@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -a 0.0 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/Packing-flt/Output/Packing-flt.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/TSVC/Packing-flt/Packing-flt.reference_output; }

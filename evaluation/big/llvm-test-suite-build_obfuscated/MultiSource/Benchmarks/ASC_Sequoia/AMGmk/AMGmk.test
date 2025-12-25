@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/AMGmk 
-VERIFY: %b/fpcmp-target %o %S/AMGmk.reference_output

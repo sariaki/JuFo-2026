@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/np 
-VERIFY: %b/fpcmp-target %o %S/np.reference_output

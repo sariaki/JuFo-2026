@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/fsm 
-VERIFY: %b/fpcmp-target %o %S/fsm.reference_output

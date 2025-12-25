@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary fp-convert.link.time /usr/bin/clang-18  -O3 "CMakeFiles/fp-convert.dir/fp-convert.c.o" -o fp-convert  -lm 

@@ -1,1 +1,0 @@
-RUN: cd %S ; %S/7zip-benchmark b

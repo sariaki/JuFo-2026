@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/uuencode input.txt
-VERIFY: %b/fpcmp-target %o %S/uuencode.reference_output

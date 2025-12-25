@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/mvt 
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/mvt.reference_output

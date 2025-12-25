@@ -1,2 +1,0 @@
-SingleSource/UnitTests/CMakeFiles/2003-05-31-LongShifts.dir/2003-05-31-LongShifts.c.o: \
-  /home/paul/Documents/JuFo-2026/evaluation/big/llvm-test-suite/SingleSource/UnitTests/2003-05-31-LongShifts.c

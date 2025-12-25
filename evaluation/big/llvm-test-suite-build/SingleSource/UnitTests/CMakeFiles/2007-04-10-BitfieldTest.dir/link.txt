@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2007-04-10-BitfieldTest.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2007-04-10-BitfieldTest.dir/2007-04-10-BitfieldTest.c.o" -o 2007-04-10-BitfieldTest 

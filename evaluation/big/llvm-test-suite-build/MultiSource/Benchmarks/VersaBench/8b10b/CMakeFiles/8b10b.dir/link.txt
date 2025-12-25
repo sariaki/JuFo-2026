@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 8b10b.link.time /usr/bin/clang-18  -O3 CMakeFiles/8b10b.dir/calc.c.o CMakeFiles/8b10b.dir/main.c.o CMakeFiles/8b10b.dir/testbench.c.o -o 8b10b 

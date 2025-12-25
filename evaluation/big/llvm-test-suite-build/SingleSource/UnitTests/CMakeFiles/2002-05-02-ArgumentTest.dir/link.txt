@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2002-05-02-ArgumentTest.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2002-05-02-ArgumentTest.dir/2002-05-02-ArgumentTest.c.o" -o 2002-05-02-ArgumentTest 

@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary CrossingThresholds-dbl.link.time /usr/bin/clang-18  -O3 "CMakeFiles/CrossingThresholds-dbl.dir/dummy.c.o" "CMakeFiles/CrossingThresholds-dbl.dir/tsc.c.o" -o CrossingThresholds-dbl  -lm 

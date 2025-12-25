@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/shr 31415926
-VERIFY: %b/fpcmp-target %o %S/shr.reference_output

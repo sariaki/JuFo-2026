@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -r 0.001 /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/SmallPT/Output/smallpt.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/SmallPT/smallpt.reference_output; }

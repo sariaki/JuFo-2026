@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary mvt.link.time /usr/bin/clang-18  -O3 CMakeFiles/mvt.dir/mvt.c.o -o mvt  -lm 

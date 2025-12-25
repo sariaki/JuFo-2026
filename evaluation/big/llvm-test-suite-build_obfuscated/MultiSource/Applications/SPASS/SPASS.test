@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/SPASS problem.dfg
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/SPASS.reference_output

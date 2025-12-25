@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary ReedSolomon.link.time /usr/bin/clang-18  -O3 CMakeFiles/ReedSolomon.dir/ReedSolomon.c.o -o ReedSolomon  -lm 

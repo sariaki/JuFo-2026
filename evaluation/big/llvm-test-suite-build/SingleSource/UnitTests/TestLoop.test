@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/TestLoop 
-VERIFY: %b/fpcmp-target %o %S/TestLoop.reference_output

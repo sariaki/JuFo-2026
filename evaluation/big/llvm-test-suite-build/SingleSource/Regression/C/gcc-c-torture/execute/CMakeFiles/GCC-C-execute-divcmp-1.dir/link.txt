@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-divcmp-1.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-divcmp-1.dir/divcmp-1.c.o" -o GCC-C-execute-divcmp-1 

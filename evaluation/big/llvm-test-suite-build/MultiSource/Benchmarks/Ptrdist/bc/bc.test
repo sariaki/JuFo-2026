@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/bc < primes.b
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/bc.reference_output

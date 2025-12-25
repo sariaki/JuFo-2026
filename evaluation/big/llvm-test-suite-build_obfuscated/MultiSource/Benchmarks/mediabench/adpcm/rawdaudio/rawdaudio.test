@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/rawdaudio < clinton.adpcm
-VERIFY: %b/HashProgramOutput.sh %o
-VERIFY: %b/fpcmp-target %o %S/rawdaudio.reference_output.little-endian

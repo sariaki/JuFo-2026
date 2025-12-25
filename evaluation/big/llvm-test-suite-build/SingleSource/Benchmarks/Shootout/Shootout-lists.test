@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-lists 
-VERIFY: %b/fpcmp-target %o %S/lists.reference_output

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Shootout-C++-except 
-VERIFY: %b/fpcmp-target %o %S/except.reference_output

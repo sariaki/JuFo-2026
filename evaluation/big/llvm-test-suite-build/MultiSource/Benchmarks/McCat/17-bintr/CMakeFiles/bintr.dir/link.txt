@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary bintr.link.time /usr/bin/clang-18  -O3 CMakeFiles/bintr.dir/bintree.c.o CMakeFiles/bintr.dir/bnchmrk.c.o -o bintr  -lm 

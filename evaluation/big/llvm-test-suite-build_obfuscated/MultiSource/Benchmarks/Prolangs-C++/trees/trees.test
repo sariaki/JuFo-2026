@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/trees 
-VERIFY: %b/fpcmp-target %o %S/trees.reference_output

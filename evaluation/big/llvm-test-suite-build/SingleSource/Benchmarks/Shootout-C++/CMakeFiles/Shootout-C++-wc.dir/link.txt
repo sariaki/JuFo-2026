@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Shootout-C++-wc.link.time /usr/bin/clang++-18  -O3 "CMakeFiles/Shootout-C++-wc.dir/wc.cpp.o" -o Shootout-C++-wc  -lm 

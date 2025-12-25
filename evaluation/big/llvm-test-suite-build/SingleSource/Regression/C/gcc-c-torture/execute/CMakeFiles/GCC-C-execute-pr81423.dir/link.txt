@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-pr81423.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-pr81423.dir/pr81423.c.o" -o GCC-C-execute-pr81423 

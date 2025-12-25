@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Regression-C-globalrefs.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Regression-C-globalrefs.dir/globalrefs.c.o" -o Regression-C-globalrefs  -lm 

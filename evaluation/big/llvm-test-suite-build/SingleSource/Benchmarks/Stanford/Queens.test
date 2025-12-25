@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Queens 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/Queens.reference_output

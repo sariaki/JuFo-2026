@@ -1,1 +1,0 @@
-RUN: /home/paul/Documents/JuFo-2026/evaluation/.venv/bin/python3 %b/test/test_not.py /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/not /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/test/check_env

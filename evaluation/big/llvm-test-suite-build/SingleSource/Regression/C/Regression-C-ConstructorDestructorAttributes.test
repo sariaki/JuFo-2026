@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/Regression-C-ConstructorDestructorAttributes 
-VERIFY: %b/fpcmp-target %o %S/ConstructorDestructorAttributes.reference_output

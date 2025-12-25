@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary netbench-url.link.time /usr/bin/clang-18  -O3 "CMakeFiles/netbench-url.dir/packet.c.o" "CMakeFiles/netbench-url.dir/search.c.o" "CMakeFiles/netbench-url.dir/url.c.o" "CMakeFiles/netbench-url.dir/utils.c.o" -o netbench-url 

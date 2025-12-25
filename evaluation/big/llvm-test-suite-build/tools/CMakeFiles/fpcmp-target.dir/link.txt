@@ -1,1 +1,0 @@
-/usr/bin/clang-18  -O3 "CMakeFiles/fpcmp-target.dir/fpcmp.c.o" -o fpcmp-target 

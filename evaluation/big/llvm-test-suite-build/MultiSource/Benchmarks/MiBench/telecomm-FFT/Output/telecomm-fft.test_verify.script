@@ -1,2 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/HashProgramOutput.sh /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/telecomm-FFT/Output/telecomm-fft.test.out; } &&
-{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -a 0.00001 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/telecomm-FFT/Output/telecomm-fft.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/MiBench/telecomm-FFT/telecomm-fft.reference_output; }

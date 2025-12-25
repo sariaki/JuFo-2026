@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary GCC-C-execute-pr65956.link.time /usr/bin/clang-18  -O3 "CMakeFiles/GCC-C-execute-pr65956.dir/pr65956.c.o" -o GCC-C-execute-pr65956 

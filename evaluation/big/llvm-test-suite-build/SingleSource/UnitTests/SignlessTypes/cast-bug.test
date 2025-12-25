@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/cast-bug 31415926
-VERIFY: %b/fpcmp-target %o %S/cast-bug.reference_output

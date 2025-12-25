@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/life 
-VERIFY: %b/fpcmp-target %o %S/life.reference_output

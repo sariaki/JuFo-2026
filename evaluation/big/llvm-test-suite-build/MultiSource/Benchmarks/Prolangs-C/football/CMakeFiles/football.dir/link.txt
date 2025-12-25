@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary football.link.time /usr/bin/clang-18  -O3 CMakeFiles/football.dir/common.c.o CMakeFiles/football.dir/io.c.o CMakeFiles/football.dir/sort.c.o CMakeFiles/football.dir/stats.c.o -o football 

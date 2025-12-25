@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/security-sha input_large.asc
-VERIFY: %b/fpcmp-target %o %S/security-sha.reference_output

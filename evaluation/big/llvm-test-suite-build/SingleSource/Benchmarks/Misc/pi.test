@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/pi 
-VERIFY: %b/fpcmp-target -r 0.001 %o %S/pi.reference_output

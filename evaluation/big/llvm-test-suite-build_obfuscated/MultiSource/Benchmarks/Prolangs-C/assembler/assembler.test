@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/assembler 
-VERIFY: %b/fpcmp-target %o %S/assembler.reference_output

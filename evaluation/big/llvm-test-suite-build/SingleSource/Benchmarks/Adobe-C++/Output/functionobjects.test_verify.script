@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -a 0.01 /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Adobe-C++/Output/functionobjects.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Benchmarks/Adobe-C++/functionobjects.reference_output; }

@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/neural test.in
-VERIFY: %b/fpcmp-target %o %S/neural.reference_output

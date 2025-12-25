@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary doitgen.link.time /usr/bin/clang-18  -O3 CMakeFiles/doitgen.dir/doitgen.c.o -o doitgen  -lm 

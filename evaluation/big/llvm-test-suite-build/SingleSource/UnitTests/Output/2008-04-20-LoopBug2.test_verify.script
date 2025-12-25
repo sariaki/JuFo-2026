@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/Output/2008-04-20-LoopBug2.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/UnitTests/2008-04-20-LoopBug2.reference_output; }

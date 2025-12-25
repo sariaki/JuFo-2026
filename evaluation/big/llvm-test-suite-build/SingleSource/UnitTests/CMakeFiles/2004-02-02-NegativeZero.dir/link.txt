@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary 2004-02-02-NegativeZero.link.time /usr/bin/clang-18  -O3 "CMakeFiles/2004-02-02-NegativeZero.dir/2004-02-02-NegativeZero.c.o" -o 2004-02-02-NegativeZero 

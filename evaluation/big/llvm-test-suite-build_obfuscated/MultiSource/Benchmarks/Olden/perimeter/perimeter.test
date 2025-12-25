@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/perimeter 10
-VERIFY: %b/fpcmp-target %o %S/perimeter.reference_output

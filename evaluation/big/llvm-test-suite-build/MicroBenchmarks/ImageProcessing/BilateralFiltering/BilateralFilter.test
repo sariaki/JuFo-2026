@@ -1,3 +1,0 @@
-RUN: cd %S ; %S/BilateralFilter 
-VERIFY: %b/HashProgramOutput.sh %S/bilateralFilterOutput.txt
-VERIFY: %b/fpcmp-target %S/bilateralFilter.reference_output %S/bilateralFilterOutput.txt

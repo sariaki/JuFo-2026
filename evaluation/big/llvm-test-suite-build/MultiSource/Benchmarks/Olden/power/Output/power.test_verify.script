@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target -r 0.00001 /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Olden/power/Output/power.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/MultiSource/Benchmarks/Olden/power/power.reference_output; }

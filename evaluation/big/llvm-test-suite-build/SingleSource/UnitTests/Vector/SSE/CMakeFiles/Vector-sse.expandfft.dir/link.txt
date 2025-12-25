@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary Vector-sse.expandfft.link.time /usr/bin/clang-18  -O3 "CMakeFiles/Vector-sse.expandfft.dir/sse.expandfft.c.o" -o Vector-sse.expandfft  -lm 

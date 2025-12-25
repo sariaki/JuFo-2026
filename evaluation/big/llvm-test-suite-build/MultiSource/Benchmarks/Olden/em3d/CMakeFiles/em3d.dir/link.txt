@@ -1,1 +1,0 @@
-/home/paul/Documents/JuFo-2026/evaluation/big/build/tools/timeit --summary em3d.link.time /usr/bin/clang-18  -O3 CMakeFiles/em3d.dir/args.c.o CMakeFiles/em3d.dir/em3d.c.o CMakeFiles/em3d.dir/main.c.o CMakeFiles/em3d.dir/make_graph.c.o CMakeFiles/em3d.dir/util.c.o -o em3d 

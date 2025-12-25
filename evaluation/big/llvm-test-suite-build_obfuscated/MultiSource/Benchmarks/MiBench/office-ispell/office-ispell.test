@@ -1,2 +1,0 @@
-RUN: cd %S ; %S/office-ispell -a -d americanmed+ < large.txt
-VERIFY: %b/fpcmp-target %o %S/office-ispell.reference_output

@@ -1,1 +1,0 @@
-set -o pipefail;set -x;{ /home/paul/Documents/JuFo-2026/evaluation/big/build/tools/fpcmp-target /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/Output/Regression-C++-2011-03-28-Bitfield.test.out /home/paul/Documents/JuFo-2026/evaluation/big/build/SingleSource/Regression/C++/2011-03-28-Bitfield.reference_output; }
