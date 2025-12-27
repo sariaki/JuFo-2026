@@ -577,7 +577,7 @@ void __cdecl foo(int x)
 
 \section{Evaluierung}
 \subsection{Vorgehen} \label{sec:kriterien}
-Für die Evaluierung wird gemäß der weitverbreiteten Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} vorgegangen\label{par:metriken}:
+Für die Evaluierung wurden die weitverbreiteten Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} verwendet\label{par:metriken}:
 
 \begin{center}
     \begin{tabular}{c|l}
@@ -593,10 +593,9 @@ Für die Evaluierung wird gemäß der weitverbreiteten Kriterien von Collberg et
     \end{tabular}
 \end{center}
 
-Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) von \cite{ollivierHowKillSymbolic2019a} sowie auf die GNU Core Utilities angewandt. Insgesamt wurden somit über \textcolor{red}{TODO} Programme obfuskiert. Die Programme wurden bewusst gewählt, um typische realistische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
-
-Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompilliert.
-Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU und $16$Gb DDR4 RAM ausgeführt.
+%Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) von \cite{ollivierHowKillSymbolic2019a} sowie auf die GNU Core Utilities angewandt. Insgesamt wurden somit über \textcolor{red}{TODO} Programme obfuskiert. Die Programme wurden bewusst gewählt, um typische realistische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
+Es wurde sich dabei bewusst gegen Benchmarkprogramme wie in \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}} oder \cite{ollivierHowKillSymbolic2019a} entschieden: Orientiert wurde sich dabei am zur Zeit umfangreichsten Literaturreview zur (De-)Obfuskation \cite{sutterEvaluationMethodologiesSoftware2024}. Dieses bemängelt mangelnde Samplegröße sowie -quantität in der aktuellen Forschung. Es wurde sich daher für die LLVM Test Suite \cite{llvmTestSuite2025} entschieden. Dabei wurde sich auf die 200 größten vollständigen Anwendungen (z.B. sqlite3 \& lua) und Benchmarkprogramme beschränkt. Obwohl die Test Suite eigentliche für Compileroptimierungsevaluierungen entwickelt wurde, ist sie dennoch für die Obfuskationsevaluierung geeignet, da sie durch ihre diversen Programme realistische Anwendungsszenarien der Obfuskation abbildet. Die Test Suite bietet zudem den Vorteil vorgefertigter Tests, welche die Korrektheit obfuskierter Programme prüfen. 
+Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompiliert und mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU und $16$Gb DDR4 RAM ausgeführt.
 
 \subsection{Evaluierung}
 
@@ -613,7 +612,19 @@ Alle Experimente wurden mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer In
 	\captionof{figure}{Größe vor/nach der Obfuskation}
 	\label{fig:size}
 \end{minipage}
-Um die Obfuskationskosten zu messen wurde die Programmgröße, -laufzeit sowie die Kompilationszeit mit und ohne Obfuskation gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf die Kompilationszeit.
+\begin{minipage}[t]{0.49\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/stats/runtime}
+	\captionof{figure}{Laufzeit vor/nach der Obfuskation}
+	\label{fig:runtime}
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/stats/pass_rate}
+	\captionof{figure}{Testerfolg vor/nach der Obfuskation}
+	\label{fig:pass_rate}
+\end{minipage}\\
+Um die Obfuskationskosten zu messen wurden Programmgröße, -laufzeit, Kompilationszeit und Erfolgsquote bei den Tests der LLVM Test Suite gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf \textcolor{red}{TODO: ...}
 Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden.
 Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die GNU Core Utilities sowie SQLite fehlerfrei kompilieren und funktionierten. Hierfür wurde die Erfolgswahrscheinlichkeit $P(\Var{TrueBB})=0.99$ verwendet.
 
@@ -657,12 +668,12 @@ Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen
 	\caption{Programmanweisungverteilung vor/nach der Obfuskation} 
 	\label{fig:opcodeDist}
 \end{wrapfigure}
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\centering
-	\includegraphics[width=0.37\textwidth]{img/stats/entropy}
-	\caption{Entropie} 
-	\label{fig:entropy}
-\end{wrapfigure}
+%\begin{wrapfigure}{r}{0.4\textwidth}
+%	\centering
+%	\includegraphics[width=0.37\textwidth]{img/stats/entropy}
+%	\caption{Entropie} 
+%	\label{fig:entropy}
+%\end{wrapfigure}
 
 %\paragraph{Opcode Verteilung}
 %\paragraph{Entropie}

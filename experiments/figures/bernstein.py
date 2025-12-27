@@ -114,7 +114,7 @@ def plot_many_bernsteins(ax, count=200, alpha=0.10):
     plt.show()
 
 plt.rcParams.update({
-    'font.family': 'Courier New',  # monospace font
+    'font.family': 'serif',  # Courier New
     'font.size': 20,
     'axes.titlesize': 20,
     'axes.labelsize': 20,

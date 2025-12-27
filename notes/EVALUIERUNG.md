@@ -8,21 +8,20 @@
 	- [ ] mehrere Male durchführen -->`yerrs`
 
 - Stealth
-	- [x] Entropy
-	- [x] Opcode distribution
+	- [ ] Entropy
+	- [ ] **Opcode distribution**
 	- Vorteile von MBAs!
 - Potency
 	- [ ] Controlled human experiment analysis
 	- Code complexity: 
-		- [x] McCabe Cyclomatic Complexity
+		- [ ] **McCabe Cyclomatic Complexity**
 		- [ ] CFG-Größe
-		- [x] Anweisungsanzahl
+		- [ ] **Anweisungsanzahl**
 - Resilience
 - Cost
 	- [x] Size
-	- [ ] Performance overhead
-	- [ ] Memory usage
-	- [ ] **Applicability (code coverage)**
+	- [x] Performance overhead
+	- [x] **Applicability (code coverage)**
 	- [x] Compilation time
 
 - Discussion

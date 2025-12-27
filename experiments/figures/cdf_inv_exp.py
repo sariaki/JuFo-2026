@@ -99,8 +99,8 @@ def plot_cdf_inv(ax):
     labels = [f"{val:.1f}" for val in yticks]
     ax.set_yticklabels(labels)
 
-    ax.tick_params(axis='x', rotation=315)
-    plt.setp(ax.get_xticklabels(), rotation=315, ha='left', rotation_mode='anchor')
+    ax.tick_params(axis='x', rotation=270)
+    plt.setp(ax.get_xticklabels(), rotation=270, ha='left')
 
     # Add dashed arrow from curve to tick
     for i, tick in enumerate(ax.xaxis.get_major_ticks()):
@@ -139,7 +139,7 @@ def plot_cdf_inv(ax):
     plt.show()
 
 plt.rcParams.update({
-    'font.family': 'Courier New',
+    'font.family': 'serif', # Courier New
     'font.size': 20,
     'axes.titlesize': 20,
     'axes.labelsize': 20,
