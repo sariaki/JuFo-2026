@@ -158,6 +158,7 @@ bool Utils::HasAnnotation(Function *F, std::string_view Annotation)
     return false;
 }
 
+// DFS on Tree of IR Values to see if any derive from an external function
 bool Utils::IsDerivedFromExternalFn(Value *V, SmallPtrSetImpl<Value*> &Visited, int Depth)
 {
     if (!V || Depth > 20) return false;

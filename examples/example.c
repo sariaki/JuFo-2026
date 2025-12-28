@@ -23,10 +23,10 @@ OBFUSCATE void foo(uint64_t x)
 {
   printf("foo %lu\n", x);
   // printf("foo\n");
-  volatile int a = 1;
-  volatile int b = 2;
-  volatile int c = a % b;
-  volatile int d = c + b * a;
+  // volatile int a = 1;
+  // volatile int b = 2;
+  // volatile int c = a % b;
+  // volatile int d = c + b * a;
   //__asm__("int3");
 } 
 

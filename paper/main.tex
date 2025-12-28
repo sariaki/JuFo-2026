@@ -49,6 +49,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \algnewcommand{\Var}[1]{\mathit{#1}}
+\MakeRobust{\Call}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bib.bib}
 \usepackage{amsmath}
@@ -415,17 +416,20 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 %Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
-Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. \textcolor{red}{TODO: Auf chaotisches Verhalten/Divergenz eingehen!}
+Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt.
 \begin{algorithm}[!h] 
 	\caption{Berechnung der inversen kumulativen Verteilungsfunktion über das Newton-Raphson-Verfahren }
 	\label{alg:invCumSum}
 	\begin{algorithmic}[1]
-		\Require $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{HStretch}$ (Horizontal shift/stretch), $\Var{Precision}$ (determines precision of Bernstein evaluation) %\textbf{as hardcoded constants}
+		\Require $\Var{C}$ (Bernstein coefficients), $\Var{HShift}, \Var{VStretch}$ (horizontal shift/ vertical stretch), $\Var{Precision}$ (determines precision of Bernstein evaluation) %\textbf{as hardcoded constants}
 		\Function{SampleBernsteinInverse}{$\Var{U} \in [0, 1]$}
-		\State $\Var{Estimate} \gets \Var{HShift} + \frac{0.5}{\Var{HStretch}}$ \Comment{Start guess at center of domain.}
+		\State $\Var{Estimate} \gets \Var{HShift} + \frac{0.5}{\Var{VStretch}}$ \Comment{Start guess at center of domain.}
+        
+        \State $\Var{D_{start}} \gets \Var{HShift}$
+        \State $\Var{D_{end}} \gets \Var{HShift} + \frac{1}{\Var{VStretch}}$
 		
 		\For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
-			\State $\Var{t} \gets \Var{HStretch} \cdot (\Var{Estimate} - \Var{HShift})$ \Comment{Transformed $\Var{Estimate}$.}
+			\State $\Var{t} \gets \Var{VStretch} \cdot (\Var{Estimate} - \Var{HShift})$ \Comment{Transformed $\Var{Estimate}$.}
 			\State $\Var{y} \gets 0.0$ \Comment{Accumulator for $B(t)$.}
 			\State $\Var{y'} \gets 0.0$ \Comment{Accumulator for $B'(t)$.}
 			
@@ -443,6 +447,8 @@ Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das 
 			\State $\Var{Slope} \gets \Var{y'} \cdot \Var{HStretch}$ \Comment{Apply chain rule: $\frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx}$.}
 			
 			\State $\Var{Estimate} \gets \Var{Estimate} - \frac{\Var{OffsetY}}{\Var{Slope}}$ \Comment{Newton Step.}
+            
+            \State $\Var{Estimate} = \Call{max}{\Call{min}{\Var{Estimate}, \Var{D_{start}}}, \Var{D_{end}}}$ \Comment{Clamp $\Var{Estimate}$ so that Newton-Raphson doesn't diverge.}
 		\EndFor
 		
 		\State \Return $\Var{Estimate}$
@@ -497,7 +503,6 @@ Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \em
 
 Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
-
 \begin{figure}[!h]
 	\centering 
 	\label{fallbsp}
@@ -506,7 +511,7 @@ Die Implementierung, Beispiele und Experimente sind unter \url{https://github.co
 			\begin{lstlisting}[style=customc_compact, captionpos=b, language=bash]	
 #!/bin/bash
 
-OPT_LVL=O0
+OPT_LVL=O3
 FILENAME="hello_world"
 PASS_PLUGIN_DIR="Obfuscator.so"
 PROB=50
@@ -537,39 +542,41 @@ void foo(int x)
 	\begin{minipage}[c]{0.6\textwidth}
 		\begin{subfigure}[c]{\linewidth}
 			\begin{lstlisting}[style=customc_compact, captionpos=b, firstnumber=1]
-void __cdecl foo(int x)
+void __fastcall foo(uint64_t x)
 {
-	double v1;
-	double v2;
-	double v3;
-	int i;
-	
-	v3 = 20.7517909733016;
-	for ( i = 0; i != 16; ++i )
+	__m128d v7;
+	uint64_t v8 = x;
+	double v9 = x * COERCE_DOUBLE(0x4000000000000LL);
+	double v10 = 35.31442506435751;
+	for ( i = 0; i != 12; ++i )
 	{
-		v1 = (v3 - 20.70639451264049) * 11.01407450533519;
-		v2 = v3
-		- (0.0 * ((1.0 - v1) * (1.0 - v1) * (1.0 - v1))
-		+ 0.0
-		+ 0.3788140306973082 * v1 * ((1.0 - v1) * (1.0 - v1))
-		+ 1.326401583206529 * (v1 * v1) * (1.0 - v1)
-		+ v1 * v1 * v1
-		- (double)x * COERCE_DOUBLE(0x4000000000000LL))
-		/ ((0.3788140306973082 * ((1.0 - v1) * (1.0 - v1))
-		+ 0.0
-		+ 1.895175105018441 * v1 * (1.0 - v1)
-		+ 1.673598416793471 * (v1 * v1))
-		* 11.01407450533519);
-		v3 = v2;
+		__m128d v1 = *&v10;
+		double v6 = (v10 - 35.29940863512881) * 33.29686388054899;
+		v1.m128d_f64[0] = v10
+			- (0.0 * ((1.0 - v6) * (1.0 - v6) * (1.0 - v6))
+			+ 0.5018965731323943 * v6 * ((1.0 - v6) * (1.0 - v6))
+			+ 1.199789464169086 * (v6 * v6) * (1.0 - v6)
+			+ v6 * v6 * v6
+			- v9)
+			/ ((0.5018965731323943 * ((1.0 - v6) * (1.0 - v6))
+			+ 1.395785782073383 * v6 * (1.0 - v6)
+			+ 1.800210535830914 * (v6 * v6))
+			* 33.29686388054899);
+		v7 = v1;
+		v2 = _mm_cmplt_sd(0x4041AA2B238C72F8uLL, v1);
+		v3 = _mm_or_pd(_mm_andn_pd(v2, v1), _mm_and_pd(v2, 0x4041AA2B238C72F8uLL));
+		v4 = _mm_cmplt_sd(v3, 0x4041A65305AC0256uLL).m128d_f64[0];
+		*&v10 = ~*&v4 & *&v3.m128d_f64[0] | *&v4 & 0x4041A65305AC0256LL;
 	}
-	if ( v2 >= 19.80279674504742 )
+	if ( v7.m128d_f64[0] <= 35.32927409341327 )
+		printf("foo %lu\n", *(&v5 - 2)); // This Basic Block will always be executed.
+	else
 	{
 		// Junkcode
-		return; // This Basic Block is never reached.
+		// This Basic Block will never be executed.
 	}
-	printf("foo %i\n", x); // This Basic Block will always be executed.
 }			\end{lstlisting}
-			\caption{Dieselbe Funktion aber mit PoP (Bernsteinpolynomgrad $n=3 $) obfuskiert. Pseudo-C wurde aus der Dekompilation von IDA entnommen.\textcolor{red}{TODO: update mit neuer Version}}
+			\caption{Dieselbe Funktion aber mit PoP (Bernsteinpolynomgrad $n=3 $) obfuskiert. Pseudo-C wurde modifiziert aus der Dekompilation von IDA entnommen. Die Funktionen mit dem Präfix "`\_"' sind intrinsische Funktionen. Sie kapseln einzelne CPU-Anweiseungen.}
 			\label{fig:doneObf}
 		\end{subfigure}
 	\end{minipage}
@@ -623,19 +630,19 @@ Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompil
 	\includegraphics[width=1\textwidth]{img/stats/pass_rate}
 	\captionof{figure}{Testerfolg vor/nach der Obfuskation}
 	\label{fig:pass_rate}
-\end{minipage}\\
+\end{minipage}
+\\\\
 Um die Obfuskationskosten zu messen wurden Programmgröße, -laufzeit, Kompilationszeit und Erfolgsquote bei den Tests der LLVM Test Suite gemessen. Insgesamt bleiben die Kosten überschaubar. Die größten Auswirkungen hatte die Obfuskation auf \textcolor{red}{TODO: ...}
 Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden.
 Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die GNU Core Utilities sowie SQLite fehlerfrei kompilieren und funktionierten. Hierfür wurde die Erfolgswahrscheinlichkeit $P(\Var{TrueBB})=0.99$ verwendet.
 
-\textcolor{red}{TODO: Programmgröße} \\
 \textcolor{red}{TODO: Wie viel \% Anwendbarkeit?}
 
 \subsubsection{Stärke} \label{sec:stärke}
 Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus der Softwareentwicklung verwendet. Konkret betrachtet wurden die zyklomatische Komplexität (McCabe-Metrik) sowie die Anzahl an Anweisungen vor und nach der Obfuskation.
-\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{wrapfigure}{r}{0\textwidth}
 	\centering
-	\includegraphics[width=0.37\textwidth]{img/stats/complexity}
+	\includegraphics[width=0.45\textwidth]{img/stats/complexity}
 	\caption{zyklomatische Komplexität (McCabe-Metrik) vor/nach der Obfuskation} 
 	\label{fig:mcCabe}
 \end{wrapfigure}
@@ -644,7 +651,8 @@ Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus d
 %\paragraph{Menschliche Analyse}
 
 \subsubsection{Resilienz}
-Um die Resilienz zu messen wurden folgende Angriffsmethoden auf das einfache Programm aus \cref{fallbsp} angewandt: 
+Da sich die Resilienz nicht im Falle dieses  Projekts nicht quantitativ messen lässt, wird sie qualitativ anhand eines Fallbeispiels untersucht.
+Hierfür wurden folgende Angriffsmethoden auf das einfache Programm aus \cref{fallbsp} angewandt: 
 \begin{itemize}
 	\item Symbolische Ausführung mit Angr \cite{shoshitaishvili2016state} (v.9.2.189), Triton \cite{SSTIC2015-Saudel-Salwan} (v.1.0.0rc4) und Miasm \cite{desclaux2018miasm} (v.0.1.5)
 	
@@ -661,23 +669,15 @@ Wie postuliert waren keine der symbolischen Ausführungsengines in der Lage, den
 Die Resilienz der Obfuskation basiert somit letztendlich auf dessen Tarnung.
 
 \subsubsection{Tarnung}
-Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen sowie die Entropie vor und nach der Obfuskation gemessen.
-\begin{wrapfigure}{r}{0.4\textwidth}
+Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen vor und nach der Obfuskation mit Obfuskationslevel 100 gemessen.
+\begin{figure}{r}[H]
 	\centering
-	\includegraphics[width=0.37\textwidth]{img/stats/opcode_dist}
+	\includegraphics[width=0.6\textwidth]{img/stats/stealth}
 	\caption{Programmanweisungverteilung vor/nach der Obfuskation} 
 	\label{fig:opcodeDist}
-\end{wrapfigure}
-%\begin{wrapfigure}{r}{0.4\textwidth}
-%	\centering
-%	\includegraphics[width=0.37\textwidth]{img/stats/entropy}
-%	\caption{Entropie} 
-%	\label{fig:entropy}
-%\end{wrapfigure}
+\end{figure}
 
-%\paragraph{Opcode Verteilung}
-%\paragraph{Entropie}
-% Pattern Matching
+% TODO: Pattern Matching
 
 \subsection{Vergleich mit existierenden Obfuskationsmethoden}
 
