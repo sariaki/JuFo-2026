@@ -236,8 +236,12 @@ Trotz der Effektivität mancher existierender Methoden, bleiben viele theoretisc
 	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{Covert Symbolic Propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
 	(d) Threads: Noch nicht implementiert.
 }.
-Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013} und \cite{tigress2025} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
-Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit. 
+Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013}, \cite{tigress2025} und \cite{linBranchObfuscationUsing2013} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
+Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit.
+
+Andere Methoden, wie \cite{wangLinearObfuscationCombat2011} und \cite{ogisoSoftwareObfuscationTheoretical2003} sind zwar formal sicher, sind aber einfach erkennbar und weisen hohe Laufzeitkosten auf.
+
+Angesichts der Schwierigkeiten aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaker Prädikate.
 
 \section{Ansatz} 
 \subsection{Angreifermodell}
@@ -258,7 +262,7 @@ Die Bedeutung weiterer dynamischer Analysemethoden wird in \cref{sec:fazit} disk
 
 \subsection{Probabilistische opake Prädikate} 
 Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
-Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{Constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom Constraint Solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus bedeutet dies, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formell logisch korrekt bewiesen - praktisch allerdings nicht.
+Will man aber Aussagen über einen probabilistischen Algorithmus treffen, so ist dies ohne erhebliche manuelle Eingriffe eines Nutzers in Form von extra Annahmen und Beschränkungen (\emph{Constraints}) unmöglich. Jede zufällige Variable eines jeden Schleifenaufrufes muss vom Constraint Solver als symbolische Variable betrachtet und somit für alle möglichen Werte überprüft werden. Bei einem Monte-Carlo-Algorithmus bedeutet dies, dass auch unwahrscheinliche Variablenwerte, welche zu falschen Ergebnissen führen, überprüft werden. Der Wahrheitsgehalt wird somit zwar formal logisch korrekt bewiesen - praktisch allerdings nicht.
 \begin{example}
 Man betrachte einen Algorithmus, welcher mit einer Wahrscheinlichkeit von $99,9999\%$ den Wert $1$ zurückgibt und mit einer Wahrscheinlichkeit von $0,0001$ den Wert $0$ zurückgibt. 
 \begin{algorithm}[!htb] 
@@ -501,7 +505,7 @@ Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vor
 
 Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand.
 
-Die Implementierung, Beispiele und Experimente sind unter \url{https://github.com/sariaki/JuFo-2026} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
+Die Implementierung, Beispiele und Experimente sind unter \cite{paulPOP} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
 %\textcolor{red}{TODO: Inspiration von ogisoSoftwareObfuscationTheoretical2003 nehmen!}
 \begin{figure}[!h]
 	\centering 

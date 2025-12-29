@@ -244,3 +244,97 @@ bool Utils::IsDerivedFromExternalFn(Value *V, SmallPtrSetImpl<Value*> &Visited, 
 
     return false;
 }
+
+// Function types in LLVM are immutable, so we have to create a new function with a new type
+Function* Utils::AddLLVMFnArgument(Function *OldFunc, Type *NewArgType, StringRef Name, Value *NewArgValue)
+{
+    Module *M = OldFunc->getParent();
+    
+    // Create new FunctionType
+    FunctionType *OldType = OldFunc->getFunctionType();
+    std::vector<Type*> NewParamTypes;
+
+    for (Type *T : OldType->params())
+        NewParamTypes.push_back(T);
+    
+    NewParamTypes.push_back(NewArgType);
+
+    FunctionType *NewType = FunctionType::get(
+        OldType->getReturnType(),
+        NewParamTypes,
+        OldType->isVarArg()
+    );
+
+    // 2. Create new Function
+    Function *NewFunc = Function::Create(
+        NewType, 
+        OldFunc->getLinkage(), 
+        OldFunc->getAddressSpace(), 
+        "", 
+        M
+    );
+
+    NewFunc->copyAttributesFrom(OldFunc);
+    NewFunc->setComdat(OldFunc->getComdat());
+
+    // Move Basic Blocks to new Function
+    NewFunc->splice(NewFunc->begin(), OldFunc);
+
+    // Update argument usage in moved blocks
+    auto NewArgIt = NewFunc->arg_begin();
+    for (Argument &OldArg : OldFunc->args())
+    {
+        Argument *NewArg = &*NewArgIt++;
+        NewArg->setName(OldArg.getName());
+        OldArg.replaceAllUsesWith(NewArg);
+    }
+
+    // Name new extra argument
+    Argument *NewExtraArg = &*NewArgIt;
+    NewExtraArg->setName(Name);
+
+    // Update Callers
+    std::vector<User*> Users(OldFunc->user_begin(), OldFunc->user_end());
+
+    for (User *U : Users)
+    {
+        if (auto *CB = dyn_cast<CallBase>(U))
+        {
+            if (CB->getCalledFunction() == OldFunc)
+            {
+                
+                std::vector<Value*> NewArgs;
+                for (auto &Arg : CB->args())
+                    NewArgs.push_back(Arg.get());
+
+                NewArgs.push_back(NewArgValue);
+
+                CallBase *NewCB = nullptr;
+                if (isa<CallInst>(CB))
+                    NewCB = CallInst::Create(NewFunc, NewArgs, "", CB);
+                else if (auto *Invoke = dyn_cast<InvokeInst>(CB))
+                {
+                    NewCB = InvokeInst::Create(NewFunc, Invoke->getNormalDest(), 
+                                               Invoke->getUnwindDest(), NewArgs, 
+                                               "", Invoke);
+                }
+
+                NewCB->setCallingConv(CB->getCallingConv());
+                NewCB->setAttributes(CB->getAttributes());
+                NewCB->setDebugLoc(CB->getDebugLoc());
+                
+                CB->replaceAllUsesWith(NewCB);
+                CB->eraseFromParent();
+            }
+        }
+    }
+    
+    // Remove old function
+    std::string OldName = OldFunc->getName().str();
+    OldFunc->setName(OldName + ".old");
+    NewFunc->setName(OldName);
+
+    OldFunc->eraseFromParent();
+
+    return NewFunc;
+}

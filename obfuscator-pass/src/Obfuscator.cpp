@@ -70,6 +70,8 @@ namespace
 {
     struct ProbabilisticOpaquePredicatesPass : public PassInfoMixin<ProbabilisticOpaquePredicatesPass>
     {
+        StringMap<bool> FunctionsObfuscated;
+        
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
             LLVMContext& LLVMCtx = M.getContext();
@@ -78,31 +80,37 @@ namespace
             std::random_device Dev;
             std::mt19937 Rng(Dev());
 
-            for (Function& F : M)
+            // make_early_inc_range allows safe modification of the function list
+            for (Function& F : make_early_inc_range(M))
             {
+                Function* Fn = &F;
+
                 // Check if our function is defined and not just declared
-                if (F.isDeclaration()) continue;
+                if (Fn->isDeclaration()) continue;
+
+                // Check if we already obfuscated this function
+                if (FunctionsObfuscated.find(Fn->getName()) != FunctionsObfuscated.end()) continue;
 
                 // Check if function was inserted by us
-                if (F.getName().contains("sample_bernstein_")) continue;
+                if (Fn->getName().contains("sample_bernstein_")) continue;
 
                 // Check if function uses setjmp
-                if (F.hasFnAttribute(Attribute::ReturnsTwice)) continue;
+                if (Fn->hasFnAttribute(Attribute::ReturnsTwice)) continue;
 
                 // Randomly decide if we should apply the obfuscation
                 if (std::uniform_int_distribution(0, 99)(Rng) > POPInsertProbability)
                 {
                     // If the function is annotated, we have to apply the obfuscation anyway
-                    if (!Utils::HasAnnotation(&F, PASS_NAME)) continue;
+                    if (!Utils::HasAnnotation(Fn, PASS_NAME)) continue;
                 }
 
-                // errs() << "Running on " << demangle(F.getName()) << "\n";
+                // errs() << "Running on " << demangle(Fn.getName()) << "\n";
 
                 // Insert at random place in function
                 // We have to guarantee that this random place is after all PHI instructions
                 std::vector<BasicBlock::iterator> ValidInsertionPts;
 
-                for (BasicBlock& BB : F)
+                for (BasicBlock& BB : *Fn)
                 {
                     auto It = BB.getFirstInsertionPt();
 
@@ -123,12 +131,12 @@ namespace
                 // TODO: Multiple Methods for getting randomness
 
                 // Get >=64 bit parameter derived from external fn to create a symbolic variable for the solver
-                const DataLayout &DL = F.getParent()->getDataLayout();
+                const DataLayout &DL = Fn->getParent()->getDataLayout();
                 Value* Parameter = nullptr;
 
                 // Find all callers of F through bitcasts/aliases
                 SmallVector<CallBase*, 8> CallSites;
-                for (User *U : F.users())
+                for (User *U : Fn->users())
                 {
                     // A user might be a CallInst or a BitCast of the function
                     Value *StrippedU = U;
@@ -150,7 +158,7 @@ namespace
                 {
                     for (unsigned i = 0; i < CB->arg_size(); i++)
                     {
-                        if (i >= F.arg_size()) break; // Varargs or mismatch
+                        if (i >= Fn->arg_size()) break; // Varargs or mismatch
 
                         Value *Arg = CB->getArgOperand(i);
 
@@ -160,7 +168,7 @@ namespace
                             SmallPtrSet<Value*, 32> Visited;
                             if (Utils::IsDerivedFromExternalFn(Arg, Visited, 0))
                             {
-                                Parameter = F.getArg(i);
+                                Parameter = Fn->getArg(i);
                                 // errs() << "Match found: Function " << F.getName() 
                                 //     << " has external 64-bit arg at index " << i << "\n";
                                 break;
@@ -172,7 +180,7 @@ namespace
                 // Edge case for functions without callsites (e.g., main)
                 if (CallSites.empty())
                 {
-                    for (Argument &Arg : F.args())
+                    for (Argument &Arg : Fn->args())
                     {
                         // Check if the argument is at least 64 bits wide
                         if (DL.getTypeSizeInBits(Arg.getType()) >= 64) {
@@ -190,8 +198,10 @@ namespace
                     // errs() << "Function " << demangle(F.getName()) 
                     //        << " has no (external-derived) argument (greater than 64 bits). Adding one.\n";
 
-                    // Function types in LLVM are immutable, so we have to create a new function with the new type
-                    continue;
+                    // Create a new Function with an extra argument
+                    // TODO: and make all callsites pass an external-derived value
+                    Fn = Utils::AddLLVMFnArgument(Fn, IRB.getInt64Ty(), "pop_external_param", ConstantInt::get(IRB.getInt64Ty(), 0));
+                    Parameter = Fn->getArg(Fn->arg_size() - 1); // Last argument is the new one
                 }
 
                 // // Tell LLVM that we might modify the value in a way it can't predict
@@ -210,7 +220,7 @@ namespace
 
                 if (!DoubleCallParameter)
                 {
-                    errs() << "Warning: Could not cast parameter in function " << demangle(F.getName()) << " - skipping.\n";
+                    errs() << "Warning: Could not cast parameter in function " << demangle(Fn->getName()) << " - skipping.\n";
                     continue;
                 }
 
@@ -223,7 +233,7 @@ namespace
 
                 // Generate random inverse CDF
                 const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = 
-                    Distribution::InsertRandomBernsteinNewtonRaphson(M, F, Rng);
+                    Distribution::InsertRandomBernsteinNewtonRaphson(M, *Fn, Rng);
 
                 // i64 x = sampler(u)
                 const auto SampleRet = IRB.CreateCall(SamplerFn, { SmallCallParameter });
@@ -274,7 +284,7 @@ namespace
 
                 // Create new BasicBlocks for branches
                 const auto TrueBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
-                const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", &F);
+                const auto FalseBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
 
                 // Replace terminator of BasicBlock (unconditional br added by splitBasicBlock) with ours
                 RandomBasicBlock->getTerminator()->eraseFromParent();
@@ -292,10 +302,13 @@ namespace
                 // Utils::PrintfIR(M, IRB, "FalseBB says hi\n");
 
                 // TODO: Add junkcode
-                if (F.getReturnType()->isVoidTy()) 
+                if (Fn->getReturnType()->isVoidTy()) 
                     IRB.CreateRetVoid();
                 else 
-                    IRB.CreateRet(Constant::getNullValue(F.getReturnType()));
+                    IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
+
+                // Mark function as obfuscated so that the loop doesn't run infinitely
+                FunctionsObfuscated[Fn->getName()] = true;
             }
 
             return PreservedAnalyses::all();
