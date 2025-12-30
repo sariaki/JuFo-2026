@@ -49,6 +49,9 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \algnewcommand{\Var}[1]{\mathit{#1}}
+\algnewcommand{\Break}{\textbf{break}}
+\algnewcommand{\True}{\textbf{true}}
+\algnewcommand{\False}{\textbf{false}}
 \MakeRobust{\Call}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bib.bib}
@@ -103,12 +106,14 @@ Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von s
 Von besonderem Interesse im Bereich der Obfuskation sind opake Prädikate, eine Kontrollflussobfuskation welche immer wahre bzw. falsche Verzweigungen in Programme einfügt.
 
 In dieser Arbeit wird folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine perfekte automatische Deobfuskation (mit aktuellen Methoden) unmöglich machen?}
-Aufbauend auf den Gedanken von \cite{stephensProbabilisticObfuscationCovert2018} wird hierfür die neue Klasse probabilistischer opaker Prädikate vorgestellt. Implementiert wird die Idee in Form eines LLVM-Passes. \textcolor{red}{Aufgrund der Seitenbegrenzung sowie der Fülle an verfügbaren Informationen und Methoden wird die Generierung von getarntem Füllcode (sog. Junkcode) nicht behandelt und implementiert. Die Bedeutung von Füllcode für die Qualität der generierten opaken Prädikate dieser Arbeit wird in \cref{sec:stärke} behandelt.} Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, sondern auch gegenüber neusten KI-Deobfuskationsmethoden.
+Aufbauend auf den Gedanken von \cite{stephensProbabilisticObfuscationCovert2018} wird hierfür die neue Klasse probabilistischer opaker Prädikate vorgestellt. Implementiert wird die Idee in Form eines LLVM-Passes. 
+%Aufgrund der Seitenbegrenzung sowie der Fülle an verfügbaren Informationen und Methoden wird die Generierung von getarntem Füllcode (sog. \emph{Junkcode}) nicht behandelt. Die Bedeutung von Füllcode für die Qualität der generierten opaken Prädikate dieser Arbeit wird in \cref{sec:stärke} dargestellt.
+Dabei wird sich auf die Erzeugung der opaken Prädikate selbst beschränkt. Die Generierung von Füllcode (sog. \emph{Junkcode}) wird nicht behandelt.
+Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, ohne dabei unvertretbare Kosten aufzuweisen.
 
-Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet: Unter der Voraussetung, dass die Aussage $P$ wahr ist, gilt $[P]=1$. Ansonsten gilt $[P]=0$. 
+Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet: Unter der Voraussetung, dass die Aussage $P$ wahr ist, gilt $[P]=1$. Ansonsten gilt $[P]=0$. Pseudocode, welcher Anweisungen modifiziert nimmt an, dass diese in \emph{Single Static Asignment}-Form definiert sind.
 %Vergleicht eine Aussage zwei Variablen, so wird hierfür "`$==$"' verwendet.
-\textcolor{red}{TODO: Abschnitt zu Ende schreiben/verbessern}
-% TODO: Klären, was in welchem Abschnitt gemacht wird.
+\textcolor{red}{TODO: Klären, was in welchem Abschnitt gemacht wird}
 
 \section{Theoretische Grundlagen}
 \subsection{Obfuskation}
@@ -300,7 +305,7 @@ Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikat
 	\end{enumerate}
 \end{definition}
 \begin{definition} \label{def:pProb}
-	$\mathcal{P}_{prob}$ ist die Klasse aller probabilistische opaker Prädikate.
+	$\mathcal{P}_{\Var{prob}}$ ist die Klasse aller probabilistische opaker Prädikate.
 \end{definition}
 
 \begin{example} \label{ex:gleich}
@@ -313,10 +318,10 @@ Dies bildet die Grundidee probabilistischer opaker Prädikate. Anstatt Prädikat
 
 Um zu garantieren, dass das Programm, in welchem das probabilistische opake Prädikat eingefügt wurde, weiterhin funktioniert, kann für den ungewünschten Gegenfall praktische eine Wahrscheinlichkeit eingesetzt werden, welche unter der eines Hardwarefehlers liegt. Auch gewöhnliche Programme bzw. Computer können spontan versagen. Durch das Nutzen so geringer Wahrscheinlichkeiten ...
 
-Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{prob}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es (bei adäquater Implementierung) theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistischen opaken Prädikat zu unterscheiden.
+Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{\Var{prob}}$ sich nicht wie gewünscht verhalten, gewährleistet ihnen theoretische Resistenz gegenüber symbolischer Ausführung. Ohne Heuristiken ist es (bei adäquater Implementierung) theoretisch unmöglich, zwischen einem "`normalen"' Prädikat, welches besonders häufig einen Wert annimmt, und einem probabilistischen opaken Prädikat zu unterscheiden.
 
 \begin{example}
-    Sei $p$ ein Prädikat, welches zu $95\%$ der Zeit wahr ist. Ist $p \in \mathcal{P}_{prob}$ oder einfach besonders häufig wahr?
+    Sei $p$ ein Prädikat, welches zu $95\%$ der Zeit wahr ist. Ist $p \in \mathcal{P}_{\Var{prob}}$ oder einfach besonders häufig wahr?
 \end{example}
 Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
@@ -375,8 +380,7 @@ Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, 
 \begin{equation}
 	\gamma_{\alpha,r}(x) \;=\; \frac{\alpha^r}{\Gamma(r)}x^{r-1}e^{-\alpha x}, x > 0.
 \end{equation}
-Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein \emph{Pattern Matching} Angriff wird hierdurch erschwert, da man nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen müsste \footnote{Die Faktoren werden im Vorhinein zur Kompilationszeit miteinander multipliziert}. 
-\textcolor{red}{Der Nachteil hiervon ist, dass ...}
+Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben. Ein Pattern Matching Angriff müsste demnach nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen\footnote{Die Faktoren werden im Vorhinein zur Kompilationszeit miteinander multipliziert}. Dennoch ist es nicht unmöglich: Es ist nicht davon auszugehen, dass der Term in regulären Programmen (oft/überhaupt) vorkommt.
 
 \paragraph{Generierung über zufälliges Polynom}
 Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion erfüllt.
@@ -387,13 +391,13 @@ Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Ei
     \item $\lim\limits_{x\to \inf \mathbb{D}+}F(x)=0$ und $\lim\limits_{x\to \sup \mathbb{D}-}F(x)=1$.
 \end{enumerate}
 %Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
-Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzusetzen, ist über Bernsteinpolynome folgender Form. Die Umsetzung über Polynome in der Standardbasis ist durch deren häufigen Oszillationen erschwert.
+Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzusetzen, ist über Bernsteinpolynome folgender Form. Die Umsetzung über Polynome in der Standardbasis wäre durch deren häufigen Oszillationen erschwert.
 \begin{equation}
 	B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \\
 	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
 \end{equation}
+Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung zitieren}.
 
-%Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung/Beweis}
 Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
 Das Vorgehen für diese Methode ist somit Folgendes:
@@ -411,7 +415,7 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 \begin{wrapfigure}{R}{0.37\textwidth}
 	\centering
-	\vspace{-9cm}
+	\vspace{-8.5cm}
 %	\setlength{\abovecaptionskip}{-4pt}
 	\includegraphics[width=0.37\textwidth]{img/bernstein}
 	\caption{Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
@@ -420,7 +424,7 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 %Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
-Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt.
+Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=12$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert  das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt. Der Pseudocode hierfür ist in \cref{alg:invCumSum} gegeben.¸
 \begin{algorithm}[!h] 
 	\caption{Berechnung der inversen kumulativen Verteilungsfunktion über das Newton-Raphson-Verfahren }
 	\label{alg:invCumSum}
@@ -462,28 +466,70 @@ Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das 
 
 \subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
 \textcolor{red}{TODO: kürzen!!! und Pseudocode hierfür einfügen}
-%Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable von symbolischen Ausführungsengines betrachtet wird.
-Das Ziel dieses Abschnittes ist es, gleichverteilte Pseudozufallszahlen im Einheitsintervall zu generieren, sodass symbolische Ausführungsengines diese als symbolische Variablen behandeln, ohne ihnen einen konkreten Wert zuweisen zu können. Folgende Methoden existieren hierfür:
-%Hierfür werden die Parameter der obfuskierten Funktionen verwendet. Die Idee hierhinter ist, dass um diese zu bestimmen, ...
-%Hat die zu obfuskierende Funktion kein Parameter, so kann ein Pseudoparameter hinzugefügt werden. 
-%Um zu garantieren, dass die generierte Pseudozufallszahl im Einheitsintervall liegt, existieren mehrere Methoden. Es wurde sich für die einfachste Entschieden. Hier wird der erste Parameter als $64$-Bit Gleitkommazahl betrachtet und durch dessen maximalen Wert geteilt.
+Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable ohne konkreten Wert von symbolischen Ausführungsengines betrachtet wird.
+Infrage kommen hierfür:
+\begin{enumerate}[]
+    \item Betriebssystem- (z.B. \texttt{rand() oder \texttt{time()}}) und Hardware-APIs (z.B. \texttt{rdtsc}), 
+    \item die Zufallszahlgenerierung mittels Race Conditions \cite{colesaRandomRace} oder
+    \item die Nutzung von Funktionsparametern, deren Werte sich nicht statisch festlegen lassen (\emph{Parameter Sampling}).
+\end{enumerate}
 
-\paragraph{Explizite Quellen (Betriebssystem-APIs, Hardware)}
-CPUs und Betriebssysteme bieten mehrere Methoden, welche sich für die Zufallszahlgenerierung eignen (z.B. \texttt{rdtsc}, \texttt{rand() oder \texttt{time()}}). 
-In beiden Fällen sind die genutzten Quellen leicht erkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und folglich auch ihre Tarnung.
+In Fällen 1-2 sind die genutzten Quellen nach erstmaliger Bestimmung leicht wiedererkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und mindert folglich auch ihre Tarnung.
 
-\paragraph{Parameter-Sampling}
-In der Praxis versuchen Angreifer nie, ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Beim Parameter-Sampling wird dies genutzt: Die Parameterwerte einer Funktion lassen sich alleine betrachtet nicht bestimmen, sie werden vom symbolischen Ausführungsengine als symbolische Variablen behandelt.
+Es wurde sich daher für Methode 3 entschieden.
+In der Praxis können Angreifer kaum ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Je größer der Abschnitt, welcher symbolisch ausgeführt wird, desto höher die Wahrscheinlichkeit, dass nicht implementierte Nebenwirkungen die Ergebnisse verfälschen, es zu einer Zustandsraum-Explosion (\emph{State Space Explosion}) kommt oder das \emph{Constraint Solving} sich aufgrund seiner exponentiellen Laufzeitkomplexität nicht mehr in vertretbarer Zeit durchführen lässt \cite{baldoniSurveySymbolicExecution2018}. Durch die Methode sind die opaken Prädikate gut getarnt -- ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm.
 
-Dies bietet den Vorteil, dass die opaken Prädikate gut getarnt sind - ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Problematisch ist dabei, dass manche Parameter bei jedem Aufruf innerhalb eines Programms gleich bleiben und leicht zu bestimmen sind. Die Lösung probabilistischer opaker Prädikate durch einen Angreifer erfordert demnach nur eine Bestimmung des konstanten Parameterwerts.
-
-\paragraph{Race Conditions}
-Das gleichzeitige Überschreiben einer Variable mit verschiedenen Werten durch zwei Threads \cite{colesaRandomRace}  \textcolor{red}{TODO...} \\
-
-Aufgrund ihrer Geschwindigkeit, Unauffälligkeit sowie Einfachheit wurde die Pseudozufallszahlgenerierung über Parameter-Sampling implementiert.
+Beim Parameter-Sampling wird diese Annahme genutzt und ein zufälliger Funktionsparameter für jede zu obfuskierende Funktion ausgewählt. Um die Gefahr zu umgehen, dass dieser Parameter immer einen konstanten Wert annimmt, wurde \cref{alg:symVar} implementiert.
+\begin{algorithm}[!h] 
+    \caption{Suche nach Parameter mit extern-abgeleiteten Wert in Funktionsaufruf über DFS}
+    \label{alg:symVar}
+    \begin{algorithmic}[1]
+        \Function{GetSymbolicVariable}{$Function \; \Var{F} \in \Var{Module}$}
+            \ForAll{$Callsite \; \Var{Callsite} \in \Var{F}$}
+                \ForAll{$Argument \; \Var{Arg} \in \Var{Callsite}$}
+                    \State $\Var{Visited} = \Var{HashMap()}$
+                    
+                    \If{$\Call{IsVariableDerivedFromExternal}{\Var{Arg}, \Var{Visited}}$}
+                        \Return $\Var{Arg}$
+                    \EndIf
+                \EndFor
+            \EndFor
+        \EndFunction
+        
+        \\
+        
+        \Function{IsVariableDerivedFromExternal}{$Argument \; \Var{Arg}, Hashmap \; \Var{Visited}, \Var{Depth} \in \mathbb{Z}$}
+            \If{$\Var{Depth} > 20 \vee \Var{Arg} \in \Var{Visited}$}
+                \Return \False
+            \EndIf
+            
+            \State $\Var{Visited}[\Var{Arg}] = \textbf{true}$
+            
+            \If{$\Var{Val}$ is result of {External Function}} \Comment{Check immediate origin}
+                \Return \True 
+            \EndIf
+            
+            \If{$\Var{Val}$ is {Internal Function Call}} \Comment{Determine data sources $\mathcal{S}$ based on operation type}
+                \State $\mathcal{S} \gets$ Return statements of the called function
+            \ElsIf{$\Var{Val}$ is {Memory Read}}
+                \State $\mathcal{S} \gets$ Values written to the source address (by Stores)
+            \Else \Comment{Arithmetic, Casts, PHI inputs}
+                \State $\mathcal{S} \gets$ $\Var{Val}.Operands$ 
+            \EndIf
+            
+            \ForAll{$\Var{Src} \in \mathcal{S}$} \Comment{Recursively trace data flow}
+                \If{$\Call{IsDerivedFromExternal}{\Var{Src}, \Var{Visited}, \Var{Depth} + 1}$}
+                    \Return \True
+                \EndIf
+            \EndFor
+            
+            \State \Return \False
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
 
 \subsection{Füllcode}
-\textcolor{red}{Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, die Qualität des opaken Prädikats ändert daran nichts. Hierfür wurde die Methode von \cite{} implementiert.}
+Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, unabhängig von der Qualität des opaken Prädikats. Da diese Arbeit nicht das Ziel hat, qualitativ hochwertigen Füllcode zu generieren, wird für den ungewünschten Prädikatwert der Kontrollfluss auf ein zufälligen Basisblock der zu obfuskierenden Funktion übertragen. \textcolor{red}{Darf ich das so schreiben?} Hierdurch erscheinen beide Pfade ausgehend vom Prädikat für einen Angreifer plausibel.
 
 \section{Implementierung}
 %\subsection{Entscheidungen}
@@ -665,7 +711,7 @@ Hierfür wurden folgende Angriffsmethoden auf das einfache Programm aus \cref{fa
 	\item dynamische Analyse über mehrfache Ausführung obfuskierter Programme wie in \cite{zobernigWhenAreOpaque2019} beschrieben
 \end{itemize}
 
-Wie postuliert waren keine der symbolischen Ausführungsengines in der Lage, den korrekten Pfad zu finden. \textcolor{red}{TODO: Verhalten beschreiben (Angr fickt Computer usw.)}
+Wie vermutet waren keine der symbolischen Ausführungsengines in der Lage, die Möglichkeit, dass einer der zwei Pfade nie ausgeführt wird, auszuschließen. \textcolor{red}{TODO: Verhalten beschreiben (Angr fickt Computer usw.)}
 
 \textcolor{red}{Eine Ausführung von Syntia ergab ...}
 
