@@ -16,5 +16,5 @@ namespace Utils
     double BinomialCoefficient(int n, int k);
     bool HasAnnotation(Function *F, std::string_view Annotation);
     bool IsDerivedFromExternalFn(Value *V, SmallPtrSetImpl<Value*> &Visited, int Depth = 0);
-    Function* AddLLVMFnArgument(Function *OldFunc, Type *NewArgType, StringRef Name, Value *NewArgValue);
+    Function* AddLLVMFnArgument(LLVMContext* LLVMCtx, Function *OldFunc, Type *NewArgType, StringRef Name, Value *NewArgValue);
 }

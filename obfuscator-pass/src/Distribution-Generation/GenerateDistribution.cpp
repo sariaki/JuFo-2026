@@ -397,6 +397,7 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_bernstein_newtonraphson_" + demangle(Where.getName()) + std::to_string(InsertedFns), FT);
     Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
 
+    // To prevent collisions
     SamplerFn->setLinkage(GlobalValue::PrivateLinkage);
     SamplerFn->addFnAttr(Attribute::AlwaysInline); 
 

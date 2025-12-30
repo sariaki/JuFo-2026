@@ -342,10 +342,10 @@ Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzus
 		\State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
 		\EndFor
 		
-		\State $\Var{TrueBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
-		\State $\Var{FalseBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
-		\State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{TrueBB}, \Var{FalseBB}}$
-		\State $\Call{FalseBB.InsertJunkCode}{$$}$
+		\State $\Var{RealBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
+		\State $\Var{FakeBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
+		\State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{RealBB}, \Var{FakeBB}}$
+		\State $\Call{FakeBB.InsertJunkCode}{$$}$
 		\EndIf
 		\EndFor
 		\EndProcedure

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OPT_LVL=O1
+OPT_LVL=O3
 
 # Compile source to bitcode using clang
 clang-18 -g -O0 -S -emit-llvm ./example.c -o example.ll

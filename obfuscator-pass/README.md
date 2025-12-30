@@ -1,17 +1,22 @@
-# llvm-pass-skeleton
+# Probabilistic Opaque Predicates LLVM Pass
 
-A completely useless LLVM pass.
-It's for LLVM 17.
+#### Build Instructions
 
-Build:
+```bash
+cmake -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j
+```
 
-    $ cd llvm-pass-skeleton
-    $ mkdir build
-    $ cd build
-    $ cmake ..
-    $ make
-    $ cd ..
+#### Run Instructions
 
-Run:
+```bash
+OPT_LVL=O3
+PASS_PLUGIN_DIR="./build/Obfuscator.so"
+FILENAME="hello_world"
 
-    $ clang -fpass-plugin=`echo build/skeleton/SkeletonPass.*` something.c
+clang-18 -$OPT_LVL -g \
+	-fpass-plugin=$PASS_PLUGIN_DIR \
+	-Xclang -load -Xclang $PASS_PLUGIN_DIR \
+	${FILENAME}.c \
+	-o $FILENAME
+```

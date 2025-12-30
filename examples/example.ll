@@ -59,58 +59,38 @@ define dso_local i64 @wrapper() #0 !dbg !57 {
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @foo(i64 noundef %0) #0 !dbg !60 {
   %2 = alloca i64, align 8
-  %3 = alloca i32, align 4
-  %4 = alloca i32, align 4
-  %5 = alloca i32, align 4
-  %6 = alloca i32, align 4
   store i64 %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !63, metadata !DIExpression()), !dbg !64
-  %7 = load i64, ptr %2, align 8, !dbg !65
-  %8 = call i32 (ptr, ...) @printf(ptr noundef @.str, i64 noundef %7), !dbg !66
-  call void @llvm.dbg.declare(metadata ptr %3, metadata !67, metadata !DIExpression()), !dbg !69
-  store volatile i32 1, ptr %3, align 4, !dbg !69
-  call void @llvm.dbg.declare(metadata ptr %4, metadata !70, metadata !DIExpression()), !dbg !71
-  store volatile i32 2, ptr %4, align 4, !dbg !71
-  call void @llvm.dbg.declare(metadata ptr %5, metadata !72, metadata !DIExpression()), !dbg !73
-  %9 = load volatile i32, ptr %3, align 4, !dbg !74
-  %10 = load volatile i32, ptr %4, align 4, !dbg !75
-  %11 = srem i32 %9, %10, !dbg !76
-  store volatile i32 %11, ptr %5, align 4, !dbg !73
-  call void @llvm.dbg.declare(metadata ptr %6, metadata !77, metadata !DIExpression()), !dbg !78
-  %12 = load volatile i32, ptr %5, align 4, !dbg !79
-  %13 = load volatile i32, ptr %4, align 4, !dbg !80
-  %14 = load volatile i32, ptr %3, align 4, !dbg !81
-  %15 = mul nsw i32 %13, %14, !dbg !82
-  %16 = add nsw i32 %12, %15, !dbg !83
-  store volatile i32 %16, ptr %6, align 4, !dbg !78
-  ret void, !dbg !84
+  %3 = load i64, ptr %2, align 8, !dbg !65
+  %4 = call i32 (ptr, ...) @printf(ptr noundef @.str, i64 noundef %3), !dbg !66
+  ret void, !dbg !67
 }
 
 declare i32 @printf(ptr noundef, ...) #3
 
 ; Function Attrs: noinline nounwind optnone uwtable
-define dso_local i32 @bar(i32 noundef %0) #0 !dbg !85 {
+define dso_local i32 @bar(i32 noundef %0) #0 !dbg !68 {
   %2 = alloca i32, align 4
   %3 = alloca i32, align 4
   store i32 %0, ptr %2, align 4
-  call void @llvm.dbg.declare(metadata ptr %2, metadata !88, metadata !DIExpression()), !dbg !89
-  call void @llvm.dbg.declare(metadata ptr %3, metadata !90, metadata !DIExpression()), !dbg !91
-  %4 = load i32, ptr %2, align 4, !dbg !92
-  %5 = add nsw i32 %4, 1, !dbg !93
-  store i32 %5, ptr %3, align 4, !dbg !91
-  %6 = load i32, ptr %3, align 4, !dbg !94
-  %7 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %6), !dbg !95
-  %8 = load i32, ptr %3, align 4, !dbg !96
-  ret i32 %8, !dbg !97
+  call void @llvm.dbg.declare(metadata ptr %2, metadata !71, metadata !DIExpression()), !dbg !72
+  call void @llvm.dbg.declare(metadata ptr %3, metadata !73, metadata !DIExpression()), !dbg !74
+  %4 = load i32, ptr %2, align 4, !dbg !75
+  %5 = add nsw i32 %4, 1, !dbg !76
+  store i32 %5, ptr %3, align 4, !dbg !74
+  %6 = load i32, ptr %3, align 4, !dbg !77
+  %7 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %6), !dbg !78
+  %8 = load i32, ptr %3, align 4, !dbg !79
+  ret i32 %8, !dbg !80
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
-define dso_local i32 @main() #0 !dbg !98 {
+define dso_local i32 @main() #0 !dbg !81 {
   %1 = alloca i32, align 4
   store i32 0, ptr %1, align 4
-  %2 = call i64 @wrapper(), !dbg !101
-  call void @foo(i64 noundef %2), !dbg !102
-  ret i32 0, !dbg !103
+  %2 = call i64 @wrapper(), !dbg !84
+  call void @foo(i64 noundef %2), !dbg !85
+  ret i32 0, !dbg !86
 }
 
 attributes #0 = { noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
@@ -125,7 +105,7 @@ attributes #4 = { nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 24, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "./example.c", directory: "/home/paul/Documents/JuFo-2026/examples", checksumkind: CSK_MD5, checksum: "3ea44ddee13b2ab84b687f7fca1ff579")
+!2 = !DIFile(filename: "./example.c", directory: "/home/paul/Documents/JuFo-2026/examples", checksumkind: CSK_MD5, checksum: "8dcaafc4a2d20b9010b46343247899bc")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 72, elements: !5)
 !4 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
 !5 = !{!6}
@@ -136,7 +116,7 @@ attributes #4 = { nounwind }
 !10 = !{!11}
 !11 = !DISubrange(count: 8)
 !12 = distinct !DICompileUnit(language: DW_LANG_C11, file: !13, producer: "Ubuntu clang version 18.1.3 (1ubuntu1)", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !14, globals: !20, splitDebugInlining: false, nameTableKind: None)
-!13 = !DIFile(filename: "example.c", directory: "/home/paul/Documents/JuFo-2026/examples", checksumkind: CSK_MD5, checksum: "3ea44ddee13b2ab84b687f7fca1ff579")
+!13 = !DIFile(filename: "example.c", directory: "/home/paul/Documents/JuFo-2026/examples", checksumkind: CSK_MD5, checksum: "8dcaafc4a2d20b9010b46343247899bc")
 !14 = !{!15}
 !15 = !DIDerivedType(tag: DW_TAG_typedef, name: "uint64_t", file: !16, line: 27, baseType: !17)
 !16 = !DIFile(filename: "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h", directory: "", checksumkind: CSK_MD5, checksum: "256fcabbefa27ca8cf5e6d37525e6e16")
@@ -190,40 +170,23 @@ attributes #4 = { nounwind }
 !64 = !DILocation(line: 22, column: 29, scope: !60)
 !65 = !DILocation(line: 24, column: 23, scope: !60)
 !66 = !DILocation(line: 24, column: 3, scope: !60)
-!67 = !DILocalVariable(name: "a", scope: !60, file: !2, line: 26, type: !68)
-!68 = !DIDerivedType(tag: DW_TAG_volatile_type, baseType: !36)
-!69 = !DILocation(line: 26, column: 16, scope: !60)
-!70 = !DILocalVariable(name: "b", scope: !60, file: !2, line: 27, type: !68)
-!71 = !DILocation(line: 27, column: 16, scope: !60)
-!72 = !DILocalVariable(name: "c", scope: !60, file: !2, line: 28, type: !68)
-!73 = !DILocation(line: 28, column: 16, scope: !60)
-!74 = !DILocation(line: 28, column: 20, scope: !60)
-!75 = !DILocation(line: 28, column: 24, scope: !60)
-!76 = !DILocation(line: 28, column: 22, scope: !60)
-!77 = !DILocalVariable(name: "d", scope: !60, file: !2, line: 29, type: !68)
-!78 = !DILocation(line: 29, column: 16, scope: !60)
-!79 = !DILocation(line: 29, column: 20, scope: !60)
-!80 = !DILocation(line: 29, column: 24, scope: !60)
-!81 = !DILocation(line: 29, column: 28, scope: !60)
-!82 = !DILocation(line: 29, column: 26, scope: !60)
-!83 = !DILocation(line: 29, column: 22, scope: !60)
-!84 = !DILocation(line: 31, column: 1, scope: !60)
-!85 = distinct !DISubprogram(name: "bar", scope: !2, file: !2, line: 33, type: !86, scopeLine: 34, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !12, retainedNodes: !31)
-!86 = !DISubroutineType(types: !87)
-!87 = !{!36, !36}
-!88 = !DILocalVariable(name: "x", arg: 1, scope: !85, file: !2, line: 33, type: !36)
-!89 = !DILocation(line: 33, column: 23, scope: !85)
-!90 = !DILocalVariable(name: "y", scope: !85, file: !2, line: 35, type: !36)
-!91 = !DILocation(line: 35, column: 7, scope: !85)
-!92 = !DILocation(line: 35, column: 11, scope: !85)
-!93 = !DILocation(line: 35, column: 13, scope: !85)
-!94 = !DILocation(line: 36, column: 22, scope: !85)
-!95 = !DILocation(line: 36, column: 3, scope: !85)
-!96 = !DILocation(line: 37, column: 10, scope: !85)
-!97 = !DILocation(line: 37, column: 3, scope: !85)
-!98 = distinct !DISubprogram(name: "main", scope: !2, file: !2, line: 40, type: !99, scopeLine: 41, spFlags: DISPFlagDefinition, unit: !12)
-!99 = !DISubroutineType(types: !100)
-!100 = !{!36}
-!101 = !DILocation(line: 42, column: 7, scope: !98)
-!102 = !DILocation(line: 42, column: 3, scope: !98)
-!103 = !DILocation(line: 43, column: 3, scope: !98)
+!67 = !DILocation(line: 31, column: 1, scope: !60)
+!68 = distinct !DISubprogram(name: "bar", scope: !2, file: !2, line: 33, type: !69, scopeLine: 34, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !12, retainedNodes: !31)
+!69 = !DISubroutineType(types: !70)
+!70 = !{!36, !36}
+!71 = !DILocalVariable(name: "x", arg: 1, scope: !68, file: !2, line: 33, type: !36)
+!72 = !DILocation(line: 33, column: 23, scope: !68)
+!73 = !DILocalVariable(name: "y", scope: !68, file: !2, line: 35, type: !36)
+!74 = !DILocation(line: 35, column: 7, scope: !68)
+!75 = !DILocation(line: 35, column: 11, scope: !68)
+!76 = !DILocation(line: 35, column: 13, scope: !68)
+!77 = !DILocation(line: 36, column: 22, scope: !68)
+!78 = !DILocation(line: 36, column: 3, scope: !68)
+!79 = !DILocation(line: 37, column: 10, scope: !68)
+!80 = !DILocation(line: 37, column: 3, scope: !68)
+!81 = distinct !DISubprogram(name: "main", scope: !2, file: !2, line: 40, type: !82, scopeLine: 41, spFlags: DISPFlagDefinition, unit: !12)
+!82 = !DISubroutineType(types: !83)
+!83 = !{!36}
+!84 = !DILocation(line: 42, column: 7, scope: !81)
+!85 = !DILocation(line: 42, column: 3, scope: !81)
+!86 = !DILocation(line: 43, column: 3, scope: !81)

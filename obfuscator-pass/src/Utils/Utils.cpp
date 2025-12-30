@@ -246,7 +246,7 @@ bool Utils::IsDerivedFromExternalFn(Value *V, SmallPtrSetImpl<Value*> &Visited, 
 }
 
 // Function types in LLVM are immutable, so we have to create a new function with a new type
-Function* Utils::AddLLVMFnArgument(Function *OldFunc, Type *NewArgType, StringRef Name, Value *NewArgValue)
+Function* Utils::AddLLVMFnArgument(LLVMContext* LLVMCtx, Function *OldFunc, Type *NewArgType, StringRef Name, Value *NewArgValue)
 {
     Module *M = OldFunc->getParent();
     
@@ -334,7 +334,15 @@ Function* Utils::AddLLVMFnArgument(Function *OldFunc, Type *NewArgType, StringRe
     OldFunc->setName(OldName + ".old");
     NewFunc->setName(OldName);
 
-    OldFunc->eraseFromParent();
+    // This doesn't work when running optimizations since the LazyCallGraph still references OldFunc
+    // OldFunc->eraseFromParent();
+
+    // We can instead just leave the empty old function to be removed later
+    BasicBlock* ZombieBB = BasicBlock::Create(*LLVMCtx, "zombie", OldFunc);
+    new UnreachableInst(*LLVMCtx, ZombieBB);
+
+    OldFunc->setLinkage(GlobalValue::InternalLinkage);
+    OldFunc->setSubprogram(nullptr);
 
     return NewFunc;
 }

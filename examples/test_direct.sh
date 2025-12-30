@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OPT_LVL=O0
+OPT_LVL=O3
 PASS_PLUGIN_DIR="/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator.so"
 FILENAME="example"
 PROBABILITY=75
