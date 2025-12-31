@@ -343,6 +343,7 @@ Function* Utils::AddLLVMFnArgument(LLVMContext* LLVMCtx, Function *OldFunc, Type
 
     OldFunc->setLinkage(GlobalValue::InternalLinkage);
     OldFunc->setSubprogram(nullptr);
+    OldFunc->setComdat(nullptr); 
 
     return NewFunc;
 }

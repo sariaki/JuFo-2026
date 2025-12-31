@@ -38,7 +38,7 @@ cl::opt<unsigned int> POPInsertProbability(
 cl::opt<unsigned int> POPPredicateProbability(
     "pop-predicate-probability",
     cl::desc("Probability that the opaque predicate evaluates to true (0-100)"),
-    cl::init(99),
+    cl::init(98),
     cl::cat(PassCategory)
 );
 
@@ -61,7 +61,7 @@ cl::opt<unsigned int> POPMinDegree(
 cl::opt<unsigned int> POPMaxDegree(
     "pop-max-degree",
     cl::desc("Maximum degree of the bernstein polynomials used"),
-    cl::init(10),
+    cl::init(3),
     cl::cat(PassCategory)
 );
 
@@ -78,7 +78,7 @@ namespace
 {
     struct ProbabilisticOpaquePredicatesPass : public PassInfoMixin<ProbabilisticOpaquePredicatesPass>
     {
-        StringMap<bool> FunctionsObfuscated;
+        // StringMap<bool> FunctionsObfuscated;
         
         PreservedAnalyses run(Module& M, ModuleAnalysisManager& AM)
         {
@@ -88,51 +88,44 @@ namespace
             std::random_device Dev;
             std::mt19937 Rng(Dev());
 
+            const std::string AttrName = "pop-obfuscated";
+
             // make_early_inc_range allows safe modification of the function list
-            for (Function& F : make_early_inc_range(M))
+            std::vector<Function*> FunctionsToProcess;
+            for (Function& F : M)
             {
-                Function* Fn = &F;
+                FunctionsToProcess.push_back(&F);
+            }
+
+            for (Function* Fn : FunctionsToProcess)
+            {
+                // Function* Fn = &F;
 
                 // Check if our function is defined and not just declared
                 if (Fn->isDeclaration()) continue;
 
-                // Check if we already obfuscated this function
-                if (FunctionsObfuscated.find(Fn->getName()) != FunctionsObfuscated.end()) continue;
+                // Skip obfuscated functions
+                // if (FunctionsObfuscated.find(Fn->getName()) != FunctionsObfuscated.end()) continue;
+                if (Fn->hasFnAttribute(AttrName)) continue;
 
-                // Check if function was inserted by us
+                // Skip if function was inserted by us
                 if (Fn->getName().contains("sample_bernstein_")) continue;
+
+                // Skip intrinsics
+                if (Fn->isIntrinsic()) continue;
+
+                // Skip COMDAT functions (C++ Templates, Inline functions)
+                // The linker merges these across files based on name/signature.
+                // if (Fn->hasComdat()) continue;
+                
+                // Skip functions with their Address taken
+                // If the address is taken, it might be called via a function pointer/vtable 
+                // if (F.hasAddressTaken()) continue;
 
                 // Check if function uses setjmp
                 if (Fn->hasFnAttribute(Attribute::ReturnsTwice)) continue;
 
-                // Randomly decide if we should apply the obfuscation
-                if (std::uniform_int_distribution(0, 99)(Rng) > POPInsertProbability)
-                {
-                    // If the function is annotated, we have to apply the obfuscation anyway
-                    if (!Utils::HasAnnotation(Fn, PASS_NAME)) continue;
-                }
-
                 // errs() << "Running on " << demangle(Fn.getName()) << "\n";
-
-                // Insert at random place in function
-                std::vector<BasicBlock::iterator> ValidInsertionPts;
-                std::vector<BasicBlock*> BasicBlockCandidates; // Contenders for FakeBB
-
-                for (BasicBlock& BB : *Fn)
-                {
-                    // It's forbidden to jump to the entry block or Exception Handling Pads
-                    if (!(&BB == &Fn->getEntryBlock()) && !BB.isEHPad())
-                        BasicBlockCandidates.push_back(&BB);
-
-                    // We have to guarantee that this random place is after all PHI instructions
-                    auto It = BB.getFirstInsertionPt();
-
-                    // BB is either empty or malformed
-                    if (It == BB.end()) continue;
-
-                    for (; It != BB.end(); It++)
-                        ValidInsertionPts.push_back(It);
-                }
                
                 // TODO: Multiple Methods for getting randomness
 
@@ -169,7 +162,7 @@ namespace
                         Value *Arg = CB->getArgOperand(i);
 
                         // Bit-width check
-                        if (DL.getTypeSizeInBits(Arg->getType()) == 64) // TODO: >= 64
+                        // if (DL.getTypeSizeInBits(Arg->getType()) == 64) // TODO: >= 64
                         {
                             SmallPtrSet<Value*, 32> Visited;
                             if (Utils::IsDerivedFromExternalFn(Arg, Visited, 0))
@@ -189,7 +182,7 @@ namespace
                     for (Argument &Arg : Fn->args())
                     {
                         // Check if the argument is at least 64 bits wide
-                        if (DL.getTypeSizeInBits(Arg.getType()) >= 64)
+                        // if (DL.getTypeSizeInBits(Arg.getType()) >= 64)
                         {
                             Parameter = &Arg;
                             // errs() << "Match found: Function " << F.getName() 
@@ -207,8 +200,16 @@ namespace
 
                     // Create a new Function with an extra argument
                     // TODO: and make all callsites pass an external-derived value
-                    Fn = Utils::AddLLVMFnArgument(&LLVMCtx, Fn, IRB.getInt64Ty(), "pop_external_param", ConstantInt::get(IRB.getInt64Ty(), 0));
-                    Parameter = Fn->getArg(Fn->arg_size() - 1); // Last argument is the new one
+                    // Fn = Utils::AddLLVMFnArgument(&LLVMCtx, Fn, IRB.getInt64Ty(), "pop_external_param", ConstantInt::get(IRB.getInt64Ty(), 0));
+                    // Parameter = Fn->getArg(Fn->arg_size() - 1); // Last argument is the new one
+                    continue;
+                }
+
+                // Randomly decide if we should apply the obfuscation
+                if (std::uniform_int_distribution(0, 99)(Rng) > POPInsertProbability.getValue())
+                {
+                    // If the function is annotated, we have to apply the obfuscation anyway
+                    if (!Utils::HasAnnotation(Fn, PASS_NAME)) continue;
                 }
 
                 // Tell LLVM that we might modify the value in a way it can't predict
@@ -223,10 +224,31 @@ namespace
                 // Volatile Load it back
                 Value* VolatileParameter = IRB.CreateLoad(Parameter->getType(), Alloc, true);
                 */
-                
-                for (unsigned int i = 0; i < POPRunsPerFunction; i++)
+
+                // for (unsigned int i = 0; i < POPRunsPerFunction.getValue(); i++)
                 {
                     // Choose random insertion point
+                    // We have to repoulate these lists
+                    // since they currently might contain dangling pointers
+                    std::vector<BasicBlock::iterator> ValidInsertionPts;
+                    std::vector<BasicBlock*> BasicBlockCandidates; // Contenders for FakeBB
+
+                    for (BasicBlock& BB : *Fn)
+                    {
+                        // It's forbidden to jump to the entry block or Exception Handling Pads
+                        if (!(&BB == &Fn->getEntryBlock()) && !BB.isEHPad())
+                            BasicBlockCandidates.push_back(&BB);
+
+                        // We have to guarantee that this random place is after all PHI instructions
+                        auto It = BB.getFirstInsertionPt();
+
+                        // BB is either empty or malformed
+                        if (It == BB.end()) continue;
+
+                        for (; It != BB.end(); It++)
+                            ValidInsertionPts.push_back(It);
+                    }
+
                     const auto RandomInsertionIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
                     ValidInsertionPts.size() - 1)(Rng);
                     const auto RandomInsertionPt = ValidInsertionPts[RandomInsertionIdx];
@@ -273,7 +295,7 @@ namespace
                         double CurrentSlope = Bernsteinpolynomial.EvaluateDerivativeAt(Threshold);
 
                         // f(x) = B(x) - Target
-                        double OffsetY = CurrentY - static_cast<double>(POPPredicateProbability) / 100.0;
+                        double OffsetY = CurrentY - static_cast<double>(POPPredicateProbability.getValue()) / 100.0;
                         
                         // Newton Step: x = x - f(x) / f'(x)
                         Threshold -= OffsetY / CurrentSlope;
@@ -288,7 +310,7 @@ namespace
 
                     // Create predicate
                     Value* CmpResult;
-                    if (PredicateType == true) // always true predicate
+                    if (PredicateType) // always true predicate
                     {
                         // if x < Threshold...
                         CmpResult = IRB.CreateFCmpOLT(SampleRet,
@@ -305,7 +327,7 @@ namespace
                     BasicBlock* RealBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
                     BasicBlock* FakeBB = nullptr;
 
-                    if (BasicBlockCandidates.empty())
+                    // if (BasicBlockCandidates.empty())
                     {
                         FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
 
@@ -318,16 +340,16 @@ namespace
                         else 
                             IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
                     }
-                    else
-                    {
-                        const auto RandomBBIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
-                            BasicBlockCandidates.size() - 1)(Rng);
-                        FakeBB = BasicBlockCandidates[RandomBBIdx];
+                    // else
+                    // {
+                    //     const auto RandomBBIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
+                    //         BasicBlockCandidates.size() - 1)(Rng);
+                    //     FakeBB = BasicBlockCandidates[RandomBBIdx];
 
-                        // Fix PHI nodes in FakeBB
-                        for (auto& PhiNode : FakeBB->phis())
-                            PhiNode.addIncoming(UndefValue::get(PhiNode.getType()), RandomBasicBlock);
-                    }
+                    //     // Fix PHI nodes in FakeBB
+                    //     for (auto& PhiNode : FakeBB->phis())
+                    //         PhiNode.addIncoming(UndefValue::get(PhiNode.getType()), RandomBasicBlock);
+                    // }
 
                     // Replace terminator of BasicBlock (unconditional br added by splitBasicBlock) with ours
                     RandomBasicBlock->getTerminator()->eraseFromParent();
@@ -343,10 +365,11 @@ namespace
                 }
 
                 // Mark function as obfuscated so that the loop doesn't run infinitely
-                FunctionsObfuscated[Fn->getName()] = true;
+                // FunctionsObfuscated[Fn->getName()] = true;
+                Fn->addFnAttr(AttrName);
             }
 
-            return PreservedAnalyses::all();
+            return PreservedAnalyses::none();
         }
     };
 }

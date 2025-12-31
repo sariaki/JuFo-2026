@@ -6,7 +6,7 @@ using namespace llvm;
 // This groups the command-line options for readability
 extern cl::OptionCategory PassCategory;
 
-extern cl::opt<unsigned int> POPProbability;
+extern cl::opt<unsigned int> POPInsertProbability;
 extern cl::opt<unsigned int> POPPredicateProbability;
 extern cl::opt<unsigned int> POPRunsPerFunction;
 extern cl::opt<unsigned int> POPMinDegree;
