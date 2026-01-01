@@ -70,7 +70,7 @@ constexpr unsigned int MIN_ITERATIONS = 7;
 cl::opt<unsigned int> POPNewtonRaphsonIterations(
     "pop-iterations",
     cl::desc("Number of iterations for the Newton-Raphson method (minimum: 7)"),
-    cl::init(12),
+    cl::init(8),
     cl::cat(PassCategory)
 );
 
@@ -90,16 +90,14 @@ namespace
 
             const std::string AttrName = "pop-obfuscated";
 
-            // make_early_inc_range allows safe modification of the function list
-            std::vector<Function*> FunctionsToProcess;
-            for (Function& F : M)
+            // make_early_inc_range allows safe modification of the function list,
+            // needed when we add parameters to functions
+            auto& FunctionsToProcess = M.getFunctionList();
+            auto It = FunctionsToProcess.begin();
+            while (It != FunctionsToProcess.end())
             {
-                FunctionsToProcess.push_back(&F);
-            }
-
-            for (Function* Fn : FunctionsToProcess)
-            {
-                // Function* Fn = &F;
+                Function* Fn = &(*It);
+                ++It;
 
                 // Check if our function is defined and not just declared
                 if (Fn->isDeclaration()) continue;
