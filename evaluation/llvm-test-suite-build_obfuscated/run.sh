@@ -40,6 +40,7 @@ CXX_FLAGS="$C_FLAGS"
 cmake -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_C_COMPILER=/usr/bin/clang-18 \
       -DCMAKE_CXX_COMPILER=/usr/bin/clang++-18 \
+      -DTEST_SUITE_BENCHMARKING_ONLY=ON \
       -DTEST_SUITE_SUBDIRS="MultiSource" \
       -DCMAKE_C_FLAGS="$C_FLAGS" \
       -DCMAKE_CXX_FLAGS="$CXX_FLAGS" \
@@ -48,7 +49,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
 
 make -j"$(nproc)"
 
-RESULTS_FILE="results_new${PROBABILITY}.json"
-lit -v -j "$(nproc)" --timeout=300 --filter-out="MallocBench/gs|lua" -o "$RESULTS_FILE" .
+RESULTS_FILE="results${PROBABILITY}.json"
+lit -v -j "$(nproc)" -o "$RESULTS_FILE" . # --timeout=300 --filter-out="MallocBench/gs|lua"
 
 echo "Done. Results saved to: $(pwd)/$RESULTS_FILE"

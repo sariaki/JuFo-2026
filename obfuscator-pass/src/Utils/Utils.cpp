@@ -41,6 +41,64 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
     return nullptr;
 }
 
+Value* Utils::CastIRValueToI64(Value* V, IRBuilder<>& IRB)
+{
+    Type* Ty = V->getType();
+    Type* I64Ty = IRB.getInt64Ty();
+
+    // Integers
+    if (Ty->isIntegerTy())
+    {
+        unsigned BitWidth = Ty->getIntegerBitWidth();
+        
+        if (BitWidth == 64)
+            return V;
+        else if (BitWidth < 64)
+            return IRB.CreateZExt(V, I64Ty, "zext_to_i64");
+        else
+            return IRB.CreateTrunc(V, I64Ty, "trunc_to_i64");
+    }
+    
+    // Pointers (ptr)
+    // PtrToInt automatically handles the architecture specifics, 
+    // we force the result to i64.
+    else if (Ty->isPointerTy())
+    {
+        return IRB.CreatePtrToInt(V, I64Ty, "ptr_to_i64");
+    }
+
+    // Floating Point (float, double, half, fp128)
+    else if (Ty->isFloatingPointTy())
+    {
+        unsigned BitWidth = Ty->getPrimitiveSizeInBits();
+        Type* IntSameSizeTy = IRB.getIntNTy(BitWidth);
+
+        // BitCast float to int of same width (e.g., float -> i32, double -> i64)
+        // This preserves NaNs, Infs, and Denormals as raw bit patterns.
+        Value* RawBits = IRB.CreateBitCast(V, IntSameSizeTy, "fp_bitcast");
+
+        if (BitWidth == 64)
+            return RawBits;
+        else if (BitWidth < 64)
+            return IRB.CreateZExt(RawBits, I64Ty, "fp_bits_zext");
+        else
+            return IRB.CreateTrunc(RawBits, I64Ty, "fp_bits_trunc");
+    }
+
+    // Vectors (e.g., <4 x i32>)
+    // Extract the first element and recursively cast it.
+    else if (Ty->isVectorTy())
+    {
+        // Extract element 0
+        Value* FirstElem = IRB.CreateExtractElement(V, (uint64_t)0, "extract_vec_0");
+        return CastIRValueToI64(FirstElem, IRB);
+    }
+
+    // We don't want to crash the compiler, so just return nullptr here
+    // report_fatal_error("Utils::CastIRValueToI64: unsupported source type\n");
+    return nullptr;
+}
+
 CallInst* Utils::PrintfIR(Module& M, IRBuilder<>& IRB, StringRef Format, ArrayRef<Value*> Args) 
 {
     LLVMContext& C = M.getContext();

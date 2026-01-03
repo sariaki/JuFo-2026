@@ -314,16 +314,16 @@ namespace
 
                     // if (BasicBlockCandidates.empty())
                     // {
-                    //     FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
+                        FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
 
-                    //     IRB.SetInsertPoint(FakeBB);
-                    //     // Utils::PrintfIR(M, IRB, "FakeBB says hi\n");
+                        IRB.SetInsertPoint(FakeBB);
+                        // Utils::PrintfIR(M, IRB, "FakeBB says hi\n");
 
-                    //     // TODO: Add junkcode
-                    //     if (Fn->getReturnType()->isVoidTy()) 
-                    //         IRB.CreateRetVoid();
-                    //     else 
-                    //         IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
+                        // TODO: Add junkcode
+                        if (Fn->getReturnType()->isVoidTy()) 
+                            IRB.CreateRetVoid();
+                        else 
+                            IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
                     // }
                     // else
                     // {
@@ -343,14 +343,10 @@ namespace
                     // Utils::PrintfIR(M, IRB, "RealBB says hi\n");
 
                     IRB.SetInsertPoint(RandomBasicBlock);
-                    // if (PredicateType == true)
-                    //     IRB.CreateCondBr(CmpResult, RealBB, FakeBB);
-                    // else
-                    //     IRB.CreateCondBr(CmpResult, FakeBB, RealBB);
                     if (PredicateType == true)
-                        IRB.CreateCondBr(CmpResult, RealBB, RealBB);
+                        IRB.CreateCondBr(CmpResult, RealBB, FakeBB);
                     else
-                        IRB.CreateCondBr(CmpResult, RealBB, RealBB);
+                        IRB.CreateCondBr(CmpResult, FakeBB, RealBB);
                 }
 
                 // Mark function as obfuscated so that the loop doesn't run infinitely

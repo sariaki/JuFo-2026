@@ -12,6 +12,7 @@ using namespace llvm;
 namespace Utils
 {
     Value* CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned = true);
+    Value* CastIRValueToI64(Value* V, IRBuilder<>& IRB);
     CallInst* PrintfIR(Module& M, IRBuilder<>& IRB, StringRef Format, ArrayRef<Value*> Args = {}) ;
     double BinomialCoefficient(int n, int k);
     bool HasAnnotation(Function *F, std::string_view Annotation);
