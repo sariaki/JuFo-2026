@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{vec35DecompilerExplorer}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6c1be3b5dc2dd830efddb019e8ef438c}{%
+           family={35},
+           familyi={3\bibinitperiod},
+           given={Vector},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c1be3b5dc2dd830efddb019e8ef438c}
+      \strng{fullhash}{6c1be3b5dc2dd830efddb019e8ef438c}
+      \strng{bibnamehash}{6c1be3b5dc2dd830efddb019e8ef438c}
+      \strng{authorbibnamehash}{6c1be3b5dc2dd830efddb019e8ef438c}
+      \strng{authornamehash}{6c1be3b5dc2dd830efddb019e8ef438c}
+      \strng{authorfullhash}{6c1be3b5dc2dd830efddb019e8ef438c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/decompiler-explorer/decompiler-explorer}}
+      \field{title}{Quelltext von {Decompiler Explorer}}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
     \entry{baldoniSurveySymbolicExecution2018}{misc}{}
       \name{author}{5}{}{%
         {{hash=22a28bd4c4375f650b7bc5ca7e1def0b}{%
@@ -135,6 +161,60 @@
       \verb{doi}
       \verb 10.1145/2991079.2991114
       \endverb
+    \endentry
+    \entry{obfuscatorBenchmarks}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8987900f8dd880a64ee48e432b282a12}{%
+           family={Baumgartner},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{fullhash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{bibnamehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{authorbibnamehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{authornamehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{authorfullhash}{8987900f8dd880a64ee48e432b282a12}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/tum-i4/obfuscation-benchmarks}}
+      \field{title}{Banescu, Sebastian and Collberg, Christian and Ganesh, Vijay and Newsham, Zack and Pretschner, Alexander}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{paulPOP}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8987900f8dd880a64ee48e432b282a12}{%
+           family={Baumgartner},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{fullhash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{bibnamehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{authorbibnamehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{authornamehash}{8987900f8dd880a64ee48e432b282a12}
+      \strng{authorfullhash}{8987900f8dd880a64ee48e432b282a12}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/sariaki/JuFo-2026}}
+      \field{title}{Quelltext für die Implementierung von POP}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
     \endentry
     \entry{blazytkoSyntiaSynthesizingSemanticsa}{article}{}
       \name{author}{4}{}{%
@@ -332,6 +412,152 @@
       \verb http://portal.acm.org/citation.cfm?doid=268946.268962
       \endverb
       \keyw{gelesen wichtig}
+    \endentry
+    \entry{dallapredaOpaquePredicatesDetection2006}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=8aca47f2b07ea0dbe2a339a23bc3c15d}{%
+           family={Dalla\bibnamedelima Preda},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Mila},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2d66a597c5166f9cd0796f487c98770f}{%
+           family={Madou},
+           familyi={M\bibinitperiod},
+           given={Matias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b55af5846718f83094adffa92aa3c5c3}{%
+           family={De\bibnamedelima Bosschere},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Koen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6d8cb6af4a5b9439461ca60b0f177f91}{%
+           family={Giacobazzi},
+           familyi={G\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{17}{}{%
+        {{hash=d003d9a994005f480f7fa06dde74326e}{%
+           family={Hutchison},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=45496c6a7530cfbfb4f3218a2602b77e}{%
+           family={Kanade},
+           familyi={K\bibinitperiod},
+           given={Takeo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9dd3a56c94774f5880ca7475fdc308ea}{%
+           family={Kittler},
+           familyi={K\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fb11814963625d418100ec9ca3710333}{%
+           family={Kleinberg},
+           familyi={K\bibinitperiod},
+           given={Jon\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e07c4272d13053fc36d770d4735f2c14}{%
+           family={Mattern},
+           familyi={M\bibinitperiod},
+           given={Friedemann},
+           giveni={F\bibinitperiod}}}%
+        {{hash=47dbc192a926109dd86ea18b25249a93}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c6af39e79e88306281e6e0b0ccea956c}{%
+           family={Naor},
+           familyi={N\bibinitperiod},
+           given={Moni},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d3ea70a5274b32c8a184dd4d844ee47}{%
+           family={Nierstrasz},
+           familyi={N\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6bcab2334dc65214139b0ad45fe8185e}{%
+           family={Pandu\bibnamedelima Rangan},
+           familyi={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=665b6687b4ed05721bf55d61032505ca}{%
+           family={Steffen},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8753fbfaaa4aa8a1195c657edc9daef4}{%
+           family={Sudan},
+           familyi={S\bibinitperiod},
+           given={Madhu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cd9aa5de7673e375889cc32997ef97df}{%
+           family={Terzopoulos},
+           familyi={T\bibinitperiod},
+           given={Demetri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ddfb7c40f1ab7e805c025ac7ef922cc7}{%
+           family={Tygar},
+           familyi={T\bibinitperiod},
+           given={Dough},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a4cf237a06b02ad7e7601b14b4d005be}{%
+           family={Vardi},
+           familyi={V\bibinitperiod},
+           given={Moshe\bibnamedelima Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e47f9d085c16045a5911784850208ada}{%
+           family={Weikum},
+           familyi={W\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=aa4a83405eb5652cfc269f0942daea0a}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4950acee3a31461572a10d20c3afda38}{%
+           family={Vene},
+           familyi={V\bibinitperiod},
+           given={Varmo},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{291630cb1fcc270e008eeb3db401a94e}
+      \strng{fullhash}{7f0aef3f734b7866ca92d566a77774f0}
+      \strng{bibnamehash}{291630cb1fcc270e008eeb3db401a94e}
+      \strng{authorbibnamehash}{291630cb1fcc270e008eeb3db401a94e}
+      \strng{authornamehash}{291630cb1fcc270e008eeb3db401a94e}
+      \strng{authorfullhash}{7f0aef3f734b7866ca92d566a77774f0}
+      \strng{editorbibnamehash}{1878e5aaeb2ba2e2aaa5cb8a1a7cf207}
+      \strng{editornamehash}{1878e5aaeb2ba2e2aaa5cb8a1a7cf207}
+      \strng{editorfullhash}{be0b68b83d6aa0735d7f1c11e9a4691e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Code obfuscation and software watermarking are well known techniques designed to prevent the illegal reuse of software. Code obfuscation prevents malicious reverse engineering, while software watermarking protects code from piracy. An interesting class of algorithms for code obfuscation and software watermarking relies on the insertion of opaque predicates. It turns out that attackers based on a dynamic or an hybrid static-dynamic approach are either not precise or time consuming in eliminating opaque predicates. We present an abstract interpretation-based methodology for removing opaque predicates from programs. Abstract interpretation provides the right framework for proving the correctness of our approach, together with a general methodology for designing efficient attackers for a relevant class of opaque predicates. Experimental evaluations show that abstract interpretation based attacks significantly reduce the time needed to eliminate opaque predicates.}
+      \field{booktitle}{Algebraic {{Methodology}} and {{Software Technology}}}
+      \field{isbn}{978-3-540-35633-2 978-3-540-35636-3}
+      \field{langid}{english}
+      \field{title}{Opaque {{Predicates Detection}} by {{Abstract Interpretation}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{4019}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 95}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/11784180_9
+      \endverb
     \endentry
     \entry{desclaux2018miasm}{misc}{}
       \name{author}{2}{}{%
@@ -554,6 +780,69 @@
       \endverb
       \keyw{⭐wichtig}
     \endentry
+    \entry{wangLinearObfuscationCombat2011}{inbook}{}
+      \name{bookauthor}{4}{}{%
+        {{hash=af9f7c73a3775f453b93fd3e906dd877}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=95392d186f15eb472a862aba4ea11b80}{%
+           family={Ming},
+           familyi={M\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1b69ac6c55f174e6706797fcdee39f94}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Chunfu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e70ab3d3da4338e31f4cd1dac167b999}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Debin},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{bookauthorbibnamehash}{78cf76bd8eb3eb10be64f596ecf740c7}
+      \strng{bookauthornamehash}{78cf76bd8eb3eb10be64f596ecf740c7}
+      \strng{bookauthorfullhash}{a84fee1457964b99ff618db2bfaf8ca2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Trigger-based code (malicious in many cases, but not necessarily) only executes when specific inputs are received. Symbolic execution has been one of the most powerful techniques in discovering such malicious code and analyzing the trigger condition. We propose a novel automatic malware obfuscation technique to make analysis based on symbolic execution difficult. Unlike previously proposed techniques, the obfuscated code from our tool does not use any cryptographic operations and makes use of only linear operations which symbolic execution is believed to be good in analyzing. The obfuscated code incorporates unsolved conjectures and adds a simple loop to the original code, making it less than one hundred bytes longer and hard to be differentiated from normal programs. Evaluation shows that applying symbolic execution to the obfuscated code is inefficient in finding the trigger condition. We discuss strengths and weaknesses of the proposed technique.}
+      \field{booktitle}{Lecture {{Notes}} in {{Computer Science}}}
+      \field{isbn}{978-3-642-23821-5 978-3-642-23822-2}
+      \field{issn}{0302-9743, 1611-3349}
+      \field{langid}{english}
+      \field{title}{Linear {{Obfuscation}} to {{Combat Symbolic Execution}}}
+      \field{urlday}{22}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{210\bibrangedash 226}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-642-23822-2_12
+      \endverb
+      \verb{file}
+      \verb C:\Users\sariaki\Zotero\storage\SCQUWQ3Y\2011 - Linear Obfuscation to Combat Symbolic Execution.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-642-23822-2_12
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-642-23822-2_12
+      \endverb
+      \keyw{⭐wichtig,gelesen wichtig}
+    \endentry
     \entry{LLVMProject}{misc}{}
       \name{author}{1}{}{%
         {{hash=8e794f3113c883242c2533ada58d710d}{%
@@ -598,6 +887,44 @@
       \field{howpublished}{\url{https://github.com/llvm/llvm-test-suite}}
       \field{title}{{llvm-test-suite}}
       \field{year}{2025}
+    \endentry
+    \entry{ogisoSoftwareObfuscationTheoretical2003}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3e1b6cd2b0a21778b2134cd274a0ffa5}{%
+           family={Ogiso},
+           familyi={O\bibinitperiod},
+           given={Toshio},
+           giveni={T\bibinitperiod}}}%
+        {{hash=430bb4641f160c4db7a042b9c67bb7d1}{%
+           family={Sakabe},
+           familyi={S\bibinitperiod},
+           given={Yusuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d6ff2cab3a74d01b32fcb87aac348686}{%
+           family={Soshi},
+           familyi={S\bibinitperiod},
+           given={Masakazu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d23c39a644afc769d7dce335d45efe9a}{%
+           family={Miyaji},
+           familyi={M\bibinitperiod},
+           given={Atsuko},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9702f93aaebd985e387cdf0e86823f0e}
+      \strng{fullhash}{78c164ecb0c294b6d3b65225c53d2244}
+      \strng{bibnamehash}{9702f93aaebd985e387cdf0e86823f0e}
+      \strng{authorbibnamehash}{9702f93aaebd985e387cdf0e86823f0e}
+      \strng{authornamehash}{9702f93aaebd985e387cdf0e86823f0e}
+      \strng{authorfullhash}{78c164ecb0c294b6d3b65225c53d2244}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Software obfuscation is a promising approach to protect intellectual property rights and secret information of software in untrusted environments. Unfortunately previous software obfuscation techniques share a major drawback that they do not have a theoretical basis and thus it is unclear how effective they are. Therefore we propose new software obfuscation techniques in this paper. The techniques are based on the difficulty of interprocedural analysis of software programs. The essence of our obfuscation techniques is a new complexity problem to precisely determine the address a function pointer points to in the presence of arrays of function pointers. We show that the problem is NPhard and the fact provides a theoretical basis for our obfuscation techniques. Furthermore, we have already implemented a prototype tool that obfuscates C programs according to our proposed techniques and in this paper we describe the implementation and discuss the experiments results.}
+      \field{langid}{english}
+      \field{title}{Software {{Obfuscation}} on a {{Theoretical Basis}} and {{Its Implementation}}}
+      \field{year}{2003}
     \endentry
     \entry{ollivierHowKillSymbolic2019a}{inproceedings}{}
       \name{author}{4}{}{%
@@ -762,79 +1089,6 @@
       \field{booktitle}{IEEE Symposium on Security and Privacy}
       \field{title}{{SoK: (State of) The Art of War: Offensive Techniques in Binary Analysis}}
       \field{year}{2016}
-    \endentry
-    \entry{stephensProbabilisticObfuscationCovert2018}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=4c984620ef1275f0dfaca33de1555f11}{%
-           family={Stephens},
-           familyi={S\bibinitperiod},
-           given={Jon},
-           giveni={J\bibinitperiod}}}%
-        {{hash=1abf0f085b962dec2a3fdfb887414d4c}{%
-           family={Yadegari},
-           familyi={Y\bibinitperiod},
-           given={Babak},
-           giveni={B\bibinitperiod}}}%
-        {{hash=028cbd59b46688ed431f75f79cace82e}{%
-           family={Collberg},
-           familyi={C\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=74cb3e5fb2e4f290ff5ab99d8dcf6e1e}{%
-           family={Debray},
-           familyi={D\bibinitperiod},
-           given={Saumya},
-           giveni={S\bibinitperiod}}}%
-        {{hash=de216a4cef9daa2d1fce563e8b498941}{%
-           family={Scheidegger},
-           familyi={S\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {London}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{1c648cd427c038e0a744dc32ae67a501}
-      \strng{fullhash}{1ec16b2415c3cfc5ed1507f576922978}
-      \strng{bibnamehash}{1c648cd427c038e0a744dc32ae67a501}
-      \strng{authorbibnamehash}{1c648cd427c038e0a744dc32ae67a501}
-      \strng{authornamehash}{1c648cd427c038e0a744dc32ae67a501}
-      \strng{authorfullhash}{1ec16b2415c3cfc5ed1507f576922978}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper presents a program obfuscation framework that uses covert channels through the program’s execution environment to obfuscate information flow through the program. Unlike prior works on obfuscation, the use of covert channels removes visible information flows from the computation of the program and reroutes them through the program’s runtime system and/or the operating system. This renders these information flows, and the corresponding control and data dependencies, invisible to program analysis tools such as symbolic execution engines. Additionally, we present the idea of probabilistic obfuscation which uses imperfect covert channels to leak information with some probabilistic guarantees. Experimental evaluation of our approach against state of the art detection and analysis techniques show the engines are not well-equipped to handle these obfuscations, particularly those of the probabilistic variety.}
-      \field{booktitle}{2018 {{IEEE European Symposium}} on {{Security}} and {{Privacy}} ({{EuroS}}\&{{P}})}
-      \field{eventtitle}{2018 {{IEEE European Symposium}} on {{Security}} and {{Privacy}} ({{EuroS}}\&{{P}})}
-      \field{isbn}{978-1-5386-4228-3}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{title}{Probabilistic {{Obfuscation Through Covert Channels}}}
-      \field{urlday}{14}
-      \field{urlmonth}{10}
-      \field{urlyear}{2025}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{243\bibrangedash 257}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1109/EuroSP.2018.00025
-      \endverb
-      \verb{file}
-      \verb C:\Users\sariaki\Zotero\storage\WL87MB8N\Stephens et al. - 2018 - Probabilistic Obfuscation Through Covert Channels.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/8406603/
-      \endverb
-      \verb{url}
-      \verb https://ieeexplore.ieee.org/document/8406603/
-      \endverb
-      \keyw{gelesen wichtig,NEU,wichtig}
     \endentry
     \entry{sutterEvaluationMethodologiesSoftware2024}{misc}{}
       \name{author}{4}{}{%

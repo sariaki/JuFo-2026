@@ -65,6 +65,9 @@
 \newtheorem{example}{Beispiel}
 \newtheorem{theorem}{Theorem}[section]
 \usepackage{booktabs}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.1}
+\usepackage{tabularx}
 \usepackage{lipsum}
 % Muss immer letztes Packet sein
 \usepackage{hyperref}
@@ -95,7 +98,7 @@
 
 \newpage
 \setcounter{page}{0}
-\section{Projektüberblick}
+\section*{Projektüberblick}
 
 
 \newpage
@@ -105,16 +108,22 @@
 Obfuskation kommt zum Einsatz in der Malwareentwicklung - um vor Detektion von sog. \emph{Endpoint Detection and Response} Systemen zu schützen, in der Industrie - um vor Kopien von Softwarefunktionen sowie vor Cracking zu schützen und im Militär - um dem Feind ein Verstädnis der eigenen Waffensysteme zu behindern. Da das Programm hierbei noch die Ursprüngliche Semantik beibehält kann jede Software mit genügend Zeit, Aufwand und Geld trotz Obfuskation verstanden werden. Der Sinn von Obfuskation ist also nicht die komplette Verhinderung von \emph{Reverse Engineering}, sondern vielmehr dieses wirtschaftlich unrentabel zu machen.
 Von besonderem Interesse im Bereich der Obfuskation sind opake Prädikate, eine Kontrollflussobfuskation welche immer wahre bzw. falsche Verzweigungen in Programme einfügt.
 
-In dieser Arbeit wird folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine perfekte automatisierte Deobfuskation mit aktuellen Methoden unmöglich machen?} \textcolor{red}{Die Relevanz dieser Forschungsfrage ergibt sich aus dem fortdauernden Kampf zwischen Obfuskation und Deobfuskation.}
-Zuerst werden hierfür Obfuskation, opake Prädikate und symbolische Ausführung formal definiert (\cref{sec:theorie}). Darauf wird ein Überblick über den aktuellen Stand der Forschung (\cref{sec:motivation}) vorgestellt und darauf basierend die Notwendigkeit dieser Arbeit hergeleitet und ein Angreifermodell festgelegt (\cref{sec:angreiferModell}).
-%Aufbauend auf den Gedanken von \cite{stephensProbabilisticObfuscationCovert2018}
-Der Kernbeitrag dieser Arbeit ist das Konzept probabilistischer opaker Prädikate (\cref{sec:probOpak}). Es handelt sich dabei um opake Prädikate, welche durch die Nutzung von Wahrscheinlichkeitsverteilungen und Pseudozufallsvariablen verschiedene Angriffsmethoden verhindern. Es wird dabei ein Algorithmus geliefert, um die neue Art opaker Prädikate mit verschiedenen Wahrscheinlichkeitsverteilungen zu generieren. 
-Implementiert wird die Idee in Form eines LLVM-Passes (\cref{sec:implementierung}). 
-%Aufgrund der Seitenbegrenzung sowie der Fülle an verfügbaren Informationen und Methoden wird die Generierung von getarntem Füllcode (sog. \emph{Junkcode}) nicht behandelt. Die Bedeutung von Füllcode für die Qualität der generierten opaken Prädikate dieser Arbeit wird in \cref{sec:stärke} dargestellt.
-In dieser Arbeit wird sich auf die Erzeugung der opaken Prädikate selbst beschränkt. Die Generierung von Füllcode (sog. \emph{Junkcode}) wird nicht behandelt.
-Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} (\cref{sec:evaluierung}) zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, ohne dabei unvertretbare Kosten aufzuweisen (\cref{sec:diskussion}).
+In dieser Arbeit wird folgender Frage nachgegangen: \emph{Ist es Möglich, opake Prädikate zu kreieren, welche eine perfekte automatisierte Deobfuskation mit aktuellen Methoden unmöglich machen?} Die Relevanz dieser Forschungsfrage ergibt sich aus dem fortdauernden Kampf zwischen Obfuskation und Deobfuskation sowie der Effektivität von symbolischer Ausführung gegen opake Prädikate.
 
-Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/Prädikatabbildung $[\cdot]$ verwendet: Unter der Voraussetung, dass die Aussage $P$ wahr ist, gilt $[P]=1$. Ansonsten gilt $[P]=0$. Pseudocode, welcher Anweisungen modifiziert nimmt an, dass diese in \emph{Single Static Asignment}-Form definiert sind.
+Die Kernbeiträge dieser Arbeit hierzu sind folgende: 
+\begin{itemize}
+    \item Es wird das neue Konzept probabilistischer opaker Prädikate vorgestellt. Es handelt sich dabei um opake Prädikate, welche durch die Nutzung von Wahrscheinlichkeitsverteilungen und Pseudozufallsvariablen verschiedene Angriffsmethoden verhindern.
+    \item Es wird ein Algorithmus geliefert, um die neue Art der opaken Prädikate mit verschiedenen Wahrscheinlichkeitsverteilungen zu generieren.
+    \item Dabei wird ein Problem bei der Generierung symbolischer Variablen über Funktionsparameter angesprochen und \cref{alg:symVar} als Lösung präsentiert. 
+    Nach bester Kenntnis des Autors handelt es sich hierbei um ein neuen undokumentierten Angriffsvektor.
+\end{itemize}
+In dieser Arbeit wird sich bewusst auf die Erzeugung der opaken Prädikate selbst beschränkt. Die Relevanz von Füllcode (sog. \emph{Junkcode}) ist unabhängig von den dargestellten Idee und wird daher nicht behandelt.
+Zunächst werden Obfuskation, opake Prädikate und symbolische Ausführung formal definiert (\cref{sec:theorie}). Durch einen Überblick über den aktuellen Stand der Forschung (\cref{sec:motivation}) wird die Notwendigkeit dieser Arbeit hergeleitet und ein Angreifermodell festgelegt (\cref{sec:angreiferModell}).
+In \cref{sec:probOpak}-3 wird die Idee propabilistischer opaker Prädikate vorgestellt und definiert. Darauf werden verschiedene Methoden zur zufälligen Wahrscheinlichkeitsverteilungsgenerierung (\cref{sec:genProb}) sowie zur Generierung von Pseudozufallszahlen (\cref{sec:pseudoZufall}) vorgestellt und abgewogen. Dabei wird das bis jetzt nicht untersuchte Problem der Aufruf-Invarianz für die Generierung symbolischer Variablen über Funktionsparameter angesprochen und über \cref{alg:symVar} gelöst.
+Implementiert wird die Idee in Form eines LLVM-Passes (\cref{sec:implementierung}). 
+Eine Evaluierung anhand der Kriterien Collbergs et al. \cite{collbergATaxonomyOfObfuscatingTransformations} (\cref{sec:evaluierung}) zeigt, dass probabilistische opake Prädikate nicht nur resistent gegenüber symbolischer Ausführung sind, ohne dabei unvertretbare Kosten aufzuweisen.
+
+Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kompilern, Programmanalysemethoden sowie grundlegender Zahlentheorie an. Zudem wird die Iverson-Klammer/ Prädikatabbildung $[\cdot]$ verwendet: Unter der Voraussetung, dass die Aussage $P$ wahr ist, gilt $[P]=1$. Ansonsten gilt $[P]=0$. Pseudocode, welcher Programmanweisungen modifiziert nimmt an, dass diese in \emph{Single Static Asignment}-Form definiert sind.
 %Vergleicht eine Aussage zwei Variablen, so wird hierfür "`$==$"' verwendet.
 %\textcolor{red}{TODO: Klären, was in welchem Abschnitt gemacht wird}
 
@@ -123,11 +132,10 @@ Diese Arbeit nimmt ein mathematisch-informatisches Grundwissen an Assembler, Kom
 Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} definieren Obfuskation wie folgt:
 \begin{definition}[Obfuskation]
 	Sei $P \xrightarrow{\mathcal{T}}P'$ eine Transformation $\mathcal{T}$ eines \emph{Quellprogrammes} $P$ zu einem \emph{Zielprogramm} $P'$.
-	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist.  \textcolor{red}{TODO: Barak et al. nutzen!}
+	Eine solche Transformation ist eine Obfuskation, wenn das obfuskierte Programm $P'$ dasselbe beobachtbare Verhalten wie $P$ für den Endnutzer aufweist.  %\textcolor{red}{TODO: Barak et al. nutzen!}
 \end{definition}
 
-Obfuskation zielt darauf ab, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}. Näheres hierzu folgt in \cref{sec:kriterien}.
-
+Obfuskation zielt darauf ab, die Komplexität eines Programmes so zu erhöhen, dass dessen interne Logik für einen Angreifer nur schwer verständlich ist. %Für die Komplexität von Programmen gibt es mehrere Metriken \cite{collbergManufacturingCheapResilient1998}. Näheres hierzu folgt in \cref{sec:kriterien}.
 Per Definition sind Nebenwirkungen (z.B. Herunterladen von neuen Daten etc.) erlaubt, solange sie nicht vom Nutzer erfahren werden. Die präsentierte Methode dieser Publikation nutzt diese Lockerung der Einschränkungen auf obfuskierende Transformationen aus, wie später ersichtlich sein wird.
 
 Das Rückgängigmachen einer Obfuskation ist die \emph{Deobfuskation}.
@@ -178,38 +186,55 @@ Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder 
 \section{Hintergrund und Motivation} \label{sec:motivation}
 Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen. Die geschieht anhand der Kriterien aus \cref{sec:kriterien}.
 
-Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich.
+Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich \cite{zobernigWhenAreOpaque2019}.
 
-Trotz der Effektivität mancher existierender Methoden, bleiben viele formal unbegründet. Ihre Resistenz basiert auf Implementierungsschwächen\footnote{bzw. Heuristikschwächen.} existierender symbolischer Ausführungsengines und nicht ihren fundamentalen Grenzen (bzw. den der Constraint-Solver) \cite{xuManufacturingResilientBiOpaque2018}. Als Beispiel hierfür dienen die Bi-Opaken Prädikate \cite{xuManufacturingResilientBiOpaque2018}. Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen von \emph{Angr} \cite{shoshitaishvili2016state} ergab: drei der vier in \cite{xuManufacturingResilientBiOpaque2018} dargestellten Methoden können nun von \emph{Angr} problemlos symbolisch ausgeführt werden
+%Trotz der Effektivität mancher existierender Methoden, bleiben viele formal unbegründet. Ihre Resistenz basiert auf Implementierungsschwächen\footnote{bzw. Heuristikschwächen.} existierender symbolischer Ausführungsengines und nicht ihren fundamentalen Grenzen (bzw. den der Constraint-Solver) \cite{xuManufacturingResilientBiOpaque2018}. Als Beispiel hierfür dienen die Bi-Opaken Prädikate \cite{xuManufacturingResilientBiOpaque2018}. Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen von \emph{Angr} \cite{shoshitaishvili2016state} ergab: drei der vier in \cite{xuManufacturingResilientBiOpaque2018} dargestellten Methoden können nun von \emph{Angr} problemlos symbolisch ausgeführt werden
+%\footnote{
+%	(a) symbolischer RAM: Ausführbar für Arrays mit einer Länge unter $257$. \\
+%	(b) Gleitkommazahlen: Ausführbar, wenn keine x86 \texttt{long double} Datentypen verwendet werden. \\
+%	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{Covert Symbolic Propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
+%	(d) Threads: Noch nicht implementiert.
+%}.
+%Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013}, \cite{tigress2025} und \cite{linBranchObfuscationUsing2013} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
+%Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit.
+%
+%Andere Methoden, wie \cite{wangLinearObfuscationCombat2011} und \cite{ogisoSoftwareObfuscationTheoretical2003} sind zwar formal sicher, sind aber einfach erkennbar und weisen hohe Laufzeitkosten auf.
+Existierende Methoden lassen sich im Wesentlichen in zwei Kategorien einteilen:
+
+\begin{enumerate}
+    \item Opake Prädikate, welche Implementierungsschwächen\footnote{bzw. Heuristikschwächen.} existierender symbolischer Ausführungsengines angreifen. 
+    
+    Hierunter fällt die Nutzung von \emph{Exceptions} \cite{linBranchObfuscationUsing2013}, Anweisungen \cite{xuManufacturingResilientBiOpaque2018} oder Funktionen \cite{tigress2025}, welche nicht durch die symbolischen Ausführungsengines modelliert werden.
+Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen vom Programmanalyseframework \emph{Angr} \cite{shoshitaishvili2016state} ergab: drei der vier in \cite{xuManufacturingResilientBiOpaque2018} dargestellten Methoden können nun von dem symbolischen Ausführungsengine von \emph{Angr} problemlos symbolisch ausgeführt werden
 \footnote{
-	(a) symbolischer RAM: Ausführbar für Arrays mit einer Länge unter $257$. \\
-	(b) Gleitkommazahlen: Ausführbar, wenn keine x86 \texttt{long double} Datentypen verwendet werden. \\
-	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{Covert Symbolic Propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
-	(d) Threads: Noch nicht implementiert.
-}.
-Die Deobfuskation weiterer Methoden wie \cite{linBranchObfuscationUsing2013}, \cite{tigress2025} und \cite{linBranchObfuscationUsing2013} liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines.
-Eine Deobfuskation ist in gewisser Weise nur eine Frage der Zeit.
+    	(a) symbolischer RAM: Ausführbar für Arrays mit einer Länge unter $257$. \\
+    	(b) Gleitkommazahlen: Ausführbar, wenn keine x86 \texttt{long double} Datentypen verwendet werden. \\
+    	(c) Verdeckte symbolische Kontrollflussübertragung (\emph{Covert Symbolic Propagation}), in \cite{xuManufacturingResilientBiOpaque2018} über Dateisystem-Operationen implementiert: Ausführbar. \\
+    	(d) Threads: Noch nicht implementiert.
+}.Eine Deobfuskation weiterer Methoden in dieser Kategorie liegt also alleine in der Verbesserung existierender symbolischer Ausführungsengines. Eine Deobfuskation ist in gewisser Frage nur eine Frage der Zeit.
 
-Andere Methoden, wie \cite{wangLinearObfuscationCombat2011} und \cite{ogisoSoftwareObfuscationTheoretical2003} sind zwar formal sicher, sind aber einfach erkennbar und weisen hohe Laufzeitkosten auf.
+    \item Opake Prädikate, welche fundamentale Grenzen der \emph{Constraint Solver} angreifen.
+    
+    Diese Nutzen entweder ungelöste Probleme in der Mathematik oder NP-schwere Probleme der Informatik. So erstellte \cite{wangLinearObfuscationCombat2011} z.B. opake Prädikate, welche auf der unbewiesenen Vermutung basieren, dass die Collatz Folge unabhängig vom Startwert immer den Zyklus $4,2,1$ erreicht. Da Mathematiker noch nicht die Werkzeuge haben, dies zu beweisen, ist die symbolische Ausführung auch nicht in der Lage zu beweisen, dass das Programm weiterläuft und nicht in eine Endlosschleife gerät. In \cite{ogisoSoftwareObfuscationTheoretical2003} wird alternativ ein NP-schweres Problem mit Pointerarithmetik konstruiert. In beiden Fällen sind die opaken Prädikate zwar beweisbar sicher, allerdings einfach erkennbar und mit hohen Laufzeitkosten verbunden.
+\end{enumerate}
 
-Angesichts der Schwierigkeiten aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaker Prädikate.
+%Angesichts der Schwierigkeiten aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaker Prädikate.
+Angesichts der dargelegten Probleme aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaken Prädikate.
 
 \section{Ansatz} 
 \subsection{Angreifermodell} \label{sec:angreiferModell}
 \begin{wrapfigure}{r}{0.3\textwidth}
     \centering
     \includegraphics[width=0.3\textwidth]{sym_exec}
-    \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung \cite{xuManufacturingResilientBiOpaque2018} %\textcolor{red}{TODO: selbst machen}
+    \caption{Konzeptuelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung. Abbildung aus \cite{xuManufacturingResilientBiOpaque2018} übernommen. %\textcolor{red}{TODO: selbst machen}
     } 
 \end{wrapfigure}
 Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem \emph{Man-at-the-End} (MATE) Angreifermodell aus, aufbauend auf \cite{xuManufacturingResilientBiOpaque2018, zobernigWhenAreOpaque2019}.
 Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen sowie volle Kontrolle über das Endsystem, auf dem sie ausgeführt werden. Es ist dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm statisch und dynamisch analysieren. Das Ziel des Angreifers ist dabei, ein Verständnis der obfuskierten Programmlogik zu gewinnen.
 %Der Angreifer kann das Programm nur statisch analysieren. Der Angreifer kann das Programm nicht im vollen Ganzen dynamisch ausführen. Solchen Situationen begegnet man z.B. bei Malware, welche gegen Virtuelle Maschinen (\emph{virtual machines}) gehärtet ist oder bei Software, welche für proprietäre und unverfügbare Systeme geschrieben ist.
-Pattern Matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden.
-
+Pattern Matching, also das Suchen von Assembler-Anweisungsfolgen, kann hierbei zum Finden und Löschen zuvor erkannter opaker Prädikate verwendet werden. 
 Zudem kann der Angreifer Funktionen symbolisch ausführen. Über eine Anfrage an den Constraint-Solver kann hierbei geprüft werden, ob ein Prädikat für alle Eingabewerte wahr ist. Ist dies der Fall, so handelt es sich um ein opakes Prädikat, welches gelöscht werden kann.
-
-Die Bedeutung weiterer dynamischer Analysemethoden wird in \cref{sec:fazit} diskutiert.
+Mögliche dynamischer Analysemethoden werden in \cref{sec:fazit} angeführt und diskutiert.
 
 \subsection{Probabilistische opake Prädikate} \label{sec:probOpak}
 Symbolische Ausführung genügt für die Untersuchung deterministischer Algorithmen und entscheidbarer Probleme.
@@ -271,7 +296,7 @@ Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{\Var{prob}}
 \end{example}
 Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzusammenhang.
 
-\subsection{Algorithmus}
+\subsection{Algorithmus} \label{sec:alg}
 \begin{algorithm}[!h] 
 	\caption{Generierung probabilistischer opaker Prädikate}
 	\label{alg:probOpaque}
@@ -302,18 +327,15 @@ Dies zwingt den Angreifer zu einer genaueren Analyse jedes Prädikats im Sachzus
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
-
 Für jedes zu generierendes opakes Prädikat wird im Programm ein Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. Es wird angenommen, dass $U$ gleichverteilt ist. Dies stellt ein Problem dar, da sich aus den probabilistischen opaken Prädikaten  ohne Transformationen ($F(X)=X$) mit dieser Zufallsvariable die Wahrscheinlichkeitswerte direkt herauslesen lassen (vgl. \cref{ex:gleich}).
+Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
+Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 \begin{wrapfigure}{r}{0pt}
     \centering
     \includegraphics[width=0.4\textwidth]{img/cdf_inv_exp}
     \caption{\centering Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion der Exponentialverteilung $F^{-1}(x)$, einem $x$-Wert zugeordnet. Wie bei einer Exponentialverteilung sammeln sich hierdurch die $x=F^{-1}(x)$-Werte um 0.}
     \label{fig:cdfInv}
 \end{wrapfigure}
-Hierfür wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
-%Über die transformierte Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche Aussagen getroffen werden.
-Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
-
 Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschreiben.
 
 \subsection{Wahrscheinlichkeitsverteilungsgenerierung} \label{sec:genProb}
@@ -411,21 +433,19 @@ Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das 
 \end{algorithm}
 
 \subsection{Generierung von Pseudozufallsvariablen} \label{sec:pseudoZufall}
-\textcolor{red}{TODO: kürzen!!! und Pseudocode hierfür einfügen}
 Damit der vorgestellte Ansatz funktionieren kann, bedarf er einer gleichverteilten (Pseudo-)Zufallszahl, welche auf dem Einheitsintervall liegt und zugleich als unbestimmte symbolische Variable ohne konkreten Wert von symbolischen Ausführungsengines betrachtet wird.
-Infrage kommen hierfür:
-\begin{enumerate}[]
-    \item Betriebssystem- (z.B. \texttt{rand() oder \texttt{time()}}) und Hardware-APIs (z.B. \texttt{rdtsc}), 
-    \item die Zufallszahlgenerierung mittels Race Conditions \cite{colesaRandomRace} oder
-    \item die Nutzung von Funktionsparametern, deren Werte sich nicht statisch festlegen lassen (\emph{Parameter Sampling}).
-\end{enumerate}
-
-In Fällen 1-2 sind die genutzten Quellen nach erstmaliger Bestimmung leicht wiedererkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und mindert folglich auch ihre Tarnung.
-
-Es wurde sich daher für Methode 3 entschieden.
-In der Praxis können Angreifer kaum ganze Programme symbolisch auszuführen sondern immer nur einzelne Funktionen. Je größer der Abschnitt, welcher symbolisch ausgeführt wird, desto höher die Wahrscheinlichkeit, dass nicht implementierte Nebenwirkungen die Ergebnisse verfälschen, es zu einer Zustandsraum-Explosion (\emph{State Space Explosion}) kommt oder das \emph{Constraint Solving} sich aufgrund seiner exponentiellen Laufzeitkomplexität nicht mehr in vertretbarer Zeit durchführen lässt \cite{baldoniSurveySymbolicExecution2018}. Durch die Methode sind die opaken Prädikate gut getarnt -- ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm.
-
-Beim Parameter-Sampling wird diese Annahme genutzt und ein zufälliger Funktionsparameter für jede zu obfuskierende Funktion ausgewählt. Um die Gefahr zu umgehen, dass dieser Parameter immer einen konstanten Wert annimmt, wurde \cref{alg:symVar} implementiert.
+%Hierfür kommen infrage:
+%\begin{enumerate}[]
+%    \item Betriebssystem- (z.B. \texttt{rand() oder \texttt{time()}}) und Hardware-APIs (z.B. \texttt{rdtsc}), 
+%    \item die Zufallszahlgenerierung mittels Race Conditions \cite{colesaRandomRace} oder
+%    \item die Nutzung von Funktionsparametern, deren Werte sich nicht statisch festlegen lassen (\emph{Parameter Sampling}).
+%\end{enumerate}
+%
+%In Fällen 1-2 sind die genutzten Quellen nach erstmaliger Bestimmung leicht wiedererkennbar. Dies erleichtert für Angreifer die Suche nach probabilistischen opaken Prädikaten und mindert folglich auch ihre Tarnung.
+%Es wurde sich daher für Methode 3 entschieden: ein zufälliger Funktionsparameter wird für jede zu obfuskierende Funktion ausgewählt und auf dem Einheitsintervall $[0;1]$ abgebildet.
+Hierfür wird für jede zu obfuskierende Funktion ein zufälliger Funktionsparameter ausgewählt und auf dem Einheitsintervall $[0;1]$ abgebildet.
+%In der Praxis können Angreifer kaum ganze Programme symbolisch auszuführen, sondern immer nur einzelne Funktionen. Je größer der Abschnitt, welcher symbolisch ausgeführt wird, desto höher die Wahrscheinlichkeit, dass nicht implementierte Nebenwirkungen die Ergebnisse verfälschen, es zu einer Zustandsraum-Explosion (\emph{State Space Explosion}) kommt oder das \emph{Constraint Solving} sich aufgrund seiner exponentiellen Laufzeitkomplexität nicht mehr in vertretbarer Zeit durchführen lässt \cite{baldoniSurveySymbolicExecution2018}. Dies bedeutet, dass der Parameter vom \emph{Constraint Solver} als unbestimmte symbolische Variable behandelt werden muss. 
+Hierdurch sind die opaken Prädikate gut getarnt -- ein Parameterzugriff ist schließlich normales Verhalten in jedem Programm. Die einzige Gefahr ist dabei, dass der gewählte Parameter immer konstante Werte annimmt. Ein Angreifer könnte in diesem Fall alle Werte dieses Parameters in Funktionsausrufen sammeln und die Funktion mit ihnen ausführen. Sind für jeden Parameterwert die ausgeführten Basisblöcke gleich, so handelt es sich bei den nicht ausgeführten Basisblöcken um "`Junkcode"'. Prädikate, welche auf diese Basisblöcke verweisen sind folglich opak und können gelöscht werden. \textbf{Diese Vulnerabilität wurde in keiner der gelesenen Arbeiten zum Thema bis jetzt angesprochen.} \cref{alg:symVar} bietet hierfür eine Lösung.
 \begin{algorithm}[!h] 
     \caption{Suche nach Parameter mit extern-abgeleiteten Wert in Funktionsaufruf über DFS}
     \label{alg:symVar}
@@ -445,8 +465,8 @@ Beim Parameter-Sampling wird diese Annahme genutzt und ein zufälliger Funktions
         \\
         
         \Function{IsVariableDerivedFromExternal}{$Argument \; \Var{Arg}, Hashmap \; \Var{Visited}, \Var{Depth} \in \mathbb{Z}$}
-            \If{$\Var{Depth} > 20 \vee \Var{Arg} \in \Var{Visited}$}
-                \Return \False
+            \If{$\Var{Depth} > 20 \vee \Var{Arg} \in \Var{Visited}$} \Comment{Die Konstante hat sich empirisch als geeignet ergeben.}
+                \State \Return \False
             \EndIf
             
             \State $\Var{Visited}[\Var{Arg}] = \textbf{true}$
@@ -475,7 +495,9 @@ Beim Parameter-Sampling wird diese Annahme genutzt und ein zufälliger Funktions
 \end{algorithm}
 
 \subsection{Füllcode}
-Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, unabhängig von der Qualität des opaken Prädikats. Da diese Arbeit nicht das Ziel hat, qualitativ hochwertigen Füllcode zu generieren, wird für den ungewünschten Prädikatwert der Kontrollfluss auf ein zufälligen Basisblock der zu obfuskierenden Funktion übertragen. \textcolor{red}{Darf ich das so schreiben?} Hierdurch erscheinen beide Pfade ausgehend vom Prädikat für einen Angreifer plausibel.
+Ohne gut getarnten Füllcode ist eine Erkennung des unwahrscheinlichen Prädikats trivial. Der Pfad, welcher die plausibelsten Anweisungen enthält ist der Richtige, unabhängig von der Qualität des opaken Prädikats. 
+Da diese Arbeit nicht das Ziel hat, qualitativ hochwertigen Füllcode zu generieren, wird für den unwahrscheinlicheren Prädikatwert der Kontrollfluss auf ein zufälligen Basisblock der zu obfuskierenden Funktion übertragen. %Hierdurch erscheinen beide Pfade ausgehend vom Prädikat für einen Angreifer plausibel.
+Für den Machbarkeitsnachweis dieser Arbeit genügt dies. Eine für den Praxisgebrauch bestimmte Implementierung müsste dies mit den dargelegten Methoden anderer Arbeiten ergänzen.
 
 \section{Implementierung} \label{sec:implementierung}
 %\subsection{Entscheidungen}
@@ -565,7 +587,7 @@ void __fastcall foo(uint64_t x)
 }			\end{lstlisting}
             \vspace*{-22pt}
 			\caption{Dieselbe Funktion aber mit PoP (Bernsteinpolynomgrad $n=3 $) obfuskiert. Pseudo-C wurde modifiziert aus der Dekompilation von IDA entnommen. Die Funktionen mit dem Unterstrich als Präfix sind intrinsische Funktionen. Sie kapseln einzelne CPU-Anweiseungen.}
-			\label{fig:doneObf}
+			\label{alg:doneObf}
 		\end{subfigure}
 	\end{minipage}
 \end{figure}
@@ -587,12 +609,11 @@ Für die Evaluierung wurden die weitverbreiteten Kriterien von Collberg et al. \
     	Tarnung & Wie auffällig ist die Obfuskation? %Wie leicht lässt sich ein obfuskiertes Programm als solches erkennen? \\
     \end{tabular}
 \end{center}
-
 %Die Obfuskationsmethode wurde dabei auf Programme aus \cite{banescuCodeObfuscationSymbolic2016}\footnote{\url{https://github.com/tum-i4/obfuscation-benchmarks}}, auf mehrere Verschlüsselungs-/Hashverfahren (AES, DES, MD5, RC4 \& SHA1.) von \cite{ollivierHowKillSymbolic2019a} sowie auf die GNU Core Utilities angewandt. Insgesamt wurden somit über \textcolor{red}{TODO} Programme obfuskiert. Die Programme wurden bewusst gewählt, um typische realistische Szenarien abzubilden, in denen z.B. kryptographische Algorithmen zum Schutz geistigen Eigentums eingesetzt werden \cite{schloegelTechnicalReportHardening2022}.
-Es wurde sich dabei bewusst gegen die einfachen Benchmarkprogramme wie in \cite{banescuCodeObfuscationSymbolic2016, obfuscatorBenchmarks} oder \cite{ollivierHowKillSymbolic2019a} entschieden. Orientiert wurde sich dabei am zur Zeit umfangreichsten Literaturreview zur (De-)Obfuskation \cite{sutterEvaluationMethodologiesSoftware2024}. Dieses bemängelt mangelnde Samplegröße sowie -quantität in der aktuellen Obfuskationsforschung. Es wurde sich daher für die LLVM Test Suite \cite{llvmTestSuite2025} entschieden. Dabei wurde sich auf die 200 größten vollständigen Anwendungen (z.B. sqlite3 \& lua) und Benchmarkprogramme beschränkt. Obwohl die Test Suite eigentliche für Compileroptimierungsevaluierungen entwickelt wurde, ist sie dennoch für die Obfuskationsevaluierung geeignet, da sie durch ihre diversen Programme realistische Anwendungsszenarien der Obfuskation abbildet. Die Test Suite bietet zudem den Vorteil vorgefertigter Tests, welche die Korrektheit obfuskierter Programme prüfen.
+Es wurde sich bewusst gegen die einfachen Benchmarkprogramme wie in \cite{banescuCodeObfuscationSymbolic2016, obfuscatorBenchmarks} oder \cite{ollivierHowKillSymbolic2019a} entschieden. Orientiert wurde sich dabei am zur Zeit umfangreichsten Literaturreview zur (De-)Obfuskation \cite{sutterEvaluationMethodologiesSoftware2024}. Dieses bemängelt mangelnde Samplegröße sowie -quantität in der aktuellen Obfuskationsforschung. Es wurde sich daher für die LLVM Test Suite \cite{llvmTestSuite2025} entschieden. Dabei wurde sich auf die 200 größten vollständigen Anwendungen (darunter z.B. sqlite3 \& lua) und Benchmarkprogramme beschränkt. Obwohl die Test Suite eigentliche für Compileroptimierungsevaluierungen entwickelt wurde, ist sie dennoch für die Obfuskationsevaluierung geeignet, da sie durch ihre diversen Programme realistische Anwendungsszenarien der Obfuskation abbildet. Die Test Suite bietet zudem den Vorteil vorgefertigter Tests, welche die Korrektheit obfuskierter Programme prüfen.
 
 Alle Programme wurden mit clang 18.1.3 und Optimierungslevel \texttt{-O3} kompiliert und mit Ubuntu 24.04.3 LTS mit Kernel Version 5.16, einer Intel\textregistered \;Core\texttrademark \;i7-10700F CPU und $16$Gb DDR4 RAM ausgeführt.
-Alle Programme wurden mit $k=8$ Newton-Raphson-Iterationen implementiet und mit $n=4$ als durchschnittlichen Bernsteinpolynomgrad.
+Es wurden dabei $k=8$ Newton-Raphson-Iterationen gewählt, $n=4$ als durchschnittlichen Bernsteinpolynomgrad sowie Erfolgswahrscheinlichkeit $P(\Var{RealBB})=0.99$ verwendet. Jede Funktion bekommt dabei maximal ein probabilistisches opakes Prädikat.
 
 \subsection{Evaluierung}
 
@@ -600,44 +621,51 @@ Alle Programme wurden mit $k=8$ Newton-Raphson-Iterationen implementiet und mit 
 \begin{minipage}[t]{0.49\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{img/stats/compilation_time}
-	\captionof{figure}{Kompilationszeit mit/ohne der Obfuskation}
+	\captionof{figure}{Kompilationszeit in Abhängigkeit vom Obfuskationslevel}
 	\label{fig:compilationTime}
 \end{minipage} \hfill
 \begin{minipage}[t]{0.49\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{img/stats/size}
-	\captionof{figure}{Größe vor/nach der Obfuskation}
+	\captionof{figure}{Programmgröße in Abhängigkeit vom Obfuskationslevel}
 	\label{fig:size}
 \end{minipage}
 \begin{minipage}[t]{0.49\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{img/stats/runtime}
-	\captionof{figure}{Laufzeit vor/nach der Obfuskation}
+	\captionof{figure}{Laufzeit in Abhängigkeit vom Obfuskationslevel}
 	\label{fig:runtime}
 \end{minipage}
 \begin{minipage}[t]{0.49\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{img/stats/pass_rate}
-	\captionof{figure}{Testerfolg vor/nach der Obfuskation}
+	\captionof{figure}{Testerfolg in Abhängigkeit vom Obfuskationslevel}
 	\label{fig:pass_rate}
 \end{minipage}
 \\\\
 Um die Obfuskationskosten zu messen wurden die durchschnittliche Programmgröße, -laufzeit, Kompilationszeit und Erfolgsquote bei den Programmen der LLVM Test Suite erhoben.
 
-Die größten Auswirkungen hatte die Obfuskation auf die Programmlaufzeit. Bei der Größe ergaben sich Unterschiede je nach
-Unerwünschte Kosten in der Größe oder Laufzeit können durch ein Finetuning der Obfuskatoreinstellungen ausgeglichen werden, z.B. indem nur bestimmte Funktionen obfuskiert werden.
-Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die SQLite fehlerfrei kompilieren und funktionierten. Hierfür wurde die Erfolgswahrscheinlichkeit $P(\Var{RealBB})=0.99$ verwendet.
+Die größten Auswirkungen hatte die Obfuskation auf die Programmlaufzeit. Die sich in der Größe oder Laufzeit ergebenden Kosten lassen sich allerdings durch ein Finetuning der Obfuskatoreinstellungen vermindern, z.B. indem nur bestimmte Funktionen obfuskiert werden.
+Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die SQLite fehlerfrei kompilieren und funktionierten.
 Insgesamt sind die Kosten je nach Programm/Anwendungsfall und Obfuskationslebel praxisgerecht.
 
 \subsubsection{Stärke} \label{sec:stärke}
-Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus der Softwareentwicklung verwendet. Konkret betrachtet wurden die zyklomatische Komplexität (McCabe-Metrik) sowie die Anzahl an Anweisungen vor und nach der Obfuskation.
-\begin{wrapfigure}{r}{0\textwidth}
-	\centering
-	\includegraphics[width=0.45\textwidth]{img/stats/complexity}
-	\caption{zyklomatische Komplexität (McCabe-Metrik) vor/nach der Obfuskation} 
-	\label{fig:mcCabe}
-\end{wrapfigure}
-Zu erkennen ist, dass sich die durchschnittliche zyklomatische Komplexität von \textcolor{red}{...} auf \textcolor{red}{...} erhöht.
+Wie in \cite{xuManufacturingResilientBiOpaque2018} angemerkt wurde, ergibt eine Quantifizierung von Stärke bei der Evaluierung neuer opaker Prädikate wenig Sinn. Relevante Metriken wie die zyklomatische Komplexität (McCabe-Metrik) erhöhen sich beliebig mit der Häufigkeit opaker Prädikate und nicht durch ihre Art.
+
+Auf qualitativer Ebene lässt sich anmerken, dass probabilistische opaken Prädikate indirekt auch die Schwachstellen der Werkzeuge heutiger Angreifer angreifen. 
+Konkret sind moderne Decompiler wie IDA/Binary Ninja/Ghidra noch nicht in der Lage, bestimmte SIMD (\emph{Single Instruction, Multiple Data})-Anweisungen zu dekompilieren.
+Dies lässt sich an \cref{alg:doneObf} erkennen, wo IDA die unbekannten Anweisungen durch intrinsische Funktionen darstellt anstelle von verständlicherem Pseudo-C.
+Experimente mit \emph{Decompiler Explorer} \cite{vec35DecompilerExplorer} zeigen, dass keine der aktuellen State-of-the-Art-(SOTA)-Decompiler bis auf Ghidra in der Lage ist, die SIMD Anweisungen in Pseudo-C zu dekompilieren. Durch eine Feinjustierung der clang Kommandozeilenoptionen nutzten die kompilierten Programme AVX2 Anweisungen. Keine der SOTA-Decompiler konnten diese in Pseudo-C dekompilieren. Diese Limitation bedeutet für Angreifer, dass eine Verständnis der Obfuskation (und somit auch der Programmlogik) mehr Zeit, Aufwand und vor allem ein Verständnis von Assembler erfordert. Die Hürde zum erfolgreichen Reverse-Engineering wurde somit erhöht.
+
+\textcolor{red}{TODO: Hier Decompiler Explorerer Grafik?}
+%Um die Stärke zu quantifizieren wurden verschiedene Komplexitätsmetriken aus der Softwareentwicklung verwendet. Konkret betrachtet wurden die zyklomatische Komplexität (McCabe-Metrik) sowie die Anzahl an Anweisungen vor und nach der Obfuskation.
+%\begin{wrapfigure}{r}{0\textwidth}
+%	\centering
+%	\includegraphics[width=0.45\textwidth]{img/stats/complexity}
+%	\caption{zyklomatische Komplexität (McCabe-Metrik) vor/nach der Obfuskation} 
+%	\label{fig:mcCabe}
+%\end{wrapfigure}
+%Zu erkennen ist, dass sich die durchschnittliche zyklomatische Komplexität von \textcolor{red}{...} auf \textcolor{red}{...} erhöht.
 
 %\paragraph{Komplexität}
 %\paragraph{Menschliche Analyse}
@@ -670,18 +698,40 @@ Zudem ist eine Anwendung von an die Obfuskationsmethode angepassten Heuristiken 
 Methoden, um dies zu verhindern werden in \cref{sec:diskussion} ausgeführt.
 
 \subsubsection{Tarnung} \label{sec:tarnung}
-Um die Tarnung quantitativ zu messen wurde die Verteilung an Programmanweisungen vor und nach der Obfuskation mit Obfuskationslevel 100 gemessen.
-\begin{figure}{r}[!h]
+Um die Tarnung quantitativ zu messen wurde wie bei \cite{xuManufacturingResilientBiOpaque2018} vorgegangen. Hierfür wurden aus den insgesamt 200 Programmen $n=$\textcolor{red}{TODO} unobfuskierte sowie \textcolor{red}{TODO} obfuskierte Prädikate zufällig gewählt. Gemäß \cref{tab:instrKategorien} wurden die letzten zehn Anweisungen vor der bedingten Sprungsanweisung (inkl. der Sprunganweisung selbst) kategorisiert. Hierdurch kann jedes Prädikat $i$ als $10$-dimensionaler Vektor $\vec{x}_i$ dargestellt werden, wobei jede Dimension der absoluten Häufigkeit einer Anweisungskategorie der letzten $10$ Anweisungen vor der Sprunganweisung entspricht. Um den Unterschied zwischen obfuskierten und unobfuskierten Prädikaten zu messen wurde zuerst der Mittelpunkt $\vec{m}=\frac{\sum_{i=1}^{n}{\vec{x}_i}}{n}$ aller unobfuskierten Prädikate berechnet. Die Euklid'sche Distanz der obfuskierten Prädikate zum Mittelpunkt $\vec{m}$ entspricht ihrer Ähnlichkeit und somit auch Tarnung. Je geringer der Unterschied ist, desto höher ist die Tarnung.
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/stats/stealth}
 	\caption{Programmanweisungverteilung vor/nach der Obfuskation} 
 	\label{fig:opcodeDist}
 \end{figure}
-Wie der Grafik zu entnehmen ist, bleibt die Programmanweisungverteilung nach der Obfuskation fast identisch. \textcolor{red}{Dies ist LLVM/clang zu verdanken ...}. Den größten Unterschied gab es bei Programmen, welche nur wenig Gleitkommazahlberechnungen durchführten. Auch hier lässt sich dennoch die Tarnung der probabilistischen opaken Prädikate erhöhen über eine Kombination mit anderen Methoden, z.B. dem Einfügen von "`Dead Code"'/"`Junk Code"'.
+\begin{table}[htbp]
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Kategorie} & \textbf{Anweisungen} \\
+        \midrule
+        Arithmetik & \texttt{imul, inc, sub, add, idiv, divsd, sbb, subpd, addpd, mulpd, divpd, maxpd, minpd, sqrtpd} \\
+        Logik & \texttt{and, sar, xor, test, shr, shl, or, xorps, xorpd, orpd, andpd} \\
+        Datenübertragung & \texttt{movaps, movsd, movabs, movzx, mov, movss, movsx, movsxd, stosd, movapd, movupd, unpcklpd, unpckhpd, movhpd, movlpd} \\
+        Datenbreite/-konversion & \texttt{cvtss2sd, cvtsi2sd, cvtsd2ss, cqo, cdq, cvttsd2si} \\
+        Zeigerarithmetik & \texttt{lea} \\
+        Vergleich & \texttt{cmp, ucomisd, comisd} \\
+        Sprünge & \texttt{jle, jne, jge, jae, jl, je, jg, jp, ja, jbe, jno, jmp} \\
+        Stapel & \texttt{pop, push, call, ret} \\
+        Boolesch & \texttt{setge, setne, setg, seta, setb, setl, sete} \\
+        Sonstige & \texttt{nop} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{74 Assembler-Anweisungen in 10 Kategorien sortiert.}
+    \label{tab:instrKategorien}
+\end{table}
+Wie \cref{fig:opcodeDist} zu entnehmen ist, \textcolor{red}{TODO}
+Den größten Unterschied gab es bei Programmen, welche nur wenig Gleitkommazahlberechnungen durchführten. Demnach lässt sich die Tarnung erhöhen durch eine Kombination mit anderen Methoden, z.B. dem Einfügen von "`Dead Code"'/"`Junk Code"' mit vielen Gleitkommazahloperationen.
 % TODO: Pattern Matching
 
-\subsection{Vergleich mit existierenden Obfuskationsmethoden}
-
+%\subsection{Vergleich mit existierenden Obfuskationsmethoden}
 
 \section{Ergebnisdiskussion} \label{sec:diskussion}
 \textcolor{red}{"`Praxisgerecht"'}
@@ -690,7 +740,8 @@ Um dies zu verhindern, kann die Obfuskation mit anderen Methoden (z.B. MBAs) kom
 \textcolor{red}{Schlechtes Laufzeitverhalten relativieren} 
 
 \section{Fazit und Ausblick} \label{sec:fazit}
-\textcolor{red}{später: Anwendung auf Ausdrücke}
+\textcolor{red}{später: Anwendung auf Ausdrücke} \\
+\textcolor{red}{später: Mehr zum neuen Angriffsvektor} 
 
 \newpage
 \pagenumbering{Alph}

@@ -70,7 +70,7 @@ constexpr unsigned int MIN_ITERATIONS = 7;
 cl::opt<unsigned int> POPNewtonRaphsonIterations(
     "pop-iterations",
     cl::desc("Number of iterations for the Newton-Raphson method (minimum: 7)"),
-    cl::init(8),
+    cl::init(12),
     cl::cat(PassCategory)
 );
 
@@ -210,19 +210,6 @@ namespace
                     if (!Utils::HasAnnotation(Fn, PASS_NAME)) continue;
                 }
 
-                // Tell LLVM that we might modify the value in a way it can't predict
-                // so that it doesn't perform constant folding
-                // Create a stack slot allocation for double
-                /*
-                AllocaInst* Alloc = IRB.CreateAlloca(Parameter->getType());
-
-                // Volatile store parameter into it
-                IRB.CreateStore(Parameter, Alloc, true);
-
-                // Volatile Load it back
-                Value* VolatileParameter = IRB.CreateLoad(Parameter->getType(), Alloc, true);
-                */
-
                 // for (unsigned int i = 0; i < POPRunsPerFunction.getValue(); i++)
                 {
                     // Choose random insertion point
@@ -311,13 +298,13 @@ namespace
                     if (PredicateType) // always true predicate
                     {
                         // if x < Threshold...
-                        CmpResult = IRB.CreateFCmpOLT(SampleRet,
+                        CmpResult = IRB.CreateFCmpULT(SampleRet,
                             ConstantFP::get(IRB.getDoubleTy(), Threshold));
                     }
                     else // always false predicate
                     {
                         // if x > Threshold...
-                        CmpResult = IRB.CreateFCmpOGT(SampleRet,
+                        CmpResult = IRB.CreateFCmpUGT(SampleRet,
                             ConstantFP::get(IRB.getDoubleTy(), Threshold));
                     }
 
@@ -326,18 +313,18 @@ namespace
                     BasicBlock* FakeBB = nullptr;
 
                     // if (BasicBlockCandidates.empty())
-                    {
-                        FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
+                    // {
+                    //     FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
 
-                        IRB.SetInsertPoint(FakeBB);
-                        // Utils::PrintfIR(M, IRB, "FakeBB says hi\n");
+                    //     IRB.SetInsertPoint(FakeBB);
+                    //     // Utils::PrintfIR(M, IRB, "FakeBB says hi\n");
 
-                        // TODO: Add junkcode
-                        if (Fn->getReturnType()->isVoidTy()) 
-                            IRB.CreateRetVoid();
-                        else 
-                            IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
-                    }
+                    //     // TODO: Add junkcode
+                    //     if (Fn->getReturnType()->isVoidTy()) 
+                    //         IRB.CreateRetVoid();
+                    //     else 
+                    //         IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
+                    // }
                     // else
                     // {
                     //     const auto RandomBBIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
@@ -356,10 +343,14 @@ namespace
                     // Utils::PrintfIR(M, IRB, "RealBB says hi\n");
 
                     IRB.SetInsertPoint(RandomBasicBlock);
+                    // if (PredicateType == true)
+                    //     IRB.CreateCondBr(CmpResult, RealBB, FakeBB);
+                    // else
+                    //     IRB.CreateCondBr(CmpResult, FakeBB, RealBB);
                     if (PredicateType == true)
-                        IRB.CreateCondBr(CmpResult, RealBB, FakeBB);
+                        IRB.CreateCondBr(CmpResult, RealBB, RealBB);
                     else
-                        IRB.CreateCondBr(CmpResult, FakeBB, RealBB);
+                        IRB.CreateCondBr(CmpResult, RealBB, RealBB);
                 }
 
                 // Mark function as obfuscated so that the loop doesn't run infinitely

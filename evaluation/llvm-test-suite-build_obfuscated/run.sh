@@ -48,7 +48,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
 
 make -j"$(nproc)"
 
-RESULTS_FILE="results${PROBABILITY}.json"
+RESULTS_FILE="results_new${PROBABILITY}.json"
 lit -v -j "$(nproc)" --timeout=300 --filter-out="MallocBench/gs|lua" -o "$RESULTS_FILE" .
 
 echo "Done. Results saved to: $(pwd)/$RESULTS_FILE"

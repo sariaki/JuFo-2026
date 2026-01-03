@@ -2361,17 +2361,17 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">stephensProbabilisticObfuscationCovert2018</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">collbergATaxonomyOfObfuscatingTransformations</bcf:citekey>
     <bcf:citekey order="2" intorder="1">collbergATaxonomyOfObfuscatingTransformations</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">collbergATaxonomyOfObfuscatingTransformations</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">tofighi-shiraziDefeatingOpaquePredicates2019</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">tofighi-shiraziDefeatingOpaquePredicates2019</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
     <bcf:citekey order="6" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
     <bcf:citekey order="7" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">tofighi-shiraziDefeatingOpaquePredicates2019</bcf:citekey>
     <bcf:citekey order="8" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
-    <bcf:citekey order="8" intorder="2">tofighi-shiraziDefeatingOpaquePredicates2019</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">collbergManufacturingCheapResilient1998</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">ieeespro2015-JunodRWM</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">ieeespro2015-JunodRWM</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
     <bcf:citekey order="11" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
     <bcf:citekey order="12" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
     <bcf:citekey order="13" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
@@ -2379,20 +2379,25 @@
     <bcf:citekey order="15" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
     <bcf:citekey order="16" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
     <bcf:citekey order="17" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">zobernigWhenAreOpaque2019</bcf:citekey>
     <bcf:citekey order="19" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
     <bcf:citekey order="20" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">shoshitaishvili2016state</bcf:citekey>
     <bcf:citekey order="22" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
     <bcf:citekey order="23" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">shoshitaishvili2016state</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">linBranchObfuscationUsing2013</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">tigress2025</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">linBranchObfuscationUsing2013</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">tigress2025</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">linBranchObfuscationUsing2013</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">wangLinearObfuscationCombat2011</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">ogisoSoftwareObfuscationTheoretical2003</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
     <bcf:citekey order="30" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
     <bcf:citekey order="31" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">xuManufacturingResilientBiOpaque2018</bcf:citekey>
-    <bcf:citekey order="32" intorder="2">zobernigWhenAreOpaque2019</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">zobernigWhenAreOpaque2019</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">colesaRandomRace</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">baldoniSurveySymbolicExecution2018</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">LLVM</bcf:citekey>
+    <bcf:citekey order="35" intorder="2">LLVMProject</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">paulPOP</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">collbergATaxonomyOfObfuscatingTransformations</bcf:citekey>

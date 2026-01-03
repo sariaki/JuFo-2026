@@ -18,7 +18,6 @@ os.makedirs("output", exist_ok=True)
 dataset_colors = ["#8b00c2", '#7e7e7e', "#006293"]
 dataset_line_colors = ['#6a408d', '#4e4e4e', '#378d94']
 
-# Style settings suitable for academic papers
 plt.rcParams.update({
     'font.family': 'serif',
     'font.size': 14,
@@ -46,7 +45,7 @@ logging.getLogger('angr').setLevel(logging.ERROR)
 DIR_BASE = "/home/paul/Documents/JuFo-2026/evaluation/llvm-test-suite-build/MultiSource"
 DIR_OBF = "/home/paul/Documents/JuFo-2026/evaluation/llvm-test-suite-build_obfuscated/MultiSource"
 
-MAX_BINARIES = 50
+MAX_BINARIES = None
 PREDICATES_PER_BIN = None
 
 CATEGORIES = {
@@ -156,7 +155,7 @@ def extract_vectors(binary_path, select_opaque_only=False):
     
     for block in sample:
         insns = block.capstone.insns
-        # We still analyze the window directly preceding the jump for the feature vector
+        # We analyze the window directly preceding the jump for the feature vector
         preamble = insns[-11:-1]
         
         v = {cat: 0 for cat in CAT_LIST}
@@ -209,7 +208,6 @@ if __name__ == "__main__":
     vecs_obf = collect_from_dir(DIR_OBF, is_obfuscated=True)
     if len(vecs_obf) == 0:
         print("\nNo opaque predicates found using the signature filter.")
-        print("       Check if the obfuscation actually uses subpd/addpd/mulpd.")
         exit()
 
     # Calculate

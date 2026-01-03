@@ -86,132 +86,6 @@ FunctionCallee Distribution::CreatePoissonFn(Module& M, Value* Lambda)
 }
 
 // cf. https://www.desmos.com/calculator/dyhao2ofgd
-std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::CreateRandomBernsteinBinarySearchFn(Module& M, std::mt19937 Rng)
-{
-    // Choose random interval as the CDF's domain
-    const double VerticalStretch = std::uniform_real_distribution(0.01, 50.0)(Rng);
-    const double HorizontalShift = std::uniform_real_distribution(-50.0, 50.0)(Rng);
-    const double DomainStart = HorizontalShift;
-    const double DomainEnd = HorizontalShift + (1.0 / VerticalStretch);
-
-    // Construct random Bernsteinpolynomial B(Degree, a * (x - k)) s.t. it is
-    // monotonically increasing and goes through (k | 0) && (k + 1/a | 1)
-    const int Degree = 3; //std::uniform_int_distribution(3, 50)(Rng);
-    const int n = Degree + 1;
-    auto Bernsteinpolynomial = MonotonicBernstein(Degree, Rng, VerticalStretch, HorizontalShift);
-    
-    const std::vector<double>& Coefficients = Bernsteinpolynomial.GetRandomCoefficients();
-
-    // Compile Bernsteinpolynomial to LLVM-IR
-    LLVMContext& LLVMCtx = M.getContext();
-    IRBuilder<> IRB(LLVMCtx);
-
-    Type* DoubleTy = IRB.getDoubleTy();
-
-    FunctionType* FT = FunctionType::get(DoubleTy, 
-        { DoubleTy }, false);
-    FunctionCallee SamplerCallee = M.getOrInsertFunction("sample_bernstein_inv_binarysearch", FT);
-    Function* SamplerFn = cast<Function>(SamplerCallee.getCallee());
-
-    // SamplerFn->addFnAttr(Attribute::AlwaysInline); 
-
-    // Get function argument: double u in [0;1]
-    Argument* TargetProb = &*SamplerFn->arg_begin();
-    TargetProb->setName("u");
-
-    // Create BasicBlocks for loop
-    BasicBlock* EntryBB = BasicBlock::Create(LLVMCtx, "entry", SamplerFn);
-    BasicBlock* LoopBB  = BasicBlock::Create(LLVMCtx, "loop", SamplerFn);
-    BasicBlock* ExitBB  = BasicBlock::Create(LLVMCtx, "exit", SamplerFn);
-
-    IRB.SetInsertPoint(EntryBB);
-    
-    // Constants
-    Value* ConstDomainStart = ConstantFP::get(DoubleTy, DomainStart);
-    Value* ConstDomainEnd   = ConstantFP::get(DoubleTy, DomainEnd);
-    
-    IRB.CreateBr(LoopBB);
-    IRB.SetInsertPoint(LoopBB);
-
-    // Create Phi Node vars' initial values
-    PHINode* Low = IRB.CreatePHI(DoubleTy, 2, "low");
-    PHINode* High = IRB.CreatePHI(DoubleTy, 2, "high");
-    PHINode* Iter = IRB.CreatePHI(IRB.getInt32Ty(), 2, "iter");
-
-    // Initialize Phi nodes
-    Low->addIncoming(ConstDomainStart, EntryBB);
-    High->addIncoming(ConstDomainEnd, EntryBB);
-    Iter->addIncoming(IRB.getInt32(0), EntryBB);
-
-    // Mid = (Low + High) * 0.5
-    Value* Sum = IRB.CreateFAdd(Low, High);
-    Value* Mid = IRB.CreateFMul(Sum, ConstantFP::get(DoubleTy, 0.5), "mid");
-
-    // Compute B(a * (Mid - k))
-
-    // t = a * (Mid - k)
-    Value* MidMinusK = IRB.CreateFSub(Mid, ConstantFP::get(DoubleTy, HorizontalShift));
-    Value* ATimesMidMinusK = IRB.CreateFMul(ConstantFP::get(DoubleTy, VerticalStretch), MidMinusK);
-    
-    // 1.0 - t
-    Value* OneMinusT = IRB.CreateFSub(ConstantFP::get(DoubleTy, 1.0), ATimesMidMinusK);
-
-    // (1-t)^Degree by repeated multiplication
-    Value* PowOneMinusT = ConstantFP::get(DoubleTy, 1.0);
-    for (unsigned i = 0; i < Degree; i++)
-    {
-        PowOneMinusT = IRB.CreateFMul(PowOneMinusT, OneMinusT);
-    }
-
-    // t^i by repeated multiplication
-    Value* PowT = ConstantFP::get(DoubleTy, 1.0);
-
-    // Accumulator for Bernstein Fn
-    Value* PolyResult = ConstantFP::get(DoubleTy, 0.0);
-
-    for (unsigned i = 0; i <= Degree; i++)
-    {
-        // Coeff * Binom * t^i * (1-t)^{n-i}
-        double Binom = Utils::BinomialCoefficient(Degree, i);
-        double Val = Coefficients[i] * Binom;
-        Value* CoeffTerm = ConstantFP::get(DoubleTy, Val);  
-
-        Value* Term = IRB.CreateFMul(CoeffTerm, PowT);
-        Term = IRB.CreateFMul(Term, PowOneMinusT);
-        PolyResult = IRB.CreateFAdd(PolyResult, Term);  
-
-        // Update powers for next iteration...
-        if (i < Degree) {
-            PowT = IRB.CreateFMul(PowT, ATimesMidMinusK); // t_i = t_{i-1} * t
-            PowOneMinusT = IRB.CreateFDiv(PowOneMinusT, OneMinusT); // (1-t)_i = (1-t)_{i-1} / (1-t)
-        }
-    }
-
-    // Update Bounds
-    // If PolyResult < TargetProb: too low => Low = Mid
-    // Else: too high => High = Mid
-    Value* TooLow = IRB.CreateFCmpOLT(PolyResult, TargetProb, "is_too_low");
-    
-    Value* NextLow  = IRB.CreateSelect(TooLow, Mid, Low, "next_low");
-    Value* NextHigh = IRB.CreateSelect(TooLow, High, Mid, "next_high");
-
-    Low->addIncoming(NextLow, LoopBB);
-    High->addIncoming(NextHigh, LoopBB);
-
-    // Exit after 64 iterations
-    // we've achieved full double precision accuracy
-    Value* NextIter = IRB.CreateAdd(Iter, IRB.getInt32(1));
-    Iter->addIncoming(NextIter, LoopBB);
-
-    Value* Done = IRB.CreateICmpEQ(NextIter, IRB.getInt32(64));
-    IRB.CreateCondBr(Done, ExitBB, LoopBB);
-
-    IRB.SetInsertPoint(ExitBB);
-    IRB.CreateRet(NextLow);
-
-    return { SamplerCallee, Bernsteinpolynomial, DomainStart, DomainEnd };
-}
-
 static int InsertedFns = 0;
 std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::InsertRandomBernsteinNewtonRaphson(Module &M, Function& Where, std::mt19937 Rng)
 {
@@ -347,8 +221,12 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     // f'(x) = B'(t) * (dt/dx) = B'(t) * VerticalStretch
     // x_new = x - (B(t) - u) / (B'(t) * VerticalStretch)
     Value* OffsetY = IRB.CreateFSub(AccumulatorAntiDerv, TargetProb); // B(t) - u
-    Value* Slope = IRB.CreateFMul(AccumulatorDerv, ConstVertStretch); // Chain rule applied
-    
+    Value* RawSlope = IRB.CreateFMul(AccumulatorDerv, ConstVertStretch); // Chain rule applied
+
+    // Guard against division by zero
+    Value* IsZeroSlope = IRB.CreateFCmpUEQ(RawSlope, ConstZero);
+    Value* Slope = IRB.CreateSelect(IsZeroSlope, ConstOne, RawSlope);
+
     // Update Bounds
     Value* Step = IRB.CreateFDiv(OffsetY, Slope);
     Value* NextX = IRB.CreateFSub(CurrentX, Step);
@@ -356,11 +234,11 @@ std::tuple<FunctionCallee, MonotonicBernstein, double, double> Distribution::Ins
     // Clamp Max
     // if (NextX > DomainEnd) NextX = DomainEnd;
     // TODO: Make this not get compiled to fmax/fmin
-    Value* TooHigh = IRB.CreateFCmpOGT(NextX, ConstDomainEnd);
+    Value* TooHigh = IRB.CreateFCmpUGT(NextX, ConstDomainEnd);
     Value* ClampedHigh = IRB.CreateSelect(TooHigh, ConstDomainEnd, NextX);
 
     // Clamp Min: if (NextX < DomainStart) NextX = DomainStart;
-    Value* TooLow = IRB.CreateFCmpOLT(ClampedHigh, ConstHorizShift);
+    Value* TooLow = IRB.CreateFCmpULT(ClampedHigh, ConstHorizShift);
     Value* ClampedFinal = IRB.CreateSelect(TooLow, ConstHorizShift, ClampedHigh);
 
     // Update Loop Variables

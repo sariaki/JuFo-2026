@@ -224,5 +224,5 @@ evaluation/*
 evaluation/llvm-test-suite-build_obfuscated/*
 !evaluation/llvm-test-suite-build_obfuscated/*.py
 !evaluation/llvm-test-suite-build_obfuscated/results*.json
-!evaluation/llvm-test-suite-build_obfuscated/run.sh
 !evaluation/llvm-test-suite-build_obfuscated/results/
+!evaluation/llvm-test-suite-build_obfuscated/run.sh
