@@ -35,7 +35,8 @@
               "title": "UMFRAGE"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,13 +184,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "1e489ce43c6e0a11",
+  "active": "c60d498f19e879f3",
   "lastOpenFiles": [
+    "TODO Schreiben.md",
     "EVALUIERUNG.md",
     "UMFRAGE.md",
     "Gleichung.png",
     "TODO Implementierung.md",
-    "TODO Schreiben.md",
     "TODO Recherche.md",
     "IDEE GEGEN PATTERN-MATCHING.md",
     "Methoden.md",

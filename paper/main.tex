@@ -464,8 +464,8 @@ Hierdurch sind die opaken Prädikate gut getarnt -- ein Parameterzugriff ist sch
         
         \\
         
-        \Function{IsVariableDerivedFromExternal}{$Argument \; \Var{Arg}, Hashmap \; \Var{Visited}, \Var{Depth} \in \mathbb{Z}$}
-            \If{$\Var{Depth} > 20 \vee \Var{Arg} \in \Var{Visited}$} \Comment{Die Konstante hat sich empirisch als geeignet ergeben.}
+        \Function{IsDerivedFromExternal}{$Argument \; \Var{Arg}, Hashmap \; \Var{Visited}, \Var{Depth} \in \mathbb{Z}$}
+            \If{$\Var{Depth} > 20 \vee \Var{Arg} \in \Var{Visited}$} \Comment{The depth-constant was deemed empirically suitable.}
                 \State \Return \False
             \EndIf
             
