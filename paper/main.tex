@@ -68,7 +68,7 @@
 \usepackage{array}
 \renewcommand{\arraystretch}{1.1}
 \usepackage{tabularx}
-\usepackage{lipsum}
+%\usepackage{lipsum}
 % Muss immer letztes Packet sein
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -98,8 +98,9 @@
 
 \newpage
 \setcounter{page}{0}
-\section*{Fachliche Kurzfassung}
-\textcolor{red}{TODO: Fachliche Kurzfasssung!!!}
+\section*{Projektüberblick}
+%\textcolor{red}{TODO: Fachliche Kurzfasssung!!!}
+Diese Arbeit beschäftigt sich damit, Computerprogramme so zu verändern, dass eine Rekonstruktion ihrer Programmlogik für Angreifer wirtschaftlich unrentabel ist. Hierfür wurde eine Methode vorgestellt, die Bedingungen in Programme einsetzt, welche nichts an dem tatsächlichen Programmablauf ändern. Im Unterschied zu existierenden Methoden funktioniert diese mit Wahrscheinlichkeit, welche sie besonders 
 
 \newpage
 
@@ -183,7 +184,7 @@ Bei der symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfa
 Hierdurch können schließlich über den Constraint-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden \cite{baldoniSurveySymbolicExecution2018}. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern \cite{baldoniSurveySymbolicExecution2018}.
 Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{Concolic Execution}) \cite{baldoniSurveySymbolicExecution2018} entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
 
-\section{Hintergrund und Motivation} \label{sec:motivation}
+\section{Forschungsmotivation} \label{sec:motivation}
 Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen. Die geschieht anhand der Kriterien aus \cref{sec:kriterien}.
 
 Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich \cite{zobernigWhenAreOpaque2019}.
@@ -733,7 +734,7 @@ Den größten Unterschied gab es bei Programmen mit nur wenigen Gleitkommazahlbe
 \section{Fazit} \label{sec:fazit}
 In der vorliegenden Arbeit wurde das neue Softwareobfuskationskonzept der probabilistischen opaken Prädikate eingeführt und in einer Implementierung in Form eines LLVM-Passes ein Machbarkeitsnachweis geliefert. Empirische Untersuchungen bestätigen, dass die vorgestellte Idee hinsichtlich ihrer Kosten, Resilienz, Stärke und Tarnung je nach Anwendungsfall und Kombination mit anderen Obfuskationsmethoden praxisgerecht ist. Dabei konnte nebenbei ein undokumentierter Angriffsvektor erkannt und eine Lösung dafür geboten werden.
 
-Die Resilient probabilistischer opaker Prädikate gegen symbolische Ausführung wurde theoretisch und praktisch begründet. Praktische Untersuchungen zeigen zudem eine Resilienz gegen weitere Angriffsmethoden, wie die Programmsynthese, eine probabilistische Analyse sowie Pattern-Matching. Die Forschungsfrage ist somit bestätigt.
+Die Resilient probabilistischer opaker Prädikate gegen symbolische Ausführung wurde theoretisch und praktisch begründet. Praktische Untersuchungen zeigen zudem eine Resilienz gegen weitere Angriffsmethoden, wie die Programmsynthese, eine probabilistische Analyse sowie Pattern-Matching. Die Forschungsfrage ist somit positiv beantwortet.
 
 Offen bleibt die Resilienz gegenüber Machine Learning basierten Deobfuskationattacken wie \cite{tofighi-shiraziDefeatingOpaquePredicates2019}. Auch mögliche Symbiosen mit weiteren Obfuskationsmethoden sollten weiter untersucht werden.
 Gegenstand einer weiterführenden Auseinandersetzung sollte zudem die Anwendbarkeit der hier dargelegten Prinzipien der probabilistischen Obfuskation auf andere Bereiche der Softwareobfuskation sein.
