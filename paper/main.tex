@@ -55,6 +55,7 @@
 \MakeRobust{\Call}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bib.bib}
+\DeclareNameAlias{default}{last-first}
 \usepackage{amsmath}
 \let\openbox\undefined
 \usepackage{amsthm}
@@ -94,15 +95,16 @@
 \end{titlepage}
 
 \thispagestyle{empty}
+\section*{Projektüberblick}
+%\textcolor{red}{TODO: Fachliche Kurzfasssung!!!}
+Diese Arbeit beschäftigt sich damit, Computerprogramme so zu verändern, dass eine Rekonstruktion ihrer Programmlogik für Angreifer wirtschaftlich unrentabel ist. Hierfür wurde eine Methode entwickelt, die Bedingungen in Programmen einsetzt, um die Komplexität der Programme zu erhöhen, ohne dabei den Programmablauf zu verändern. Im Unterschied zu existierenden Methoden funktioniert diese über die Einbindung von Wahrscheinlichkeiten. Diese erschweren eine Entfernung der eingeführten Bedingungen und somit auch der Komplexität für Angreifer erheblich, wie durchgeführte Experimente belegen.
+
+\newpage
+\thispagestyle{empty}
 \tableofcontents
 
 \newpage
-\setcounter{page}{0}
-\section*{Projektüberblick}
-%\textcolor{red}{TODO: Fachliche Kurzfasssung!!!}
-Diese Arbeit beschäftigt sich damit, Computerprogramme so zu verändern, dass eine Rekonstruktion ihrer Programmlogik für Angreifer wirtschaftlich unrentabel ist. Hierfür wurde eine Methode vorgestellt, die Bedingungen in Programme einsetzt, welche nichts an dem tatsächlichen Programmablauf ändern. Im Unterschied zu existierenden Methoden funktioniert diese mit Wahrscheinlichkeit, welche sie besonders 
-
-\newpage
+\setcounter{page}{1}
 
 \section{Einleitung}
 \emph{Obfuskation} (lat. \emph{obfuscare}: verdunkeln) bezeichnet jede Transformation von Programmen zur Hinderung von sog. Reverse Engineering - der Analyse von Software zum Cracken, Verstehen oder Kopieren.
@@ -184,7 +186,7 @@ Bei der symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfa
 Hierdurch können schließlich über den Constraint-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden \cite{baldoniSurveySymbolicExecution2018}. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern \cite{baldoniSurveySymbolicExecution2018}.
 Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{Concolic Execution}) \cite{baldoniSurveySymbolicExecution2018} entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
 
-\section{Forschungsmotivation} \label{sec:motivation}
+\section{Stand der Forschung und Motivation} \label{sec:motivation}
 Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen. Die geschieht anhand der Kriterien aus \cref{sec:kriterien}.
 
 Existierende Literatur beschränkt sich vornehmlich auf statische Analyseansätze. Dynamische Analyseideen z.B. zur probabilistischen Untersuchung opaker Prädikate wurden veröffentlicht und experimentell untersucht, ergaben aber eine zu hohe Fehlerquote. Insbesondere reduzieren sich publizierte Ansätze auf symbolische Ausführung. Dies hat den Hintergrund, dass die symbolische Ausführung momentan eine der effektivsten automatisierten Analysemethoden bildet, welche mit wenig Aufwand und eigenem Eingriff verwendet werden kann. Andere Analysemethoden, wie z.B. \emph{Tainting} sind zudem abhängiger von Faktoren neben den opaken Prädikaten selbst. Im Falle des \emph{Taintings} ist die Qualität des Füllcodes wesentlich \cite{zobernigWhenAreOpaque2019}.
@@ -220,7 +222,7 @@ Eine Befragung von Audrey Dutcher, einer der Entwicklerinnen vom Programmanalyse
 \end{enumerate}
 
 %Angesichts der Schwierigkeiten aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaker Prädikate.
-Angesichts der dargelegten Probleme aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaken Prädikate.
+Angesichts der dargelegten Probleme aktueller Methoden ergibt sich die Notwendigkeit effizienter, getarnter und resilienter (nur schwer automatisch deobfuskierbarer) opaker Prädikate.
 
 \section{Ansatz} 
 \subsection{Angreifermodell} \label{sec:angreiferModell}
@@ -359,12 +361,13 @@ Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Ei
     \item $\lim\limits_{x\to \inf \mathbb{D}+}F(x)=0$ und $\lim\limits_{x\to \sup \mathbb{D}-}F(x)=1$.
 \end{enumerate}
 %Die Nutzung eines einfachen Polynoms genügt hier nicht, da diese durch ihre häufigen Oszillationen kein notwendiges monotones Steigen garantieren (vgl. \cref{def:kumVer}, Bedingung 1). Dies wird über Bernsteinpolynome der folgenden Form gelöst:
-Der einfachste Weg, strenge Monotonie sowie die beschriebenen Grenzwerte umzusetzen, ist über Bernsteinpolynome folgender Form. Die Umsetzung über Polynome in der Standardbasis wäre durch deren häufigen Oszillationen erschwert.
+Die Umsetzung über Polynome in der Standardbasis ist durch deren häufigen Oszillationen erschwert.
+Der einfachste Weg, Monotonie sowie die beschriebenen Grenzwerte umzusetzen, ist über Bernsteinpolynome folgender Form:
 \begin{equation}
 	B_n(x) \;=\; \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{\,n-k}, \\
-	\text{mit} \; c_0 \leq c_1 \leq ... c_n \; \text{und} \; n \in \mathbb{R}.
+	\text{mit} \; c_0 \le c_1 \le ... c_n \; \text{und} \; n \in \mathbb{R}.
 \end{equation}
-Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen, da: \textcolor{red}{TODO: Begründung zitieren}.
+Um alle Eigenschaften eine kumulativen Verteilungsfunktion zu erfüllen, muss $B_n(x)$ zudem durch die Punkte $(0 | 0)$ und $(0 | 1)$ verlaufen. Hierfür genügt es, $c_0 = 0$ und $c_n = 1$ festzulegen \cite{lorentzBernstein1953}.
 
 Für eine Verallgemeinerung lassen sich der x-Achsenstreckfaktor $a$ sowie der x-Achsenverschiebungssummand $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
@@ -392,7 +395,7 @@ Das Vorgehen für diese Methode ist somit Folgendes:
 
 %Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
-Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=8$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt. Der Pseudocode hierfür ist in \cref{alg:invCumSum} gegeben.¸
+Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren in $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt\footnote{Hierfür muss das Bernsteinpolynom mit \emph{streng} monoton steigenden Koeffizienten generiert werden.}. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=8$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt. Der Pseudocode hierfür ist in \cref{alg:invCumSum} gegeben.¸
 \begin{algorithm}[!h] 
 	\caption{Berechnung der inversen kumulativen Verteilungsfunktion über das Newton-Raphson-Verfahren }
 	\label{alg:invCumSum}
@@ -597,16 +600,15 @@ void __fastcall foo(uint64_t x)
 \section{Evaluierung} \label{sec:evaluierung}
 \subsection{Vorgehen} \label{sec:kriterien}
 Für die Evaluierung wurden die weitverbreiteten Kriterien von Collberg et al. \cite{collbergATaxonomyOfObfuscatingTransformations} verwendet\label{par:metriken}:
-\textcolor{red}{TODO: Reihenfolge anpassen!!!}
 \begin{center}
     \begin{tabular}{c|l}
     	\textbf{Kriterium} & \textbf{Beschreibung} \\
+        \hline
+        Kosten & Wie sehr erhöht die Obfuskation die Laufzeitkosten? \\
     	\hline
     	Stärke & Wie unverständlich ist das obfuskierte Programm für einen Angreifer? \\
     	\hline
     	Resilienz & Wie schwer ist eine (automatisierte) Deobfuskation? \\
-    	\hline
-    	Kosten & Wie sehr erhöht die Obfuskation die Laufzeitkosten? \\
     	\hline
     	Tarnung & Wie auffällig ist die Obfuskation? %Wie leicht lässt sich ein obfuskiertes Programm als solches erkennen? \\
     \end{tabular}
@@ -622,7 +624,7 @@ Es wurden dabei $k=8$ Newton-Raphson-Iterationen gewählt, $n=4$ als durchschnit
 \begin{minipage}[t]{0.49\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{img/stats/compilation_time}
-	\captionof{figure}{Kompilationszeit in Abhängigkeit vom Obfuskationslevel}
+	\captionof{figure}{Durchschnittliche Kompilationszeit in Abhängigkeit vom Obfuskationslevel}
 	\label{fig:compilationTime}
 \end{minipage} \hfill
 \begin{minipage}[t]{0.49\textwidth}
@@ -641,14 +643,17 @@ Es wurden dabei $k=8$ Newton-Raphson-Iterationen gewählt, $n=4$ als durchschnit
 	\centering
 	\includegraphics[width=1\textwidth]{img/stats/pass_rate}
 	\captionof{figure}{Testerfolg in Abhängigkeit vom Obfuskationslevel}
-	\label{fig:pass_rate}
+	\label{fig:passRate}
 \end{minipage}
 \\\\
-Um die Obfuskationskosten zu messen wurden die durchschnittliche Programmgröße, -laufzeit, Kompilationszeit und Erfolgsquote bei den Programmen der LLVM Test Suite erhoben.
+Um die Obfuskationskosten zu messen wurden die durchschnittliche Programmgröße (\cref{fig:size}), -laufzeit (\cref{fig:runtime}), Kompilationszeit (\cref{fig:compilationTime}) und Erfolgsquote (\cref{fig:passRate}) bei den Programmen der LLVM Test Suite erhoben.
 
-Die größten Auswirkungen hatte die Obfuskation auf die Programmlaufzeit. Die sich in der Größe oder Laufzeit ergebenden Kosten lassen sich allerdings durch ein Finetuning der Obfuskatoreinstellungen vermindern, z.B. indem nur bestimmte Funktionen obfuskiert werden.
-Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die SQLite problemlos kompilieren und fehlerfrei funktionierten. Der Abnehmende Testerfolg  in \cref{fig:pass_rate} liegt an den für die Tests als Fehler geltenden unerwarteten Gleitkommazahl-Flagänderungen. Die vermeintlichen fehlerhaften Programme wurden geprüft und problemlos manuell ausgeführt.
-Insgesamt sind die Kosten je nach Programm/Anwendungsfall und Obfuskationslevel praxisgerecht.
+Die größten Auswirkungen hatte die Obfuskation auf die Programmlaufzeit (\cref{fig:runtime}). Die sich in der Größe oder Laufzeit ergebenden Kosten lassen sich allerdings durch ein Finetuning der Obfuskatoreinstellungen vermindern, z.B. indem nur bestimmte Funktionen obfuskiert werden.
+
+Es konnte keine Auswirkung auf die Kompilationszeit gemessen werden. Diese schwankte um die durchschnittliche Kompilationszeit der Kompilation ohne Obfuskationspass, wie sich \cref{fig:compilationTime} entnehmen lässt.
+
+Hervorzuheben ist, dass trotz der probabilistischen opaken Prädikate auch größere Projekte wie die SQLite problemlos kompilieren und fehlerfrei funktionierten. Der Abnehmende Testerfolg  in \cref{fig:passRate} liegt an den für die Tests als Fehler geltenden unerwarteten Gleitkommazahl-Flagänderungen. Die vermeintlichen fehlerhaften Programme wurden geprüft und problemlos manuell ausgeführt. Die vorgefertigten Tests sind lediglich zu streng.
+Insgesamt sind die Kosten je nach Programm/Anwendungsfall und Obfuskationslevel somit praxisgerecht.
 
 \subsubsection{Stärke} \label{sec:stärke}
 Wie in \cite{xuManufacturingResilientBiOpaque2018} angemerkt wurde, ergibt eine Quantifizierung von Stärke bei der Evaluierung neuer opaker Prädikate wenig Sinn. Relevante Metriken wie die zyklomatische Komplexität (McCabe-Metrik) erhöhen sich beliebig mit der Häufigkeit opaker Prädikate und nicht durch ihre Art.
@@ -683,7 +688,6 @@ Hierfür wurden folgende Angriffsmethoden auf das einfache Programm aus \cref{fa
 \end{itemize}
 Wie vermutet waren keine der symbolischen Ausführungsengines in der Lage, die Möglichkeit, dass einer der zwei Pfade nie ausgeführt wird, auszuschließen. 
 Alle drei symbolischen Ausführungsengines waren nicht in der Lage, innerhalb von 8 Stunden die Constraints des unwahrscheinlichen Pfades zu extrahieren und hängten.
-%\textcolor{red}{TODO: Verhalten beschreiben (Angr fickt Computer usw.)}
 
 Eine Ausführung von Syntia entfernte nicht nur die Obfuskation, sondern auch wesentlichen Programmcode, sodass das Programm nicht mehr dasselbe Laufzeitverhalten in allen Situationen hatte.
 %\textcolor{red}{Eine Ausführung von Syntia ergab ...}
@@ -701,7 +705,8 @@ Zudem ist eine Anwendung von an die Obfuskationsmethode angepassten Heuristiken 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.6\textwidth]{img/stats/stealth}
-    \caption{Programmanweisungverteilung vor/nach der Obfuskation} 
+    \centering
+    \caption{Histogramm und KDE der Wahrscheinlichkeitsdichte der euklidischen Distanz zum Mittelpunkt unobfuskierter Prädikate vor/nach der Obfuskation} 
     \label{fig:opcodeDist}
 \end{figure}
 \begin{table}[!h]
@@ -750,18 +755,17 @@ Ich danke meinem schulischen Projektbetreuer, Herrn Dr. Arndt Latußeck für die
 
 Zudem danke ich meiner Mutter, Claudia Baumgartner-Bardubitzki für ihr sprachliches/formales Korrektorat.
 
-Des Weiteren danke ich allen Entwicklern verschiedener Open-Source Softwarebibliotheken und -Anwendungen. Ohne diese wäre eine Ausarbeitung in der begrenzten Zeit in aktueller Form unmöglich gewesen.
+Des Weiteren danke ich allen Entwicklern verschiedener Open-Source Softwarebibliotheken und -Anwendungen. Ohne diese wäre eine Ausarbeitung in der begrenzten Zeit und aktueller Form unmöglich gewesen.
 \newpage
 
 \pagenumbering{Alph}
 
-\printbibliography[title=Literaturverzeichnis]
 \addcontentsline{toc}{section}{Literaturverzeichnis}
-
-\listoffigures
+\printbibliography[title=Literaturverzeichnis]
 
 \newpage
 
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
 
 \end{document}

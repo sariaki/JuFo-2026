@@ -1,17 +1,20 @@
-- [ ] `bib.bib` "and" -> "und"
-- [ ] fix bib Uneinheitlichkeiten
-- [ ] fix "Literaturverzeichnis C"
-- [ ] fix Literaturverzeichnis alphabetisch steigend
+- [x] `bib.bib` "and" -> "und"
+- [x] fix bib Uneinheitlichkeiten
+- [x] fix "Literaturverzeichnis C"
+- [x] fix Literaturverzeichnis alphabetisch steigend
 
 - [ ] Fachliche Kurzfassung
-- [ ] Projektüberblick
+- [x] Projektüberblick
 
-- [ ] Hintergrund & Motivation in die Einleitung?
+- [ ] TODOS in Paper zu Ende
+
+- [ ] **Tarnungsgrafik neu generieren**
+- [ ] **Tarnung erläutern**
+
+- [ ] Syntia Anwendung
 
 - [ ] **Fachbegriffnutzung konsistenter machen**
 	- [ ] Decompiler -> Dekompilierer
-
-- [ ] Grafiken aus IDA ersetzen mit Flowchart
 
 - [x] Erklären, warum wir nicht einfach Aussagen über eine uniforme Verteilung treffen
 	- Pattern-Matching
@@ -19,5 +22,3 @@
 		- Stärke nun abhängig von Verschleierung der Warhscheinlichkeit
 	- Lösung: Zur Klasse stochastischer opaker Prädikate dazuzählen => Erweiterung Implementierung!!!
 	- [ ] Diese Methode ist gut, weil nur pattern matching (Klasse ist aber groß, getarnt u. nicht einheitlich) und dynamische ausführung (kann man sich gegen wehren mit paper)
-
-- Prompt

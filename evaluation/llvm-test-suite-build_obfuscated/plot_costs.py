@@ -147,14 +147,20 @@ comp_stats = df_merged.groupby('Level')['CompileTime'].agg(['mean', 'sem']).rese
 #     linewidth=2
 # )
 
-ax.fill_between(
-    comp_stats['Level'], 
-    comp_stats['mean'] - comp_stats['sem'], 
-    comp_stats['mean'] + comp_stats['sem'],
-    color=dataset_colors[1],
-    alpha=0.3,
-    zorder=1
-)
+# ax.fill_between(
+#     comp_stats['Level'], 
+#     comp_stats['mean'] - comp_stats['sem'], 
+#     comp_stats['mean'] + comp_stats['sem'],
+#     color=dataset_colors[1],
+#     alpha=0.3,
+#     zorder=1
+# )
+
+y_low = (comp_stats['mean'] - comp_stats['sem']).min()
+y_high = (comp_stats['mean'] + comp_stats['sem']).max()
+
+pad = 0.05 * (y_high - y_low)   # 5% padding
+ax.set_ylim(y_low - pad, y_high + pad)
 
 ax.plot(
     comp_stats['Level'], comp_stats['mean'],
@@ -168,8 +174,24 @@ ax.plot(
     zorder=2
 )
 
-ax.set_xticks(levels_list)
-ax.set_ylabel("Kompilationszeit (Sekunden)")
+ax.axhline(comp_stats['mean'][0], color=dataset_line_colors[1], linestyle='--', linewidth=1.5, alpha=0.8)
+
+
+# bars = ax.bar(
+#     [str(x) for x in comp_stats['Level']], 
+#     comp_stats['mean'],
+#     color=dataset_colors[1], 
+#     edgecolor=dataset_line_colors[1],
+#     linewidth=1.5,
+#     width=0.6,
+#     zorder=3
+# )
+
+# Labels on bars
+# ax.bar_label(bars, fmt='%.1f', padding=4, fontsize=11, fontweight='bold')
+
+# ax.set_xticks(levels_list)
+ax.set_ylabel("Durchschnittliche Kompilationszeit (Sek.)")
 ax.set_xlabel("Obfuskationslevel (%)")
 
 fig.savefig("output/compilation_time.pdf")

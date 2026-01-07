@@ -238,7 +238,7 @@ if __name__ == "__main__":
         print(f"KDE Plot failed: {e}")
 
     ax.set_xlabel("Euklid'sche Distanz zum Mittelpunkt unobfuskierter Prädikate")
-    ax.set_ylabel('Relative Häufigkeit')
+    ax.set_ylabel('Wahrscheinlichkeitsdichte')
     ax.legend()
 
     # Plot unobfuscated average

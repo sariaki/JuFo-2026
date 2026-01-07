@@ -150,6 +150,7 @@
 }
 
 @inbook{wangLinearObfuscationCombat2011,
+  author = {Wang, Zhi and Ming, Jiang and Jia, Chunfu and Gao, Debin},
   title = {Linear {{Obfuscation}} to {{Combat Symbolic Execution}}},
   booktitle = {Lecture {{Notes}} in {{Computer Science}}},
   date = {2011},
@@ -161,11 +162,8 @@
   url = {http://link.springer.com/10.1007/978-3-642-23822-2_12},
   urldate = {2025-07-22},
   abstract = {Trigger-based code (malicious in many cases, but not necessarily) only executes when specific inputs are received. Symbolic execution has been one of the most powerful techniques in discovering such malicious code and analyzing the trigger condition. We propose a novel automatic malware obfuscation technique to make analysis based on symbolic execution difficult. Unlike previously proposed techniques, the obfuscated code from our tool does not use any cryptographic operations and makes use of only linear operations which symbolic execution is believed to be good in analyzing. The obfuscated code incorporates unsolved conjectures and adds a simple loop to the original code, making it less than one hundred bytes longer and hard to be differentiated from normal programs. Evaluation shows that applying symbolic execution to the obfuscated code is inefficient in finding the trigger condition. We discuss strengths and weaknesses of the proposed technique.},
-  bookauthor = {Wang, Zhi and Ming, Jiang and Jia, Chunfu and Gao, Debin},
   isbn = {978-3-642-23821-5 978-3-642-23822-2},
   langid = {english},
-  keywords = {⭐wichtig,gelesen wichtig},
-  file = {C:\Users\sariaki\Zotero\storage\SCQUWQ3Y\2011 - Linear Obfuscation to Combat Symbolic Execution.pdf}
 }
 
 @article{xuLayeredObfuscationTaxonomy2020,
@@ -416,7 +414,9 @@
 	howpublished = {Slides, Black Hat / conference presentation},
 	month        = aug,
 	year         = {2018},
-	note         = {\url{https://i.blackhat.com/us-18/Wed-August-8/us-18-DesclauxMougey-Miasm-Reverse-Engineering-Framework.pdf}, accessed: <access-date>}
+	url          = {https://i.blackhat.com/us-18/Wed-August-8/us-18-DesclauxMougey-Miasm-Reverse-Engineering-Framework.pdf},
+    urldate      = {2025-10-14}
+    
 }
 
 @inproceedings{SSTIC2015-Saudel-Salwan,
@@ -472,11 +472,14 @@
 }
 
 @article{ogisoSoftwareObfuscationTheoretical2003,
-    title = {Software {{Obfuscation}} on a {{Theoretical Basis}} and {{Its Implementation}}},
-    author = {Ogiso, Toshio and Sakabe, Yusuke and Soshi, Masakazu and Miyaji, Atsuko},
-    year = 2003,
-    abstract = {Software obfuscation is a promising approach to protect intellectual property rights and secret information of software in untrusted environments. Unfortunately previous software obfuscation techniques share a major drawback that they do not have a theoretical basis and thus it is unclear how effective they are. Therefore we propose new software obfuscation techniques in this paper. The techniques are based on the difficulty of interprocedural analysis of software programs. The essence of our obfuscation techniques is a new complexity problem to precisely determine the address a function pointer points to in the presence of arrays of function pointers. We show that the problem is NPhard and the fact provides a theoretical basis for our obfuscation techniques. Furthermore, we have already implemented a prototype tool that obfuscates C programs according to our proposed techniques and in this paper we describe the implementation and discuss the experiments results.},
-    langid = {english},
+    title={Software obfuscation on a theoretical basis and its implementation},
+    author={Ogiso, Toshio and Sakabe, Yusuke and Soshi, Masakazu and Miyaji, Atsuko},
+    journal={IEICE TRANSACTIONS on Fundamentals of Electronics, Communications and Computer Sciences},
+    volume={86},
+    number={1},
+    pages={176--186},
+    year={2003},
+    publisher={The Institute of Electronics, Information and Communication Engineers}
 }
 
 @misc{paulPOP,
@@ -505,7 +508,7 @@
    }
 
 @misc{vec35DecompilerExplorer,
-    author       = {Vector 35},
+    author       = {{Vector 35}},
     title        = {Quelltext von {Decompiler Explorer}},
     howpublished = {\url{https://github.com/decompiler-explorer/decompiler-explorer}},
     year         = {2025},
@@ -513,10 +516,10 @@
 }
 
 @misc{darpaSafeWare,
-    author       = {Defense Advanced Research Projects Agency },
-    title        = {SafeWare}},
-    howpublished = {\url{https://www.darpa.mil/research/programs/safeware}},
-    year         = {2025},
+    author  = {{Defense Advanced Research Projects Agency}},
+    title   = {SafeWare},
+    url     = {https://www.darpa.mil/research/programs/safeware},
+    year    = {2025},
     urldate = {2025-12-29},
 }
 
@@ -528,3 +531,10 @@
 %    howpublished = {[Vortrag]},
 %    note = {Präsentiert bei {Pass the SALT 2018} in Lille, Frankreich}
 %}
+
+@book{lorentzBernstein1953,
+    author    = {G. G. Lorentz},
+    title     = {Bernstein Polynomials},
+    publisher = {University of Toronto Press / Springer (reprint/excerpt available)},
+    year      = {1953},
+}
