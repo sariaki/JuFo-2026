@@ -6,16 +6,14 @@
 - [ ] Fachliche Kurzfassung
 - [x] Projektüberblick
 
-- [ ] Symbolische Ausführung so oft zitieren?
-- [ ] LLVM so lang?
 - [ ] Fix Abb. 4 Grafik Verschiebung
-- Abschnittsfußnote: "Die Angaben des folgenden Abschnitts entstammen, sofern nicht anders vermerkt, aus ..."
-- Grafik  raus
+- [x] Abschnittsfußnote: "Die Angaben des folgenden Abschnitts entstammen, sofern nicht anders vermerkt, aus ..."
+- [x] Grafik raus
 
 - [ ] TODOS in Paper zu Ende
 
 - [ ] **Tarnungsgrafik neu generieren**
-- [ ] **Tarnung erläutern**
+- [x] **Tarnung erläutern**
 
 - [ ] Syntia Anwendung
 

@@ -174,17 +174,17 @@ Das Prädikat $\mathcal{O}(\phi)=\left[-1977224191 \space \& \space 1 = 1\right]
 Das Prädikat $\mathcal{O}(\phi)= \left[(y < 10) \vee (x \cdot (x + 1) \mod{2} \equiv 0)\right]$ aus \text{\cite{ieeespro2015-JunodRWM}} mit $\phi=(x,y)$ und $x, y \in \mathbb{Z}$ ist immer wahr, da $x\cdot (x+1)$ immer gerade ist. Der Wert is folglich von $y$ unabhängig.
 \end{example}
 
-\subsection{Symbolische Ausführung} % Automatische Deobfuskationsattacken
-Im Gegensatz zur konkreten Ausführung, welche ein Programm für spezifische Inputs ausführt, ermöglicht die symbolische Ausführung die Analyse des Programmverhaltens für ganze Klassen an Inputs \cite{baldoniSurveySymbolicExecution2018}.
+\subsection[Symbolische Ausführung]{Symbolische Ausführung\footnote{Die Angaben des folgenden Abschnitts entstammen, sofern nicht anders vermerkt, aus \cite{baldoniSurveySymbolicExecution2018}}} % Automatische Deobfuskationsattacken
+Im Gegensatz zur konkreten Ausführung, welche ein Programm für spezifische Inputs ausführt, ermöglicht die symbolische Ausführung die Analyse des Programmverhaltens für ganze Klassen an Inputs.
 Die Notwendigkeit symbolischer Ausführung ergibt sich schon am Beispiel einer einer Funktion mit zwei 64-Bit Variablen. Um mit dynamischer (konkreter) Ausführung herauszufinden, für welche Werte eine Bedingung wahr ist, müsste man hier $2^{64} \cdot 2^{64} = 2^{128}$ verschiedene Werte ausprobieren. Ein solcher Bruteforce ist selbst für die modernsten Computer unmöglich - symbolische Ausführung hingegen schon.
 Ein symbolischer \emph{Ausführungsengine} besteht aus 2 Hauptkomponenten: einem \emph{symbolischen Ausführungsmodul} und einem Constraint-Solver\footnote{Es handelt sich meist um einen SMT-Solver.} zur Lösung/zum Prüfen von Bedingungen/Einschränkungen. 
-Bei der symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfadformel} und ein \emph{symbolischer Speicher} mitgeführt \cite{baldoniSurveySymbolicExecution2018}. 
+Bei der symbolischen Ausführung wird für jeden Kontrollflussweg eine \emph{Pfadformel} und ein \emph{symbolischer Speicher} mitgeführt. 
 \begin{enumerate}[]
-	\item Die Pfadformel, eine boolesche Formel erster Ordnung, führt die Bedingungen der entlang des Pfades genommenen Verzweigungen zusammen \cite{baldoniSurveySymbolicExecution2018}. 
-	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variablen) auf symbolische Ausdrücke ab \cite{baldoniSurveySymbolicExecution2018}.
+	\item Die Pfadformel, eine boolesche Formel erster Ordnung, führt die Bedingungen der entlang des Pfades genommenen Verzweigungen zusammen. 
+	\item Der symbolische Speicher bildet unbekannte Variablen (z.B. Parameter und alle darauf aufbauende Variablen) auf symbolische Ausdrücke ab.
 \end{enumerate}
-Hierdurch können schließlich über den Constraint-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden \cite{baldoniSurveySymbolicExecution2018}. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern \cite{baldoniSurveySymbolicExecution2018}.
-Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen \cite{baldoniSurveySymbolicExecution2018}. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{Concolic Execution}) \cite{baldoniSurveySymbolicExecution2018} entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
+Hierdurch können schließlich über den Constraint-Solver allgemeine Aussagen über die Erreichbarkeit bestimmter Pfade oder Variablenwerte getroffen werden. Ist eine Pfadformel erfüllbar, kann der Solver zudem konkrete Eingebewerte hierfür liefern.
+Hat das Programm aber besonders viele Verzweigungen (z.B. durch Schleifen) oder komplexe Constraints (z.B. nichtlineare Arithmetik), stoßen die Constraint-Solver an ihre laufzeittechnischen Grenzen. Zur Lösung wurden verschiedene Ansätze (z.B. \emph{Concolic Execution}) entwickelt. Aufgrund der Fülle an Informationen und der geringen Relevanz für die in dieser Arbeit dargestellten Abwehrmethodik, wird auf ihre Darstellung verzichtet..
 
 \section{Stand der Forschung und Motivation} \label{sec:motivation}
 Dieser Abschnitt präsentiert den aktuellen Stand der Forschung zu opaken Prädikaten und begründet daraus diese Arbeit. Es werden aktuelle, zentrale Ansätze exemplarisch vorgestellt, um Forschungsstand und Herausforderungen zu verdeutlichen. Die geschieht anhand der Kriterien aus \cref{sec:kriterien}.
@@ -506,20 +506,17 @@ Hierdurch sind die opaken Prädikate gut getarnt -- ein Parameterzugriff ist sch
 %\subsection{Entscheidungen}
 Zur Implementierung wurden drei Ansätze erwogen: die Entwicklung eines Bin2Bin-Obfuskators\footnote{Direkte Manipulation von Assembler-Anweisungen existierender Programme.}, die Implementierung in Form eines LLVM-Passes \cite{LLVM, LLVMProject}\footnote{Nutzung des LLVM-Projekts, um einen sog. \emph{Compiler-Pass} zu schreiben.} sowie die Quellcodemanipulation\footnote{durch z.B. C-Makros und das Einfügen von inline Assembler-Ausschnitten}
 Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vorteile:
-
 \begin{enumerate}[]
     \item \textbf{Abstraktion und Portabilität:} LLVM entkoppelt durch eine abstrakte Zwischensprache (\emph{Intermediate Representation}) von Architektur-/Betriebssystemdetails. Viele \emph{low-level} Aufgaben (z.B. \emph{Relocations}, Einfügen von Assembler-Anweisungen etc.) werden übernommen.
     \item \textbf{Optimierung:} Die LLVM-Toolchain enthält etablierte Optimierungs-Pässe und profitiert fortlaufend von der Arbeit zahlreicher Beiträgender. Dies ermöglicht eine nahezu optimale Kompilation obfuskierter Programme, welche sich als nützlich und sogar erforderlich in vielen Anweundungssituationen erweist (z.B. \emph{Embedded Systems}, IoT, Echtzeitsysteme etc.).
     \item \textbf{Entwicklungsaufwand:} Bin2Bin-Obfuskatoren und umfangreiche Quellcodemanipulation erfordern viel manuellen Aufwand und sind fehlerhaftig. Ein LLVM-Pass ermöglicht den reinen Fokus auf die Obfuskationslogik.
 \end{enumerate}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\linewidth]{img/llvm-pass}
-    \caption{Schematische Darstellung eines LLVM-basierten Build-Prozesses mit optionalem Obfuskator-Pass.}
-    \label{fig:llvm-pass}
-\end{figure}
-
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=0.8\linewidth]{img/llvm-pass}
+%    \caption{Schematische Darstellung eines LLVM-basierten Build-Prozesses mit optionalem Obfuskator-Pass.}
+%    \label{fig:llvm-pass}
+%\end{figure}
 Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie geringem Entwicklungsaufwand.
 
 Die Implementierung, Beispiele und Experimente sind unter \cite{paulPOP} zu finden. Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
