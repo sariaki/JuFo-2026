@@ -7,7 +7,7 @@ using namespace llvm;
 extern cl::OptionCategory PassCategory;
 
 extern cl::opt<unsigned int> POPInsertProbability;
-extern cl::opt<unsigned int> POPPredicateProbability;
+extern cl::opt<double> POPPredicateProbability;
 extern cl::opt<unsigned int> POPRunsPerFunction;
 extern cl::opt<unsigned int> POPMinDegree;
 extern cl::opt<unsigned int> POPMaxDegree;

@@ -37,12 +37,12 @@ def format_ax(ax):
 # Data Processing
 
 files = {
-    0:  'results0.json',
-    20: 'results20.json',
-    40: 'results40.json',
-    60: 'results60.json',
-    80: 'results80.json',
-    100: 'results100.json'
+    0:   'results0.json',
+    20:  'averaged_results20.json',
+    40:  'averaged_results40.json',
+    60:  'averaged_results60.json',
+    80:  'averaged_results80.json',
+    100: 'averaged_results100.json'
 }
 
 data_rows = []

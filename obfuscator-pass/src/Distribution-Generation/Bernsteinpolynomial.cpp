@@ -18,29 +18,61 @@ MonotonicBernstein::MonotonicBernstein(uint64_t Degree, std::mt19937 Rng, double
     m_DerivativeCoefficients.reserve(m_Degree);
 }
 
+// We use the Dirichlet distribution to get the bell shape
 const std::vector<double>& MonotonicBernstein::GetRandomCoefficients()
 {
-    // Guarantee that the polynomial goes through (0|0) && (0|1)
-    m_Coefficients.push_back(0.0);
-    // errs() << "m_Coefficients[0]: " << m_Coefficients[0] << "\n";
+    m_Coefficients.clear();
+    m_DerivativeCoefficients.clear();
 
-    // Generate coefficients randomly, 
-    // guaranteeing that the polynomial is strictly monotonically increasing:
-    // c_0 < c_1 < ... < c_n
-    // If we instead guarantee monotonicity (<=), we could end up with flat areas
-    // which would break the Newton-Raphson method (division by zero)
-    for (int i = 1; i < m_Degree; i++)
+    std::gamma_distribution<double> GammaDistribution(0.8, 1.0 );
+    std::uniform_real_distribution<double> TinyShift(0.0, 1e-12); // For numerical safety
+
+    if (m_Degree < 1)
     {
-        m_Coefficients.push_back(m_Coefficients[i - 1] + std::uniform_real_distribution(1e-6, // avoid zero-difference
-            1.0 / static_cast<double>(m_Degree))(m_Rng));
-        // errs() << "m_Coefficients[i]: " << m_Coefficients[i] << "\n";
+        m_Coefficients.push_back(0.0);
+        m_Coefficients.push_back(1.0);
+        return m_Coefficients;
+    }
+
+    // Sample n numbers from Gamma distribution
+    std::vector<double> Gammas;
+    Gammas.reserve(m_Degree);
+    double Sum = 0.0;
+    for (int i = 0; i < m_Degree; ++i)
+    {
+        double GammaRand = GammaDistribution(m_Rng);
+        GammaRand += 1e-12; // Avoid zeros
+        Gammas.push_back(GammaRand);
+        Sum += GammaRand;
+    }
+
+    // Normalize Sum to 1
+    for (double &g : Gammas) 
+        g /= Sum; 
+
+    // Calculate sorted coefficients in [0; 1] 
+    m_Coefficients.push_back(0.0);
+
+    double Running = 0.0;
+    const double Epsilon = 1e-9; // minimum spacing to avoid floats rounding to previous value
+
+    for (int i = 0; i < m_Degree-1; ++i)
+    {
+        Running += Gammas[i];
+
+        // Ensure strict monotinicity: enforce at least epsilon spacing from previous
+        if (Running <= m_Coefficients.back() + Epsilon)
+            Running = m_Coefficients.back() + Epsilon;
+        if (Running >= 1.0 - Epsilon*(m_Degree-i))
+            Running = 1.0 - Epsilon*(m_Degree-i); // Keep room for remaining points
+        m_Coefficients.push_back(Running + TinyShift(m_Rng));
     }
 
     m_Coefficients.push_back(1.0);
-    // errs() << "m_Coefficients[i]: " << m_Coefficients.back() << "\n";
 
-    for (int i = 0; i < m_Degree; i++) 
-        m_DerivativeCoefficients.push_back((m_Coefficients[i + 1] - m_Coefficients[i]) * m_Degree);
+    // Compute derivative coefficients for Bernstein: (n) * (c_{i+1} - c_i)
+    for (int i = 0; i < m_Degree; ++i)
+        m_DerivativeCoefficients.push_back((m_Coefficients[i+1] - m_Coefficients[i]) * static_cast<double>(m_Degree));
 
     return m_Coefficients;
 }

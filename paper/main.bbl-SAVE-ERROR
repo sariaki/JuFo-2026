@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
-    \entry{baldoniSurveySymbolicExecution2018}{misc}{}{}
+  \datalist[entry]{nty/global//global/global}
+    \entry{baldoniSurveySymbolicExecution2018}{misc}{}
       \name{author}{5}{}{%
         {{hash=22a28bd4c4375f650b7bc5ca7e1def0b}{%
            family={Baldoni},
@@ -52,12 +52,10 @@
       }
       \strng{namehash}{e61bf9b5a1d08d8f9562b57211fe1ff7}
       \strng{fullhash}{5ef0b297c6acf997e66cabfade4fc840}
-      \strng{fullhashraw}{5ef0b297c6acf997e66cabfade4fc840}
       \strng{bibnamehash}{e61bf9b5a1d08d8f9562b57211fe1ff7}
       \strng{authorbibnamehash}{e61bf9b5a1d08d8f9562b57211fe1ff7}
       \strng{authornamehash}{e61bf9b5a1d08d8f9562b57211fe1ff7}
       \strng{authorfullhash}{5ef0b297c6acf997e66cabfade4fc840}
-      \strng{authorfullhashraw}{5ef0b297c6acf997e66cabfade4fc840}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -78,7 +76,7 @@
       \verb 1610.00502
       \endverb
     \endentry
-    \entry{banescuCodeObfuscationSymbolic2016}{inproceedings}{}{}
+    \entry{banescuCodeObfuscationSymbolic2016}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=9c3127c0e740068fa81d4bd8b062f745}{%
            family={Banescu},
@@ -114,12 +112,10 @@
       }
       \strng{namehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{fullhash}{8fbc40e689120f5776dd493fba68376e}
-      \strng{fullhashraw}{8fbc40e689120f5776dd493fba68376e}
       \strng{bibnamehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{authorbibnamehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{authornamehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{authorfullhash}{8fbc40e689120f5776dd493fba68376e}
-      \strng{authorfullhashraw}{8fbc40e689120f5776dd493fba68376e}
       \field{extraname}{1}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
@@ -141,7 +137,7 @@
       \verb 10.1145/2991079.2991114
       \endverb
     \endentry
-    \entry{obfuscatorBenchmarks}{misc}{}{}
+    \entry{obfuscatorBenchmarks}{misc}{}
       \name{author}{5}{}{%
         {{hash=9c3127c0e740068fa81d4bd8b062f745}{%
            family={Banescu},
@@ -171,12 +167,10 @@
       }
       \strng{namehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{fullhash}{8fbc40e689120f5776dd493fba68376e}
-      \strng{fullhashraw}{8fbc40e689120f5776dd493fba68376e}
       \strng{bibnamehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{authorbibnamehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{authornamehash}{50a0872c7f45592112e160f4d56a3365}
       \strng{authorfullhash}{8fbc40e689120f5776dd493fba68376e}
-      \strng{authorfullhashraw}{8fbc40e689120f5776dd493fba68376e}
       \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
@@ -190,7 +184,7 @@
       \field{year}{2025}
       \field{urldateera}{ce}
     \endentry
-    \entry{paulPOP}{misc}{}{}
+    \entry{paulPOP}{misc}{}
       \name{author}{1}{}{%
         {{hash=8987900f8dd880a64ee48e432b282a12}{%
            family={Baumgartner},
@@ -200,12 +194,10 @@
       }
       \strng{namehash}{8987900f8dd880a64ee48e432b282a12}
       \strng{fullhash}{8987900f8dd880a64ee48e432b282a12}
-      \strng{fullhashraw}{8987900f8dd880a64ee48e432b282a12}
       \strng{bibnamehash}{8987900f8dd880a64ee48e432b282a12}
       \strng{authorbibnamehash}{8987900f8dd880a64ee48e432b282a12}
       \strng{authornamehash}{8987900f8dd880a64ee48e432b282a12}
       \strng{authorfullhash}{8987900f8dd880a64ee48e432b282a12}
-      \strng{authorfullhashraw}{8987900f8dd880a64ee48e432b282a12}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -218,7 +210,7 @@
       \field{year}{2025}
       \field{urldateera}{ce}
     \endentry
-    \entry{blazytkoSyntiaSynthesizingSemanticsa}{inproceedings}{}{}
+    \entry{blazytkoSyntiaSynthesizingSemanticsa}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=75793961fc24655ee197ea2cc1c7de1b}{%
            family={Blazytko},
@@ -243,12 +235,10 @@
       }
       \strng{namehash}{7a01ea9acd68e47d3dd2a4ebafa75d77}
       \strng{fullhash}{b5b57514116d9b177bb7f9126645896a}
-      \strng{fullhashraw}{b5b57514116d9b177bb7f9126645896a}
       \strng{bibnamehash}{7a01ea9acd68e47d3dd2a4ebafa75d77}
       \strng{authorbibnamehash}{7a01ea9acd68e47d3dd2a4ebafa75d77}
       \strng{authornamehash}{7a01ea9acd68e47d3dd2a4ebafa75d77}
       \strng{authorfullhash}{b5b57514116d9b177bb7f9126645896a}
-      \strng{authorfullhashraw}{b5b57514116d9b177bb7f9126645896a}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -259,7 +249,39 @@
       \field{pages}{643\bibrangedash 659}
       \range{pages}{17}
     \endentry
-    \entry{tigress2025}{misc}{}{}
+    \entry{codedefenderMetrics}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c851f7da02b3f1cb172669729bbf1cd6}{%
+           family={{CodeDefender}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {CodeDefender}%
+      }
+      \strng{namehash}{c851f7da02b3f1cb172669729bbf1cd6}
+      \strng{fullhash}{c851f7da02b3f1cb172669729bbf1cd6}
+      \strng{bibnamehash}{c851f7da02b3f1cb172669729bbf1cd6}
+      \strng{authorbibnamehash}{c851f7da02b3f1cb172669729bbf1cd6}
+      \strng{authornamehash}{c851f7da02b3f1cb172669729bbf1cd6}
+      \strng{authorfullhash}{c851f7da02b3f1cb172669729bbf1cd6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{GitHub repository, inkl. Benchmarks und Rohdaten}
+      \field{title}{Metrics: Performance metrics of CodeDefender vs Themida vs VMProtect}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/codedefender-io/metrics
+      \endverb
+      \verb{url}
+      \verb https://github.com/codedefender-io/metrics
+      \endverb
+    \endentry
+    \entry{tigress2025}{misc}{}
       \name{author}{1}{}{%
         {{hash=028cbd59b46688ed431f75f79cace82e}{%
            family={Collberg},
@@ -269,12 +291,10 @@
       }
       \strng{namehash}{028cbd59b46688ed431f75f79cace82e}
       \strng{fullhash}{028cbd59b46688ed431f75f79cace82e}
-      \strng{fullhashraw}{028cbd59b46688ed431f75f79cace82e}
       \strng{bibnamehash}{028cbd59b46688ed431f75f79cace82e}
       \strng{authorbibnamehash}{028cbd59b46688ed431f75f79cace82e}
       \strng{authornamehash}{028cbd59b46688ed431f75f79cace82e}
       \strng{authorfullhash}{028cbd59b46688ed431f75f79cace82e}
-      \strng{authorfullhashraw}{028cbd59b46688ed431f75f79cace82e}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -287,7 +307,7 @@
       \field{year}{2025}
       \field{urldateera}{ce}
     \endentry
-    \entry{collbergATaxonomyOfObfuscatingTransformations}{article}{}{}
+    \entry{collbergATaxonomyOfObfuscatingTransformations}{article}{}
       \name{author}{3}{}{%
         {{hash=028cbd59b46688ed431f75f79cace82e}{%
            family={Collberg},
@@ -307,12 +327,10 @@
       }
       \strng{namehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{fullhash}{e472593b6e7a09ec3ca5b00638f2ad54}
-      \strng{fullhashraw}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{bibnamehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{authorbibnamehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{authornamehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{authorfullhash}{e472593b6e7a09ec3ca5b00638f2ad54}
-      \strng{authorfullhashraw}{e472593b6e7a09ec3ca5b00638f2ad54}
       \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -323,7 +341,7 @@
       \field{title}{A Taxonomy of Obfuscating Transformations}
       \field{year}{1997}
     \endentry
-    \entry{collbergManufacturingCheapResilient1998}{inproceedings}{}{}
+    \entry{collbergManufacturingCheapResilient1998}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=028cbd59b46688ed431f75f79cace82e}{%
            family={Collberg},
@@ -349,12 +367,10 @@
       }
       \strng{namehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{fullhash}{e472593b6e7a09ec3ca5b00638f2ad54}
-      \strng{fullhashraw}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{bibnamehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{authorbibnamehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{authornamehash}{e472593b6e7a09ec3ca5b00638f2ad54}
       \strng{authorfullhash}{e472593b6e7a09ec3ca5b00638f2ad54}
-      \strng{authorfullhashraw}{e472593b6e7a09ec3ca5b00638f2ad54}
       \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -387,7 +403,7 @@
       \endverb
       \keyw{gelesen wichtig}
     \endentry
-    \entry{dallapredaOpaquePredicatesDetection2006}{incollection}{}{}
+    \entry{dallapredaOpaquePredicatesDetection2006}{incollection}{}
       \name{author}{4}{}{%
         {{hash=8aca47f2b07ea0dbe2a339a23bc3c15d}{%
            family={Dalla\bibnamedelima Preda},
@@ -505,16 +521,13 @@
       }
       \strng{namehash}{291630cb1fcc270e008eeb3db401a94e}
       \strng{fullhash}{7f0aef3f734b7866ca92d566a77774f0}
-      \strng{fullhashraw}{7f0aef3f734b7866ca92d566a77774f0}
       \strng{bibnamehash}{291630cb1fcc270e008eeb3db401a94e}
       \strng{authorbibnamehash}{291630cb1fcc270e008eeb3db401a94e}
       \strng{authornamehash}{291630cb1fcc270e008eeb3db401a94e}
       \strng{authorfullhash}{7f0aef3f734b7866ca92d566a77774f0}
-      \strng{authorfullhashraw}{7f0aef3f734b7866ca92d566a77774f0}
       \strng{editorbibnamehash}{1878e5aaeb2ba2e2aaa5cb8a1a7cf207}
       \strng{editornamehash}{1878e5aaeb2ba2e2aaa5cb8a1a7cf207}
       \strng{editorfullhash}{be0b68b83d6aa0735d7f1c11e9a4691e}
-      \strng{editorfullhashraw}{be0b68b83d6aa0735d7f1c11e9a4691e}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -536,7 +549,58 @@
       \verb 10.1007/11784180_9
       \endverb
     \endentry
-    \entry{darpaSafeWare}{misc}{}{}
+    \entry{binsec2020}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0d620c59e93c2f124b9f0a1d78e45bf1}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b4473eb429d381d1e209089b1e9eac30}{%
+           family={Bardin},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=026636a73edefd0c3f85764c38272d9e}{%
+           family={Rezk},
+           familyi={R\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Los Alamitos, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{d5c0f660e3c23ae328cea9cb448cdd67}
+      \strng{fullhash}{d5c0f660e3c23ae328cea9cb448cdd67}
+      \strng{bibnamehash}{d5c0f660e3c23ae328cea9cb448cdd67}
+      \strng{authorbibnamehash}{d5c0f660e3c23ae328cea9cb448cdd67}
+      \strng{authornamehash}{d5c0f660e3c23ae328cea9cb448cdd67}
+      \strng{authorfullhash}{d5c0f660e3c23ae328cea9cb448cdd67}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
+      \field{month}{5}
+      \field{title}{Binsec/Rel: Efficient Relational Symbolic Execution for Constant-Time at Binary-Level}
+      \field{year}{2020}
+      \field{pages}{1021\bibrangedash 1038}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1109/SP40000.2020.00074
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.ieeecomputersociety.org/10.1109/SP40000.2020.00074
+      \endverb
+      \verb{url}
+      \verb https://doi.ieeecomputersociety.org/10.1109/SP40000.2020.00074
+      \endverb
+      \keyw{tools;timing;cryptography;standards;safety;memory management;optimization}
+    \endentry
+    \entry{darpaSafeWare}{misc}{}
       \name{author}{1}{}{%
         {{hash=ebcda5263afe4c1970ff29ba594007e3}{%
            family={{Defense Advanced Research Projects Agency}},
@@ -544,12 +608,10 @@
       }
       \strng{namehash}{ebcda5263afe4c1970ff29ba594007e3}
       \strng{fullhash}{ebcda5263afe4c1970ff29ba594007e3}
-      \strng{fullhashraw}{ebcda5263afe4c1970ff29ba594007e3}
       \strng{bibnamehash}{ebcda5263afe4c1970ff29ba594007e3}
       \strng{authorbibnamehash}{ebcda5263afe4c1970ff29ba594007e3}
       \strng{authornamehash}{ebcda5263afe4c1970ff29ba594007e3}
       \strng{authorfullhash}{ebcda5263afe4c1970ff29ba594007e3}
-      \strng{authorfullhashraw}{ebcda5263afe4c1970ff29ba594007e3}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -567,47 +629,7 @@
       \verb https://www.darpa.mil/research/programs/safeware
       \endverb
     \endentry
-    \entry{desclaux2018miasm}{misc}{}{}
-      \name{author}{2}{}{%
-        {{hash=d045675400b57cc9379d3eae8743ad87}{%
-           family={Desclaux},
-           familyi={D\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=c70e2101f6c5d245913fe8d3ba2b130f}{%
-           family={Mougey},
-           familyi={M\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{fullhash}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{fullhashraw}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{bibnamehash}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{authorbibnamehash}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{authornamehash}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{authorfullhash}{6ce288b45cb7d9384800552305ba28e1}
-      \strng{authorfullhashraw}{6ce288b45cb7d9384800552305ba28e1}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Slides, Black Hat / conference presentation}
-      \field{month}{8}
-      \field{title}{Miasm2: Reverse engineering framework}
-      \field{urlday}{14}
-      \field{urlmonth}{10}
-      \field{urlyear}{2025}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://i.blackhat.com/us-18/Wed-August-8/us-18-DesclauxMougey-Miasm-Reverse-Engineering-Framework.pdf
-      \endverb
-      \verb{url}
-      \verb https://i.blackhat.com/us-18/Wed-August-8/us-18-DesclauxMougey-Miasm-Reverse-Engineering-Framework.pdf
-      \endverb
-    \endentry
-    \entry{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}{book}{}{}
+    \entry{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}{book}{}
       \name{author}{1}{}{%
         {{hash=65364ad41efba6572141efa44e27a689}{%
            family={Georgii},
@@ -623,12 +645,10 @@
       }
       \strng{namehash}{65364ad41efba6572141efa44e27a689}
       \strng{fullhash}{65364ad41efba6572141efa44e27a689}
-      \strng{fullhashraw}{65364ad41efba6572141efa44e27a689}
       \strng{bibnamehash}{65364ad41efba6572141efa44e27a689}
       \strng{authorbibnamehash}{65364ad41efba6572141efa44e27a689}
       \strng{authornamehash}{65364ad41efba6572141efa44e27a689}
       \strng{authorfullhash}{65364ad41efba6572141efa44e27a689}
-      \strng{authorfullhashraw}{65364ad41efba6572141efa44e27a689}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
@@ -647,7 +667,7 @@
       \endverb
       \keyw{Mathematical statistics,Probabilities,Stochastic processes,Textbooks}
     \endentry
-    \entry{ieeespro2015-JunodRWM}{inproceedings}{}{}
+    \entry{ieeespro2015-JunodRWM}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=c7becf7afeb7d5d3b621780e2038a6a2}{%
            family={Junod},
@@ -682,16 +702,13 @@
       }
       \strng{namehash}{93b8126736c4430f71b44ed59ccb0e5f}
       \strng{fullhash}{3f6d7b2aa3e4f81402a3d49520fd75d4}
-      \strng{fullhashraw}{3f6d7b2aa3e4f81402a3d49520fd75d4}
       \strng{bibnamehash}{93b8126736c4430f71b44ed59ccb0e5f}
       \strng{authorbibnamehash}{93b8126736c4430f71b44ed59ccb0e5f}
       \strng{authornamehash}{93b8126736c4430f71b44ed59ccb0e5f}
       \strng{authorfullhash}{3f6d7b2aa3e4f81402a3d49520fd75d4}
-      \strng{authorfullhashraw}{3f6d7b2aa3e4f81402a3d49520fd75d4}
       \strng{editorbibnamehash}{ab791eccfc7af4146c9cc48611afcf09}
       \strng{editornamehash}{ab791eccfc7af4146c9cc48611afcf09}
       \strng{editorfullhash}{ab791eccfc7af4146c9cc48611afcf09}
-      \strng{editorfullhashraw}{ab791eccfc7af4146c9cc48611afcf09}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
@@ -705,7 +722,7 @@
       \verb 10.1109/SPRO.2015.10
       \endverb
     \endentry
-    \entry{LLVM}{inproceedings}{}{}
+    \entry{LLVM}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=082d304bf1444853e07be11590d172a2}{%
            family={Lattner},
@@ -723,12 +740,10 @@
       }
       \strng{namehash}{0964e8d9ddfb3d949bce90ef30732275}
       \strng{fullhash}{0964e8d9ddfb3d949bce90ef30732275}
-      \strng{fullhashraw}{0964e8d9ddfb3d949bce90ef30732275}
       \strng{bibnamehash}{0964e8d9ddfb3d949bce90ef30732275}
       \strng{authorbibnamehash}{0964e8d9ddfb3d949bce90ef30732275}
       \strng{authornamehash}{0964e8d9ddfb3d949bce90ef30732275}
       \strng{authorfullhash}{0964e8d9ddfb3d949bce90ef30732275}
-      \strng{authorfullhashraw}{0964e8d9ddfb3d949bce90ef30732275}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -742,7 +757,7 @@
       \verb 10.1109/CGO.2004.1281665
       \endverb
     \endentry
-    \entry{linBranchObfuscationUsing2013}{inproceedings}{}{}
+    \entry{linBranchObfuscationUsing2013}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=e6f03dbe60f702e897dc57f0c51f8888}{%
            family={Lin},
@@ -773,12 +788,10 @@
       }
       \strng{namehash}{8e99ef716fa488b69bfba14608b9e8ce}
       \strng{fullhash}{9bf275007c3a240c36795f5b2ef49424}
-      \strng{fullhashraw}{9bf275007c3a240c36795f5b2ef49424}
       \strng{bibnamehash}{8e99ef716fa488b69bfba14608b9e8ce}
       \strng{authorbibnamehash}{8e99ef716fa488b69bfba14608b9e8ce}
       \strng{authornamehash}{8e99ef716fa488b69bfba14608b9e8ce}
       \strng{authorfullhash}{9bf275007c3a240c36795f5b2ef49424}
-      \strng{authorfullhashraw}{9bf275007c3a240c36795f5b2ef49424}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -808,7 +821,7 @@
       \endverb
       \keyw{⭐wichtig}
     \endentry
-    \entry{LLVMProject}{misc}{}{}
+    \entry{LLVMProject}{misc}{}
       \name{author}{1}{}{%
         {{hash=8e794f3113c883242c2533ada58d710d}{%
            family={{LLVM Project}},
@@ -816,12 +829,10 @@
       }
       \strng{namehash}{8e794f3113c883242c2533ada58d710d}
       \strng{fullhash}{8e794f3113c883242c2533ada58d710d}
-      \strng{fullhashraw}{8e794f3113c883242c2533ada58d710d}
       \strng{bibnamehash}{8e794f3113c883242c2533ada58d710d}
       \strng{authorbibnamehash}{8e794f3113c883242c2533ada58d710d}
       \strng{authornamehash}{8e794f3113c883242c2533ada58d710d}
       \strng{authorfullhash}{8e794f3113c883242c2533ada58d710d}
-      \strng{authorfullhashraw}{8e794f3113c883242c2533ada58d710d}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -835,20 +846,18 @@
       \field{year}{2003--2025}
       \field{urldateera}{ce}
     \endentry
-    \entry{llvmTestSuite2025}{misc}{}{}
+    \entry{llvmTestSuite2025}{misc}{}
       \name{author}{1}{}{%
-        {{hash=aae42b8f9d929bb973d06c607941caf8}{%
-           family={{LLVM Project (llvm-test-suite Contributer)}},
+        {{hash=60eaf7d00547ad9825db9b36b66c037d}{%
+           family={{LLVM Test Suite Contributer}},
            familyi={L\bibinitperiod}}}%
       }
-      \strng{namehash}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{fullhash}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{fullhashraw}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{bibnamehash}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{authorbibnamehash}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{authornamehash}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{authorfullhash}{aae42b8f9d929bb973d06c607941caf8}
-      \strng{authorfullhashraw}{aae42b8f9d929bb973d06c607941caf8}
+      \strng{namehash}{60eaf7d00547ad9825db9b36b66c037d}
+      \strng{fullhash}{60eaf7d00547ad9825db9b36b66c037d}
+      \strng{bibnamehash}{60eaf7d00547ad9825db9b36b66c037d}
+      \strng{authorbibnamehash}{60eaf7d00547ad9825db9b36b66c037d}
+      \strng{authornamehash}{60eaf7d00547ad9825db9b36b66c037d}
+      \strng{authorfullhash}{60eaf7d00547ad9825db9b36b66c037d}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -857,7 +866,7 @@
       \field{title}{{llvm-test-suite}}
       \field{year}{2025}
     \endentry
-    \entry{lorentzBernstein1953}{book}{}{}
+    \entry{lorentzBernstein1953}{book}{}
       \name{author}{1}{}{%
         {{hash=a0e35282664561c4a4f71e2b3ebe5329}{%
            family={Lorentz},
@@ -870,12 +879,10 @@
       }
       \strng{namehash}{a0e35282664561c4a4f71e2b3ebe5329}
       \strng{fullhash}{a0e35282664561c4a4f71e2b3ebe5329}
-      \strng{fullhashraw}{a0e35282664561c4a4f71e2b3ebe5329}
       \strng{bibnamehash}{a0e35282664561c4a4f71e2b3ebe5329}
       \strng{authorbibnamehash}{a0e35282664561c4a4f71e2b3ebe5329}
       \strng{authornamehash}{a0e35282664561c4a4f71e2b3ebe5329}
       \strng{authorfullhash}{a0e35282664561c4a4f71e2b3ebe5329}
-      \strng{authorfullhashraw}{a0e35282664561c4a4f71e2b3ebe5329}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -883,7 +890,73 @@
       \field{title}{Bernstein Polynomials}
       \field{year}{1953}
     \endentry
-    \entry{ogisoSoftwareObfuscationTheoretical2003}{article}{}{}
+    \entry{menguySearchBasedLocalBlackBox2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=383ef1442e0a10933c797085ab9a1651}{%
+           family={Menguy},
+           familyi={M\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod}}}%
+        {{hash=eb954e364f1afc57e577c208b799c3bd}{%
+           family={Bardin},
+           familyi={B\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c28ba76f67f366291a79b3a739957444}{%
+           family={Bonichon},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=43291c28d9e501169696826f2428244e}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Cauim\bibnamedelimb De\bibnamedelima Souza},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Virtual Event Republic of Korea}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{99f51a913fcc7d6775497d6be0916a9d}
+      \strng{fullhash}{2417624af4715f67bfc2ea5a162c467c}
+      \strng{bibnamehash}{99f51a913fcc7d6775497d6be0916a9d}
+      \strng{authorbibnamehash}{99f51a913fcc7d6775497d6be0916a9d}
+      \strng{authornamehash}{99f51a913fcc7d6775497d6be0916a9d}
+      \strng{authorfullhash}{2417624af4715f67bfc2ea5a162c467c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Code obfuscation aims at protecting Intellectual Property and other secrets embedded into software from being retrieved. Recent works leverage advances in artificial intelligence (AI) with the hope of getting blackbox deobfuscators completely immune to standard (whitebox) protection mechanisms. While promising, this new field of AI-based, and more specifically search-based blackbox deobfuscation, is still in its infancy. In this article we deepen the state of search-based blackbox deobfuscation in three key directions: understand the current state-of-the-art, improve over it and design dedicated protection mechanisms. In particular, we define a novel generic framework for search-based blackbox deobfuscation encompassing prior work and highlighting key components; we are the first to point out that the search space underlying code deobfuscation is too unstable for simulation-based methods (e.g., Monte Carlo Tree Search used in prior work) and advocate the use of robust methods such as S-metaheuristics; we propose the new optimized search-based blackbox deobfuscator Xyntia which significantly outperforms prior work in terms of success rate (especially with small time budget) while being completely immune to the most recent anti-analysis code obfuscation methods; and finally we propose two novel protections against search-based blackbox deobfuscation, allowing to counter Xyntia powerful attacks.}
+      \field{booktitle}{Proceedings of the 2021 {{ACM SIGSAC Conference}} on {{Computer}} and {{Communications Security}}}
+      \field{day}{12}
+      \field{eventtitle}{{{CCS}} '21: 2021 {{ACM SIGSAC Conference}} on {{Computer}} and {{Communications Security}}}
+      \field{isbn}{978-1-4503-8454-4}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shorttitle}{Search-{{Based Local Black-Box Deobfuscation}}}
+      \field{title}{Search-{{Based Local Black-Box Deobfuscation}}: {{Understand}}, {{Improve}} and {{Mitigate}}}
+      \field{urlday}{9}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2513\bibrangedash 2525}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3460120.3485250
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3460120.3485250
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3460120.3485250
+      \endverb
+    \endentry
+    \entry{ogisoSoftwareObfuscationTheoretical2003}{article}{}
       \name{author}{4}{}{%
         {{hash=3e1b6cd2b0a21778b2134cd274a0ffa5}{%
            family={Ogiso},
@@ -912,12 +985,10 @@
       }
       \strng{namehash}{9702f93aaebd985e387cdf0e86823f0e}
       \strng{fullhash}{78c164ecb0c294b6d3b65225c53d2244}
-      \strng{fullhashraw}{78c164ecb0c294b6d3b65225c53d2244}
       \strng{bibnamehash}{9702f93aaebd985e387cdf0e86823f0e}
       \strng{authorbibnamehash}{9702f93aaebd985e387cdf0e86823f0e}
       \strng{authornamehash}{9702f93aaebd985e387cdf0e86823f0e}
       \strng{authorfullhash}{78c164ecb0c294b6d3b65225c53d2244}
-      \strng{authorfullhashraw}{78c164ecb0c294b6d3b65225c53d2244}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
@@ -930,7 +1001,7 @@
       \field{pages}{176\bibrangedash 186}
       \range{pages}{11}
     \endentry
-    \entry{ollivierHowKillSymbolic2019a}{inproceedings}{}{}
+    \entry{ollivierHowKillSymbolic2019a}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=70cf309faee56bc786dbbbc8f26f1f41}{%
            family={Ollivier},
@@ -961,12 +1032,10 @@
       }
       \strng{namehash}{2d21c26122cc73e562b525219095d319}
       \strng{fullhash}{7a54c578e98952f4f9d457038402319c}
-      \strng{fullhashraw}{7a54c578e98952f4f9d457038402319c}
       \strng{bibnamehash}{2d21c26122cc73e562b525219095d319}
       \strng{authorbibnamehash}{2d21c26122cc73e562b525219095d319}
       \strng{authornamehash}{2d21c26122cc73e562b525219095d319}
       \strng{authorfullhash}{7a54c578e98952f4f9d457038402319c}
-      \strng{authorfullhashraw}{7a54c578e98952f4f9d457038402319c}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
@@ -990,7 +1059,60 @@
       \endverb
       \keyw{wichtig}
     \endentry
-    \entry{SSTIC2015-Saudel-Salwan}{inproceedings}{}{}
+    \entry{reichenwallnerSimplificationGeneralMixed2023}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ad5a4dece50864a203575fa64f7d09ba}{%
+           family={Reichenwallner},
+           familyi={R\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fc09bc33b64590c9f5b04e5ff14344d6}{%
+           family={Meerwald-Stadler},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{84af9b7ea451f62e2c8719de6d0dce65}
+      \strng{fullhash}{84af9b7ea451f62e2c8719de6d0dce65}
+      \strng{bibnamehash}{84af9b7ea451f62e2c8719de6d0dce65}
+      \strng{authorbibnamehash}{84af9b7ea451f62e2c8719de6d0dce65}
+      \strng{authornamehash}{84af9b7ea451f62e2c8719de6d0dce65}
+      \strng{authorfullhash}{84af9b7ea451f62e2c8719de6d0dce65}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Malware code often resorts to various self-protection techniques to complicate analysis. One such technique is applying Mixed-Boolean Arithmetic (MBA) expressions as a way to create opaque predicates and diversify and obfuscate the data flow.}
+      \field{booktitle}{2023 {{IEEE European Symposium}} on {{Security}} and {{Privacy Workshops}} ({{EuroS}}\&{{PW}})}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{shorttitle}{Simplification of {{General Mixed Boolean-Arithmetic Expressions}}}
+      \field{title}{Simplification of {{General Mixed Boolean-Arithmetic Expressions}}: {{GAMBA}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{427\bibrangedash 438}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/EuroSPW59978.2023.00053
+      \endverb
+      \verb{eprint}
+      \verb 2305.06763
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2305.06763
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2305.06763
+      \endverb
+      \keyw{Computer Science - Cryptography and Security}
+    \endentry
+    \entry{SSTIC2015-Saudel-Salwan}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=dda6964a11915de91a0ab86791ea7245}{%
            family={Saudel},
@@ -1008,12 +1130,10 @@
       }
       \strng{namehash}{8612489095fcb64b1bd1c24b0f553c8f}
       \strng{fullhash}{8612489095fcb64b1bd1c24b0f553c8f}
-      \strng{fullhashraw}{8612489095fcb64b1bd1c24b0f553c8f}
       \strng{bibnamehash}{8612489095fcb64b1bd1c24b0f553c8f}
       \strng{authorbibnamehash}{8612489095fcb64b1bd1c24b0f553c8f}
       \strng{authornamehash}{8612489095fcb64b1bd1c24b0f553c8f}
       \strng{authorfullhash}{8612489095fcb64b1bd1c24b0f553c8f}
-      \strng{authorfullhashraw}{8612489095fcb64b1bd1c24b0f553c8f}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1026,7 +1146,7 @@
       \field{pages}{31\bibrangedash 54}
       \range{pages}{24}
     \endentry
-    \entry{shoshitaishvili2016state}{inproceedings}{}{}
+    \entry{shoshitaishvili2016state}{inproceedings}{}
       \name{author}{11}{}{%
         {{hash=1c0d125a5b51f7c0735dae8d6cb85841}{%
            family={Shoshitaishvili},
@@ -1086,12 +1206,10 @@
       }
       \strng{namehash}{ecc1beffd0d6f132d7e1a618ccb82989}
       \strng{fullhash}{0482ada87da92ca490c64862540f5358}
-      \strng{fullhashraw}{0482ada87da92ca490c64862540f5358}
       \strng{bibnamehash}{ecc1beffd0d6f132d7e1a618ccb82989}
       \strng{authorbibnamehash}{ecc1beffd0d6f132d7e1a618ccb82989}
       \strng{authornamehash}{ecc1beffd0d6f132d7e1a618ccb82989}
       \strng{authorfullhash}{0482ada87da92ca490c64862540f5358}
-      \strng{authorfullhashraw}{0482ada87da92ca490c64862540f5358}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1100,7 +1218,7 @@
       \field{title}{{SoK: (State of) The Art of War: Offensive Techniques in Binary Analysis}}
       \field{year}{2016}
     \endentry
-    \entry{sutterEvaluationMethodologiesSoftware2024}{misc}{}{}
+    \entry{sutterEvaluationMethodologiesSoftware2024}{misc}{}
       \name{author}{4}{}{%
         {{hash=3011a1ead403498191c48ec3d3f11a70}{%
            family={Sutter},
@@ -1128,12 +1246,10 @@
       }
       \strng{namehash}{88fd536e4225ae2759d6fc62b9bd2a52}
       \strng{fullhash}{dd2a6fd2a656c7bb237605abbd7697c8}
-      \strng{fullhashraw}{dd2a6fd2a656c7bb237605abbd7697c8}
       \strng{bibnamehash}{88fd536e4225ae2759d6fc62b9bd2a52}
       \strng{authorbibnamehash}{88fd536e4225ae2759d6fc62b9bd2a52}
       \strng{authornamehash}{88fd536e4225ae2759d6fc62b9bd2a52}
       \strng{authorfullhash}{dd2a6fd2a656c7bb237605abbd7697c8}
-      \strng{authorfullhashraw}{dd2a6fd2a656c7bb237605abbd7697c8}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1156,7 +1272,7 @@
       \verb 2307.07300
       \endverb
     \endentry
-    \entry{tofighi-shiraziDefeatingOpaquePredicates2019}{online}{}{}
+    \entry{tofighi-shiraziDefeatingOpaquePredicates2019}{online}{}
       \name{author}{4}{}{%
         {{hash=102312974737bff3a0f1414ca3772e90}{%
            family={Tofighi-Shirazi},
@@ -1181,12 +1297,10 @@
       }
       \strng{namehash}{93b48a70a5e8863243942dd32bb1bcc8}
       \strng{fullhash}{53c00ff7580d64cec096445896c37038}
-      \strng{fullhashraw}{53c00ff7580d64cec096445896c37038}
       \strng{bibnamehash}{93b48a70a5e8863243942dd32bb1bcc8}
       \strng{authorbibnamehash}{93b48a70a5e8863243942dd32bb1bcc8}
       \strng{authornamehash}{93b48a70a5e8863243942dd32bb1bcc8}
       \strng{authorfullhash}{53c00ff7580d64cec096445896c37038}
-      \strng{authorfullhashraw}{53c00ff7580d64cec096445896c37038}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1221,7 +1335,7 @@
       \endverb
       \keyw{Computer Science - Cryptography and Security,Computer Science - Machine Learning,Computer Science - Programming Languages,Computer Science - Symbolic Computation}
     \endentry
-    \entry{vec35DecompilerExplorer}{misc}{}{}
+    \entry{vec35DecompilerExplorer}{misc}{}
       \name{author}{1}{}{%
         {{hash=d742d6d4182b8ec7fa4fac7fadfe0766}{%
            family={{Vector 35}},
@@ -1229,12 +1343,10 @@
       }
       \strng{namehash}{d742d6d4182b8ec7fa4fac7fadfe0766}
       \strng{fullhash}{d742d6d4182b8ec7fa4fac7fadfe0766}
-      \strng{fullhashraw}{d742d6d4182b8ec7fa4fac7fadfe0766}
       \strng{bibnamehash}{d742d6d4182b8ec7fa4fac7fadfe0766}
       \strng{authorbibnamehash}{d742d6d4182b8ec7fa4fac7fadfe0766}
       \strng{authornamehash}{d742d6d4182b8ec7fa4fac7fadfe0766}
       \strng{authorfullhash}{d742d6d4182b8ec7fa4fac7fadfe0766}
-      \strng{authorfullhashraw}{d742d6d4182b8ec7fa4fac7fadfe0766}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -1247,7 +1359,7 @@
       \field{year}{2025}
       \field{urldateera}{ce}
     \endentry
-    \entry{wangLinearObfuscationCombat2011}{inbook}{}{}
+    \entry{wangLinearObfuscationCombat2011}{inbook}{}
       \name{author}{4}{}{%
         {{hash=af9f7c73a3775f453b93fd3e906dd877}{%
            family={Wang},
@@ -1278,12 +1390,10 @@
       }
       \strng{namehash}{78cf76bd8eb3eb10be64f596ecf740c7}
       \strng{fullhash}{a84fee1457964b99ff618db2bfaf8ca2}
-      \strng{fullhashraw}{a84fee1457964b99ff618db2bfaf8ca2}
       \strng{bibnamehash}{78cf76bd8eb3eb10be64f596ecf740c7}
       \strng{authorbibnamehash}{78cf76bd8eb3eb10be64f596ecf740c7}
       \strng{authornamehash}{78cf76bd8eb3eb10be64f596ecf740c7}
       \strng{authorfullhash}{a84fee1457964b99ff618db2bfaf8ca2}
-      \strng{authorfullhashraw}{a84fee1457964b99ff618db2bfaf8ca2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -1312,7 +1422,7 @@
       \verb http://link.springer.com/10.1007/978-3-642-23822-2_12
       \endverb
     \endentry
-    \entry{xuManufacturingResilientBiOpaque2018}{inproceedings}{}{}
+    \entry{xuManufacturingResilientBiOpaque2018}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=7c731d48072111518a7ebbe2327e4e7c}{%
            family={Xu},
@@ -1348,12 +1458,10 @@
       }
       \strng{namehash}{87baa7ea87f72a15dfceb28579655068}
       \strng{fullhash}{b62bc5a885e9ddefb29b344502279e87}
-      \strng{fullhashraw}{b62bc5a885e9ddefb29b344502279e87}
       \strng{bibnamehash}{87baa7ea87f72a15dfceb28579655068}
       \strng{authorbibnamehash}{87baa7ea87f72a15dfceb28579655068}
       \strng{authornamehash}{87baa7ea87f72a15dfceb28579655068}
       \strng{authorfullhash}{b62bc5a885e9ddefb29b344502279e87}
-      \strng{authorfullhashraw}{b62bc5a885e9ddefb29b344502279e87}
       \field{sortinit}{X}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
       \field{labelnamesource}{author}
@@ -1386,7 +1494,7 @@
       \endverb
       \keyw{⭐wichtig,gelesen wichtig}
     \endentry
-    \entry{zobernigWhenAreOpaque2019}{inproceedings}{}{}
+    \entry{zobernigWhenAreOpaque2019}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=1f34f1941a47fcb367377916dbd95847}{%
            family={Zobernig},
@@ -1412,12 +1520,10 @@
       }
       \strng{namehash}{98083c315acbb3722af040bc7a7c1eaa}
       \strng{fullhash}{98083c315acbb3722af040bc7a7c1eaa}
-      \strng{fullhashraw}{98083c315acbb3722af040bc7a7c1eaa}
       \strng{bibnamehash}{98083c315acbb3722af040bc7a7c1eaa}
       \strng{authorbibnamehash}{98083c315acbb3722af040bc7a7c1eaa}
       \strng{authornamehash}{98083c315acbb3722af040bc7a7c1eaa}
       \strng{authorfullhash}{98083c315acbb3722af040bc7a7c1eaa}
-      \strng{authorfullhashraw}{98083c315acbb3722af040bc7a7c1eaa}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}

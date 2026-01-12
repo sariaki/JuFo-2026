@@ -8,7 +8,7 @@ from collections import defaultdict
 LEVELS = [20, 40, 60, 80, 100]
 NUM_RUNS = 5
 BASH_SCRIPT_NAME = "./run.sh" # Replace with your actual bash script name
-GENERATE_DATA = True  # Set to False if you already have the files results20_1.json etc.
+GENERATE_DATA = True  # if we already have the results
 
 def run_benchmarks():
     """

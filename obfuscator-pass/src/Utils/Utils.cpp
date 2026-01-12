@@ -6,39 +6,42 @@ Value* Utils::CastIRValueToDouble(Value* V, IRBuilder<>& B, bool IsSigned)
     LLVMContext& C = srcTy->getContext();
     Type* doubleTy = Type::getDoubleTy(C);
 
+    Value* d = nullptr; // will hold the converted double
+
     if (srcTy == doubleTy)
-    {
-        return V;
-    }
-    else if (srcTy->isFloatingPointTy()) // isFloatTy() only checks for 32-bit float
+        d = V;
+    else if (srcTy->isFloatingPointTy())
     {
         unsigned srcWidth = srcTy->getPrimitiveSizeInBits();
         if (srcWidth < 64)
-            return B.CreateFPExt(V, doubleTy, "fpext_to_double");
+            d = B.CreateFPExt(V, doubleTy, "fpext_to_double");
         else
-        {
-            // This handles x86_fp80 (80-bit) or fp128
-            return B.CreateFPTrunc(V, doubleTy, "fptrunc_to_double");
-        }
+            d = B.CreateFPTrunc(V, doubleTy, "fptrunc_to_double");
     }
     else if (srcTy->isIntegerTy())
     {
         if (IsSigned)
-            return B.CreateSIToFP(V, doubleTy, "sitofp_to_double");
+            d = B.CreateSIToFP(V, doubleTy, "sitofp_to_double");
         else
-            return B.CreateUIToFP(V, doubleTy, "uitofp_to_double");
+            d = B.CreateUIToFP(V, doubleTy, "uitofp_to_double");
     }
     else if (srcTy->isPointerTy())
     {
-        // Use DataLayout to get the correct pointer size
-        IntegerType* intptrTy = B.getInt64Ty(); 
+        IntegerType* intptrTy = B.getInt64Ty();
         Value* intVal = B.CreatePtrToInt(V, intptrTy, "ptrtoint");
-        // Always use UI (Unsigned) for pointers, as pointers don't have a "sign"
-        return B.CreateUIToFP(intVal, doubleTy, "ptruitofp_to_double");
-    }
-    // We don't want to crash the compiler, so just return nullptr here
-    // report_fatal_error("Utils::CastIRValueToDouble: unsupported source type\n");
-    return nullptr;
+        d = B.CreateUIToFP(intVal, doubleTy, "ptruitofp_to_double");
+    } else
+        return nullptr;
+
+    // Use the llvm.copysign intrinsic to force a positive sign:
+    Module* M = B.GetInsertBlock()->getModule();
+
+    Function* fabsFn =
+        Intrinsic::getDeclaration(M, Intrinsic::fabs, doubleTy);
+
+    Value* absD = B.CreateCall(fabsFn, d, "fabs_to_double");
+
+    return absD;
 }
 
 Value* Utils::CastIRValueToI64(Value* V, IRBuilder<>& IRB)

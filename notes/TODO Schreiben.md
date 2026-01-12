@@ -1,28 +1,13 @@
-- [x] `bib.bib` "and" -> "und"
-- [x] fix bib Uneinheitlichkeiten
-- [x] fix "Literaturverzeichnis C"
-- [x] fix Literaturverzeichnis alphabetisch steigend
-
 - [ ] Fachliche Kurzfassung
-- [x] Projektüberblick
 
-- [ ] Fix Abb. 4 Grafik Verschiebung
-- [x] Abschnittsfußnote: "Die Angaben des folgenden Abschnitts entstammen, sofern nicht anders vermerkt, aus ..."
-- [x] Grafik raus
+- [ ] Fix Grafik Verschiebung
 
-- [ ] TODOS in Paper zu Ende
+- [x] Fachbegriffnutzung überprüfen konsistenter machen
 
-- [ ] **Tarnungsgrafik neu generieren**
-- [x] **Tarnung erläutern**
+- [x] Anzahl Prädikate
 
-- [ ] Syntia Anwendung
+- [x] **Tarnungsgrafik neu generieren**
+- [x] **Laufzeitgrafik neu generieren**
 
-- [ ] **Fachbegriffnutzung konsistenter machen**
-	- [ ] Decompiler -> Dekompilierer
-
-- [x] Erklären, warum wir nicht einfach Aussagen über eine uniforme Verteilung treffen
-	- Pattern-Matching
-	- Erkennbarkeit (Resillienz) -> Wahrscheinlichkeit wird direkt angegeben!
-		- Stärke nun abhängig von Verschleierung der Warhscheinlichkeit
-	- Lösung: Zur Klasse stochastischer opaker Prädikate dazuzählen => Erweiterung Implementierung!!!
-	- [ ] Diese Methode ist gut, weil nur pattern matching (Klasse ist aber groß, getarnt u. nicht einheitlich) und dynamische ausführung (kann man sich gegen wehren mit paper)
+- [x] Triton usw Scripts
+- [ ] Probabilistische Analyse

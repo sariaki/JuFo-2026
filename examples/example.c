@@ -21,12 +21,15 @@ uint64_t wrapper(void) {
 
 OBFUSCATE void foo(uint64_t x)
 {
-  printf("foo %lu\n", x);
-  // printf("foo\n");
-  // volatile int a = 1;
-  // volatile int b = 2;
-  // volatile int c = a % b;
-  // volatile int d = c + b * a;
+  if (x != 0xDEADBEEFDEADBEEF)
+    printf("foo %lu\n", x);
+  else
+  {
+    volatile int a = 1;
+    volatile int b = 2;
+    volatile int c = a % b;
+    volatile int d = c + b * a;
+  }
   //__asm__("int3");
 } 
 

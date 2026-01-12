@@ -46,7 +46,7 @@ DIR_BASE = "/home/paul/Documents/JuFo-2026/evaluation/llvm-test-suite-build/Mult
 DIR_OBF = "/home/paul/Documents/JuFo-2026/evaluation/llvm-test-suite-build_obfuscated/MultiSource"
 
 MAX_BINARIES = None
-PREDICATES_PER_BIN = None
+PREDICATES_PER_BIN = 100
 
 CATEGORIES = {
     "Arithmetic": [
@@ -214,6 +214,9 @@ if __name__ == "__main__":
     print("\nCalculating distances and plotting...")
     dist_base = [distance.euclidean(v, global_center) for v in vecs_base]
     dist_obf = [distance.euclidean(v, global_center) for v in vecs_obf]
+
+    print("Unobfuscated vectors analyzed:", len(dist_base))
+    print("Obfuscated vectors analyzed:", len(dist_obf))
 
     # Plot Histograms
     fig, ax = plt.subplots(figsize=(12, 7))

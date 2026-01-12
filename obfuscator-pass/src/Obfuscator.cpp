@@ -35,10 +35,10 @@ cl::opt<unsigned int> POPInsertProbability(
 
 // Predicate probability
 // TODO: Make this fluctuate to throw off heuristics
-cl::opt<unsigned int> POPPredicateProbability(
+cl::opt<double> POPPredicateProbability(
     "pop-predicate-probability",
     cl::desc("Probability that the opaque predicate evaluates to true (0-100)"),
-    cl::init(98),
+    cl::init(0.9999999999998),
     cl::cat(PassCategory)
 );
 
@@ -70,7 +70,7 @@ constexpr unsigned int MIN_ITERATIONS = 7;
 cl::opt<unsigned int> POPNewtonRaphsonIterations(
     "pop-iterations",
     cl::desc("Number of iterations for the Newton-Raphson method (minimum: 7)"),
-    cl::init(12),
+    cl::init(7),
     cl::cat(PassCategory)
 );
 
@@ -90,8 +90,7 @@ namespace
 
             const std::string AttrName = "pop-obfuscated";
 
-            // make_early_inc_range allows safe modification of the function list,
-            // needed when we add parameters to functions
+            // For safe modification during iteration
             auto& FunctionsToProcess = M.getFunctionList();
             auto It = FunctionsToProcess.begin();
             while (It != FunctionsToProcess.end())
@@ -112,20 +111,8 @@ namespace
                 // Skip intrinsics
                 if (Fn->isIntrinsic()) continue;
 
-                // Skip COMDAT functions (C++ Templates, Inline functions)
-                // The linker merges these across files based on name/signature.
-                // if (Fn->hasComdat()) continue;
-                
-                // Skip functions with their Address taken
-                // If the address is taken, it might be called via a function pointer/vtable 
-                // if (F.hasAddressTaken()) continue;
-
                 // Check if function uses setjmp
                 if (Fn->hasFnAttribute(Attribute::ReturnsTwice)) continue;
-
-                // errs() << "Running on " << demangle(Fn.getName()) << "\n";
-               
-                // TODO: Multiple Methods for getting randomness
 
                 // Get >=64 bit parameter derived from external fn to create a symbolic variable for the solver
                 const DataLayout &DL = Fn->getParent()->getDataLayout();
@@ -224,6 +211,8 @@ namespace
                         if (!(&BB == &Fn->getEntryBlock()) && !BB.isEHPad())
                             BasicBlockCandidates.push_back(&BB);
 
+                        if (&BB == &Fn->getEntryBlock()) continue;
+
                         // We have to guarantee that this random place is after all PHI instructions
                         auto It = BB.getFirstInsertionPt();
 
@@ -234,28 +223,50 @@ namespace
                             ValidInsertionPts.push_back(It);
                     }
 
+                    if (ValidInsertionPts.empty())
+                    {
+                        // errs() << "Warning: No valid insertion points found in function " << demangle(Fn->getName()) << " - skipping.\n";
+                        continue;
+                    }
+                    // errs() << "Obfuscating function " << demangle(Fn->getName()) << "\n";
+                    
                     const auto RandomInsertionIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
                     ValidInsertionPts.size() - 1)(Rng);
                     const auto RandomInsertionPt = ValidInsertionPts[RandomInsertionIdx];
                     auto RandomBasicBlock = (*RandomInsertionPt).getParent();
 
                     IRB.SetInsertPoint(RandomInsertionPt);
+                    
+                    // Freeze parameter to stop propagation of undef and poison values
+                    Value* FrozenParameter = IRB.CreateFreeze(Parameter, "frozen_param");
 
-                    // Cast the parameter to a double
-                    const auto DoubleCallParameter = Utils::CastIRValueToDouble(Parameter, IRB);
+                    // Cast parameter to int
+                    Value* IntegerParameter = Utils::CastIRValueToI64(FrozenParameter, IRB);
 
-                    if (!DoubleCallParameter)
-                    {
-                        errs() << "Warning: Could not cast parameter in function " << demangle(Fn->getName()) << " - skipping.\n";
-                        continue;
-                    }
+                    // Hashing to get uniform distribution
+                    // The value chosen isn't represented in the binary since clang optimizes it
+                    Value* ConstHash = ConstantInt::get(IRB.getInt64Ty(), 6364136223846793005ULL); // Knuth's constant; TODO: make random
+                    Value* HashedParameter = IRB.CreateMul(IntegerParameter, ConstHash);
 
-                    // Make parameter lie in [0;1]
-                    // We do this this way because LLVM *somehow* messes up if we perform a division with IRB.CreateFDiv in the IR
-                    constexpr double RecipMax = 1.0 / std::numeric_limits<double>::max();
-                    Value* RecipMaxConstant = ConstantFP::get(IRB.getDoubleTy(), RecipMax);
+                    // Construct a double using IEEE 754 bit manipulation
+                    // Value* MantissaMask = ConstantInt::get(IRB.getInt64Ty(), 0x000FFFFFFFFFFFFFULL);
+                    // Value* ExponentBits = ConstantInt::get(IRB.getInt64Ty(), 0x3FF0000000000000ULL); // Exponent for 1.0
+                    
+                    // Value* Mantissa = IRB.CreateAnd(HashedParam, MantissaMask);
+                    // Value* IEEEBits = IRB.CreateOr(Mantissa, ExponentBits);
+                    
+                    // Value* OneRangeDouble = IRB.CreateBitCast(IEEEBits, IRB.getDoubleTy()); // [1.0; 2.0[
+                    // Value* ConstOne = ConstantFP::get(IRB.getDoubleTy(), 1.0);
+                    
+                    // Get result in [0.0; 1.0[
+                    // const auto SmallCallParameter = IRB.CreateFSub(OneRangeDouble, ConstOne);
 
-                    const auto SmallCallParameter = IRB.CreateFMul(DoubleCallParameter, RecipMaxConstant);
+                    // Get result in [0.0; 1.0[
+                    const auto DoubleCallParameter = Utils::CastIRValueToDouble(HashedParameter, IRB);
+                    const auto SmallCallParameter = IRB.CreateFDiv(
+                        DoubleCallParameter, 
+                        ConstantFP::get(IRB.getDoubleTy(), static_cast<double>(UINT64_MAX))
+                    );
 
                     // Generate random inverse CDF
                     const auto [SamplerFn, Bernsteinpolynomial, DomainStart, DomainEnd] = 
@@ -263,8 +274,6 @@ namespace
 
                     // i64 x = sampler(u)
                     const auto SampleRet = IRB.CreateCall(SamplerFn, { SmallCallParameter });
-
-                    // errs() << "Start: " << DomainStart << " End: " << DomainEnd << "\n";
 
                     // Choose whether the predicate should always be true or false
                     bool PredicateType = std::uniform_int_distribution(0, 1)(Rng); // always false || always true
@@ -280,7 +289,7 @@ namespace
                         double CurrentSlope = Bernsteinpolynomial.EvaluateDerivativeAt(Threshold);
 
                         // f(x) = B(x) - Target
-                        double OffsetY = CurrentY - static_cast<double>(POPPredicateProbability.getValue()) / 100.0;
+                        double OffsetY = CurrentY - static_cast<double>(POPPredicateProbability.getValue());
                         
                         // Newton Step: x = x - f(x) / f'(x)
                         Threshold -= OffsetY / CurrentSlope;
@@ -295,13 +304,13 @@ namespace
 
                     // Create predicate
                     Value* CmpResult;
-                    if (PredicateType) // always true predicate
+                    if (PredicateType) // Always true predicate
                     {
-                        // if x < Threshold...
-                        CmpResult = IRB.CreateFCmpULT(SampleRet,
+                        // if x <= Threshold...
+                        CmpResult = IRB.CreateFCmpULE(SampleRet,
                             ConstantFP::get(IRB.getDoubleTy(), Threshold));
                     }
-                    else // always false predicate
+                    else // Always false predicate
                     {
                         // if x > Threshold...
                         CmpResult = IRB.CreateFCmpUGT(SampleRet,
@@ -309,48 +318,41 @@ namespace
                     }
 
                     // Create new BasicBlocks for branches
-                    BasicBlock* RealBB = SampleRet->getParent()->splitBasicBlock(IRB.GetInsertPoint(), "always_hit");
-                    BasicBlock* FakeBB = nullptr;
+                    BasicBlock* FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
+                    IRB.SetInsertPoint(FakeBB);
+                    IRB.CreateIntrinsic(Intrinsic::trap, {}, {});
+                    if (Fn->getReturnType()->isVoidTy()) 
+                        IRB.CreateRetVoid();
+                    else 
+                        IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
 
-                    // if (BasicBlockCandidates.empty())
-                    // {
-                        FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
+                    // Ensure IRB is pointing to the end of our inserted instructions
+                    IRB.SetInsertPoint(RandomBasicBlock); 
+                    Instruction* SplitPoint = &*IRB.GetInsertPoint(); // Points to the instruction after our logic
 
-                        IRB.SetInsertPoint(FakeBB);
-                        // Utils::PrintfIR(M, IRB, "FakeBB says hi\n");
-
-                        // TODO: Add junkcode
-                        if (Fn->getReturnType()->isVoidTy()) 
-                            IRB.CreateRetVoid();
-                        else 
-                            IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
-                    // }
-                    // else
-                    // {
-                    //     const auto RandomBBIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
-                    //         BasicBlockCandidates.size() - 1)(Rng);
-                    //     FakeBB = BasicBlockCandidates[RandomBBIdx];
-
-                    //     // Fix PHI nodes in FakeBB
-                    //     for (auto& PhiNode : FakeBB->phis())
-                    //         PhiNode.addIncoming(UndefValue::get(PhiNode.getType()), RandomBasicBlock);
-                    // }
-
-                    // Replace terminator of BasicBlock (unconditional br added by splitBasicBlock) with ours
+                    BasicBlock* RealBB = RandomBasicBlock->splitBasicBlock(RandomInsertionPt, "always_hit");
+                    
+                    // Replace the br LLVM added with conditional brach.
                     RandomBasicBlock->getTerminator()->eraseFromParent();
+                    
+                    // Insert Opaque Predicate
+                    IRB.SetInsertPoint(RandomBasicBlock); // Sets to end (now valid, since terminator is gone)
+                    
+                    Value* ThresholdConst = ConstantFP::get(IRB.getDoubleTy(), Threshold);
 
-                    IRB.SetInsertPoint(RealBB->getFirstInsertionPt());
-                    // Utils::PrintfIR(M, IRB, "RealBB says hi\n");
-
-                    IRB.SetInsertPoint(RandomBasicBlock);
-                    if (PredicateType == true)
+                    if (PredicateType)
+                    {
+                        auto CmpResult = IRB.CreateFCmpULE(SampleRet, ThresholdConst);
                         IRB.CreateCondBr(CmpResult, RealBB, FakeBB);
+                    } 
                     else
+                    {
+                        auto CmpResult = IRB.CreateFCmpOGT(SampleRet, ThresholdConst);
                         IRB.CreateCondBr(CmpResult, FakeBB, RealBB);
+                    }
                 }
 
                 // Mark function as obfuscated so that the loop doesn't run infinitely
-                // FunctionsObfuscated[Fn->getName()] = true;
                 Fn->addFnAttr(AttrName);
             }
 

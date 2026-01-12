@@ -18,7 +18,7 @@ PASS_PLUGIN_DIR="/home/paul/Documents/JuFo-2026/obfuscator-pass/build/Obfuscator
 FILENAME="example"
 
 # Only use -fpass-plugin. Remove -Xclang -load.
-clang-18 -$OPT_LVL -g \
+clang-18 -static -$OPT_LVL -g \
 	-fpass-plugin=$PASS_PLUGIN_DIR \
 	${FILENAME}.c \
 	-o $FILENAME

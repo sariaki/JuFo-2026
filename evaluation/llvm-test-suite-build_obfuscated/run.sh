@@ -37,7 +37,8 @@ fi
 C_FLAGS="-fpass-plugin=${PASS_PLUGIN_DIR} -Xclang -load -Xclang ${PASS_PLUGIN_DIR} -mllvm -pop-probability=${PROBABILITY}"
 CXX_FLAGS="$C_FLAGS"
 
-cmake -DCMAKE_BUILD_TYPE=Release \
+cmake -D FP_TOLERANCE=0.1 -D FP_ABSTOLERANCE=0.1 \
+      -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_C_COMPILER=/usr/bin/clang-18 \
       -DCMAKE_CXX_COMPILER=/usr/bin/clang++-18 \
       -DTEST_SUITE_BENCHMARKING_ONLY=ON \

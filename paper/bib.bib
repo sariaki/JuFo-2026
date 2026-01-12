@@ -394,7 +394,7 @@
 }
 
 @misc{llvmTestSuite2025,
-    author       = {{LLVM Project (llvm-test-suite Contributer)}},
+    author       = {{LLVM Test Suite Contributer}},
     title        = {{llvm-test-suite}},
     howpublished = {\url{https://github.com/llvm/llvm-test-suite}},
     year         = {2025}
@@ -537,4 +537,65 @@
     title     = {Bernstein Polynomials},
     publisher = {University of Toronto Press / Springer (reprint/excerpt available)},
     year      = {1953},
+}
+
+@inproceedings{menguySearchBasedLocalBlackBox2021,
+    title = {Search-{{Based Local Black-Box Deobfuscation}}: {{Understand}}, {{Improve}} and {{Mitigate}}},
+    shorttitle = {Search-{{Based Local Black-Box Deobfuscation}}},
+    booktitle = {Proceedings of the 2021 {{ACM SIGSAC Conference}} on {{Computer}} and {{Communications Security}}},
+    author = {Menguy, Grégoire and Bardin, Sébastien and Bonichon, Richard and Lima, Cauim De Souza},
+    date = {2021-11-12},
+    pages = {2513--2525},
+    publisher = {ACM},
+    location = {Virtual Event Republic of Korea},
+    doi = {10.1145/3460120.3485250},
+    url = {https://dl.acm.org/doi/10.1145/3460120.3485250},
+    urldate = {2026-01-09},
+    abstract = {Code obfuscation aims at protecting Intellectual Property and other secrets embedded into software from being retrieved. Recent works leverage advances in artificial intelligence (AI) with the hope of getting blackbox deobfuscators completely immune to standard (whitebox) protection mechanisms. While promising, this new field of AI-based, and more specifically search-based blackbox deobfuscation, is still in its infancy. In this article we deepen the state of search-based blackbox deobfuscation in three key directions: understand the current state-of-the-art, improve over it and design dedicated protection mechanisms. In particular, we define a novel generic framework for search-based blackbox deobfuscation encompassing prior work and highlighting key components; we are the first to point out that the search space underlying code deobfuscation is too unstable for simulation-based methods (e.g., Monte Carlo Tree Search used in prior work) and advocate the use of robust methods such as S-metaheuristics; we propose the new optimized search-based blackbox deobfuscator Xyntia which significantly outperforms prior work in terms of success rate (especially with small time budget) while being completely immune to the most recent anti-analysis code obfuscation methods; and finally we propose two novel protections against search-based blackbox deobfuscation, allowing to counter Xyntia powerful attacks.},
+    eventtitle = {{{CCS}} '21: 2021 {{ACM SIGSAC Conference}} on {{Computer}} and {{Communications Security}}},
+    isbn = {978-1-4503-8454-4},
+    langid = {english},
+}
+
+@INPROCEEDINGS{binsec2020,
+    author = {L. Daniel and S. Bardin and T. Rezk},
+    booktitle = {2020 IEEE Symposium on Security and Privacy (SP)},
+    title = {Binsec/Rel: Efficient Relational Symbolic Execution for Constant-Time at Binary-Level},
+    year = {2020},
+    volume = {},
+    issn = {},
+    pages = {1021-1038},
+    keywords = {tools;timing;cryptography;standards;safety;memory management;optimization},
+    doi = {10.1109/SP40000.2020.00074},
+    url = {https://doi.ieeecomputersociety.org/10.1109/SP40000.2020.00074},
+    publisher = {IEEE Computer Society},
+    address = {Los Alamitos, CA, USA},
+    month = {may}
+}
+
+@inproceedings{reichenwallnerSimplificationGeneralMixed2023,
+    title = {Simplification of {{General Mixed Boolean-Arithmetic Expressions}}: {{GAMBA}}},
+    shorttitle = {Simplification of {{General Mixed Boolean-Arithmetic Expressions}}},
+    booktitle = {2023 {{IEEE European Symposium}} on {{Security}} and {{Privacy Workshops}} ({{EuroS}}\&{{PW}})},
+    author = {Reichenwallner, Benjamin and Meerwald-Stadler, Peter},
+    date = {2023-07},
+    eprint = {2305.06763},
+    eprinttype = {arXiv},
+    eprintclass = {cs},
+    pages = {427--438},
+    doi = {10.1109/EuroSPW59978.2023.00053},
+    url = {http://arxiv.org/abs/2305.06763},
+    urldate = {2025-06-14},
+    abstract = {Malware code often resorts to various self-protection techniques to complicate analysis. One such technique is applying Mixed-Boolean Arithmetic (MBA) expressions as a way to create opaque predicates and diversify and obfuscate the data flow.},
+    langid = {english},
+    keywords = {Computer Science - Cryptography and Security},
+}
+
+@online{codedefenderMetrics,
+    author       = {{CodeDefender}},
+    title        = {Metrics: Performance metrics of CodeDefender vs Themida vs VMProtect},
+    organization = {CodeDefender},
+    url          = {https://github.com/codedefender-io/metrics},
+    note         = {GitHub repository, inkl. Benchmarks und Rohdaten},
+    urldate      = {2026-01-12}
 }
