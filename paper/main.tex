@@ -156,7 +156,7 @@ In anderen Worten: Das Prädikat $\mathcal{O}(\phi)$ ist opak, wenn sein Wert f�
   \includegraphics[ 
     scale=1.25
     ]{overwatch_byfron_cropped}
-  \captionof{figure}{Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. %Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.
+  \captionof{figure}{\centering Kontrollflussgraph einer einfachen Funktion mit opakem Prädikat. %Abbildung aus der Disassembly des Spiels \emph{Overwatch} mittels IDA entnommen.
   } \label{fig:overwatchGraph}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.5\textwidth}
@@ -231,9 +231,9 @@ Angesichts der dargelegten Probleme aktueller Methoden ergibt sich die Notwendig
 \subsection{Angreifermodell} \label{sec:angreiferModell}
 Diese Arbeit geht aufgrund der Ähnlichkeit behandelter Thematik von einem \emph{Man-at-the-End} (MATE) Angreifermodell aus, aufbauend auf \cite{xuManufacturingResilientBiOpaque2018, zobernigWhenAreOpaque2019}.
 Ein Angreifer hat direkten Zugriff auf das Programm und dessen Anweisungen sowie volle Kontrolle über das Endsystem, auf dem sie ausgeführt werden. 
-\begin{wrapfigure}{r}{0.32\textwidth}
+\begin{wrapfigure}{r}{0.35\textwidth}
 	\centering
-	\includegraphics[width=0.32\textwidth]{sym_exec}
+	\includegraphics[width=0.35\textwidth]{sym_exec}
 	\caption{\centering Konzeptionelles Framework zur Erkennung opaker Prädikate mit symbolischer Ausführung. Abbildung aus \cite{xuManufacturingResilientBiOpaque2018} übernommen.} 
 \end{wrapfigure}
 Es ist dem Angreifer hierbei nicht vorgegeben, wo und inwiefern das Programm obfuskiert ist. Der Angreifer kann das Programm statisch und dynamisch analysieren. Das Ziel des Angreifers ist dabei, ein Verständnis der obfuskierten Programmlogik zu gewinnen.
@@ -306,46 +306,56 @@ Die geringe Wahrscheinlichkeit, dass die Prädikate in $\mathcal{P}_{\Var{prob}}
 	\caption{Generierung probabilistischer opaker Prädikate}
 	\label{alg:probOpaque}
 	\begin{algorithmic}[1]
-		\Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of inverse CDF), $P(\Var{TrueBB})$ (Probability of generated predicate having wanted value), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
-		\Procedure{GenerateProbabilisticPredicates}{$\Var{Module}, \Var{CDF}, \Var{p} \in [0, 1], \Var{Precision} \in \mathbb{N}$}
-		\For{$Function \; \Var{F} \in \Var{Module}$}
-		\If{\Call{ShouldObfuscate}{$\Var{F}$}}
-		\State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
-		
-		\State $\Var{U} \gets \Call{GetSymbolicVariable}{$$}.\Call{AsInt64}{$$}$ \Comment{Generate a random variable.}
+		\Require $\Var{D_{start}}, \Var{D_{end}}$ (Domain of CDF), $P(\Var{RealBB})$ (Probability of generated predicate having wanted value), $\Var{Precision}$ (determines $\Var{Threshold}$ precision in predicate)
+		\Procedure{GenerateProbabilisticPredicates}{$Function \; \Var{F} \in \Var{Module}, \Var{AlwaysTruePred} \in \{0,1\}, \Var{Precision} \in \mathbb{N}$} %  \in \{\Var{true}, \Var{false}\}
+        \State $\Var{BB} \gets \Call{GetRandomBasicBlock}{\Var{F}}$
+        
+        \State $\Var{U} \gets \Call{GetSymbolicVariable}{$$}.\Call{AsInt64}{$$}$ \Comment{Generate a random variable.}
         \State $\Var{U} \gets \Call{BB.InsertMultiplication}{\Var{U}, \Call{GetRandomOddNr}{$$}}$ \Comment{Hashing: $\Var{U} \sim \Var{Unif}.$}
         \State $\Var{U} \gets \Call{BB.InsertDivision}{\Var{U}, \Var{INT\_MAX}}$ \Comment{$\Var{U} \in [0; 1].$}
-		\State $\Call{BB.InsertCallInverseCDF}{\Var{U}}$
-		
-		\State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$ \Comment{Compute threshold using the Newton–Raphson method.}
-		\For{$i \gets 0$ \textbf{to} $\Var{Precision}$}
-		\State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - P(\Var{TrueBB})$
-		\State $\Var{Slope} \gets \Call{CDF.EvaluateDerivativeAt}{\Var{Threshold}}$
-		
-		\State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
+        
+        \State $\Var{CDF} \gets \Call{GenerateRandomDistribution}{$$}$
+        \State $\Call{BB.InsertCallInverseCDF}{\Var{CDF}, \Var{U}}$
+        
+        \State $\Var{Threshold} \gets \frac{\Var{D_{end} - \Var{D_{start}}}}{2}$
+        \For{$i \gets 0$ \textbf{to} $\Var{Precision}$} \Comment{Compute threshold using the Newton–Raphson method.}
+        \State $\Var{OffsetY} \gets \Call{CDF.EvaluateAt}{\Var{Threshold}} - P(\Var{RealBB})$
+        \State $\Var{Slope} \gets \Call{CDF.EvaluateDerivativeAt}{\Var{Threshold}}$
+        
+        \State $\Var{Threshold} \gets \Var{Threshold} - \frac{\Var{OffsetY}}{\Var{Slope}}$
         \State $\Var{Threshold} = \Call{max}{\Call{min}{\Var{Threshold}, \Var{D_{start}}}, \Var{D_{end}}}$ \Comment{Clamp to prevent divergence.}
-		\EndFor
-		
-		\State $\Var{RealBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
-		\State $\Var{FakeBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
-		\State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{RealBB}, \Var{FakeBB}}$
-		\State $\Call{FakeBB.InsertJunkCode}{$$}$
-		\EndIf
-		\EndFor
+        \EndFor
+        
+        \State $\Var{RealBB} \gets \Call{BB.Split}{\Var{LastInstruction}}$ \Comment{Always executed Basicblock}
+        \State $\Var{FakeBB} \gets \Call{F.CreateBB}{$$}$ \Comment{Never executed Basicblock}
+        \State $\Call{FakeBB.InsertJunkCode}{$$}$
+                
+		\If{$\Var{AlwaysTruePred}$}
+    		\State $\Call{BB.InsertIf}{\Var{U} < \Var{Threshold}, \Var{RealBB}, \Var{FakeBB}}$
+        \Else
+            \State $\Call{BB.InsertIf}{\Var{U} > \Var{Threshold}, \Var{FakeBB}, \Var{RealBB}}$
+        \EndIf
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
-Für jedes zu generierende opake Prädikat wird im Programm eine Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. %\textcolor{red}{Es wird angenommen, dass $U$ gleichverteilt ist.}
-Damit $U$ gleichverteilt ist, wird die Zufallsvariable mit einer zufälligen ungeraden Zahl multipliziert\footnote{Dies ist notwendig für z.B. Zeiger, da ihr Adressenraum sehr nahe am Maximum von 64 Bit Integern beginnen}.
-Aus den probabilistischen opaken Prädikaten ohne Transformationen ($f(X)=X$) lassen sich Wahrscheinlichkeitswerte direkt herauslesen (vgl. \cref{ex:gleich}).
-Um dies zu vermeiden wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert. Wichtig ist dabei, dass diese neue Verteilung in "`wahrscheinliche"' bzw. "`unwahrscheinliche"' Intervalle eingeteilt werden kann. Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
-Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
 \begin{wrapfigure}{r}{0pt}
     \centering
     \includegraphics[width=0.4\textwidth]{img/cdf_inv_exp}
     \caption{\centering Zufällige Zahlen $y_i$ werden von einer Gleichverteilung $\Var{Unif}(0, 1)$ generiert. Jeder zufällige $y$-Wert wird über die inverse kumulative Verteilungsfunktion der Exponentialverteilung $F^{-1}(x)$, einem $x$-Wert zugeordnet. Wie bei einer Exponentialverteilung sammeln sich hierdurch die $x=F^{-1}(x)$-Werte um 0.}
     \label{fig:cdfInv}
 \end{wrapfigure}
+%\textcolor{red}{TODO: Immer falsche Prädikate}
+%\textcolor{red}{TODO: Prädikate, wo PDF immer einen Wert annimmt}
+Für jedes zu generierende opake Prädikat wird im Programm eine Pseudozufallsvariable $U$ generiert. Verschiedene Methoden hierfür werden in \cref{sec:pseudoZufall} gegeben. Wichtig ist, dass der Angreifer den Wert von $U$ nicht statisch bestimmen kann. %\textcolor{red}{Es wird angenommen, dass $U$ gleichverteilt ist.}
+%Damit $U$ gleichverteilt ist, wird die Zufallsvariable mit einer zufälligen ungeraden Zahl multipliziert (mod $2^{64}$), um so die Bits zu zerstreuen.
+Um die Gleichverteilung von $U$ zu erhalten und die Bits zu verstreuen wird die Zufallsvariable mit einer zufälligen ungeraden Konstante modulo $2^{64}$ multipliziert. Da jede ungerade Zahl teilerfremd zu $2^{64}$ ist, ist diese Abbildung bijektiv.
+
+Aus den probabilistischen opaken Prädikaten ohne Transformationen ($f(X)=X$) lassen sich Wahrscheinlichkeitswerte direkt herauslesen (vgl. \cref{ex:gleich}).
+Um dies zu vermeiden wird über die sog. Inversionsmethode $U$ in eine andere z.B. normal-, exponential- oder bernoulliverteilte Zufallsvariable transformiert.
+Wichtig ist dabei, dass diese neue Verteilung in "`wahrscheinliche"' bzw. "`unwahrscheinliche"' Intervalle eingeteilt werden kann.
+Das Vorgehen hierfür wird in \cref{sec:genProb} genauer vorgestellt.
+Mit dieser transformierten Zufallsvariable können nun wahrscheinliche bzw. unwahrscheinliche probabilistische Prädikate erstellt werden. 
+
 Der Pseudocode für die Generierung solcher probabilistischer opaker Prädikate ist in \cref{alg:probOpaque} beschrieben.
 
 \subsection{Wahrscheinlichkeitsverteilungsgenerierung} \label{sec:genProb}
@@ -361,7 +371,7 @@ Ein Beispiel hierfür ist die Gammaverteilung mit Skalenparameter $\alpha > 0$, 
 Diese hat den Vorteil, dass sich verschiedene andere Verteilungen (z.B. Chi-Quadrat-, Erlang und Exponentialverteilung) aus ihr ergeben \cite{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}. Ein Pattern Matching Angriff müsste demnach nach Termen der sehr allgemeinen Form $ax^n b^x$ suchen\footnote{Die Faktoren werden im Vorhinein zur Kompilationszeit miteinander multipliziert}. Dennoch ist es nicht unmöglich: Es ist nicht davon auszugehen, dass der Term in regulären Programmen (oft/überhaupt) vorkommt.
 
 \paragraph{Generierung über zufälliges Polynom}
-Eine Alternative ist die eigenständige Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion erfüllt.
+Stattdessen wurde sich entschieden für die Generierung einer zufälligen Funktion $F$, welche die Eigenschaften einer kumulativen Verteilungsfunktion erfüllt.
 Eine kumulative Verteilungsfunktion $F: \mathbb{D} \to [0;1]$ muss folgende 3 Eigenschaften erfüllen\cite{georgiiStochastikEinfuehrungWahrscheinlichkeitstheorie2015}:
 \begin{enumerate}[]
     \item $F$ ist monoton steigend.
@@ -380,42 +390,29 @@ Um alle Eigenschaften einer kumulativen Verteilungsfunktion zu erfüllen, muss $
 Für eine Verallgemeinerung lassen sich der horizontaler Skalierungsparameter $a$ sowie der horizontale Verschiebungsparameter $k$ in $B_n(a \cdot (x-k))$ einfügen.
 
 Das Vorgehen zur Generierung einer CDF mit Bernsteinpolynomgrad $n$ ist somit Folgendes:
-
-\enlargethispage{1cm} 
-\noindent
-\begin{minipage}[t]{0.7\textwidth}
-    \vspace{0pt}
 \begin{enumerate}
 	\item Wähle zwei zufällige rationale Zahlen $(a,k) \in \mathbb{R}$.
-	\item Wähle den Definitionsbereich $\mathbb{D} = [x_1, x_2]$ \\
-    mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
+	\item Definiere den Definitionsbereich $\mathbb{D} = [x_1, x_2]$ mit $x_1 = k$ und $x_2 = k + \frac{1}{a}$.
 	\item Teile $[x_1;x_2]$ in $n$ Teile ein.
-    \item Ziehe $n$ unabhängige Gamma-Werte $(g_1,\dots,g_n) \sim \mathcal{G}(\alpha,1)$ \\
-    und normiere
-    $s_i = \frac{g_i}{\sum_{j=1}^n g_j}$, sodass $\sum_{i=1}^n{s_i}=1$
-	\item Sei $c_0 = 0$. Für Intervall $i=1$ bis $n-1$: \\
-    \begin{minipage}{0.45\textwidth}
-        \setlength{\abovedisplayskip}{2pt} \setlength{\belowdisplayskip}{3pt}
-        $$c_i = \sum_{j=1}^i s_j \quad (\text{also }c_n=1).$$
-    \end{minipage}
-%	\textcolor{red}{Wähle eine zufällige rationale Zahl $c$. \\
-%    Berechne $c_i = c_{i-1} + c$.}
-	\item Generiere die Funktion $B_n(x) = \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{n-k}$ \\
+    \item Ziehe $n-1$ unabhängige, gleichverteilte Werte $(c_1,\dots,c_n) \sim U(0,1)$ und sortiere sie: 
+    $$c_1 \leq c_2 \leq \dots \leq c_{n-1}$$
+	\item Setze $c_0 = 0$ und $c_n = 1$.
+	\item Generiere die Funktion $B_n(x) = \sum_{k=0}^n c_k \binom{n}{k} x^k (1-x)^{n-k}$
 	mit gegebenen Koeffizienten ($c_0 \dots c_n) \in [0; 1]$.
 \end{enumerate}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.34\linewidth}
-    \vspace{0pt}
-	\centering
-%	\setlength{\abovecaptionskip}{-4pt}
-	\includegraphics[width=\linewidth]{img/bernstein}
-	\captionof{figure}{\centering Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
-	\label{fig:bernstein}
-\end{minipage}
+\begin{wrapfigure}{R}{0.37\textwidth}
+    \centering
+%    \vspace{-8.5cm}
+    %	\setlength{\abovecaptionskip}{-4pt}
+    \includegraphics[width=0.37\textwidth]{img/bernstein}
+    \caption{\centering Zufällige Bernsteinpolynome fungieren als verschiedene kumulative Verteilungsfunktionen für die probabilistischen opaken Prädikate.} %mit $k=0$ und $a=1$
+    \label{fig:bernstein}
+\end{wrapfigure}
+
 
 %Dadurch, dass $F$ monoton steigend ist, lässt sich $F$ als sortierte Liste an $y$-Werten betrachten. Das Inverse der kumulativen Verteilungsfunktion lässt sich folglich  über eine Binärsuche effizient in $\mathcal{O}(\log(n))$ wie folgt berechnen:
 %Die Berechnung des Inversen der kumulativen Verteilungsfunktion geschieht über Binärsuche folgendermaßen:
-Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren mit Laufzeitkomplexität $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt\footnote{Hierfür muss das Bernsteinpolynom mit \emph{streng} monoton steigenden Koeffizienten (Mindestabstand) generiert werden.}. Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=7$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt. Der Pseudocode hierfür ist in \cref{alg:invCumSum} gegeben.¸
+Das Inverse der kumulativen Verteilungsfunktion lässt sich effizient über das Newton-Raphson-Verfahren mit Laufzeitkomplexität $O(k)$ berechnen, wobei $k$ die Anzahl an Iterationen festlegt. Hierfür muss das Bernsteinpolynom mit \emph{streng} monoton steigenden Koeffizienten (Mindestabstand) generiert werden, da die mangelende Steigung sonst zu einer Division durch 0 führen würde (vgl. \cref{alg:invCumSum}). Aufgrund des quadratischen Konvergenzverhaltens des Verfahrens genügen für $64$-Bit Gleitkommazahlen praktisch $k=6$ Iterationen: Gemäß der IEEE 754 Norm haben $64$-Bit Gleitkommazahlen eine $52$-Bit Mantisse. Durch das Konvergenzverhalten verdoppelt sich die Anzahl korrekter Bits mit jeder Iteration. Ist anfänglich $1$ Bit korrekt erraten, so braucht es $6$ Iterationen, um alle $2^6=64>53$ Bits der Mantisse korrekt zu bestimmen. Um Sicherheitsgarantien zu liefern wurde der Algorithmus mit $k=7$ implementiert, um bei schlechten anfänglichen Schätzungen und ungünstigen Bernsteinpolynomen dennoch garantiert das Inverse der kumulativen Verteilungsfunktion korrekt zu bestimmen. Die zusätzlichen Laufzeitkosten hierdurch sind minimal. Um eine mögliche Divergenz des Newton-Raphson-Verfahrens zu verhindern, wird der geschätzte Wert bei jeder Iteration auf den Definitionsbereich $\mathbb{D}$ der Funktion begrenzt. Der Pseudocode hierfür ist in \cref{alg:invCumSum} gegeben.¸
 \begin{algorithm}[!h] 
 	\caption{Berechnung inverser kumulativer Verteilungsfunktion über das Newton-Raphson-Verfahren }
 	\label{alg:invCumSum}
@@ -539,7 +536,7 @@ Es wurde eine Entscheidung für einen LLVM-Pass getroffen aufgrund folgender Vor
 %\end{figure}
 Ein LLVM-Pass bietet in diesem Fall das beste Kompromissverhältnis zwischen \emph{low-level} Kontrolle, Laufzeiteffizienz, einer \emph{high-level} Portabilität sowie vertretbarem Entwicklungsaufwand.
 
-Der Pass wurde mit mehreren Parametern versehen (vgl. \cref{alg:bashScript}): Nutzer können angeben, wie viel Prozent der Funktionen obfuskiert werden sollen (\texttt{-pop-lvl}), wie wahrscheinlich die probabilistischen opaken Prädikate sein sollen (\texttt{-pop-pred-prob}) sowie den minimalen/maximalen Bernsteinpolynomgrad (\texttt{-pop-min}/\texttt{max-degree}).
+Der Pass wurde mit mehreren Parametern versehen (vgl. \cref{alg:bashScript}): Nutzer können angeben, wie viel Prozent der Funktionen obfuskiert werden sollen (\texttt{-pop-lvl}), wie wahrscheinlich der korrekte Pfad der probabilistischen opaken Prädikate sein soll (\texttt{-pop-pred-prob}) sowie den minimalen/maximalen Bernsteinpolynomgrad (\texttt{-pop-min}/\texttt{max-degree}).
 Zudem können Funktionen im Quellcode als zu obfuskierend markiert werden (vgl. \cref{alg:toObf})
 %Da in der Implementierung alle Zufahlszahlen vom selben PRNG generiert werden, kann der anfängliche Startwert (\emph{Seed}) als Schlüssel für die Obfuskation betrachtet werden.
 
@@ -675,7 +672,7 @@ Es wurden dabei $k=7$ Newton-Raphson-Iterationen gewählt, $n=4$ als durchschnit
 	\label{fig:passRate}
 \end{minipage}
 \\\\
-Um die Obfuskationskosten zu messen, wurden die durchschnittliche Programmgröße (\cref{fig:size}), -laufzeit (\cref{fig:runtime}), Kompilationszeit (\cref{fig:compilationTime}) und Erfolgsquote (\cref{fig:passRate}) von 5 Kompilationen der gesamten LLVM Test Suite erhoben. Alle Messgrößen wurden test-weise relativ zu Obfuskationslevel 0 normalisiert.
+Um die Obfuskationskosten zu messen, wurden die durchschnittliche Programmgröße (vgl. \cref{fig:size}), -laufzeit (vgl. \cref{fig:runtime}), Kompilationszeit (vgl. \cref{fig:compilationTime}) und Erfolgsquote (vgl. \cref{fig:passRate}) von 5 Kompilationen der gesamten LLVM Test Suite erhoben. Alle Messgrößen wurden test-weise relativ zu Obfuskationslevel 0 normalisiert.
 
 Die Kompilationszeit wächst linear mit der Obfuskationsrate, wie sich \cref{fig:compilationTime} entnehmen lässt.
 %Die größten Auswirkungen hatte die Obfuskation auf die Programmlaufzeit (\cref{fig:runtime}).
@@ -684,13 +681,13 @@ Die Kompilationszeit wächst linear mit der Obfuskationsrate, wie sich \cref{fig
 %%\textcolor{red}{TODO: Auf Median, Quartile 2x eingehen.}
 %Auffällig ist dabei die große Distanz zwischen Minima und Maxima. Die Maxima lassen sich durch die kleineren Programme der Test-Suite erklären, auf welche die Obfuskation eine verhältnismäßig größere Auswirkung hat. Warum manche Programme nach der Obfuskation sogar schneller sind, ist unklar. Das Verhalten wurde bereits bei komerziellen Obfuskationsprodukten beobachtet\cite{codedefenderMetrics}.
 
-Wie zu erwarten war zeigt sich ein direkter Zusammenhang zwischen Obfuskationslevel und Code-Größe (\cref{fig:size}). Während der Median moderat auf ca. 1,25 ansteigt, wächst die Varianz signifikant an. Bei 100\% Obfuskation erreichen die Spitzenwerte mehr als das Doppelte ($\sim2,2$) der Ursprungsgröße. Der Anstieg wird durch das obere Quartil (Q3) getrieben. Während das untere Quartil (Q1) nahe 1,1 verharrt (es gibt also Fälle mit minimalem Overhead), steigt Q3 bei 100\% Obfuskation auf ca. 1,6 an. Dass die untere Antenne bis 1,0 reicht ist darauf zurückzuführen, dass sich in 2 Fällen aufgrund fehlender Funktionsparameter keine probabilistischen opaken Prädikate einfügen ließen. Um dies zu korrigieren müsste die Implementierung des Obfuskators zukünftig mit Parameter-Insertion erweitert werden. 
+Wie zu erwarten war zeigt sich ein direkter Zusammenhang zwischen Obfuskationslevel und Code-Größe (vgl. \cref{fig:size}). Während der Median moderat auf ca. 1,25 ansteigt, wächst die Varianz signifikant an. Bei 100\% Obfuskation erreichen die Spitzenwerte mehr als das Doppelte ($\sim2,2$) der Ursprungsgröße. Der Anstieg wird durch das obere Quartil (Q3) getrieben. Während das untere Quartil (Q1) nahe 1,1 verharrt (es gibt also Fälle mit minimalem Overhead), steigt Q3 bei 100\% Obfuskation auf ca. 1,6 an. Dass die untere Antenne bis 1,0 reicht ist darauf zurückzuführen, dass sich in 2 Fällen aufgrund fehlender Funktionsparameter keine probabilistischen opaken Prädikate einfügen ließen. Um dies zu korrigieren müsste die Implementierung des Obfuskators zukünftig mit Parameter-Insertion erweitert werden. 
 
 Bei der Laufzeit bleibt der Median stabil nahe 1,1, welches auf geringe durchschnittliche Laufzeitkosten hindeutet. Die Streuung (Interquartilsabstand und Minimum/Maximum) nimmt bei höheren Obfuskationsleveln stark zu: 25\% der Programmausführungen benötigen die doppelte Laufzeit oder mehr. Die Maxima bei Größe/Laufzeit lassen sich durch die kleineren Programme der Test-Suite erklären, auf welche die Obfuskation eine verhältnismäßig größere Auswirkung hat. Warum manche Programme nach der Obfuskation sogar schneller sind, ist unklar. Das Verhalten wurde bereits bei komerziellen Obfuskationsprodukten beobachtet\cite{codedefenderMetrics}.
 
 Die sich in der Größe oder Laufzeit ergebenden Kosten lassen sich beide durch ein Finetuning der Obfuskatoreinstellungen vermindern, z.B. indem nur bestimmte Funktionen obfuskiert bzw. performance-kritische Funktionen nicht obfuskiert werden.
 
-Trotz der geringen Wahrscheinlichkeit eines Versagens der probabilistischen opaken Prädikate kompilieren und funktionieren auch größere Projekte wie SQLite problemlos/fehlerfrei (\cref{fig:passRate}).
+Trotz der geringen Wahrscheinlichkeit eines Versagens der probabilistischen opaken Prädikate kompilieren und funktionieren auch größere Projekte wie SQLite problemlos/fehlerfrei (vgl. \cref{fig:passRate}).
 %\textcolor{red}{Der Abnehmende Testerfolg  in \cref{fig:passRate} liegt an den für die Tests als Fehler geltenden unerwarteten Gleitkommazahl-Flagänderungen. Die vermeintlichen fehlerhaften Programme wurden geprüft und problemlos manuell ausgeführt. Die vorgefertigten Tests sind lediglich zu streng.}
 Insgesamt sind die Kosten je nach Programm/Anwendungsfall und Obfuskationslevel praxisgerecht.
 
@@ -750,9 +747,8 @@ Zudem ist eine Anwendung von an die Obfuskationsmethode angepassten Heuristiken 
 \end{figure}
 \begin{table}[!h]
     \centering
-    \footnotesize
-    \renewcommand{\arraystretch}{0.9}
-    \setlength{\tabcolsep}{4pt}
+%    \renewcommand{\arraystretch}{0.9}
+%    \setlength{\tabcolsep}{4pt}
     \begin{tabularx}{1\textwidth}{@{}l >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Kategorie} & \textbf{Anweisungen} \\
@@ -789,7 +785,8 @@ In der vorliegenden Arbeit wurde das neue Softwareobfuskationskonzept der probab
 Die Resilient probabilistischer opaker Prädikate gegen symbolische Ausführung wurde theoretisch und praktisch begründet. Praktische Untersuchungen zeigen eine Resilienz gegen weitere Angriffsmethoden, wie einer probabilistischen Analyse sowie Pattern-Matching. Die Forschungsfrage ist somit positiv beantwortet.
 
 Offen bleibt die Resilienz gegenüber Machine Learning basierten Deobfuskationattacken wie \cite{tofighi-shiraziDefeatingOpaquePredicates2019}. Auch mögliche Symbiosen mit verschiedenen Obfuskationsmethoden sollten weiter untersucht werden.
-Gegenstand einer weiterführenden Auseinandersetzung sollte zudem die Anwendung der hier dargelegten Prinzipien der probabilistischen Obfuskation gegen andere Deobfuskationsmethoden. So könnte z.B. die Anwendung auf Ausdrücke Programmsynthesemethoden \cite{blazytkoSyntiaSynthesizingSemanticsa, menguySearchBasedLocalBlackBox2021} verhindern.
+Zukünftige Arbeiten sollten außerdem weitere Methoden zur Generierung probabilistischer opaker Prädikate untersuchen. So könnten z.B. Wahrscheinlichkeitsverteilungen mit Extremum verwendet werden, um bestimmte Werte besonders häufig vorkommen zu lassen und so opak \emph{wahr} (1) oder \emph{falsch} (0) darzustellen. Dies konnte aufgrund zeitlicher Beschränkungen in dieser Arbeit nicht behandelt werden.
+Gegenstand einer weiterführenden Auseinandersetzung sollte zudem die Anwendung der hier dargelegten Prinzipien der probabilistischen Obfuskation gegen andere Deobfuskationsmethoden sein. So könnte z.B. die Anwendung auf Ausdrücke Programmsynthesemethoden \cite{blazytkoSyntiaSynthesizingSemanticsa, menguySearchBasedLocalBlackBox2021} verhindern.
 
 %\textcolor{red}{Verbesserung durch Anwendung anderer Obfuskationsmethoden (z.B. MBAs, Junkcode)} \\
 %\textcolor{red}{probabilistisch opake Prädikate mit $P(\Var{RealBB})=0.5$ und zwei semantisch equivalenten aber unterschiedlich aussehenden Basisblöcken eingefügt} \\
@@ -798,7 +795,7 @@ Gegenstand einer weiterführenden Auseinandersetzung sollte zudem die Anwendung 
 \newpage
 
 \section*{Danksagung}
-Ich danke meinem schulischen Projektbetreuer, Herrn Dr. Arndt Latußeck für die wichtige Hinweisen zur Gliederung, Vorschläge zum Vorgehen bei der Evaluierung sowie der fachlichen Überprüfung der vorliegenden Arbeit. % Überprüfung meiner Forschungsfrage,
+Ich danke meinem schulischen Projektbetreuer, Herrn Dr. Arndt Latußeck für die wichtige Hinweisen zur Gliederung, Vorschläge zum Vorgehen bei der Evaluierung sowie für fachliche Vorschläge zur vorliegenden Arbeit. % Überprüfung meiner Forschungsfrage,
 
 Zudem danke ich meiner Mutter, Claudia Baumgartner-Bardubitzki für ihre sprachliche Überprüfung.
 

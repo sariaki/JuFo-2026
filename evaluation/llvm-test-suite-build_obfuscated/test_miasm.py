@@ -4,16 +4,12 @@ from collections import deque
 from elftools.elf.elffile import ELFFile
 from z3 import BitVec, Solver, sat
 
-# ------------------------------------------------------------------
-# Robust miasm imports (try several likely module paths)
-# ------------------------------------------------------------------
 _container = None
 _machine = None
 _symbexec_engine_type = None
 
 _import_errors = []
 
-# Try 1: modern / example paths
 try:
     from miasm.analysis.binary import Container
     from miasm.analysis.machine import Machine
@@ -23,7 +19,7 @@ try:
 except Exception as e:
     _import_errors.append(("analysis.binary / analysis.machine", e))
 
-# Try 2: older packaging paths
+# Older packaging paths
 if _container is None or _machine is None:
     try:
         # older miasm sometimes exposes Container in miasm.core.binary
@@ -64,9 +60,6 @@ if _container is None or _machine is None or _symbexec_engine_type is None:
     print("and paste the printed output here (or paste the full traceback from this script).")
     sys.exit(1)
 
-# ------------------------------------------------------------------
-# Helper: find symbol address using pyelftools
-# ------------------------------------------------------------------
 def find_symbol_addr(path, symname):
     with open(path, "rb") as f:
         elffile = ELFFile(f)
@@ -78,9 +71,6 @@ def find_symbol_addr(path, symname):
                     return sym.entry.st_value
     return None
 
-# ------------------------------------------------------------------
-# Lightweight PathState wrapper (keeps things generic)
-# ------------------------------------------------------------------
 class PathState:
     def __init__(self, pc, symstate, path_len=0, stdout_bytes=b""):
         self.pc = pc
@@ -88,9 +78,6 @@ class PathState:
         self.path_len = path_len
         self.stdout_bytes = stdout_bytes
 
-# ------------------------------------------------------------------
-# Main solver (keeps symbolic-engine interactions generic)
-# ------------------------------------------------------------------
 def solve(binary_path, func_name="foo", max_depth=1000):
     foo_addr = find_symbol_addr(binary_path, func_name)
     if foo_addr is None:

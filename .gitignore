@@ -227,3 +227,7 @@ evaluation/llvm-test-suite-build_obfuscated/*
 !evaluation/llvm-test-suite-build_obfuscated/averaged_results*.json
 !evaluation/llvm-test-suite-build_obfuscated/results_raw/
 !evaluation/llvm-test-suite-build_obfuscated/run.sh
+
+!evaluation/llvm-test-suite-build/
+evaluation/llvm-test-suite-build/*
+!evaluation/llvm-test-suite-build/results*.json
