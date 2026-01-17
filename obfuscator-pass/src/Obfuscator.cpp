@@ -27,7 +27,7 @@ cl::OptionCategory PassCategory("Probabilistic Opaque Predicates (POP) Pass Opti
 // Insertion probability
 constexpr const char* PASS_NAME = "POP";
 cl::opt<unsigned int> POPInsertProbability(
-    "pop-probability",
+    "pop-lvl",
     cl::desc("Probability of applying the obfuscation (0-100)"), 
     cl::init(50),
     cl::cat(PassCategory)
@@ -36,7 +36,7 @@ cl::opt<unsigned int> POPInsertProbability(
 // Predicate probability
 // TODO: Make this fluctuate to throw off heuristics
 cl::opt<double> POPPredicateProbability(
-    "pop-predicate-probability",
+    "pop-pred-prob",
     cl::desc("Probability that the opaque predicate evaluates to true (0-100)"),
     cl::init(0.9999999999998),
     cl::cat(PassCategory)
@@ -44,7 +44,7 @@ cl::opt<double> POPPredicateProbability(
 
 // Number of obfuscation runs per function
 cl::opt<unsigned int> POPRunsPerFunction(
-    "pop-runs-per-function",
+    "pop-runs-per-fn",
     cl::desc("Number of obfuscation runs per function"),
     cl::init(1),
     cl::cat(PassCategory)

@@ -284,9 +284,6 @@ def solve(binary_path, func_name="foo", max_depth=1000):
         print("[-] No solutions found (or symbolic engine didn't expose constraints).")
     print(f"[+] Visited {visited} nodes.")
 
-# ------------------------------------------------------------------
-# Entrypoint
-# ------------------------------------------------------------------
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python3 test_miasm_compat.py <binary> [function_name]")

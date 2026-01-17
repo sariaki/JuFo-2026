@@ -1,4 +1,5 @@
 # Probabilistic Opaque Predicates LLVM Pass
+Made for LLVM 18.
 
 #### Build Instructions
 
@@ -13,10 +14,17 @@ cmake --build build -j
 OPT_LVL=O3
 PASS_PLUGIN_DIR="./build/Obfuscator.so"
 FILENAME="hello_world"
+LVL=50 RUNS=1 PRED_PROB=99
+MIN_DEG=3 MAX_DEG=6
 
-clang-18 -$OPT_LVL -g \
-	-fpass-plugin=$PASS_PLUGIN_DIR \
-	-Xclang -load -Xclang $PASS_PLUGIN_DIR \
-	${FILENAME}.c \
-	-o $FILENAME
+clang -$OPT_LVL \
+-fpass-plugin=$PASS_PLUGIN_DIR \
+-Xclang -load -Xclang $PASS_PLUGIN_DIR \
+-mllvm -pop-lvl=$LVL \
+-mllvm -pop-pred-prob=$PRED_PROB \
+-mllvm -pop-runs-per-fn=$RUNS \
+-mllvm -pop-min-degree=$MIN_DEG \
+-mllvm -pop-max-degree=$MAX_DEG \
+${FILENAME}.c \
+-o $FILENAME
 ```
