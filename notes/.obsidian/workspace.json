@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO Schreiben.md",
+                "file": "TODO Recherche.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO Schreiben"
+              "title": "TODO Recherche"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,13 +171,15 @@
   },
   "active": "8c739b13d4ffca7f",
   "lastOpenFiles": [
-    "TODO Implementierung.md",
+    "Plakat TODO.md",
     "Notizen.md",
+    "Methoden.md",
+    "EVALUIERUNG.md",
     "FRAGEN.md",
     "Hintergrund & Motivation.md",
     "IDEE GEGEN PATTERN-MATCHING.md",
-    "EVALUIERUNG.md",
-    "Methoden.md",
+    "Lat Fragen Antworten.md",
+    "TODO Implementierung.md",
     "TODO Recherche.md",
     "TODO Schreiben.md",
     "UMFRAGE.md",

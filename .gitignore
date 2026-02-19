@@ -231,3 +231,6 @@ evaluation/llvm-test-suite-build_obfuscated/*
 !evaluation/llvm-test-suite-build/
 evaluation/llvm-test-suite-build/*
 !evaluation/llvm-test-suite-build/results*.json
+
+# Notes
+notes/*
