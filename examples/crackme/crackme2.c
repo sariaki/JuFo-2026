@@ -5,15 +5,16 @@
 #include <stdlib.h>
 
 // Flag: ./crackme2 "w m o'#m;>'#C\`A@"
+// Flag: ./crackme2 'A8m 8[1wX>'\''~!@A`'
 void succeed(char* string)
 {
-    printf("Yes, %s is correct!\n", string);
+    printf("Ja, %s ist richtig!\n", string);
     exit(0);
 }
 
 void fail(char* string)
 {
-    printf("No, %s is not correct.\n", string);
+    printf("Nein, %s ist falsch.\n", string);
     exit(1);
 }
 
@@ -31,7 +32,7 @@ int main(int argc, char** argv)
 {
     if (argc != 2)
     {
-        printf("Need exactly one argument.\n");
+        printf("Zu viele Argumente! (>1).\n");
         return -1;
     }
 

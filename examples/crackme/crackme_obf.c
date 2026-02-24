@@ -39,7 +39,7 @@ __attribute__((noinline)) OBFUSCATE void obfuscated(void* x)
     int i;
     int pos;
 
-    printf("[*] Hello! Please enter the password: ");
+    printf("[*] Wie lautet das Passwort: ");
     scanf("%10s", input);
     
     for(i = 0; i < 10; i++)
@@ -59,11 +59,11 @@ __attribute__((noinline)) OBFUSCATE void obfuscated(void* x)
     
     if(!strcmp(modified_input, password))
     {
-        printf("[*] Congratulations! You have found the flag.\n");
+        printf("[*] Das Passwort ist korrekt!\n");
     } 
     else 
     {
-        printf("[-] Invalid flag! Try again...\n");
+        printf("[-] Invalides Passwort, versuch es nochmal!\n");
     }   
 }
 
