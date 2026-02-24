@@ -6,34 +6,36 @@
 
 #define OBFUSCATE __attribute__((annotate("POP")))
 
-typedef struct myNode{
+typedef struct myNode
+{
   char idx;
-  struct myNode *ptr;
+  struct myNode* ptr;
 } myNode;
 
-myNode v[10] = {
-    {'a', &v[6]}, /* v[0] */
-    {'0', &v[3]}, /* v[1] */
-    {'d', &v[1]}, /* v[2] */
-    {'f', &v[7]}, /* v[3] */
-    {'b', &v[2]}, /* v[4] */
-    {'c', &v[4]}, /* v[5] */
-    {'8', &v[0]}, /* v[6] */
-    {'3', &v[5]}, /* v[7] */
-    {'7', &v[9]}, /* v[8] */
-    {'e', &v[8]}  /* v[9] */
+myNode v[10] =
+{
+    {'a', &v[6]},
+    {'0', &v[3]},
+    {'d', &v[1]},
+    {'f', &v[7]},
+    {'b', &v[2]},
+    {'c', &v[4]},
+    {'8', &v[0]},
+    {'3', &v[5]},
+    {'7', &v[9]},
+    {'e', &v[8]} 
 };
 
 char password[] = "a0dfbc837e";
 
-// Input data (correct flag is 6241570398)
+// Flag: ./crackme 6241570398
 char input[10] = {0};
 
 char modified_input[10] = {0};
 
 __attribute__((noinline)) OBFUSCATE void obfuscated(void* x)
 {
-    printf("%llx\n", x);
+    // printf("%llx\n", x);
     int i;
     int pos;
 
@@ -42,7 +44,7 @@ __attribute__((noinline)) OBFUSCATE void obfuscated(void* x)
     
     for(i = 0; i < 10; i++)
     {     
-        myNode *n;
+        myNode* n;
         
         pos = input[i] - '0';
         // printf("Idx:%d char:%c pos:%d\n", i, p[i], pos);
@@ -65,7 +67,7 @@ __attribute__((noinline)) OBFUSCATE void obfuscated(void* x)
     }   
 }
 
-OBFUSCATE int main( void )
+OBFUSCATE int main()
 {
     volatile void* x = (void*)time(NULL);
     obfuscated(x);
