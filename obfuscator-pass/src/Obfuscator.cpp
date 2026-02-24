@@ -12,6 +12,7 @@
 #include <llvm/Passes/PassPlugin.h>
 #include <llvm/Support/raw_ostream.h>
 #include <llvm/Demangle/Demangle.h>
+#include <llvm/Transforms/Utils/Cloning.h>
 #include <iostream>
 #include <random>
 #include "Distribution-Generation/GenerateDistribution.hpp"
@@ -38,7 +39,7 @@ cl::opt<unsigned int> POPInsertProbability(
 cl::opt<double> POPPredicateProbability(
     "pop-pred-prob",
     cl::desc("Probability that the opaque predicate evaluates to true (0-100)"),
-    cl::init(0.9999999999998),
+    cl::init(0.998),
     cl::cat(PassCategory)
 );
 
@@ -197,7 +198,7 @@ namespace
                     if (!Utils::HasAnnotation(Fn, PASS_NAME)) continue;
                 }
 
-                // for (unsigned int i = 0; i < POPRunsPerFunction.getValue(); i++)
+                for (unsigned int i = 0; i < POPRunsPerFunction.getValue(); i++)
                 {
                     // Choose random insertion point
                     // We have to repoulate these lists
@@ -231,7 +232,7 @@ namespace
                     // errs() << "Obfuscating function " << demangle(Fn->getName()) << "\n";
                     
                     const auto RandomInsertionIdx = std::uniform_int_distribution(static_cast<size_t>(0), 
-                    ValidInsertionPts.size() - 1)(Rng);
+                        ValidInsertionPts.size() - 1)(Rng);
                     const auto RandomInsertionPt = ValidInsertionPts[RandomInsertionIdx];
                     auto RandomBasicBlock = (*RandomInsertionPt).getParent();
 
@@ -317,15 +318,6 @@ namespace
                             ConstantFP::get(IRB.getDoubleTy(), Threshold));
                     }
 
-                    // Create new BasicBlocks for branches
-                    BasicBlock* FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
-                    IRB.SetInsertPoint(FakeBB);
-                    IRB.CreateIntrinsic(Intrinsic::trap, {}, {});
-                    if (Fn->getReturnType()->isVoidTy()) 
-                        IRB.CreateRetVoid();
-                    else 
-                        IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
-
                     // Ensure IRB is pointing to the end of our inserted instructions
                     IRB.SetInsertPoint(RandomBasicBlock); 
                     Instruction* SplitPoint = &*IRB.GetInsertPoint(); // Points to the instruction after our logic
@@ -334,6 +326,18 @@ namespace
                     
                     // Replace the br LLVM added with conditional brach.
                     RandomBasicBlock->getTerminator()->eraseFromParent();
+
+                    // Create new BasicBlock for fake branch
+                    // BasicBlock* FakeBB = BasicBlock::Create(LLVMCtx, "never_hit", Fn);
+                    // IRB.SetInsertPoint(FakeBB);
+                    // IRB.CreateIntrinsic(Intrinsic::trap, {}, {});
+                    // if (Fn->getReturnType()->isVoidTy()) 
+                    //     IRB.CreateRetVoid();
+                    // else 
+                    //     IRB.CreateRet(Constant::getNullValue(Fn->getReturnType()));
+
+                    BasicBlock* FakeBB = Utils::CloneBasicBlock(RealBB);
+                    FakeBB->setName("never_hit");
                     
                     // Insert Opaque Predicate
                     IRB.SetInsertPoint(RandomBasicBlock); // Sets to end (now valid, since terminator is gone)

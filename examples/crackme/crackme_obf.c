@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
 #define OBFUSCATE __attribute__((annotate("POP")))
 
@@ -30,8 +31,9 @@ char input[10] = {0};
 
 char modified_input[10] = {0};
 
-OBFUSCATE int main( void )
+__attribute__((noinline)) OBFUSCATE void obfuscated(void* x)
 {
+    printf("%llx\n", x);
     int i;
     int pos;
 
@@ -61,4 +63,10 @@ OBFUSCATE int main( void )
     {
         printf("[-] Invalid flag! Try again...\n");
     }   
+}
+
+OBFUSCATE int main( void )
+{
+    volatile void* x = (void*)time(NULL);
+    obfuscated(x);
 }

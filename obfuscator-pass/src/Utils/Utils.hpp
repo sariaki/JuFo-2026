@@ -18,4 +18,5 @@ namespace Utils
     bool HasAnnotation(Function *F, std::string_view Annotation);
     bool IsDerivedFromExternalFn(Value *V, SmallPtrSetImpl<Value*> &Visited, int Depth = 0);
     Function* AddLLVMFnArgument(LLVMContext* LLVMCtx, Function *OldFunc, Type *NewArgType, StringRef Name, Value *NewArgValue);
+    BasicBlock* CloneBasicBlock(BasicBlock *BB);
 }

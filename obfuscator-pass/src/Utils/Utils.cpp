@@ -408,3 +408,34 @@ Function* Utils::AddLLVMFnArgument(LLVMContext* LLVMCtx, Function *OldFunc, Type
 
     return NewFunc;
 }
+
+// Taken from https://github.com/bluesadi/Pluto/blob/main/llvm/lib/Transforms/Obfuscation/BogusControlFlow.cpp
+BasicBlock* Utils::CloneBasicBlock(BasicBlock *BB)
+{
+    ValueToValueMapTy VMap;
+    BasicBlock* CloneBB = CloneBasicBlock(BB, VMap, "cloneBB", BB->getParent());
+
+    BasicBlock::iterator BBIterator = BB->begin();
+
+    for (Instruction &I : *CloneBB)
+    {
+        for (int i = 0; i < I.getNumOperands(); i++)
+        {
+            Value *V = MapValue(I.getOperand(i), VMap);
+            if (V)
+                I.setOperand(i, V);
+        }
+        SmallVector<std::pair<unsigned, MDNode *>, 4> MDs;
+        I.getAllMetadata(MDs);
+        for (std::pair<unsigned, MDNode *> pair : MDs)
+        {
+            MDNode *MD = MapMetadata(pair.second, VMap);
+            if (MD)
+                I.setMetadata(pair.first, MD);
+        }
+        I.setDebugLoc(BBIterator->getDebugLoc());
+        BBIterator++;
+    }
+
+    return CloneBB;
+}
